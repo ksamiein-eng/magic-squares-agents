@@ -1,0 +1,161 @@
+=== sweep H=3: 16 grid values, 4096 triples, orbits 0..112 ===
+orbit   0/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 23520 points {'all_torsion': 192, 'on_torsion_coset': 23328}, 1808 families (indep-fixed 0, nondeg 0), admissible 0, 18.0s, total 22s
+orbit   1/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 8288 points {'all_torsion': 192, 'on_torsion_coset': 8096}, 480 families (indep-fixed 0, nondeg 0), admissible 0, 6.3s, total 29s
+orbit   2/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 8288 points {'all_torsion': 192, 'on_torsion_coset': 8096}, 480 families (indep-fixed 0, nondeg 0), admissible 0, 6.3s, total 37s
+orbit   3/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 4160 points {'all_torsion': 128, 'on_torsion_coset': 4032}, 368 families (indep-fixed 0, nondeg 0), admissible 0, 3.8s, total 41s
+orbit   4/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 5856 points {'all_torsion': 192, 'on_torsion_coset': 5664}, 480 families (indep-fixed 0, nondeg 0), admissible 0, 4.5s, total 47s
+orbit   5/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, -1), (1, 1, -1, -1)]: 2144 points {'all_torsion': 128, 'on_torsion_coset': 2016}, 96 families (indep-fixed 0, nondeg 0), admissible 0, 2.1s, total 49s
+orbit   6/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, -1), (1, 1, -1, 0)]: 3584 points {'all_torsion': 192, 'on_torsion_coset': 3392}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 2.9s, total 52s
+orbit   7/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 0), (1, 1, -1, 1)]: 3488 points {'all_torsion': 192, 'on_torsion_coset': 3296}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 3.0s, total 56s
+orbit   8/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 2144 points {'all_torsion': 128, 'on_torsion_coset': 2016}, 96 families (indep-fixed 0, nondeg 0), admissible 0, 2.1s, total 59s
+orbit   9/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 2080 points {'all_torsion': 96, 'on_torsion_coset': 1984}, 192 families (indep-fixed 0, nondeg 0), admissible 0, 2.2s, total 61s
+orbit  10/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1)]: 3136 points {'all_torsion': 128, 'on_torsion_coset': 3008}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 4.2s, total 66s
+orbit  11/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1)]: 2816 points {'all_torsion': 128, 'on_torsion_coset': 2688}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 2.7s, total 69s
+orbit  12/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 192 families (indep-fixed 0, nondeg 0), admissible 0, 2.1s, total 71s
+orbit  13/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 192 families (indep-fixed 0, nondeg 0), admissible 0, 2.0s, total 74s
+orbit  14/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, -1)]: 1056 points {'all_torsion': 96, 'on_torsion_coset': 960}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.1s, total 75s
+orbit  15/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, 1)]: 1216 points {'all_torsion': 96, 'on_torsion_coset': 1120}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 76s
+orbit  16/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 0, -1)]: 1536 points {'all_torsion': 128, 'on_torsion_coset': 1408}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.5s, total 78s
+orbit  17/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 0)]: 9344 points {'all_torsion': 192, 'on_torsion_coset': 9152}, 512 families (indep-fixed 0, nondeg 0), admissible 0, 7.8s, total 87s
+orbit  18/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 192 families (indep-fixed 0, nondeg 0), admissible 0, 2.2s, total 90s
+orbit  19/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 5248 points {'all_torsion': 128, 'on_torsion_coset': 5120}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 5.7s, total 96s
+orbit  20/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 192 families (indep-fixed 0, nondeg 0), admissible 0, 1.9s, total 99s
+orbit  21/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 1)]: 3424 points {'all_torsion': 128, 'on_torsion_coset': 3296}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 3.6s, total 103s
+orbit  22/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, -1)]: 2688 points {'on_torsion_coset': 2560, 'all_torsion': 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 2.5s, total 106s
+orbit  23/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, 0)]: 864 points {'all_torsion': 96, 'on_torsion_coset': 768}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.0s, total 107s
+orbit  24/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, 1)]: 2720 points {'on_torsion_coset': 2592, 'all_torsion': 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 2.8s, total 110s
+orbit  25/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 0, -1)]: 1056 points {'all_torsion': 96, 'on_torsion_coset': 960}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.4s, total 112s
+orbit  26/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 0, 0)]: 3904 points {'all_torsion': 192, 'on_torsion_coset': 3712}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 3.4s, total 116s
+orbit  27/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 0), (1, -1, 1, 1)]: 5376 points {'all_torsion': 192, 'on_torsion_coset': 5184}, 512 families (indep-fixed 0, nondeg 0), admissible 0, 4.8s, total 122s
+orbit  28/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 0), (1, 1, -1, 1)]: 4032 points {'all_torsion': 192, 'on_torsion_coset': 3840}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 3.4s, total 126s
+orbit  29/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0)]: 3136 points {'all_torsion': 128, 'on_torsion_coset': 3008}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 2.7s, total 129s
+orbit  30/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, -1)]: 1056 points {'all_torsion': 96, 'on_torsion_coset': 960}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.0s, total 130s
+orbit  31/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 0)]: 1184 points {'all_torsion': 128, 'on_torsion_coset': 1056}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.1s, total 131s
+orbit  32/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 1)]: 1216 points {'all_torsion': 96, 'on_torsion_coset': 1120}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.1s, total 132s
+orbit  33/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, -1)]: 1984 points {'on_torsion_coset': 1856, 'all_torsion': 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.9s, total 135s
+orbit  34/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 0)]: 864 points {'all_torsion': 96, 'on_torsion_coset': 768}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 136s
+orbit  35/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 3008 points {'on_torsion_coset': 2880, 'all_torsion': 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 2.5s, total 138s
+orbit  36/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, 0, 0)]: 3136 points {'on_torsion_coset': 2944, 'all_torsion': 192}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 2.8s, total 142s
+orbit  37/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, -1, 1)]: 1056 points {'all_torsion': 96, 'on_torsion_coset': 960}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.1s, total 143s
+orbit  38/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, -1)]: 1664 points {'all_torsion': 128, 'on_torsion_coset': 1536}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.3s, total 144s
+orbit  39/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, 1)]: 1664 points {'all_torsion': 128, 'on_torsion_coset': 1536}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 146s
+orbit  40/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 1, -1)]: 1056 points {'all_torsion': 96, 'on_torsion_coset': 960}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 147s
+orbit  41/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 0, 0)]: 7776 points {'all_torsion': 192, 'on_torsion_coset': 7584}, 448 families (indep-fixed 0, nondeg 0), admissible 0, 5.9s, total 154s
+orbit  42/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 1, -1)]: 5024 points {'all_torsion': 128, 'on_torsion_coset': 4896}, 224 families (indep-fixed 0, nondeg 0), admissible 0, 4.1s, total 159s
+orbit  43/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 0, -1)]: 2976 points {'all_torsion': 128, 'on_torsion_coset': 2848}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 2.5s, total 162s
+orbit  44/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 0, 1)]: 2816 points {'all_torsion': 128, 'on_torsion_coset': 2688}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 2.3s, total 164s
+orbit  45/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 1, -1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 192 families (indep-fixed 0, nondeg 0), admissible 0, 1.7s, total 166s
+orbit  46/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, 1, -1, 1)]: 1216 points {'all_torsion': 96, 'on_torsion_coset': 1120}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.0s, total 167s
+orbit  47/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, 1, 0, -1)]: 1696 points {'all_torsion': 128, 'on_torsion_coset': 1568}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.5s, total 169s
+orbit  48/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 1, -1, 1)]: 2816 points {'all_torsion': 128, 'on_torsion_coset': 2688}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 2.1s, total 172s
+orbit  49/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, -1, 1, -1)]: 2816 points {'all_torsion': 128, 'on_torsion_coset': 2688}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 2.5s, total 175s
+orbit  50/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, 1, -1, 1)]: 1664 points {'all_torsion': 128, 'on_torsion_coset': 1536}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.4s, total 176s
+orbit  51/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 1, -1), (1, 1, -1, 1)]: 1056 points {'all_torsion': 96, 'on_torsion_coset': 960}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.1s, total 178s
+orbit  52/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 1, -1), (1, 1, 0, -1)]: 1344 points {'all_torsion': 128, 'on_torsion_coset': 1216}, 64 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 179s
+orbit  53/113 rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, 1, -1, 1), (1, 1, 1, -1)]: 1440 points {'all_torsion': 96, 'on_torsion_coset': 1344}, 48 families (indep-fixed 0, nondeg 0), admissible 0, 1.3s, total 180s
+orbit  54/113 rows=[(0, 0, 1, -1), (1, -1, -1, 1), (1, -1, 0, 0), (1, -1, 1, -1)]: 15360 points {'all_torsion': 192, 'on_torsion_coset': 15168}, 2048 families (indep-fixed 0, nondeg 0), admissible 0, 13.5s, total 196s
+orbit  55/113 rows=[(0, 0, 1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 1)]: 4960 points {'all_torsion': 128, 'on_torsion_coset': 4832}, 256 families (indep-fixed 0, nondeg 0), admissible 0, 5.0s, total 202s
+orbit  56/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 2208 points {'all_torsion': 96, 'on_torsion_coset': 2112}, 80 families (indep-fixed 0, nondeg 0), admissible 0, 2.1s, total 205s
+orbit  57/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1)]: 656 points {'all_torsion': 80, 'on_torsion_coset': 576}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.8s, total 206s
+orbit  58/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1)]: 560 points {'all_torsion': 80, 'on_torsion_coset': 480}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.7s, total 206s
+orbit  59/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 1024 points {'all_torsion': 96, 'on_torsion_coset': 928}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 208s
+orbit  60/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 1376 points {'all_torsion': 96, 'on_torsion_coset': 1280}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.6s, total 210s
+orbit  61/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, -1, -1)]: 656 points {'all_torsion': 80, 'on_torsion_coset': 576}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 211s
+orbit  62/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, -1, 1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.7s, total 211s
+orbit  63/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, 1, -1)]: 560 points {'all_torsion': 80, 'on_torsion_coset': 480}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.7s, total 212s
+orbit  64/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, 1, 1)]: 656 points {'all_torsion': 80, 'on_torsion_coset': 576}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.8s, total 213s
+orbit  65/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, -1)]: 1376 points {'all_torsion': 96, 'on_torsion_coset': 1280}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.6s, total 215s
+orbit  66/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, 1)]: 1024 points {'all_torsion': 96, 'on_torsion_coset': 928}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.0s, total 216s
+orbit  67/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 0, -1)]: 560 points {'all_torsion': 80, 'on_torsion_coset': 480}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 217s
+orbit  68/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 1, -1)]: 1024 points {'all_torsion': 96, 'on_torsion_coset': 928}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 218s
+orbit  69/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 1, 1)]: 864 points {'all_torsion': 96, 'on_torsion_coset': 768}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.0s, total 219s
+orbit  70/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 1)]: 1120 points {'all_torsion': 96, 'on_torsion_coset': 1024}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.3s, total 221s
+orbit  71/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 1760 points {'on_torsion_coset': 1632, 'all_torsion': 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.8s, total 223s
+orbit  72/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 1056 points {'on_torsion_coset': 960, 'all_torsion': 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.0s, total 224s
+orbit  73/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 1)]: 2592 points {'on_torsion_coset': 2464, 'all_torsion': 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 2.7s, total 227s
+orbit  74/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 0, 1, -1)]: 672 points {'all_torsion': 96, 'on_torsion_coset': 576}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.7s, total 228s
+orbit  75/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 0, 1, 1)]: 960 points {'on_torsion_coset': 864, 'all_torsion': 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 229s
+orbit  76/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 1, -1)]: 2208 points {'all_torsion': 128, 'on_torsion_coset': 2080}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 2.1s, total 232s
+orbit  77/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 1, 0)]: 864 points {'all_torsion': 96, 'on_torsion_coset': 768}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 233s
+orbit  78/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0)]: 656 points {'all_torsion': 80, 'on_torsion_coset': 576}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.8s, total 234s
+orbit  79/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 1)]: 1280 points {'all_torsion': 96, 'on_torsion_coset': 1184}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.3s, total 235s
+orbit  80/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 0, -1, 1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 236s
+orbit  81/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 0, 1, -1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.5s, total 237s
+orbit  82/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 1)]: 2016 points {'all_torsion': 96, 'on_torsion_coset': 1920}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.5s, total 238s
+orbit  83/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, 1, -1)]: 1280 points {'all_torsion': 96, 'on_torsion_coset': 1184}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 240s
+orbit  84/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 0, -1, -1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 2.2s, total 242s
+orbit  85/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 0, 1, 1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 2.2s, total 245s
+orbit  86/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, -1)]: 6112 points {'all_torsion': 128, 'on_torsion_coset': 5984}, 112 families (indep-fixed 0, nondeg 0), admissible 0, 5.8s, total 252s
+orbit  87/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 0)]: 960 points {'all_torsion': 96, 'on_torsion_coset': 864}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.1s, total 253s
+orbit  88/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 2496 points {'on_torsion_coset': 2368, 'all_torsion': 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 2.3s, total 256s
+orbit  89/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, 1, 1)]: 2624 points {'all_torsion': 128, 'on_torsion_coset': 2496}, 112 families (indep-fixed 0, nondeg 0), admissible 0, 3.1s, total 259s
+orbit  90/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, -1, -1)]: 2080 points {'all_torsion': 96, 'on_torsion_coset': 1984}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 2.5s, total 262s
+orbit  91/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, -1, 0)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 262s
+orbit  92/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, 1, 1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 2.2s, total 265s
+orbit  93/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, -1, 0)]: 560 points {'all_torsion': 80, 'on_torsion_coset': 480}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 266s
+orbit  94/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 0, -1)]: 368 points {'all_torsion': 80, 'on_torsion_coset': 288}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.4s, total 266s
+orbit  95/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 1, -1)]: 672 points {'all_torsion': 96, 'on_torsion_coset': 576}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.7s, total 267s
+orbit  96/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 1, 0)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.5s, total 267s
+orbit  97/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, -1), (1, 1, -1, 0)]: 960 points {'all_torsion': 96, 'on_torsion_coset': 864}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 269s
+orbit  98/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, -1), (1, 1, -1, 1)]: 2496 points {'on_torsion_coset': 2368, 'all_torsion': 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 2.4s, total 271s
+orbit  99/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, -1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.5s, total 272s
+orbit 100/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 1, -1)]: 864 points {'all_torsion': 96, 'on_torsion_coset': 768}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 273s
+orbit 101/113 rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 1, -1)]: 1856 points {'on_torsion_coset': 1728, 'all_torsion': 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 1.7s, total 275s
+orbit 102/113 rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, -1, -1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 276s
+orbit 103/113 rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, -1, 1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 276s
+orbit 104/113 rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, 1, 1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.5s, total 277s
+orbit 105/113 rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, 0, -1, -1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 278s
+orbit 106/113 rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, 0, 1, -1), (1, 1, 0, 1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.5s, total 278s
+orbit 107/113 rows=[(0, 1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0), (1, -1, 1, 1)]: 752 points {'all_torsion': 80, 'on_torsion_coset': 672}, 24 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 279s
+orbit 108/113 rows=[(0, 1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0), (1, 0, 1, 1)]: 464 points {'all_torsion': 80, 'on_torsion_coset': 384}, 32 families (indep-fixed 0, nondeg 0), admissible 0, 0.7s, total 280s
+orbit 109/113 rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, -1, 1, 1)]: 576 points {'all_torsion': 128, 'on_torsion_coset': 448}, 0 families (indep-fixed 0, nondeg 0), admissible 0, 2.3s, total 283s
+orbit 110/113 rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, -1)]: 4544 points {'all_torsion': 128, 'on_torsion_coset': 4416}, 0 families (indep-fixed 0, nondeg 0), admissible 0, 4.1s, total 287s
+orbit 111/113 rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 1)]: 4480 points {'all_torsion': 128, 'on_torsion_coset': 4352}, 0 families (indep-fixed 0, nondeg 0), admissible 0, 3.9s, total 292s
+orbit 112/113 rows=[(1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1), (1, 1, 1, -1)]: 4736 points {'all_torsion': 128, 'on_torsion_coset': 4608}, 0 families (indep-fixed 0, nondeg 0), admissible 0, 3.5s, total 296s
+sweep chunk done in 296s
+aggregate written to C:\Users\kimia\magic-squares-agents\agents\torsion_coset_probe\results\torsion_coset_H3.json
+{
+ "totals": {
+  "points": 273024,
+  "families": 15152,
+  "elapsed_s": 253.6999999999999
+ },
+ "points_by_class": {
+  "all_torsion": 12928,
+  "on_torsion_coset": 260096
+ },
+ "points_by_number_of_torsion_coordinates": {
+  "4": 12928,
+  "3": 69504,
+  "2": 36960,
+  "1": 99392,
+  "0": 54240
+ },
+ "points_by_degeneracy": {
+  "zero_sine": 0,
+  "equal_magnitudes": 0,
+  "both": 273024,
+  "neither": 0
+ },
+ "points_by_branch": {
+  "cramer": 188192,
+  "singular": 177248
+ },
+ "families_by_degeneracy": {
+  "row_identically_zero": 15152
+ },
+ "families_by_rank_of_fixed_triple": {
+  "0": 5792,
+  "1": 8464,
+  "2": 896
+ },
+ "system_evaluations": {
+  "systems": 21696,
+  "cramer_hits": 1935744,
+  "singular_cases": 7633152,
+  "singular_hits": 3591936,
+  "allzero_systems": 90912
+ }
+}
+counterexample candidate points: 0  families: 0
+brute-force cross-check: 400 checked, 400 agree, 0 disagree

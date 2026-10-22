@@ -64,4 +64,4 @@ for c in ver['cases']:
             fibers[(tuple(f['parameter']), f['kind'])] += 1
         for key, b in c['projective_boundaries'].items():
             fibers[(key, b['kind'])] += 1
-print('fiber/boundary degeneracy kinds (sum-8 cases)', sorted(fibers.items()))
+print('fiber/boundary degeneracy kinds (sum-8 cases)', sorted(fibers.items(),key=str))

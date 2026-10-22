@@ -1,0 +1,124 @@
+{
+ "identities_verified": {
+  "P_is_f_of_h2": true,
+  "P_over_h6_equals_g_of_h2_plus_h-2": true,
+  "f_is_reciprocal": true,
+  "f_over_x3_equals_g_of_w": true
+ },
+ "D": "x**6 + 70*x**5 - 1009*x**4 + 7060*x**3 - 1009*x**2 + 70*x + 1",
+ "g": "s**3 + 70*s**2 - 1012*s + 6920",
+ "quotients": {
+  "E_zero": {
+   "model": "v^2 = s^3+70s^2-1012s+6920",
+   "map": "s = h^2 + h^-2, v = Y/h^3",
+   "ainvs": [
+    0,
+    70,
+    0,
+    -1012,
+    6920
+   ],
+   "point_from_known_h=1": [
+    2,
+    72
+   ],
+   "on_curve": true,
+   "infinite_order": {
+    "torsion": false,
+    "multiple": 3,
+    "x": "11042/289",
+    "nagell_lutz": "non-integral multiple => infinite order"
+   },
+   "lmfdb": {
+    "lmfdb": "123.a1",
+    "cremona": "123a1",
+    "ainvs": [
+     0,
+     1,
+     1,
+     -10,
+     10
+    ],
+    "rank": 1,
+    "torsion": "Z/5",
+    "isomorphism_scaling_u": "4",
+    "isomorphism_verified": true
+   }
+  },
+  "E_plus": {
+   "quartic": "v^2 = (w+2)*g(w)",
+   "map_from_D": "w = x + 1/x",
+   "weierstrass": "y^2 = X^3 + (-1280)X^2 + (589824)X + (84934656)",
+   "ainvs": [
+    0,
+    -1280,
+    0,
+    589824,
+    84934656
+   ],
+   "small_point": [
+    0,
+    9216
+   ],
+   "infinite_order": {
+    "torsion": false,
+    "multiple": 8,
+    "x": "-2304/25",
+    "nagell_lutz": "non-integral multiple => infinite order"
+   },
+   "lmfdb": {
+    "lmfdb": "492.b1",
+    "cremona": "492b1",
+    "ainvs": [
+     0,
+     1,
+     0,
+     11,
+     695
+    ],
+    "rank": 1,
+    "torsion": "trivial",
+    "isomorphism_scaling_u": "8",
+    "isomorphism_verified": true
+   }
+  },
+  "E_minus": {
+   "quartic": "v^2 = (w-2)*g(w)",
+   "map_from_D": "w = x + 1/x",
+   "weierstrass": "y^2 = X^3 + (-720)X^2 + (393984)X + (26873856)",
+   "ainvs": [
+    0,
+    -720,
+    0,
+    393984,
+    26873856
+   ],
+   "small_point": [
+    0,
+    5184
+   ],
+   "infinite_order": {
+    "torsion": false,
+    "multiple": 3,
+    "x": "113291136/292681",
+    "nagell_lutz": "non-integral multiple => infinite order"
+   },
+   "lmfdb": {
+    "lmfdb": "1968.j1",
+    "cremona": "1968m1",
+    "ainvs": [
+     0,
+     1,
+     0,
+     11,
+     35
+    ],
+    "rank": 1,
+    "torsion": "trivial",
+    "isomorphism_scaling_u": "12",
+    "isomorphism_verified": true
+   }
+  }
+ },
+ "conclusion": "All three elliptic quotients have a point of infinite order (exact Nagell-Lutz witnesses), so each has Mordell-Weil rank >= 1; the LMFDB gives rank exactly 1 for each. Hence rank Jac(D) = 2 = genus(D) and rank Jac(C) >= 3: neither classical Chabauty on D nor an elliptic rank-zero descent can prove Conjecture 7.3. Viable routes: Chabauty-Coleman on C if rank Jac(C) <= 4, quadratic Chabauty on the bielliptic genus-2 quotient D (Balakrishnan-Dogra), or elliptic-curve Chabauty over Q(sqrt(d))."
+}

@@ -5,3 +5,9 @@ paper/verification_runs/build/
 agents/*/tmp/
 agents/*/*.log
 *.checkpoint.json
+# large specialist outputs (regenerable; summaries are committed)
+agents/torsion_coset_probe/results/torsion_coset_H*.json
+agents/torsion_coset_probe/results/partial_H*/
+agents/certificate_extender/results/certificate_degree7.json
+agents/certificate_extender/results/degree8_part_*.json
+agents/point_hunter/results/tmp_*.json

@@ -113,3 +113,48 @@ orbit 110/113 rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 
 orbit 111/113 rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 1)]: 1408 points {'all_torsion': 128, 'on_torsion_coset': 1280}, 0 families (indep-fixed 0, nondeg 0), admissible 0, 1.5s, total 100s
 orbit 112/113 rows=[(1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1), (1, 1, 1, -1)]: 640 points {'all_torsion': 128, 'on_torsion_coset': 512}, 0 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 101s
 sweep chunk done in 101s
+aggregate written to C:\Users\kimia\magic-squares-agents\agents\torsion_coset_probe\results\torsion_coset_H2.json
+{
+ "totals": {
+  "points": 71168,
+  "families": 8272,
+  "elapsed_s": 87.99999999999997
+ },
+ "points_by_class": {
+  "all_torsion": 12928,
+  "on_torsion_coset": 58240
+ },
+ "points_by_number_of_torsion_coordinates": {
+  "4": 12928,
+  "3": 23168,
+  "2": 8544,
+  "1": 20672,
+  "0": 5856
+ },
+ "points_by_degeneracy": {
+  "zero_sine": 0,
+  "equal_magnitudes": 0,
+  "both": 71168,
+  "neither": 0
+ },
+ "points_by_branch": {
+  "cramer": 44000,
+  "singular": 51552
+ },
+ "families_by_degeneracy": {
+  "row_identically_zero": 8272
+ },
+ "families_by_rank_of_fixed_triple": {
+  "0": 5792,
+  "1": 2480
+ },
+ "system_evaluations": {
+  "systems": 21696,
+  "cramer_hits": 457728,
+  "singular_cases": 2149856,
+  "singular_hits": 1549824,
+  "allzero_systems": 49632
+ }
+}
+counterexample candidate points: 0  families: 0
+brute-force cross-check: 400 checked, 400 agree, 0 disagree

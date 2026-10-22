@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rigidity Lab slides</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b1b1b; --muted:#666; --accent:#1f3a93; --ok:#176b3a; --warn:#8e1b12; --box:#f4f6fb; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--fg); font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
+  .slide { display:none; box-sizing:border-box; width:100vw; height:100vh; padding:56px 80px; }
+  .slide.active { display:flex; flex-direction:column; }
+  h1 { font-size:46px; margin:0 0 12px; color:var(--accent); }
+  h2 { font-size:34px; margin:0 0 18px; color:var(--accent); }
+  p, li { font-size:22px; line-height:1.4; }
+  .sub { color:var(--muted); font-size:20px; }
+  .cols { display:flex; gap:40px; }
+  .cols > div { flex:1; }
+  .box { background:var(--box); border-radius:12px; padding:16px 22px; margin:8px 0; }
+  code, pre { font-family: Consolas, "Courier New", monospace; font-size:19px; }
+  pre { background:#0f172a; color:#e2e8f0; padding:16px; border-radius:10px; overflow:auto; }
+  table { border-collapse:collapse; font-size:19px; }
+  td, th { border-bottom:1px solid #ddd; padding:6px 12px; text-align:left; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:6px; font-size:15px; font-weight:600; color:#fff; }
+  .PROVED{background:#176b3a} .MV{background:#1f3a93} .DB{background:#8a6d00} .SE{background:#6c5ce7} .CONJ{background:#8e1b12}
+  .foot { margin-top:auto; color:var(--muted); font-size:16px; }
+  img.fig { max-width:100%; max-height:70vh; }
+</style>
+</head>
+<body>
+
+<section class="slide active">
+  <h1>Rigidity Lab</h1>
+  <p class="sub">A paper that attacks its own open problems</p>
+  <p>Paper2Agent conversion of a <b>magic-squares-of-squares</b> paper into an MCP server,<br>
+     five specialist agents, one adversarial referee, one scribe.</p>
+  <p class="sub">OSI Hackathon 2026 · physical sciences &amp; mathematics · October 21–22</p>
+  <p class="foot">→ / ← to navigate</p>
+</section>
+
+<section class="slide">
+  <h2>The problem: nine distinct squares in a 3×3 magic square?</h2>
+  <div class="cols">
+    <div>
+      <div class="box"><p>Centre entry <b>y²</b>. Each line through the centre is a Pythagorean triangle on hypotenuse <b>y</b> ⇒ a point of the rational unit circle <b>T(Q)</b>.</p></div>
+      <div class="box"><p>Magic ⇔ four sines of integer combinations of the angles have magnitudes <b>{a, b, a+b, a−b}</b>.</p></div>
+      <div class="box"><p><b>Rigidity conjecture:</b> for every full-depth frequency matrix this never happens on T(Q)^r. Strictly stronger than "no magic square of squares".</p></div>
+    </div>
+    <div>
+      <div class="box">
+        <p><b>Proved in the paper</b></p>
+        <ul>
+          <li>r = 2, exponent sum ≤ 7: 2,064 exact certificates</li>
+          <li>D1 ⇔ extra rational point on a genus-5 curve</li>
+          <li>r = 4: nothing at projective height ≤ 4 (11,862 configurations)</li>
+          <li>48 Hadamard surfaces are of general type</li>
+        </ul>
+        <p><b>Open:</b> the eight-point list (Conj 7.3), sum ≥ 8, the torsion-coset hypothesis (Conj 8.6), ten orbits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Step 1 — Paper2Agent: the paper becomes an MCP server</h2>
+  <div class="cols">
+    <div>
+      <p>Following Miao et al., <i>Nature</i> 2026: bind every tool to the paper's own code, run it before exposing it, verify, ship resources and prompts next to tools.</p>
+      <pre>python paper_mcp/test_mcp.py
+tools: paper_overview, list_verification_stages,
+ run_verification_stage, check_paper_identities,
+ evaluate_configuration, enumerate_configurations,
+ three_parameter_orbit_table, two_prime_coverage,
+ genus5_point_search, reconstruct_d1_point,
+ genus5_quotient_structure, four_parameter_sweep,
+ list_specialist_reports, read_specialist_report
+stage run: D1_normalization_and_descent True 0.68 s</pre>
+    </div>
+    <div>
+      <div class="box"><p><b>14 tools</b> · 5 resources (manuscript, claim map, status, rigidity section, open problems) · 3 prompts (audit a claim, attack an orbit, referee)</p></div>
+      <div class="box"><p>All 16 stages of the paper's proof tree pass on a laptop: <b>3 min 45 s</b> for the nine core stages.</p></div>
+      <div class="box"><p>The paper's proof records are <b>never modified</b>; stages run in temporary copies.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Step 2 — a team, not a pipeline</h2>
+  <img class="fig" src="figure.svg" alt="architecture">
+</section>
+
+<section class="slide">
+  <h2>Finding 1 — the curve has symmetries the paper did not use</h2>
+  <div class="cols">
+    <div>
+      <div class="box"><p>C: Y² = P(h), P even and palindromic ⇒ involutions <b>h → −h</b>, <b>h → 1/h</b>.</p></div>
+      <div class="box"><p>Quotients: genus-2 curve D (bielliptic) and three elliptic curves<br>
+        E₀: v² = s³+70s²−1012s+6920, s = h²+h⁻² &nbsp;<span class="tag MV">MACHINE-VERIFIED</span><br>
+        E₊, E₋: v² = (w±2)·g(w), w = x+1/x</p></div>
+      <div class="box"><p>The paper's own known points give <b>points of infinite order</b> on each (exact Nagell–Lutz) <span class="tag MV">MACHINE-VERIFIED</span></p></div>
+    </div>
+    <div>
+      <table>
+        <tr><th>curve</th><th>LMFDB</th><th>rank</th><th>provenance</th></tr>
+        <tr><td>E₀</td><td>123.a1</td><td>1</td><td><span class="tag DB">DATABASE-QUOTED</span></td></tr>
+        <tr><td>E₊</td><td>492.b1</td><td>1</td><td><span class="tag DB">DATABASE-QUOTED</span></td></tr>
+        <tr><td>E₋</td><td>1968.j1</td><td>1</td><td><span class="tag DB">DATABASE-QUOTED</span></td></tr>
+      </table>
+      <div class="box"><p><b>Consequence.</b> rank Jac(D) = 2 = genus(D); rank Jac(C) ≥ 3. The paper's rank-zero descent can never close Conjecture 7.3. It is a <b>quadratic-Chabauty</b> problem on a bielliptic genus-2 curve of rank 2 (Balakrishnan–Dogra setting).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>Findings 2–4 — pushing the certified region</h2>
+  <div class="box"><p><b>Certificate extender.</b> Theorem 1.1 extended from exponent sum 7 to <b>8</b>: 32 new representatives, 1,536 new signed systems, 296,880 exact Sylvester determinants, largest witness prime still 19; independent stdlib checker <b>PASS</b> in 133 s. <span class="tag MV">MACHINE-VERIFIED</span></p></div>
+  <div class="box"><p><b>Torsion prober.</b> Conjecture 8.6 tested on <b>273,024</b> exact rational solutions (all 113 orbits, 48 systems, height ≤ 3): 0 off a torsion coset, 0 admissible, every point degenerate twice over; exponent rank never above 2. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
+  <div class="box"><p><b>Point hunter.</b> Sieved exact search: no new point on C to height <b>300,000</b> (45 billion pairs, 37 s), none on the genus-2 quotient to 100,000; 12 small points on E₀, none lifting. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
+</section>
+
+<section class="slide">
+  <h2>The referee's table</h2>
+  {{SKEPTIC_TABLE}}
+  <p class="foot">Nothing enters docs/RESULTS.md without a tag.</p>
+</section>
+
+<section class="slide">
+  <h2>What moved, and what is next</h2>
+  <div class="cols">
+    <div>
+      <div class="box"><p><b>Theorem 1.1:</b> exponent sum 7 → 8, by the paper's own method, independently checked.</p></div>
+      <div class="box"><p><b>Conjecture 7.3:</b> unchanged, but its obstruction is now precise: three rank-1 elliptic quotients; it is a quadratic-Chabauty problem.</p></div>
+      <div class="box"><p><b>Conjecture 8.6:</b> first systematic evidence, 273,024 points, no exception, and a sharper form (exponent rank ≤ 2).</p></div>
+    </div>
+    <div>
+      <div class="box"><p><b>Next computation:</b> quadratic Chabauty on D with the generators of 492.b1 and 1968.j1; then the ten orbits through the same quotient analysis.</p></div>
+      <div class="box"><p><b>Run it:</b> <code>/rigidity-attack all</code> in Claude Code, or <code>python orchestrator/run_attack.py</code>.</p></div>
+      <div class="box"><p>The problem is still open. The paper now knows exactly where it is stuck, and it can keep attacking itself.</p></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')]; let i=0;
+  function show(n){ slides[i].classList.remove('active'); i=(n+slides.length)%slides.length; slides[i].classList.add('active'); }
+  document.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'||e.key===' ') show(i+1); if(e.key==='ArrowLeft') show(i-1); });
+  document.addEventListener('click',e=>{ if(e.clientX>window.innerWidth/2) show(i+1); else show(i-1); });
+</script>
+</body>
+</html>

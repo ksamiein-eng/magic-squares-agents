@@ -1,0 +1,19 @@
+{
+ "height": 3000,
+ "sieve_survivors": 28617,
+ "points": [
+  {
+   "h": "0/1",
+   "Y_over_q6": 1,
+   "known": true
+  },
+  {
+   "h": "1/1",
+   "Y_over_q6": 72,
+   "known": true
+  }
+ ],
+ "new_points": [],
+ "seconds": 13.68,
+ "symmetry_note": "searched 0<=p<=q; h->-h and h->1/h generate the rest"
+}
