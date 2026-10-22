@@ -1,0 +1,33 @@
+[18:07:27] start 81_m1_n0
+[18:07:30]   81_m1_n0 system 7: res 0.1s factor 0.0s deg 56
+[18:07:32]   81_m1_n0 system 15: res 0.1s factor 0.2s deg 62
+[18:07:34]   81_m1_n0 system 23: res 0.1s factor 0.1s deg 62
+[18:07:36]   81_m1_n0 system 31: res 0.1s factor 0.2s deg 62
+[18:07:38]   81_m1_n0 system 39: res 0.1s factor 0.1s deg 62
+[18:07:40]   81_m1_n0 system 47: res 0.1s factor 0.2s deg 62
+[18:07:40] done 81_m1_n0 systems 48 seconds 12.342 unresolved 0
+[18:07:40] start 81_m3_n0
+[18:07:42]   81_m3_n0 system 7: res 0.1s factor 0.0s deg 56
+[18:07:44]   81_m3_n0 system 15: res 0.1s factor 0.3s deg 62
+[18:07:47]   81_m3_n0 system 23: res 0.2s factor 0.1s deg 62
+[18:07:49]   81_m3_n0 system 31: res 0.1s factor 0.2s deg 62
+[18:07:51]   81_m3_n0 system 39: res 0.1s factor 0.1s deg 62
+[18:07:53]   81_m3_n0 system 47: res 0.1s factor 0.2s deg 62
+[18:07:53] done 81_m3_n0 systems 48 seconds 13.221 unresolved 0
+[18:07:53] start 81_m5_n0
+[18:07:55]   81_m5_n0 system 7: res 0.1s factor 0.0s deg 56
+[18:07:56]   81_m5_n0 system 15: res 0.1s factor 0.1s deg 62
+[18:07:58]   81_m5_n0 system 23: res 0.0s factor 0.1s deg 62
+[18:07:59]   81_m5_n0 system 31: res 0.1s factor 0.1s deg 62
+[18:08:01]   81_m5_n0 system 39: res 0.1s factor 0.1s deg 62
+[18:08:03]   81_m5_n0 system 47: res 0.1s factor 0.2s deg 62
+[18:08:03] done 81_m5_n0 systems 48 seconds 10.099 unresolved 0
+[18:08:03] start 81_m7_n0
+[18:08:05]   81_m7_n0 system 7: res 0.1s factor 0.1s deg 56
+[18:08:07]   81_m7_n0 system 15: res 0.1s factor 0.2s deg 62
+[18:08:09]   81_m7_n0 system 23: res 0.0s factor 0.1s deg 62
+[18:08:10]   81_m7_n0 system 31: res 0.1s factor 0.2s deg 62
+[18:08:12]   81_m7_n0 system 39: res 0.1s factor 0.1s deg 62
+[18:08:13]   81_m7_n0 system 47: res 0.1s factor 0.1s deg 62
+[18:08:14] done 81_m7_n0 systems 48 seconds 10.283 unresolved 0
+[18:08:14] part 81 complete

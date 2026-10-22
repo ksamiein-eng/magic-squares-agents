@@ -1,0 +1,163 @@
+{
+  "schema": "paper2attack/ledger/v1",
+  "attacks": [
+    {
+      "id": "A1",
+      "iteration": 1,
+      "problem": "P1",
+      "playbook": "certificate-extension",
+      "agent": "certificate-extender",
+      "trace": "traces/01_certificate_extender.md",
+      "input": {
+        "baseline": "paper/verification/two_prime/results/certificate_degree7.json",
+        "signatures": [
+          [
+            7,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ]
+      },
+      "result": "32 representatives, 1,536 new systems, 3,600 total; strict stdlib checker PASS 133 s; SymPy cross-check 75/75 PASS 814 s; mutation tests PASS",
+      "evidence": [
+        "agents/certificate_extender/results/verification_degree8_stdlib.json",
+        "agents/certificate_extender/results/crosscheck_degree8_sympy.log"
+      ],
+      "tag": "MACHINE-VERIFIED",
+      "verified_by": [
+        "skeptic:traces/04_skeptic.md",
+        "verify_findings.py:sum8_certificate"
+      ],
+      "state_after": {
+        "P1": 8
+      }
+    },
+    {
+      "id": "A2",
+      "iteration": 1,
+      "problem": "P2",
+      "playbook": "automorphism-quotient-analysis",
+      "agent": "coordinator (quotient-geometer role)",
+      "trace": "traces/00_coordinator.md#turns-22-49",
+      "input": {
+        "curve": "Y^2 = h^12+70h^10-1009h^8+7060h^6-1009h^4+70h^2+1"
+      },
+      "result": "involutions h->-h, h->1/h; D genus 2 bielliptic; E0, E+, E- with exact infinite-order witnesses; LMFDB 123.a1, 492.b1, 1968.j1 rank 1; rank Jac(C) >= 3",
+      "evidence": [
+        "results/genus5_quotient_structure.json"
+      ],
+      "tag": "PROVED (identities, rank >= 1, rank Jac(C) >= 3); DATABASE-QUOTED (rank = 1)",
+      "verified_by": [
+        "skeptic:traces/04_skeptic.md",
+        "verify_findings.py:quotient_structure"
+      ],
+      "state_after": {
+        "P2": "obstruction located"
+      }
+    },
+    {
+      "id": "A3",
+      "iteration": 1,
+      "problem": "P3",
+      "playbook": "hypothesis-probe",
+      "agent": "torsion-coset-prober",
+      "trace": "traces/02_torsion_coset_prober.md",
+      "input": {
+        "H": 3,
+        "orbits": 113,
+        "systems": 48
+      },
+      "result": "273,024 points, 0 off a torsion coset, 0 admissible, all degenerate, exponent rank <= 2",
+      "evidence": [
+        "agents/torsion_coset_probe/results/torsion_coset_H3_summary.json"
+      ],
+      "tag": "SEARCH-EVIDENCE",
+      "verified_by": [
+        "skeptic:traces/04_skeptic.md",
+        "verify_findings.py:torsion_probe_H2_first_ten_orbits"
+      ],
+      "state_after": {
+        "P3": "H <= 3"
+      }
+    },
+    {
+      "id": "A4",
+      "iteration": 1,
+      "problem": "P4",
+      "playbook": "bounded-search-with-sieve",
+      "agent": "point-hunter",
+      "trace": "traces/03_point_hunter.md",
+      "input": {
+        "curves": {
+          "C": 1000000,
+          "D": 300000,
+          "E0": 2000
+        }
+      },
+      "result": "no new point; E0 has 12 small points, none lifting",
+      "evidence": [
+        "agents/point_hunter/results/search_results.json"
+      ],
+      "tag": "SEARCH-EVIDENCE",
+      "verified_by": [
+        "skeptic:traces/04_skeptic.md",
+        "verify_findings.py:point_hunter_selftest_and_search"
+      ],
+      "state_after": {
+        "P4": 1000000
+      }
+    },
+    {
+      "id": "R1",
+      "iteration": 1,
+      "problem": "all",
+      "playbook": "adversarial-referee",
+      "agent": "skeptic",
+      "trace": "traces/04_skeptic.md",
+      "result": "four findings confirmed; two sentences downgraded; two reporting defects found and fixed",
+      "evidence": [
+        "results/skeptic_verdict.md"
+      ],
+      "tag": "referee",
+      "verified_by": [],
+      "state_after": {}
+    },
+    {
+      "id": "A6",
+      "iteration": 2,
+      "problem": "P3",
+      "playbook": "hypothesis-probe",
+      "agent": "torsion-coset-prober",
+      "trace": "traces/06_torsion_coset_prober_H4.md",
+      "input": {
+        "H": 4,
+        "orbits": 113,
+        "systems": 48,
+        "planned_by": "propose_next_attack(P3)"
+      },
+      "result": "662,528 points, 0 off a torsion coset, 0 admissible; exponent ranks {0:12928,1:419840,2:215936,3:13824}; iteration-1 sharpening (rank<=2) refuted; overflow guard corrected and validated on 18 H=3 checkpoints",
+      "evidence": [
+        "agents/torsion_coset_probe/results/torsion_coset_H4_summary.json",
+        "agents/torsion_coset_probe/results/torsion_coset_H4_examples.json"
+      ],
+      "tag": "SEARCH-EVIDENCE (Conjecture 8.6); PROVED (refutation of the rank<=2 sharpening, exact points)",
+      "verified_by": [
+        "self: brute-force/sympy cross-check 452/452; reproduction of 18 iteration-1 checkpoints"
+      ],
+      "state_after": {
+        "P3": "H <= 4"
+      }
+    }
+  ]
+}

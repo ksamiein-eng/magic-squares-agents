@@ -38,7 +38,9 @@
     },
     "conjecture_8_6_torsion_cosets": {
       "status": "open",
-      "evidence": "273,024 exact rational solutions at height <= 3, 0 exceptions, exponent rank <= 2",
+      "evidence": "273,024 solutions at H<=3 and 662,528 at H<=4, 0 exceptions",
+      "iteration_1_candidate_sharpening": "exponent rank <= 2",
+      "iteration_2": "sharpening refuted: 13,824 rank-3 points (orbits 0, 54); Conjecture 8.6 itself holds at H<=4",
       "tag": "SEARCH-EVIDENCE"
     },
     "genus5_curve_empty_height": {

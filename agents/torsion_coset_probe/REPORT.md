@@ -134,3 +134,7 @@ Caveat on strength of the evidence: at height <= 2 the only split prime availabl
 - H=3: exponent rank over ALL 273024 points: {0: 12928, 1: 204672, 2: 55424}. No point has rank 3 or 4: every rational point found lies on a torsion coset of a subtorus of dimension <= 2 (codimension >= 2), stronger than Conjecture 8.6 asks.
 
 Note: the H=3 grid as built by r4search.py has 16 projective values (0, +-1, +-2, +-1/2, +-3, +-1/3, +-3/2, +-2/3, inf), i.e. 4096 triples; runtimes: H=2 sweep 101 s, H=3 sweep 296 s, aggregation (incl. cross-checks) about 1 min each, on one core.
+
+## Iteration 2 (H=4)
+
+Second iteration extended the sweep to projective height H = 4 (24 grid values, 13824 triples, all 4 solved coordinates, all 48 signed systems) -- COMPLETE: 113/113 orbits. Results: **662528 points**, classes {'all_torsion': 12928, 'on_torsion_coset': 649600}, exponent ranks {'0': 12928, '1': 419840, '2': 215936, '3': 13824} (max rank 3), 23696 families with fixed-triple ranks {'0': 5792, '1': 14768, '2': 3136}, counterexample candidates 0 points / 0 families, admissible points 0. New split primes in the grid at H = 4: 17 and 25 = 5^2 (grid primes [5, 13, 17]). The H <= 3 int64 guard is invalid at H = 4 and was replaced by an asserted int64 range for det/Nc/Ns plus a float64 prefilter with exact Python-int re-test of the circle equation. Full details, verdict and overflow-guard statement: `REPORT_H4.md`; code `torsion_coset_probe_H4.py`; data `results/torsion_coset_H4_summary.json`, `results/torsion_coset_H4_examples.json`, `results/partial_H4/`.

@@ -40,7 +40,8 @@ mcp = FastMCP(
     "rational_circle",
     instructions=(
         "Tools, resources and prompts generated from the magic-squares-of-squares "
-        "rational-circle paper and its 16-stage verification tree. Use paper_overview "
+        "rational-circle paper and its 16-stage verification tree, plus the open-problem ledger, "
+        "the next-attack planner and the agent-added overlay stages. Use paper_overview or ledger_board "
         "first. Every numerical claim returned by a tool is exact (Python integers / "
         "Fractions / SymPy); 'evidence' fields are never proofs."
     ),
@@ -638,6 +639,69 @@ def read_specialist_report(agent: str) -> str:
     """Return the REPORT.md of one specialist agent (certificate_extender, torsion_coset_probe, point_hunter, ...)."""
     rep = AGENTS / agent / "REPORT.md"
     return rep.read_text(encoding="utf-8") if rep.exists() else f"no report for {agent!r}"
+
+
+# --------------------------------------------------------------------------- tools: ledger and loop
+
+LEDGER = ROOT / "ledger"
+
+
+@mcp.tool
+def ledger_board() -> dict:
+    """The open-problem ledger: every open target of the paper with its type, playbook, current state, acceptance criterion and next increment, plus every attack run so far with its evidence tag."""
+    return {"problems": read_json(LEDGER / "open_problems.json")["problems"],
+            "attacks": read_json(LEDGER / "attacks.json")["attacks"],
+            "playbooks": sorted(p.name for p in (ROOT / "playbooks").glob("*.md") if p.name != "README.md")}
+
+
+@mcp.tool
+def propose_next_attack(problem_id: str) -> dict:
+    """Rule-based planner: for a ledger problem, return the playbook, the agent, the concrete command for the next increment, its expected cost, and the strongest tag it can produce.
+
+    P1 -> certificate-extension at N+1; P3 -> hypothesis-probe at H+1; P4 -> bounded search at 10*B;
+    P2/P5/P6 -> automorphism-quotient-analysis with the inputs already computed.
+    """
+    probs = {p["id"]: p for p in read_json(LEDGER / "open_problems.json")["problems"]}
+    if problem_id not in probs:
+        return {"error": f"unknown problem {problem_id}", "known": sorted(probs)}
+    p = probs[problem_id]
+    st = p.get("state", {})
+    last = [v for v in st.values() if isinstance(v, int)]
+    plan = {"problem": problem_id, "playbook": p["playbook"], "best_tag_attainable": p["best_tag_attainable"], "acceptance": p["acceptance"]}
+    if p["type"] == "certificate-extension":
+        n = (max(last) if last else 7) + 1
+        plan.update(agent="certificate-extender", command=f"python agents/certificate_extender/build_degree{n}_certificate.py && python agents/certificate_extender/verify_degree{n}_stdlib.py",
+                    increment=f"exponent sum {n}", expected_cost="producer ~5-30 min on 5 cores (factoring dominates); checker ~2-5 min",
+                    stop_rule="a vanishing resultant or a factor without a witness prime < 257 becomes a new ledger problem")
+    elif p["type"] == "hypothesis-probe":
+        h = 4 if "H <= 3" in json.dumps(st) else 3
+        plan.update(agent="torsion-coset-prober", command=f"python agents/torsion_coset_probe/torsion_coset_probe.py {h}", increment=f"height {h}",
+                    expected_cost="~3.4x the previous height; summary JSON only", stop_rule="any NOT_on_torsion_coset point is re-verified exactly and becomes the headline")
+    elif p["type"] == "bounded-search":
+        b = (max(last) if last else 1500) * 10
+        plan.update(agent="point-hunter", command=f"python agents/point_hunter/hunt.py --curve C --H {b}", increment=f"height {b}",
+                    expected_cost="~10x the previous run (6 min at 10^6)", stop_rule="diminishing value beyond 10^7 for genus >= 2; hand over to the structural playbook")
+    else:
+        plan.update(agent="quotient-geometer", command="genus5_quotient_structure tool, then paper/research_record Sections on the orbit's projection curves",
+                    increment=p.get("next"), expected_cost="hours of a number theorist with Magma/Sage; inputs are ready in results/genus5_quotient_structure.json")
+    plan["ledger_next"] = p.get("next")
+    return plan
+
+
+@mcp.tool
+def run_overlay_stage(stage: str) -> dict:
+    """Run one agent-added stage of the paper's extended verification suite (paper_overlay/stages.json) in a temporary copy, exactly as verify_paper_plus.py does."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("verify_paper_plus", ROOT / "verify_paper_plus.py")
+    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    stages = {s["name"]: s for s in read_json(ROOT / "paper_overlay" / "stages.json")["stages"]}
+    if stage not in stages:
+        return {"error": f"unknown overlay stage {stage}", "known": sorted(stages)}
+    with tempfile.TemporaryDirectory(prefix="rc-ov-") as tmp:
+        out = Path(tmp); (out / "logs").mkdir()
+        r = mod.overlay_task(stages[stage], out)
+        r["log_tail"] = (out / r["log"]).read_text(encoding="utf-8", errors="replace")[-1500:]
+    return r
 
 
 # --------------------------------------------------------------------------- prompts

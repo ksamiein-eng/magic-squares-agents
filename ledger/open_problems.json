@@ -1,0 +1,102 @@
+{
+  "schema": "paper2attack/ledger/v1",
+  "paper": "Rational-circle rigidity for magic squares of squares (author-review draft, 13 Oct 2026)",
+  "tags": [
+    "PROVED",
+    "MACHINE-VERIFIED",
+    "DATABASE-QUOTED",
+    "SEARCH-EVIDENCE",
+    "CONJECTURAL"
+  ],
+  "problems": [
+    {
+      "id": "P1",
+      "label": "thm:main-two",
+      "statement": "Rigidity for r = 2: no admissible rational-circle point for A_{k,l;m,n}; proved by exact certificate for k+l <= N.",
+      "type": "certificate-extension",
+      "parameter": "N (exponent sum)",
+      "state": {
+        "paper": 7,
+        "iteration_1": 8,
+        "iteration_2": "pending"
+      },
+      "playbook": "playbooks/certificate-extension.md",
+      "acceptance": "independent standard-library checker PASS on the merged certificate; coverage of all raw forms re-derived",
+      "best_tag_attainable": "MACHINE-VERIFIED",
+      "next": "N+1 with the same producer/checker pair; stop when a resultant vanishes or a factor has no witness prime (that case is then a new open problem)"
+    },
+    {
+      "id": "P2",
+      "label": "conj:points",
+      "statement": "C(Q) = K: the genus-five curve Y^2 = P(h) has exactly eight rational points.",
+      "type": "structural",
+      "parameter": "none (a yes/no question)",
+      "state": {
+        "paper": "open; 'quadratic Chabauty missing'",
+        "iteration_1": "obstruction located: quotients E0=123.a1, E+=492.b1, E-=1968.j1 all rank 1; rank Jac(C) >= 3 proved; rank-zero descent and classical Chabauty on D excluded"
+      },
+      "playbook": "playbooks/automorphism-quotient-analysis.md",
+      "acceptance": "a complete rational-point computation (quadratic Chabauty on D, or elliptic Chabauty) accepted by an independent checker",
+      "best_tag_attainable": "PROVED",
+      "next": "quadratic Chabauty on D with the LMFDB generators (-7,18) on 492.b1 and (-2,3) on 1968.j1; needs Magma or Sage with the Balakrishnan-Dogra code; inputs are in results/genus5_quotient_structure.json"
+    },
+    {
+      "id": "P3",
+      "label": "conj:torsion",
+      "statement": "Every rational point of every solution variety lies on a torsion coset of a proper subtorus.",
+      "type": "hypothesis-probe",
+      "parameter": "H (projective height of three parameters)",
+      "state": {
+        "paper": "untested",
+        "iteration_1": "H <= 3: 273,024 points, 0 exceptions, exponent rank <= 2",
+        "iteration_2": "H <= 4: 662,528 points, 0 exceptions; candidate sharpening 'exponent rank <= 2' REFUTED (13,824 rank-3 points, orbits 0 and 54)"
+      },
+      "playbook": "playbooks/hypothesis-probe.md",
+      "acceptance": "either a counterexample re-verified by independent exact arithmetic, or the sharpened statement (exponent rank <= 2) surviving at the next height",
+      "best_tag_attainable": "SEARCH-EVIDENCE (a counterexample would be PROVED)",
+      "next": "H = 5 (overflow guard must be re-derived); prove rank < 4 symbolically on the identically-degenerate loci; characterise the rank-3 locus in orbits 0 and 54"
+    },
+    {
+      "id": "P4",
+      "label": "genus5-empty-region",
+      "statement": "No rational point of height <= B on C outside K.",
+      "type": "bounded-search",
+      "parameter": "B (height)",
+      "state": {
+        "paper": 1500,
+        "iteration_1": 1000000
+      },
+      "playbook": "playbooks/bounded-search-with-sieve.md",
+      "acceptance": "sieve self-test passes (planted points survive); exact square test on survivors; bound stated exactly",
+      "best_tag_attainable": "SEARCH-EVIDENCE",
+      "next": "B = 10^7 (about one hour at the measured rate); diminishing value: genus-5 points can have very large height"
+    },
+    {
+      "id": "P5",
+      "label": "prop:orbits / ten unresolved three-parameter orbits",
+      "statement": "Whole-orbit closure of B1, B2, C, D1, D2, D3, D4, E2, F+1, F+2 (six sufficient targets D1, D2, D3, D4, F+1, F+2).",
+      "type": "structural",
+      "state": {
+        "paper": "5 of 15 closed",
+        "iteration_1": "D1/B2/C/E2 reduced to P2; others untouched"
+      },
+      "playbook": "playbooks/automorphism-quotient-analysis.md",
+      "acceptance": "a rank-zero elliptic quotient with complete point list, or a Chabauty computation, per orbit",
+      "best_tag_attainable": "PROVED",
+      "next": "run the quotient analysis on the recorded projection curves of D2, D3, D4 (paper/research_record, Sections 'Exact nonlinear genera')"
+    },
+    {
+      "id": "P6",
+      "label": "thm:gentype for the other 112 orbits",
+      "statement": "Kodaira dimension of the solution surfaces of every four-parameter orbit; any rational surface would be a direct route to a counterexample.",
+      "type": "structural",
+      "state": {
+        "paper": "Hadamard orbit only"
+      },
+      "playbook": "playbooks/automorphism-quotient-analysis.md",
+      "acceptance": "Groebner-basis verification of the branch-curve hypotheses per orbit, as in verify_hadamard_types.py",
+      "best_tag_attainable": "MACHINE-VERIFIED",
+      "next": "automate verify_hadamard_types.py over orbit representatives; flag any orbit whose two relations share a component"
+    }
+  ]
+}

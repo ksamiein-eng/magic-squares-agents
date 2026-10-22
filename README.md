@@ -12,6 +12,32 @@ different angles, with an adversarial referee between the agents and the write-u
 > and leaves several machine-checkable targets open. This repository turns the paper into an
 > agent and sends agents at those targets.
 
+## The loop (what makes this infrastructure, not a demo)
+
+```
+ convert ──► ledger ──► attack ──► referee ──► absorb ──► iterate
+ Paper2MCP   open       one agent   skeptic     new stages  planner emits
+ 14 tools    problems   per         reruns,     in the      the next command
+ bound to    typed by   playbook,   tags every  paper's own (sum 8 → 9,
+ the paper's kind,      parallel,   claim       suite;      H 3 → 4, …)
+ own code    with next  exclusive              ledger +
+             increment  dirs                   lint + hashes
+```
+
+| Piece | Path | Role |
+|---|---|---|
+| Open-problem ledger | `ledger/open_problems.json`, `ledger/attacks.json` | Every open target of the paper, typed (certificate-extension, bounded-search, hypothesis-probe, structural), with state before/after, acceptance criterion, best attainable tag, and the next increment. Every attack run with its evidence and verifier. |
+| Playbooks | `playbooks/*.md` | Paper-agnostic strategies: when they apply, steps, acceptance, best tag, failure modes. The ledger's type names the playbook; the playbook names the agent. |
+| Planner | MCP tool `propose_next_attack(P1)` | Returns the playbook, agent, concrete command, cost and stop rule for the next increment. |
+| Referee contract | `tools/tag_lint.py` | Mechanical: every claim in the ledger, the write-up and the README table must carry a tag, an existing evidence file, a verifier, and (for MACHINE-VERIFIED) a passing stage. Fails the build otherwise. |
+| Absorb | `paper_overlay/stages.json`, `verify_paper_plus.py` | Accepted results become stages 17, 18, … of the paper's own verification suite, run through the paper's own runner in temporary copies. The paper stays byte-identical; the overlay is the diff the author merges. |
+| Reproduce | `verify_findings.py` | One command, six stages, all pass. |
+| Audit | `traces/`, `CLAIM_MAP.md`, `PROVENANCE.json`, `SHA256SUMS`, `STATUS.json` | Verbatim agent transcripts; claim → trace turn → re-check command → evidence → tag; hashes of everything. |
+
+Iteration 1 ran the loop once (results below). Iteration 2 was started with the planner's own
+commands (exponent sum 9, torsion probe at height 4) to show the loop turning again; see
+"Iteration 2" in `docs/RESULTS.md` for what it reached before the submission deadline.
+
 ## What is here
 
 | Layer | Path | What it does |
@@ -78,7 +104,7 @@ of general type. Everything else is open.
 |---|---|---|---|---|
 | Theorem 1.1, rigidity for r = 2 | exponent sum ≤ 7 (2,064 systems) | **exponent sum ≤ 8** (3,600 systems, 32 new representatives, independent stdlib checker PASS in 133 s) | MACHINE-VERIFIED | `agents/certificate_extender/` |
 | Conjecture 7.3, eight-point list on the genus-5 curve | "needs quadratic Chabauty" | curve splits: quotients E₀ = 123.a1, E₊ = 492.b1, E₋ = 1968.j1, all rank 1 (exact non-torsion witnesses; ranks database-quoted) ⇒ rank-zero descent cannot close it; it is a quadratic-Chabauty problem on a bielliptic genus-2 curve of rank 2 | MACHINE-VERIFIED + DATABASE-QUOTED | `results/genus5_quotient_structure.json` |
-| Conjecture 8.6, torsion-coset hypothesis | untested | 273,024 exact rational solutions at height ≤ 3, all 113 orbits, 48 systems: **0 off a torsion coset**, 0 admissible; exponent rank ≤ 2 | SEARCH-EVIDENCE | `agents/torsion_coset_probe/` |
+| Conjecture 8.6, torsion-coset hypothesis | untested | 273,024 exact rational solutions at height ≤ 3 and **662,528 at height ≤ 4**, all 113 orbits, 48 systems: **0 off a torsion coset**, 0 admissible. Iteration 1's candidate sharpening (exponent rank ≤ 2) was refuted by iteration 2 (rank-3 points in two orbits) | SEARCH-EVIDENCE | `agents/torsion_coset_probe/` |
 | Empty region on the genus-5 curve | height 1,500 | **height 1,000,000** on C (500 billion pairs, 6 min), 300,000 on the genus-2 quotient | SEARCH-EVIDENCE | `agents/point_hunter/` |
 
 Full one-page write-up: [`docs/RESULTS.md`](docs/RESULTS.md). Referee's verdict table:

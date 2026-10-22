@@ -1,0 +1,14 @@
+{
+  "schema": "paper2attack/overlay/v1",
+  "note": "Stages appended to the paper's 16-stage suite by verify_paper_plus.py. Each runs in a temporary copy of its agent directory; the shipped paper/ tree is never modified.",
+  "stages": [
+    {"name": "two_prime_sum8_stdlib", "dir": "agents/certificate_extender", "command": ["verify_degree8_stdlib.py"], "accept": "\"status\": \"PASS\"", "ledger": "A1",
+     "copy_results": ["certificate_degree8.json"], "certifies": "Theorem 1.1 for k+l <= 8 (3,600 signed systems)"},
+    {"name": "genus5_point_hunter_selftest", "dir": "agents/point_hunter", "command": ["hunt.py", "--selftest"], "accept": "SELFTEST PASSED", "ledger": "A4",
+     "certifies": "the sieve never discards a true point; identities P=FG, P/h^6=g(h^2+h^-2), D^2-(48h^2(1-h^2))^2=P"},
+    {"name": "torsion_coset_probe_H2_orbits_0_10", "dir": "agents/torsion_coset_probe", "command": ["torsion_coset_probe.py", "2", "0", "10"], "accept": "admissible 0", "reject": "NOT_on_torsion_coset': [1-9]", "ledger": "A3",
+     "certifies": "Conjecture 8.6 on every exact solution of the first ten orbits at height <= 2"},
+    {"name": "genus5_quotient_structure", "dir": "paper_mcp", "command": ["-c", "import sys,json,asyncio; sys.path.insert(0,'.'); from fastmcp import Client; from rational_circle_mcp import mcp\nasync def go():\n    async with Client(mcp) as c:\n        r=await c.call_tool('genus5_quotient_structure',{}); d=r.data if r.data is not None else json.loads(r.content[0].text)\n        ok=all(d['identities_verified'].values()) and all((q.get('infinite_order') or {}).get('torsion') is False for q in d['quotients'].values()) and all(q['lmfdb']['isomorphism_verified'] for q in d['quotients'].values())\n        print('QUOTIENT_STRUCTURE', 'PASS' if ok else 'FAIL')\nasyncio.run(go())"], "accept": "QUOTIENT_STRUCTURE PASS", "ledger": "A2",
+     "certifies": "quotient identities, Nagell-Lutz infinite-order witnesses, LMFDB isomorphisms"}
+  ]
+}

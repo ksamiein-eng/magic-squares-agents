@@ -74,9 +74,9 @@ H = 3: 273,024 distinct points (12,928 all-torsion, 260,096 on a torsion coset,
 **0 off every torsion coset**), 15,152 free-angle families all with an identically vanishing
 row, 0 admissible points; every point has a vanishing sine *and* two equal magnitudes
 [MACHINE-VERIFIED, `agents/torsion_coset_probe/results/torsion_coset_H3_summary.json`;
-cross-checked on 400-point samples by bounded brute force]. Stronger than conjectured: the
-exponent rank never exceeds 2, so every point lies on a torsion coset of a subtorus of
-dimension ≤ 2. Caveat: at height ≤ 3 the grid carries only the split primes 5 and 13, so this
+cross-checked on 400-point samples by bounded brute force]. At height ≤ 3 the exponent rank
+never exceeded 2, which iteration 1 recorded as a candidate sharpening; iteration 2 refuted
+it (below). Caveat: at height ≤ 3 the grid carries only the split primes 5 and 13, so this
 is evidence at small height [SEARCH-EVIDENCE for Conjecture 8.6].
 
 **4. No new rational point on C (point-hunter).**
@@ -88,6 +88,32 @@ in 6 minutes (300,000 in 37 s), and D to height 300,000: no point outside the kn
 the sieve]. E₀ has 12 small rational points, none lifting to C except s = 2. The 3,000-height
 search inside the MCP server agrees
 [MACHINE-VERIFIED, `results/genus5_point_search_H3000.json`].
+
+## Iteration 2: the loop turns again
+
+The planner tool emitted the next increments from the ledger (`propose_next_attack`): exponent
+sum 9 for Theorem 1.1 and height 4 for the torsion-coset probe. Both were launched with the same
+playbooks and agents, with a 40-minute budget before the submission deadline.
+**Torsion probe at height 4 (complete, 113/113 orbits, 368 s on 6 workers).** 662,528 distinct
+rational points (24 grid values, 13,824 triples): 12,928 all-torsion, 649,600 on a torsion
+coset, **0 off every torsion coset**, 0 admissible, every point degenerate; 23,696 free-angle
+families, none a counterexample. Conjecture 8.6 holds at H ≤ 4 [SEARCH-EVIDENCE,
+`agents/torsion_coset_probe/results/torsion_coset_H4_summary.json`]. The int64 overflow guard
+valid at H ≤ 3 was found invalid at H = 4 (row coefficients reach 15,625) and replaced by an
+asserted range plus an exact re-test; the new script reproduces 18 iteration-1 checkpoints
+exactly. **The sharpening proposed by iteration 1 is false:** 13,824 points have exponent
+rank 3 (orbits 0 and 54, solved coordinate ±1/13), so rational points do reach torsion cosets
+of 3-dimensional subtori; only the conjecture's own bound (rank < 4) survives
+[MACHINE-VERIFIED refutation of the candidate sharpening, `torsion_coset_H4_examples.json`].
+{{SUM9_PARAGRAPH}}
+
+## Infrastructure
+
+The open-problem ledger types each target and names its playbook; the playbooks are
+paper-agnostic; the planner turns ledger state into the next command; the tag linter refuses
+any claim without a tag, an evidence file, a verifier and (for MACHINE-VERIFIED) a passing
+stage; the overlay runner absorbs accepted results as stages 17+ of the paper's own suite
+without touching the paper; traces, claim map and provenance make every step auditable.
 
 ## The referee's verdict
 
@@ -102,8 +128,9 @@ and flagged two reporting defects that were fixed (`results/skeptic_verdict.md`)
 Theorem 1.1 moved from exponent sum 7 to 8 (one more proved case of rigidity for r = 2).
 Conjecture 7.3 did not move, but its obstruction is now precise: three rank-1 elliptic
 quotients identified, so the next step is quadratic Chabauty, not descent. Conjecture 8.6
-gained its first systematic evidence (273,024 points, no exception) and a sharper form
-(exponent rank ≤ 2). The empty region on C grew from height 1,500 to 1,000,000. Each of these
+gained its first systematic evidence (273,024 points at height 3, 662,528 at height 4, no
+exception); a sharper form proposed after height 3 was refuted at height 4, which is the loop
+working as intended. The empty region on C grew from height 1,500 to 1,000,000. Each of these
 took one specialist under 20 minutes of compute; the paper's proof records were not touched.
 
 ## Audit trail

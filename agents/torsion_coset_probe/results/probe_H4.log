@@ -1,0 +1,185 @@
+=== sweep H=4: 24 grid values, 13824 triples, 113 orbits, 6 workers ===
+0 checkpoints present, 113 orbits to do
+orbit   5 (1/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, -1), (1, 1, -1, -1)]: 4384 points {'on_torsion_coset': 4256, 'all_torsion': 128} ranks {1: 4256, 0: 128}, 96 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 55.2s, wall 67s
+orbit   6 (2/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, -1), (1, 1, -1, 0)]: 6528 points {'all_torsion': 192, 'on_torsion_coset': 6336} ranks {0: 192, 1: 6336}, 128 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 8.9s, wall 76s
+orbit   1 (3/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 22560 points {'all_torsion': 192, 'on_torsion_coset': 22368} ranks {0: 192, 1: 12384, 2: 9984}, 672 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 70.3s, wall 78s
+orbit   3 (4/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 11008 points {'all_torsion': 128, 'on_torsion_coset': 10880} ranks {0: 128, 1: 6144, 2: 4736}, 528 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1392750552, brute 4/4, 71.3s, wall 82s
+orbit   8 (5/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 3744 points {'on_torsion_coset': 3616, 'all_torsion': 128} ranks {1: 3616, 0: 128}, 96 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1306680000, brute 4/4, 17.7s, wall 96s
+orbit   7 (6/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 0), (1, 1, -1, 1)]: 5984 points {'all_torsion': 192, 'on_torsion_coset': 5792} ranks {0: 192, 1: 5792}, 128 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 22.8s, wall 99s
+orbit   4 (7/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 14880 points {'all_torsion': 192, 'on_torsion_coset': 14688} ranks {0: 192, 1: 8032, 2: 6656}, 672 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 87.5s, wall 99s
+orbit   9 (8/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 5792 points {'all_torsion': 96, 'on_torsion_coset': 5696} ranks {0: 96, 1: 3392, 2: 2304}, 288 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 24.1s, wall 106s
+orbit   2 (9/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 21536 points {'all_torsion': 192, 'on_torsion_coset': 21344} ranks {0: 192, 1: 11872, 2: 9472}, 672 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 98.7s, wall 109s
+orbit  13 (10/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 4416 points {'all_torsion': 96, 'on_torsion_coset': 4320} ranks {0: 96, 1: 2528, 2: 1792}, 288 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1220145000, brute 4/4, 7.9s, wall 114s
+orbit  11 (11/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1)]: 6528 points {'all_torsion': 128, 'on_torsion_coset': 6400} ranks {0: 128, 1: 3712, 2: 2688}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 17.8s, wall 117s
+orbit  15 (12/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, 1)]: 2432 points {'all_torsion': 96, 'on_torsion_coset': 2336} ranks {0: 96, 1: 2336}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 3.7s, wall 118s
+orbit  14 (13/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, -1)]: 2336 points {'all_torsion': 96, 'on_torsion_coset': 2240} ranks {0: 96, 1: 2240}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 10.0s, wall 119s
+orbit  12 (14/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 4416 points {'all_torsion': 96, 'on_torsion_coset': 4320} ranks {0: 96, 1: 2528, 2: 1792}, 288 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1268800152, brute 4/4, 20.0s, wall 119s
+orbit  10 (15/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1)]: 10688 points {'all_torsion': 128, 'on_torsion_coset': 10560} ranks {0: 128, 1: 6336, 2: 4224}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 35.5s, wall 131s
+orbit  16 (16/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 0, -1)]: 3008 points {'all_torsion': 128, 'on_torsion_coset': 2880} ranks {0: 128, 1: 2880}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 14.3s, wall 131s
+orbit  19 (17/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 12928 points {'all_torsion': 128, 'on_torsion_coset': 12800} ranks {0: 128, 1: 6528, 2: 6272}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1299787776, brute 4/4, 16.4s, wall 136s
+orbit  18 (18/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 1)]: 4416 points {'all_torsion': 96, 'on_torsion_coset': 4320} ranks {0: 96, 1: 2528, 2: 1792}, 288 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1342300152, brute 4/4, 21.1s, wall 140s
+orbit  23 (19/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, 0)]: 2080 points {'on_torsion_coset': 1984, 'all_torsion': 96} ranks {1: 1984, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 10.3s, wall 150s
+orbit  20 (20/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 4416 points {'all_torsion': 96, 'on_torsion_coset': 4320} ranks {0: 96, 1: 2528, 2: 1792}, 288 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 19.8s, wall 151s
+orbit  22 (21/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, -1)]: 4352 points {'on_torsion_coset': 4224, 'all_torsion': 128} ranks {1: 4224, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1299787776, brute 4/4, 19.5s, wall 156s
+orbit  25 (22/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 0, -1)]: 2144 points {'all_torsion': 96, 'on_torsion_coset': 2048} ranks {0: 96, 1: 2048}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1392750552, brute 4/4, 7.0s, wall 158s
+orbit   0 (23/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 87392 points {'all_torsion': 192, 'on_torsion_coset': 87200} ranks {0: 192, 1: 24992, 2: 52992, 3: 9216}, 3920 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 155.2s, wall 162s
+orbit  21 (24/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 1)]: 8096 points {'all_torsion': 128, 'on_torsion_coset': 7968} ranks {0: 128, 1: 4384, 2: 3584}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1168537776, brute 4/4, 35.0s, wall 166s
+orbit  24 (25/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, 1)]: 4512 points {'on_torsion_coset': 4384, 'all_torsion': 128} ranks {1: 4384, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1168537776, brute 4/4, 21.4s, wall 172s
+orbit  29 (26/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0)]: 10432 points {'all_torsion': 128, 'on_torsion_coset': 10304} ranks {0: 128, 1: 6080, 2: 4224}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 16.4s, wall 183s
+orbit  26 (27/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 0, 0)]: 6336 points {'all_torsion': 192, 'on_torsion_coset': 6144} ranks {0: 192, 1: 6144}, 128 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 836625552, brute 4/4, 27.7s, wall 183s
+orbit  30 (28/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, -1)]: 2144 points {'all_torsion': 96, 'on_torsion_coset': 2048} ranks {0: 96, 1: 2048}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 12.3s, wall 184s
+orbit  17 (29/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 0)]: 22912 points {'all_torsion': 192, 'on_torsion_coset': 22720} ranks {0: 192, 1: 11968, 2: 10752}, 768 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 836625552, brute 4/4, 70.0s, wall 188s
+orbit  32 (30/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 1)]: 2368 points {'all_torsion': 96, 'on_torsion_coset': 2272} ranks {0: 96, 1: 2272}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 4.9s, wall 188s
+orbit  34 (31/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 0)]: 1632 points {'on_torsion_coset': 1536, 'all_torsion': 96} ranks {1: 1536, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1306680000, brute 4/4, 2.8s, wall 190s
+orbit  28 (32/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 0), (1, 1, -1, 1)]: 6848 points {'all_torsion': 192, 'on_torsion_coset': 6656} ranks {0: 192, 1: 6656}, 128 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 705180000, brute 4/4, 28.8s, wall 191s
+orbit  27 (33/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 0), (1, -1, 1, 1)]: 12672 points {'all_torsion': 192, 'on_torsion_coset': 12480} ranks {0: 192, 1: 7104, 2: 5376}, 768 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 705180000, brute 4/4, 36.8s, wall 195s
+orbit  31 (34/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 0)]: 2656 points {'all_torsion': 128, 'on_torsion_coset': 2528} ranks {0: 128, 1: 2528}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 13.1s, wall 196s
+orbit  33 (35/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, -1)]: 3584 points {'on_torsion_coset': 3456, 'all_torsion': 128} ranks {1: 3456, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1057770000, brute 4/4, 19.8s, wall 204s
+orbit  37 (36/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, -1, 1)]: 2272 points {'all_torsion': 96, 'on_torsion_coset': 2176} ranks {0: 96, 1: 2176}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 13.0s, wall 204s
+orbit  39 (37/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, 1)]: 3136 points {'all_torsion': 128, 'on_torsion_coset': 3008} ranks {0: 128, 1: 3008}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 12.3s, wall 208s
+orbit  40 (38/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 1, -1)]: 1952 points {'all_torsion': 96, 'on_torsion_coset': 1856} ranks {0: 96, 1: 1856}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1306680000, brute 4/4, 6.6s, wall 210s
+orbit  38 (39/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, -1)]: 6208 points {'all_torsion': 128, 'on_torsion_coset': 6080} ranks {0: 128, 1: 5056, 2: 1024}, 96 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 16.0s, wall 211s
+orbit  35 (40/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 4672 points {'on_torsion_coset': 4544, 'all_torsion': 128} ranks {1: 4544, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1057770000, brute 4/4, 22.7s, wall 211s
+orbit  36 (41/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, 0, 0)]: 4928 points {'on_torsion_coset': 4736, 'all_torsion': 192} ranks {1: 4736, 0: 192}, 128 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 664020000, brute 4/4, 24.0s, wall 215s
+orbit  45 (42/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 1, -1)]: 5568 points {'all_torsion': 96, 'on_torsion_coset': 5472} ranks {0: 96, 1: 3168, 2: 2304}, 288 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 12.6s, wall 224s
+orbit  42 (43/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 1, -1)]: 12128 points {'all_torsion': 128, 'on_torsion_coset': 12000} ranks {0: 128, 1: 6624, 2: 5376}, 288 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1057770000, brute 4/4, 16.7s, wall 225s
+orbit  46 (44/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, 1, -1, 1)]: 2560 points {'on_torsion_coset': 2464, 'all_torsion': 96} ranks {1: 2464, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 14.3s, wall 229s
+orbit  47 (45/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, 1, 0, -1)]: 3232 points {'all_torsion': 128, 'on_torsion_coset': 3104} ranks {0: 128, 1: 3104}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 11.6s, wall 235s
+orbit  41 (46/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 0, 0)]: 18336 points {'all_torsion': 192, 'on_torsion_coset': 18144} ranks {0: 192, 1: 10976, 2: 7168}, 576 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 705180000, brute 4/4, 32.1s, wall 237s
+orbit  48 (47/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 1, -1, 1)]: 7936 points {'all_torsion': 128, 'on_torsion_coset': 7808} ranks {0: 128, 1: 5504, 2: 2304}, 192 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 13.3s, wall 238s
+orbit  44 (48/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 0, 1)]: 6528 points {'all_torsion': 128, 'on_torsion_coset': 6400} ranks {0: 128, 1: 3712, 2: 2688}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 27.9s, wall 239s
+orbit  53 (49/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, 1, -1, 1), (1, 1, 1, -1)]: 4320 points {'all_torsion': 96, 'on_torsion_coset': 4224} ranks {0: 96, 1: 2816, 2: 1408}, 144 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 8.5s, wall 247s
+orbit  43 (50/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 0, -1)]: 9312 points {'all_torsion': 128, 'on_torsion_coset': 9184} ranks {0: 128, 1: 5472, 2: 3712}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 38.0s, wall 249s
+orbit  51 (51/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 1, -1), (1, 1, -1, 1)]: 2272 points {'on_torsion_coset': 2176, 'all_torsion': 96} ranks {1: 2176, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 12.1s, wall 249s
+orbit  50 (52/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, 1, -1, 1)]: 3328 points {'all_torsion': 128, 'on_torsion_coset': 3200} ranks {0: 128, 1: 3200}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 14.9s, wall 250s
+orbit  52 (53/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 1, -1), (1, 1, 0, -1)]: 2624 points {'all_torsion': 128, 'on_torsion_coset': 2496} ranks {0: 128, 1: 2496}, 64 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 850965000, brute 4/4, 12.1s, wall 251s
+orbit  49 (54/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, -1, 1, -1)]: 6528 points {'all_torsion': 128, 'on_torsion_coset': 6400} ranks {0: 128, 1: 3712, 2: 2688}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 834375000, brute 4/4, 26.6s, wall 256s
+orbit  58 (55/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1)]: 1328 points {'all_torsion': 80, 'on_torsion_coset': 1248} ranks {0: 80, 1: 1248}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 7.9s, wall 259s
+orbit  57 (56/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1)]: 1424 points {'all_torsion': 80, 'on_torsion_coset': 1344} ranks {0: 80, 1: 1344}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 8.0s, wall 259s
+orbit  56 (57/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 5216 points {'all_torsion': 96, 'on_torsion_coset': 5120} ranks {0: 96, 1: 3328, 2: 1792}, 144 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1360875000, brute 4/4, 10.4s, wall 259s
+orbit  62 (58/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, -1, 1)]: 976 points {'all_torsion': 80, 'on_torsion_coset': 896} ranks {0: 80, 1: 896}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1306680000, brute 4/4, 6.4s, wall 266s
+orbit  59 (59/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 1920 points {'all_torsion': 96, 'on_torsion_coset': 1824} ranks {0: 96, 1: 1824}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 10.1s, wall 266s
+orbit  55 (60/113) rows=[(0, 0, 1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 1)]: 11936 points {'all_torsion': 128, 'on_torsion_coset': 11808} ranks {0: 128, 1: 6432, 2: 5376}, 384 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 877590000, brute 4/4, 18.3s, wall 267s
+orbit  61 (61/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, -1, -1)]: 1616 points {'all_torsion': 80, 'on_torsion_coset': 1536} ranks {0: 80, 1: 1536}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 9.3s, wall 268s
+orbit  64 (62/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, 1, 1)]: 1296 points {'all_torsion': 80, 'on_torsion_coset': 1216} ranks {0: 80, 1: 1216}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1220145000, brute 4/4, 3.2s, wall 269s
+orbit  60 (63/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 2528 points {'all_torsion': 96, 'on_torsion_coset': 2432} ranks {0: 96, 1: 2432}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 10.9s, wall 270s
+orbit  63 (64/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, 1, -1)]: 1200 points {'all_torsion': 80, 'on_torsion_coset': 1120} ranks {0: 80, 1: 1120}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 6.9s, wall 273s
+orbit  65 (65/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, -1)]: 2656 points {'all_torsion': 96, 'on_torsion_coset': 2560} ranks {0: 96, 1: 2560}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 6.7s, wall 274s
+orbit  67 (66/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 0, -1)]: 1008 points {'all_torsion': 80, 'on_torsion_coset': 928} ranks {0: 80, 1: 928}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 6.1s, wall 275s
+orbit  66 (67/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, 1)]: 1792 points {'all_torsion': 96, 'on_torsion_coset': 1696} ranks {0: 96, 1: 1696}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 8.8s, wall 277s
+orbit  68 (68/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 1, -1)]: 1984 points {'on_torsion_coset': 1888, 'all_torsion': 96} ranks {1: 1888, 0: 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 9.4s, wall 279s
+orbit  69 (69/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 1, 1)]: 1888 points {'all_torsion': 96, 'on_torsion_coset': 1792} ranks {0: 96, 1: 1792}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 9.0s, wall 281s
+orbit  70 (70/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 1)]: 2208 points {'all_torsion': 96, 'on_torsion_coset': 2112} ranks {0: 96, 1: 2112}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1360875000, brute 4/4, 10.4s, wall 284s
+orbit  72 (71/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 2144 points {'on_torsion_coset': 2048, 'all_torsion': 96} ranks {1: 2048, 0: 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1360875000, brute 4/4, 9.8s, wall 286s
+orbit  74 (72/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 0, 1, -1)]: 1568 points {'all_torsion': 96, 'on_torsion_coset': 1472} ranks {0: 96, 1: 1472}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 7.9s, wall 289s
+orbit  71 (73/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 3616 points {'on_torsion_coset': 3488, 'all_torsion': 128} ranks {1: 3488, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1392750552, brute 4/4, 15.1s, wall 290s
+orbit  75 (74/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 0, 1, 1)]: 2240 points {'on_torsion_coset': 2144, 'all_torsion': 96} ranks {1: 2144, 0: 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1360875000, brute 4/4, 7.6s, wall 292s
+orbit  78 (75/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0)]: 1552 points {'all_torsion': 80, 'on_torsion_coset': 1472} ranks {0: 80, 1: 1472}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 6.2s, wall 297s
+orbit  77 (76/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 1, 0)]: 1632 points {'all_torsion': 96, 'on_torsion_coset': 1536} ranks {0: 96, 1: 1536}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 7.9s, wall 297s
+orbit  73 (77/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 1)]: 4576 points {'on_torsion_coset': 4448, 'all_torsion': 128} ranks {1: 4448, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1392750552, brute 4/4, 18.3s, wall 297s
+orbit  80 (78/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 0, -1, 1)]: 912 points {'all_torsion': 80, 'on_torsion_coset': 832} ranks {0: 80, 1: 832}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 5.2s, wall 302s
+orbit  79 (79/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 1)]: 2432 points {'all_torsion': 96, 'on_torsion_coset': 2336} ranks {0: 96, 1: 2336}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1303125000, brute 4/4, 10.2s, wall 302s
+orbit  81 (80/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 0, 1, -1)]: 912 points {'all_torsion': 80, 'on_torsion_coset': 832} ranks {0: 80, 1: 832}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1220145000, brute 4/4, 5.1s, wall 302s
+orbit  76 (81/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 1, -1)]: 4320 points {'all_torsion': 128, 'on_torsion_coset': 4192} ranks {0: 128, 1: 4192}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1392750552, brute 4/4, 16.0s, wall 303s
+orbit  82 (82/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 1)]: 4512 points {'all_torsion': 96, 'on_torsion_coset': 4416} ranks {0: 96, 1: 2624, 2: 1792}, 96 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1253514600, brute 4/4, 10.1s, wall 308s
+orbit  83 (83/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, 1, -1)]: 2304 points {'all_torsion': 96, 'on_torsion_coset': 2208} ranks {0: 96, 1: 2208}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1303125000, brute 4/4, 9.1s, wall 311s
+orbit  84 (84/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 0, -1, -1)]: 4416 points {'all_torsion': 96, 'on_torsion_coset': 4320} ranks {0: 96, 1: 2528, 2: 1792}, 192 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 9.6s, wall 312s
+orbit  87 (85/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 0)]: 1856 points {'all_torsion': 96, 'on_torsion_coset': 1760} ranks {0: 96, 1: 1760}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1377465000, brute 4/4, 8.3s, wall 316s
+orbit  85 (86/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 0, 1, 1)]: 4416 points {'all_torsion': 96, 'on_torsion_coset': 4320} ranks {0: 96, 1: 2528, 2: 1792}, 192 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1303125000, brute 4/4, 17.6s, wall 320s
+orbit  89 (87/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, 1, 1)]: 7168 points {'all_torsion': 128, 'on_torsion_coset': 7040} ranks {0: 128, 1: 4096, 2: 2944}, 144 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 9.7s, wall 321s
+orbit  88 (88/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 4032 points {'on_torsion_coset': 3904, 'all_torsion': 128} ranks {1: 3904, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1306680000, brute 4/4, 12.2s, wall 323s
+orbit  91 (89/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, -1, 0)]: 1040 points {'all_torsion': 80, 'on_torsion_coset': 960} ranks {0: 80, 1: 960}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1126500000, brute 4/4, 6.2s, wall 326s
+orbit  93 (90/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, -1, 0)]: 1200 points {'all_torsion': 80, 'on_torsion_coset': 1120} ranks {0: 80, 1: 1120}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 6.2s, wall 329s
+orbit  94 (91/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 0, -1)]: 624 points {'all_torsion': 80, 'on_torsion_coset': 544} ranks {0: 80, 1: 544}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1306680000, brute 4/4, 4.4s, wall 331s
+orbit  92 (92/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, 1, 1)]: 4416 points {'all_torsion': 96, 'on_torsion_coset': 4320} ranks {0: 96, 1: 2528, 2: 1792}, 192 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1360875000, brute 4/4, 10.1s, wall 332s
+orbit  90 (93/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, -1, -1)]: 5792 points {'all_torsion': 96, 'on_torsion_coset': 5696} ranks {0: 96, 1: 3392, 2: 2304}, 192 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1360875000, brute 4/4, 17.6s, wall 334s
+orbit  97 (94/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, -1), (1, 1, -1, 0)]: 2304 points {'all_torsion': 96, 'on_torsion_coset': 2208} ranks {0: 96, 1: 2208}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1360875000, brute 4/4, 3.8s, wall 335s
+orbit  96 (95/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 1, 0)]: 912 points {'all_torsion': 80, 'on_torsion_coset': 832} ranks {0: 80, 1: 832}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 4.9s, wall 336s
+orbit  95 (96/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 1, -1)]: 1440 points {'all_torsion': 96, 'on_torsion_coset': 1344} ranks {0: 96, 1: 1344}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1253514600, brute 4/4, 6.6s, wall 336s
+orbit  86 (97/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, -1)]: 15200 points {'all_torsion': 128, 'on_torsion_coset': 15072} ranks {0: 128, 1: 7648, 2: 7424}, 144 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 37.0s, wall 340s
+orbit  99 (98/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, -1)]: 720 points {'all_torsion': 80, 'on_torsion_coset': 640} ranks {0: 80, 1: 640}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1126500000, brute 4/4, 4.6s, wall 340s
+orbit 100 (99/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 1, -1)]: 1760 points {'all_torsion': 96, 'on_torsion_coset': 1664} ranks {0: 96, 1: 1664}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1246215000, brute 4/4, 7.4s, wall 343s
+orbit  54 (100/113) rows=[(0, 0, 1, -1), (1, -1, -1, 1), (1, -1, 0, 0), (1, -1, 1, -1)]: 52992 points {'all_torsion': 192, 'on_torsion_coset': 52800} ranks {0: 192, 1: 18368, 2: 29824, 3: 4608}, 4608 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 705180000, brute 4/4, 96.7s, wall 344s
+orbit  98 (101/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, -1), (1, 1, -1, 1)]: 4288 points {'on_torsion_coset': 4160, 'all_torsion': 128} ranks {1: 4160, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1347840000, brute 4/4, 11.6s, wall 345s
+orbit 103 (102/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, -1, 1)]: 1104 points {'all_torsion': 80, 'on_torsion_coset': 1024} ranks {0: 80, 1: 1024}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 937500000, brute 4/4, 5.5s, wall 345s
+orbit 102 (103/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, -1, -1)]: 1232 points {'all_torsion': 80, 'on_torsion_coset': 1152} ranks {0: 80, 1: 1152}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 937500000, brute 4/4, 7.0s, wall 347s
+orbit 101 (104/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 1, -1)]: 3264 points {'on_torsion_coset': 3136, 'all_torsion': 128} ranks {1: 3136, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1306680000, brute 4/4, 12.3s, wall 348s
+orbit 106 (105/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, 0, 1, -1), (1, 1, 0, 1)]: 1488 points {'all_torsion': 80, 'on_torsion_coset': 1408} ranks {0: 80, 1: 1408}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 864000000, brute 4/4, 3.4s, wall 349s
+orbit 104 (106/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, 1, 1)]: 976 points {'all_torsion': 80, 'on_torsion_coset': 896} ranks {0: 80, 1: 896}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 900750000, brute 4/4, 5.6s, wall 349s
+orbit 105 (107/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, 0, -1, -1)]: 1488 points {'all_torsion': 80, 'on_torsion_coset': 1408} ranks {0: 80, 1: 1408}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 937500000, brute 4/4, 8.0s, wall 352s
+orbit 107 (108/113) rows=[(0, 1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0), (1, -1, 1, 1)]: 1776 points {'all_torsion': 80, 'on_torsion_coset': 1696} ranks {0: 80, 1: 1696}, 24 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1200000000, brute 4/4, 7.2s, wall 353s
+orbit 108 (109/113) rows=[(0, 1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0), (1, 0, 1, 1)]: 1488 points {'all_torsion': 80, 'on_torsion_coset': 1408} ranks {0: 80, 1: 1408}, 32 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 900750000, brute 4/4, 7.9s, wall 355s
+orbit 109 (110/113) rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, -1, 1, 1)]: 960 points {'all_torsion': 128, 'on_torsion_coset': 832} ranks {0: 128, 1: 832}, 0 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1299787776, brute 4/4, 12.9s, wall 361s
+orbit 110 (111/113) rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, -1)]: 6912 points {'all_torsion': 128, 'on_torsion_coset': 6784} ranks {0: 128, 1: 6784}, 0 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1168537776, brute 4/4, 14.0s, wall 363s
+orbit 112 (112/113) rows=[(1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1), (1, 1, 1, -1)]: 5760 points {'all_torsion': 128, 'on_torsion_coset': 5632} ranks {0: 128, 1: 5632}, 0 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 885360000, brute 4/4, 10.3s, wall 363s
+orbit 111 (113/113) rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 1)]: 7808 points {'all_torsion': 128, 'on_torsion_coset': 7680} ranks {0: 128, 1: 7680}, 0 families (indep-fixed 0, nondeg 0), admissible 0, counterex 0, maxdet 1299787776, brute 4/4, 19.2s, wall 368s
+sweep done in 368s wall
+aggregate written to C:\Users\kimia\magic-squares-agents\agents\torsion_coset_probe\results\torsion_coset_H4_summary.json (partial=False, 113/113 orbits)
+{
+ "totals": {
+  "points": 662528,
+  "families": 23696,
+  "elapsed_s": 2097.399999999999
+ },
+ "points_by_class": {
+  "all_torsion": 12928,
+  "on_torsion_coset": 649600
+ },
+ "points_by_exponent_rank": {
+  "0": 12928,
+  "1": 419840,
+  "2": 215936,
+  "3": 13824
+ },
+ "points_by_number_of_torsion_coordinates": {
+  "4": 12928,
+  "3": 115840,
+  "2": 88096,
+  "1": 253440,
+  "0": 192224
+ },
+ "points_by_degeneracy": {
+  "zero_sine": 0,
+  "equal_magnitudes": 0,
+  "both": 662528,
+  "neither": 0
+ },
+ "points_by_branch": {
+  "cramer": 476000,
+  "singular": 393120
+ },
+ "families_by_degeneracy": {
+  "row_identically_zero": 23696
+ },
+ "families_by_rank_of_fixed_triple": {
+  "0": 5792,
+  "1": 14768,
+  "2": 3136
+ },
+ "system_evaluations": {
+  "systems": 21696,
+  "cramer_hits": 4816128,
+  "singular_cases": 16768192,
+  "singular_hits": 6491136,
+  "allzero_systems": 142176,
+  "prefilter_candidates": 16802384
+ },
+ "overflow_guard": {
+  "max_abs_row_coeff": 15625,
+  "max_abs_det_Nc_Ns": 1392750552,
+  "int64_limit": 9223372036854775807,
+  "circle_test": "float64 prefilter |Nc^2+Ns^2-det^2|<1e6 then exact Python-int re-test"
+ },
+ "split_primes_in_grid": [
+  5,
+  13,
+  17
+ ],
+ "split_primes_in_all_supports_incl_solved_coord": [
+  5,
+  13,
+  17
+ ],
+ "admissible_points": 0
+}
+counterexample candidate points: 0  families: 0  brute: 452 checked 452 agree

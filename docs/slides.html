@@ -89,6 +89,22 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
 </section>
 
 <section class="slide">
+  <h2>The loop: convert → ledger → attack → referee → absorb → iterate</h2>
+  <div class="cols">
+    <div>
+      <div class="box"><p><b>Ledger.</b> Every open target typed: certificate-extension, bounded-search, hypothesis-probe, structural. State, acceptance, best tag, next increment.</p></div>
+      <div class="box"><p><b>Playbooks.</b> Paper-agnostic strategies with acceptance criteria and failure modes. Type → playbook → agent.</p></div>
+      <div class="box"><p><b>Planner.</b> <code>propose_next_attack(P1)</code> → "exponent sum 9, this command, this cost, this stop rule".</p></div>
+    </div>
+    <div>
+      <div class="box"><p><b>Referee contract.</b> <code>tag_lint.py</code> fails the build if any claim lacks a tag, an evidence file, a verifier, or a passing stage.</p></div>
+      <div class="box"><p><b>Absorb.</b> Accepted results become stages 17+ of the paper's own verification suite, run by the paper's own runner. The paper stays byte-identical.</p></div>
+      <div class="box"><p><b>Iterate.</b> Iteration 2 (sum 9, height 4) was launched by the planner's own commands before the deadline.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
   <h2>Finding 1 — the curve has symmetries the paper did not use</h2>
   <div class="cols">
     <div>
@@ -113,7 +129,7 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
 <section class="slide">
   <h2>Findings 2–4 — pushing the certified region</h2>
   <div class="box"><p><b>Certificate extender.</b> Theorem 1.1 extended from exponent sum 7 to <b>8</b>: 32 new representatives, 1,536 new signed systems, 296,880 exact Sylvester determinants, largest witness prime still 19; independent stdlib checker <b>PASS</b> in 133 s. <span class="tag MV">MACHINE-VERIFIED</span></p></div>
-  <div class="box"><p><b>Torsion prober.</b> Conjecture 8.6 tested on <b>273,024</b> exact rational solutions (all 113 orbits, 48 systems, height ≤ 3): 0 off a torsion coset, 0 admissible, every point degenerate twice over; exponent rank never above 2. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
+  <div class="box"><p><b>Torsion prober.</b> Conjecture 8.6 tested on <b>273,024</b> exact rational solutions at height ≤ 3 and <b>662,528</b> at height ≤ 4 (all 113 orbits, 48 systems): 0 off a torsion coset, 0 admissible. Iteration 1 proposed a sharper form (rank ≤ 2); iteration 2 refuted it (rank-3 points in two orbits). The loop corrected itself. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
   <div class="box"><p><b>Point hunter.</b> Sieved exact search: no new point on C to height <b>1,000,000</b> (500 billion pairs, 6 min), none on the genus-2 quotient to 300,000; 12 small points on E₀, none lifting. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
 </section>
 
@@ -138,7 +154,7 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
     <div>
       <div class="box"><p><b>Theorem 1.1:</b> exponent sum 7 → 8, by the paper's own method, independently checked.</p></div>
       <div class="box"><p><b>Conjecture 7.3:</b> unchanged, but its obstruction is now precise: three rank-1 elliptic quotients; it is a quadratic-Chabauty problem.</p></div>
-      <div class="box"><p><b>Conjecture 8.6:</b> first systematic evidence, 273,024 points, no exception, and a sharper form (exponent rank ≤ 2).</p></div>
+      <div class="box"><p><b>Conjecture 8.6:</b> first systematic evidence, 662,528 points at height ≤ 4, no exception; a candidate sharpening proposed by iteration 1 was refuted by iteration 2.</p></div>
     </div>
     <div>
       <div class="box"><p><b>Next computation:</b> quadratic Chabauty on D with the generators of 492.b1 and 1968.j1; then the ten orbits through the same quotient analysis.</p></div>
