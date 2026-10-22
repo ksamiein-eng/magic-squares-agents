@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Lucas row/column/diagonal sums",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "Lucas distinctness zero locus",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "two real-angle identities",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "six real-angle cases",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "integral triangle count and valuation through y=10000",
+      "status": "PASS",
+      "details": {
+        "admissible_y": 1074,
+        "triangles": 3000,
+        "bound": 10000
+      }
+    },
+    {
+      "name": "Gaussian representatives and corrected half-area-angle",
+      "status": "PASS",
+      "details": {
+        "triangles": 3000,
+        "independent_generation": "Euclidean versus Gaussian"
+      }
+    },
+    {
+      "name": "three-prime orbit enumeration",
+      "status": "PASS",
+      "details": {
+        "vectors": 13,
+        "admissible_sets": 177,
+        "orbits": 15,
+        "orbit_sizes": [
+          1,
+          4,
+          4,
+          6,
+          6,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          24,
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "name": "E1 is exactly the frequency-parallelogram orbit",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "complete two-prime configuration enumeration through exponent sum 7",
+      "status": "PASS",
+      "details": {
+        "pairs": 12,
+        "raw_configurations": 168,
+        "symmetry_classes": 85,
+        "warning": "configuration coverage only, not a nonexistence proof for all pairs"
+      }
+    },
+    {
+      "name": "reciprocal cubic identity",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "genus-two cover smoothness",
+      "status": "PASS",
+      "details": {
+        "sextic_discriminant": -507510784
+      }
+    },
+    {
+      "name": "two quotient map identities",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "independent pullback differentials",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "distinct elliptic quotients at good prime 3",
+      "status": "PASS",
+      "details": {
+        "jB": "-2515456/11",
+        "jC": "512/11",
+        "point_counts_mod_3": [
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "name": "cubic coefficient law",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "double-angle lift identity",
+      "status": "PASS",
+      "details": null
+    }
+  ],
+  "python": "3.13.5",
+  "sympy": "1.14.0"
+}

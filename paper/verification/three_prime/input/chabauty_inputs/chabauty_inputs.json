@@ -1,0 +1,589 @@
+{
+ "description": "Bielliptic genus-2 curves C: Y^2=f(w^2) for quadratic Chabauty. Each has rank(J)=2, both elliptic quotients rank 1. Inputs for Balakrishnan-Dogra / Bianchi bielliptic QC (Sage/Magma).",
+ "curves": {
+  "E_A": {
+   "f_cubic": "1*s^3+-5*s^2+19*s+9",
+   "genus2_curve_C": "Y^2 = 1*w^6 + -5*w^4 + 19*w^2 + 9*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    1,
+    0,
+    -5,
+    0,
+    19,
+    0,
+    9
+   ],
+   "quotient1_E": {
+    "label_conductor": 1968,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     11,
+     35
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "0",
+      "3"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 123,
+    "minimal_model": [
+     0,
+     1,
+     1,
+     -10,
+     10
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 5,
+    "generators": [
+     [
+      "-21",
+      "12"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    43,
+    47
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  },
+  "E_B": {
+   "f_cubic": "1*s^3+11*s^2+-5*s+1",
+   "genus2_curve_C": "Y^2 = 1*w^6 + 11*w^4 + -5*w^2 + 1*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    1,
+    0,
+    11,
+    0,
+    -5,
+    0,
+    1
+   ],
+   "quotient1_E": {
+    "label_conductor": 352,
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -45,
+     133
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "-1",
+      "4"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 352,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     3,
+     11
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators": [
+     [
+      "3",
+      "4"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    3,
+    5,
+    7,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  },
+  "E_C": {
+   "f_cubic": "1*s^3+-5*s^2+11*s+1",
+   "genus2_curve_C": "Y^2 = 1*w^6 + -5*w^4 + 11*w^2 + 1*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    1,
+    0,
+    -5,
+    0,
+    11,
+    0,
+    1
+   ],
+   "quotient1_E": {
+    "label_conductor": 352,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     3,
+     11
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "3",
+      "4"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 352,
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -45,
+     133
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators": [
+     [
+      "-1",
+      "4"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    3,
+    5,
+    7,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  },
+  "E_D": {
+   "f_cubic": "25*s^3+-29*s^2+11*s+1",
+   "genus2_curve_C": "Y^2 = 25*w^6 + -29*w^4 + 11*w^2 + 1*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    25,
+    0,
+    -29,
+    0,
+    11,
+    0,
+    1
+   ],
+   "quotient1_E": {
+    "label_conductor": 1840,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     0,
+     23
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "15",
+      "40"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 184,
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -4,
+     5
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators": [
+     [
+      "3",
+      "-8"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    3,
+    7,
+    11,
+    13,
+    17,
+    19,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  },
+  "E_D_tw2": {
+   "f_cubic": "50*s^3+-58*s^2+22*s+2",
+   "genus2_curve_C": "Y^2 = 50*w^6 + -58*w^4 + 22*w^2 + 2*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    50,
+    0,
+    -58,
+    0,
+    22,
+    0,
+    2
+   ],
+   "quotient1_E": {
+    "label_conductor": 7360,
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -1,
+     185
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "50",
+      "200"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 1472,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     -17,
+     23
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators": [
+     [
+      "2",
+      "8"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    3,
+    7,
+    11,
+    13,
+    17,
+    19,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  },
+  "E_D_twm2": {
+   "f_cubic": "-50*s^3+58*s^2+-22*s+-2",
+   "genus2_curve_C": "Y^2 = -50*w^6 + 58*w^4 + -22*w^2 + -2*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    -50,
+    0,
+    58,
+    0,
+    -22,
+    0,
+    -2
+   ],
+   "quotient1_E": {
+    "label_conductor": 7360,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     -1,
+     -185
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "150",
+      "2200"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 1472,
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -17,
+     -23
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators": [
+     [
+      "38",
+      "136"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    3,
+    7,
+    11,
+    13,
+    17,
+    19,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  },
+  "E_D_tw5": {
+   "f_cubic": "125*s^3+-145*s^2+55*s+5",
+   "genus2_curve_C": "Y^2 = 125*w^6 + -145*w^4 + 55*w^2 + 5*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    125,
+    0,
+    -145,
+    0,
+    55,
+    0,
+    5
+   ],
+   "quotient1_E": {
+    "label_conductor": 9200,
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -8,
+     2887
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "-5",
+      "200"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 4600,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     -108,
+     413
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators": [
+     [
+      "-25",
+      "200"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    3,
+    7,
+    11,
+    13,
+    17,
+    19,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  },
+  "E_A_cubic_E2": {
+   "f_cubic": "81*s^3+-1152*s^2+5632*s+-9216",
+   "genus2_curve_C": "Y^2 = 81*w^6 + -1152*w^4 + 5632*w^2 + -9216*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+   "sextic_coeffs_w6_to_w0": [
+    81,
+    0,
+    -1152,
+    0,
+    5632,
+    0,
+    -9216
+   ],
+   "quotient1_E": {
+    "label_conductor": 1968,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     11,
+     35
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators_minmodel": [
+     [
+      "324",
+      "648"
+     ]
+    ],
+    "map": "C -> E via s=w^2"
+   },
+   "quotient2_Ep": {
+    "label_conductor": 492,
+    "minimal_model": [
+     0,
+     1,
+     0,
+     11,
+     695
+    ],
+    "rank": [
+     1,
+     1
+    ],
+    "torsion": 1,
+    "generators": [
+     [
+      "-2304",
+      "9216"
+     ]
+    ],
+    "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)"
+   },
+   "rank_J": 2,
+   "good_primes_for_QC": [
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    43,
+    47
+   ],
+   "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others"
+  }
+ }
+}

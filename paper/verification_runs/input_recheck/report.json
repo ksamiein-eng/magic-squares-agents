@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "scope": "Two-parameter exclusion through exponent sum seven; specified integer-torus maps; D1 normalization and exact genus-five existence equivalence.",
+  "stages": [
+    {
+      "stage": "article_identities_and_tables",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.621,
+      "log": "logs/article_identities_and_tables.log"
+    },
+    {
+      "stage": "two_prime_sum7",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 21.381,
+      "log": "logs/two_prime_sum7.log"
+    },
+    {
+      "stage": "two_prime_symbolic",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 130.079,
+      "log": "logs/two_prime_symbolic.log"
+    },
+    {
+      "stage": "two_prime_negative_tests",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 26.625,
+      "log": "logs/two_prime_negative_tests.log"
+    },
+    {
+      "stage": "D1_normalization_and_descent",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.718,
+      "log": "logs/D1_normalization_and_descent.log"
+    },
+    {
+      "stage": "D1_symbolic_transport",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.471,
+      "log": "logs/D1_symbolic_transport.log"
+    },
+    {
+      "stage": "D1_negative_tests",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.78,
+      "log": "logs/D1_negative_tests.log"
+    },
+    {
+      "stage": "torus_rowspace_crosscheck",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.595,
+      "log": "logs/torus_rowspace_crosscheck.log"
+    }
+  ],
+  "stage_count": 8,
+  "paper_sha256": "c4c617c0e0be3b1f603d6bf9866419790d904a67bd36248d4581638444d3a0ed",
+  "not_certified": [
+    "Historical priority",
+    "Independent human review",
+    "Completeness of the eight-point genus-five list",
+    "All three-prime orbit exclusions"
+  ],
+  "isolation": "Each stage runs in its own temporary copy. Shipped proof files are not modified.",
+  "software": "Python and SymPy exact routines and the shipped checker implementations; not a formal proof assistant."
+}

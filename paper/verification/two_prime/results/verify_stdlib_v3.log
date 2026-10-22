@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "verifier": "Python standard library only",
+  "systems": 48,
+  "raw_signed_assignments": 192,
+  "distinct_signed_row_spaces": 48,
+  "rootless_factors": 25,
+  "modular_primes": [
+    3,
+    5,
+    7
+  ],
+  "projective_boundaries": "verified",
+  "factorizations_and_determinants": "exact integer polynomial identities",
+  "scope": "nonzero-drop (2,1) representative; written normal-form proof covers the other representatives"
+}

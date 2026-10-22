@@ -1,0 +1,677 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}\usepackage{microtype}}{\usepackage[expansion=false]{microtype}}\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,longtable}
+\usepackage[margin=1in]{geometry}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{Rational-circle obstructions for magic squares of squares}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}\newcommand{\T}{\mathbb T}\newcommand{\PP}{\mathbf P^1}
+\newcommand{\im}{\operatorname{Im}}\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\rk}{\operatorname{rank}}\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Qsq}{\Q^{2}}
+\hypersetup{pdftitle={Rational-circle obstructions and a genus-five reduction for magic squares of squares},pdfauthor={}}
+\title{Rational-circle rigidity for magic squares of squares:\\certified exclusions, a genus-five reduction,\\and surfaces of general type}
+% Human author names, affiliations, and contact details must be supplied before submission.
+\author{}
+\date{5 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study rational-circle systems arising from the four pairs of opposite entries of a $3\times3$ magic square of distinct positive integer squares. For a primitive central root $y=p^kq^\ell$, local valuations restrict the four frequency vectors to a two-parameter normal form. We give exact certificates excluding every such rational-circle configuration with $k+\ell\le7$. For actual integer squares the two-prime case is excluded outright by an arithmetic argument in the public Magic Squares of Squares archive, which we have verified; our theorem concerns the larger rational-circle problem, which that argument does not reach, and it implies the weaker arithmetic condition $k+\ell\ge8$ without Gaussian-prime arithmetic. The certificates include all signed assignments, exceptional fibers, and projective parameter values. For a three-parameter configuration, retaining the rational normalization of a unit-circle direction imposes two simultaneous square conditions. Sixteen of its forty-eight signed systems are immediately degenerate, and three elementary elliptic descents exclude another twenty-four. The remaining existence problem is equivalent to the existence of a rational point outside eight specified points on an explicit genus-five curve; rational reconstruction formulas prove the converse. Integer monomial maps transfer an exclusion of this configuration to three other configurations. The genus-five point list is not proved complete. We conjecture that no full-depth configuration in any number of parameters admits an admissible rational-circle point; this is strictly stronger than the nonexistence of a primitive magic square of distinct squares, and the results above are its first proven cases. For four parameters the solution sets are surfaces. An exhaustive search over all $11{,}862$ squarefree full-depth configurations finds no admissible point with three parameters of projective height at most four, and for the Hadamard configuration we prove that every one of its $48$ solution surfaces is of general type: each dominates, by a generically finite map of degree eight, a minimal surface with $p_g=11$, $q=0$, $K^2=32$, the bidouble cover of $\PP\times\PP$ branched along two bidegree-$(4,4)$ curves. The general-type behaviour known for the magic-square surface thus already appears in the trigonometric relaxation. The results concern specified subfamilies of that relaxation and do not decide the unrestricted magic-square problem.
+\end{abstract}
+\medskip
+\noindent\textbf{Keywords.} Magic squares of squares; rational points; Gaussian integers; elliptic descent; exact computation.
+
+\section{Introduction}\label{sec:introduction}
+The magic-square-of-squares problem asks whether a $3\times3$ array of nine distinct positive integer squares can have equal sums along all three rows, all three columns, and the two long diagonals. Arithmetic formulations of this question are studied by Robertson~\cite{Robertson} and Bremner~\cite{Bremner}. Brown describes a formulation in terms of four rational right triangles on a common hypotenuse and proves a restriction arising from four sum-of-two-squares representations~\cite{Brown511,Brown417}. We use the common-hypotenuse formulation, keeping the distinction between integral triangles at a prescribed center and rational triangles up to rescaling.
+
+Let $y^2$ be the central entry. Each opposite pair has one entry above and one below the center. The four positive differences between the larger entry of each pair and the center have the form
+\begin{equation}\label{eq:pattern}
+ \{a,b,a+b,a-b\},\qquad a>b>0,\quad a\ne2b.
+\end{equation}
+Each difference is $2pq$ for an integral right triangle with legs $p,q$ and hypotenuse $y$. Gaussian factorization then expresses the differences as sine coordinates of products of rational points on the unit circle. The use of Gaussian integers in this problem is developed by Cain~\cite{Cain} and Wolird~\cite{Wolird}; organization by the prime signature of the center is explicitly proposed by Weisenberg~\cite{Weisenberg}.
+
+The circle formulation itself is also prior work. Houston~\cite[formulation P4 and question W1]{Houston} distinguishes the square subgroup of the rational circle from the full circle group and asks a weaker additive-coordinate question on the latter. Our objects are frequency-restricted subfamilies of that relaxation. The restrictions retain relations among four circle points while removing the requirement that their generators come from specified Gaussian primes.
+
+\subsection{The rational-circle systems}
+Write
+\[
+ \T(\Q)=\{z\in\Q(i):z\bar z=1\},
+\]
+with multiplication as its group law. Angle notation $z=e^{i\theta}$ will always mean that both $\cos\theta$ and $\sin\theta$ are rational; it does not mean that $\theta$ is a rational number. For an integer matrix $A$ with four rows $v_0,\ldots,v_3$, define
+\[
+ s_j(z_1,\ldots,z_r)=\im\prod_{a=1}^r z_a^{v_{ja}}.
+\]
+A point of $\T(\Q)^r$ is \emph{admissible for $A$} if the four magnitudes $|s_j|$ are distinct, nonzero, and have the pattern~\eqref{eq:pattern}. This condition is unchanged by permuting the rows or changing any row's sign.
+
+The principal two-parameter configurations are
+\begin{equation}\label{eq:normalformintro}
+ A_{k,\ell;m,n}=
+ \begin{pmatrix}k&\ell\\k&-\ell\\m&\ell\\k&n\end{pmatrix},
+ \qquad k,\ell\in\Z_{>0},\quad m,n\in\Z,\quad |m|<k,\quad |n|<\ell.
+\end{equation}
+Their necessity for primitive integer squares is proved in Section~\ref{sec:arithmetic}.
+
+\begin{theorem}[Certified two-parameter exclusion]\label{thm:main-two}
+For $k+\ell\le7$, no matrix $A_{k,\ell;m,n}$ in~\eqref{eq:normalformintro} admits an admissible point of $\T(\Q)^2$. Consequently, if a primitive magic square has central root $y=p^kq^\ell$ with distinct primes $p,q$ and positive exponents, then $k+\ell\ge8$.
+\end{theorem}
+The arithmetic consequence is now known to be far from sharp: the public archive proves that no primitive square has a two-prime central root at all~\cite{MSSTwoBlock}, by an argument that uses the Gaussian-prime structure essentially, and we report our verification of that proof in Section~\ref{sec:prior}. The content of Theorem~\ref{thm:main-two} is the exclusion on the larger rational-circle domain, which that argument does not address; the corollary records what the relaxed statement alone yields. The conclusion is uniform in the rational-circle parameters, not a bounded search in the primes or in the center. Its proof consists of a finite exact elimination together with independently checkable certificates (Section~\ref{sec:two}). The same proof yields an obstruction for arbitrary exponents whenever the reduced denominators of $m/k$ and $n/\ell$ have sum at most seven.
+
+Our second principal result concerns the three-parameter system
+\begin{equation}\label{eq:canonicalintro}
+ \sin(\alpha+\beta),\qquad\sin(\alpha-\beta),\qquad
+ \sin\alpha,\qquad\sin\gamma.
+\end{equation}
+It is an invertible integer change of variables of the configuration labeled $D1$ in Section~\ref{sec:three}. Put
+\begin{align}
+ P(h)&=h^{12}+70h^{10}-1009h^8+7060h^6
+                  -1009h^4+70h^2+1,\label{eq:Pintro}\\
+ \mathcal C&:\quad Y^2=P(h).\notag
+\end{align}
+Here and below a rational-point statement about a hyperelliptic curve refers to its smooth projective model. Let
+\begin{equation}\label{eq:knownintro}
+ \mathcal K=\{(0,\pm1),(1,\pm72),(-1,\pm72),\infty_+,\infty_-\}.
+\end{equation}
+
+\begin{theorem}[Normalization and a genus-five reduction]\label{thm:main-d1}
+The curve $\mathcal C$ has genus five. System~\eqref{eq:canonicalintro} has an admissible rational-circle solution if and only if $\mathcal C(\Q)\setminus\mathcal K$ is nonempty. The implication from a point outside $\mathcal K$ to a solution is given by explicit rational formulas.
+\end{theorem}
+Our third result concerns four parameters, where the relaxed solution sets are surfaces. We state a single conjecture, \emph{rational-circle rigidity} (Conjecture~\ref{conj:rigidity}), asserting that no full-depth configuration in any number of parameters admits an admissible rational-circle point; the theorems above are its first proven cases. An exhaustive search over all $11{,}862$ squarefree four-parameter configurations at projective height at most four finds nothing (Proposition~\ref{prop:four}), against the expectation that surfaces carry many rational points, and Theorem~\ref{thm:gentype} explains the discrepancy for the Hadamard configuration: all $48$ of its solution surfaces are of general type, with explicit invariants.
+
+Theorem~\ref{thm:main-d1} is an existence equivalence, not a claimed bijection between the two parameter spaces. In particular, the theorem does not assert $\mathcal C(\Q)=\mathcal K$. The proof retains a rational-square normalization condition before eliminating variables. It excludes sixteen signed systems directly and twenty-four by three rank-zero elliptic descents, then treats the eight remaining systems through~\eqref{eq:Pintro} (Sections~\ref{sec:norm}--\ref{sec:genusfive}). Integer-torus maps show that $\mathcal C(\Q)=\mathcal K$ would also exclude three other configurations, labeled $B2,C,E2$.
+
+\subsection{Relation to prior work and scope}\label{sec:prior}
+The local valuation formula and the fact that at least three opposite-pair differences are units at each center prime appear in Sections~3--4 of the public \emph{Magic Squares of Squares} research archive~\cite{MSSArchive}. We cite that argument and include a proof to specify exactly where primitivity enters. A separate note in the archive claims a uniform two-prime exclusion for actual integer squares~\cite{MSSTwoBlock}, and a companion note claims a squarefree three-prime exclusion through a twenty-eight-class analysis. Neither claim is an assumption of this paper. We have independently verified the final section of the two-prime note — the coupled norm equations, their elimination to a single identity, the resulting quartic $y^2=t^4-10t^2+1$, and the rank-zero curve $y^2=x^3-x^2-2x$ of conductor $96$ with its two-isogeny descent — and the integrality mechanism on which the argument rests, namely that a rational integer divisible by $\pi^{4k}$ in $\Z[i]$ is divisible by $p^{4k}$; and we have re-derived the structural reductions on which it rests: in the block-balance note, the exact valuation spectrum, the three-unit lemma, the height bounds with their odd-quotient refinement, the uniqueness of the exception for a dominant block, the exclusion of balanced and midpoint indices, the exact corner-quotient valuation $v_p(\nu)=4h$ that rules out a dominant corner exception, and the modulo-$8$ refinement; and in the two-prime note, the reduction forcing both exceptions to be edges with both primes $\equiv1\pmod8$. We have also re-derived its balanced-exception case analysis (Sections 1--6) in full, including the four sign rows of its final mixed assignment and its quartic lemma, which is the reciprocal quartic of our Proposition~\ref{prop:quartics} reached through a $2$-isogenous model of conductor $56$. The only inputs we did not re-derive are Fermat's classical theorem that $X^2+Y^4=Z^4$ has no positive solution, and two facts imported from an earlier note of the archive that are special cases of our Lemma~\ref{lem:twoform} and Corollary~\ref{cor:parallelogram}: the two exceptions are distinct and cannot both be balanced. We therefore regard the archive's two-prime theorem as verified. Of the three-prime note (twenty-eight classes, with a transfer argument to arbitrary balanced or extreme exponents) we have verified every elliptic curve it relies on — $Y^2=X(X+1)(X+5)$ of conductor $80$, which closes its all-extreme class and is the curve of our orbit A; $Z^2=T(T+1)(T+9)$ of conductor $48$ with its complete point set $T\in\{0,-1,-9,\pm3\}$; and $Y^2=X^3\pm4X$-type curves of conductor $32$, all of rank zero — together with its first arithmetic class in full (which falls to Fermat's $X^2+Y^4=Z^4$ after a reduced-fraction argument), the block-generic facts of its transfer section, and the orientation-incoherence theorem it rests on in full: both the $g=1$ reduction (no primitive cube root of unity lies in $\Q(i)$) and the proofs that no coefficient-$111$ relation is coherent (four complex units of vanishing sum split into antipodal pairs, forcing two Gaussian blocks to be units) and no coefficient-$211$ relation is coherent (the reduction $2xy+x-y=2$ yields $R^2+S^2=A^2$ and $R^2+9S^2=W^2$ simultaneously, hence a positive rational square on $V^2=T(T+1)(T+9)$, of rank zero). Its per-class exclusions in Sections~6--16 and its exponent-transfer argument we have not re-derived line by line. Every claim of the archive we have checked has been correct. Consequently the arithmetic corollary of Theorem~\ref{thm:main-two} is subsumed by the archive's theorem; Theorem~\ref{thm:main-two} itself is not, since its domain is $\T(\Q)^2$ with specified frequencies, whereas the archive's argument uses the Gaussian-prime arithmetic at every step and says nothing about the relaxed problem.
+
+The global geometry of the magic-square surface is studied by Bruin, Thomas, and V\'arilly-Alvarado~\cite{BTV}, and by Auel and Singer~\cite{AuelSinger}. The present paper does not compute invariants of that surface. Its contributions are the specified rational-circle exclusion theorem, explicit transfer maps between configurations, and the normalization-based equivalence in Theorem~\ref{thm:main-d1}. We make no priority claim for the common-hypotenuse dictionary, the rational-circle relaxation, the general monomial-map construction, or elliptic descent.
+
+The exposition is confined to these results and their proof dependencies. Broader calculations on other three-parameter components and elliptic height bounds are retained in the accompanying extended research record, but are not needed for either main theorem. No completed Chabauty computation or classification of all three-parameter systems is claimed.
+
+\section{The arithmetic source of the frequency restrictions}\label{sec:arithmetic}
+We call an integer-square magic square \emph{primitive} when the greatest common divisor of its nine positive square roots is one. Dividing all entries by the square of that greatest common divisor preserves the magic conditions and distinctness.
+
+\begin{lemma}[Lucas form]\label{lem:lucas}
+Every rational $3\times3$ magic square has the form
+\[
+ \begin{pmatrix}
+ e+a&e-a-b&e+b\\
+ e-a+b&e&e+a-b\\
+ e-b&e+a+b&e-a
+ \end{pmatrix},\qquad\text{magic sum }3e.
+\]
+Its entries are pairwise distinct if and only if
+\begin{equation}\label{eq:distinct}
+ ab(a^2-b^2)(a^2-4b^2)(4a^2-b^2)\ne0.
+\end{equation}
+The magnitudes of its four opposite-pair differences can then be written as~\eqref{eq:pattern}.
+\end{lemma}
+\begin{proof}
+Let the magic sum be $S$. Adding the four lines through the center counts every entry once and the center three additional times. Thus $4S=3S+3e$, giving $S=3e$. Every opposite pair sums to $2e$. Choosing the top-left and top-right differences $a,b$ determines all remaining entries from the row and column equations. The nine differences are $0,\pm a,\pm b,\pm(a+b),\pm(a-b)$. Their pairwise distinctness is exactly~\eqref{eq:distinct}. Replacing $a,b$ by their ordered absolute values gives~\eqref{eq:pattern}.
+\end{proof}
+
+\begin{proposition}[Integral common-hypotenuse dictionary]\label{prop:dictionary}
+For a fixed positive integer $y$, a magic square of nine distinct positive integer squares with center $y^2$ exists if and only if there are four integral right triangles $(p_j,q_j,y)$ whose positive numbers $2p_jq_j$ form~\eqref{eq:pattern}.
+\end{proposition}
+\begin{proof}
+If $r^2,y^2,s^2$ form an increasing progression of integer squares, then $r^2+s^2=2y^2$. The roots $r,s$ have the same parity, and
+\[
+ p=\frac{s+r}{2},\qquad q=\frac{s-r}{2}
+\]
+are positive integers satisfying $p^2+q^2=y^2$ and $s^2-y^2=2pq$. Conversely, an integral right triangle gives the progression
+\[
+ (p-q)^2,\qquad y^2,\qquad(p+q)^2.
+\]
+Its first term is positive: nonzero equal integer legs would imply that an integer square is twice another nonzero integer square. Apply the correspondence to all four center lines and use Lemma~\ref{lem:lucas}. In the converse, the largest difference $a+b$ is less than $y^2$, since it is one of the triangle differences, so all nine reconstructed entries are positive.
+\end{proof}
+We call $2pq$ the \emph{offset}. It is four times the ordinary triangle area. Brown's common-hypotenuse formulation~\cite{Brown511} permits rational triangles when scale is allowed to vary. The integral formulation above is required when the integer $y$, and hence its factorization, is held fixed.
+
+\begin{lemma}[Prime support]\label{lem:support}
+In a primitive square, $y$ is odd and every prime divisor of $y$ is congruent to $1$ modulo $4$.
+\end{lemma}
+\begin{proof}
+For each opposite pair, $r^2+s^2=2y^2$. If $2\mid y$, reduction modulo $4$ forces $r,s$ even. If an odd prime $p\equiv3\pmod4$ divides $y$, reduction modulo $p$ forces both roots divisible by $p$, since $-1$ is not a square modulo $p$. In either case the prime divides all nine roots, contrary to primitivity.
+\end{proof}
+
+Write
+\[
+ y=\prod_{j=1}^r\ell_j^{k_j},\qquad
+ \ell_j=\pi_j\overline{\pi_j}\quad\text{in }\Z[i],
+\]
+where the $\ell_j$ are distinct primes congruent to $1$ modulo $4$, the $k_j$ are positive integers, and one Gaussian prime above each $\ell_j$ is fixed. Unique factorization gives the following indexing.
+\begin{proposition}[Gaussian coordinates]\label{prop:gaussian}
+The nondegenerate integral right triangles on $y$, up to interchanging legs, are indexed by
+\[
+ 0\ne m=(m_1,\ldots,m_r)\in\Z^r,\qquad |m_j|\le k_j,
+ \qquad m\sim-m.
+\]
+A representative is
+\begin{equation}\label{eq:gaussian}
+ Z_m=\prod_j\pi_j^{k_j+m_j}\overline{\pi_j}^{k_j-m_j},
+ \qquad Z_m\overline{Z_m}=y^2.
+\end{equation}
+The legs are $|\operatorname{Re}Z_m|$ and $|\operatorname{Im}Z_m|$, in either order. Its primitive hypotenuse and common leg divisor are
+\[
+ d_m=\prod_j\ell_j^{|m_j|},\qquad
+ g_m=\prod_j\ell_j^{k_j-|m_j|}.
+\]
+There are $\bigl(\prod_j(2k_j+1)-1\bigr)/2$ such triangles.
+\end{proposition}
+\begin{proof}
+The exponents of $\pi_j$ and $\bar\pi_j$ in a Gaussian integer of norm $y^2$ add to $2k_j$, giving~\eqref{eq:gaussian} up to a unit. Units and conjugation account for signs of the legs and leg interchange; conjugation sends $m$ to $-m$. An axis representation has equal exponents above every $\ell_j$, so only $m=0$ is excluded. Equal nonzero legs are impossible over the integers. Removing the common rational factor $g_m$ leaves only one of $\pi_j,\bar\pi_j$ above each prime in the primitive Gaussian representative, so there is no remaining common leg divisor. The count follows.
+\end{proof}
+
+The angle encoding an offset is
+\begin{equation}\label{eq:areaangle}
+ e^{i\chi_j}=\left(\frac{\pi_j}{\bar\pi_j}\right)^2
+             =\frac{\pi_j^4}{\ell_j^2}\in\T(\Q).
+\end{equation}
+Indeed, $Z_m/y=\prod_j(\pi_j/\bar\pi_j)^{m_j}$, so
+\begin{equation}\label{eq:offset}
+ 2p_mq_m=|\im Z_m^2|
+       =y^2\left|\sin\left(\sum_jm_j\chi_j\right)\right|.
+\end{equation}
+The square in~\eqref{eq:areaangle} is essential. Replacing the particular points there by arbitrary elements of $\T(\Q)$ enlarges the problem. For instance, $i\in\T(\Q)$ has no square root in $\T(\Q)$. This is the distinction between the circle and its square subgroup emphasized by Houston~\cite{Houston}.
+
+\begin{lemma}[Valuations and full depth]\label{lem:depth}
+Let $(p,q,y)=g(p',q',d)$ be an integral right triangle with $(p',q',d)$ primitive and $gd=y$. If $\ell^k\Vert y$, then
+\[
+ v_\ell(2pq)=2\bigl(k-v_\ell(d)\bigr)\quad(\ell\mid d),
+ \qquad v_\ell(2pq)\ge2k\quad(\ell\nmid d).
+\]
+In a primitive magic square, for each prime power $\ell^k\Vert y$, at least three of the four triangle vectors satisfy $|m_\ell|=k$. The three vectors may depend on $\ell$.
+\end{lemma}
+\begin{proof}
+The hypotenuse of a primitive integer right triangle is odd, and $\gcd(2p'q',d)=1$. The valuation formulas follow from $2pq=g^2(2p'q')$.
+
+For odd $\ell$, the minimum valuation among $a,b,a+b,a-b$ occurs at least three times. Unequal valuations of $a,b$ make both sums have the smaller valuation. If the two valuations are equal, both sums cannot have a larger valuation, since their sum is $2a$. In a primitive square the common minimum is zero: otherwise $\ell\mid y^2$ and every offset would make every square entry, hence every root, divisible by $\ell$. The formula and Proposition~\ref{prop:gaussian} identify valuation zero with $v_\ell(d)=|m_\ell|=k$.
+\end{proof}
+The valuation and three-unit argument are recorded in~\cite[Sections 3--4]{MSSArchive}. The proof above is included to make their integral and primitive hypotheses explicit.
+
+\begin{corollary}\label{cor:primepower}
+The central root of a primitive integer-square magic square is not a prime power.
+\end{corollary}
+\begin{proof}
+For $y=\ell^k$, there is only one projective vector of full depth, represented by $m=k$. Lemma~\ref{lem:depth} requires three distinct full-depth triangles.
+\end{proof}
+
+\begin{lemma}[Two-prime normal form]\label{lem:twoform}
+If $y=p^kq^\ell$ is the central root of a primitive square, the four triangle vectors, modulo individual signs, have the form~\eqref{eq:normalformintro}.
+\end{lemma}
+\begin{proof}
+At least three vectors have first coordinate of magnitude $k$, and at least three have second coordinate of magnitude $\ell$. Hence at least two have both magnitudes maximal. Only two projective vectors have this property, namely $(k,\ell)$ and $(k,-\ell)$, so both occur. A third cannot occur. The deficient first and second coordinates must therefore be on different remaining vectors. Change each vector's sign to make its full coordinate positive.
+\end{proof}
+These restrictions are derived for actual primitive squares before the rational-circle parameters are relaxed. They are not consequences of the unrestricted circle equations alone.
+
+\section{Signed equations and an elementary obstruction}\label{sec:equations}
+\begin{lemma}[Complete signed assignments]\label{lem:roles}
+For real $s_0,s_1,s_2,s_3$ with nonzero pairwise-distinct magnitudes, admissibility is equivalent to at least one system
+\begin{equation}\label{eq:roles}
+ s_i-\varepsilon s_k-\eta s_l=0,\qquad
+ s_j-\varepsilon s_k+\eta s_l=0,
+\end{equation}
+where $i<j$, $(k,l)$ is either order of the complementary pair, and $\varepsilon,\eta\in\{1,-1\}$. There are $6\cdot2\cdot4=48$ such systems.
+\end{lemma}
+\begin{proof}
+Choose $i,j$ for the magnitudes $a+b,a-b$. Whatever their signs and order, the magnitudes of $(s_i+s_j)/2$ and $(s_i-s_j)/2$ are $a,b$ in some order. Choose $k,l$ in that order and select $\varepsilon,\eta$. Conversely,~\eqref{eq:roles} gives
+\[
+ \{|s_i|,|s_j|\}
+ =\{|s_k|+|s_l|,\,\bigl||s_k|-|s_l|\bigr|\}.
+\]
+Take $a=\max(|s_k|,|s_l|)$ and $b=\min(|s_k|,|s_l|)$. Distinctness and nonvanishing give the restrictions in~\eqref{eq:pattern}.
+\end{proof}
+
+\begin{theorem}[A real-circle obstruction]\label{thm:real}
+For arbitrary real $x,z$, the four magnitudes
+\[
+ X=|\sin x|,\quad Z=|\sin z|,\quad
+ P=|\sin(x+z)|,\quad Q=|\sin(x-z)|
+\]
+are not admissible.
+\end{theorem}
+\begin{proof}
+Addition and subtraction of sines give
+\begin{align}
+ P^2Q^2&=(X^2-Z^2)^2,\label{eq:product}\\
+ P^2+Q^2&=2(X^2+Z^2-2X^2Z^2).\label{eq:sum}
+\end{align}
+Assign the four values in~\eqref{eq:pattern} to $X,Z,P,Q$. There are six choices for the unordered pair $\{P,Q\}$. Substitution in~\eqref{eq:product} gives the following residuals:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+$\{P,Q\}$ & $P^2Q^2-(X^2-Z^2)^2$\\
+\midrule
+$\{a,b\}$ & $-15a^2b^2$\\
+$\{a,a+b\}$ & $3a^2b(2a-b)$\\
+$\{a,a-b\}$ & $-3a^2b(2a+b)$\\
+$\{b,a+b\}$ & $-3ab^2(a-2b)$\\
+$\{b,a-b\}$ & $-3ab^2(a+2b)$\\
+$\{a+b,a-b\}$ & $0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first five are nonzero under~\eqref{eq:pattern}. In the last case $\{X,Z\}=\{a,b\}$, and the residual in~\eqref{eq:sum} is $4a^2b^2\ne0$.
+\end{proof}
+
+\begin{corollary}\label{cor:parallelogram}
+A configuration $\{v,w,v+w,v-w\}$, up to individual signs, has no admissible point even over the real circle. In particular, no primitive square has central root $pq$ for distinct primes $p,q$.
+\end{corollary}
+\begin{proof}
+Substitute $x=v\cdot\theta$, $z=w\cdot\theta$ in Theorem~\ref{thm:real}. For $(k,\ell)=(1,1)$, Lemma~\ref{lem:twoform} gives exactly this configuration.
+\end{proof}
+The semiprime arithmetic conclusion is contained in Brown's Proposition~1~\cite{Brown417}. The proof above is stated over the real circle because that form will also be used in the parameter-space reductions.
+
+Every element of $\T(\Q)$ can be written uniquely in the projective parametrization
+\begin{equation}\label{eq:circleparam}
+ z=\frac{(b+ia)^2}{b^2+a^2},\qquad[a:b]\in\PP(\Q).
+\end{equation}
+The inverse is $a/b=\im z/(1+\operatorname{Re}z)$ when $z\ne-1$; the point $z=-1$ corresponds to $[1:0]$. For a frequency $v=(v_1,\ldots,v_r)\in\Z^r$ with $|v_j|\le k_j$, a common homogeneous numerator of its sine is
+\begin{equation}\label{eq:homogeneous}
+ E_v=\im\prod_j
+ (b_j+i\,\operatorname{sgn}(v_j)a_j)^{2|v_j|}
+ (b_j^2+a_j^2)^{k_j-|v_j|}.
+\end{equation}
+The denominator $\prod_j(b_j^2+a_j^2)^{k_j}$ is positive at every real projective point. The affine parameter $a_j/b_j$ and the point $[1:0]$ are treated separately below.
+
+\section{Certified exclusion through exponent sum seven}\label{sec:two}
+\subsection{Reduction of the configuration list}
+\begin{lemma}[Integer-power inheritance]\label{lem:inherit}
+Let a four-row integer frequency matrix $A$ have no admissible rational-circle point. Multiplying any column by a positive integer preserves this exclusion. Coordinate permutations, coordinate sign changes, and signed row permutations also preserve it.
+\end{lemma}
+\begin{proof}
+If the column multipliers are $d_j$, a solution for the multiplied matrix at $(z_j)$ gives a solution for $A$ at $(z_j^{d_j})$. The latter points lie in $\T(\Q)$ and have the same four sine magnitudes. The other transformations either relabel the parameters or change individual sine signs.
+\end{proof}
+Only the forward power map is used. A rational point need not have a rational preimage under a nontrivial power map.
+
+After interchanging the two coordinates, assume $k\ge\ell$. There are twelve positive exponent pairs with $k+\ell\le7$, containing
+\[
+ \sum_{k\ge\ell>0,\ k+\ell\le7}(2k-1)(2\ell-1)=168
+\]
+raw normal forms. The cases $m=n=0$ follow from Corollary~\ref{cor:parallelogram}. Lemma~\ref{lem:inherit} and the stated symmetries reduce the rest to the forty-three representatives in Appendix~\ref{app:representatives}. The checker enumerates every raw form and records its representative and column multipliers; the totals alone are not used as evidence of coverage.
+
+\subsection{Polynomial inputs and proof certificates}
+Define $C_j(v),S_j(v)$ for $j\ge0$ by
+\[
+ C_j(v)+iS_j(v)=(1+iv)^{2j},
+ \qquad C_{-j}=C_j,\quad S_{-j}=-S_j.
+\]
+Put $t=\tan(x/2)$ and $u=\tan(z/2)$. On the denominator
+\[
+ L=(1+t^2)^k(1+u^2)^\ell,
+\]
+the four signed numerators for $A_{k,\ell;m,n}$ are
+\begin{align}
+ E_0&=S_k(t)C_\ell(u)+C_k(t)S_\ell(u),\notag\\
+ E_1&=S_k(t)C_\ell(u)-C_k(t)S_\ell(u),\notag\\
+ E_2&=(1+t^2)^{k-|m|}\bigl(S_m(t)C_\ell(u)+C_m(t)S_\ell(u)\bigr),\label{eq:twoinputs}\\
+ E_3&=(1+u^2)^{\ell-|n|}\bigl(S_k(t)C_n(u)+C_k(t)S_n(u)\bigr).\notag
+\end{align}
+The first two are the numerators of $\sin(kx+\ell z)$ and $\sin(kx-\ell z)$; the other two correspond to the deficient vectors. The denominator is positive in the finite real chart.
+
+\begin{lemma}[Exact elimination certificate]\label{lem:elimination}
+For each of the forty-three representatives and each of the forty-eight signed systems in Lemma~\ref{lem:roles}, remove only a common power of $t$ from the two polynomial equations, when present. The resultant in $u$ of the resulting equations is nonzero. Its finite rational zeros are contained in $\{0,1,-1\}$.
+\end{lemma}
+\begin{proof}[Computer-assisted proof]
+The certificate \path{verification/two_prime/results/certificate_degree7.json} contains the 2,064 equation pairs, every removed power, the reduced equations, the exact resultant, and its complete factor product. The factor catalog contains three linear polynomials with roots $0,1,-1$ and 1,187 nonlinear polynomials. Each nonlinear factor has a witness prime in
+\[
+ \{3,5,7,11,13,17,19\}
+\]
+at which its leading coefficient is nonzero and it has no root. Such a polynomial has no rational root: a rational root whose reduced denominator is divisible by the witness prime contradicts the leading coefficient after clearing denominators; a denominator coprime to the prime gives a root in the finite field.
+
+All factor products, constants, and multiplicities are checked exactly. No irreducibility claim is required. For example, the factor $t^4-22t^2+25$ reduces modulo $3$ to $t^4+2t^2+1$, which takes the value $1$ at each residue. Its leading coefficient is nonzero, so the factor has no rational zero.
+
+The first implementation reconstructs~\eqref{eq:twoinputs} by repeated sine addition. For the reduced equations $F,G$, put
+\[
+ M=\deg_uF,\quad N=\deg_uG,\quad A=\deg_tF,\quad B=\deg_tG.
+\]
+The Sylvester determinant has degree at most $D=NA+MB$ in $t$, since it uses $N$ coefficient rows from $F$ and $M$ from $G$. The checker rejects a recorded resultant of degree exceeding $D$ and compares it with the exact integer determinant at $t=0,1,\ldots,D$. These $D+1$ comparisons prove the polynomial identity. Fraction-free elimination is used with checked exact divisions. Across the certificate, 132,336 integer determinants are evaluated.
+
+The second implementation reconstructs the numerators with Chebyshev polynomials and evaluates the symbolic Sylvester determinants over $\Z[t]$. Neither checker imports the certificate producer; neither uses factorization or a rational-root solver to accept the factor catalog. Both checks succeed for all 2,064 systems. Their exact inputs and outputs are part of the accompanying package. Appendix~\ref{app:representatives} gives a complete worked system, its Sylvester determinant, and a modular no-root witness.
+
+Every finite common zero of $F,G$ annihilates the resultant, including points where a leading coefficient specializes to zero. The factor witnesses therefore prove the stated list of possible rational coordinates. The removed $t=0$ branches are handled in the next paragraph.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main-two}]
+Coverage reduces every normal form in the stated range to the real-circle obstruction or to a column-power pullback of a representative in Lemma~\ref{lem:elimination}. For a representative, every finite rational common zero has $t=0,1,-1$. The first two signed values satisfy
+\begin{equation}\label{eq:collision}
+ \sin^2(kx+\ell z)-\sin^2(kx-\ell z)
+ =\sin(2kx)\sin(2\ell z).
+\end{equation}
+At these values of $t$, one has $x=0,\pm\pi/2$ modulo $2\pi$, and the right side vanishes. Thus two magnitudes coincide. This also excludes every removed $t=0$ branch.
+
+At the projective boundary $t=\infty$, $x=\pi$, and at $u=\infty$, $z=\pi$;~\eqref{eq:collision} excludes both boundaries and their intersection. Hence there is no admissible point anywhere on $\PP(\Q)^2$. Lemma~\ref{lem:inherit} transfers the exclusions, and Lemma~\ref{lem:twoform} gives the arithmetic consequence.
+\end{proof}
+
+\begin{corollary}[Reduced-denominator restriction]\label{cor:denominator}
+An admissible rational-circle point for $A_{k,\ell;m,n}$ requires
+\[
+ \frac{k}{\gcd(k,|m|)}+\frac{\ell}{\gcd(\ell,|n|)}\ge8,
+\]
+where $\gcd(k,0)=k$.
+\end{corollary}
+\begin{proof}
+Divide the columns by $d=\gcd(k,|m|)$ and $e=\gcd(\ell,|n|)$. The reduced normal form has bounds $K=k/d$, $L=\ell/e$. If $K+L\le7$, Theorem~\ref{thm:main-two} excludes it, and Lemma~\ref{lem:inherit} excludes the original form.
+\end{proof}
+The corollary concerns individual frequency configurations. It does not exclude every two-prime central root with larger exponent sum.
+
+\section{Three-parameter configurations and transport}\label{sec:three}
+For a squarefree central root $y=\ell_1\ell_2\ell_3$, Proposition~\ref{prop:gaussian} gives thirteen nonzero projective vectors in $\{-1,0,1\}^3$. The full-depth condition requires at least three of the four selected vectors to have nonzero entry in each coordinate.
+
+\begin{proposition}[Finite configuration list]\label{prop:orbits}
+There are 177 four-element sets with this property. Under coordinate sign changes and coordinate permutations, they form fifteen orbits.
+\end{proposition}
+\begin{proof}[Finite enumeration]
+Choose the sign of each nonzero vector by requiring its first nonzero coordinate to be positive. Enumerate the four-subsets of the resulting thirteen vectors and retain those satisfying the coordinate condition. Form their orbits under the $2^3\cdot3!=48$ signed coordinate permutations. The orbit representatives and sizes are listed in Appendix~\ref{app:orbits}; their sizes sum to 177. The independent enumeration in \path{check_paper.py} computes the vector set, the retained subsets, and every orbit, and verifies that the representatives exhaust the list.
+\end{proof}
+This is a classification under the stated finite group, not under all integer changes of circle coordinates. A larger group can identify configurations in different rows of the table.
+
+For the transport statements, use these ordered frequency matrices:
+\begin{equation}\label{eq:selectedmatrices}
+\begin{aligned}
+ A_{D1}&=\begin{pmatrix}1&1&1\\1&1&-1\\1&1&0\\1&0&1\end{pmatrix},&
+ A_{B2}&=\begin{pmatrix}1&1&1\\1&1&-1\\1&-1&-1\\1&1&0\end{pmatrix},\\[2pt]
+ A_C&=\begin{pmatrix}1&1&1\\1&1&-1\\1&-1&1\\0&0&1\end{pmatrix},&
+ A_{E2}&=\begin{pmatrix}1&-1&1\\1&-1&-1\\1&1&0\\0&0&1\end{pmatrix}.
+\end{aligned}
+\end{equation}
+Labels are identifiers for these explicit matrices, not additional hypotheses.
+
+\begin{lemma}[Integer-torus transport]\label{lem:transport}
+Suppose $A_sM=PA_t$, where $M$ is an integer square matrix of nonzero determinant and $P$ is a signed permutation matrix. An admissible point for $A_t$ maps to one for $A_s$ under the monomial map represented in angle notation by $\psi=M\theta$. If $\det M=\pm1$, this map has an integer inverse and gives an equivalence.
+\end{lemma}
+\begin{proof}
+Integer products and inverse products preserve $\T(\Q)$. At the resulting point,
+\[
+ \sin(A_s\psi)=\sin(A_sM\theta)=P\sin(A_t\theta).
+\]
+The magnitudes are preserved up to permutation. When $M$ is unimodular its inverse is integral and supplies the converse.
+\end{proof}
+
+The following matrices give explicit transfers. The notation $M_{s,t}$ means that a point of configuration $t$ is mapped to one of configuration $s$:
+\begin{align}
+ M_{B2,C}&=\begin{pmatrix}1&0&1\\-1&0&0\\1&1&0\end{pmatrix},\notag\\
+ M_{D1,B2}&=\begin{pmatrix}1&-1&-2\\0&2&2\\0&0&1\end{pmatrix},\label{eq:maps}\\
+ M_{D1,C}&=\begin{pmatrix}0&-2&1\\0&2&0\\1&1&0\end{pmatrix},\notag\\
+ M_{D1,E2}&=\begin{pmatrix}0&2&0\\0&-2&1\\1&-1&0\end{pmatrix}.\notag
+\end{align}
+Their frequency identities, including the signs and orderings of the output sine values, appear in Table~\ref{tab:transport}.
+\input{transport_table.tex}
+
+Every identity in that table is a direct integer matrix product. The first matrix is unimodular; the others have determinant of absolute value two. Thus $B2$ and $C$ are equivalent rational-circle problems. A nonexistence theorem for $D1$ excludes $B2,C,E2$, but an arbitrary $D1$ point is not asserted to lift rationally through a determinant-two map.
+
+\section{Rational normalization in the D1 system}\label{sec:norm}
+For $A_{D1}$ in~\eqref{eq:selectedmatrices}, make the unimodular change
+\[
+ \alpha=x+z,\qquad\beta=w,\qquad\gamma=x+w.
+\]
+Its inverse is $x=\gamma-\beta$, $z=\alpha-\gamma+\beta$, $w=\beta$. The signed values become~\eqref{eq:canonicalintro}.
+
+Put $r=\tan(\beta/2)$ and $q=1+r^2$. At a finite parameter,
+\begin{equation}\label{eq:Hmatrix}
+ \begin{pmatrix}s_0\\s_1\\s_2\\s_3\end{pmatrix}
+ =q^{-1}H(r)\begin{pmatrix}\sin\alpha\\\cos\alpha\\\sin\gamma\end{pmatrix},
+ \qquad
+ H(r)=\begin{pmatrix}
+ 1-r^2&2r&0\\1-r^2&-2r&0\\q&0&0\\0&0&q
+ \end{pmatrix}.
+\end{equation}
+The fibers $r=0,\infty$ are degenerate because the first two magnitudes coincide. Using sine and cosine coordinates for $\alpha,\gamma$ retains all of their rational-circle points, including the points omitted by their affine half-angle charts.
+
+For each signed assignment, let $R$ be its two-by-four relation matrix from~\eqref{eq:roles}, and put $B(r)=RH(r)$. Write the cross product of its two rows as
+\[
+ g(r)v(r),\qquad v=(v_1,v_2,v_3),
+\]
+where $g\in\Z[r]\setminus\{0\}$ and $v\in\Z[r]^3$ have the normalization fixed by the exact record. The entries of $v$ have gcd one over $\Q[r]$. They therefore do not vanish simultaneously at any parameter. The only nonconstant factors of $g$ are
+\[
+ r,\qquad r^2-3,\qquad 3r^2-1.
+\]
+The last two have no rational root. Thus $B(r)$ has rank two at every nonzero rational $r$.
+
+Every solution has
+\[
+ (\sin\alpha,\cos\alpha,\sin\gamma)=\lambda(v_1,v_2,v_3),
+ \qquad \lambda\in\Q^\times.
+\]
+The two unit-circle equations imply
+\begin{equation}\label{eq:twonorms}
+ v_1^2+v_2^2\in\Qsq,
+ \qquad
+ v_1^2+v_2^2-v_3^2\in\Qsq.
+\end{equation}
+The first condition is the rational normalization of the direction $(v_1:v_2)$; the second is needed for a rational value of $\cos\gamma$. Neither may be dropped. Here $\Qsq=\{z^2:z\in\Q\}$ includes zero; the first quantity is nonzero at any solution.
+
+\begin{lemma}[The normalization catalog]\label{lem:normcatalog}
+For the forty-eight signed assignments, the identity
+\[
+ v_1^2+v_2^2=q^2N(r)
+\]
+has the complete list in Table~\ref{tab:normcatalog}.
+\end{lemma}
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrl}
+\toprule
+$N(r)$ & Assignments & Reduction\\
+\midrule
+$1$ &16& $v_1=0$\\
+$r^4+6r^2+1$ &4& quartic\\
+$r^4-3r^2+4$ &4& quartic\\
+$4r^4-3r^2+1$ &4& reciprocal quartic\\
+$r^4+18r^2+1$ &12& quartic\\
+$r^2+9$ &4& conic and sextic\\
+$9r^2+1$ &4& reciprocal conic and sextic\\
+\bottomrule
+\end{tabular}
+\caption{Rational normalization conditions for all signed $D1$ assignments.}\label{tab:normcatalog}
+\end{table}
+\begin{proof}[Exact finite calculation]
+For each relation matrix $R$, form $RH$ and its row cross product. Divide by the recorded common factor and verify the three resulting entries and their norm. The forty-eight polynomial vectors, the divisors $g$, the two norms in~\eqref{eq:twonorms}, and the assignment tuples are recorded in \path{verification/d1_norm/d1_certificate.json}. The checker reconstructs the matrices and polynomial products over $\Z[r]$, and verifies a constant gcd of the entries of $v$. The possible nonzero roots of $g$ are excluded as above. A second implementation computes the matrices symbolically and checks the historical frequency identities. Both produce exactly the counts in the table.
+
+For example, the assignment $s_0=s_1+s_3$, $s_2=s_1-s_3$ gives $g=2r$ and
+\[
+ v=(3q,-rq,-4r^2).
+\]
+Its two norms are $q^2(r^2+9)$ and $r^6-5r^4+19r^2+9$. This is one of the residual conic cases.
+\end{proof}
+
+\subsection{Three quartic obstructions}
+We use the classical descent associated with a rational point of order two; see Silverman and Tate~\cite{SilvermanTate} and the explicit 2-isogeny reference~\cite{SageDescent}. For
+\[
+ E:y^2=x^3+Ax^2+Bx,\qquad B(A^2-4B)\ne0,
+\]
+the 2-isogenous curve is
+\[
+ E':y^2=x^3-2Ax^2+(A^2-4B)x.
+\]
+The descent maps to $\Q^\times/\Q^{\times2}$ satisfy
+\begin{equation}\label{eq:descentrank}
+ 2^{\rk E(\Q)+2}=|\alpha(E)|\,|\alpha'(E')|.
+\end{equation}
+For a point with $x\ne0$, $\alpha$ is the square class of $x$. An image class is represented by a signed squarefree divisor $d$ of $B$ and must permit an integral solution, with $\gcd(U,V)=1$, of
+\begin{equation}\label{eq:cover}
+ N^2=dU^4+A U^2V^2+(B/d)V^4.
+\end{equation}
+The identity and the rational two-torsion point are included in these classes with the usual definitions $\alpha(\mathcal O)=1$, $\alpha((0,0))=B$ modulo squares.
+
+\begin{proposition}[Complete quartic point lists]\label{prop:quartics}
+Each of
+\[
+ Z^2=r^4+6r^2+1,\quad
+ Z^2=r^4-3r^2+4,\quad
+ Z^2=r^4+18r^2+1
+\]
+has only its two points with $r=0$ and its two points at infinity. The reciprocal curve $Z^2=4r^4-3r^2+1$ likewise has no finite rational point with $r\ne0$.
+\end{proposition}
+\begin{proof}
+The map $(r,Z)\mapsto(X,Y)=(r^2,rZ)$ from $Z^2=r^4+Ar^2+B$ lands on $E_{A,B}:Y^2=X^3+AX^2+BX$. We prove the complete groups in Table~\ref{tab:groups}.
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{ccl}
+\toprule
+$(A,B)$ & Partner $(A',B')$ & $E_{A,B}(\Q)$\\
+\midrule
+$(6,1)$ & $(-12,32)$ & $\{\mathcal O,(0,0),(-1,2),(-1,-2)\}$\\
+$(-3,4)$ & $(6,-7)$ & $\{\mathcal O,(0,0),(2,2),(2,-2)\}$\\
+$(18,1)$ & $(-36,320)$ & $\{\mathcal O,(0,0),(-1,4),(-1,-4)\}$\\
+\bottomrule
+\end{tabular}
+\caption{The three elliptic groups used in the normalization argument.}\label{tab:groups}
+\end{table}
+For $(6,1)$ and $(18,1)$ the first descent image is contained in $\{1,-1\}$. For $(-3,4)$ its negative classes are excluded over $\R$, leaving $\{1,2\}$. On the three partner curves the possible surviving classes are, respectively,
+\[
+ \{1,2\},\qquad\{-7,1\},\qquad\{1,5\}.
+\]
+For the first partner, negative classes make the right side of~\eqref{eq:cover} negative. For the second, classes $-1$ and $7$ are impossible modulo $16$. For the third, negative classes are impossible over $\R$, while $2$ and $10$ are impossible modulo $64$. The complete residue checks are specified in Appendix~\ref{app:descent}. Hence both image sizes are at most two in all three cases, and~\eqref{eq:descentrank} forces rank zero.
+
+Good-prime point counts have greatest common divisor four: for the three models one may use $(p,\#E(\F_p))=(3,4),(5,8)$; $(3,4),(5,4)$; and $(3,4),(7,4)$, respectively. Prime-to-$p$ injectivity of torsion reduction bounds each primary component; for these particular counts it gives torsion order dividing four. Appendix~\ref{app:descent} supplies the prime-by-prime argument. The four displayed points therefore exhaust each group.
+
+A finite nonzero rational $r$ would give a nonzero rational-square coordinate $X=r^2$. The only available nonzero $X$ is $-1$ in the first and third groups, or $2$ in the second group; neither is a nonzero rational square. This excludes all such $r$. Substitution gives $(0,\pm1)$, $(0,\pm2)$, and $(0,\pm1)$, respectively, and the square leading coefficient gives two rational infinity points. The polynomials are squarefree. Finally $r\mapsto1/r$ and $Z\mapsto Z/r^2$ identify the reciprocal quartics, including their projective points.
+\end{proof}
+
+\begin{corollary}\label{cor:forty}
+Forty of the forty-eight signed $D1$ systems have no admissible rational-circle point. Every remaining solution, after possibly replacing $r$ by $1/r$, satisfies
+\begin{equation}\label{eq:residual}
+ S^2=r^2+9,\qquad
+ Z^2=r^6-5r^4+19r^2+9,\qquad r\in\Q^\times.
+\end{equation}
+\end{corollary}
+\begin{proof}
+For $N=1$, the kernel has $v_1=0$, so the third offset vanishes. Each quartic row of Table~\ref{tab:normcatalog} permits only the already excluded fibers $r=0,\infty$. The four assignments with $N=r^2+9$ have the second square condition in~\eqref{eq:residual}. For $N=9r^2+1$, the second condition is $Z^2=9r^6+19r^4-5r^2+1$; substitution $r\mapsto1/r$ converts the pair to~\eqref{eq:residual} after rational-square rescalings. All statements about these eight norms are checked in the polynomial catalog.
+\end{proof}
+
+\section{The exact genus-five existence problem}\label{sec:genusfive}
+We now prove Theorem~\ref{thm:main-d1}. The conic in~\eqref{eq:residual} has the parametrization
+\begin{equation}\label{eq:conic}
+ r=\frac{6h}{1-h^2},\qquad
+ S=\frac{3(1+h^2)}{1-h^2},\qquad
+ h=\frac{r}{S+3}.
+\end{equation}
+At finite nonzero $r$, the inverse has no exception, since $S=-3$ would force $r=0$.
+
+\begin{lemma}\label{lem:pullback}
+For $r=6h/(1-h^2)$,
+\[
+ (1-h^2)^6(r^6-5r^4+19r^2+9)=9P(h).
+\]
+Furthermore
+\[
+ P(h)=(h^6-13h^4+83h^2+1)(h^6+83h^4-13h^2+1)
+\]
+is squarefree. Its smooth double cover has genus five and contains exactly the eight points in~\eqref{eq:knownintro} above the parameter values $h=0,1,-1,\infty$.
+\end{lemma}
+\begin{proof}
+The two polynomial identities follow by expansion. Squarefreeness follows from the explicit coprime factorization modulo $5$ in Appendix~\ref{app:d1checks}; exact Euclidean division independently gives $\gcd(P,P')=1$. A squarefree polynomial of degree twelve gives a double cover branched at twelve geometric points, so Riemann--Hurwitz yields $2g-2=-4+12$ and $g=5$. Substitution gives $P(0)=1$ and $P(1)=P(-1)=5184=72^2$. The infinity chart $t=1/h$, $\eta=Y/h^6$ has equation $\eta^2=P(t)$ and two smooth rational points $(0,\pm1)$, giving the two infinity points. This determines the fibers over the four indicated parameter values, not all rational points of the curve.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main-d1}: forward direction]
+An admissible $D1$ solution lies in one of the eight residual assignments by Corollary~\ref{cor:forty}. Apply the reciprocal substitution where needed, then~\eqref{eq:conic}. Lemma~\ref{lem:pullback} gives the rational point
+\[
+ (h,Y)=\left(\frac{r}{S+3},\frac{(1-h^2)^3Z}{3}\right)
+\]
+on $\mathcal C$. The original parameter $r$ is finite and nonzero; hence $h\notin\{0,1,-1,\infty\}$. The point lies outside $\mathcal K$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main-d1}: reconstruction]
+Let $(h,Y)\in\mathcal C(\Q)\setminus\mathcal K$. Then $h$ is finite and $h\notin\{0,1,-1\}$. Put
+\[
+ Q(h)=h^4+34h^2+1,\qquad D(h)=(1+h^2)Q(h).
+\]
+Define three sine--cosine pairs by
+\begin{align}
+ (\sin\alpha,\cos\alpha)
+ &=\left(\frac{1-h^2}{1+h^2},\frac{-2h}{1+h^2}\right),\notag\\
+ (\sin\beta,\cos\beta)
+ &=\left(\frac{12h(1-h^2)}{Q(h)},
+           \frac{h^4-38h^2+1}{Q(h)}\right),\label{eq:reconstruction}\\
+ (\sin\gamma,\cos\gamma)
+ &=\left(\frac{-48h^2(1-h^2)}{D(h)},\frac{Y}{D(h)}\right).\notag
+\end{align}
+The first two pairs satisfy their unit-circle equations identically. The third does so because
+\begin{equation}\label{eq:Didentity}
+ D(h)^2-\bigl(48h^2(1-h^2)\bigr)^2=P(h).
+\end{equation}
+All denominators are positive for real $h$, so these are rational circle points.
+
+With $L=(1-h^2)/D(h)$, their four signed offsets are
+\begin{equation}\label{eq:reconstructedsines}
+ L\bigl(h^4-62h^2+1,\ h^4-14h^2+1,\
+         h^4+34h^2+1,\ -48h^2\bigr).
+\end{equation}
+They satisfy $s_0=s_1+s_3$ and $s_2=s_1-s_3$. It remains to prove nondegeneracy, since linear relations alone do not suffice.
+
+Every entry, and every sum or difference of two entries in the parenthesized vector, factors into nonzero rational constants, powers of $h$, and polynomials of the form $h^4+ch^2+1$. Appendix~\ref{app:d1checks} lists all twelve pairwise expressions explicitly. The latter coefficients $c$ belong to
+\[
+ \{-110,-62,-38,-14,10,34,82\}.
+\]
+Each polynomial is monic with constant term one. Its only possible rational roots are $h=\pm1$, and its value there is $c+2\ne0$. Thus no entry vanishes and no two entries agree up to sign for the present rational $h$. The factor $L$ is also nonzero. Lemma~\ref{lem:roles} proves admissibility. The inverse integer change $x=\gamma-\beta$, $z=\alpha-\gamma+\beta$, $w=\beta$ gives an admissible point for $A_{D1}$. This proves the converse.
+\end{proof}
+
+\begin{corollary}\label{cor:fourtargets}
+If $\mathcal C(\Q)=\mathcal K$, the configurations $D1,B2,C,E2$ have no admissible rational-circle point.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:main-d1} excludes $D1$. The three determinant-two maps in~\eqref{eq:maps} and Lemma~\ref{lem:transport} exclude the other configurations.
+\end{proof}
+
+\begin{conjecture}\label{conj:points}
+The eight-point list~\eqref{eq:knownintro} is all of $\mathcal C(\Q)$.
+\end{conjecture}
+By Theorem~\ref{thm:main-d1} this is exactly the statement that the configuration D1 — and, by Corollary~\ref{cor:fourtargets}, B2, C and E2 — satisfies the rational-circle rigidity conjecture of Section~\ref{sec:rigidity}. The completeness assertion is not used anywhere in this paper. For actual integer squares, the archive's three-prime note claims that no primitive square has a squarefree three-prime central root at all, which would cover the D1 case arithmetically; we have verified its structural lemmas and curves but not every class of its case analysis (Section~\ref{sec:prior}). Conjecture~\ref{conj:points} is the relaxed statement, independent of that claim. An additional rational point would instead give an explicit admissible $D1$ rational-circle point through~\eqref{eq:reconstruction}. It would not automatically give an integer-square magic square: the original Gaussian-prime conditions remain additional arithmetic restrictions.
+
+\input{rigidity.tex}
+
+\section{Proof data and reproducibility}\label{sec:repro}
+The principal results have different computational dependencies. Theorem~\ref{thm:main-two} uses a finite elimination certificate; Theorem~\ref{thm:main-d1} uses a forty-eight-row polynomial catalog, three finite descent calculations, and explicit identities. Their logical dependencies are summarized in Table~\ref{tab:proofobjects}.
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.32\linewidth}>{\raggedright\arraybackslash}p{0.60\linewidth}}
+\toprule
+Result & Certificate or independent check\\
+\midrule
+Theorem~\ref{thm:main-two} & \path{verification/two_prime/results/certificate_degree7.json}; repeated-addition and Chebyshev/Sylvester checkers.\\[3pt]
+Lemma~\ref{lem:normcatalog} & \path{verification/d1_norm/d1_certificate.json}; polynomial kernels, divisors, both norms, and all assignment tuples.\\[3pt]
+Proposition~\ref{prop:quartics} & The same D1 record; exhaustive descent-class obstructions and good-prime counts.\\[3pt]
+Theorem~\ref{thm:main-d1} & Exact conic pullback, squarefreeness, circle reconstruction, and nondegeneracy identities in the D1 checker and \path{check_paper.py}.\\[3pt]
+Proposition~\ref{prop:orbits}; \eqref{eq:maps} & Independent finite enumeration and exact signed matrix products in \path{check_paper.py}.\\[3pt]
+Proposition~\ref{prop:four} & \path{verification/four_prime/r4search.py}; complete projective sweeps at heights $3$ and $4$ (\path{results/r4_H3_final.json}, \path{r4_H4_final.json}) with exact handling of the Cramer, line--circle and free-angle branches; unit tests of the linear forms, Cramer solver, admissibility and singular branch. The legacy finite-chart height-5 sweep is \path{r4_H5_affine_legacy.json}.\\[3pt]
+Theorem~\ref{thm:gentype} & \path{verification/four_prime/branchcheck.py}, \path{branchfine.py}, \path{general_type_check.py}: branch bidegrees, splitting fields, node and tangency classification in all charts, triple-point and common-component exclusion, and the two invariant computations.\\
+\bottomrule
+\end{tabular}
+\caption{Proof objects for the claims selected for this article.}\label{tab:proofobjects}
+\end{table}
+
+The companion archive contains the source manuscript, bibliography, certificates, checker source, and execution records. The main command is
+\begin{verbatim}
+python -m pip install -r requirements.txt
+python verify_paper.py
+python verification/four_prime/general_type_check.py
+python verification/archive_audit/archive_checks.py   # curves and identities of the archive audit
+python verification/four_prime/branchfine.py 2   # likewise 4 and 6
+\end{verbatim}
+The four-parameter sweep is reproduced with \path{python verification/four_prime/r4search.py 4} (about fifteen minutes on one core; resumable by orbit range \path{START END}).
+The Python standard library suffices for the two-prime acceptance path and the D1 arithmetic checker. The separate symbolic checks use SymPy 1.14.0~\cite{SymPy}. Verification runs in temporary copies, and assertions must remain enabled. The producer uses factorization to discover the two-prime certificate; acceptance checks the displayed identities and modular witnesses rather than trusting the producer's conclusions.
+
+The use of two implementations reduces shared implementation risks but does not replace review of the mathematical reductions. Python, the checker implementations, and SymPy's exact polynomial routines used by the symbolic checks are within the software trust boundary. No formal proof-assistant verification is claimed. The principal theorems require neither published positive-rank generator data nor an executed Sage, PARI, Magma, or Chabauty calculation. The classical descent and torsion-reduction results used in Proposition~\ref{prop:quartics} are cited explicitly.
+
+\paragraph{Use of generative AI.}
+ChatGPT and Claude were used for symbolic and computational work, implementation of verification code, and preparation and revision of the exposition.
+
+\appendix
+\input{appendices.tex}
+
+\input{references.tex}
+\end{document}

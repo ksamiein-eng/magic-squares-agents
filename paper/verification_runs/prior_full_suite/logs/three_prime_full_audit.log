@@ -1,0 +1,10 @@
+audit_inputs.py PASS
+audit_quotients.py PASS
+audit_components.py PASS
+audit_fibers.py PASS
+verify_rank_zero.py PASS
+audit_rankzero_quotients.py PASS
+audit_lifts.py PASS
+rebuild_sieves.py PASS
+audit_chabauty.py PASS
+All acceptance conditions passed; five distinct three-prime orbits closed.

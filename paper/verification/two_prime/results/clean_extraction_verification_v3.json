@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "mode": "fresh archive extraction and isolated Python (-I)",
+  "systems": 528,
+  "exact_integer_determinants": 18480,
+  "payload_files_hashed": 78,
+  "verified_payload_sha256": {
+    "verify_degree5_stdlib.py": "e49e46a3fd102f5d08da1731c82088bec99520dd3008acb2a49f60a3436758e3",
+    "results/certificate_degree5.json": "8177eda8d4afd43c4b0f191e7be549ebe21d2b81e193adee0a935abc92130234",
+    "verified_core.tex": "3956bc47677e9839bb3a90a956cc246643b04d70a5b507da54b472e55a42e897",
+    "verified_core.pdf": "a014b5e6c19961c44a44ab4bcf3df4961149fb564c31a32c1434f169f3029e76"
+  },
+  "scope": "Payload bytes are bound above; this report and the final manifest are added after the first clean extraction."
+}

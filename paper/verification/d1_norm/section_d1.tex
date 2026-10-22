@@ -1,0 +1,185 @@
+\section{Restoring the normalization constraint in orbit $D1$}\label{sec:d1norm}
+The elimination data in the preceding sections retain necessary quotient conditions. A second square condition, obtained before projection, closes sixteen further $D1$ factor entries. Exact integer-torus transport closes another sixteen entries in each of $B2,C,E2$. There are therefore 64 new factor-entry closures in this section, not four new whole-orbit closures. The remaining $D1$ problem is equivalent to one explicitly described genus-five rational-point question.
+
+\subsection{A rational-torus normal form}
+The stored $D1$ frequency ordering is
+\[
+ (1,1,1),\quad(1,1,-1),\quad(1,1,0),\quad(1,0,1).
+\]
+Make the determinant-one integer change
+\[
+ \alpha=x+z,\qquad\beta=w,\qquad\gamma=x+w.
+\]
+Its inverse is $x=\gamma-\beta$, $z=\alpha-\gamma+\beta$, $w=\beta$. Thus it preserves rational circle points in both directions, without choosing square roots. The four signed offsets become
+\begin{equation}\label{eq:d1canonical}
+ \sin(\alpha+\beta),\quad\sin(\alpha-\beta),\quad\sin\alpha,\quad\sin\gamma.
+\end{equation}
+Let $r=\tan(\beta/2)$ and $q=1+r^2$. For finite $r$, the signed vector in \eqref{eq:d1canonical} is
+\[
+ q^{-1}\begin{pmatrix}
+ 1-r^2&2r&0\\1-r^2&-2r&0\\q&0&0\\0&0&q
+ \end{pmatrix}
+ \begin{pmatrix}\sin\alpha\\\cos\alpha\\\sin\gamma\end{pmatrix}.
+\]
+The fibers $r=0,\infty$ are degenerate: the first two magnitudes coincide. All other rational circle points $\alpha,\gamma$, including their half-angle parameters at infinity, are retained by working directly with their sine and cosine coordinates.
+
+For each of the 48 complete signed assignments, let $B(r)$ be the two-by-three matrix obtained by multiplying its two linear relation rows by the displayed matrix. The cross product of the rows of $B$ is written $g(r)v(r)$, where $v=(v_1,v_2,v_3)$ is a primitive polynomial vector. The exact certificates verify this identity and a constant polynomial gcd of the entries of $v$. Every nonconstant factor of $g$ is $r$, $r^2-3$, or $3r^2-1$. The latter two have no rational root, as is already certified modulo 5. Consequently, away from the separately treated $r=0$ fiber, $B$ has rank two at every rational parameter.
+
+Any rational solution then has
+\[
+ (\sin\alpha,\cos\alpha,\sin\gamma)=\lambda(v_1,v_2,v_3),\qquad \lambda\in\Q^\times.
+\]
+In particular, the original unit-circle equations imply \emph{both}
+\begin{equation}\label{eq:d1twonorms}
+ v_1^2+v_2^2\in\Q^2,\qquad
+ v_1^2+v_2^2-v_3^2\in\Q^2.
+\end{equation}
+The second is the condition already visible in the earlier projection discriminant. The first must not be dropped: a rational direction $(\sin\alpha:\cos\alpha)$ need not have a rational normalization to the unit circle.
+
+\begin{lemma}[The $D1$ norm catalog]\label{lem:d1catalog}
+For the 48 signed systems, $v_1^2+v_2^2=q^2N(r)$, with the complete catalog in Table~\ref{tab:d1norms}. These are necessary square conditions on $N(r)$, not bounded-search observations.
+\end{lemma}
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lrl}
+\toprule
+$N(r)$ & Systems & Consequence\\
+\midrule
+$1$ &16& $v_1=0$, hence a zero offset\\
+$r^4+6r^2+1$ &4& rank-zero quartic obstruction\\
+$r^4-3r^2+4$ &4& rank-zero quartic obstruction\\
+$4r^4-3r^2+1$ &4& reciprocal of the preceding quartic\\
+$r^4+18r^2+1$ &12& rank-zero quartic obstruction\\
+$r^2+9$ &4& residual conic and sextic square conditions\\
+$9r^2+1$ &4& reciprocal residual conditions\\
+\bottomrule
+\end{tabular}
+\caption{All 48 $D1$ signed systems. Forty close; eight remain on the genus-five problem below.}\label{tab:d1norms}
+\end{table}
+\begin{proof}
+The standard-library checker reconstructs every relation matrix, cross product, division, and norm identity. It also compares the 48 row spaces with the 192 fully signed assignments. The separate symbolic checker reconstructs the circle polynomial from $(1+ir)^2$ and verifies the identities against the actual historical $D1$ inputs and system tags. Every removed factor and exceptional rational parameter is accounted for as above.
+\end{proof}
+
+\subsection{Three complete rank-zero quartic obstructions}
+\begin{proposition}\label{prop:d1quartics}
+Each smooth projective quartic
+\[
+ Z^2=r^4+6r^2+1,\qquad
+ Z^2=r^4-3r^2+4,\qquad
+ Z^2=r^4+18r^2+1
+\]
+has only the two points with $r=0$ and its two points at infinity. Their respective finite points are $(0,\pm1)$, $(0,\pm2)$, and $(0,\pm1)$. The reciprocal quartic $Z^2=4r^4-3r^2+1$ likewise has no finite point with $r\ne0$.
+\end{proposition}
+\begin{proof}
+For $Z^2=r^4+Ar^2+B$, the map
+\[
+ (r,Z)\longmapsto (X,Y)=(r^2,rZ)
+\]
+lands on $E_{A,B}:Y^2=X^3+AX^2+BX$. The following complete rational groups are independently certified:
+\begin{center}\small
+\begin{tabular}{ccl}
+\toprule
+$(A,B)$ & Descent image upper sizes & $E_{A,B}(\Q)$\\
+\midrule
+$(6,1)$ &$2,2$& $\{\mathcal O,(0,0),(-1,2),(-1,-2)\}$\\
+$(-3,4)$ &$2,2$& $\{\mathcal O,(0,0),(2,2),(2,-2)\}$\\
+$(18,1)$ &$2,2$& $\{\mathcal O,(0,0),(-1,4),(-1,-4)\}$\\
+\bottomrule
+\end{tabular}\end{center}
+Use the standard 2-isogeny descent formula of Section~\ref{sec:rank}: the isogenous coefficient pairs are $(-12,32)$, $(6,-7)$, and $(-36,320)$. For $(6,1)$, all possible first-image classes are $\pm1$; on the partner, both negative classes are excluded by sign. For $(-3,4)$, the negative first-image classes are excluded by sign; on its partner, classes $-1$ and $7$ are excluded modulo 16. For $(18,1)$ the first-image classes are again $\pm1$; on its partner, negative classes are excluded by sign and $2,10$ are excluded modulo 64. In every row the image product is at most four, proving rank zero. These use the classical descent method \cite{SageDescent}, not a database rank premise or an executed Sage routine.
+
+The checker enumerates all possible signed square classes, and checks each modular obstruction both on all primitive pairs and in the two normalized primitive charts. Good-prime counts at two or more distinct odd primes have gcd four for each model. Rational torsion therefore has order dividing four. The four displayed rational points exhaust that bound and hence the whole rank-zero group.
+
+A finite nonzero $r$ would give a nonzero square $X=r^2$. The only nonzero $X$ in the first and third groups is negative; in the second it is 2, not a rational square. No such point occurs. The points at zero and infinity follow by substitution and the square leading coefficient. Squarefreeness follows either directly or from $B(A^2-4B)\ne0$. Reciprocity $r\mapsto1/r$, with $Z\mapsto Z/r^2$, gives the final statement.
+\end{proof}
+
+\begin{corollary}\label{cor:d1forty}
+Forty of the 48 $D1$ signed systems admit no nondegenerate rational-circle solution. The only systems not excluded by this argument have zero-based indices
+\[
+ 8,9,12,14,24,25,28,30
+\]
+in the original certificate ordering.
+\end{corollary}
+\begin{proof}
+For $N=1$, the third signed offset $\sin\alpha$ vanishes. Each quartic row in Table~\ref{tab:d1norms} permits only $r=0,\infty$, which were already shown degenerate. The remaining two conic rows contain precisely the eight indicated systems.
+\end{proof}
+
+\subsection{The remaining question is exactly one genus-five curve}
+Define
+\begin{align}
+ P(h)&=h^{12}+70h^{10}-1009h^8+7060h^6-1009h^4+70h^2+1\label{eq:d1P}\\
+ &= (h^6-13h^4+83h^2+1)(h^6+83h^4-13h^2+1).\nonumber
+\end{align}
+The polynomial is squarefree. Its smooth projective double cover
+\[
+ \mathcal C:\quad Y^2=P(h)
+\]
+has genus five by Riemann--Hurwitz. It contains the eight rational points
+\begin{equation}\label{eq:d1known}
+ (0,\pm1),\qquad(1,\pm72),\qquad(-1,\pm72),\qquad\infty_+,\infty_-.
+\end{equation}
+No claim that this list is complete is made here.
+
+\begin{theorem}[Exact remaining existence problem]\label{thm:d1equivalence}
+Orbit $D1$ has a nondegenerate rational-circle solution if and only if $\mathcal C$ has a rational point other than the eight points in \eqref{eq:d1known}.
+\end{theorem}
+\begin{proof}
+For each residual system of the first conic type, \eqref{eq:d1twonorms} requires
+\begin{equation}\label{eq:d1conicpair}
+ S^2=r^2+9,\qquad Z^2=r^6-5r^4+19r^2+9.
+\end{equation}
+For the second conic type the conditions are $S^2=9r^2+1$ and $Z^2=9r^6+19r^4-5r^2+1$; setting $R=1/r$ converts them to \eqref{eq:d1conicpair}, since $r=0,\infty$ is already excluded.
+
+For finite nonzero $r$, the conic in \eqref{eq:d1conicpair} is parametrized by
+\[
+ r=\frac{6h}{1-h^2},\qquad S=\frac{3(1+h^2)}{1-h^2},\qquad
+ h=\frac{r}{S+3}.
+\]
+The inverse has no denominator exception at $r\ne0$. The exact pullback identity is
+\[
+ (1-h^2)^6\left(r^6-5r^4+19r^2+9\right)=9P(h).
+\]
+It follows that $Y=(1-h^2)^3Z/3$ gives a rational point on $\mathcal C$. The nondegenerate original solution cannot have $h=0,\pm1,\infty$.
+
+For the converse, let $(h,Y)$ be a rational point outside \eqref{eq:d1known}. In particular $h$ is finite and $h\notin\{0,1,-1\}$. Put
+\[
+ Q=h^4+34h^2+1,\qquad D=(1+h^2)Q.
+\]
+The following sine--cosine pairs are rational points of the unit circle:
+\begin{align*}
+ (\sin\alpha,\cos\alpha)&=\left(\frac{1-h^2}{1+h^2},\frac{-2h}{1+h^2}\right),\\
+ (\sin\beta,\cos\beta)&=\left(\frac{12h(1-h^2)}{Q},\frac{h^4-38h^2+1}{Q}\right),\\
+ (\sin\gamma,\cos\gamma)&=\left(\frac{-48h^2(1-h^2)}{D},\frac{Y}{D}\right).
+\end{align*}
+The first two assertions are polynomial identities. The third follows from
+\[
+ D^2-\bigl(48h^2(1-h^2)\bigr)^2=P(h).
+\]
+All denominators are positive over the reals. With $L=(1-h^2)/D$, their four signed offsets are
+\begin{equation}\label{eq:d1reconstructed}
+ L\bigl(h^4-62h^2+1,\quad h^4-14h^2+1,\quad h^4+34h^2+1,\quad-48h^2\bigr).
+\end{equation}
+These solve the two relations of system 8: $s_0=s_1+s_3$ and $s_2=s_1-s_3$.
+
+They are nonzero and distinct in magnitude. To verify this without a numerical assumption, form every entry and every sum or difference of two entries in the parenthesized vector. After removing nonzero constants and powers of $h$, each nonconstant factor is a monic integer polynomial with constant term $\pm1$, taking nonzero values at $h=\pm1$. Its only possible rational roots would be $\pm1$, by the rational-root theorem, so none occurs. The remaining common factor $L$ is nonzero by hypothesis. Lemma~\ref{lem:48} therefore gives the required magic-offset pattern. The inverse integer angle map supplies an original $D1$ point. This proves both directions.
+\end{proof}
+
+The conjecture that \eqref{eq:d1known} is complete is now a precise remaining target. Proving it would close $D1$ and, by the already verified forward maps, $B2,C,E2$. Conversely, an extra rational point would provide an explicit counterexample to the proposed \emph{rational-circle} $D1$ exclusion via \eqref{eq:d1reconstructed}; it would not automatically be an integer magic square or lift through the degree-two maps to the other three configurations.
+
+\subsection{Sixty-four new factor closures and the updated ledger}
+Each of the sixteen newly closed $D1$ systems had exactly one unresolved projection-factor entry. The maps of Section~\ref{sec:torusprogress} transfer the forty-system result to forty signed systems in each of $B2,C,E2$. Every one of the 144 required signed-row-space identities is rechecked against the historical frequency and equation orderings. This closes sixteen previously unresolved factors in each target.
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Orbit & Previously unresolved & Newly closed & Remaining factor entries\\
+\midrule
+$D1$ &24&16&8\\
+$B2$ &24&16&8\\
+$C$  &24&16&8\\
+$E2$ &24&16&8\\
+\bottomrule
+\end{tabular}
+\end{center}
+The other six incomplete orbit labels have unchanged counts. The total additional factor closures beyond the original audit is now $56+64=120$. The number of closed whole orbits remains five of fifteen. Factor occurrences across different labels are distinct proof obligations; they are not counted as 120 pairwise nonisomorphic curves.
+
+The files in \path{verification/d1_norm/} record all 48 polynomial kernels, the three new rank-zero proofs, the conic/genus-five identities, exact rational-circle reconstruction, and all transfer maps. The standard-library checker verifies the arithmetic, normalization constraints, catalog completeness, rational exceptions, and the two-way existence reduction. A separate symbolic checker reconstructs the input equations and transport identities independently. Eighteen deliberately damaged certificates are rejected. No quadratic Chabauty calculation, finite-height emptiness inference, or new whole-orbit closure is asserted in this section. No first-in-the-literature claim is made.

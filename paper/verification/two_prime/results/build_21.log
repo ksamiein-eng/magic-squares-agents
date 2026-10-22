@@ -1,0 +1,12 @@
+{
+  "systems": 48,
+  "catalog_size": 28,
+  "rootless_factors": 25,
+  "modular_primes": [
+    3,
+    5,
+    7
+  ],
+  "systems_with_removed_t": 6,
+  "max_resultant_degree": 14
+}

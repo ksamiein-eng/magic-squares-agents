@@ -1,0 +1,2802 @@
+{
+ "config": "F+1",
+ "elements": [
+  [
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   0
+  ],
+  [
+   1,
+   0,
+   1
+  ],
+  [
+   0,
+   1,
+   1
+  ]
+ ],
+ "parametrization": "original 2m (see Appendix B pullback identity)",
+ "E_polys": [
+  "2*t**2*u**2*v + 2*t**2*u*v**2 - 2*t**2*u - 2*t**2*v + 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 2*t - 2*u**2*v - 2*u*v**2 + 2*u + 2*v",
+  "-2*t**2*u*v**2 - 2*t**2*u - 2*t*u**2*v**2 - 2*t*u**2 + 2*t*v**2 + 2*t + 2*u*v**2 + 2*u",
+  "-2*t**2*u**2*v - 2*t**2*v - 2*t*u**2*v**2 + 2*t*u**2 - 2*t*v**2 + 2*t + 2*u**2*v + 2*v",
+  "-2*t**2*u**2*v - 2*t**2*u*v**2 + 2*t**2*u + 2*t**2*v - 2*u**2*v - 2*u*v**2 + 2*u + 2*v"
+ ],
+ "systems": [
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    1,
+    1
+   ],
+   "G1": "6*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u - 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 8*t*u*v - 2*u**2*v - 2*v",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 + 4*t*v**2 - 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u - 9*t**4*u**4 - t**4*u**2 + 2*t**4 + 6*t**3*u**3 + 2*t**3*u - t**2*u**4 + 2*t**2*u**2 - t**2 + 2*t*u**5 + 2*t*u**3 - 6*t*u + 2*u**4 - u**2 - 1",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    1,
+    -1
+   ],
+   "G1": "2*t**2*u**2*v + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 8*t*u*v - 6*u**2*v - 4*u*v**2 + 4*u + 2*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u - 4*t*u**2 + 4*t*v**2 + 4*u*v**2 - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**4 - t**5*u**2 - t**5 - 2*t**4*u**5 - 2*t**4*u**3 + 6*t**4*u - t**3*u**4 + 2*t**3*u**2 - t**3 - 6*t**2*u**3 - 2*t**2*u - 9*t*u**4 - t*u**2 + 2*t - 2*u",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    -1,
+    1
+   ],
+   "G1": "2*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u - 6*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t + 2*u**2*v + 2*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2*v**2 + 4*t + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**4 - 2*t**4*u**5 + t**4*u**3 + 9*t**4*u + 2*t**3*u**4 + 6*t**3*u**2 + t**2*u**5 - 2*t**2*u**3 + t**2*u - 6*t*u**4 + 2*t*u**2 + 2*t + u**5 + u**3 - 2*u",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    -1,
+    -1
+   ],
+   "G1": "-2*t**2*u**2*v - 2*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t - 2*u**2*v - 4*u*v**2 + 4*u + 6*v",
+   "G2": "-4*t**2*u - 4*t**2*v - 4*t*u**2*v**2 + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**5*u**5 + t**5*u**3 - 2*t**5*u + 6*t**4*u**4 - 2*t**4*u**2 - 2*t**4 + t**3*u**5 - 2*t**3*u**3 + t**3*u - 2*t**2*u**4 - 6*t**2*u**2 - 2*t*u**5 + t*u**3 + 9*t*u - 2*u**4",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    1,
+    1
+   ],
+   "G1": "6*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u - 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 8*t*u*v - 2*u**2*v - 2*v",
+   "G2": "-4*t**2*u - 4*t**2*v - 4*t*u**2*v**2 + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u - 9*t**4*u**4 - t**4*u**2 + 2*t**4 + 6*t**3*u**3 + 2*t**3*u - t**2*u**4 + 2*t**2*u**2 - t**2 + 2*t*u**5 + 2*t*u**3 - 6*t*u + 2*u**4 - u**2 - 1",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    1,
+    -1
+   ],
+   "G1": "2*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u - 6*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t + 2*u**2*v + 2*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u - 4*t*u**2 + 4*t*v**2 + 4*u*v**2 - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**4 - 2*t**4*u**5 + t**4*u**3 + 9*t**4*u + 2*t**3*u**4 + 6*t**3*u**2 + t**2*u**5 - 2*t**2*u**3 + t**2*u - 6*t*u**4 + 2*t*u**2 + 2*t + u**5 + u**3 - 2*u",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    -1,
+    1
+   ],
+   "G1": "2*t**2*u**2*v + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 8*t*u*v - 6*u**2*v - 4*u*v**2 + 4*u + 2*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2*v**2 + 4*t + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**4 - t**5*u**2 - t**5 - 2*t**4*u**5 - 2*t**4*u**3 + 6*t**4*u - t**3*u**4 + 2*t**3*u**2 - t**3 - 6*t**2*u**3 - 2*t**2*u - 9*t*u**4 - t*u**2 + 2*t - 2*u",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    -1,
+    -1
+   ],
+   "G1": "-2*t**2*u**2*v - 2*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t - 2*u**2*v - 4*u*v**2 + 4*u + 6*v",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 + 4*t*v**2 - 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**5*u**5 + t**5*u**3 - 2*t**5*u + 6*t**4*u**4 - 2*t**4*u**2 - 2*t**4 + t**3*u**5 - 2*t**3*u**3 + t**3*u - 2*t**2*u**4 - 6*t**2*u**2 - 2*t*u**5 + t*u**3 + 9*t*u - 2*u**4",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 6*t**2*u*v**2 - 2*t**2*u - 4*t**2*v + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 2*u*v**2 - 2*u",
+   "G2": "-4*t**2*u**2*v + 4*t**2*u + 4*t*u**2 - 4*t*v**2 - 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v - 9*t**4*v**4 - t**4*v**2 + 2*t**4 + 6*t**3*v**3 + 2*t**3*v - t**2*v**4 + 2*t**2*v**2 - t**2 + 2*t*v**5 + 2*t*v**3 - 6*t*v + 2*v**4 - v**2 - 1",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    1,
+    -1
+   ],
+   "G1": "2*t**2*u*v**2 + 2*t**2*u + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 4*u**2*v - 6*u*v**2 + 2*u + 4*v",
+   "G2": "4*t**2*u*v**2 - 4*t**2*v + 4*t*u**2 - 4*t*v**2 + 4*u**2*v - 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**4 - t**5*v**2 - t**5 - 2*t**4*v**5 - 2*t**4*v**3 + 6*t**4*v - t**3*v**4 + 2*t**3*v**2 - t**3 - 6*t**2*v**3 - 2*t**2*v - 9*t*v**4 - t*v**2 + 2*t - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 2*t**2*u*v**2 - 6*t**2*u - 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 2*u*v**2 + 2*u",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2*v**2 + 4*t + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**4 - 2*t**4*v**5 + t**4*v**3 + 9*t**4*v + 2*t**3*v**4 + 6*t**3*v**2 + t**2*v**5 - 2*t**2*v**3 + t**2*v - 6*t*v**4 + 2*t*v**2 + 2*t + v**5 + v**3 - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    -1,
+    -1
+   ],
+   "G1": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2 - 8*t*u*v + 4*t - 4*u**2*v - 2*u*v**2 + 6*u + 4*v",
+   "G2": "-4*t**2*u - 4*t**2*v - 4*t*u**2*v**2 + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**5*v**5 + t**5*v**3 - 2*t**5*v + 6*t**4*v**4 - 2*t**4*v**2 - 2*t**4 + t**3*v**5 - 2*t**3*v**3 + t**3*v - 2*t**2*v**4 - 6*t**2*v**2 - 2*t*v**5 + t*v**3 + 9*t*v - 2*v**4",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 6*t**2*u*v**2 - 2*t**2*u - 4*t**2*v + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 2*u*v**2 - 2*u",
+   "G2": "-4*t**2*u - 4*t**2*v - 4*t*u**2*v**2 + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v - 9*t**4*v**4 - t**4*v**2 + 2*t**4 + 6*t**3*v**3 + 2*t**3*v - t**2*v**4 + 2*t**2*v**2 - t**2 + 2*t*v**5 + 2*t*v**3 - 6*t*v + 2*v**4 - v**2 - 1",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v + 2*t**2*u*v**2 - 6*t**2*u - 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 2*u*v**2 + 2*u",
+   "G2": "4*t**2*u*v**2 - 4*t**2*v + 4*t*u**2 - 4*t*v**2 + 4*u**2*v - 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**4 - 2*t**4*v**5 + t**4*v**3 + 9*t**4*v + 2*t**3*v**4 + 6*t**3*v**2 + t**2*v**5 - 2*t**2*v**3 + t**2*v - 6*t*v**4 + 2*t*v**2 + 2*t + v**5 + v**3 - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    -1,
+    1
+   ],
+   "G1": "2*t**2*u*v**2 + 2*t**2*u + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 4*u**2*v - 6*u*v**2 + 2*u + 4*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2*v**2 + 4*t + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**4 - t**5*v**2 - t**5 - 2*t**4*v**5 - 2*t**4*v**3 + 6*t**4*v - t**3*v**4 + 2*t**3*v**2 - t**3 - 6*t**2*v**3 - 2*t**2*v - 9*t*v**4 - t*v**2 + 2*t - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    -1,
+    -1
+   ],
+   "G1": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2 - 8*t*u*v + 4*t - 4*u**2*v - 2*u*v**2 + 6*u + 4*v",
+   "G2": "-4*t**2*u**2*v + 4*t**2*u + 4*t*u**2 - 4*t*v**2 - 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**5*v**5 + t**5*v**3 - 2*t**5*v + 6*t**4*v**4 - 2*t**4*v**2 - 2*t**4 + t**3*v**5 - 2*t**3*v**3 + t**3*v - 2*t**2*v**4 - 6*t**2*v**2 - 2*t*v**5 + t*v**3 + 9*t*v - 2*v**4",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 4*t**2*u*v**2 + 6*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 - 2*t - 4*u**2*v - 4*u*v**2",
+   "G2": "-4*t**2*u**2*v + 4*t**2*u + 4*t*u**2 - 4*t*v**2 - 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*u**5*v - 9*u**4*v**4 - u**4*v**2 + 2*u**4 + 6*u**3*v**3 + 2*u**3*v - u**2*v**4 + 2*u**2*v**2 - u**2 + 2*u*v**5 + 2*u*v**3 - 6*u*v + 2*v**4 - v**2 - 1",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u*v**2 - 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 - 8*t*u*v - 6*t*v**2 + 2*t - 4*u*v**2 + 4*v",
+   "G2": "4*t**2*u + 4*t**2*v + 4*t*u**2*v**2 - 4*t - 4*u**2*v - 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*u**5*v**4 - u**5*v**2 - u**5 - 2*u**4*v**5 - 2*u**4*v**3 + 6*u**4*v - u**3*v**4 + 2*u**3*v**2 - u**3 - 6*u**2*v**3 - 2*u**2*v - 9*u*v**4 - u*v**2 + 2*u - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v - 4*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 8*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 4*u",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2*v**2 + 4*t + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*u**5*v**4 - 2*u**4*v**5 + u**4*v**3 + 9*u**4*v + 2*u**3*v**4 + 6*u**3*v**2 + u**2*v**5 - 2*u**2*v**3 + u**2*v - 6*u*v**4 + 2*u*v**2 + 2*u + v**5 + v**3 - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    -1,
+    -1
+   ],
+   "G1": "-4*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 6*t + 4*u + 4*v",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 + 4*t*v**2 - 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u**5*v**5 + u**5*v**3 - 2*u**5*v + 6*u**4*v**4 - 2*u**4*v**2 - 2*u**4 + u**3*v**5 - 2*u**3*v**3 + u**3*v - 2*u**2*v**4 - 6*u**2*v**2 - 2*u*v**5 + u*v**3 + 9*u*v - 2*v**4",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 4*t**2*u*v**2 + 6*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 - 2*t - 4*u**2*v - 4*u*v**2",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 + 4*t*v**2 - 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*u**5*v - 9*u**4*v**4 - u**4*v**2 + 2*u**4 + 6*u**3*v**3 + 2*u**3*v - u**2*v**4 + 2*u**2*v**2 - u**2 + 2*u*v**5 + 2*u*v**3 - 6*u*v + 2*v**4 - v**2 - 1",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v - 4*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 8*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 4*u",
+   "G2": "4*t**2*u + 4*t**2*v + 4*t*u**2*v**2 - 4*t - 4*u**2*v - 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*u**5*v**4 - 2*u**4*v**5 + u**4*v**3 + 9*u**4*v + 2*u**3*v**4 + 6*u**3*v**2 + u**2*v**5 - 2*u**2*v**3 + u**2*v - 6*u*v**4 + 2*u*v**2 + 2*u + v**5 + v**3 - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u*v**2 - 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 - 8*t*u*v - 6*t*v**2 + 2*t - 4*u*v**2 + 4*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2*v**2 + 4*t + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "v",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*u**5*v**4 - u**5*v**2 - u**5 - 2*u**4*v**5 - 2*u**4*v**3 + 6*u**4*v - u**3*v**4 + 2*u**3*v**2 - u**3 - 6*u**2*v**3 - 2*u**2*v - 9*u*v**4 - u*v**2 + 2*u - 2*v",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    -1,
+    -1
+   ],
+   "G1": "-4*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 6*t + 4*u + 4*v",
+   "G2": "-4*t**2*u**2*v + 4*t**2*u + 4*t*u**2 - 4*t*v**2 - 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "x",
+    "plane": [
+     "z",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u**5*v**5 + u**5*v**3 - 2*u**5*v + 6*u**4*v**4 - 2*u**4*v**2 - 2*u**4 + u**3*v**5 - 2*u**3*v**3 + u**3*v - 2*u**2*v**4 - 6*u**2*v**2 - 2*u*v**5 + u*v**3 + 9*u*v - 2*v**4",
+     "bidegree": [
+      5,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    1,
+    1
+   ],
+   "G1": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 4*u**2*v + 6*u*v**2 - 2*u - 4*v",
+   "G2": "-6*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 8*t*u*v + 2*u**2*v + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "9*t**6*u**3 + t**6*u + 18*t**5*u**4 - 8*t**5*u**2 - 2*t**5 - 33*t**4*u**3 - 17*t**4*u - 20*t**3*u**4 - 32*t**3*u**2 + 4*t**3 - 8*t**2*u**5 - 29*t**2*u**3 + 3*t**2*u - 14*t*u**4 - 8*t*u**2 - 2*t - 3*u**3 - 3*u",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    1,
+    -1
+   ],
+   "G1": "-4*t**2*u**2*v - 6*t**2*u*v**2 + 2*t**2*u + 4*t**2*v - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 2*u*v**2 + 2*u",
+   "G2": "-2*t**2*u**2*v - 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 8*t*u*v + 6*u**2*v + 4*u*v**2 - 4*u - 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "3*t**6*u**3 + 3*t**6*u - 14*t**5*u**4 - 8*t**5*u**2 - 2*t**5 + 8*t**4*u**5 + 29*t**4*u**3 - 3*t**4*u - 20*t**3*u**4 - 32*t**3*u**2 + 4*t**3 + 33*t**2*u**3 + 17*t**2*u + 18*t*u**4 - 8*t*u**2 - 2*t - 9*u**3 - u",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 2*t**2*u*v**2 - 6*t**2*u - 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 2*u*v**2 + 2*u",
+   "G2": "-2*t**2*u**2*v - 2*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t - 2*u**2*v - 4*u*v**2 + 4*u + 6*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "3*t**6*u**4 + 3*t**6*u**2 + 2*t**5*u**5 + 8*t**5*u**3 + 14*t**5*u - 3*t**4*u**4 + 29*t**4*u**2 + 8*t**4 - 4*t**3*u**5 + 32*t**3*u**3 + 20*t**3*u + 17*t**2*u**4 + 33*t**2*u**2 + 2*t*u**5 + 8*t*u**3 - 18*t*u - u**4 - 9*u**2",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    -1,
+    -1
+   ],
+   "G1": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2 - 8*t*u*v + 4*t - 4*u**2*v - 2*u*v**2 + 6*u + 4*v",
+   "G2": "2*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u - 6*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t + 2*u**2*v + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**6*u**4 + 9*t**6*u**2 + 2*t**5*u**5 + 8*t**5*u**3 - 18*t**5*u - 17*t**4*u**4 - 33*t**4*u**2 - 4*t**3*u**5 + 32*t**3*u**3 + 20*t**3*u + 3*t**2*u**4 - 29*t**2*u**2 - 8*t**2 + 2*t*u**5 + 8*t*u**3 + 14*t*u - 3*u**4 - 3*u**2",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    1,
+    1
+   ],
+   "G1": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 4*u**2*v + 6*u*v**2 - 2*u - 4*v",
+   "G2": "2*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u - 6*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t + 2*u**2*v + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**6*u**4 + 9*t**6*u**2 + 2*t**5*u**5 + 8*t**5*u**3 - 18*t**5*u - 17*t**4*u**4 - 33*t**4*u**2 - 4*t**3*u**5 + 32*t**3*u**3 + 20*t**3*u + 3*t**2*u**4 - 29*t**2*u**2 - 8*t**2 + 2*t*u**5 + 8*t*u**3 + 14*t*u - 3*u**4 - 3*u**2",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v + 2*t**2*u*v**2 - 6*t**2*u - 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 2*u*v**2 + 2*u",
+   "G2": "-2*t**2*u**2*v - 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 8*t*u*v + 6*u**2*v + 4*u*v**2 - 4*u - 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "3*t**6*u**3 + 3*t**6*u - 14*t**5*u**4 - 8*t**5*u**2 - 2*t**5 + 8*t**4*u**5 + 29*t**4*u**3 - 3*t**4*u - 20*t**3*u**4 - 32*t**3*u**2 + 4*t**3 + 33*t**2*u**3 + 17*t**2*u + 18*t*u**4 - 8*t*u**2 - 2*t - 9*u**3 - u",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    -1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v - 6*t**2*u*v**2 + 2*t**2*u + 4*t**2*v - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 2*u*v**2 + 2*u",
+   "G2": "-2*t**2*u**2*v - 2*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t - 2*u**2*v - 4*u*v**2 + 4*u + 6*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "3*t**6*u**4 + 3*t**6*u**2 + 2*t**5*u**5 + 8*t**5*u**3 + 14*t**5*u - 3*t**4*u**4 + 29*t**4*u**2 + 8*t**4 - 4*t**3*u**5 + 32*t**3*u**3 + 20*t**3*u + 17*t**2*u**4 + 33*t**2*u**2 + 2*t*u**5 + 8*t*u**3 - 18*t*u - u**4 - 9*u**2",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    -1,
+    -1
+   ],
+   "G1": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2 - 8*t*u*v + 4*t - 4*u**2*v - 2*u*v**2 + 6*u + 4*v",
+   "G2": "-6*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 8*t*u*v + 2*u**2*v + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "9*t**6*u**3 + t**6*u + 18*t**5*u**4 - 8*t**5*u**2 - 2*t**5 - 33*t**4*u**3 - 17*t**4*u - 20*t**3*u**4 - 32*t**3*u**2 + 4*t**3 - 8*t**2*u**5 - 29*t**2*u**3 + 3*t**2*u - 14*t*u**4 - 8*t*u**2 - 2*t - 3*u**3 - 3*u",
+     "bidegree": [
+      6,
+      5
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    1,
+    1
+   ],
+   "G1": "-4*t**2*u*v**2 + 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 + 8*t*u*v + 6*t*v**2 - 2*t + 4*u*v**2 - 4*v",
+   "G2": "-6*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 8*t*u*v + 2*u**2*v + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*u**2 - 18*t**4*u**5 + 20*t**4*u**3 + 14*t**4*u - 9*t**3*u**6 + 33*t**3*u**4 + 29*t**3*u**2 + 3*t**3 + 8*t**2*u**5 + 32*t**2*u**3 + 8*t**2*u - t*u**6 + 17*t*u**4 - 3*t*u**2 + 3*t + 2*u**5 - 4*u**3 + 2*u",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    1,
+    -1
+   ],
+   "G1": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 6*t*u**2*v**2 + 2*t*u**2 + 8*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 4*u*v**2",
+   "G2": "-2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 6*t**2*v + 8*t*u*v + 4*t*v**2 - 4*t - 2*u**2*v - 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*u**4 - 14*t**4*u**5 - 20*t**4*u**3 + 18*t**4*u + 3*t**3*u**6 + 29*t**3*u**4 + 33*t**3*u**2 - 9*t**3 - 8*t**2*u**5 - 32*t**2*u**3 - 8*t**2*u + 3*t*u**6 - 3*t*u**4 + 17*t*u**2 - t - 2*u**5 + 4*u**3 - 2*u",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v - 4*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 8*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 4*u",
+   "G2": "-2*t**2*u**2*v - 2*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t - 2*u**2*v - 4*u*v**2 + 4*u + 6*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**5 - 4*t**5*u**3 + 2*t**5*u + 3*t**4*u**6 - 3*t**4*u**4 + 17*t**4*u**2 - t**4 + 8*t**3*u**5 + 32*t**3*u**3 + 8*t**3*u + 3*t**2*u**6 + 29*t**2*u**4 + 33*t**2*u**2 - 9*t**2 + 14*t*u**5 + 20*t*u**3 - 18*t*u + 8*u**4",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    -1,
+    -1
+   ],
+   "G1": "-4*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 6*t + 4*u + 4*v",
+   "G2": "2*t**2*u**2*v + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 8*t*u*v - 6*u**2*v - 4*u*v**2 + 4*u + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**5 - 4*t**5*u**3 + 2*t**5*u + t**4*u**6 - 17*t**4*u**4 + 3*t**4*u**2 - 3*t**4 + 8*t**3*u**5 + 32*t**3*u**3 + 8*t**3*u + 9*t**2*u**6 - 33*t**2*u**4 - 29*t**2*u**2 - 3*t**2 - 18*t*u**5 + 20*t*u**3 + 14*t*u - 8*u**2",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    1,
+    1
+   ],
+   "G1": "-4*t**2*u*v**2 + 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 + 8*t*u*v + 6*t*v**2 - 2*t + 4*u*v**2 - 4*v",
+   "G2": "2*t**2*u**2*v + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 8*t*u*v - 6*u**2*v - 4*u*v**2 + 4*u + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**5 - 4*t**5*u**3 + 2*t**5*u + t**4*u**6 - 17*t**4*u**4 + 3*t**4*u**2 - 3*t**4 + 8*t**3*u**5 + 32*t**3*u**3 + 8*t**3*u + 9*t**2*u**6 - 33*t**2*u**4 - 29*t**2*u**2 - 3*t**2 - 18*t*u**5 + 20*t*u**3 + 14*t*u - 8*u**2",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v - 4*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 8*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 4*u",
+   "G2": "-2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 6*t**2*v + 8*t*u*v + 4*t*v**2 - 4*t - 2*u**2*v - 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*u**4 - 14*t**4*u**5 - 20*t**4*u**3 + 18*t**4*u + 3*t**3*u**6 + 29*t**3*u**4 + 33*t**3*u**2 - 9*t**3 - 8*t**2*u**5 - 32*t**2*u**3 - 8*t**2*u + 3*t*u**6 - 3*t*u**4 + 17*t*u**2 - t - 2*u**5 + 4*u**3 - 2*u",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    -1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 6*t*u**2*v**2 + 2*t*u**2 + 8*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 4*u*v**2",
+   "G2": "-2*t**2*u**2*v - 2*t**2*v - 8*t*u*v - 4*t*v**2 + 4*t - 2*u**2*v - 4*u*v**2 + 4*u + 6*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*u**5 - 4*t**5*u**3 + 2*t**5*u + 3*t**4*u**6 - 3*t**4*u**4 + 17*t**4*u**2 - t**4 + 8*t**3*u**5 + 32*t**3*u**3 + 8*t**3*u + 3*t**2*u**6 + 29*t**2*u**4 + 33*t**2*u**2 - 9*t**2 + 14*t*u**5 + 20*t*u**3 - 18*t*u + 8*u**4",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    -1,
+    -1
+   ],
+   "G1": "-4*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 6*t + 4*u + 4*v",
+   "G2": "-6*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 8*t*u*v + 2*u**2*v + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*u**2 - 18*t**4*u**5 + 20*t**4*u**3 + 14*t**4*u - 9*t**3*u**6 + 33*t**3*u**4 + 29*t**3*u**2 + 3*t**3 + 8*t**2*u**5 + 32*t**2*u**3 + 8*t**2*u - t*u**6 + 17*t*u**4 - 3*t*u**2 + 3*t + 2*u**5 - 4*u**3 + 2*u",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v + 4*t**2*u - 2*t*u**2*v**2 + 6*t*u**2 + 8*t*u*v - 2*t*v**2 - 2*t + 4*u**2*v - 4*u",
+   "G2": "-4*t**2*u**2*v - 6*t**2*u*v**2 + 2*t**2*u + 4*t**2*v - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 2*u*v**2 + 2*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*v**2 - 18*t**4*v**5 + 20*t**4*v**3 + 14*t**4*v - 9*t**3*v**6 + 33*t**3*v**4 + 29*t**3*v**2 + 3*t**3 + 8*t**2*v**5 + 32*t**2*v**3 + 8*t**2*v - t*v**6 + 17*t*v**4 - 3*t*v**2 + 3*t + 2*v**5 - 4*v**3 + 2*v",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    1,
+    -1
+   ],
+   "G1": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 6*t*u**2*v**2 + 2*t*u**2 + 8*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 4*u*v**2",
+   "G2": "-4*t**2*u**2*v - 2*t**2*u*v**2 + 6*t**2*u + 4*t**2*v + 4*t*u**2 + 8*t*u*v - 4*t - 2*u*v**2 - 2*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*v**4 - 14*t**4*v**5 - 20*t**4*v**3 + 18*t**4*v + 3*t**3*v**6 + 29*t**3*v**4 + 33*t**3*v**2 - 9*t**3 - 8*t**2*v**5 - 32*t**2*v**3 - 8*t**2*v + 3*t*v**6 - 3*t*v**4 + 17*t*v**2 - t - 2*v**5 + 4*v**3 - 2*v",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u*v**2 - 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 - 8*t*u*v - 6*t*v**2 + 2*t - 4*u*v**2 + 4*v",
+   "G2": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2 - 8*t*u*v + 4*t - 4*u**2*v - 2*u*v**2 + 6*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**5 - 4*t**5*v**3 + 2*t**5*v + 3*t**4*v**6 - 3*t**4*v**4 + 17*t**4*v**2 - t**4 + 8*t**3*v**5 + 32*t**3*v**3 + 8*t**3*v + 3*t**2*v**6 + 29*t**2*v**4 + 33*t**2*v**2 - 9*t**2 + 14*t*v**5 + 20*t*v**3 - 18*t*v + 8*v**4",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    -1,
+    -1
+   ],
+   "G1": "-4*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 6*t + 4*u + 4*v",
+   "G2": "2*t**2*u*v**2 + 2*t**2*u + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 4*u**2*v - 6*u*v**2 + 2*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**5 - 4*t**5*v**3 + 2*t**5*v + t**4*v**6 - 17*t**4*v**4 + 3*t**4*v**2 - 3*t**4 + 8*t**3*v**5 + 32*t**3*v**3 + 8*t**3*v + 9*t**2*v**6 - 33*t**2*v**4 - 29*t**2*v**2 - 3*t**2 - 18*t*v**5 + 20*t*v**3 + 14*t*v - 8*v**2",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v + 4*t**2*u - 2*t*u**2*v**2 + 6*t*u**2 + 8*t*u*v - 2*t*v**2 - 2*t + 4*u**2*v - 4*u",
+   "G2": "2*t**2*u*v**2 + 2*t**2*u + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 4*u**2*v - 6*u*v**2 + 2*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**5 - 4*t**5*v**3 + 2*t**5*v + t**4*v**6 - 17*t**4*v**4 + 3*t**4*v**2 - 3*t**4 + 8*t**3*v**5 + 32*t**3*v**3 + 8*t**3*v + 9*t**2*v**6 - 33*t**2*v**4 - 29*t**2*v**2 - 3*t**2 - 18*t*v**5 + 20*t*v**3 + 14*t*v - 8*v**2",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u*v**2 - 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 - 8*t*u*v - 6*t*v**2 + 2*t - 4*u*v**2 + 4*v",
+   "G2": "-4*t**2*u**2*v - 2*t**2*u*v**2 + 6*t**2*u + 4*t**2*v + 4*t*u**2 + 8*t*u*v - 4*t - 2*u*v**2 - 2*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*v**4 - 14*t**4*v**5 - 20*t**4*v**3 + 18*t**4*v + 3*t**3*v**6 + 29*t**3*v**4 + 33*t**3*v**2 - 9*t**3 - 8*t**2*v**5 - 32*t**2*v**3 - 8*t**2*v + 3*t*v**6 - 3*t*v**4 + 17*t*v**2 - t - 2*v**5 + 4*v**3 - 2*v",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    -1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 6*t*u**2*v**2 + 2*t*u**2 + 8*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 4*u*v**2",
+   "G2": "-2*t**2*u*v**2 - 2*t**2*u - 4*t*u**2 - 8*t*u*v + 4*t - 4*u**2*v - 2*u*v**2 + 6*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "2*t**5*v**5 - 4*t**5*v**3 + 2*t**5*v + 3*t**4*v**6 - 3*t**4*v**4 + 17*t**4*v**2 - t**4 + 8*t**3*v**5 + 32*t**3*v**3 + 8*t**3*v + 3*t**2*v**6 + 29*t**2*v**4 + 33*t**2*v**2 - 9*t**2 + 14*t*v**5 + 20*t*v**3 - 18*t*v + 8*v**4",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    -1,
+    -1
+   ],
+   "G1": "-4*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 6*t + 4*u + 4*v",
+   "G2": "-4*t**2*u**2*v - 6*t**2*u*v**2 + 2*t**2*u + 4*t**2*v - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 2*u*v**2 + 2*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2 + 1",
+     "bidegree": [
+      2,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "8*t**5*v**2 - 18*t**4*v**5 + 20*t**4*v**3 + 14*t**4*v - 9*t**3*v**6 + 33*t**3*v**4 + 29*t**3*v**2 + 3*t**3 + 8*t**2*v**5 + 32*t**2*v**3 + 8*t**2*v - t*v**6 + 17*t*v**4 - 3*t*v**2 + 3*t + 2*v**5 - 4*v**3 + 2*v",
+     "bidegree": [
+      5,
+      6
+     ],
+     "type": "nonlinear"
+    }
+   ],
+   "nondegenerate_solutions": []
+  }
+ ],
+ "summary": {
+  "degenerate_component": 0,
+  "univariate_torsion": 132,
+  "genus1_complete": 0,
+  "genus1_incomplete": 0,
+  "genus>=2": 0,
+  "genus0": 0,
+  "nonlinear": 48,
+  "isolated_line_points_checked": 0
+ },
+ "fibers": {
+  "nondegenerate_solutions": [],
+  "components": [
+   "('x', 0, 'whole fiber degenerate (an area vanishes or two coincide identically)')",
+   "('z', 0, 'whole fiber degenerate (an area vanishes or two coincide identically)')",
+   "('w', 0, 'whole fiber degenerate (an area vanishes or two coincide identically)')"
+  ]
+ },
+ "any_nondegenerate_solution": false,
+ "runtime_s": 121
+}

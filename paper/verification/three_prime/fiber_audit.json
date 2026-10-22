@@ -1,0 +1,1834 @@
+{
+  "rows": [
+    {
+      "orbit": "A",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "t",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "t",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "u",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "u",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "v",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "A",
+      "variable": "v",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "t",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "t",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "u",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "u",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "v",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B1",
+      "variable": "v",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "t",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "t",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "u",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "u",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "v",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "B2",
+      "variable": "v",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "t",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "t",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "u",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "u",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "zero",
+        3
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "v",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "C",
+      "variable": "v",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D1",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 0,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 0,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        3,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D1",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D1",
+      "variable": "v",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D1",
+      "variable": "v",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D2",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D2",
+      "variable": "t",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D2",
+      "variable": "t",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D2",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        3,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D2",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D2",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D2",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D2",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D2",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D3",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D3",
+      "variable": "t",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D3",
+      "variable": "t",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D3",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        3,
+        1,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D3",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D3",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D3",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D3",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D3",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D4",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D4",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 0,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D4",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 0,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D4",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D4",
+      "variable": "u",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D4",
+      "variable": "u",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D4",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "D4",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "D4",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E1",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E1",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E1",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E1",
+      "variable": "u",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E1",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E1",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E1",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "zero",
+        3
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E1",
+      "variable": "v",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E1",
+      "variable": "v",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E2",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "variable": "u",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "zero",
+        3
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E2",
+      "variable": "v",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E2",
+      "variable": "v",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E3",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E3",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E3",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E3",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E3",
+      "variable": "u",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E3",
+      "variable": "u",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E3",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "zero",
+        3
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E3",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 30,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E3",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 30,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E4",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        -1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E4",
+      "variable": "t",
+      "value": 1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E4",
+      "variable": "t",
+      "value": -1,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E4",
+      "variable": "u",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E4",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E4",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 18,
+      "isolated_points_checked": 76,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E4",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "zero",
+        3
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "E4",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 30,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "E4",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 30,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+1",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        3,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F+1",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+1",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+1",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F+1",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+1",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+1",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F+1",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+1",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "u",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F+2",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F+2",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-1",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-1",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-1",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-1",
+      "variable": "u",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        2,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F-1",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-1",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-1",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F-1",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-1",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "t",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "u",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "v",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-2",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-3",
+      "variable": "t",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        3,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F-3",
+      "variable": "t",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-3",
+      "variable": "t",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-3",
+      "variable": "u",
+      "value": 0,
+      "systems": 48,
+      "common_factors": 12,
+      "isolated_points_checked": 38,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-3",
+      "variable": "u",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-3",
+      "variable": "u",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-3",
+      "variable": "v",
+      "value": 0,
+      "whole_fiber_witness": [
+        "equal",
+        1,
+        0,
+        1
+      ],
+      "passed": true,
+      "systems": 0
+    },
+    {
+      "orbit": "F-3",
+      "variable": "v",
+      "value": 1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    },
+    {
+      "orbit": "F-3",
+      "variable": "v",
+      "value": -1,
+      "systems": 48,
+      "common_factors": 0,
+      "isolated_points_checked": 6,
+      "unresolved": [],
+      "nondegenerate": [],
+      "passed": true
+    }
+  ],
+  "fibers": 153,
+  "passed": 153,
+  "systems": 3696,
+  "unresolved_fibers": [],
+  "infinity_boundary_proof": "After fixing one angle to pi, erase its frequency coordinate and ignore vector signs. A zero or duplicate projected vector is degenerate. Otherwise the four projected vectors are the entire nonzero projective {-1,0,1}^2 box, hence a frequency parallelogram excluded by the real-angle theorem."
+}

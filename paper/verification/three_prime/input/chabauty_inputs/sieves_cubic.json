@@ -1,0 +1,458 @@
+{
+ "method": "Mordell-Weil sieve on y^2 = a s^3 + b s^2 + c s + d (Weierstrass X=a s), condition: s(P) is a rational square (or 0/inf); P = m*G; allowed residues m mod ord_p(G) computed for good primes p<4000; modulus M = lcm of small orders; filter primes = those with ord_p(G) | M; survivors listed as signed residues",
+ "curves": {
+  "A": {
+   "f": "1 s^3 + -5 s^2 + 19 s + 9",
+   "weierstrass_a_invariants": [
+    0,
+    -5,
+    0,
+    19,
+    9
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[0, 3]"
+   ],
+   "generator_s": [
+    "0"
+   ],
+   "canonical_heights": [
+    1.586118
+   ],
+   "modulus_M": [
+    5354228880
+   ],
+   "survivors_signed": [
+    [
+     -1
+    ],
+    [
+     0
+    ],
+    [
+     1
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     1,
+     0,
+     11,
+     35
+    ],
+    "conductor": 1968,
+    "h(j)": 10.3972,
+    "log|Delta|": 13.13,
+    "silverman_search_radius_H": 1727,
+    "points_found": 4,
+    "min_nontorsion_height_found": 1.586118,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 7
+  },
+  "B": {
+   "f": "1 s^3 + 11 s^2 + -5 s + 1",
+   "weierstrass_a_invariants": [
+    0,
+    11,
+    0,
+    -5,
+    1
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[-1, 4]"
+   ],
+   "generator_s": [
+    "-1"
+   ],
+   "canonical_heights": [
+    0.206774
+   ],
+   "modulus_M": [
+    13693680
+   ],
+   "survivors_signed": [
+    [
+     -2
+    ],
+    [
+     0
+    ],
+    [
+     2
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -45,
+     133
+    ],
+    "conductor": 352,
+    "h(j)": 14.738,
+    "log|Delta|": 10.7157,
+    "silverman_search_radius_H": 3417,
+    "points_found": 12,
+    "min_nontorsion_height_found": 0.206774,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 3
+  },
+  "C": {
+   "f": "1 s^3 + -5 s^2 + 11 s + 1",
+   "weierstrass_a_invariants": [
+    0,
+    -5,
+    0,
+    11,
+    1
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[3, 4]"
+   ],
+   "generator_s": [
+    "3"
+   ],
+   "canonical_heights": [
+    0.308895
+   ],
+   "modulus_M": [
+    5354228880
+   ],
+   "survivors_signed": [
+    [
+     -2
+    ],
+    [
+     0
+    ],
+    [
+     2
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     1,
+     0,
+     3,
+     11
+    ],
+    "conductor": 352,
+    "h(j)": 6.2383,
+    "log|Delta|": 10.7157,
+    "silverman_search_radius_H": 409,
+    "points_found": 8,
+    "min_nontorsion_height_found": 0.308895,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 30
+  },
+  "D": {
+   "f": "25 s^3 + -29 s^2 + 11 s + 1",
+   "weierstrass_a_invariants": [
+    0,
+    -29,
+    0,
+    275,
+    625
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[15, 40]"
+   ],
+   "generator_s": [
+    "3/5"
+   ],
+   "canonical_heights": [
+    0.339479
+   ],
+   "modulus_M": [
+    6846840
+   ],
+   "survivors_signed": [
+    [
+     -2
+    ],
+    [
+     0
+    ],
+    [
+     2
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     1,
+     0,
+     0,
+     23
+    ],
+    "conductor": 1840,
+    "h(j)": 9.5732,
+    "log|Delta|": 12.3458,
+    "silverman_search_radius_H": 1233,
+    "points_found": 8,
+    "min_nontorsion_height_found": 0.339479,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 3
+  },
+  "E": {
+   "note": "rank 2 (E_E, conductor 13280): handled by the rank-2 sieve, see sieves_rank2.json",
+   "f": "25 s^3 + -61 s^2 + 43 s + 1",
+   "rank_bounds": [
+    2,
+    2
+   ]
+  },
+  "E2last_(=A)": {
+   "f": "81 s^3 + -1152 s^2 + 5632 s + -9216",
+   "weierstrass_a_invariants": [
+    0,
+    -1152,
+    0,
+    456192,
+    -60466176
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[324, 648]"
+   ],
+   "generator_s": [
+    "4"
+   ],
+   "canonical_heights": [
+    1.586118
+   ],
+   "modulus_M": [
+    5354228880
+   ],
+   "survivors_signed": [
+    [
+     -1
+    ],
+    [
+     0
+    ],
+    [
+     1
+    ],
+    [
+     2677114440
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     1,
+     0,
+     11,
+     35
+    ],
+    "conductor": 1968,
+    "h(j)": 10.3972,
+    "log|Delta|": 13.13,
+    "silverman_search_radius_H": 1727,
+    "points_found": 4,
+    "min_nontorsion_height_found": 1.586118,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 11
+  },
+  "Dtw2": {
+   "f": "50 s^3 + -58 s^2 + 22 s + 2",
+   "weierstrass_a_invariants": [
+    0,
+    -58,
+    0,
+    1100,
+    5000
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[50, 200]"
+   ],
+   "generator_s": [
+    "1"
+   ],
+   "canonical_heights": [
+    0.906003
+   ],
+   "modulus_M": [
+    360360
+   ],
+   "survivors_signed": [
+    [
+     -120119
+    ],
+    [
+     -1
+    ],
+    [
+     0
+    ],
+    [
+     1
+    ],
+    [
+     120119
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -1,
+     185
+    ],
+    "conductor": 7360,
+    "h(j)": 9.5732,
+    "log|Delta|": 16.5047,
+    "silverman_search_radius_H": 2466,
+    "points_found": 4,
+    "min_nontorsion_height_found": 0.906003,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 2
+  },
+  "Dtwm2": {
+   "f": "-50 s^3 + 58 s^2 + -22 s + -2",
+   "weierstrass_a_invariants": [
+    0,
+    58,
+    0,
+    1100,
+    -5000
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[150, 2200]"
+   ],
+   "generator_s": [
+    "-3"
+   ],
+   "canonical_heights": [
+    2.218806
+   ],
+   "modulus_M": [
+    942480
+   ],
+   "survivors_signed": [
+    [
+     0
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     1,
+     0,
+     -1,
+     -185
+    ],
+    "conductor": 7360,
+    "h(j)": 9.5732,
+    "log|Delta|": 16.5047,
+    "silverman_search_radius_H": 2466,
+    "points_found": 2,
+    "min_nontorsion_height_found": 2.218806,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 2
+  },
+  "Dtw5": {
+   "f": "125 s^3 + -145 s^2 + 55 s + 5",
+   "weierstrass_a_invariants": [
+    0,
+    -145,
+    0,
+    6875,
+    78125
+   ],
+   "rank_bounds": [
+    1,
+    1
+   ],
+   "torsion": 1,
+   "generator_XY": [
+    "[-5, 200]"
+   ],
+   "generator_s": [
+    "-1/25"
+   ],
+   "canonical_heights": [
+    1.592351
+   ],
+   "modulus_M": [
+    2677114440
+   ],
+   "survivors_signed": [
+    [
+     0
+    ]
+   ],
+   "saturation": {
+    "minimal_model": [
+     0,
+     -1,
+     0,
+     -8,
+     2887
+    ],
+    "conductor": 9200,
+    "h(j)": 9.5732,
+    "log|Delta|": 22.0025,
+    "silverman_search_radius_H": 6164,
+    "points_found": 4,
+    "min_nontorsion_height_found": 1.592351,
+    "lambda1_lower_bound": 0.02,
+    "note": "PARI height normalization (Cremona, ~h(x)); Silverman: hat h >= h(x) - h(j)/4 - log|Delta|/6 - 1.946, margin +0.7 added"
+   },
+   "runtime_s": 2
+  }
+ }
+}

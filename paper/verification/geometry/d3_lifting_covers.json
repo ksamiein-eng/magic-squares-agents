@@ -1,0 +1,587 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "system": 0,
+      "plane_factor": "u**3*v**4 - 2*u**3*v**2 + u**3 + 8*u**2*v**3 - 4*u**2*v - 3*u*v**4 + 10*u*v**2 + u - 4*v**3",
+      "plane_normalization": {
+        "x": "-4*z/(z**4 - 2*z**2 + 1)",
+        "y": "(-z**2 - 1)/(z**3 - 3*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(4*z**8 - 16*z**6 + 24*z**4 + 48*z**2 + 4)/(z**9 - 8*z**7 + 22*z**5 - 24*z**3 + 9*z)",
+        "(-2*z**14 + 18*z**12 - 42*z**10 - 6*z**8 + 186*z**6 + 118*z**4 - 14*z**2 - 2)/(z**14 - 10*z**12 + 39*z**10 - 76*z**8 + 79*z**6 - 42*z**4 + 9*z**2)",
+        "(-4*z**8 + 16*z**6 - 24*z**4 - 48*z**2 - 4)/(z**9 - 8*z**7 + 22*z**5 - 24*z**3 + 9*z)"
+      ],
+      "discriminant_square_multiplier": "(2*z**8 - 8*z**6 + 12*z**4 + 24*z**2 + 2)/(z**14 - 10*z**12 + 39*z**10 - 76*z**8 + 79*z**6 - 42*z**4 + 9*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 1,
+      "plane_factor": "4*u**3*v**3 - 3*u**2*v**4 + 10*u**2*v**2 + u**2 - 8*u*v**3 + 4*u*v + v**4 - 2*v**2 + 1",
+      "plane_normalization": {
+        "x": "(-z**4 + 2*z**2 - 1)/(4*z**3)",
+        "y": "(-z**3 - z)/(3*z**2 - 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(z**12 + 10*z**10 - 17*z**8 - 4*z**6 + 15*z**4 - 6*z**2 + 1)/(36*z**9 - 24*z**7 + 4*z**5)",
+        "(z**14 + 7*z**12 - 59*z**10 - 93*z**8 + 3*z**6 + 21*z**4 - 9*z**2 + 1)/(72*z**10 - 48*z**8 + 8*z**6)",
+        "(-z**12 - 10*z**10 + 17*z**8 + 4*z**6 - 15*z**4 + 6*z**2 - 1)/(36*z**9 - 24*z**7 + 4*z**5)"
+      ],
+      "discriminant_square_multiplier": "(z**8 + 12*z**6 + 6*z**4 - 4*z**2 + 1)/(72*z**10 - 48*z**8 + 8*z**6)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 2,
+      "plane_factor": "u**3*v**4 - 2*u**3*v**2 + u**3 + 4*u**2*v**3 - 8*u**2*v + u*v**4 + 10*u*v**2 - 3*u + 4*v",
+      "plane_normalization": {
+        "x": "4*z**3/(z**4 - 2*z**2 + 1)",
+        "y": "(3*z**2 - 1)/(z**3 + z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(4*z**6 + 44*z**4 - 20*z**2 + 4)/(z**7 - z**5 - z**3 + z)",
+        "(2*z**10 + 10*z**8 - 140*z**6 + 84*z**4 - 22*z**2 + 2)/(z**10 - 4*z**8 + 6*z**6 - 4*z**4 + z**2)",
+        "(-4*z**6 - 44*z**4 + 20*z**2 - 4)/(z**7 - z**5 - z**3 + z)"
+      ],
+      "discriminant_square_multiplier": "(2*z**6 + 22*z**4 - 10*z**2 + 2)/(z**12 - 3*z**10 + 2*z**8 + 2*z**6 - 3*z**4 + z**2)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 3,
+      "plane_factor": "4*u**3*v - u**2*v**4 - 10*u**2*v**2 + 3*u**2 + 4*u*v**3 - 8*u*v - v**4 + 2*v**2 - 1",
+      "plane_normalization": {
+        "x": "(z**4 - 2*z**2 + 1)/(4*z)",
+        "y": "(z**3 - 3*z)/(z**2 + 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(z**10 - 7*z**8 + 22*z**6 - 26*z**4 + 9*z**2 + 1)/(4*z**3 + 4*z)",
+        "(-z**10 + 11*z**8 - 42*z**6 + 70*z**4 - 5*z**2 - 1)/(8*z**2)",
+        "(-z**10 + 7*z**8 - 22*z**6 + 26*z**4 - 9*z**2 - 1)/(4*z**3 + 4*z)"
+      ],
+      "discriminant_square_multiplier": "(z**6 - 5*z**4 + 11*z**2 + 1)/(8*z**4 + 8*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 4,
+      "plane_factor": "3*u**4*v**2 - u**4 - 4*u**3*v**3 + 8*u**3*v - 10*u**2*v**2 + 2*u**2 - 4*u*v - v**2 - 1",
+      "plane_normalization": {
+        "x": "(z**3 + z)/(3*z**2 - 1)",
+        "y": "(z**4 - 2*z**2 + 1)/(4*z**3)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-z**10 - 9*z**8 + 26*z**6 - 22*z**4 + 7*z**2 - 1)/(12*z**7 - 4*z**5)",
+        "(z**12 + 6*z**10 - 65*z**8 - 28*z**6 + 31*z**4 - 10*z**2 + 1)/(24*z**8 - 8*z**6)",
+        "(z**10 + 9*z**8 - 26*z**6 + 22*z**4 - 7*z**2 + 1)/(12*z**7 - 4*z**5)"
+      ],
+      "discriminant_square_multiplier": "(z**6 + 11*z**4 - 5*z**2 + 1)/(24*z**8 - 8*z**6)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 5,
+      "plane_factor": "u**4*v**3 - 3*u**4*v + 8*u**3*v**2 - 4*u**3 - 2*u**2*v**3 + 10*u**2*v - 4*u*v**2 + v**3 + v",
+      "plane_normalization": {
+        "x": "(z**2 + 1)/(z**3 - 3*z)",
+        "y": "4*z/(z**4 - 2*z**2 + 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(4*z**6 - 20*z**4 + 44*z**2 + 4)/(z**7 - 5*z**5 + 7*z**3 - 3*z)",
+        "(2*z**12 - 20*z**10 + 62*z**8 - 56*z**6 - 130*z**4 + 12*z**2 + 2)/(z**12 - 7*z**10 + 18*z**8 - 22*z**6 + 13*z**4 - 3*z**2)",
+        "(-4*z**6 + 20*z**4 - 44*z**2 - 4)/(z**7 - 5*z**5 + 7*z**3 - 3*z)"
+      ],
+      "discriminant_square_multiplier": "(2*z**6 - 10*z**4 + 22*z**2 + 2)/(z**12 - 7*z**10 + 18*z**8 - 22*z**6 + 13*z**4 - 3*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 6,
+      "plane_factor": "u**4*v**2 + u**4 - 4*u**3*v + 10*u**2*v**2 - 2*u**2 - 4*u*v**3 + 8*u*v - 3*v**2 + 1",
+      "plane_normalization": {
+        "x": "(-z**3 + 3*z)/(z**2 + 1)",
+        "y": "(-z**4 + 2*z**2 - 1)/(4*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(z**12 - 10*z**10 + 43*z**8 - 92*z**6 + 87*z**4 - 26*z**2 - 3)/(4*z**5 + 8*z**3 + 4*z)",
+        "(z**12 - 14*z**10 + 75*z**8 - 196*z**6 + 215*z**4 - 14*z**2 - 3)/(8*z**4 + 8*z**2)",
+        "(-z**12 + 10*z**10 - 43*z**8 + 92*z**6 - 87*z**4 + 26*z**2 + 3)/(4*z**5 + 8*z**3 + 4*z)"
+      ],
+      "discriminant_square_multiplier": "(z**8 - 8*z**6 + 26*z**4 - 32*z**2 - 3)/(8*z**6 + 16*z**4 + 8*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 7,
+      "plane_factor": "u**4*v**3 + u**4*v + 4*u**3*v**2 - 2*u**2*v**3 + 10*u**2*v - 8*u*v**2 + 4*u + v**3 - 3*v",
+      "plane_normalization": {
+        "x": "(1 - 3*z**2)/(z**3 + z)",
+        "y": "-4*z**3/(z**4 - 2*z**2 + 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-12*z**8 - 128*z**6 + 104*z**4 - 32*z**2 + 4)/(z**9 - 2*z**5 + z)",
+        "(6*z**12 + 28*z**10 - 430*z**8 + 392*z**6 - 150*z**4 + 28*z**2 - 2)/(z**12 - 3*z**10 + 2*z**8 + 2*z**6 - 3*z**4 + z**2)",
+        "(12*z**8 + 128*z**6 - 104*z**4 + 32*z**2 - 4)/(z**9 - 2*z**5 + z)"
+      ],
+      "discriminant_square_multiplier": "(6*z**8 + 64*z**6 - 52*z**4 + 16*z**2 - 2)/(z**14 - 2*z**12 - z**10 + 4*z**8 - z**6 - 2*z**4 + z**2)",
+      "hyperelliptic_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 10,
+      "plane_factor": "u**4*v**2 + u**4 - 6*u**3*v**3 + 2*u**3*v - 20*u**2*v**2 + 4*u**2 + 2*u*v**3 - 22*u*v + 3*v**2 - 5",
+      "plane_normalization": {
+        "x": "(5*z**3 - 3*z)/(z**2 + 1)",
+        "y": "(5*z**4 - 4*z**2 - 1)/(6*z**3 - 2*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-125*z**10 + 245*z**8 - 146*z**6 + 10*z**4 + 15*z**2 + 1)/(3*z**7 + 5*z**5 + z**3 - z)",
+        "(625*z**12 - 2050*z**10 + 2287*z**8 - 1084*z**6 + 127*z**4 + 30*z**2 + 1)/(6*z**8 + 10*z**6 + 2*z**4 - 2*z**2)",
+        "(125*z**10 - 245*z**8 + 146*z**6 - 10*z**4 - 15*z**2 - 1)/(3*z**7 + 5*z**5 + z**3 - z)"
+      ],
+      "discriminant_square_multiplier": "(25*z**6 - 29*z**4 + 11*z**2 + 1)/(6*z**8 + 10*z**6 + 2*z**4 - 2*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 11,
+      "plane_factor": "3*u**4*v**2 - 5*u**4 - 2*u**3*v**3 + 22*u**3*v - 20*u**2*v**2 + 4*u**2 + 6*u*v**3 - 2*u*v + v**2 + 1",
+      "plane_normalization": {
+        "x": "(-z**3 - z)/(3*z**2 - 5)",
+        "y": "(-z**4 - 4*z**2 + 5)/(2*z**3 - 6*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-z**10 - 15*z**8 - 10*z**6 + 146*z**4 - 245*z**2 + 125)/(9*z**7 - 57*z**5 + 115*z**3 - 75*z)",
+        "(z**12 + 30*z**10 + 127*z**8 - 1084*z**6 + 2287*z**4 - 2050*z**2 + 625)/(18*z**8 - 114*z**6 + 230*z**4 - 150*z**2)",
+        "(z**10 + 15*z**8 + 10*z**6 - 146*z**4 + 245*z**2 - 125)/(9*z**7 - 57*z**5 + 115*z**3 - 75*z)"
+      ],
+      "discriminant_square_multiplier": "(z**6 + 11*z**4 - 29*z**2 + 25)/(18*z**8 - 114*z**6 + 230*z**4 - 150*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 13,
+      "plane_factor": "u**4*v**3 + u**4*v - 2*u**3*v**2 + 6*u**3 + 4*u**2*v**3 - 20*u**2*v + 22*u*v**2 - 2*u - 5*v**3 + 3*v",
+      "plane_normalization": {
+        "x": "(3*z**2 - 5)/(z**3 + z)",
+        "y": "(2*z**3 - 6*z)/(z**4 + 4*z**2 - 5)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-4*z**8 - 32*z**6 + 248*z**4 - 448*z**2 + 300)/(z**9 + 6*z**7 + 4*z**5 - 6*z**3 - 5*z)",
+        "(2*z**14 + 54*z**12 + 74*z**10 - 2930*z**8 + 11078*z**6 - 17822*z**4 + 13550*z**2 - 3750)/(z**14 + 10*z**12 + 23*z**10 - 20*z**8 - 49*z**6 + 10*z**4 + 25*z**2)",
+        "(4*z**8 + 32*z**6 - 248*z**4 + 448*z**2 - 300)/(z**9 + 6*z**7 + 4*z**5 - 6*z**3 - 5*z)"
+      ],
+      "discriminant_square_multiplier": "(2*z**8 + 16*z**6 - 124*z**4 + 224*z**2 - 150)/(z**14 + 10*z**12 + 23*z**10 - 20*z**8 - 49*z**6 + 10*z**4 + 25*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 15,
+      "plane_factor": "5*u**4*v**3 - 3*u**4*v + 22*u**3*v**2 - 2*u**3 - 4*u**2*v**3 + 20*u**2*v - 2*u*v**2 + 6*u - v**3 - v",
+      "plane_normalization": {
+        "x": "(-z**2 - 1)/(5*z**3 - 3*z)",
+        "y": "(-6*z**3 + 2*z)/(5*z**4 - 4*z**2 - 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-300*z**8 + 448*z**6 - 248*z**4 + 32*z**2 + 4)/(125*z**9 - 250*z**7 + 140*z**5 - 6*z**3 - 9*z)",
+        "(3750*z**14 - 13550*z**12 + 17822*z**10 - 11078*z**8 + 2930*z**6 - 74*z**4 - 54*z**2 - 2)/(625*z**14 - 1750*z**12 + 1575*z**10 - 340*z**8 - 161*z**6 + 42*z**4 + 9*z**2)",
+        "(300*z**8 - 448*z**6 + 248*z**4 - 32*z**2 - 4)/(125*z**9 - 250*z**7 + 140*z**5 - 6*z**3 - 9*z)"
+      ],
+      "discriminant_square_multiplier": "(150*z**8 - 224*z**6 + 124*z**4 - 16*z**2 - 2)/(625*z**14 - 1750*z**12 + 1575*z**10 - 340*z**8 - 161*z**6 + 42*z**4 + 9*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 18,
+      "plane_factor": "5*u**3*v**4 - 4*u**3*v**2 - u**3 + 26*u**2*v**3 + 2*u**2*v - 7*u*v**4 + 20*u*v**2 + 3*u - 6*v**3 + 2*v",
+      "plane_normalization": {
+        "x": "(2*z**3 - 6*z)/(5*z**4 - 4*z**2 - 1)",
+        "y": "(1 - 3*z**2)/(5*z**3 - 7*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-100*z**8 + 544*z**6 - 904*z**4 + 512*z**2 + 12)/(125*z**9 - 450*z**7 + 500*z**5 - 126*z**3 - 49*z)",
+        "(1250*z**14 - 9450*z**12 + 26666*z**10 - 35474*z**8 + 21734*z**6 - 4094*z**4 - 370*z**2 - 6)/(625*z**14 - 2750*z**12 + 4175*z**10 - 2180*z**8 - 241*z**6 + 322*z**4 + 49*z**2)",
+        "(100*z**8 - 544*z**6 + 904*z**4 - 512*z**2 - 12)/(125*z**9 - 450*z**7 + 500*z**5 - 126*z**3 - 49*z)"
+      ],
+      "discriminant_square_multiplier": "(50*z**8 - 272*z**6 + 452*z**4 - 256*z**2 - 6)/(625*z**14 - 2750*z**12 + 4175*z**10 - 2180*z**8 - 241*z**6 + 322*z**4 + 49*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 19,
+      "plane_factor": "u**3*v**4 + 4*u**3*v**2 - 5*u**3 + 2*u**2*v**3 + 26*u**2*v - 3*u*v**4 - 20*u*v**2 + 7*u + 2*v**3 - 6*v",
+      "plane_normalization": {
+        "x": "(-6*z**3 + 2*z)/(z**4 + 4*z**2 - 5)",
+        "y": "(5 - 7*z**2)/(z**3 - 3*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-12*z**8 - 512*z**6 + 904*z**4 - 544*z**2 + 100)/(z**9 - 2*z**7 - 20*z**5 + 66*z**3 - 45*z)",
+        "(6*z**14 + 370*z**12 + 4094*z**10 - 21734*z**8 + 35474*z**6 - 26666*z**4 + 9450*z**2 - 1250)/(z**14 + 2*z**12 - 33*z**10 - 4*z**8 + 319*z**6 - 510*z**4 + 225*z**2)",
+        "(12*z**8 + 512*z**6 - 904*z**4 + 544*z**2 - 100)/(z**9 - 2*z**7 - 20*z**5 + 66*z**3 - 45*z)"
+      ],
+      "discriminant_square_multiplier": "(6*z**8 + 256*z**6 - 452*z**4 + 272*z**2 - 50)/(z**14 + 2*z**12 - 33*z**10 - 4*z**8 + 319*z**6 - 510*z**4 + 225*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 21,
+      "plane_factor": "6*u**3*v**3 - 2*u**3*v - 7*u**2*v**4 + 20*u**2*v**2 + 3*u**2 - 26*u*v**3 - 2*u*v + 5*v**4 - 4*v**2 - 1",
+      "plane_normalization": {
+        "x": "(z**4 + 4*z**2 - 5)/(6*z**3 - 2*z)",
+        "y": "(z**3 - 3*z)/(7*z**2 - 5)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-z**10 - 47*z**8 - 106*z**6 + 434*z**4 - 405*z**2 + 125)/(147*z**7 - 259*z**5 + 145*z**3 - 25*z)",
+        "(z**12 + 62*z**10 + 703*z**8 - 3388*z**6 + 4783*z**4 - 2850*z**2 + 625)/(294*z**8 - 518*z**6 + 290*z**4 - 50*z**2)",
+        "(z**10 + 47*z**8 + 106*z**6 - 434*z**4 + 405*z**2 - 125)/(147*z**7 - 259*z**5 + 145*z**3 - 25*z)"
+      ],
+      "discriminant_square_multiplier": "(z**6 + 43*z**4 - 61*z**2 + 25)/(294*z**8 - 518*z**6 + 290*z**4 - 50*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 23,
+      "plane_factor": "2*u**3*v**3 - 6*u**3*v + 3*u**2*v**4 + 20*u**2*v**2 - 7*u**2 + 2*u*v**3 + 26*u*v - v**4 - 4*v**2 + 5",
+      "plane_normalization": {
+        "x": "(-5*z**4 + 4*z**2 + 1)/(2*z**3 - 6*z)",
+        "y": "(5*z**3 - 7*z)/(3*z**2 - 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(-125*z**10 + 405*z**8 - 434*z**6 + 106*z**4 + 47*z**2 + 1)/(9*z**7 - 33*z**5 + 19*z**3 - 3*z)",
+        "(625*z**12 - 2850*z**10 + 4783*z**8 - 3388*z**6 + 703*z**4 + 62*z**2 + 1)/(18*z**8 - 66*z**6 + 38*z**4 - 6*z**2)",
+        "(125*z**10 - 405*z**8 + 434*z**6 - 106*z**4 - 47*z**2 - 1)/(9*z**7 - 33*z**5 + 19*z**3 - 3*z)"
+      ],
+      "discriminant_square_multiplier": "(25*z**6 - 61*z**4 + 43*z**2 + 1)/(18*z**8 - 66*z**6 + 38*z**4 - 6*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 26,
+      "plane_factor": "5*u**4*v**3 - 7*u**4*v + 26*u**3*v**2 - 6*u**3 - 4*u**2*v**3 + 20*u**2*v + 2*u*v**2 + 2*u - v**3 + 3*v",
+      "plane_normalization": {
+        "x": "(3*z**2 - 1)/(5*z**3 - 7*z)",
+        "y": "(-2*z**3 + 6*z)/(5*z**4 - 4*z**2 - 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(100*z**8 - 544*z**6 + 904*z**4 - 512*z**2 - 12)/(125*z**9 - 450*z**7 + 500*z**5 - 126*z**3 - 49*z)",
+        "(1250*z**14 - 9450*z**12 + 26666*z**10 - 35474*z**8 + 21734*z**6 - 4094*z**4 - 370*z**2 - 6)/(625*z**14 - 2750*z**12 + 4175*z**10 - 2180*z**8 - 241*z**6 + 322*z**4 + 49*z**2)",
+        "(-100*z**8 + 544*z**6 - 904*z**4 + 512*z**2 + 12)/(125*z**9 - 450*z**7 + 500*z**5 - 126*z**3 - 49*z)"
+      ],
+      "discriminant_square_multiplier": "(50*z**8 - 272*z**6 + 452*z**4 - 256*z**2 - 6)/(625*z**14 - 2750*z**12 + 4175*z**10 - 2180*z**8 - 241*z**6 + 322*z**4 + 49*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 27,
+      "plane_factor": "u**4*v**3 - 3*u**4*v + 2*u**3*v**2 + 2*u**3 + 4*u**2*v**3 - 20*u**2*v + 26*u*v**2 - 6*u - 5*v**3 + 7*v",
+      "plane_normalization": {
+        "x": "(7*z**2 - 5)/(z**3 - 3*z)",
+        "y": "(6*z**3 - 2*z)/(z**4 + 4*z**2 - 5)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(12*z**8 + 512*z**6 - 904*z**4 + 544*z**2 - 100)/(z**9 - 2*z**7 - 20*z**5 + 66*z**3 - 45*z)",
+        "(6*z**14 + 370*z**12 + 4094*z**10 - 21734*z**8 + 35474*z**6 - 26666*z**4 + 9450*z**2 - 1250)/(z**14 + 2*z**12 - 33*z**10 - 4*z**8 + 319*z**6 - 510*z**4 + 225*z**2)",
+        "(-12*z**8 - 512*z**6 + 904*z**4 - 544*z**2 + 100)/(z**9 - 2*z**7 - 20*z**5 + 66*z**3 - 45*z)"
+      ],
+      "discriminant_square_multiplier": "(6*z**8 + 256*z**6 - 452*z**4 + 272*z**2 - 50)/(z**14 + 2*z**12 - 33*z**10 - 4*z**8 + 319*z**6 - 510*z**4 + 225*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 29,
+      "plane_factor": "7*u**4*v**2 - 5*u**4 - 6*u**3*v**3 + 26*u**3*v - 20*u**2*v**2 + 4*u**2 + 2*u*v**3 + 2*u*v - 3*v**2 + 1",
+      "plane_normalization": {
+        "x": "(-z**3 + 3*z)/(7*z**2 - 5)",
+        "y": "(-z**4 - 4*z**2 + 5)/(6*z**3 - 2*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(z**10 + 47*z**8 + 106*z**6 - 434*z**4 + 405*z**2 - 125)/(147*z**7 - 259*z**5 + 145*z**3 - 25*z)",
+        "(z**12 + 62*z**10 + 703*z**8 - 3388*z**6 + 4783*z**4 - 2850*z**2 + 625)/(294*z**8 - 518*z**6 + 290*z**4 - 50*z**2)",
+        "(-z**10 - 47*z**8 - 106*z**6 + 434*z**4 - 405*z**2 + 125)/(147*z**7 - 259*z**5 + 145*z**3 - 25*z)"
+      ],
+      "discriminant_square_multiplier": "(z**6 + 43*z**4 - 61*z**2 + 25)/(294*z**8 - 518*z**6 + 290*z**4 - 50*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 31,
+      "plane_factor": "3*u**4*v**2 - u**4 + 2*u**3*v**3 + 2*u**3*v + 20*u**2*v**2 - 4*u**2 - 6*u*v**3 + 26*u*v - 7*v**2 + 5",
+      "plane_normalization": {
+        "x": "(-5*z**3 + 7*z)/(3*z**2 - 1)",
+        "y": "(5*z**4 - 4*z**2 - 1)/(2*z**3 - 6*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(125*z**10 - 405*z**8 + 434*z**6 - 106*z**4 - 47*z**2 - 1)/(9*z**7 - 33*z**5 + 19*z**3 - 3*z)",
+        "(625*z**12 - 2850*z**10 + 4783*z**8 - 3388*z**6 + 703*z**4 + 62*z**2 + 1)/(18*z**8 - 66*z**6 + 38*z**4 - 6*z**2)",
+        "(-125*z**10 + 405*z**8 - 434*z**6 + 106*z**4 + 47*z**2 + 1)/(9*z**7 - 33*z**5 + 19*z**3 - 3*z)"
+      ],
+      "discriminant_square_multiplier": "(25*z**6 - 61*z**4 + 43*z**2 + 1)/(18*z**8 - 66*z**6 + 38*z**4 - 6*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 34,
+      "plane_factor": "6*u**3*v**3 - 2*u**3*v - u**2*v**4 + 20*u**2*v**2 - 3*u**2 - 2*u*v**3 + 22*u*v - v**4 - 4*v**2 + 5",
+      "plane_normalization": {
+        "x": "(-5*z**4 + 4*z**2 + 1)/(6*z**3 - 2*z)",
+        "y": "(-5*z**3 + 3*z)/(z**2 + 1)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(125*z**10 - 245*z**8 + 146*z**6 - 10*z**4 - 15*z**2 - 1)/(3*z**7 + 5*z**5 + z**3 - z)",
+        "(625*z**12 - 2050*z**10 + 2287*z**8 - 1084*z**6 + 127*z**4 + 30*z**2 + 1)/(6*z**8 + 10*z**6 + 2*z**4 - 2*z**2)",
+        "(-125*z**10 + 245*z**8 - 146*z**6 + 10*z**4 + 15*z**2 + 1)/(3*z**7 + 5*z**5 + z**3 - z)"
+      ],
+      "discriminant_square_multiplier": "(25*z**6 - 29*z**4 + 11*z**2 + 1)/(6*z**8 + 10*z**6 + 2*z**4 - 2*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 35,
+      "plane_factor": "2*u**3*v**3 - 6*u**3*v - 3*u**2*v**4 + 20*u**2*v**2 - u**2 - 22*u*v**3 + 2*u*v + 5*v**4 - 4*v**2 - 1",
+      "plane_normalization": {
+        "x": "(z**4 + 4*z**2 - 5)/(2*z**3 - 6*z)",
+        "y": "(z**3 + z)/(3*z**2 - 5)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(z**10 + 15*z**8 + 10*z**6 - 146*z**4 + 245*z**2 - 125)/(9*z**7 - 57*z**5 + 115*z**3 - 75*z)",
+        "(z**12 + 30*z**10 + 127*z**8 - 1084*z**6 + 2287*z**4 - 2050*z**2 + 625)/(18*z**8 - 114*z**6 + 230*z**4 - 150*z**2)",
+        "(-z**10 - 15*z**8 - 10*z**6 + 146*z**4 - 245*z**2 + 125)/(9*z**7 - 57*z**5 + 115*z**3 - 75*z)"
+      ],
+      "discriminant_square_multiplier": "(z**6 + 11*z**4 - 29*z**2 + 25)/(18*z**8 - 114*z**6 + 230*z**4 - 150*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 37,
+      "plane_factor": "u**3*v**4 + 4*u**3*v**2 - 5*u**3 - 2*u**2*v**3 + 22*u**2*v + u*v**4 - 20*u*v**2 + 3*u + 6*v**3 - 2*v",
+      "plane_normalization": {
+        "x": "(-2*z**3 + 6*z)/(z**4 + 4*z**2 - 5)",
+        "y": "(5 - 3*z**2)/(z**3 + z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(4*z**8 + 32*z**6 - 248*z**4 + 448*z**2 - 300)/(z**9 + 6*z**7 + 4*z**5 - 6*z**3 - 5*z)",
+        "(2*z**14 + 54*z**12 + 74*z**10 - 2930*z**8 + 11078*z**6 - 17822*z**4 + 13550*z**2 - 3750)/(z**14 + 10*z**12 + 23*z**10 - 20*z**8 - 49*z**6 + 10*z**4 + 25*z**2)",
+        "(-4*z**8 - 32*z**6 + 248*z**4 - 448*z**2 + 300)/(z**9 + 6*z**7 + 4*z**5 - 6*z**3 - 5*z)"
+      ],
+      "discriminant_square_multiplier": "(2*z**8 + 16*z**6 - 124*z**4 + 224*z**2 - 150)/(z**14 + 10*z**12 + 23*z**10 - 20*z**8 - 49*z**6 + 10*z**4 + 25*z**2)",
+      "hyperelliptic_polynomial": "z**12 + 54*z**10 + 383*z**8 - 1868*z**6 + 3119*z**4 - 2250*z**2 + 625",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 39,
+      "plane_factor": "5*u**3*v**4 - 4*u**3*v**2 - u**3 + 22*u**2*v**3 - 2*u**2*v - 3*u*v**4 + 20*u*v**2 - u - 2*v**3 + 6*v",
+      "plane_normalization": {
+        "x": "(6*z**3 - 2*z)/(5*z**4 - 4*z**2 - 1)",
+        "y": "(z**2 + 1)/(5*z**3 - 3*z)",
+        "inverse": "(x*y+1)/(x-y)"
+      },
+      "quadratic_coefficients_low_to_high": [
+        "(300*z**8 - 448*z**6 + 248*z**4 - 32*z**2 - 4)/(125*z**9 - 250*z**7 + 140*z**5 - 6*z**3 - 9*z)",
+        "(3750*z**14 - 13550*z**12 + 17822*z**10 - 11078*z**8 + 2930*z**6 - 74*z**4 - 54*z**2 - 2)/(625*z**14 - 1750*z**12 + 1575*z**10 - 340*z**8 - 161*z**6 + 42*z**4 + 9*z**2)",
+        "(-300*z**8 + 448*z**6 - 248*z**4 + 32*z**2 + 4)/(125*z**9 - 250*z**7 + 140*z**5 - 6*z**3 - 9*z)"
+      ],
+      "discriminant_square_multiplier": "(150*z**8 - 224*z**6 + 124*z**4 - 16*z**2 - 2)/(625*z**14 - 1750*z**12 + 1575*z**10 - 340*z**8 - 161*z**6 + 42*z**4 + 9*z**2)",
+      "hyperelliptic_polynomial": "625*z**12 - 2250*z**10 + 3119*z**8 - 1868*z**6 + 383*z**4 + 54*z**2 + 1",
+      "degree": 12,
+      "geometric_genus": 5,
+      "generic_inverse_formula": "eliminated=(-B+S*W)/(2*A), with W^2=H(z)",
+      "finite_rational_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "genera": [
+    5
+  ],
+  "count": 24,
+  "note": "Finite chart exceptions are retained for separate point classifications. Genus computation does not prove emptiness.",
+  "seconds": 17.096
+}

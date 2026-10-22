@@ -1,0 +1,107 @@
+{
+  "scope": "Audit of the supplied three-prime certificates, not certification of the entire manuscript.",
+  "closed_labels": [
+    "A",
+    "E1",
+    "E3",
+    "E4",
+    "F-1",
+    "F-2",
+    "F-3"
+  ],
+  "closed_distinct_orbits": [
+    "A",
+    "E1",
+    "E3=E4",
+    "F-1=F-3",
+    "F-2"
+  ],
+  "unresolved_distinct_orbits": [
+    "B1",
+    "B2",
+    "C",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "E2",
+    "F+1",
+    "F+2"
+  ],
+  "counts": {
+    "records": 17,
+    "stored_E_polynomials": 68,
+    "projective_vectors": 13,
+    "admissible_four_sets": 177,
+    "distinct_orbits": 15,
+    "signed_systems": 816,
+    "quotient_records": 600,
+    "generic_components": 532,
+    "linear_relation_components": 16,
+    "finite_special_fibers": 153,
+    "fiber_equation_systems": 3696,
+    "finite_quotient_factors_lifted": 244,
+    "rank_zero_models_proved": 7,
+    "complete_direct_genus_one_records": 108,
+    "complete_auxiliary_even_quotients": 3,
+    "rank_one_sieves_matched": 8,
+    "Chabauty_point_model_pairs_repaired": 16
+  },
+  "not_certified": [
+    "Positive rank upper bounds",
+    "Global saturation of positive-rank bases",
+    "Rank-two sieve and large canonical-height lower bounds",
+    "Nonlinear smooth-model genera",
+    "Any completed quadratic Chabauty run",
+    "Full two-prime exponent-sum-seven theorem",
+    "Historical priority"
+  ],
+  "runs": [
+    {
+      "script": "audit_inputs.py",
+      "seconds": 6.79,
+      "passed": true
+    },
+    {
+      "script": "audit_quotients.py",
+      "seconds": 12.906,
+      "passed": true
+    },
+    {
+      "script": "audit_components.py",
+      "seconds": 45.509,
+      "passed": true
+    },
+    {
+      "script": "audit_fibers.py",
+      "seconds": 11.289,
+      "passed": true
+    },
+    {
+      "script": "verify_rank_zero.py",
+      "seconds": 1.896,
+      "passed": true
+    },
+    {
+      "script": "audit_rankzero_quotients.py",
+      "seconds": 1.941,
+      "passed": true
+    },
+    {
+      "script": "audit_lifts.py",
+      "seconds": 9.521,
+      "passed": true
+    },
+    {
+      "script": "rebuild_sieves.py",
+      "seconds": 5.867,
+      "passed": true
+    },
+    {
+      "script": "audit_chabauty.py",
+      "seconds": 0.986,
+      "passed": true
+    }
+  ],
+  "software_trust": "Python, SymPy exact polynomial routines, and the audit implementations; not a formal proof assistant."
+}

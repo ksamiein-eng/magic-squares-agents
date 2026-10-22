@@ -1,0 +1,18 @@
+Checked 48 / 816 elapsed 0.3
+Checked 96 / 816 elapsed 0.5
+Checked 144 / 816 elapsed 0.7
+Checked 192 / 816 elapsed 0.9
+Checked 240 / 816 elapsed 1.0
+Checked 288 / 816 elapsed 1.2
+Checked 336 / 816 elapsed 1.4
+Checked 384 / 816 elapsed 1.5
+Checked 432 / 816 elapsed 1.7
+Checked 480 / 816 elapsed 1.9
+Checked 528 / 816 elapsed 2.1
+Checked 576 / 816 elapsed 2.3
+Checked 624 / 816 elapsed 2.5
+Checked 672 / 816 elapsed 2.8
+Checked 720 / 816 elapsed 2.9
+Checked 768 / 816 elapsed 3.2
+Checked 816 / 816 elapsed 3.3
+{"records": 17, "stored_E_polynomials": 68, "projective_vectors": 13, "admissible_four_sets": 177, "distinct_orbits": 15, "signed_systems": 816}

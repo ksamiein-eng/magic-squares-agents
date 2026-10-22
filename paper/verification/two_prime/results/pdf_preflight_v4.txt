@@ -1,0 +1,6 @@
+PDF: verified_core.pdf
+Pages: 21
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

@@ -1,0 +1,55 @@
+{
+  "status": "PLAN_ONLY_NOT_AN_EXCLUSION_CERTIFICATE",
+  "cases": [
+    {
+      "bounds": [
+        4,
+        1
+      ],
+      "raw_configurations": 7,
+      "inherited_exclusions": 3,
+      "remaining_raw_configurations": 4,
+      "new_representatives": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "status": "UNCOMPUTED: representative coverage only"
+    },
+    {
+      "bounds": [
+        3,
+        2
+      ],
+      "raw_configurations": 15,
+      "inherited_exclusions": 7,
+      "remaining_raw_configurations": 8,
+      "new_representatives": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "status": "UNCOMPUTED: representative coverage only"
+    }
+  ],
+  "new_representatives": 6,
+  "proposed_signed_systems": 288
+}

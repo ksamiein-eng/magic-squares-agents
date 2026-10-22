@@ -1,0 +1,18 @@
+// Bielliptic quadratic Chabauty inputs, Magma. Requires the QCMod package
+// (Balakrishnan-Dogra-Mueller-Tuitman-Vonk) or Chabauty0/Chabauty for genus 2.
+// For each C: Y^2 = f(w^2), rank J = 2. Both elliptic quotients rank 1.
+load "chabauty_inputs_magma.m";   // defines curves[] with sextic coeffs
+for i in [1..#curves] do
+  name := curves[i][1]; co := curves[i][2];   // co = [a,0,b,0,c,0,d]
+  P<w> := PolynomialRing(Rationals());
+  f := &+[ co[j]*w^(7-j) : j in [1..7] ];
+  C := HyperellipticCurve(f);
+  printf "%o: genus %o, f = %o\n", name, Genus(C), f;
+  J := Jacobian(C);
+  // RankBound(J);  // should be 2
+  ptsC := Points(C : Bound := 2000);
+  printf "   rational points (bound 2000): %o\n", ptsC;
+  // QC: see QCMod. The two elliptic quotients (rank 1) give the bielliptic route.
+  // E1 := EllipticCurve([0, co[3], 0, co[1]*co[5], co[1]^2*co[7]]);  // y^2=f(s)
+  // Chabauty / quadratic Chabauty at the recorded good primes.
+end for;

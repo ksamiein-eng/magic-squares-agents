@@ -1,0 +1,120 @@
+# Rigidity Lab: a paper that attacks its own open problems
+
+**OSI Hackathon 2026 (physical sciences & mathematics), October 21–22.**
+A Paper2Agent-style conversion of a research paper on **magic squares of squares** into an
+MCP server, plus a team of specialist agents that attack the paper's open conjectures from
+different angles, with an adversarial referee between the agents and the write-up.
+
+> The 3×3 magic square of nine distinct squares is a 30-year-old open problem (the "Parker
+> square" problem). The paper under attack proves that the obstruction survives when the
+> Gaussian-prime arithmetic is thrown away: it only needs the *rational circle*. It then
+> conjectures that this trigonometric obstruction is universal (**rational-circle rigidity**)
+> and leaves several machine-checkable targets open. This repository turns the paper into an
+> agent and sends agents at those targets.
+
+## What is here
+
+| Layer | Path | What it does |
+|---|---|---|
+| Paper | `paper/` | The paper, its 251-file verification tree, and the 16-stage suite `verify_paper.py` (all stages pass on this machine, log in `results/verify_paper_run.log`). Never modified by agents. |
+| Paper → MCP | `paper_mcp/rational_circle_mcp.py` | Paper2Agent-style server: 14 tools bound to the paper's own code, 5 resources, 3 prompts. `paper_mcp/test_mcp.py` exercises every tool in-process. |
+| Agent team | `.claude/agents/*.md` | auditor, point-hunter, quotient-geometer, certificate-extender, torsion-prober, skeptic, scribe. |
+| Orchestration | `.claude/skills/rigidity-attack/SKILL.md` | `/rigidity-attack all` inside Claude Code: fan-out → referee → synthesis. |
+| Unattended run | `orchestrator/run_attack.py` | Same pipeline through the Claude Agent SDK (`--target all|D1|sum8|torsion|r4|audit`). |
+| Specialists' work | `agents/<name>/` | Code, results JSON and `REPORT.md` produced by each computational specialist. |
+| Write-up | `docs/` | One-page write-up, figure, slide script, social post. |
+
+## The problem, in one paragraph
+
+Write the central entry of a magic square of squares as `y²`. Each of the four lines through
+the centre gives a Pythagorean triangle on hypotenuse `y`, hence a point of the rational
+unit circle `T(Q)`. The magic conditions become: four sines of integer combinations of the
+angles have magnitudes `{a, b, a+b, a−b}`. **Rigidity** says that for every "full-depth"
+integer frequency matrix this never happens on `T(Q)^r`. The paper proves it for `r = 2`
+up to exponent sum 7 (2,064 exact certificates), reduces the three-parameter case D1 to
+whether the genus-5 curve `Y² = h¹² + 70h¹⁰ − 1009h⁸ + 7060h⁶ − 1009h⁴ + 70h² + 1` has a
+rational point beyond eight known ones (Conjecture 7.3), finds nothing in an exhaustive
+four-parameter sweep at projective height ≤ 4, and proves the Hadamard solution surfaces are
+of general type. Everything else is open.
+
+## The attack: five angles, one referee
+
+```
+                 ┌──────────── paper_mcp (Paper2Agent-style MCP server) ────────────┐
+                 │ verification stages · exact sines · orbits · curve search · ...   │
+                 └───────────────┬───────────────────────────────────────────────────┘
+   ┌──────────┐  ┌──────────────┴┐  ┌────────────────┐  ┌────────────────────┐  ┌──────────────┐
+   │ auditor  │  │ point-hunter  │  │ quotient-      │  │ certificate-       │  │ torsion-     │
+   │ rerun 16 │  │ genus-5 curve │  │ geometer       │  │ extender           │  │ prober       │
+   │ stages   │  │ to height H   │  │ Jac(C) splits  │  │ Thm 1.1: sum 7→8   │  │ Conj 8.6     │
+   └────┬─────┘  └──────┬────────┘  └──────┬─────────┘  └─────────┬──────────┘  └──────┬───────┘
+        └───────────────┴──────────────────┴──────────────────────┴────────────────────┘
+                                            │  reports
+                                     ┌──────┴───────┐
+                                     │   skeptic    │  reruns, tags: PROVED / MACHINE-VERIFIED /
+                                     │  (referee)   │  DATABASE-QUOTED / SEARCH-EVIDENCE / CONJECTURAL
+                                     └──────┬───────┘
+                                     ┌──────┴───────┐
+                                     │    scribe    │  docs/RESULTS.md, one page, every sentence tagged
+                                     └──────────────┘
+```
+
+* **auditor** reruns the paper's certificate stages through the MCP server and classifies every claim.
+* **point-hunter** searches the genus-5 curve and its quotients at large height (sieved, exact).
+* **quotient-geometer** found something the paper does not use: the curve has the involutions
+  `h → −h` and `h → 1/h`, so its Jacobian splits off three elliptic curves. All three have a
+  rational point of infinite order (exact Nagell–Lutz witnesses from the paper's own known
+  points) and are the LMFDB curves 123.a1, 492.b1 and 1968.j1, each of rank 1. Consequence:
+  Conjecture 7.3 cannot be closed by the paper's rank-zero descent on any elliptic quotient;
+  it is a quadratic-Chabauty problem on a bielliptic genus-2 curve of rank 2.
+* **certificate-extender** reruns the paper's producer/checker pair on the next exponent sum.
+* **torsion-prober** tests the torsion-coset hypothesis (Conj. 8.6) on *every* exact rational
+  solution of the 48 signed systems at bounded height with a complete Gaussian-prime kernel test.
+* **skeptic** reruns one computation per specialist and downgrades any sentence stronger than its evidence.
+
+## Findings
+
+See [`docs/RESULTS.md`](docs/RESULTS.md) (one page, every statement carries its evidence tag)
+and the specialists' own `agents/*/REPORT.md`.
+
+## Run it
+
+```bash
+pip install -r requirements.txt
+python paper_mcp/test_mcp.py                 # exercises all 14 tools (~10 s)
+python paper/verify_paper.py --skip-four-prime   # the paper's own 9 core stages (~4 min)
+```
+
+Inside Claude Code, opened in this folder (the `.mcp.json` registers the server and the
+agents/skill are picked up automatically):
+
+```text
+/rigidity-attack all        # or: D1 | sum8 | torsion | r4 | audit
+```
+
+Unattended, through the Agent SDK:
+
+```bash
+pip install claude-agent-sdk
+python orchestrator/run_attack.py --target all
+```
+
+## Paper2Agent
+
+The conversion follows [Paper2Agent](https://github.com/jmiao24/Paper2Agent)
+(Miao et al., *Nature* 2026): bind every tool to existing repository code, run the bound code
+before exposing it, verify with a fresh agent, deliver resources and prompts next to the
+tools. `paper_mcp/rational_circle_mcp.py` is the resulting paper MCP; `.claude/agents/` is
+the agent layer. The one deliberate departure: the specialists are *researchers*, not
+tutorial re-executors, so the pipeline ends in a referee rather than a test runner.
+
+## Honesty
+
+Nothing in this repository claims to solve the magic-square problem. Bounded searches are
+evidence. Database ranks are quoted. Certificates count only after the independent
+standard-library checker accepts them. The referee's tags are the contract.
+
+## Credits
+
+Paper and verification tree: the submitting author. Paper2Agent: Miao, Davis, Zhang, Pritchard, Zou.
+Elliptic-curve identifications: [LMFDB](https://www.lmfdb.org). Agents: Claude (Fable 5.1 / Sonnet) via Claude Code.

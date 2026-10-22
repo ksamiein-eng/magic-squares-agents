@@ -1,0 +1,2013 @@
+{
+  "status": "PASS",
+  "scope": "24 new factor-entry closures; no additional whole orbit asserted closed.",
+  "arithmetic": {
+    "status": "PASS",
+    "rank": 0,
+    "torsion_order": 2,
+    "descent_image_upper_sizes": [
+      1,
+      4
+    ],
+    "local_obstructions": [
+      {
+        "A": -17,
+        "B": 64,
+        "class": -2,
+        "witness": "all quartic terms negative"
+      },
+      {
+        "A": -17,
+        "B": 64,
+        "class": -1,
+        "witness": "all quartic terms negative"
+      },
+      {
+        "A": -17,
+        "B": 64,
+        "class": 2,
+        "modulus": 3,
+        "primitive_residues": [
+          2
+        ],
+        "square_residues": [
+          0,
+          1
+        ]
+      },
+      {
+        "A": 34,
+        "B": 33,
+        "class": -11,
+        "modulus": 32,
+        "primitive_residues": [
+          5,
+          13,
+          20,
+          21,
+          29
+        ],
+        "square_residues": [
+          0,
+          1,
+          4,
+          9,
+          16,
+          17,
+          25
+        ]
+      },
+      {
+        "A": 34,
+        "B": 33,
+        "class": -3,
+        "modulus": 32,
+        "primitive_residues": [
+          5,
+          13,
+          20,
+          21,
+          29
+        ],
+        "square_residues": [
+          0,
+          1,
+          4,
+          9,
+          16,
+          17,
+          25
+        ]
+      },
+      {
+        "A": 34,
+        "B": 33,
+        "class": 3,
+        "modulus": 64,
+        "primitive_residues": [
+          3,
+          11,
+          19,
+          27,
+          35,
+          43,
+          48,
+          51,
+          59
+        ],
+        "square_residues": [
+          0,
+          1,
+          4,
+          9,
+          16,
+          17,
+          25,
+          33,
+          36,
+          41,
+          49,
+          57
+        ]
+      },
+      {
+        "A": 34,
+        "B": 33,
+        "class": 11,
+        "modulus": 64,
+        "primitive_residues": [
+          3,
+          11,
+          19,
+          27,
+          35,
+          43,
+          48,
+          51,
+          59
+        ],
+        "square_residues": [
+          0,
+          1,
+          4,
+          9,
+          16,
+          17,
+          25,
+          33,
+          36,
+          41,
+          49,
+          57
+        ]
+      }
+    ],
+    "halving_candidates_rhs": {
+      "-8": -2112,
+      "8": -64
+    },
+    "quartic_rational_points": 4,
+    "octic_rational_points": 4,
+    "complete_octic_parameters": [
+      "0",
+      "infinity"
+    ],
+    "trust": "Python exact arithmetic plus standard 2-isogeny descent and rational torsion reduction theorems. No height search or external rank database."
+  },
+  "new_octic_factor_closures": [
+    {
+      "orbit": "B1",
+      "system": 16,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "B1",
+      "system": 17,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "B1",
+      "system": 18,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "B1",
+      "system": 19,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "B1",
+      "system": 20,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "B1",
+      "system": 21,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "B1",
+      "system": 22,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "B1",
+      "system": 23,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        0,
+        -1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 0,
+        "j": 3,
+        "multiple": 1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 40,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 41,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 42,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 43,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 44,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 45,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 46,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    },
+    {
+      "orbit": "D3",
+      "system": 47,
+      "factor": 0,
+      "quotient": 0,
+      "D_multiplier": "65536",
+      "sqrt_multiplier": "256",
+      "quotient_angle_vector": [
+        0,
+        -1,
+        1
+      ],
+      "quotient_parameters": [
+        "0",
+        "infinity"
+      ],
+      "degeneracy_witness": {
+        "i": 2,
+        "j": 3,
+        "multiple": -1
+      },
+      "proof": "tau=0 or infinity implies exp(i*lambda.theta)=+1 or -1. The two frequencies differ by +/-lambda; hence their sine magnitudes coincide. This handles the full fibers, without a bounded lift search."
+    }
+  ],
+  "torus_morphisms": [
+    {
+      "source": "B2",
+      "target": "C",
+      "matrix": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "determinant": -1,
+      "degree": 1,
+      "signed_frequency_permutation": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "signed_system_transport": [
+        {
+          "source_system": 0,
+          "target_system": 4
+        },
+        {
+          "source_system": 1,
+          "target_system": 6
+        },
+        {
+          "source_system": 2,
+          "target_system": 5
+        },
+        {
+          "source_system": 3,
+          "target_system": 7
+        },
+        {
+          "source_system": 4,
+          "target_system": 0
+        },
+        {
+          "source_system": 5,
+          "target_system": 2
+        },
+        {
+          "source_system": 6,
+          "target_system": 1
+        },
+        {
+          "source_system": 7,
+          "target_system": 3
+        },
+        {
+          "source_system": 8,
+          "target_system": 10
+        },
+        {
+          "source_system": 9,
+          "target_system": 11
+        },
+        {
+          "source_system": 10,
+          "target_system": 8
+        },
+        {
+          "source_system": 11,
+          "target_system": 9
+        },
+        {
+          "source_system": 12,
+          "target_system": 13
+        },
+        {
+          "source_system": 13,
+          "target_system": 12
+        },
+        {
+          "source_system": 14,
+          "target_system": 15
+        },
+        {
+          "source_system": 15,
+          "target_system": 14
+        },
+        {
+          "source_system": 16,
+          "target_system": 18
+        },
+        {
+          "source_system": 17,
+          "target_system": 19
+        },
+        {
+          "source_system": 18,
+          "target_system": 16
+        },
+        {
+          "source_system": 19,
+          "target_system": 17
+        },
+        {
+          "source_system": 20,
+          "target_system": 21
+        },
+        {
+          "source_system": 21,
+          "target_system": 20
+        },
+        {
+          "source_system": 22,
+          "target_system": 23
+        },
+        {
+          "source_system": 23,
+          "target_system": 22
+        },
+        {
+          "source_system": 24,
+          "target_system": 31
+        },
+        {
+          "source_system": 25,
+          "target_system": 29
+        },
+        {
+          "source_system": 26,
+          "target_system": 30
+        },
+        {
+          "source_system": 27,
+          "target_system": 28
+        },
+        {
+          "source_system": 28,
+          "target_system": 27
+        },
+        {
+          "source_system": 29,
+          "target_system": 25
+        },
+        {
+          "source_system": 30,
+          "target_system": 26
+        },
+        {
+          "source_system": 31,
+          "target_system": 24
+        },
+        {
+          "source_system": 32,
+          "target_system": 39
+        },
+        {
+          "source_system": 33,
+          "target_system": 37
+        },
+        {
+          "source_system": 34,
+          "target_system": 38
+        },
+        {
+          "source_system": 35,
+          "target_system": 36
+        },
+        {
+          "source_system": 36,
+          "target_system": 35
+        },
+        {
+          "source_system": 37,
+          "target_system": 33
+        },
+        {
+          "source_system": 38,
+          "target_system": 34
+        },
+        {
+          "source_system": 39,
+          "target_system": 32
+        },
+        {
+          "source_system": 40,
+          "target_system": 41
+        },
+        {
+          "source_system": 41,
+          "target_system": 40
+        },
+        {
+          "source_system": 42,
+          "target_system": 43
+        },
+        {
+          "source_system": 43,
+          "target_system": 42
+        },
+        {
+          "source_system": 44,
+          "target_system": 46
+        },
+        {
+          "source_system": 45,
+          "target_system": 47
+        },
+        {
+          "source_system": 46,
+          "target_system": 44
+        },
+        {
+          "source_system": 47,
+          "target_system": 45
+        }
+      ],
+      "direction": "Every rational-circle solution for target maps to source; nonexistence transfers from source to target.",
+      "inverse_matrix": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "source": "D1",
+      "target": "B2",
+      "matrix": [
+        [
+          1,
+          -1,
+          -2
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "determinant": 2,
+      "degree": 2,
+      "signed_frequency_permutation": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "signed_system_transport": [
+        {
+          "source_system": 0,
+          "target_system": 4
+        },
+        {
+          "source_system": 1,
+          "target_system": 5
+        },
+        {
+          "source_system": 2,
+          "target_system": 6
+        },
+        {
+          "source_system": 3,
+          "target_system": 7
+        },
+        {
+          "source_system": 4,
+          "target_system": 0
+        },
+        {
+          "source_system": 5,
+          "target_system": 1
+        },
+        {
+          "source_system": 6,
+          "target_system": 2
+        },
+        {
+          "source_system": 7,
+          "target_system": 3
+        },
+        {
+          "source_system": 8,
+          "target_system": 16
+        },
+        {
+          "source_system": 9,
+          "target_system": 17
+        },
+        {
+          "source_system": 10,
+          "target_system": 18
+        },
+        {
+          "source_system": 11,
+          "target_system": 19
+        },
+        {
+          "source_system": 12,
+          "target_system": 20
+        },
+        {
+          "source_system": 13,
+          "target_system": 21
+        },
+        {
+          "source_system": 14,
+          "target_system": 22
+        },
+        {
+          "source_system": 15,
+          "target_system": 23
+        },
+        {
+          "source_system": 16,
+          "target_system": 8
+        },
+        {
+          "source_system": 17,
+          "target_system": 9
+        },
+        {
+          "source_system": 18,
+          "target_system": 10
+        },
+        {
+          "source_system": 19,
+          "target_system": 11
+        },
+        {
+          "source_system": 20,
+          "target_system": 12
+        },
+        {
+          "source_system": 21,
+          "target_system": 13
+        },
+        {
+          "source_system": 22,
+          "target_system": 14
+        },
+        {
+          "source_system": 23,
+          "target_system": 15
+        },
+        {
+          "source_system": 24,
+          "target_system": 32
+        },
+        {
+          "source_system": 25,
+          "target_system": 33
+        },
+        {
+          "source_system": 26,
+          "target_system": 34
+        },
+        {
+          "source_system": 27,
+          "target_system": 35
+        },
+        {
+          "source_system": 28,
+          "target_system": 36
+        },
+        {
+          "source_system": 29,
+          "target_system": 37
+        },
+        {
+          "source_system": 30,
+          "target_system": 38
+        },
+        {
+          "source_system": 31,
+          "target_system": 39
+        },
+        {
+          "source_system": 32,
+          "target_system": 24
+        },
+        {
+          "source_system": 33,
+          "target_system": 25
+        },
+        {
+          "source_system": 34,
+          "target_system": 26
+        },
+        {
+          "source_system": 35,
+          "target_system": 27
+        },
+        {
+          "source_system": 36,
+          "target_system": 28
+        },
+        {
+          "source_system": 37,
+          "target_system": 29
+        },
+        {
+          "source_system": 38,
+          "target_system": 30
+        },
+        {
+          "source_system": 39,
+          "target_system": 31
+        },
+        {
+          "source_system": 40,
+          "target_system": 41
+        },
+        {
+          "source_system": 41,
+          "target_system": 40
+        },
+        {
+          "source_system": 42,
+          "target_system": 43
+        },
+        {
+          "source_system": 43,
+          "target_system": 42
+        },
+        {
+          "source_system": 44,
+          "target_system": 45
+        },
+        {
+          "source_system": 45,
+          "target_system": 44
+        },
+        {
+          "source_system": 46,
+          "target_system": 47
+        },
+        {
+          "source_system": 47,
+          "target_system": 46
+        }
+      ],
+      "direction": "Every rational-circle solution for target maps to source; nonexistence transfers from source to target."
+    },
+    {
+      "source": "D1",
+      "target": "C",
+      "matrix": [
+        [
+          0,
+          -2,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "determinant": -2,
+      "degree": 2,
+      "signed_frequency_permutation": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "signed_system_transport": [
+        {
+          "source_system": 0,
+          "target_system": 0
+        },
+        {
+          "source_system": 1,
+          "target_system": 2
+        },
+        {
+          "source_system": 2,
+          "target_system": 1
+        },
+        {
+          "source_system": 3,
+          "target_system": 3
+        },
+        {
+          "source_system": 4,
+          "target_system": 4
+        },
+        {
+          "source_system": 5,
+          "target_system": 6
+        },
+        {
+          "source_system": 6,
+          "target_system": 5
+        },
+        {
+          "source_system": 7,
+          "target_system": 7
+        },
+        {
+          "source_system": 8,
+          "target_system": 18
+        },
+        {
+          "source_system": 9,
+          "target_system": 19
+        },
+        {
+          "source_system": 10,
+          "target_system": 16
+        },
+        {
+          "source_system": 11,
+          "target_system": 17
+        },
+        {
+          "source_system": 12,
+          "target_system": 21
+        },
+        {
+          "source_system": 13,
+          "target_system": 20
+        },
+        {
+          "source_system": 14,
+          "target_system": 23
+        },
+        {
+          "source_system": 15,
+          "target_system": 22
+        },
+        {
+          "source_system": 16,
+          "target_system": 10
+        },
+        {
+          "source_system": 17,
+          "target_system": 11
+        },
+        {
+          "source_system": 18,
+          "target_system": 8
+        },
+        {
+          "source_system": 19,
+          "target_system": 9
+        },
+        {
+          "source_system": 20,
+          "target_system": 13
+        },
+        {
+          "source_system": 21,
+          "target_system": 12
+        },
+        {
+          "source_system": 22,
+          "target_system": 15
+        },
+        {
+          "source_system": 23,
+          "target_system": 14
+        },
+        {
+          "source_system": 24,
+          "target_system": 39
+        },
+        {
+          "source_system": 25,
+          "target_system": 37
+        },
+        {
+          "source_system": 26,
+          "target_system": 38
+        },
+        {
+          "source_system": 27,
+          "target_system": 36
+        },
+        {
+          "source_system": 28,
+          "target_system": 35
+        },
+        {
+          "source_system": 29,
+          "target_system": 33
+        },
+        {
+          "source_system": 30,
+          "target_system": 34
+        },
+        {
+          "source_system": 31,
+          "target_system": 32
+        },
+        {
+          "source_system": 32,
+          "target_system": 31
+        },
+        {
+          "source_system": 33,
+          "target_system": 29
+        },
+        {
+          "source_system": 34,
+          "target_system": 30
+        },
+        {
+          "source_system": 35,
+          "target_system": 28
+        },
+        {
+          "source_system": 36,
+          "target_system": 27
+        },
+        {
+          "source_system": 37,
+          "target_system": 25
+        },
+        {
+          "source_system": 38,
+          "target_system": 26
+        },
+        {
+          "source_system": 39,
+          "target_system": 24
+        },
+        {
+          "source_system": 40,
+          "target_system": 40
+        },
+        {
+          "source_system": 41,
+          "target_system": 41
+        },
+        {
+          "source_system": 42,
+          "target_system": 42
+        },
+        {
+          "source_system": 43,
+          "target_system": 43
+        },
+        {
+          "source_system": 44,
+          "target_system": 47
+        },
+        {
+          "source_system": 45,
+          "target_system": 46
+        },
+        {
+          "source_system": 46,
+          "target_system": 45
+        },
+        {
+          "source_system": 47,
+          "target_system": 44
+        }
+      ],
+      "direction": "Every rational-circle solution for target maps to source; nonexistence transfers from source to target."
+    },
+    {
+      "source": "D1",
+      "target": "E2",
+      "matrix": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          -2,
+          1
+        ],
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "determinant": 2,
+      "degree": 2,
+      "signed_frequency_permutation": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "signed_system_transport": [
+        {
+          "source_system": 0,
+          "target_system": 0
+        },
+        {
+          "source_system": 1,
+          "target_system": 2
+        },
+        {
+          "source_system": 2,
+          "target_system": 1
+        },
+        {
+          "source_system": 3,
+          "target_system": 3
+        },
+        {
+          "source_system": 4,
+          "target_system": 4
+        },
+        {
+          "source_system": 5,
+          "target_system": 6
+        },
+        {
+          "source_system": 6,
+          "target_system": 5
+        },
+        {
+          "source_system": 7,
+          "target_system": 7
+        },
+        {
+          "source_system": 8,
+          "target_system": 18
+        },
+        {
+          "source_system": 9,
+          "target_system": 19
+        },
+        {
+          "source_system": 10,
+          "target_system": 16
+        },
+        {
+          "source_system": 11,
+          "target_system": 17
+        },
+        {
+          "source_system": 12,
+          "target_system": 21
+        },
+        {
+          "source_system": 13,
+          "target_system": 20
+        },
+        {
+          "source_system": 14,
+          "target_system": 23
+        },
+        {
+          "source_system": 15,
+          "target_system": 22
+        },
+        {
+          "source_system": 16,
+          "target_system": 10
+        },
+        {
+          "source_system": 17,
+          "target_system": 11
+        },
+        {
+          "source_system": 18,
+          "target_system": 8
+        },
+        {
+          "source_system": 19,
+          "target_system": 9
+        },
+        {
+          "source_system": 20,
+          "target_system": 13
+        },
+        {
+          "source_system": 21,
+          "target_system": 12
+        },
+        {
+          "source_system": 22,
+          "target_system": 15
+        },
+        {
+          "source_system": 23,
+          "target_system": 14
+        },
+        {
+          "source_system": 24,
+          "target_system": 39
+        },
+        {
+          "source_system": 25,
+          "target_system": 37
+        },
+        {
+          "source_system": 26,
+          "target_system": 38
+        },
+        {
+          "source_system": 27,
+          "target_system": 36
+        },
+        {
+          "source_system": 28,
+          "target_system": 35
+        },
+        {
+          "source_system": 29,
+          "target_system": 33
+        },
+        {
+          "source_system": 30,
+          "target_system": 34
+        },
+        {
+          "source_system": 31,
+          "target_system": 32
+        },
+        {
+          "source_system": 32,
+          "target_system": 31
+        },
+        {
+          "source_system": 33,
+          "target_system": 29
+        },
+        {
+          "source_system": 34,
+          "target_system": 30
+        },
+        {
+          "source_system": 35,
+          "target_system": 28
+        },
+        {
+          "source_system": 36,
+          "target_system": 27
+        },
+        {
+          "source_system": 37,
+          "target_system": 25
+        },
+        {
+          "source_system": 38,
+          "target_system": 26
+        },
+        {
+          "source_system": 39,
+          "target_system": 24
+        },
+        {
+          "source_system": 40,
+          "target_system": 40
+        },
+        {
+          "source_system": 41,
+          "target_system": 41
+        },
+        {
+          "source_system": 42,
+          "target_system": 42
+        },
+        {
+          "source_system": 43,
+          "target_system": 43
+        },
+        {
+          "source_system": 44,
+          "target_system": 47
+        },
+        {
+          "source_system": 45,
+          "target_system": 46
+        },
+        {
+          "source_system": 46,
+          "target_system": 45
+        },
+        {
+          "source_system": 47,
+          "target_system": 44
+        }
+      ],
+      "direction": "Every rational-circle solution for target maps to source; nonexistence transfers from source to target."
+    },
+    {
+      "source": "D3",
+      "target": "B1",
+      "matrix": [
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          -2,
+          0,
+          1
+        ],
+        [
+          -2,
+          0,
+          0
+        ]
+      ],
+      "determinant": 2,
+      "degree": 2,
+      "signed_frequency_permutation": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "signed_system_transport": [
+        {
+          "source_system": 0,
+          "target_system": 27
+        },
+        {
+          "source_system": 1,
+          "target_system": 26
+        },
+        {
+          "source_system": 2,
+          "target_system": 25
+        },
+        {
+          "source_system": 3,
+          "target_system": 24
+        },
+        {
+          "source_system": 4,
+          "target_system": 31
+        },
+        {
+          "source_system": 5,
+          "target_system": 30
+        },
+        {
+          "source_system": 6,
+          "target_system": 29
+        },
+        {
+          "source_system": 7,
+          "target_system": 28
+        },
+        {
+          "source_system": 8,
+          "target_system": 7
+        },
+        {
+          "source_system": 9,
+          "target_system": 5
+        },
+        {
+          "source_system": 10,
+          "target_system": 6
+        },
+        {
+          "source_system": 11,
+          "target_system": 4
+        },
+        {
+          "source_system": 12,
+          "target_system": 0
+        },
+        {
+          "source_system": 13,
+          "target_system": 2
+        },
+        {
+          "source_system": 14,
+          "target_system": 1
+        },
+        {
+          "source_system": 15,
+          "target_system": 3
+        },
+        {
+          "source_system": 16,
+          "target_system": 34
+        },
+        {
+          "source_system": 17,
+          "target_system": 32
+        },
+        {
+          "source_system": 18,
+          "target_system": 35
+        },
+        {
+          "source_system": 19,
+          "target_system": 33
+        },
+        {
+          "source_system": 20,
+          "target_system": 37
+        },
+        {
+          "source_system": 21,
+          "target_system": 39
+        },
+        {
+          "source_system": 22,
+          "target_system": 36
+        },
+        {
+          "source_system": 23,
+          "target_system": 38
+        },
+        {
+          "source_system": 24,
+          "target_system": 15
+        },
+        {
+          "source_system": 25,
+          "target_system": 13
+        },
+        {
+          "source_system": 26,
+          "target_system": 14
+        },
+        {
+          "source_system": 27,
+          "target_system": 12
+        },
+        {
+          "source_system": 28,
+          "target_system": 8
+        },
+        {
+          "source_system": 29,
+          "target_system": 10
+        },
+        {
+          "source_system": 30,
+          "target_system": 9
+        },
+        {
+          "source_system": 31,
+          "target_system": 11
+        },
+        {
+          "source_system": 32,
+          "target_system": 42
+        },
+        {
+          "source_system": 33,
+          "target_system": 40
+        },
+        {
+          "source_system": 34,
+          "target_system": 43
+        },
+        {
+          "source_system": 35,
+          "target_system": 41
+        },
+        {
+          "source_system": 36,
+          "target_system": 45
+        },
+        {
+          "source_system": 37,
+          "target_system": 47
+        },
+        {
+          "source_system": 38,
+          "target_system": 44
+        },
+        {
+          "source_system": 39,
+          "target_system": 46
+        },
+        {
+          "source_system": 40,
+          "target_system": 19
+        },
+        {
+          "source_system": 41,
+          "target_system": 18
+        },
+        {
+          "source_system": 42,
+          "target_system": 17
+        },
+        {
+          "source_system": 43,
+          "target_system": 16
+        },
+        {
+          "source_system": 44,
+          "target_system": 23
+        },
+        {
+          "source_system": 45,
+          "target_system": 22
+        },
+        {
+          "source_system": 46,
+          "target_system": 21
+        },
+        {
+          "source_system": 47,
+          "target_system": 20
+        }
+      ],
+      "direction": "Every rational-circle solution for target maps to source; nonexistence transfers from source to target."
+    }
+  ],
+  "new_transferred_closures": [
+    {
+      "source": "D3",
+      "source_system": 0,
+      "target": "B1",
+      "target_system": 27,
+      "new_factor_indices": [
+        1
+      ]
+    },
+    {
+      "source": "D3",
+      "source_system": 1,
+      "target": "B1",
+      "target_system": 26,
+      "new_factor_indices": [
+        1
+      ]
+    },
+    {
+      "source": "D3",
+      "source_system": 2,
+      "target": "B1",
+      "target_system": 25,
+      "new_factor_indices": [
+        1
+      ]
+    },
+    {
+      "source": "D3",
+      "source_system": 3,
+      "target": "B1",
+      "target_system": 24,
+      "new_factor_indices": [
+        1
+      ]
+    },
+    {
+      "source": "D3",
+      "source_system": 4,
+      "target": "B1",
+      "target_system": 31,
+      "new_factor_indices": [
+        1
+      ]
+    },
+    {
+      "source": "D3",
+      "source_system": 5,
+      "target": "B1",
+      "target_system": 30,
+      "new_factor_indices": [
+        2
+      ]
+    },
+    {
+      "source": "D3",
+      "source_system": 6,
+      "target": "B1",
+      "target_system": 29,
+      "new_factor_indices": [
+        1
+      ]
+    },
+    {
+      "source": "D3",
+      "source_system": 7,
+      "target": "B1",
+      "target_system": 28,
+      "new_factor_indices": [
+        2
+      ]
+    }
+  ],
+  "new_factor_closures": 24,
+  "new_closed_whole_orbits": 0,
+  "orbit_ledger": [
+    {
+      "orbit": "A",
+      "previous_unresolved_factors": 0,
+      "unresolved_factors": 0,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 48,
+      "closed_systems": 48,
+      "whole_orbit_closed": true
+    },
+    {
+      "orbit": "B1",
+      "previous_unresolved_factors": 48,
+      "unresolved_factors": 32,
+      "new_factor_closures": 16,
+      "previous_closed_systems": 0,
+      "closed_systems": 16,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "B2",
+      "previous_unresolved_factors": 24,
+      "unresolved_factors": 24,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 24,
+      "closed_systems": 24,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "C",
+      "previous_unresolved_factors": 24,
+      "unresolved_factors": 24,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 24,
+      "closed_systems": 24,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "D1",
+      "previous_unresolved_factors": 24,
+      "unresolved_factors": 24,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 24,
+      "closed_systems": 24,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "D2",
+      "previous_unresolved_factors": 48,
+      "unresolved_factors": 48,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 0,
+      "closed_systems": 0,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "D3",
+      "previous_unresolved_factors": 40,
+      "unresolved_factors": 32,
+      "new_factor_closures": 8,
+      "previous_closed_systems": 8,
+      "closed_systems": 16,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "D4",
+      "previous_unresolved_factors": 48,
+      "unresolved_factors": 48,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 0,
+      "closed_systems": 0,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "E1",
+      "previous_unresolved_factors": 0,
+      "unresolved_factors": 0,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 48,
+      "closed_systems": 48,
+      "whole_orbit_closed": true
+    },
+    {
+      "orbit": "E2",
+      "previous_unresolved_factors": 24,
+      "unresolved_factors": 24,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 24,
+      "closed_systems": 24,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "E3",
+      "previous_unresolved_factors": 0,
+      "unresolved_factors": 0,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 48,
+      "closed_systems": 48,
+      "whole_orbit_closed": true
+    },
+    {
+      "orbit": "F-1",
+      "previous_unresolved_factors": 0,
+      "unresolved_factors": 0,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 48,
+      "closed_systems": 48,
+      "whole_orbit_closed": true
+    },
+    {
+      "orbit": "F-2",
+      "previous_unresolved_factors": 0,
+      "unresolved_factors": 0,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 48,
+      "closed_systems": 48,
+      "whole_orbit_closed": true
+    },
+    {
+      "orbit": "F+1",
+      "previous_unresolved_factors": 48,
+      "unresolved_factors": 48,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 0,
+      "closed_systems": 0,
+      "whole_orbit_closed": false
+    },
+    {
+      "orbit": "F+2",
+      "previous_unresolved_factors": 48,
+      "unresolved_factors": 48,
+      "new_factor_closures": 0,
+      "previous_closed_systems": 0,
+      "closed_systems": 0,
+      "whole_orbit_closed": false
+    }
+  ],
+  "six_sufficient_primary_targets": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "F+1",
+    "F+2"
+  ],
+  "dependent_targets": {
+    "B1": "D3",
+    "B2": "D1",
+    "C": "D1",
+    "E2": "D1"
+  },
+  "rationally_isomorphic_orbits": [
+    "B2",
+    "C"
+  ],
+  "universal_addition_obstruction": {
+    "source": "F-1",
+    "target_frequencies": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "matrix": [
+      [
+        2,
+        1,
+        -1
+      ],
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "determinant": 1,
+    "conclusion": "For arbitrary rational unit-circle points, the magnitudes of sin(alpha), sin(beta), sin(alpha+beta), and sin(gamma) cannot form the nondegenerate four-offset magic pattern.",
+    "dependency": "The independently verified complete F-1 closure from the baseline."
+  },
+  "baseline_dependencies": [
+    "three-prime input/projection/component/fiber checks",
+    "D3 rank-zero genus-five family",
+    "F-1 complete closure"
+  ],
+  "not_claimed": [
+    "complete C_B or C_C rational-point lists",
+    "closure of the ten outstanding whole orbits",
+    "quadratic Chabauty execution",
+    "historical priority"
+  ]
+}

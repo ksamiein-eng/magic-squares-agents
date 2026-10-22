@@ -1,0 +1,65 @@
+[17:01:37] start 53_m3_n1
+[17:01:39]   53_m3_n1 system 7: res 0.1s factor 0.1s deg 114
+[17:01:42]   53_m3_n1 system 15: res 0.1s factor 0.1s deg 118
+[17:01:44]   53_m3_n1 system 23: res 0.1s factor 0.2s deg 118
+[17:01:47]   53_m3_n1 system 31: res 0.1s factor 0.1s deg 118
+[17:01:49]   53_m3_n1 system 39: res 0.1s factor 0.1s deg 118
+[17:01:52]   53_m3_n1 system 47: res 0.1s factor 0.1s deg 118
+[17:01:52] done 53_m3_n1 systems 48 seconds 14.961 unresolved 0
+[17:01:52] start 53_m3_nminus1
+[17:01:54]   53_m3_nminus1 system 7: res 0.1s factor 0.1s deg 114
+[17:01:57]   53_m3_nminus1 system 15: res 0.1s factor 0.2s deg 118
+[17:01:59]   53_m3_nminus1 system 23: res 0.1s factor 0.2s deg 114
+[17:02:02]   53_m3_nminus1 system 31: res 0.1s factor 0.1s deg 118
+[17:02:04]   53_m3_nminus1 system 39: res 0.1s factor 0.1s deg 118
+[17:02:06]   53_m3_nminus1 system 47: res 0.1s factor 0.1s deg 118
+[17:02:06] done 53_m3_nminus1 systems 48 seconds 14.724 unresolved 0
+[17:02:06] start 53_m3_n2
+[17:02:13]   53_m3_n2 system 7: res 0.1s factor 0.5s deg 112
+[17:02:20]   53_m3_n2 system 15: res 0.1s factor 0.7s deg 118
+[17:02:26]   53_m3_n2 system 23: res 0.1s factor 0.8s deg 118
+[17:02:34]   53_m3_n2 system 31: res 0.1s factor 0.7s deg 118
+[17:02:41]   53_m3_n2 system 39: res 0.1s factor 0.9s deg 118
+[17:02:48]   53_m3_n2 system 47: res 0.2s factor 0.9s deg 118
+[17:02:48] done 53_m3_n2 systems 48 seconds 42.005 unresolved 0
+[17:02:48] start 53_m3_nminus2
+[17:02:55]   53_m3_nminus2 system 7: res 0.1s factor 0.7s deg 112
+[17:03:02]   53_m3_nminus2 system 15: res 0.1s factor 0.8s deg 118
+[17:03:09]   53_m3_nminus2 system 23: res 0.1s factor 1.0s deg 118
+[17:03:17]   53_m3_nminus2 system 31: res 0.1s factor 0.5s deg 118
+[17:03:21]   53_m3_nminus2 system 39: res 0.1s factor 0.4s deg 118
+[17:03:29]   53_m3_nminus2 system 47: res 0.3s factor 0.5s deg 118
+[17:03:29] done 53_m3_nminus2 systems 48 seconds 40.433 unresolved 0
+[17:03:29] start 53_m4_n1
+[17:03:31]   53_m4_n1 system 7: res 0.1s factor 0.1s deg 118
+[17:03:34]   53_m4_n1 system 15: res 0.1s factor 0.1s deg 118
+[17:03:36]   53_m4_n1 system 23: res 0.1s factor 0.2s deg 118
+[17:03:39]   53_m4_n1 system 31: res 0.1s factor 0.1s deg 118
+[17:03:41]   53_m4_n1 system 39: res 0.1s factor 0.1s deg 118
+[17:03:44]   53_m4_n1 system 47: res 0.1s factor 0.1s deg 118
+[17:03:44] done 53_m4_n1 systems 48 seconds 14.744 unresolved 0
+[17:03:44] start 53_m4_nminus1
+[17:03:46]   53_m4_nminus1 system 7: res 0.1s factor 0.1s deg 118
+[17:03:48]   53_m4_nminus1 system 15: res 0.1s factor 0.1s deg 118
+[17:03:51]   53_m4_nminus1 system 23: res 0.1s factor 0.1s deg 118
+[17:03:53]   53_m4_nminus1 system 31: res 0.2s factor 0.2s deg 118
+[17:03:56]   53_m4_nminus1 system 39: res 0.2s factor 0.1s deg 118
+[17:03:59]   53_m4_nminus1 system 47: res 0.1s factor 0.1s deg 118
+[17:03:59] done 53_m4_nminus1 systems 48 seconds 14.804 unresolved 0
+[17:03:59] start 53_m4_n2
+[17:04:06]   53_m4_n2 system 7: res 0.1s factor 0.4s deg 118
+[17:04:16]   53_m4_n2 system 15: res 0.1s factor 1.3s deg 118
+[17:04:31]   53_m4_n2 system 23: res 0.2s factor 1.9s deg 118
+[17:04:38]   53_m4_n2 system 31: res 0.2s factor 0.5s deg 118
+[17:04:52]   53_m4_n2 system 39: res 0.1s factor 1.8s deg 118
+[17:05:03]   53_m4_n2 system 47: res 0.1s factor 1.5s deg 118
+[17:05:03] done 53_m4_n2 systems 48 seconds 64.178 unresolved 0
+[17:05:03] start 53_m4_nminus2
+[17:05:09]   53_m4_nminus2 system 7: res 0.1s factor 0.8s deg 118
+[17:05:16]   53_m4_nminus2 system 15: res 0.1s factor 0.9s deg 118
+[17:05:27]   53_m4_nminus2 system 23: res 0.1s factor 1.3s deg 118
+[17:05:33]   53_m4_nminus2 system 31: res 0.1s factor 0.7s deg 118
+[17:05:45]   53_m4_nminus2 system 39: res 0.1s factor 2.2s deg 118
+[17:05:49]   53_m4_nminus2 system 47: res 0.1s factor 0.6s deg 118
+[17:05:49] done 53_m4_nminus2 systems 48 seconds 46.427 unresolved 0
+[17:05:49] part 53b complete

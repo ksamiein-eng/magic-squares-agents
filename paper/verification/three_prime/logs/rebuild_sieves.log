@@ -1,0 +1,8 @@
+D primes 81 match True survivors [-2, 0, 2] time 0.723
+B primes 75 match True survivors [-2, 0, 2] time 0.759
+C primes 115 match True survivors [-2, 0, 2] time 0.847
+A primes 129 match True survivors [-1, 0, 1] time 0.893
+Dtw2 primes 67 match True survivors [-120119, -1, 0, 1, 120119] time 0.698
+Dtwm2 primes 59 match True survivors [0] time 0.717
+E2last_(=A) primes 129 match True survivors [-1, 0, 1, 2677114440] time 0.918
+Dtw5 primes 104 match True survivors [0] time 0.783

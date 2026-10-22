@@ -1,0 +1,129 @@
+\section{Certified exponent-sum-six exclusions}\label{sec:degree6}
+This section completes the fourteen representative classes proposed in version 3. The new signatures are $(5,1)$, $(4,2)$, and $(3,3)$; their 672 new signed systems are added to the previously verified 528. All conclusions concern the full rational-circle parameter space, with no height bound.
+
+\subsection{Coverage before elimination}
+The full-depth normal form and Corollary~\ref{cor:reduced5} reduce the 55 raw normal forms at this exponent sum as follows:
+\begin{center}
+\begin{tabular}{crrrr}
+\toprule
+Signature & Raw forms & Inherited & Remaining forms & Representatives\\
+\midrule
+$(5,1)$ & 9 & 1 & 8 & 4\\
+$(4,2)$ & 21 & 13 & 8 & 4\\
+$(3,3)$ & 25 & 9 & 16 & 6\\
+\bottomrule
+\end{tabular}
+\end{center}
+For $(5,1)$, only $m=n=0$ is inherited; the new representatives have $n=0$ and $m=1,2,3,4$. For $(4,2)$, every choice with a zero deficient coordinate is inherited, as is every choice with $|m|=2$. The representatives are $(m,n)=(1,\pm1),(3,\pm1)$. For $(3,3)$, every zero-coordinate choice is inherited. Simultaneous sign reversal and coordinate interchange leave
+\[
+(m,n)=(1,1),(1,-1),(1,2),(1,-2),(2,2),(2,-2).
+\]
+The complete checker enumerates all raw forms, rather than assuming these totals. An inherited route identifies a previously certified representative and its positive integer coordinate multipliers. A separate checker obtains the same coverage by dividing out the coordinate gcds. Up to exponent sum six, all 95 raw forms are covered: nine by the real-angle theorem, 54 by direct certificate symmetries, and 32 by circle-power inheritance.
+
+\subsection{Uniform polynomial inputs}
+Define $C_j(v)+iS_j(v)=(1+iv)^{2j}$ for $j\ge0$, with $C_{-j}=C_j$ and $S_{-j}=-S_j$. The new frequency five requires
+\begin{align*}
+C_5(v)&=1-45v^2+210v^4-210v^6+45v^8-v^{10},\\
+S_5(v)&=10v-120v^3+252v^5-120v^7+10v^9.
+\end{align*}
+For every representative $(k,l;m,n)$, use the positive common denominator
+\[
+L=(1+t^2)^k(1+u^2)^l
+\]
+and the four signed numerators
+\begin{align*}
+E_0&=S_k(t)C_l(u)+C_k(t)S_l(u),\\
+E_1&=S_k(t)C_l(u)-C_k(t)S_l(u),\\
+E_2&=(1+t^2)^{k-|m|}\bigl(S_m(t)C_l(u)+C_m(t)S_l(u)\bigr),\\
+E_3&=(1+u^2)^{l-|n|}\bigl(S_k(t)C_n(u)+C_k(t)S_n(u)\bigr).
+\end{align*}
+Thus $E_j/L$ are respectively $\sin(kx+lz)$, $\sin(kx-lz)$, $\sin(mx+lz)$, and $\sin(kx+nz)$. The homogeneous form \eqref{eq:homogeneous} supplies the boundary values. No real denominator vanishes.
+
+\begin{lemma}[Exponent-sum-six elimination data]\label{lem:degree6data}
+For each of the fourteen representatives in Table~\ref{tab:degree6}, all 48 signed systems have a nonzero resultant in $u$ after removal only of common powers of $t$. Every finite rational common zero has the $t$-coordinate listed in that table.
+\end{lemma}
+\begin{proof}
+The exact data are in \path{results/certificate_degree6.json}. Each input equation, removed factor, reduced equation, determinant, and factor product is recorded explicitly. A common $t$ is removed in six systems for each $(5,1)$ representative and in none of the other new systems. The entire fiber $t=0$ is checked separately below. No other variable-dependent factor is discarded.
+
+The combined catalog contains 665 distinct polynomials: three linear factors with roots $0,1,-1$, and 662 polynomials with no rational root. Of the latter, 391 are new beyond version 3. Each has nonzero leading coefficient and no root modulo a specified prime in $\{3,5,7,11,13,17,19\}$. Checking every residue and the factor-product identity proves the claim without assuming irreducibility. The no-rational-root argument is the denominator argument of Theorem~\ref{thm:21}.
+
+The standard-library checker reconstructs the inputs by repeated sine addition. It verifies each resultant by the degree-bound argument of Section~\ref{sec:degree4}; the new identity-degree bounds are at most 40, 64, and 72 for the three signatures. The new systems require 40,992 exact integer determinants, and the combined release checks 59,472. These evaluations prove polynomial identities, not merely agreement at a sample of candidate solutions.
+
+The second checker independently reconstructs the inputs by Chebyshev polynomials and computes symbolic Sylvester determinants directly over $\Z[t]$. Both checkers verify every factor product, modular witness, finite fiber, and projective boundary. They pass all 1,200 systems. The preceding eleven representative records and the first 274 catalog entries are unchanged from the reverified version-3 baseline. Nonzero resultants account for every finite common zero, including specializations where leading coefficients vanish.
+\end{proof}
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{ccrrrrl}
+\toprule
+$(k,l)$ & $(m,n)$ & Systems & $\deg R\le$ & Rootless & Primes & Rational $t$\\
+\midrule
+$(5,1)$ & $(1,0)$ & 48 & 38 & 27 & $3,5,7$ & $0,\pm1$\\
+$(5,1)$ & $(2,0)$ & 48 & 38 & 31 & $3,5$ & $0,\pm1$\\
+$(5,1)$ & $(3,0)$ & 48 & 38 & 29 & $3,5,7$ & $0,\pm1$\\
+$(5,1)$ & $(4,0)$ & 48 & 38 & 31 & $3,5$ & $0,\pm1$\\
+$(4,2)$ & $(1,1)$ & 48 & 62 & 27 & $3,5,7,11$ & $0$\\
+$(4,2)$ & $(1,-1)$ & 48 & 62 & 27 & $3,5,7$ & $0$\\
+$(4,2)$ & $(3,1)$ & 48 & 62 & 27 & $3,5,7,13,17$ & $0$\\
+$(4,2)$ & $(3,-1)$ & 48 & 62 & 31 & $3,5,7,11,13$ & $0$\\
+$(3,3)$ & $(1,1)$ & 48 & 70 & 60 & $3,5,7$ & $0,\pm1$\\
+$(3,3)$ & $(1,-1)$ & 48 & 70 & 53 & $3,5,7$ & $0,\pm1$\\
+$(3,3)$ & $(1,2)$ & 48 & 70 & 25 & $3,5,19$ & $0,\pm1$\\
+$(3,3)$ & $(1,-2)$ & 48 & 70 & 28 & $3,5,7$ & $0,\pm1$\\
+$(3,3)$ & $(2,2)$ & 48 & 70 & 37 & $3,5,7,11$ & $0,\pm1$\\
+$(3,3)$ & $(2,-2)$ & 48 & 70 & 27 & $3,5,7,11,13$ & $0,\pm1$\\
+\bottomrule
+\end{tabular}
+\caption{The 672 newly certified systems. Rootless factors are counted within each row; the combined catalog removes repetitions. The degree shown is the largest actual resultant degree, not the larger bound used to certify its identity.}\label{tab:degree6}
+\end{table}
+
+\subsection{Closing all finite and projective fibers}
+\begin{theorem}[Exponent pair $(5,1)$]\label{thm:51}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^5q)^2$. Every necessary full-depth normal form for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+It remains to treat $n=0$, $m=1,2,3,4$. Lemma~\ref{lem:degree6data} leaves $t=0,\pm1$. At $t=0$, the fourth sine $\sin5x$ is zero. At $t=\pm1$, $x=\pm\pi/2$ and $\cos5x=0$, so
+\[
+\sin(5x+z)=\sin(5x-z).
+\]
+In particular, the latter fibers are excluded by equal magnitudes, not by vanishing of the fourth sine. At $t=\infty$, $x=\pi$ and $\sin5x=0$. At $u=\infty$, $z=\pi$ and the first two sines both equal $-\sin5x$. The boundary intersection is degenerate too.
+\end{proof}
+
+\begin{theorem}[Exponent pair $(4,2)$]\label{thm:42}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^4q^2)^2$. Every necessary full-depth normal form for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+For $m=1,3$ and $n=\pm1$, Lemma~\ref{lem:degree6data} permits only $t=0$, where the first two sines are $\sin2z$ and $-\sin2z$. At $t=\infty$ they are again $\sin2z$ and $-\sin2z$. At $u=\infty$ they both equal $\sin4x$. Repeated magnitudes exclude all these fibers and their intersection. The remaining normal forms were excluded by inheritance.
+\end{proof}
+
+\begin{theorem}[Exponent pair $(3,3)$]\label{thm:33}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^3q^3)^2$. Every necessary full-depth normal form for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+For all six representatives, only $t=0,\pm1$ remain. At $t=0$, the first two sines are $\sin3z$ and $-\sin3z$. At $t=\pm1$, $\cos3x=0$, so $\sin(3x+3z)=\sin(3x-3z)$. At $t=\infty$ the first two are $-\sin3z$ and $\sin3z$; at $u=\infty$ they both equal $-\sin3x$. Thus every remaining finite or projective fiber has repeated offset magnitudes. This covers all representatives and their symmetries.
+\end{proof}
+
+\begin{corollary}[Current certified two-prime lower bound]\label{cor:bound}
+If a primitive magic square has central root $y=p^kq^l$ with exactly two distinct prime factors and $k,l>0$, then
+\[
+\boxed{k+l\ge7.}
+\]
+\end{corollary}
+\begin{proof}
+The previous exclusions cover all exponent sums at most five. The positive unordered pairs of sum six are $(5,1),(4,2),(3,3)$, now excluded. The center entry is $y^2$; the bound concerns the exponents in its positive square root.
+\end{proof}
+This does not reinstate the original manuscript's claim excluding all exponent sums through seven. The cases of sum seven remain unverified here.
+
+\subsection{Stronger pruning for arbitrary exponents}
+\begin{corollary}[Reduced-frequency denominator obstruction, updated]\label{cor:reduced}
+A nondegenerate rational-circle solution of the two-prime normal form must satisfy
+\begin{equation}\label{eq:gcdcriterion}
+\boxed{\frac{k}{\gcd(k,|m|)}+\frac{l}{\gcd(l,|n|)}\ge7.}
+\end{equation}
+Here $\gcd(k,0)=k$. Thus the denominators of $m/k$ and $n/l$ in lowest terms must sum to at least seven.
+\end{corollary}
+\begin{proof}
+Divide the frequency coordinates by $d=\gcd(k,|m|)$ and $e=\gcd(l,|n|)$. If the reduced exponent sum were at most six, the resulting normal form would be excluded by the rational-circle theorems above. A solution for the original normal form maps to one for the reduced form under $(e^{ix},e^{iz})\mapsto(e^{idx},e^{iez})$, preserving all four magnitudes. No inverse or surjectivity on rational points is used.
+\end{proof}
+For example, $(k,l;m,n)=(12,10;3,5)$ reduces to $(4,2;1,1)$, so this particular configuration is excluded. The statement does not exclude every configuration at central-root signature $(12,10)$. New excluded reduced-denominator types are $(5,1)$, $(4,2)$, and $(3,3)$, together with coordinate interchanges. In the one-zero-coordinate case, every nonzero deficiency of reduced denominator at most five is now excluded.

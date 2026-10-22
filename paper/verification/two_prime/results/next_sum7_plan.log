@@ -1,0 +1,924 @@
+{
+  "status": "COVERAGE_VERIFIED_PLAN_ONLY",
+  "cases": [
+    {
+      "bounds": [
+        6,
+        1
+      ],
+      "raw_configurations": 11,
+      "inherited_exclusions": 7,
+      "remaining_raw_configurations": 4,
+      "new_representatives": [
+        [
+          1,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "status": "PLAN_ONLY: no new elimination or exclusion claimed",
+      "routes": [
+        {
+          "drops": [
+            -5,
+            0
+          ],
+          "reduced_bounds": [
+            6,
+            1
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -4,
+            0
+          ],
+          "reduced_bounds": [
+            3,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -3,
+            0
+          ],
+          "reduced_bounds": [
+            2,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -2,
+            0
+          ],
+          "reduced_bounds": [
+            3,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -1,
+            0
+          ],
+          "reduced_bounds": [
+            6,
+            1
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            0,
+            0
+          ],
+          "reduced_bounds": [
+            1,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            1,
+            0
+          ],
+          "reduced_bounds": [
+            6,
+            1
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            2,
+            0
+          ],
+          "reduced_bounds": [
+            3,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            3,
+            0
+          ],
+          "reduced_bounds": [
+            2,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            4,
+            0
+          ],
+          "reduced_bounds": [
+            3,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            5,
+            0
+          ],
+          "reduced_bounds": [
+            6,
+            1
+          ],
+          "status": "NOT_ELIMINATED"
+        }
+      ]
+    },
+    {
+      "bounds": [
+        5,
+        2
+      ],
+      "raw_configurations": 27,
+      "inherited_exclusions": 11,
+      "remaining_raw_configurations": 16,
+      "new_representatives": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          -1
+        ]
+      ],
+      "status": "PLAN_ONLY: no new elimination or exclusion claimed",
+      "routes": [
+        {
+          "drops": [
+            -4,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -4,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -4,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -3,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -3,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -3,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -2,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -2,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -2,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -1,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -1,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -1,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            0,
+            -1
+          ],
+          "reduced_bounds": [
+            1,
+            2
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            0,
+            0
+          ],
+          "reduced_bounds": [
+            1,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            0,
+            1
+          ],
+          "reduced_bounds": [
+            1,
+            2
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            1,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            1,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            1,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            2,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            2,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            2,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            3,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            3,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            3,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            4,
+            -1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            4,
+            0
+          ],
+          "reduced_bounds": [
+            5,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            4,
+            1
+          ],
+          "reduced_bounds": [
+            5,
+            2
+          ],
+          "status": "NOT_ELIMINATED"
+        }
+      ]
+    },
+    {
+      "bounds": [
+        4,
+        3
+      ],
+      "raw_configurations": 35,
+      "inherited_exclusions": 19,
+      "remaining_raw_configurations": 16,
+      "new_representatives": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "status": "PLAN_ONLY: no new elimination or exclusion claimed",
+      "routes": [
+        {
+          "drops": [
+            -3,
+            -2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -3,
+            -1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -3,
+            0
+          ],
+          "reduced_bounds": [
+            4,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -3,
+            1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -3,
+            2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -2,
+            -2
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -2,
+            -1
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -2,
+            0
+          ],
+          "reduced_bounds": [
+            2,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -2,
+            1
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -2,
+            2
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -1,
+            -2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -1,
+            -1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -1,
+            0
+          ],
+          "reduced_bounds": [
+            4,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            -1,
+            1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            -1,
+            2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            0,
+            -2
+          ],
+          "reduced_bounds": [
+            1,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            0,
+            -1
+          ],
+          "reduced_bounds": [
+            1,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            0,
+            0
+          ],
+          "reduced_bounds": [
+            1,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            0,
+            1
+          ],
+          "reduced_bounds": [
+            1,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            0,
+            2
+          ],
+          "reduced_bounds": [
+            1,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            1,
+            -2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            1,
+            -1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            1,
+            0
+          ],
+          "reduced_bounds": [
+            4,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            1,
+            1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            1,
+            2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            2,
+            -2
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            2,
+            -1
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            2,
+            0
+          ],
+          "reduced_bounds": [
+            2,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            2,
+            1
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            2,
+            2
+          ],
+          "reduced_bounds": [
+            2,
+            3
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            3,
+            -2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            3,
+            -1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            3,
+            0
+          ],
+          "reduced_bounds": [
+            4,
+            1
+          ],
+          "status": "EXCLUDED_BY_VERIFIED_LOWER_SIGNATURE"
+        },
+        {
+          "drops": [
+            3,
+            1
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        },
+        {
+          "drops": [
+            3,
+            2
+          ],
+          "reduced_bounds": [
+            4,
+            3
+          ],
+          "status": "NOT_ELIMINATED"
+        }
+      ]
+    }
+  ],
+  "new_representatives": 18,
+  "proposed_signed_systems": 864
+}

@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "genus_five_model",
+      "status": "PASS",
+      "degree": 12,
+      "genus": 5,
+      "known_points": 8,
+      "point_list_complete": false
+    },
+    {
+      "name": "rational_reconstruction",
+      "status": "PASS",
+      "nondegeneracy_quartic_coefficients": [
+        -110,
+        -62,
+        -38,
+        -14,
+        10,
+        34,
+        82
+      ]
+    },
+    {
+      "name": "six_real_obstruction_residuals",
+      "status": "PASS"
+    },
+    {
+      "name": "rank_three_enumeration",
+      "status": "PASS",
+      "vectors": 13,
+      "admissible_sets": 177,
+      "orbits": 15,
+      "sizes": {
+        "A": 1,
+        "B1": 12,
+        "B2": 12,
+        "C": 12,
+        "D1": 24,
+        "D2": 12,
+        "D3": 12,
+        "D4": 24,
+        "E1": 6,
+        "E2": 6,
+        "E3": 24,
+        "F-1": 12,
+        "F-2": 4,
+        "F+1": 4,
+        "F+2": 12
+      }
+    },
+    {
+      "name": "four_torus_maps_and_D1_coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "two_prime_printed_counts",
+      "status": "PASS",
+      "representatives": 43,
+      "systems": 2064,
+      "catalog_factors": 1190,
+      "raw_forms": 168
+    },
+    {
+      "name": "D1_catalog_scope",
+      "status": "PASS",
+      "system_statuses": {
+        "closed": 40,
+        "residual": 8
+      },
+      "residual_completeness_asserted": false
+    },
+    {
+      "name": "bibliography_and_manuscript_structure",
+      "status": "PASS",
+      "references": 15,
+      "labels": 68,
+      "claims_not_checked": [
+        "historical priority",
+        "independent human review"
+      ]
+    }
+  ],
+  "sympy_version": "1.14.0",
+  "scope": "Article consistency and selected exact identities, not a substitute for the main certificate verifiers.",
+  "paper_sha256": "a1eb0e51a6864f2a3b0a16cdf430ea5024fab6e15d11aa415a1e97a9eae225ac"
+}

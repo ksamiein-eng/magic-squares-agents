@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+paper/verification_runs/build/
+agents/*/tmp/
+agents/*/*.log
+*.checkpoint.json

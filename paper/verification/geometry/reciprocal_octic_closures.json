@@ -1,0 +1,3632 @@
+{
+  "status": "PASS",
+  "rank_zero_64_certificate": {
+    "model": [
+      0,
+      0,
+      0,
+      -4,
+      0
+    ],
+    "isogenous_model": [
+      0,
+      0,
+      0,
+      16,
+      0
+    ],
+    "image_upper_sizes": [
+      4,
+      1
+    ],
+    "class_2_obstruction_modulus": 16,
+    "primitive_residues": [
+      2,
+      8,
+      10
+    ],
+    "square_residues": [
+      0,
+      1,
+      4,
+      9
+    ],
+    "torsion_upper_bound": 4,
+    "point_counts": {
+      "3": 4,
+      "5": 4
+    },
+    "rank": 0
+  },
+  "quotient_polynomials": [
+    "r**4 + 16",
+    "r**4 - 48*r**2 + 256"
+  ],
+  "complete_quotient_parameters": [
+    "0",
+    "infinity"
+  ],
+  "octic_polynomials": [
+    "tau**8 + 4*tau**6 + 22*tau**4 + 4*tau**2 + 1",
+    "tau**8 - 44*tau**6 + 166*tau**4 - 44*tau**2 + 1"
+  ],
+  "complete_octic_parameters": [
+    "0",
+    "infinity"
+  ],
+  "proof": "The rank-zero quotients have only parameter 0 and infinity; finite nonzero t would require t+1/t=0, impossible over Q.",
+  "lifted_factor_entries": 32,
+  "new_factor_closures": 24,
+  "previously_closed_rechecked": 8,
+  "lifts": [
+    {
+      "orbit": "B2",
+      "system": 0,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "B2",
+      "system": 1,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "B2",
+      "system": 2,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "B2",
+      "system": 3,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "B2",
+      "system": 40,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "B2",
+      "system": 43,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "B2",
+      "system": 44,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "B2",
+      "system": 47,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 6,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "v": "0",
+            "u": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "v": "0",
+            "u": "-1"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 4,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 5,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 6,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 7,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 41,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 42,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 45,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "C",
+      "system": 46,
+      "factor": 0,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 4,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 5,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 6,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 7,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 41,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 42,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 45,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "D1",
+      "system": 46,
+      "factor": 1,
+      "quotient": 0,
+      "tau_values": [
+        "0",
+        "oo"
+      ],
+      "plane_points_checked": 2,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "u": "0",
+            "v": "0",
+            "t": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 4,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 5,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 6,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 7,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 41,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 42,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 45,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    },
+    {
+      "orbit": "E2",
+      "system": 46,
+      "factor": 0,
+      "quotient": 1,
+      "tau_values": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ],
+      "plane_points_checked": 10,
+      "lifts_checked": [
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "0",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "0",
+            "u": "0",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        },
+        {
+          "tau": "oo",
+          "point": {
+            "t": "-1",
+            "u": "-1",
+            "v": "0"
+          },
+          "witness": [
+            "zero",
+            0
+          ]
+        }
+      ],
+      "unresolved": [],
+      "passed": true
+    }
+  ],
+  "note": "These close individual factor entries, not every factor of any additional whole orbit."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "rejected_mutations": [
+    "different octic",
+    "omitted descent square class",
+    "false small-modulus obstruction",
+    "wrong real sign",
+    "false finite-field point count",
+    "missing good prime",
+    "extra elliptic rational point",
+    "false quartic point",
+    "wrong infinity count",
+    "wrong integer frequency map",
+    "wrong sine sign",
+    "missing signed assignment",
+    "wrong target system",
+    "degree-two map called degree one",
+    "false inverse",
+    "claiming a new whole-orbit closure"
+  ],
+  "count": 16
+}

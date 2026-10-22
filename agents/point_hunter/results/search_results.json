@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-10-22 17:04:43",
+  "python": "3.11.9",
+  "numpy": "1.26.4",
+  "moduli_stage1": [
+    1728,
+    1225,
+    2431
+  ],
+  "moduli_stage2": [
+    437,
+    899,
+    1517,
+    2021,
+    3127,
+    4087,
+    5183
+  ],
+  "curves": {
+    "C": {
+      "H": 10000,
+      "pairs_scanned": 50015000,
+      "stage1_survivors": 16181819,
+      "stage2_survivors": 20901,
+      "exact_tests": 559,
+      "seconds": 0.7838912010192871,
+      "curve": "C",
+      "description": "Y^2 = P(h), h = p/q, 0<=p<=q<=H",
+      "q_start": 1,
+      "table_seconds": 7.916740655899048,
+      "moduli_stage1": [
+        1728,
+        1225,
+        2431
+      ],
+      "moduli_stage2": [
+        437,
+        899,
+        1517,
+        2021,
+        3127,
+        4087,
+        5183
+      ],
+      "points": [
+        {
+          "h": "0/1",
+          "Y": "1/1",
+          "p": 0,
+          "q": 1,
+          "root": 1,
+          "known": true
+        },
+        {
+          "h": "1/1",
+          "Y": "72/1",
+          "p": 1,
+          "q": 1,
+          "root": 72,
+          "known": true
+        }
+      ],
+      "new_points": []
+    }
+  }
+}

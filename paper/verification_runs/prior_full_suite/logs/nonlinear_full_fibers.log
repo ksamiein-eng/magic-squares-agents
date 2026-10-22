@@ -1,0 +1,6 @@
+D2 PASS
+D3 PASS
+D4 PASS
+F+1 PASS
+F+2 PASS
+{'status': 'PASS', 'scope': 'all finite rational full fibers above nonlinear projections; infinity handled by the established boundary lemma', 'factor_occurrences': 216, 'rational_full_fiber_occurrences': 2, 'seconds': 6.947}

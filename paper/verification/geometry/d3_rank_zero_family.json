@@ -1,0 +1,383 @@
+{
+  "status": "PASS",
+  "scope": "eight nonlinear D3 factors; not closure of the whole orbit",
+  "external_premise": "Cremona 11a3=[0,-1,1,0,0] has rank 0 and torsion group of order 5; Table Two full group data",
+  "source_line": "11 a 3 [0,-1,1,0,0] 0 [5] [0:0:1]",
+  "elliptic_map": {
+    "x": "4*z^2/(z^2+1)^2",
+    "y": "(W/(z^2+1)^3-1)/2"
+  },
+  "cover_polynomial": "z**12 + 6*z**10 - 49*z**8 + 148*z**6 - 49*z**4 + 6*z**2 + 1",
+  "complete_rational_z_parameters": [
+    "0",
+    "1",
+    "-1",
+    "infinity"
+  ],
+  "complete_cover_affine_points": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      -8
+    ],
+    [
+      -1,
+      8
+    ],
+    [
+      -1,
+      -8
+    ]
+  ],
+  "rational_points_at_infinity": 2,
+  "cover_rational_point_count": 8,
+  "closed_factors": [
+    {
+      "system": 0,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "0",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "infinity",
+            "1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "infinity",
+            "-1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "0",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 1,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "infinity",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "0",
+            "-1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "0",
+            "1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "infinity",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 2,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "0",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "infinity",
+            "1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "infinity",
+            "-1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "0",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 3,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "infinity",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "0",
+            "-1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "0",
+            "1"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "infinity",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 4,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "0",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "1",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "-1",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "infinity",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 5,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "infinity",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "-1",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "1",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "0",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 6,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "0",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "1",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "-1",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "infinity",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "system": 7,
+      "allowed_parameter_images": [
+        {
+          "parameter": "0",
+          "plane_coordinates": [
+            "infinity",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "1",
+          "plane_coordinates": [
+            "-1",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "-1",
+          "plane_coordinates": [
+            "1",
+            "infinity"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        },
+        {
+          "parameter": "infinity",
+          "plane_coordinates": [
+            "0",
+            "0"
+          ],
+          "excluded_by": "previously verified finite special fiber or projective boundary"
+        }
+      ],
+      "finite_chart_exceptions": [
+        "-1",
+        "0",
+        "1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "PQ": [
+      "a",
+      "b"
+    ],
+    "first_residual": "-15*a**2*b**2",
+    "second_residual": "4*a**4 - 8*a**2*b**2 - 3*a**2 + 4*b**4 - 3*b**2"
+  },
+  {
+    "PQ": [
+      "a",
+      "a + b"
+    ],
+    "first_residual": "3*a**2*b*(2*a - b)",
+    "second_residual": "b*(4*a**2*b - 8*a*b**2 + 6*a + 4*b**3 - 3*b)"
+  },
+  {
+    "PQ": [
+      "a",
+      "a - b"
+    ],
+    "first_residual": "-3*a**2*b*(2*a + b)",
+    "second_residual": "b*(4*a**2*b + 8*a*b**2 - 6*a + 4*b**3 - 3*b)"
+  },
+  {
+    "PQ": [
+      "b",
+      "a + b"
+    ],
+    "first_residual": "-3*a*b**2*(a - 2*b)",
+    "second_residual": "a*(4*a**3 - 8*a**2*b + 4*a*b**2 - 3*a + 6*b)"
+  },
+  {
+    "PQ": [
+      "b",
+      "a - b"
+    ],
+    "first_residual": "-3*a*b**2*(a + 2*b)",
+    "second_residual": "a*(4*a**3 + 8*a**2*b + 4*a*b**2 - 3*a - 6*b)"
+  },
+  {
+    "PQ": [
+      "a + b",
+      "a - b"
+    ],
+    "first_residual": "0",
+    "second_residual": "4*a**2*b**2"
+  }
+]

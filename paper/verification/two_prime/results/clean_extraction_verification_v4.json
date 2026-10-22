@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "verification": "standard-library checker run from a clean ZIP extraction, Python isolated mode",
+  "systems": 1200,
+  "certificate_sha256": "0292885d6ed709f217b8f423bee778afde465bae2f1da475ff6b59c6e5958fca",
+  "checker_sha256": "cc178e769968a14abb81fc83a2ba990bfd31da8ec901af93f1741f956e8409a6",
+  "elapsed_seconds": 5.742,
+  "output_report": "verification_degree6_stdlib.json",
+  "note": "Final package integrity is checked again after including this report; no circular package hash is claimed."
+}

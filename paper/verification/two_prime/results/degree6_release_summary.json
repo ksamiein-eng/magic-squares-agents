@@ -1,0 +1,3241 @@
+{
+  "status": "PASS",
+  "release": "v4",
+  "new_exponent_pairs": [
+    [
+      5,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "new_representatives": 14,
+  "new_systems": 672,
+  "combined_systems": 1200,
+  "new_exact_integer_determinants": 40992,
+  "combined_exact_integer_determinants": 59472,
+  "distinct_catalog_factors": 665,
+  "rootless_catalog_factors": 662,
+  "new_rootless_factors": 391,
+  "modular_primes": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19
+  ],
+  "normal_form_routes": {
+    "real_angle_parallelogram": 9,
+    "direct_certificate": 54,
+    "rational_circle_power_pullback": 32
+  },
+  "new_cases": [
+    {
+      "id": "51_m1_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 30,
+      "rootless_factors": 27,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 38
+    },
+    {
+      "id": "51_m2_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 34,
+      "rootless_factors": 31,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5
+      ],
+      "max_resultant_degree": 38
+    },
+    {
+      "id": "51_m3_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 32,
+      "rootless_factors": 29,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 38
+    },
+    {
+      "id": "51_m4_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 34,
+      "rootless_factors": 31,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5
+      ],
+      "max_resultant_degree": 38
+    },
+    {
+      "id": "42_m1_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 28,
+      "rootless_factors": 27,
+      "rational_t_roots": [
+        "0"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "max_resultant_degree": 62
+    },
+    {
+      "id": "42_m1_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 28,
+      "rootless_factors": 27,
+      "rational_t_roots": [
+        "0"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 62
+    },
+    {
+      "id": "42_m3_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 28,
+      "rootless_factors": 27,
+      "rational_t_roots": [
+        "0"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        13,
+        17
+      ],
+      "max_resultant_degree": 62
+    },
+    {
+      "id": "42_m3_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 32,
+      "rootless_factors": 31,
+      "rational_t_roots": [
+        "0"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "max_resultant_degree": 62
+    },
+    {
+      "id": "33_m1_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 63,
+      "rootless_factors": 60,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 70
+    },
+    {
+      "id": "33_m1_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 56,
+      "rootless_factors": 53,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 70
+    },
+    {
+      "id": "33_m1_n2",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 28,
+      "rootless_factors": 25,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        19
+      ],
+      "max_resultant_degree": 70
+    },
+    {
+      "id": "33_m1_nminus2",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 31,
+      "rootless_factors": 28,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 70
+    },
+    {
+      "id": "33_m2_n2",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 40,
+      "rootless_factors": 37,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "max_resultant_degree": 70
+    },
+    {
+      "id": "33_m2_nminus2",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 30,
+      "rootless_factors": 27,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "max_resultant_degree": 70
+    }
+  ],
+  "standard_library_verifier": {
+    "status": "PASS",
+    "schema": "magic-squares/degree6-verification/v4",
+    "verifier": "Python standard library only; no CAS",
+    "cases": [
+      {
+        "id": "21_m1_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 28,
+        "rootless_factors": 25,
+        "max_determinant_degree_bound": 16,
+        "exact_determinant_evaluations": 720,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "31_m1_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 29,
+        "rootless_factors": 26,
+        "max_determinant_degree_bound": 24,
+        "exact_determinant_evaluations": 1104,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "31_m2_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 32,
+        "rootless_factors": 29,
+        "max_determinant_degree_bound": 24,
+        "exact_determinant_evaluations": 1104,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "22_m1_n1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 36,
+        "rootless_factors": 35,
+        "max_determinant_degree_bound": 32,
+        "exact_determinant_evaluations": 1584,
+        "finite_fibers": [
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "22_m1_nminus1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 26,
+        "rootless_factors": 25,
+        "max_determinant_degree_bound": 32,
+        "exact_determinant_evaluations": 1584,
+        "finite_fibers": [
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "41_m1_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 30,
+        "rootless_factors": 27,
+        "max_determinant_degree_bound": 32,
+        "exact_determinant_evaluations": 1488,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "41_m3_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 30,
+        "rootless_factors": 27,
+        "max_determinant_degree_bound": 32,
+        "exact_determinant_evaluations": 1488,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "32_m1_n1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 32,
+        "rootless_factors": 29,
+        "max_determinant_degree_bound": 48,
+        "exact_determinant_evaluations": 2352,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "32_m1_nminus1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 35,
+        "rootless_factors": 32,
+        "max_determinant_degree_bound": 48,
+        "exact_determinant_evaluations": 2352,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "32_m2_n1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 34,
+        "rootless_factors": 31,
+        "max_determinant_degree_bound": 48,
+        "exact_determinant_evaluations": 2352,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "32_m2_nminus1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 34,
+        "rootless_factors": 31,
+        "max_determinant_degree_bound": 48,
+        "exact_determinant_evaluations": 2352,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "51_m1_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 30,
+        "rootless_factors": 27,
+        "max_determinant_degree_bound": 40,
+        "exact_determinant_evaluations": 1872,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "51_m2_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 34,
+        "rootless_factors": 31,
+        "max_determinant_degree_bound": 40,
+        "exact_determinant_evaluations": 1872,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "51_m3_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 32,
+        "rootless_factors": 29,
+        "max_determinant_degree_bound": 40,
+        "exact_determinant_evaluations": 1872,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "51_m4_n0",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 6,
+        "distinct_factors": 34,
+        "rootless_factors": 31,
+        "max_determinant_degree_bound": 40,
+        "exact_determinant_evaluations": 1872,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "zero_offset",
+            "index": 3
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "zero_offset",
+            "index": 3
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "42_m1_n1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 28,
+        "rootless_factors": 27,
+        "max_determinant_degree_bound": 64,
+        "exact_determinant_evaluations": 3120,
+        "finite_fibers": [
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "42_m1_nminus1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 28,
+        "rootless_factors": 27,
+        "max_determinant_degree_bound": 64,
+        "exact_determinant_evaluations": 3120,
+        "finite_fibers": [
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "42_m3_n1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 28,
+        "rootless_factors": 27,
+        "max_determinant_degree_bound": 64,
+        "exact_determinant_evaluations": 3120,
+        "finite_fibers": [
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "42_m3_nminus1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 32,
+        "rootless_factors": 31,
+        "max_determinant_degree_bound": 64,
+        "exact_determinant_evaluations": 3120,
+        "finite_fibers": [
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "33_m1_n1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 63,
+        "rootless_factors": 60,
+        "max_determinant_degree_bound": 72,
+        "exact_determinant_evaluations": 3504,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "33_m1_nminus1",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 56,
+        "rootless_factors": 53,
+        "max_determinant_degree_bound": 72,
+        "exact_determinant_evaluations": 3504,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "33_m1_n2",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 28,
+        "rootless_factors": 25,
+        "max_determinant_degree_bound": 72,
+        "exact_determinant_evaluations": 3504,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "33_m1_nminus2",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 31,
+        "rootless_factors": 28,
+        "max_determinant_degree_bound": 72,
+        "exact_determinant_evaluations": 3504,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "33_m2_n2",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 40,
+        "rootless_factors": 37,
+        "max_determinant_degree_bound": 72,
+        "exact_determinant_evaluations": 3504,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      },
+      {
+        "id": "33_m2_nminus2",
+        "status": "PASS",
+        "systems": 48,
+        "removed_t_systems": 0,
+        "distinct_factors": 30,
+        "rootless_factors": 27,
+        "max_determinant_degree_bound": 72,
+        "exact_determinant_evaluations": 3504,
+        "finite_fibers": [
+          {
+            "parameter": [
+              -1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          {
+            "parameter": [
+              0,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          {
+            "parameter": [
+              1,
+              1
+            ],
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          }
+        ],
+        "projective_boundaries": {
+          "t_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": -1
+          },
+          "u_infinity": {
+            "kind": "equal_offsets",
+            "indices": [
+              0,
+              1
+            ],
+            "sign": 1
+          },
+          "both_infinity": {
+            "kind": "zero_offset",
+            "index": 0
+          }
+        }
+      }
+    ],
+    "total_systems": 1200,
+    "new_degree_six_systems": 672,
+    "raw_signed_assignments": 192,
+    "distinct_signed_row_spaces": 48,
+    "distinct_catalog_factors": 665,
+    "rootless_catalog_factors": 662,
+    "modular_primes": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "exact_integer_determinants": 59472,
+    "normal_form_coverage": [
+      {
+        "bounds": [
+          1,
+          1
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          2,
+          1
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "21_m1_n0"
+      },
+      {
+        "bounds": [
+          2,
+          1
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          2,
+          1
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "21_m1_n0"
+      },
+      {
+        "bounds": [
+          3,
+          1
+        ],
+        "drops": [
+          -2,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "31_m2_n0"
+      },
+      {
+        "bounds": [
+          3,
+          1
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "31_m1_n0"
+      },
+      {
+        "bounds": [
+          3,
+          1
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          3,
+          1
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "31_m1_n0"
+      },
+      {
+        "bounds": [
+          3,
+          1
+        ],
+        "drops": [
+          2,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "31_m2_n0"
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          -1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "22_m1_n1"
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          -1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "22_m1_nminus1"
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          0,
+          -1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          0,
+          1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "22_m1_nminus1"
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          2,
+          2
+        ],
+        "drops": [
+          1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "22_m1_n1"
+      },
+      {
+        "bounds": [
+          4,
+          1
+        ],
+        "drops": [
+          -3,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "41_m3_n0"
+      },
+      {
+        "bounds": [
+          4,
+          1
+        ],
+        "drops": [
+          -2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          1
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "41_m1_n0"
+      },
+      {
+        "bounds": [
+          4,
+          1
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          4,
+          1
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "41_m1_n0"
+      },
+      {
+        "bounds": [
+          4,
+          1
+        ],
+        "drops": [
+          2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          1
+        ],
+        "drops": [
+          3,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "41_m3_n0"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          -2,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m2_n1"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          -2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m2_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          -2,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m2_nminus1"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          -1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m1_n1"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          -1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m1_nminus1"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          0,
+          -1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          1,
+          0
+        ],
+        "frequency_coordinate_multipliers": [
+          3,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          0,
+          1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          1,
+          0
+        ],
+        "frequency_coordinate_multipliers": [
+          3,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m1_nminus1"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m1_n1"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          2,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m2_nminus1"
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m2_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          2
+        ],
+        "drops": [
+          2,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "32_m2_n1"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          -4,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m4_n0"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          -3,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m3_n0"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          -2,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m2_n0"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m1_n0"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m1_n0"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          2,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m2_n0"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          3,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m3_n0"
+      },
+      {
+        "bounds": [
+          5,
+          1
+        ],
+        "drops": [
+          4,
+          0
+        ],
+        "route": "direct_certificate",
+        "certificate": "51_m4_n0"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -3,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m3_n1"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -3,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "41_m3_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -3,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m3_nminus1"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -2,
+          -1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "22_m1_n1",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -2,
+          1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "22_m1_nminus1",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m1_n1"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "41_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          -1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m1_nminus1"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          0,
+          -1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          1,
+          0
+        ],
+        "frequency_coordinate_multipliers": [
+          4,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          0,
+          1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          1,
+          0
+        ],
+        "frequency_coordinate_multipliers": [
+          4,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m1_nminus1"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "41_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m1_n1"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          2,
+          -1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "22_m1_nminus1",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "21_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          2,
+          1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "22_m1_n1",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          2,
+          1
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          3,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m3_nminus1"
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          3,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "41_m3_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          2
+        ]
+      },
+      {
+        "bounds": [
+          4,
+          2
+        ],
+        "drops": [
+          3,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "42_m3_n1"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -2,
+          -2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m2_n2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -2,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_n2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m2_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -2,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_nminus2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -2,
+          2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m2_nminus2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -1,
+          -2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_n2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_n1"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_nminus1"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          -1,
+          2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_nminus2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          0,
+          -2
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m2_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          0,
+          -1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          0,
+          0
+        ],
+        "route": "real_angle_parallelogram"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          0,
+          1
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          0,
+          2
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m2_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          1,
+          -2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_nminus2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          1,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_nminus1"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          1,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m1_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          1,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_n1"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          1,
+          2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_n2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          2,
+          -2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m2_nminus2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          2,
+          -1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_nminus2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          2,
+          0
+        ],
+        "route": "rational_circle_power_pullback",
+        "certificate": "31_m2_n0",
+        "coordinate_permutation": [
+          0,
+          1
+        ],
+        "frequency_coordinate_multipliers": [
+          1,
+          3
+        ]
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          2,
+          1
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m1_n2"
+      },
+      {
+        "bounds": [
+          3,
+          3
+        ],
+        "drops": [
+          2,
+          2
+        ],
+        "route": "direct_certificate",
+        "certificate": "33_m2_n2"
+      }
+    ],
+    "claim": "no nondegenerate rational-circle solution for the full-depth normal forms of all positive exponent pairs of sum at most six",
+    "arithmetic_consequence": "primitive central root p^k q^l with distinct primes requires k+l >= 7",
+    "proof_boundary": "written normal-form and real-angle proofs plus the checked exact algebra; not a formal proof-assistant development",
+    "elapsed_seconds": 5.797
+  },
+  "symbolic_crosscheck": {
+    "status": "PASS",
+    "systems": 1200,
+    "numerator_method": "Chebyshev T_n and U_(n-1)",
+    "determinant_method": "direct symbolic Sylvester matrix over ZZ[t], SymPy DomainMatrix",
+    "resultant_calls": 0,
+    "factorization_calls": 0,
+    "rational_root_solver_calls": 0,
+    "normal_forms_checked_by_gcd_reduction": 95,
+    "finite_fibers_and_projective_boundaries": "independent symbolic identities checked",
+    "sympy": "1.14.0",
+    "elapsed_seconds": 40.025
+  },
+  "consequence": "For primitive central root y=p^k q^l with distinct primes, k+l >= 7.",
+  "not_claimed": [
+    "exponent sum seven exclusions",
+    "remaining three-prime classifications",
+    "elliptic ranks or saturation",
+    "complete genus-two rational points",
+    "large canonical-height bounds",
+    "historical novelty",
+    "formal proof-assistant certification"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "status": "GENERATED_NOT_YET_INDEPENDENTLY_VERIFIED",
+  "cases": [
+    {
+      "id": "21_m1_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 28,
+      "rootless_factors": 25,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 14
+    },
+    {
+      "id": "31_m1_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 29,
+      "rootless_factors": 26,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "max_resultant_degree": 22
+    },
+    {
+      "id": "31_m2_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 32,
+      "rootless_factors": 29,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        11
+      ],
+      "max_resultant_degree": 22
+    },
+    {
+      "id": "22_m1_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 36,
+      "rootless_factors": 35,
+      "rational_t_roots": [
+        "0"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 30
+    },
+    {
+      "id": "22_m1_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 26,
+      "rootless_factors": 25,
+      "rational_t_roots": [
+        "0"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 30
+    },
+    {
+      "id": "41_m1_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 30,
+      "rootless_factors": 27,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "max_resultant_degree": 30
+    },
+    {
+      "id": "41_m3_n0",
+      "systems": 48,
+      "removed_t_systems": 6,
+      "distinct_factors": 30,
+      "rootless_factors": 27,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "max_resultant_degree": 30
+    },
+    {
+      "id": "32_m1_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 32,
+      "rootless_factors": 29,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 46
+    },
+    {
+      "id": "32_m1_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 35,
+      "rootless_factors": 32,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "max_resultant_degree": 46
+    },
+    {
+      "id": "32_m2_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 34,
+      "rootless_factors": 31,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "max_resultant_degree": 46
+    },
+    {
+      "id": "32_m2_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 34,
+      "rootless_factors": 31,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 46
+    }
+  ],
+  "total_systems": 528,
+  "distinct_catalog_factors": 274,
+  "rootless_catalog_factors": 271,
+  "elapsed_seconds": 17.419
+}

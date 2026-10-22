@@ -1,0 +1,17 @@
+[
+  {
+    "mutation": "missing_system",
+    "rejected": true,
+    "message": "assignment coverage"
+  },
+  {
+    "mutation": "altered_determinant_coefficient",
+    "rejected": true,
+    "message": "determinant mismatch"
+  },
+  {
+    "mutation": "false_modular_witness",
+    "rejected": true,
+    "message": "no-root witness fails"
+  }
+]

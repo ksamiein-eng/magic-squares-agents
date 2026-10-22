@@ -1,0 +1,3030 @@
+{
+  "scope": "D1 norm obstruction: 40 of 48 signed systems closed, eight reduced to one genus-five existence problem. No full D1 closure.",
+  "frequency_matrix": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ]
+  ],
+  "canonical_frequency_matrix": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      -1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "angle_matrix": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ]
+  ],
+  "models": [
+    {
+      "model": [
+        0,
+        6,
+        0,
+        1,
+        0
+      ],
+      "images": [
+        {
+          "A": 6,
+          "B": 1,
+          "not_excluded": [
+            -1,
+            1
+          ],
+          "excluded": {}
+        },
+        {
+          "A": -12,
+          "B": 32,
+          "not_excluded": [
+            1,
+            2
+          ],
+          "excluded": {
+            "-2": "real",
+            "-1": "real"
+          }
+        }
+      ],
+      "good_prime_counts": {
+        "3": 4,
+        "5": 8,
+        "7": 8
+      },
+      "affine_rational_points": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "torsion_order": 4,
+      "rank": 0
+    },
+    {
+      "model": [
+        0,
+        -3,
+        0,
+        4,
+        0
+      ],
+      "images": [
+        {
+          "A": -3,
+          "B": 4,
+          "not_excluded": [
+            1,
+            2
+          ],
+          "excluded": {
+            "-2": "real",
+            "-1": "real"
+          }
+        },
+        {
+          "A": 6,
+          "B": -7,
+          "not_excluded": [
+            -7,
+            1
+          ],
+          "excluded": {
+            "-1": [
+              2,
+              4
+            ],
+            "7": [
+              2,
+              4
+            ]
+          }
+        }
+      ],
+      "good_prime_counts": {
+        "3": 4,
+        "5": 4
+      },
+      "affine_rational_points": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "torsion_order": 4,
+      "rank": 0
+    },
+    {
+      "model": [
+        0,
+        18,
+        0,
+        1,
+        0
+      ],
+      "images": [
+        {
+          "A": 18,
+          "B": 1,
+          "not_excluded": [
+            -1,
+            1
+          ],
+          "excluded": {}
+        },
+        {
+          "A": -36,
+          "B": 320,
+          "not_excluded": [
+            1,
+            5
+          ],
+          "excluded": {
+            "-10": "real",
+            "-5": "real",
+            "-2": "real",
+            "-1": "real",
+            "2": [
+              2,
+              6
+            ],
+            "10": [
+              2,
+              6
+            ]
+          }
+        }
+      ],
+      "good_prime_counts": {
+        "3": 4,
+        "7": 4
+      },
+      "affine_rational_points": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          -1,
+          -4
+        ]
+      ],
+      "torsion_order": 4,
+      "rank": 0
+    }
+  ],
+  "systems": [
+    {
+      "system": 0,
+      "tag": [
+        0,
+        1,
+        2,
+        3,
+        1,
+        1
+      ],
+      "divisor": [
+        0,
+        0,
+        4
+      ],
+      "divisor_factors": {
+        "constant": 4,
+        "factors": [
+          {
+            "coefficients": [
+              0,
+              1
+            ],
+            "multiplicity": 2
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 1,
+      "tag": [
+        0,
+        1,
+        2,
+        3,
+        1,
+        -1
+      ],
+      "divisor": [
+        0,
+        0,
+        4
+      ],
+      "divisor_factors": {
+        "constant": 4,
+        "factors": [
+          {
+            "coefficients": [
+              0,
+              1
+            ],
+            "multiplicity": 2
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 2,
+      "tag": [
+        0,
+        1,
+        2,
+        3,
+        -1,
+        1
+      ],
+      "divisor": [
+        4
+      ],
+      "divisor_factors": {
+        "constant": 4,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 3,
+      "tag": [
+        0,
+        1,
+        2,
+        3,
+        -1,
+        -1
+      ],
+      "divisor": [
+        4
+      ],
+      "divisor_factors": {
+        "constant": 4,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 4,
+      "tag": [
+        0,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -2,
+          0,
+          -2
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        6,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        4,
+        0,
+        22,
+        0,
+        4,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 5,
+      "tag": [
+        0,
+        1,
+        3,
+        2,
+        1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -2,
+          0,
+          -2
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        6,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        4,
+        0,
+        22,
+        0,
+        4,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 6,
+      "tag": [
+        0,
+        1,
+        3,
+        2,
+        -1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        6,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        4,
+        0,
+        22,
+        0,
+        4,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 7,
+      "tag": [
+        0,
+        1,
+        3,
+        2,
+        -1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        6,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        4,
+        0,
+        22,
+        0,
+        4,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 8,
+      "tag": [
+        0,
+        2,
+        1,
+        3,
+        1,
+        1
+      ],
+      "divisor": [
+        0,
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": [
+          {
+            "coefficients": [
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -4
+        ]
+      ],
+      "norm_factor": [
+        9,
+        0,
+        1
+      ],
+      "second_norm": [
+        9,
+        0,
+        19,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 9,
+      "tag": [
+        0,
+        2,
+        1,
+        3,
+        1,
+        -1
+      ],
+      "divisor": [
+        0,
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": [
+          {
+            "coefficients": [
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          -3,
+          0,
+          -3
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -4
+        ]
+      ],
+      "norm_factor": [
+        9,
+        0,
+        1
+      ],
+      "second_norm": [
+        9,
+        0,
+        19,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 10,
+      "tag": [
+        0,
+        2,
+        1,
+        3,
+        -1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -2,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        4,
+        0,
+        -3,
+        0,
+        1
+      ],
+      "second_norm": [
+        4,
+        0,
+        1,
+        0,
+        7,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 11,
+      "tag": [
+        0,
+        2,
+        1,
+        3,
+        -1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        4,
+        0,
+        -3,
+        0,
+        1
+      ],
+      "second_norm": [
+        4,
+        0,
+        1,
+        0,
+        7,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 12,
+      "tag": [
+        0,
+        2,
+        3,
+        1,
+        1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -3,
+          0,
+          -3
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        9
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        19,
+        0,
+        9
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 13,
+      "tag": [
+        0,
+        2,
+        3,
+        1,
+        1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        -3,
+        0,
+        4
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        7,
+        0,
+        1,
+        0,
+        4
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 14,
+      "tag": [
+        0,
+        2,
+        3,
+        1,
+        -1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        9
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        19,
+        0,
+        9
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 15,
+      "tag": [
+        0,
+        2,
+        3,
+        1,
+        -1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        -3,
+        0,
+        4
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        7,
+        0,
+        1,
+        0,
+        4
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 16,
+      "tag": [
+        0,
+        3,
+        1,
+        2,
+        1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          4,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          -2,
+          0,
+          -10
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        16,
+        0,
+        -2,
+        0,
+        -80,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 17,
+      "tag": [
+        0,
+        3,
+        1,
+        2,
+        1,
+        -1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          4,
+          0,
+          4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          10,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -80,
+        0,
+        -2,
+        0,
+        16,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 18,
+      "tag": [
+        0,
+        3,
+        1,
+        2,
+        -1,
+        1
+      ],
+      "divisor": [
+        -1,
+        0,
+        3
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -1,
+              0,
+              3
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 19,
+      "tag": [
+        0,
+        3,
+        1,
+        2,
+        -1,
+        -1
+      ],
+      "divisor": [
+        -3,
+        0,
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -3,
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 20,
+      "tag": [
+        0,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          4,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          10
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        16,
+        0,
+        -2,
+        0,
+        -80,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 21,
+      "tag": [
+        0,
+        3,
+        2,
+        1,
+        1,
+        -1
+      ],
+      "divisor": [
+        -1,
+        0,
+        3
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -1,
+              0,
+              3
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 22,
+      "tag": [
+        0,
+        3,
+        2,
+        1,
+        -1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          4,
+          0,
+          4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          -10,
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -80,
+        0,
+        -2,
+        0,
+        16,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 23,
+      "tag": [
+        0,
+        3,
+        2,
+        1,
+        -1,
+        -1
+      ],
+      "divisor": [
+        -3,
+        0,
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -3,
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 24,
+      "tag": [
+        1,
+        2,
+        0,
+        3,
+        1,
+        1
+      ],
+      "divisor": [
+        0,
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": [
+          {
+            "coefficients": [
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          -3,
+          0,
+          -3
+        ],
+        [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "norm_factor": [
+        9,
+        0,
+        1
+      ],
+      "second_norm": [
+        9,
+        0,
+        19,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 25,
+      "tag": [
+        1,
+        2,
+        0,
+        3,
+        1,
+        -1
+      ],
+      "divisor": [
+        0,
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": [
+          {
+            "coefficients": [
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "norm_factor": [
+        9,
+        0,
+        1
+      ],
+      "second_norm": [
+        9,
+        0,
+        19,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 26,
+      "tag": [
+        1,
+        2,
+        0,
+        3,
+        -1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -2,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        4,
+        0,
+        -3,
+        0,
+        1
+      ],
+      "second_norm": [
+        4,
+        0,
+        1,
+        0,
+        7,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 27,
+      "tag": [
+        1,
+        2,
+        0,
+        3,
+        -1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        4,
+        0,
+        -3,
+        0,
+        1
+      ],
+      "second_norm": [
+        4,
+        0,
+        1,
+        0,
+        7,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 28,
+      "tag": [
+        1,
+        2,
+        3,
+        0,
+        1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        9
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        19,
+        0,
+        9
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 29,
+      "tag": [
+        1,
+        2,
+        3,
+        0,
+        1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          -1,
+          0,
+          -2
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        -3,
+        0,
+        4
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        7,
+        0,
+        1,
+        0,
+        4
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 30,
+      "tag": [
+        1,
+        2,
+        3,
+        0,
+        -1,
+        1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -3,
+          0,
+          -3
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        9
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        19,
+        0,
+        9
+      ],
+      "status": "residual"
+    },
+    {
+      "system": 31,
+      "tag": [
+        1,
+        2,
+        3,
+        0,
+        -1,
+        -1
+      ],
+      "divisor": [
+        2
+      ],
+      "divisor_factors": {
+        "constant": 2,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          -2,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        -3,
+        0,
+        4
+      ],
+      "second_norm": [
+        1,
+        0,
+        -5,
+        0,
+        7,
+        0,
+        1,
+        0,
+        4
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 32,
+      "tag": [
+        1,
+        3,
+        0,
+        2,
+        1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -4,
+          0,
+          -4
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          10
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        16,
+        0,
+        -2,
+        0,
+        -80,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 33,
+      "tag": [
+        1,
+        3,
+        0,
+        2,
+        1,
+        -1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -4,
+          0,
+          -4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          -10,
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -80,
+        0,
+        -2,
+        0,
+        16,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 34,
+      "tag": [
+        1,
+        3,
+        0,
+        2,
+        -1,
+        1
+      ],
+      "divisor": [
+        -1,
+        0,
+        3
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -1,
+              0,
+              3
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 35,
+      "tag": [
+        1,
+        3,
+        0,
+        2,
+        -1,
+        -1
+      ],
+      "divisor": [
+        -3,
+        0,
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -3,
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 36,
+      "tag": [
+        1,
+        3,
+        2,
+        0,
+        1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -4,
+          0,
+          -4
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          -2,
+          0,
+          -10
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        16,
+        0,
+        -2,
+        0,
+        -80,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 37,
+      "tag": [
+        1,
+        3,
+        2,
+        0,
+        1,
+        -1
+      ],
+      "divisor": [
+        -1,
+        0,
+        3
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -1,
+              0,
+              3
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 38,
+      "tag": [
+        1,
+        3,
+        2,
+        0,
+        -1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -4,
+          0,
+          -4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          10,
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -80,
+        0,
+        -2,
+        0,
+        16,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 39,
+      "tag": [
+        1,
+        3,
+        2,
+        0,
+        -1,
+        -1
+      ],
+      "divisor": [
+        -3,
+        0,
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -3,
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -2,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 40,
+      "tag": [
+        2,
+        3,
+        0,
+        1,
+        1,
+        1
+      ],
+      "divisor": [
+        -1,
+        0,
+        3
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -1,
+              0,
+              3
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -14,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 41,
+      "tag": [
+        2,
+        3,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -4,
+          0,
+          -4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          -8,
+          0,
+          8
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -44,
+        0,
+        166,
+        0,
+        -44,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 42,
+      "tag": [
+        2,
+        3,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          4,
+          0,
+          4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          -8,
+          0,
+          8
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -44,
+        0,
+        166,
+        0,
+        -44,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 43,
+      "tag": [
+        2,
+        3,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "divisor": [
+        -3,
+        0,
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -3,
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -14,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 44,
+      "tag": [
+        2,
+        3,
+        1,
+        0,
+        1,
+        1
+      ],
+      "divisor": [
+        -1,
+        0,
+        3
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -1,
+              0,
+              3
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -14,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 45,
+      "tag": [
+        2,
+        3,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          4,
+          0,
+          4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          8,
+          0,
+          -8
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -44,
+        0,
+        166,
+        0,
+        -44,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 46,
+      "tag": [
+        2,
+        3,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "divisor": [
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": []
+      },
+      "kernel": [
+        [
+          0,
+          -4,
+          0,
+          -4
+        ],
+        [
+          -1,
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          8,
+          0,
+          -8
+        ]
+      ],
+      "norm_factor": [
+        1,
+        0,
+        18,
+        0,
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -44,
+        0,
+        166,
+        0,
+        -44,
+        0,
+        1
+      ],
+      "status": "closed"
+    },
+    {
+      "system": 47,
+      "tag": [
+        2,
+        3,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "divisor": [
+        -3,
+        0,
+        1
+      ],
+      "divisor_factors": {
+        "constant": 1,
+        "factors": [
+          {
+            "coefficients": [
+              -3,
+              0,
+              1
+            ],
+            "multiplicity": 1
+          }
+        ]
+      },
+      "kernel": [
+        [
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "norm_factor": [
+        1
+      ],
+      "second_norm": [
+        1,
+        0,
+        -14,
+        0,
+        1
+      ],
+      "status": "closed"
+    }
+  ],
+  "residual_polynomial": [
+    1,
+    0,
+    70,
+    0,
+    -1009,
+    0,
+    7060,
+    0,
+    -1009,
+    0,
+    70,
+    0,
+    1
+  ],
+  "residual_known_finite_points": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      72
+    ],
+    [
+      1,
+      -72
+    ],
+    [
+      -1,
+      72
+    ],
+    [
+      -1,
+      -72
+    ]
+  ],
+  "residual_infinity_points": 2,
+  "residual_points_complete": false,
+  "new_direct_D1_factors": [
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      33,
+      1
+    ],
+    [
+      36,
+      1
+    ],
+    [
+      38,
+      1
+    ]
+  ],
+  "boundaries": [
+    "r=0 implies first two sines equal",
+    "r=infinity implies first two sines equal up to sign"
+  ],
+  "core_rank_premise": "Classical 2-isogeny descent formula and good-prime reduction of rational torsion; no elliptic-curve database rank input."
+}

@@ -1,0 +1,16 @@
+A primes 129 match True survivors [-1, 0, 1] time 0.884
+A index >= 5354228879 height >= 45427703490971153268
+B primes 75 match True survivors [-2, 0, 2] time 0.733
+B index >= 13693678 height >= 38470495696955
+C primes 115 match True survivors [-2, 0, 2] time 0.85
+C index >= 5354228878 height >= 8822922901685756110
+D primes 81 match True survivors [-2, 0, 2] time 0.678
+D index >= 6846838 height >= 15845143173039
+E2last_(=A) primes 129 match True survivors [-1, 0, 1, 2677114440] time 0.822
+E2last_(=A) index >= 2677114440 height >= 11356925876985014837
+Dtw2 primes 67 match True survivors [-120119, -1, 0, 1, 120119] time 0.624
+Dtw2 index >= 120119 height >= 13041832275
+Dtwm2 primes 59 match True survivors [0] time 0.665
+Dtwm2 index >= 942480 height >= 1969210511355
+Dtw5 primes 104 match True survivors [0] time 0.722
+Dtw5 index >= 2677114440 height >= 11392502179034519369

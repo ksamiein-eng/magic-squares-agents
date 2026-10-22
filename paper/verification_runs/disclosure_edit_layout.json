@@ -1,0 +1,15 @@
+{
+  "pages_before": 19,
+  "pages_after": 19,
+  "changed_pages": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "exact_disclosure_present": true,
+  "removed_text_absent": true,
+  "mathematical_source_unchanged": true,
+  "mathematical_suite_rerun": false,
+  "manuscript_consistency_check": "PASS"
+}

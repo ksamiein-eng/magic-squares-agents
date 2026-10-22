@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-02",
+  "inputs": [
+    {
+      "name": "magic_squares_d1_norm_release.zip",
+      "sha256": "64b476cfdafc464d24bbfecc0c348e7293fa439a29419c908e8cb4013d79fd02",
+      "bytes": 9123843
+    },
+    {
+      "name": "magic_squares_d1_norm_progress.tex",
+      "sha256": "01accbafbfeda3af5a4d20a34c5af1c5d71e734322998e967e3e020a0bb345e4",
+      "bytes": 125588
+    },
+    {
+      "name": "magic_squares_d1_norm_progress.pdf",
+      "sha256": "df992eb1d8eff8049a60b3cfaf608f2d75d10ce1449cf170dfa0c80b6356b612",
+      "bytes": 530404
+    }
+  ],
+  "source_selection": "Latest D1 normalization record, not the earlier superseded 20-page drafts.",
+  "python": "3.13.5",
+  "scope_change": "Editorial selection and complete rewriting; no extension of the certified mathematical range.",
+  "new_source": "Robin Houston, 2016, rational-circle formulation P4 and weakening W1.",
+  "author_information_supplied": false,
+  "public_doi_supplied": false,
+  "independent_human_review_completed": false
+}

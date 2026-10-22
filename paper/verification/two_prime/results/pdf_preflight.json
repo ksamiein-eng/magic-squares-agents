@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pages": 15,
+  "overfull_boxes": false,
+  "unresolved_references": false,
+  "rendered_pages": 15,
+  "render_method": "PDF skill renderer, 130 dpi; contact and proof-page review",
+  "source_sha256": "c6d071bd0c4eb54b096b10bf4428553e917f89755e1c0dfd2d6ee70f85d2fa4f",
+  "pdf_sha256": "b1b96f5e4fc673bb47c1b36947b04a32864e4d5dc6fff72c9d6c50ac272e83c1"
+}

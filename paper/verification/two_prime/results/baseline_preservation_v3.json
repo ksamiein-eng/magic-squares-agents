@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "comparison": "new combined certificate preserves all five old cases and old catalog entries exactly",
+  "unchanged_baseline_cases": 5,
+  "unchanged_baseline_systems": 240,
+  "baseline_catalog_prefix_entries": 133
+}

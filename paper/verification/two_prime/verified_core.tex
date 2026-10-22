@@ -1,0 +1,848 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,longtable,microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{Magic squares of squares: verified elementary core}
+\fancyhead[R]{Working draft v4}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\R}{\mathbb R}
+\newcommand{\Pone}{\mathbf P^1}
+\newcommand{\im}{\operatorname{Im}}\newcommand{\Jac}{\operatorname{Jac}}
+\newcommand{\Res}{\operatorname{Res}}
+\title{Magic squares of squares:\\an elementary core with certified\\two-prime exclusions through exponent sum six}
+\author{}
+\date{1 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give a self-contained integral common-hypotenuse formulation, the correct Gaussian area-angle parametrization, and a valuation argument excluding every prime-power center. A real-angle identity proves the semiprime exclusion and closes the three-prime configuration E1. We certify all two-prime exponent pairs of sum at most six, adding $(5,1)$, $(4,2)$, and $(3,3)$ to the previous cases. Thus a primitive magic square of nine distinct positive integer squares with central root $y=p^kq^l$, for distinct primes, must have $k+l\ge7$. The combined proof data contain 1,200 signed systems and 662 non-linear factors excluded by explicit modular no-root witnesses. Two separate implementations verify the algebra, complete normal-form coverage, finite fibers, and projective boundaries. Circle-power inheritance gives a necessary lower bound of seven for the sum of the reduced deficiency denominators at arbitrary exponents. We retain an explicit complementary-quotient relation for two specified elliptic models. Larger exponent ranges, other three-prime closures, elliptic ranks, saturation, and height bounds remain uncertified here. No first-in-literature claim is made.
+\end{abstract}
+
+\section{Integral squares and common-hypotenuse triangles}\label{sec:dictionary}
+A magic square here means a $3\times3$ array of nine distinct \emph{positive integer squares} whose three rows, three columns, and two long diagonals have a common sum. Write its central entry as $y^2$. The array is \emph{primitive} if the nine positive square roots have greatest common divisor one. Division by the square of that gcd preserves all magic conditions and distinctness.
+
+The common-hypotenuse interpretation is due to Brown \cite{Brown511}; the organization by center prime signature has prior literature, including Weisenberg \cite{Weisenberg}. Our purpose is to state precisely the integral conditions required for the subsequent proofs.
+
+\begin{lemma}[Lucas form]\label{lem:lucas}
+Every rational $3\times3$ magic square is of the form
+\[
+\begin{pmatrix}
+e+a&e-a-b&e+b\\
+e-a+b&e&e+a-b\\
+e-b&e+a+b&e-a
+\end{pmatrix},\qquad \text{magic sum }3e.
+\]
+Its entries are distinct if and only if
+\begin{equation}\label{eq:distinct}
+ab(a^2-b^2)(a^2-4b^2)(4a^2-b^2)\ne0.
+\end{equation}
+The magnitudes of the four offsets along lines through the center can be written as
+\begin{equation}\label{eq:pattern}
+\{a,b,a+b,a-b\},\qquad a>b>0,\quad a\ne2b,
+\end{equation}
+after replacing the two parameters by their ordered absolute values.
+\end{lemma}
+\begin{proof}
+Let $S$ be the magic sum and $e$ the center. Adding the four lines through the center gives the sum of all nine entries plus $3e$, hence $4S=3S+3e$ and $S=3e$. Opposite entries consequently sum to $2e$. Choosing the top left and top right offsets $a,b$, the remaining entries follow from the row and column equations. The nine offsets are $0,\pm a,\pm b,\pm(a+b),\pm(a-b)$. They are distinct precisely when the four nonzero magnitudes are distinct, which gives \eqref{eq:distinct}. Taking absolute values of $a,b$ and ordering them gives \eqref{eq:pattern}.
+\end{proof}
+
+\begin{proposition}[Fixed-center integral dictionary]\label{prop:dictionary}
+For an integer $y>0$, a magic square of nine distinct positive integer squares with center $y^2$ exists if and only if there are four integral right triangles $(p_i,q_i,y)$, with $p_i,q_i>0$, whose offsets
+\[
+\delta_i:=2p_iq_i
+\]
+are the four values in \eqref{eq:pattern}. We call $\delta_i$ the \emph{offset}; it is four times the ordinary triangle area.
+\end{proposition}
+\begin{proof}
+If $r^2,y^2,s^2$ are an increasing arithmetic progression of integer squares, then $r^2+s^2=2y^2$. Thus $r,s$ have the same parity and
+\[
+p=(s+r)/2,\qquad q=(s-r)/2
+\]
+are positive integers with $p^2+q^2=y^2$ and $s^2-y^2=2pq$. Conversely, integral legs $p,q$ give the progression $(p-q)^2,y^2,(p+q)^2$. Nonzero integral equal legs would give $y^2=2p^2$, which is impossible, so the first square is positive. Apply this correspondence to the four center lines and use Lemma~\ref{lem:lucas}. In the reverse construction $a+b<y^2$, since it is an offset of an integral right triangle; therefore every entry is positive.
+\end{proof}
+
+\begin{remark}[What is held fixed]
+There are infinitely many rational right triangles on a fixed rational hypotenuse. Clearing their denominators changes the center and can change its prime signature. The finite counts and prime-adic statements below concern \emph{integral} triangles at the specified integer $y$. A rational existence formulation is equivalent only when the overall scale is allowed to change.
+\end{remark}
+
+\begin{lemma}[Prime support of a primitive center]\label{lem:support}
+In a primitive magic square, $y$ is odd and every prime divisor of $y$ is $1$ modulo $4$.
+\end{lemma}
+\begin{proof}
+If $2\mid y$, each opposite-pair equation $r^2+s^2=2y^2$ reduces to $r^2+s^2=0\pmod4$, forcing both roots even. If an odd prime $\ell\equiv3\pmod4$ divides $y$, the same equation modulo $\ell$ forces both roots divisible by $\ell$, since $-1$ is not a square modulo $\ell$. In either case all nine roots have a common prime factor.
+\end{proof}
+
+\section{Gaussian coordinates and the correct area angle}\label{sec:gaussian}
+Write
+\[
+y=\prod_{j=1}^r\ell_j^{k_j},\qquad \ell_j\equiv1\pmod4,
+\qquad \ell_j=\pi_j\overline{\pi_j}\quad\text{in }\Z[i].
+\]
+Fix one Gaussian prime $\pi_j$ above each $\ell_j$.
+
+\begin{proposition}[Triangle indexing]\label{prop:index}
+Up to interchanging legs, the nondegenerate integral triangles on $y$ are indexed by nonzero vectors
+\[
+m=(m_1,\ldots,m_r),\quad -k_j\le m_j\le k_j,
+\]
+modulo the equivalence $m\sim-m$. A Gaussian representative is
+\begin{equation}\label{eq:z}
+z_m=\prod_j\pi_j^{k_j+m_j}\overline{\pi_j}^{k_j-m_j},
+\qquad z_m\overline{z_m}=y^2.
+\end{equation}
+The legs are the absolute real and imaginary parts, in either order. There are
+\begin{equation}\label{eq:count}
+\frac{\prod_j(2k_j+1)-1}{2}
+\end{equation}
+such triangles. Their primitive hypotenuse and common leg divisor are
+\[
+d_m=\prod_j\ell_j^{|m_j|},\qquad
+ g_m=y/d_m=\prod_j\ell_j^{k_j-|m_j|}.
+\]
+\end{proposition}
+\begin{proof}
+Unique factorization in $\Z[i]$ makes the two exponents above $\ell_j$ add to $2k_j$, giving \eqref{eq:z} up to a unit. Conjugation negates $m$; units and conjugation account exactly for signs and leg interchange. The zero vector gives an axis representation and is excluded. No nonzero vector gives an axis representation or equal legs: the former contradicts unique factorization unless $m=0$, and the latter would give an integer square twice another nonzero integer square. This proves \eqref{eq:count}. Factoring out the common power $\ell_j^{k_j-|m_j|}$ leaves only one of $\pi_j,\bar\pi_j$ in the primitive representative, so there is no further common divisor of the legs.
+\end{proof}
+
+\begin{proposition}[Area angle]\label{prop:angle}
+Define
+\begin{equation}\label{eq:areaangle}
+e^{i\chi_j}=\left(\frac{\pi_j}{\overline{\pi_j}}\right)^2
+=\frac{\pi_j^4}{\ell_j^2}.
+\end{equation}
+Then the offset indexed by $m$ is
+\begin{equation}\label{eq:offsetangle}
+\delta_m=y^2\left|\sin\left(\sum_jm_j\chi_j\right)\right|.
+\end{equation}
+In particular, $\chi_j=4\arg\pi_j$ modulo $2\pi$. The point $\pi_j^2/\ell_j$ represents the leg angle, not the area angle.
+\end{proposition}
+\begin{proof}
+Dividing \eqref{eq:z} by $y$ gives $z_m/y=\prod_j(\pi_j/\bar\pi_j)^{m_j}$. Squaring and taking the absolute imaginary part gives \eqref{eq:offsetangle}, since $|\im(z_m^2)|=2p_mq_m$.
+\end{proof}
+If $\pi_j=A_j+iB_j$, the actual half-area-angle parameter is
+\[
+\tan(\chi_j/2)=\frac{2A_jB_j}{A_j^2-B_j^2}\in\Q.
+\]
+The rational circle point in \eqref{eq:areaangle} has reduced common denominator $\ell_j^2$: $\ell_j$ divides none of $A_j,B_j,A_j^2-B_j^2$, so it does not divide the sine numerator $4A_jB_j(A_j^2-B_j^2)$.
+
+\subsection{The deliberate rational-circle relaxation}
+For a fixed set of frequency vectors, replace the specific points in \eqref{eq:areaangle} by arbitrary rational points of the unit circle. Parametrize each by
+\[
+e^{i\chi}=\frac{(h+it)^2}{h^2+t^2},\qquad [t:h]\in\Pone(\Q).
+\]
+The affine parameter is $t/h$; the value $[1:0]$ must not be omitted. For bounds $k_j$ containing every frequency, a common homogeneous numerator is
+\begin{equation}\label{eq:homogeneous}
+E_m=\im\prod_j
+(h_j+i\,\operatorname{sgn}(m_j)t_j)^{2|m_j|}
+(h_j^2+t_j^2)^{k_j-|m_j|},
+\end{equation}
+where the first factor is $1$ when $m_j=0$. The denominator
+$\prod_j(h_j^2+t_j^2)^{k_j}$ is positive at every real projective parameter. Thus no real denominator-zero branch is introduced by clearing it.
+
+Every actual integral solution maps to this relaxation, but the converse is not asserted. Necessary frequency restrictions established for actual primitive solutions may be imposed before relaxing the angles. Valuation statements for actual primes are not statements about arbitrary rational angles.
+
+\subsection{The double-angle map is a cover, not an equivalence}
+The map $T=2t/(1-t^2)$ has degree two. For finite nonzero $T\in\Q$, rational lifts exist exactly when $1+T^2$ is a rational square, because
+\[
+t=\frac{-1\pm\sqrt{1+T^2}}{T}.
+\]
+The projective fibers above $T=0,\infty$ are respectively $\{0,\infty\}$ and $\{1,-1\}$. Thus $T=1$ has no rational lift, while $T=-4/3$ has lifts $2,-1/2$. A pullback identity under this map does not preserve genus, Jacobians, or completeness of rational-point lists. Nonexistence on a correctly formulated larger base problem does imply nonexistence on a pullback, after its exceptional fibers and admissibility conditions are checked. Brown already distinguishes rational circle coordinates from rational triangle side lengths \cite{Brown511}.
+
+\section{Valuations and the full-depth restriction}\label{sec:valuations}
+\begin{lemma}[Exact local valuations]\label{lem:valuation}
+Write an integral right triangle as $(p,q,y)=g(p',q',d)$, with the latter primitive and $gd=y$. For $\ell^k\Vert y$,
+\[
+v_\ell(2pq)=
+\begin{cases}
+2(k-v_\ell(d)),&\ell\mid d,\\
+\text{at least }2k,&\ell\nmid d.
+\end{cases}
+\]
+\end{lemma}
+\begin{proof}
+A primitive Pythagorean hypotenuse is odd. A prime dividing it and either leg also divides the other leg, so $\gcd(2p'q',d)=1$. Now use $2pq=g^2(2p'q')$ and $gd=y$.
+\end{proof}
+
+\begin{proposition}[Three full-depth lines]\label{prop:depth}
+In a primitive magic square, for every $\ell^k\Vert y$, at least three of the four center-line offsets are $\ell$-adic units. Equivalently, at least three triangle vectors have $|m_\ell|=k$.
+\end{proposition}
+\begin{proof}
+For any odd $\ell$, the minimum valuation among $a,b,a+b,a-b$ is attained at least three times. If $v_\ell(a)\ne v_\ell(b)$, both sums have the smaller valuation. Otherwise both sums have valuation at least $v_\ell(a)$, and they cannot both have larger valuation because their sum is $2a$.
+
+In the primitive integral square, this minimum is zero. Indeed, if every offset were divisible by $\ell$, then $\ell\mid y^2$ would make every square entry divisible by $\ell$, hence every root divisible by $\ell$. That contradicts primitivity. Lemma~\ref{lem:valuation} and Proposition~\ref{prop:index} identify valuation zero with $v_\ell(d)=|m_\ell|=k$.
+\end{proof}
+
+\begin{theorem}[Prime-power-center exclusion; repaired Theorem A]\label{thm:A}
+A primitive magic square of nine distinct positive integer squares cannot have center $y^2$ with $y=\ell^k$.
+\end{theorem}
+\begin{proof}
+There is exactly one projective triangle vector at full depth $k$, namely the pair $\{k,-k\}$. Proposition~\ref{prop:depth} requires at least three distinct full-depth triangles, which is impossible. Equivalently, the $k$ triangle offsets have pairwise distinct valuations $2(k-j)$, $1\le j\le k$, so three distinct ones cannot satisfy an additive relation.
+\end{proof}
+
+\begin{lemma}[Two-prime normal form]\label{lem:two}
+If $y=\ell_1^{k_1}\ell_2^{k_2}$ is the central root of a primitive solution, its four triangle vectors, modulo individual signs, have the form
+\[
+(k_1,k_2),\quad(k_1,-k_2),\quad(m,k_2),\quad(k_1,n),
+\qquad |m|<k_1,\ |n|<k_2.
+\]
+\end{lemma}
+\begin{proof}
+At least three vectors have each coordinate at full depth. Hence at least two have both coordinates full. There are exactly two such projective vectors, $(k_1,\pm k_2)$, and both occur. There cannot be three: they would not be distinct. The two coordinate deficiencies must therefore occur on different remaining vectors. Change each vector's overall sign to make its full coordinate positive, giving the stated form.
+\end{proof}
+This is a necessary condition on actual solutions, not a restriction deduced from the relaxed sine equations alone.
+
+\section{A real-angle obstruction and two immediate closures}\label{sec:real}
+\begin{theorem}[Four sine magnitudes]\label{thm:real}
+For arbitrary real $x,z$, the values
+\[
+X=|\sin x|,\quad Z=|\sin z|,\quad
+P=|\sin(x+z)|,\quad Q=|\sin(x-z)|
+\]
+cannot equal the four distinct positive values in \eqref{eq:pattern}.
+\end{theorem}
+\begin{proof}
+Sine addition and subtraction give
+\begin{align}
+P^2Q^2&=(X^2-Z^2)^2,\label{eq:product}\\
+P^2+Q^2&=2(X^2+Z^2-2X^2Z^2).\label{eq:sum}
+\end{align}
+There are six choices of the unordered pair $\{P,Q\}$. Substituting the other pair as $\{X,Z\}$, the residual of \eqref{eq:product} is:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+$\{P,Q\}$ & $P^2Q^2-(X^2-Z^2)^2$\\
+\midrule
+$\{a,b\}$ & $-15a^2b^2$\\
+$\{a,a+b\}$ & $3a^2b(2a-b)$\\
+$\{a,a-b\}$ & $-3a^2b(2a+b)$\\
+$\{b,a+b\}$ & $-3ab^2(a-2b)$\\
+$\{b,a-b\}$ & $-3ab^2(a+2b)$\\
+$\{a+b,a-b\}$ & $0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first five residuals are nonzero for $a>b>0$, $a\ne2b$. In the last case $\{X,Z\}=\{a,b\}$ and the residual of \eqref{eq:sum} is $4a^2b^2\ne0$.
+\end{proof}
+
+\begin{corollary}[Frequency-parallelogram obstruction]\label{cor:para}
+A frequency configuration of the form $\{v,w,v+w,v-w\}$, up to individual signs, has no nondegenerate real-angle solution.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:real} with $x=v\cdot\chi$ and $z=w\cdot\chi$.
+\end{proof}
+
+\begin{corollary}[Semiprime-center exclusion; strengthened Theorem B]\label{cor:B}
+For distinct primes $p,q$, no primitive magic square has center $(pq)^2$. Its frequency relaxation is impossible even over real angles.
+\end{corollary}
+\begin{proof}
+Lemma~\ref{lem:two} gives the four vectors $(1,1),(1,-1),(0,1),(1,0)$; apply Corollary~\ref{cor:para}. The original semiprime-center exclusion is Brown's \cite{Brown417}.
+\end{proof}
+
+\begin{corollary}[Direct closure of E1]\label{cor:E1}
+The three-prime configuration
+\[
+\{(0,1,0),(1,-1,-1),(1,0,-1),(1,1,-1)\}
+\]
+has no nondegenerate real-angle solution.
+\end{corollary}
+\begin{proof}
+Take $v=(1,0,-1)$ and $w=(0,1,0)$ in Corollary~\ref{cor:para}.
+\end{proof}
+Independent finite enumeration of nonzero vectors of $\{0,\pm1\}^3$ modulo sign gives 13 vectors. Requiring at least three full-depth vectors at each coordinate leaves 177 four-sets. Under coordinate signs and permutations these form 15 orbits. Exactly six sets are frequency parallelograms, constituting the orbit E1. The enumeration verifies this combinatorial classification, not nonexistence on the other 14 orbits. For any two-prime exponents, Corollary~\ref{cor:para} also excludes the normal form with $m=n=0$.
+
+\section{Complete signed equations and the certified (2,1) case}\label{sec:21}
+\begin{lemma}[The 48 signed systems are complete]\label{lem:48}
+Let $s_0,s_1,s_2,s_3$ be real numbers with nonzero, pairwise distinct magnitudes. Their magnitudes have the pattern \eqref{eq:pattern} if and only if at least one system
+\begin{equation}\label{eq:48}
+s_i-\epsilon s_k-\eta s_l=0,\qquad
+s_j-\epsilon s_k+\eta s_l=0
+\end{equation}
+holds, where $i<j$ ranges over the six pairs, $(k,l)$ over both orders of the complementary pair, and $\epsilon,\eta\in\{1,-1\}$. There are $6\cdot2\cdot4=48$ systems.
+\end{lemma}
+\begin{proof}
+In the forward direction choose $\{i,j\}$ for the magnitudes $a+b,a-b$. Whatever the signs and ordering of $s_i,s_j$, the magnitudes of $(s_i+s_j)/2$ and $(s_i-s_j)/2$ are $a,b$ in some order. Choose $(k,l)$ in that order and the signs to obtain \eqref{eq:48}. Conversely, \eqref{eq:48} implies
+\[
+\{|s_i|,|s_j|\}=\{|s_k|+|s_l|,\,||s_k|-|s_l||\}.
+\]
+Set $a=\max(|s_k|,|s_l|)$ and $b=\min(|s_k|,|s_l|)$. The nondegeneracy assumptions give all restrictions in \eqref{eq:pattern}.
+\end{proof}
+As a separate exact guard, the verifier compares the rational row spaces of these 48 systems with all $4!\cdot2^3=192$ fully signed assignments, after normalizing the first equation's overall sign. Both give exactly the same 48 row spaces.
+
+\begin{theorem}[A certified first extension]\label{thm:21}
+For distinct primes $p,q$, a primitive magic square of nine distinct positive integer squares cannot have center $(p^2q)^2$. The corresponding two-prime rational-circle relaxation, with the necessary full-depth configurations imposed, has no nondegenerate solution.
+\end{theorem}
+\begin{proof}
+Lemma~\ref{lem:two} gives $n=0$ and $m\in\{-1,0,1\}$. The case $m=0$ is Corollary~\ref{cor:para}. The cases $m=1,-1$ are equivalent under $x\mapsto-x$, together with permutation and individual negation of frequency vectors. It remains to treat
+\begin{equation}\label{eq:freq21}
+\sin(2x+z),\quad \sin(2x-z),\quad\sin(x+z),\quad\sin2x.
+\end{equation}
+Put $t=\tan(x/2)$ and $u=\tan(z/2)$. In the finite chart, the positive common denominator is
+\[
+L=(1+t^2)^2(1+u^2).
+\]
+The four signed numerators, in order, are
+\begin{align*}
+E_0&=4t(1-t^2)(1-u^2)+2u(1-6t^2+t^4),\\
+E_1&=4t(1-t^2)(1-u^2)-2u(1-6t^2+t^4),\\
+E_2&=2t(1+t^2)(1-u^2)+2u(1-t^4),\\
+E_3&=4t(1-t^2)(1+u^2).
+\end{align*}
+Apply all 48 systems of Lemma~\ref{lem:48} to these numerators. In a system where both equations are divisible by $t$, remove that factor. Its entire branch $t=0$ is degenerate because $E_3=0$. Remove no other variable-dependent common factor.
+
+For each reduced pair $F,G$, compute the Sylvester determinant in $u$. The exact certificate \texttt{results/certificate\_21.json} records each determinant and its factorization. All 48 determinants are nonzero. Across them the only linear factors have roots $0,1,-1$. Every other factor is in the 25-factor catalog in Appendix~\ref{app:factors}. For each catalog polynomial $P(t)$ there is a prime $r\in\{3,5,7\}$ such that its leading coefficient is nonzero modulo $r$ and $P$ has no root in $\mathbb F_r$. Hence it has no rational root: a rational root with denominator divisible by $r$ contradicts the leading coefficient after clearing denominators; one with denominator prime to $r$ reduces to a root in $\mathbb F_r$.
+
+Any finite rational common zero must therefore have $t\in\{0,1,-1\}$, where $E_3=0$. The independent SymPy verifier reconstructs the four numerators using sine addition, builds the Sylvester matrices directly, expands their determinants, checks every factor product, and checks all residues in the finite fields. It uses neither factorization nor a rational-root routine to accept the certificate. A second certificate verifier implements sparse integer polynomials, the determinant, and rational row reduction using only Python's standard library; it also passes all 48 systems.
+
+It remains to treat the projective boundary. At $t=\infty$, $x=\pi$ modulo $2\pi$, so $\sin2x=0$. At $u=\infty$, $z=\pi$ modulo $2\pi$, and the first two values in \eqref{eq:freq21} both equal $-\sin2x$. Their magnitudes coincide. The intersection of the two boundary lines is degenerate as well. Thus no projective rational parameter is omitted.
+\end{proof}
+
+\begin{remark}[Scope of this certificate]
+This is an exact exclusion of every rational parameter in the stated case, not a finite-height search. The main verifier checks 48 systems, 28 distinct factors (three linear and 25 with modular no-root witnesses), and both projective boundary lines. This version-1 certificate certifies only exponent pair $(2,1)$, in addition to the elementary $(1,1)$ case. The new combined certificate in Section~\ref{sec:degree4} extends that range. It does not certify the earlier claim covering every exponent sum through seven.
+\end{remark}
+
+\section{Certified exponent-sum-four exclusions}\label{sec:degree4}
+The next two unordered exponent pairs are $(3,1)$ and $(2,2)$. In this section they are excluded by complete rational-circle calculations. The calculation concerns every rational parameter, not a bounded search for small prime factors or small centers.
+
+\subsection{Reusing an exclusion through a circle power map}
+\begin{lemma}[One-way harmonic inheritance]\label{lem:inherit}
+Let $S\subset\Z^r$ be a four-vector frequency configuration with no nondegenerate rational-circle solution. For positive integers $d_1,\ldots,d_r$, the coordinatewise multiple
+\[
+D S=\{(d_1v_1,\ldots,d_rv_r):v\in S\}
+\]
+also has no such solution. Individual vector signs, coordinate sign changes, and coordinate permutations preserve the conclusion.
+\end{lemma}
+\begin{proof}
+If $e^{i\theta_j}$ is rational on the unit circle, so is $(e^{i\theta_j})^{d_j}=e^{i d_j\theta_j}$. A solution for $DS$ therefore gives one for $S$ at the angles $d_j\theta_j$, with exactly the same four sine magnitudes. The map need not be surjective on rational points and is not asserted to be birational. The stated signs and permutations simply relabel parameters or sine magnitudes.
+\end{proof}
+
+For $(3,1)$, Lemma~\ref{lem:two} gives $n=0$ and $m\in\{-2,-1,0,1,2\}$. The zero choice is a frequency parallelogram. Reflection identifies $m$ with $-m$, leaving $m=1,2$.
+
+For $(2,2)$, $m,n\in\{-1,0,1\}$. Simultaneous sign reversal of $(m,n)$ and interchange of coordinates give four classes, represented by
+\[
+(m,n)=(0,0),\quad(1,0),\quad(1,1),\quad(1,-1).
+\]
+The first is a parallelogram. The second is obtained from the $(2,1)$ representative by multiplying its second frequency coordinate by two:
+\[
+\{(2,2),(2,-2),(1,2),(2,0)\}
+=\operatorname{diag}(1,2)\{(2,1),(2,-1),(1,1),(2,0)\}.
+\]
+It is excluded by Theorem~\ref{thm:21} and Lemma~\ref{lem:inherit}. Thus four new representatives require certificates, not all fourteen raw normal forms separately.
+
+\subsection{Explicit inputs and the algebraic certificate}
+Define real polynomials $C_j(v),S_j(v)$ by
+\[
+C_j(v)+iS_j(v)=(1+iv)^{2j}.
+\]
+For the frequencies used here,
+\begin{align*}
+C_1(v)&=1-v^2,&S_1(v)&=2v,\\
+C_2(v)&=1-6v^2+v^4,&S_2(v)&=4v(1-v^2),\\
+C_3(v)&=1-15v^2+15v^4-v^6,&S_3(v)&=2v(v^2-3)(3v^2-1).
+\end{align*}
+For $(3,1)$ and $m=1,2$, the four sine numerators on denominator $(1+t^2)^3(1+u^2)$ are
+\begin{align*}
+E_0&=S_3(t)(1-u^2)+2uC_3(t),\\
+E_1&=S_3(t)(1-u^2)-2uC_3(t),\\
+E_2&=(1+t^2)^{3-m}\bigl(S_m(t)(1-u^2)+2uC_m(t)\bigr),\\
+E_3&=S_3(t)(1+u^2).
+\end{align*}
+For $(2,2)$ with $(m,n)=(1,\varepsilon)$, $\varepsilon\in\{1,-1\}$, the denominator is $(1+t^2)^2(1+u^2)^2$ and the numerators are
+\begin{align*}
+E_0&=S_2(t)C_2(u)+C_2(t)S_2(u),\\
+E_1&=S_2(t)C_2(u)-C_2(t)S_2(u),\\
+E_2&=(1+t^2)\bigl(S_1(t)C_2(u)+C_1(t)S_2(u)\bigr),\\
+E_3&=(1+u^2)\bigl(S_2(t)C_1(u)+\varepsilon C_2(t)S_1(u)\bigr).
+\end{align*}
+All denominators are positive in the finite real chart. The common homogeneous form is \eqref{eq:homogeneous}.
+
+\begin{lemma}[Checked elimination data]\label{lem:degree4data}
+Apply the 48 complete signed systems of Lemma~\ref{lem:48} to each representative in Table~\ref{tab:degree4}. After division only by common powers of $t$, every Sylvester determinant in $u$ is a nonzero polynomial in $t$. The only possible rational $t$-coordinates of a common zero are the ones in the table.
+\end{lemma}
+\begin{table}[ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{ccrrrrl}
+\toprule
+$(k,l)$ & $(m,n)$ & Systems & $\deg R\le$ & Rootless & Primes & Rational $t$\\
+\midrule
+$(2,1)$ & $(1,0)$  & 48 & 14 & 25 & $3,5,7$ & $0,\pm1$\\
+$(3,1)$ & $(1,0)$  & 48 & 22 & 26 & $3,5,7,11$ & $0,\pm1$\\
+$(3,1)$ & $(2,0)$  & 48 & 22 & 29 & $3,5,11$ & $0,\pm1$\\
+$(2,2)$ & $(1,1)$  & 48 & 30 & 35 & $3,5,7$ & $0$\\
+$(2,2)$ & $(1,-1)$ & 48 & 30 & 25 & $3,5,7$ & $0$\\
+\bottomrule
+\end{tabular}
+\caption{Exact elimination summary. ``Rootless'' counts distinct non-linear factors within that row, not across the whole catalog. The first row is reverified baseline data. The last four rows are the 192 new systems. The degree column is the largest actual resultant degree in a row, not the larger bound used to verify an identity.}\label{tab:degree4}
+\end{table}
+\begin{proof}
+The complete certificate is \path{results/certificate_degree4.json}. For each of the five representatives it records the four numerators, all 48 signed assignments, both original equations, the removed $t$-power, the reduced equations $F,G$, and the exact resultant and its factor product. There are 240 systems in total. A common $t$-factor is removed in six systems in each of the first three rows and in none in the last two. No other variable-dependent common factor is discarded.
+
+The combined factor catalog contains 133 distinct polynomials: the three linear factors with roots $0,1,-1$, and 130 non-linear polynomials. Every non-linear catalog entry has a prime $r\in\{3,5,7,11\}$ for which its leading coefficient is nonzero modulo $r$ and its value is nonzero at every element of $\mathbb F_r$. The denominator argument used in Theorem~\ref{thm:21} proves that it has no rational root. Irreducibility is not required: the proof only needs the factor-product identity and these no-root witnesses. The catalog and every per-system factor reference are supplied as JSON and as readable tables.
+
+There are two independent acceptance implementations. The standard-library verifier reconstructs the numerators by repeated sine addition, not by importing the producer. To verify the resultant, put
+\[
+M=\deg_uF,\quad N=\deg_uG,\quad A=\deg_tF,\quad B=\deg_tG.
+\]
+The Sylvester matrix has $N$ rows of coefficients of $F$ and $M$ rows of coefficients of $G$, so its determinant has degree at most $D=NA+MB$ in $t$. The verifier rejects a recorded polynomial of higher degree, and checks its equality with the integer Sylvester determinant at every $t=0,1,\ldots,D$. Equality at $D+1$ distinct points proves a polynomial identity of degree at most $D$; these are exact integer checks, not a numerical sampling heuristic. Across all systems the verifier computes 6,096 such determinants, using fraction-free integer elimination with checked exact division.
+
+The separate SymPy cross-check reconstructs the numerators using Chebyshev polynomials and computes the symbolic Sylvester determinants directly over $\Z[t]$. It uses neither the producer nor a resultant, factorization, or rational-root routine to accept the certificate. Both implementations pass all 240 systems. A nonzero checked resultant vanishes at every finite common zero, including those where an input leading coefficient specializes to zero. Its verified factors therefore give exactly the necessary rational-coordinate lists in the table. These lists may include points that do not solve the original equations; retaining them cannot invalidate the exclusion.
+\end{proof}
+
+\subsection{Finite fibers and projective boundaries}
+\begin{theorem}[Exponent pair $(3,1)$]\label{thm:31}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^3q)^2$. Every necessary full-depth configuration for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+The normal-form reductions leave the two $(3,1)$ representatives in Table~\ref{tab:degree4}. At $t=0$ their fourth offset vanishes. At $t=\pm1$, $C_3(t)=0$, so $E_0=E_1$ identically in $u$. Thus all finite rational fibers allowed by Lemma~\ref{lem:degree4data} are degenerate. Notice that the argument at $t=\pm1$ is equality of two offsets, not vanishing of the fourth offset.
+
+At $t=\infty$, $x=\pi$ and $\sin3x=0$. At $u=\infty$, $z=\pi$, so $\sin(3x+z)=\sin(3x-z)=-\sin3x$. The intersection is degenerate too. In the homogeneous verification these facts are the identities of the coefficients of $t^6$, $u^2$, and $t^6u^2$ in the numerators. No projective rational point is omitted.
+\end{proof}
+
+\begin{theorem}[Exponent pair $(2,2)$]\label{thm:22}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^2q^2)^2$. Every necessary full-depth configuration for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+The zero-drop and one-zero-drop classes were excluded above. For the remaining $(m,n)=(1,\pm1)$ representatives, Lemma~\ref{lem:degree4data} leaves only $t=0$. There $S_2(t)=0$ and $C_2(t)=1$, so $E_0=-E_1$; their magnitudes coincide. This proves degeneracy for the entire fiber without back-substitution.
+
+At $t=\infty$, $x=\pi$, and the first two sines are $\sin2z$ and $-\sin2z$. At $u=\infty$, $z=\pi$, and they are both $\sin2x$. These equal-magnitude identities also exclude the intersection. The verifier checks them by the top homogeneous coefficients in degrees four in each parameter.
+\end{proof}
+
+\begin{corollary}[Certified bound through exponent sum four]\label{cor:bound4}
+If a primitive magic square has central root $y=p^kq^l$ with exactly two distinct prime factors and $k,l>0$, then
+\[
+\boxed{k+l\ge5.}
+\]
+\end{corollary}
+\begin{proof}
+After interchanging the prime names, the pairs of sum at most four are $(1,1)$, $(2,1)$, $(3,1)$, and $(2,2)$. Apply Corollary~\ref{cor:B} and Theorems~\ref{thm:21}, \ref{thm:31}, and~\ref{thm:22}.
+\end{proof}
+This conclusion is about the exponents in the central \emph{root} $y$, not the exponents in the square entry $y^2$. It does not restore the earlier unverified exponent-sum-seven claim.
+
+\subsection{Uniform pruning consequences for larger exponents}
+\begin{corollary}[Some obstructed deficiency ratios]\label{cor:ratios}
+For the normal form in Lemma~\ref{lem:two}, the rational-circle relaxation has no nondegenerate solution in any of the following families:
+\begin{enumerate}
+\item $n=0$ and $|m|/k_1\in\{0,1/2,1/3,2/3\}$, or the same condition with the coordinates interchanged;
+\item $|m|/k_1=|n|/k_2=1/2$.
+\end{enumerate}
+\end{corollary}
+\begin{proof}
+The ratio zero is the real-angle parallelogram. The other one-zero cases are positive integral coordinatewise multiples of the excluded $(2,1)$ or $(3,1)$ representatives, after sign changes. For example, $k_1=3d$ and $m=2d$ uses multipliers $(d,k_2)$ on the $(3,1;2,0)$ representative. In the second family $k_1,k_2$ are even, and the multipliers $(k_1/2,k_2/2)$ reduce to $(2,2;1,1)$ or $(2,2;1,-1)$. Apply Lemma~\ref{lem:inherit}.
+\end{proof}
+These are infinite families of excluded \emph{configurations}, not exclusions of every central root with large two-prime exponents. They give certified preprocessing rules for subsequent finite computations.
+
+\section{Certified exponent-sum-five exclusions}\label{sec:degree5}
+We now complete the six representatives left open in version 2, treating $(4,1)$ and $(3,2)$. The new release contains 288 new signed systems and rechecks the preceding 240 systems. The new results are exclusions of all rational-circle parameters in these configurations; there is no height cutoff.
+
+\subsection{Complete reduction to six representatives}
+For $(4,1)$ the normal form has $n=0$ and $-3\le m\le3$. The case $m=0$ is a frequency parallelogram. The cases $m=\pm2$ are obtained from the $(2,1)$ exclusion by the coordinate multipliers $(2,1)$. Reflection identifies each remaining $m$ with $-m$, so only $m=1,3$ remain.
+
+For $(3,2)$ one has $-2\le m\le2$ and $-1\le n\le1$. When $n=0$, all choices of $m$ are already excluded: $m=0$ is a parallelogram, and $|m|=1,2$ are coordinatewise multiples of the two $(3,1)$ representatives. When $m=0$ and $|n|=1$, interchange the coordinates and apply the $(2,1)$ exclusion with the appropriate coordinate multiplier. Thus only $|m|\in\{1,2\}$ and $|n|=1$ remain. Simultaneous sign reversal of $(m,n)$ leaves four representatives,
+\[
+(m,n)=(1,1),\ (1,-1),\ (2,1),\ (2,-1).
+\]
+For clarity, both relative signs are retained. These two exponent pairs contain 22 raw normal forms: ten have inherited exclusions and twelve belong to the six new representative orbits.
+
+\subsection{The six polynomial inputs}
+Keep the polynomials $C_j,S_j$ of Section~\ref{sec:degree4}, and add
+\begin{align*}
+C_4(v)&=1-28v^2+70v^4-28v^6+v^8,\\
+S_4(v)&=8v(1-v^2)(1-6v^2+v^4).
+\end{align*}
+For $(4,1)$ and $m=1,3$, the common denominator is $(1+t^2)^4(1+u^2)$ and the four numerators are
+\begin{align*}
+E_0&=S_4(t)(1-u^2)+2uC_4(t),\\
+E_1&=S_4(t)(1-u^2)-2uC_4(t),\\
+E_2&=(1+t^2)^{4-m}\bigl(S_m(t)(1-u^2)+2uC_m(t)\bigr),\\
+E_3&=S_4(t)(1+u^2).
+\end{align*}
+For $(3,2)$ with $m\in\{1,2\}$ and $n=\varepsilon\in\{1,-1\}$, use denominator $(1+t^2)^3(1+u^2)^2$ and
+\begin{align*}
+E_0&=S_3(t)C_2(u)+C_3(t)S_2(u),\\
+E_1&=S_3(t)C_2(u)-C_3(t)S_2(u),\\
+E_2&=(1+t^2)^{3-m}\bigl(S_m(t)C_2(u)+C_m(t)S_2(u)\bigr),\\
+E_3&=(1+u^2)\bigl(S_3(t)C_1(u)+\varepsilon C_3(t)S_1(u)\bigr).
+\end{align*}
+These encode, respectively,
+\[
+\{\sin(4x+z),\sin(4x-z),\sin(mx+z),\sin4x\}
+\]
+and
+\[
+\{\sin(3x+2z),\sin(3x-2z),\sin(mx+2z),\sin(3x+\varepsilon z)\}.
+\]
+The denominator is positive throughout the finite real chart. The homogeneous form \eqref{eq:homogeneous} is used to check the projective boundary.
+
+\begin{lemma}[Exponent-sum-five elimination certificate]\label{lem:degree5data}
+For each of these six inputs, all 48 signed systems of Lemma~\ref{lem:48} have nonzero resultants in $u$ after removing only common powers of $t$. A finite rational common zero can have only
+\[
+t\in\{0,1,-1\}.
+\]
+\end{lemma}
+\begin{proof}
+The proof is the exact algebraic certificate \path{results/certificate_degree5.json}, checked by the two acceptance implementations described below. Its new portion is summarized in Table~\ref{tab:degree5}. As before, the factor $t$ is removed only with a separate proof that the full $t=0$ fiber is degenerate. Six systems in each $(4,1)$ row have such a removed factor; none of the $(3,2)$ systems do. No other variable-dependent common factor is discarded.
+
+\begin{table}[ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{ccrrrrl}
+\toprule
+$(k,l)$ & $(m,n)$ & Systems & $\deg R\le$ & Rootless & Primes & Rational $t$\\
+\midrule
+$(4,1)$ & $(1,0)$  & 48 & 30 & 27 & $3,5,7,11,13$ & $0,\pm1$\\
+$(4,1)$ & $(3,0)$  & 48 & 30 & 27 & $3,5,7,11$ & $0,\pm1$\\
+$(3,2)$ & $(1,1)$  & 48 & 46 & 29 & $3,5,7$ & $0,\pm1$\\
+$(3,2)$ & $(1,-1)$ & 48 & 46 & 32 & $3,5,7,11$ & $0,\pm1$\\
+$(3,2)$ & $(2,1)$  & 48 & 46 & 31 & $3,5,7,11$ & $0,\pm1$\\
+$(3,2)$ & $(2,-1)$ & 48 & 46 & 31 & $3,5,7$ & $0,\pm1$\\
+\bottomrule
+\end{tabular}
+\caption{The 288 newly certified systems. The rootless count is within each row; factors can recur in other rows. The degree is the largest actual resultant degree, not the larger identity-verification bound.}\label{tab:degree5}
+\end{table}
+
+The complete combined catalog has 274 polynomials. Three are linear with roots $0,1,-1$. The other 271 have no rational root, each certified by a prime in $\{3,5,7,11,13\}$ at which its leading coefficient is nonzero and the polynomial has no root. There are 141 new rootless catalog entries beyond version 2. Every factor product, including multiplicities and the nonzero integer constant, is checked against its resultant; irreducibility is not assumed. The rational-denominator argument in Theorem~\ref{thm:21} proves the no-root implication.
+
+The standard-library verifier reconstructs each numerator by repeated sine addition and proves every resultant identity using the independent degree bound $D=N\deg_tF+M\deg_tG$ and $D+1$ exact integer Sylvester determinants. Here the new degree bounds are at most 32 for $(4,1)$ and 48 for $(3,2)$. It checks 12,384 new integer determinants and 18,480 in the combined release. This is an exact polynomial identity proof, not a finite-parameter search.
+
+A separate symbolic implementation reconstructs the numerators through Chebyshev polynomials and computes the determinants directly over $\Z[t]$. It also checks the finite fibers and homogeneous boundaries independently. Both implementations pass all 528 systems. The old five representative records and their factor-catalog prefix agree exactly with the version-2 certificate, so the extended release does not silently replace the baseline data.
+
+Finally, the combined verifier enumerates all 40 raw normal forms for exponent sums at most five, assigning six to the real-angle theorem, 22 to symmetry-equivalent direct certificates, and twelve to explicit integer coordinate-power pullbacks. The symbolic checker verifies coverage independently by dividing each coordinate by its common frequency gcd. This checks coverage as well as the individual polynomial calculations. Nonzero resultants account for all finite common zeros, including specializations at which a leading coefficient vanishes.
+\end{proof}
+
+\subsection{Degeneracy of every remaining fiber}
+\begin{theorem}[Exponent pair $(4,1)$]\label{thm:41}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^4q)^2$. The necessary full-depth normal forms admit no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+The reductions above leave $m=1,3$. By Lemma~\ref{lem:degree5data}, only $t=0,\pm1$ can occur in the finite rational chart. For each of these values $S_4(t)=0$, so the fourth offset vanishes identically in $u$. This also justifies every removed $t$-factor.
+
+At $t=\infty$ one has $x=\pi$ modulo $2\pi$, hence $\sin4x=0$. At $u=\infty$ one has $z=\pi$, and $\sin(4x+z)=\sin(4x-z)=-\sin4x$. Their magnitudes coincide. The intersection of the boundary lines is also degenerate. Thus all rational points of both projective parameter lines have been included.
+\end{proof}
+
+\begin{theorem}[Exponent pair $(3,2)$]\label{thm:32}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^3q^2)^2$. The necessary full-depth normal forms admit no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+It remains to treat $m=1,2$ and $n=\pm1$. At $t=0$, $S_3(t)=0$, so $E_0=-E_1$ identically in $u$. At $t=\pm1$, $C_3(t)=0$, so $E_0=E_1$. Each finite rational fiber allowed by Lemma~\ref{lem:degree5data} therefore has repeated offset magnitudes. Unlike the $(4,1)$ proof, this uses equality of offsets, not a zero fourth offset.
+
+At $t=\infty$, the first two sines are $-\sin2z$ and $\sin2z$. At $u=\infty$, they are both $\sin3x$. Equal magnitudes exclude each boundary and their intersection. These identities are also checked from the homogeneous numerator coefficients of degrees six in $t$ and four in $u$.
+\end{proof}
+
+\begin{corollary}[Certified bound through exponent sum five]\label{cor:bound5}
+If a primitive magic square has central root $y=p^kq^l$ with two distinct prime factors and $k,l>0$, then
+\[
+\boxed{k+l\ge6.}
+\]
+\end{corollary}
+\begin{proof}
+Up to interchanging the prime names, every positive exponent pair of sum at most five is one of
+\[
+(1,1),\ (2,1),\ (3,1),\ (2,2),\ (4,1),\ (3,2).
+\]
+Apply the semiprime theorem and the certified exclusions above. This is a statement about the exponents in $y$, not the doubled exponents in the central square entry $y^2$.
+\end{proof}
+
+\subsection{A compact pruning rule for arbitrary exponents}
+The new certificates combine with harmonic inheritance to give an infinite-family consequence without any further elimination.
+\begin{corollary}[Reduced-frequency denominator obstruction]\label{cor:reduced5}
+For a nondegenerate rational-circle solution of the two-prime normal form $(k,l;m,n)$, it is necessary that
+\begin{equation}\label{eq:gcdcriterion5}
+\boxed{\frac{k}{\gcd(k,|m|)}+\frac{l}{\gcd(l,|n|)}\ge6.}
+\end{equation}
+Here $\gcd(k,0)=k$. Equivalently, the denominators of $m/k$ and $n/l$, in lowest terms and with denominator one for zero, must have sum at least six.
+\end{corollary}
+\begin{proof}
+Put $d=\gcd(k,|m|)$ and $e=\gcd(l,|n|)$. The four frequencies are the coordinatewise multiple by $(d,e)$ of
+\[
+(K,L),\ (K,-L),\ (M,L),\ (K,N),\qquad
+(K,L,M,N)=(k/d,l/e,m/d,n/e).
+\]
+If $K+L\le5$, this reduced normal form is excluded by the rational-circle versions of the theorems just proved. Lemma~\ref{lem:inherit} transfers the exclusion to its coordinatewise multiple. The four sine magnitudes are preserved under the forward power map, so a nondegenerate original solution could not become degenerate there.
+\end{proof}
+For example, the family $n=0$, $|m|/k\in\{0,1/2,1/3,2/3,1/4,3/4\}$ is excluded. So are all families with reduced deficiency denominators $(2,2)$, $(3,2)$, or $(2,3)$, with either relative sign. The criterion need not exclude a configuration when its left side is six or larger. It is not a theorem excluding every two-prime center and makes no assertion about rational-point surjectivity of a circle power map.
+
+\section{Certified exponent-sum-six exclusions}\label{sec:degree6}
+This section completes the fourteen representative classes proposed in version 3. The new signatures are $(5,1)$, $(4,2)$, and $(3,3)$; their 672 new signed systems are added to the previously verified 528. All conclusions concern the full rational-circle parameter space, with no height bound.
+
+\subsection{Coverage before elimination}
+The full-depth normal form and Corollary~\ref{cor:reduced5} reduce the 55 raw normal forms at this exponent sum as follows:
+\begin{center}
+\begin{tabular}{crrrr}
+\toprule
+Signature & Raw forms & Inherited & Remaining forms & Representatives\\
+\midrule
+$(5,1)$ & 9 & 1 & 8 & 4\\
+$(4,2)$ & 21 & 13 & 8 & 4\\
+$(3,3)$ & 25 & 9 & 16 & 6\\
+\bottomrule
+\end{tabular}
+\end{center}
+For $(5,1)$, only $m=n=0$ is inherited; the new representatives have $n=0$ and $m=1,2,3,4$. For $(4,2)$, every choice with a zero deficient coordinate is inherited, as is every choice with $|m|=2$. The representatives are $(m,n)=(1,\pm1),(3,\pm1)$. For $(3,3)$, every zero-coordinate choice is inherited. Simultaneous sign reversal and coordinate interchange leave
+\[
+(m,n)=(1,1),(1,-1),(1,2),(1,-2),(2,2),(2,-2).
+\]
+The complete checker enumerates all raw forms, rather than assuming these totals. An inherited route identifies a previously certified representative and its positive integer coordinate multipliers. A separate checker obtains the same coverage by dividing out the coordinate gcds. Up to exponent sum six, all 95 raw forms are covered: nine by the real-angle theorem, 54 by direct certificate symmetries, and 32 by circle-power inheritance.
+
+\subsection{Uniform polynomial inputs}
+Define $C_j(v)+iS_j(v)=(1+iv)^{2j}$ for $j\ge0$, with $C_{-j}=C_j$ and $S_{-j}=-S_j$. The new frequency five requires
+\begin{align*}
+C_5(v)&=1-45v^2+210v^4-210v^6+45v^8-v^{10},\\
+S_5(v)&=10v-120v^3+252v^5-120v^7+10v^9.
+\end{align*}
+For every representative $(k,l;m,n)$, use the positive common denominator
+\[
+L=(1+t^2)^k(1+u^2)^l
+\]
+and the four signed numerators
+\begin{align*}
+E_0&=S_k(t)C_l(u)+C_k(t)S_l(u),\\
+E_1&=S_k(t)C_l(u)-C_k(t)S_l(u),\\
+E_2&=(1+t^2)^{k-|m|}\bigl(S_m(t)C_l(u)+C_m(t)S_l(u)\bigr),\\
+E_3&=(1+u^2)^{l-|n|}\bigl(S_k(t)C_n(u)+C_k(t)S_n(u)\bigr).
+\end{align*}
+Thus $E_j/L$ are respectively $\sin(kx+lz)$, $\sin(kx-lz)$, $\sin(mx+lz)$, and $\sin(kx+nz)$. The homogeneous form \eqref{eq:homogeneous} supplies the boundary values. No real denominator vanishes.
+
+\begin{lemma}[Exponent-sum-six elimination data]\label{lem:degree6data}
+For each of the fourteen representatives in Table~\ref{tab:degree6}, all 48 signed systems have a nonzero resultant in $u$ after removal only of common powers of $t$. Every finite rational common zero has the $t$-coordinate listed in that table.
+\end{lemma}
+\begin{proof}
+The exact data are in \path{results/certificate_degree6.json}. Each input equation, removed factor, reduced equation, determinant, and factor product is recorded explicitly. A common $t$ is removed in six systems for each $(5,1)$ representative and in none of the other new systems. The entire fiber $t=0$ is checked separately below. No other variable-dependent factor is discarded.
+
+The combined catalog contains 665 distinct polynomials: three linear factors with roots $0,1,-1$, and 662 polynomials with no rational root. Of the latter, 391 are new beyond version 3. Each has nonzero leading coefficient and no root modulo a specified prime in $\{3,5,7,11,13,17,19\}$. Checking every residue and the factor-product identity proves the claim without assuming irreducibility. The no-rational-root argument is the denominator argument of Theorem~\ref{thm:21}.
+
+The standard-library checker reconstructs the inputs by repeated sine addition. It verifies each resultant by the degree-bound argument of Section~\ref{sec:degree4}; the new identity-degree bounds are at most 40, 64, and 72 for the three signatures. The new systems require 40,992 exact integer determinants, and the combined release checks 59,472. These evaluations prove polynomial identities, not merely agreement at a sample of candidate solutions.
+
+The second checker independently reconstructs the inputs by Chebyshev polynomials and computes symbolic Sylvester determinants directly over $\Z[t]$. Both checkers verify every factor product, modular witness, finite fiber, and projective boundary. They pass all 1,200 systems. The preceding eleven representative records and the first 274 catalog entries are unchanged from the reverified version-3 baseline. Nonzero resultants account for every finite common zero, including specializations where leading coefficients vanish.
+\end{proof}
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{ccrrrrl}
+\toprule
+$(k,l)$ & $(m,n)$ & Systems & $\deg R\le$ & Rootless & Primes & Rational $t$\\
+\midrule
+$(5,1)$ & $(1,0)$ & 48 & 38 & 27 & $3,5,7$ & $0,\pm1$\\
+$(5,1)$ & $(2,0)$ & 48 & 38 & 31 & $3,5$ & $0,\pm1$\\
+$(5,1)$ & $(3,0)$ & 48 & 38 & 29 & $3,5,7$ & $0,\pm1$\\
+$(5,1)$ & $(4,0)$ & 48 & 38 & 31 & $3,5$ & $0,\pm1$\\
+$(4,2)$ & $(1,1)$ & 48 & 62 & 27 & $3,5,7,11$ & $0$\\
+$(4,2)$ & $(1,-1)$ & 48 & 62 & 27 & $3,5,7$ & $0$\\
+$(4,2)$ & $(3,1)$ & 48 & 62 & 27 & $3,5,7,13,17$ & $0$\\
+$(4,2)$ & $(3,-1)$ & 48 & 62 & 31 & $3,5,7,11,13$ & $0$\\
+$(3,3)$ & $(1,1)$ & 48 & 70 & 60 & $3,5,7$ & $0,\pm1$\\
+$(3,3)$ & $(1,-1)$ & 48 & 70 & 53 & $3,5,7$ & $0,\pm1$\\
+$(3,3)$ & $(1,2)$ & 48 & 70 & 25 & $3,5,19$ & $0,\pm1$\\
+$(3,3)$ & $(1,-2)$ & 48 & 70 & 28 & $3,5,7$ & $0,\pm1$\\
+$(3,3)$ & $(2,2)$ & 48 & 70 & 37 & $3,5,7,11$ & $0,\pm1$\\
+$(3,3)$ & $(2,-2)$ & 48 & 70 & 27 & $3,5,7,11,13$ & $0,\pm1$\\
+\bottomrule
+\end{tabular}
+\caption{The 672 newly certified systems. Rootless factors are counted within each row; the combined catalog removes repetitions. The degree shown is the largest actual resultant degree, not the larger bound used to certify its identity.}\label{tab:degree6}
+\end{table}
+
+\subsection{Closing all finite and projective fibers}
+\begin{theorem}[Exponent pair $(5,1)$]\label{thm:51}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^5q)^2$. Every necessary full-depth normal form for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+It remains to treat $n=0$, $m=1,2,3,4$. Lemma~\ref{lem:degree6data} leaves $t=0,\pm1$. At $t=0$, the fourth sine $\sin5x$ is zero. At $t=\pm1$, $x=\pm\pi/2$ and $\cos5x=0$, so
+\[
+\sin(5x+z)=\sin(5x-z).
+\]
+In particular, the latter fibers are excluded by equal magnitudes, not by vanishing of the fourth sine. At $t=\infty$, $x=\pi$ and $\sin5x=0$. At $u=\infty$, $z=\pi$ and the first two sines both equal $-\sin5x$. The boundary intersection is degenerate too.
+\end{proof}
+
+\begin{theorem}[Exponent pair $(4,2)$]\label{thm:42}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^4q^2)^2$. Every necessary full-depth normal form for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+For $m=1,3$ and $n=\pm1$, Lemma~\ref{lem:degree6data} permits only $t=0$, where the first two sines are $\sin2z$ and $-\sin2z$. At $t=\infty$ they are again $\sin2z$ and $-\sin2z$. At $u=\infty$ they both equal $\sin4x$. Repeated magnitudes exclude all these fibers and their intersection. The remaining normal forms were excluded by inheritance.
+\end{proof}
+
+\begin{theorem}[Exponent pair $(3,3)$]\label{thm:33}
+For distinct primes $p,q$, no primitive magic square of nine distinct positive integer squares has center $(p^3q^3)^2$. Every necessary full-depth normal form for this signature has no nondegenerate rational-circle solution.
+\end{theorem}
+\begin{proof}
+For all six representatives, only $t=0,\pm1$ remain. At $t=0$, the first two sines are $\sin3z$ and $-\sin3z$. At $t=\pm1$, $\cos3x=0$, so $\sin(3x+3z)=\sin(3x-3z)$. At $t=\infty$ the first two are $-\sin3z$ and $\sin3z$; at $u=\infty$ they both equal $-\sin3x$. Thus every remaining finite or projective fiber has repeated offset magnitudes. This covers all representatives and their symmetries.
+\end{proof}
+
+\begin{corollary}[Current certified two-prime lower bound]\label{cor:bound}
+If a primitive magic square has central root $y=p^kq^l$ with exactly two distinct prime factors and $k,l>0$, then
+\[
+\boxed{k+l\ge7.}
+\]
+\end{corollary}
+\begin{proof}
+The previous exclusions cover all exponent sums at most five. The positive unordered pairs of sum six are $(5,1),(4,2),(3,3)$, now excluded. The center entry is $y^2$; the bound concerns the exponents in its positive square root.
+\end{proof}
+This does not reinstate the original manuscript's claim excluding all exponent sums through seven. The cases of sum seven remain unverified here.
+
+\subsection{Stronger pruning for arbitrary exponents}
+\begin{corollary}[Reduced-frequency denominator obstruction, updated]\label{cor:reduced}
+A nondegenerate rational-circle solution of the two-prime normal form must satisfy
+\begin{equation}\label{eq:gcdcriterion}
+\boxed{\frac{k}{\gcd(k,|m|)}+\frac{l}{\gcd(l,|n|)}\ge7.}
+\end{equation}
+Here $\gcd(k,0)=k$. Thus the denominators of $m/k$ and $n/l$ in lowest terms must sum to at least seven.
+\end{corollary}
+\begin{proof}
+Divide the frequency coordinates by $d=\gcd(k,|m|)$ and $e=\gcd(l,|n|)$. If the reduced exponent sum were at most six, the resulting normal form would be excluded by the rational-circle theorems above. A solution for the original normal form maps to one for the reduced form under $(e^{ix},e^{iz})\mapsto(e^{idx},e^{iez})$, preserving all four magnitudes. No inverse or surjectivity on rational points is used.
+\end{proof}
+For example, $(k,l;m,n)=(12,10;3,5)$ reduces to $(4,2;1,1)$, so this particular configuration is excluded. The statement does not exclude every configuration at central-root signature $(12,10)$. New excluded reduced-denominator types are $(5,1)$, $(4,2)$, and $(3,3)$, together with coordinate interchanges. In the one-zero-coordinate case, every nonzero deficiency of reduced denominator at most five is now excluded.
+
+\section{Two elliptic models with one common genus-two cover}\label{sec:curves}
+Define the explicit models from the supplied draft by
+\[
+f_B(s)=s^3+11s^2-5s+1,\qquad f_C(s)=s^3-5s^2+11s+1,
+\]
+\[
+E_B:v^2=f_B(s),\qquad E_C:v^2=f_C(s).
+\]
+This section proves relations between these \emph{specified equations}; it does not assert that all unresolved magic-square components map to them.
+
+\begin{proposition}[Reciprocal covers and complementary quotients]\label{prop:BC}
+The curves
+\[
+C_B:Y^2=f_B(w^2),\qquad C_C:Y^2=f_C(w^2)
+\]
+have isomorphic smooth projective genus-two models, via
+\[
+(w,Y)\longmapsto(1/w,Y/w^3).
+\]
+Moreover, $C_B$ has degree-two maps
+\[
+\phi_B(w,Y)=(w^2,Y),\qquad
+\phi_C(w,Y)=(w^{-2},Yw^{-3})
+\]
+to $E_B,E_C$, respectively, and
+\[
+\Jac(C_B)\sim_\Q E_B\times E_C.
+\]
+\end{proposition}
+\begin{proof}
+The identity $f_C(s)=s^3f_B(1/s)$ verifies the reciprocal isomorphism and both quotient equations. The sextic $w^6+11w^4-5w^2+1$ has discriminant $-507510784\ne0$, so its smooth projective double cover has genus two. The reciprocal rational map is its own inverse and extends between the smooth projective curves; points at zero and infinity are exchanged.
+
+The quotient involutions are $(w,Y)\mapsto(-w,Y)$ and $(w,Y)\mapsto(-w,-Y)$. The differentials $ds/(2v)$ pull back respectively to $w\,dw/Y$ and $-dw/Y$, a basis of the two-dimensional space of regular differentials. The induced homomorphism from the Jacobian to $E_B\times E_C$ therefore has full-rank differential and is an isogeny. This is the standard bielliptic construction; see \cite[Section 2]{BP}.
+\end{proof}
+
+The two elliptic curves are not themselves $\Q$-isogenous: their point counts at the common good prime 3 are 5 and 3. Their $j$-invariants are $-2515456/11$ and $512/11$, so they are not quadratic twists of one another either. The useful relation is that they are complementary quotients of the same genus-two curve.
+
+A complete rational-point calculation on $C_B$ would also settle $C_C$. In particular, the conjecture
+\[
+C_B(\Q)=\{(0,1),(0,-1),\infty_+,\infty_-\}
+\]
+remains a focused target, \emph{not a theorem in this document}. The previous bounded search does not establish completeness. No rank, saturation, or Chabauty computation is claimed here. The available bielliptic quadratic-Chabauty methods have hypotheses and precision requirements that must be verified before applying them \cite{BP}.
+
+\subsection{An elementary coefficient criterion}
+For completeness, the proposed uniform cubic shape has an exact interpretation independent of ranks. If
+$f(s)=As^3+Bs^2+Cs+D$, $D\ne0$, and
+\[
+g(c)=(1+c)^3f\left(\frac{1-c}{1+c}\right),
+\]
+then
+\[
+g(c)=8D\bigl(1+c(1-c)\ell(c)\bigr),\qquad \deg\ell\le1,
+\]
+holds if and only if $f(1)=8f(0)$, or $A+B+C=7D$. Necessity follows at $c=0$; $g(1)=8D$ holds automatically. Under the stated condition the cubic $g(c)-8D$ vanishes at 0 and 1, so division by $8Dc(1-c)$ is linear. This explains an observed coefficient pattern; it does not classify all possible orbit-to-curve reductions.
+
+\section{Verification record and remaining priorities}\label{sec:status}
+The producer and foundation checks were run with Python and SymPy 1.14.0. The degree-six standard-library verifier passed all 1,200 systems, as did the separate Chebyshev/direct-symbolic-determinant cross-check. Both verify finite fibers and projective boundaries. Normal-form coverage is checked by explicit power-map routes and independently by coordinate gcd reduction. The complete version-3 certificate was reverified before extension, and its eleven representative records and catalog prefix are preserved exactly. None of these computations requires PARI, Sage, Magma, a network connection, or a hidden temporary file.
+
+\paragraph{Proved in this core.}
+The fixed-center integral dictionary, Gaussian parametrization and count, local valuation and full-depth statements, all prime-power exclusions, the real-angle parallelogram obstruction, semiprime exclusion, and E1 closure have written proofs. All two-prime exponent pairs of sum at most six have complete normal-form coverage and either an elementary proof or exact algebraic certificates checked by two implementations. Harmonic inheritance gives the updated reduced-denominator obstruction of Corollary~\ref{cor:reduced}. The specified $E_B/E_C$ cover relation has an explicit proof.
+
+\paragraph{Finite regressions, separately identified.}
+The foundation program again passed all 16 check groups. It checks all 3,000 integral nondegenerate triangles for 1,074 admissible $y\le10000$, including $y=1$ with no triangle. Euclidean and Gaussian generation agree, and all offset and valuation identities pass. This is a regression test, not a search bound for magic squares. The three-prime combinatorial counts $13/177/15$ are reproduced. Counts for the remaining three-prime orbits do not constitute their rational-point classifications.
+
+\paragraph{Next exact computation.}
+Exponent sum seven consists of $(6,1)$, $(5,2)$, and $(4,3)$. The updated reduced-denominator obstruction excludes 37 of the 73 raw normal forms. The remaining 36 form eighteen representative classes, requiring 864 proposed signed systems: two for $(6,1)$, eight for $(5,2)$, and eight for $(4,3)$. The coverage plan \path{results/next_sum7_plan.json} verifies this reduction, but these systems have \emph{not} been eliminated here. A future exclusion certificate must include every removed component, finite rational fiber, and projective boundary. Failure to classify a factor or shared component must remain unresolved. Completing that stage would independently recover the original manuscript's numerical exponent-sum-seven range; it would not certify its other claims.
+
+\paragraph{After that.}
+For each surviving three-prime component, supply its defining equations, rational maps to any quotient, inverse-lift conditions, and a rigorous smooth-model genus calculation. Only then do elliptic ranks, globally justified saturation, and a corrected Mordell--Weil height argument have the needed input. Quadratic Chabauty addresses particular validated curves; it does not replace these upstream obligations. No other three-prime closure or large canonical-height bound is retained here.
+
+\paragraph{Literature and attribution.}
+The common-hypotenuse dictionary and original semiprime exclusion are credited to Brown; prime-signature organization is not claimed as new. The bielliptic construction is standard. This repair provides precise proofs, explicit maps, and reproducible proof objects for the stated range. No first-in-literature claim is made for the valuation lemma, the real-angle formulation, or the exclusions through exponent sum six. A theorem-by-theorem priority comparison remains separate from correctness verification.
+
+\appendix
+\section{Modular no-root catalog for the (2,1) certificate}\label{app:factors}
+All 25 non-linear catalog factors are even polynomials $P(t)=Q(t^2)$. Each tuple below lists the coefficients of $Q$ from highest degree to constant. The last column is a prime $r$ for which $P$ has nonzero leading coefficient and no root modulo $r$. The test is $P(t)$ on all $t\in\mathbb F_r$, not $Q$ on unrestricted arguments. Factor labels match the JSON certificate. The three remaining factors have roots $0,1,-1$.
+
+\begin{center}
+\small\setlength{\tabcolsep}{7pt}\renewcommand{\arraystretch}{1.14}
+\begin{longtable}{lll}
+\toprule
+Factor & Coefficients of $Q$ in $P(t)=Q(t^2)$ & $r$\\
+\midrule
+\endfirsthead
+\toprule Factor & Coefficients of $Q$ & $r$\\\midrule
+\endhead
+F01 & $(3,26,-251,716,-803,250,-5)$ & 7 \\
+F02 & $(5,-250,803,-716,251,-26,-3)$ & 7 \\
+F05 & $(1,1)$ & 3 \\
+F06 & $(3,-43,97,-49)$ & 5 \\
+F07 & $(5,-70,23,460,-493,154,-15)$ & 7 \\
+F08 & $(49,-97,43,-3)$ & 5 \\
+F09 & $(15,-154,493,-460,-23,70,-5)$ & 7 \\
+F10 & $(5,-34,827,-2780,3179,-1250,117)$ & 7 \\
+F11 & $(117,-1250,3179,-2780,827,-34,5)$ & 7 \\
+F12 & $(3,-113,878,-1522,511,-45)$ & 7 \\
+F13 & $(45,-511,1522,-878,113,-3)$ & 7 \\
+F14 & $(1,-3)$ & 5 \\
+F15 & $(25,-22,1)$ & 3 \\
+F16 & $(7,-5,118,-106,19,-1)$ & 3 \\
+F17 & $(3,-1)$ & 5 \\
+F18 & $(1,-22,25)$ & 3 \\
+F19 & $(1,-19,106,-118,5,-7)$ & 3 \\
+F20 & $(77,-427,818,-614,113,1)$ & 3 \\
+F21 & $(1,113,-614,818,-427,77)$ & 3 \\
+F22 & $(27,-200,422,-112,7)$ & 5 \\
+F23 & $(7,-112,422,-200,27)$ & 5 \\
+F24 & $(2,-37,119,-125,35,-2)$ & 3 \\
+F25 & $(1,-25,139,-27)$ & 5 \\
+F26 & $(27,-139,25,-1)$ & 5 \\
+F27 & $(2,-35,125,-119,37,-2)$ & 3 \\
+\bottomrule
+\end{longtable}
+\end{center}
+For example, $P(t)=t^4-22t^2+25$ reduces to $t^4+2t^2+1$ modulo 3 and takes residues $1,1,1$. Since its leading coefficient is 1 modulo 3, it has no rational root. Every catalog entry is checked in exactly this way. The full 48-system factor assignment is supplied in \texttt{results/systems\_21.csv}; exact constants, input polynomials, and determinant coefficients are in the JSON.
+
+\section{Reproduction and proof boundary}
+Run from the bundle root:
+\begin{verbatim}
+# Standard-library certificate verification:
+python verify_degree6_stdlib.py
+# Independent symbolic check (requires SymPy 1.14.0):
+python crosscheck_degree6_sympy.py
+python test_degree6_verifier.py
+python check_foundation.py
+\end{verbatim}
+Optional regeneration uses \path{build_degree6_certificate.py}; rerun both checkers afterward. The README gives the manuscript build commands. The file \path{plan_sum7.py} checks next-stage coverage only, not a new exclusion.
+
+The combined verifier checks 95 raw normal forms through exponent sum six. Every rational finite fiber permitted by the verified factors, every removed $t=0$ branch, and both projective boundary lines are checked from the reconstructed numerators. The symbolic cross-check verifies those identities separately and checks normal forms after dividing out coordinate gcds.
+
+The negative tests reject thirteen damaged certificates and one unsupported finite-fiber claim, including corruptions of newly added representatives. A forged higher-degree polynomial vanishing at the entire determinant evaluation grid is rejected by the independent degree bound. Fraction-free integer determinants agree with a separate Leibniz implementation on 180 small matrices. These tests are safeguards, not substitutes for the written mathematical arguments.
+
+\path{results/certificate_degree6.json} contains all 1,200 systems, 665 catalog polynomials, and modular witnesses. Readable coefficient and assignment records appear in \path{results/degree6_factor_catalog.md} and \path{results/degree6_systems.csv}. Earlier certificates and their checkers are retained; their historical plan files are not current status reports. The producer uses SymPy's documented polynomial operations \cite{SymPy} for discovery. Acceptance checks integer identities and finite-field values without assuming irreducibility or using a rational-root solver.
+
+Python and the checker implementations remain in the software trust boundary. This is not a formal proof-assistant development. The written arguments explain why the checked calculations imply the arithmetic exclusions. Input and release hashes, environment versions, and a clean-extraction verification record accompany the package. The original attachments remain unchanged. The broader three-prime and height claims are not reinstated.
+
+\begin{thebibliography}{9}
+\bibitem{Brown511} K. Brown, \emph{Discordance Impedes Square Magic}, MathPages, undated. \url{https://www.mathpages.com/home/kmath511/kmath511.htm}. Accessed 1 October 2026.
+\bibitem{Brown417} K. Brown, \emph{Magic Square of Squares}, MathPages, Proposition 1, undated. \url{https://www.mathpages.com/home/kmath417/kmath417.htm}. Accessed 1 October 2026.
+\bibitem{Weisenberg} D. Weisenberg, \emph{Some Thoughts on The $3\times3$ Magic Square of Squares Problem}, Rose-Hulman Undergraduate Mathematics Journal \textbf{24} (2023), no.~1, Article 7. \url{https://scholar.rose-hulman.edu/rhumj/vol24/iss1/7/}.
+\bibitem{BP} F. Bianchi and O. Padurariu, \emph{Rational points on rank 2 genus 2 bielliptic curves in the LMFDB}, Contemporary Mathematics \textbf{796} (2024), DOI: \href{https://doi.org/10.1090/conm/796/16003}{10.1090/conm/796/16003}; preprint \href{https://arxiv.org/abs/2212.11635}{arXiv:2212.11635}.
+\bibitem{SymPy} SymPy development team, \emph{Polynomials Manipulation Module Reference}, SymPy 1.14.0 documentation. \url{https://docs.sympy.org/latest/modules/polys/reference.html}. Accessed 1 October 2026.
+\end{thebibliography}
+\end{document}

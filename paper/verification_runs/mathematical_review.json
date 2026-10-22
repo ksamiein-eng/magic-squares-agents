@@ -1,0 +1,4025 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "foundation_polynomial_identities",
+      "status": "PASS",
+      "magic_lines": 8,
+      "distinct_degeneracy_lines": 8,
+      "scope": "Symbolic identities; integrality and valuation implications are proved in the text."
+    },
+    {
+      "name": "independent_coordinate_gcd_coverage",
+      "status": "PASS",
+      "raw_forms": 168,
+      "direct_representatives": 43,
+      "signed_systems": 2064
+    },
+    {
+      "name": "worked_resultant_certificate",
+      "status": "PASS",
+      "case": "21_m1_n0",
+      "system": 0,
+      "determinant_degree": 14,
+      "independent_degree_bound": 14,
+      "prime": 7,
+      "residues": [
+        2,
+        6,
+        3,
+        5,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "name": "orbit_stabilizer_convention",
+      "status": "PASS",
+      "full_group_order": 48,
+      "kernel_order": 2,
+      "effective_group_order": 24,
+      "orbits": {
+        "A": [
+          1,
+          48
+        ],
+        "B1": [
+          12,
+          4
+        ],
+        "B2": [
+          12,
+          4
+        ],
+        "C": [
+          12,
+          4
+        ],
+        "D1": [
+          24,
+          2
+        ],
+        "D2": [
+          12,
+          4
+        ],
+        "D3": [
+          12,
+          4
+        ],
+        "D4": [
+          24,
+          2
+        ],
+        "E1": [
+          6,
+          8
+        ],
+        "E2": [
+          6,
+          8
+        ],
+        "E3": [
+          24,
+          2
+        ],
+        "F-1": [
+          12,
+          4
+        ],
+        "F-2": [
+          4,
+          12
+        ],
+        "F+1": [
+          4,
+          12
+        ],
+        "F+2": [
+          12,
+          4
+        ]
+      }
+    },
+    {
+      "name": "D1_catalog_indices_and_worked_kernel",
+      "status": "PASS",
+      "groups": {
+        "(1,)": [
+          0,
+          1,
+          2,
+          3,
+          18,
+          19,
+          21,
+          23,
+          34,
+          35,
+          37,
+          39,
+          40,
+          43,
+          44,
+          47
+        ],
+        "(1, 0, 6, 0, 1)": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "(9, 0, 1)": [
+          8,
+          9,
+          24,
+          25
+        ],
+        "(4, 0, -3, 0, 1)": [
+          10,
+          11,
+          26,
+          27
+        ],
+        "(1, 0, 9)": [
+          12,
+          14,
+          28,
+          30
+        ],
+        "(1, 0, -3, 0, 4)": [
+          13,
+          15,
+          29,
+          31
+        ],
+        "(1, 0, 18, 0, 1)": [
+          16,
+          17,
+          20,
+          22,
+          32,
+          33,
+          36,
+          38,
+          41,
+          42,
+          45,
+          46
+        ]
+      },
+      "residual_indices": [
+        8,
+        9,
+        12,
+        14,
+        24,
+        25,
+        28,
+        30
+      ]
+    },
+    {
+      "name": "elliptic_primary_torsion_and_local_charts",
+      "status": "PASS",
+      "torsion": [
+        {
+          "model": [
+            0,
+            6,
+            0,
+            1,
+            0
+          ],
+          "prime_counts": [
+            [
+              3,
+              4
+            ],
+            [
+              5,
+              8
+            ]
+          ],
+          "torsion_upper_bound": 4
+        },
+        {
+          "model": [
+            0,
+            -3,
+            0,
+            4,
+            0
+          ],
+          "prime_counts": [
+            [
+              3,
+              4
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          "torsion_upper_bound": 4
+        },
+        {
+          "model": [
+            0,
+            18,
+            0,
+            1,
+            0
+          ],
+          "prime_counts": [
+            [
+              3,
+              4
+            ],
+            [
+              7,
+              4
+            ]
+          ],
+          "torsion_upper_bound": 4
+        }
+      ],
+      "residues": [
+        {
+          "A": 6,
+          "B": -7,
+          "d": -1,
+          "modulus": 16,
+          "V_unit": [
+            7,
+            12,
+            15
+          ],
+          "U_unit_V_even": [
+            7,
+            15
+          ],
+          "squares": [
+            0,
+            1,
+            4,
+            9
+          ]
+        },
+        {
+          "A": 6,
+          "B": -7,
+          "d": 7,
+          "modulus": 16,
+          "V_unit": [
+            7,
+            12,
+            15
+          ],
+          "U_unit_V_even": [
+            7,
+            15
+          ],
+          "squares": [
+            0,
+            1,
+            4,
+            9
+          ]
+        },
+        {
+          "A": -36,
+          "B": 320,
+          "d": 2,
+          "modulus": 64,
+          "V_unit": [
+            32,
+            48,
+            62
+          ],
+          "U_unit_V_even": [
+            2,
+            50
+          ],
+          "squares": [
+            0,
+            1,
+            4,
+            9,
+            16,
+            17,
+            25,
+            33,
+            36,
+            41,
+            49,
+            57
+          ]
+        },
+        {
+          "A": -36,
+          "B": 320,
+          "d": 10,
+          "modulus": 64,
+          "V_unit": [
+            6,
+            32,
+            48
+          ],
+          "U_unit_V_even": [
+            10,
+            58
+          ],
+          "squares": [
+            0,
+            1,
+            4,
+            9,
+            16,
+            17,
+            25,
+            33,
+            36,
+            41,
+            49,
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "name": "genus_five_squarefreeness_and_infinity",
+      "status": "PASS",
+      "good_squarefree_prime": 5,
+      "degree": 12,
+      "genus": 5,
+      "specified_points": 8,
+      "all_rational_points_classified": false
+    },
+    {
+      "name": "exhaustive_reconstruction_collision_table",
+      "status": "PASS",
+      "pair_checks": 12,
+      "entries": 4,
+      "pairs": [
+        {
+          "i": 0,
+          "j": 1,
+          "difference": "-48*h**2",
+          "sum": "2*h**4 - 76*h**2 + 2"
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "difference": "-96*h**2",
+          "sum": "2*h**4 - 28*h**2 + 2"
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "difference": "h**4 - 14*h**2 + 1",
+          "sum": "h**4 - 110*h**2 + 1"
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "difference": "-48*h**2",
+          "sum": "2*h**4 + 20*h**2 + 2"
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "difference": "h**4 + 34*h**2 + 1",
+          "sum": "h**4 - 62*h**2 + 1"
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "difference": "h**4 + 82*h**2 + 1",
+          "sum": "h**4 - 14*h**2 + 1"
+        }
+      ]
+    }
+  ],
+  "new_table_files": [
+    "coverage_table.tex",
+    "representatives.tex",
+    "orbits.tex",
+    "d1_index_table.tex",
+    "collision_table.tex"
+  ],
+  "two_prime_case_summary": [
+    {
+      "id": "21_m1_n0",
+      "degree": 14,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 25
+    },
+    {
+      "id": "31_m1_n0",
+      "degree": 22,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 26
+    },
+    {
+      "id": "31_m2_n0",
+      "degree": 22,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "22_m1_n1",
+      "degree": 30,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 35
+    },
+    {
+      "id": "22_m1_nminus1",
+      "degree": 30,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 25
+    },
+    {
+      "id": "41_m1_n0",
+      "degree": 30,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "41_m3_n0",
+      "degree": 30,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "32_m1_n1",
+      "degree": 46,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "32_m1_nminus1",
+      "degree": 46,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 32
+    },
+    {
+      "id": "32_m2_n1",
+      "degree": 46,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "32_m2_nminus1",
+      "degree": 46,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "51_m1_n0",
+      "degree": 38,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "51_m2_n0",
+      "degree": 38,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "51_m3_n0",
+      "degree": 38,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "51_m4_n0",
+      "degree": 38,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "42_m1_n1",
+      "degree": 62,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "42_m1_nminus1",
+      "degree": 62,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "42_m3_n1",
+      "degree": 62,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "42_m3_nminus1",
+      "degree": 62,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "33_m1_n1",
+      "degree": 70,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 60
+    },
+    {
+      "id": "33_m1_nminus1",
+      "degree": 70,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 53
+    },
+    {
+      "id": "33_m1_n2",
+      "degree": 70,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 25
+    },
+    {
+      "id": "33_m1_nminus2",
+      "degree": 70,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 28
+    },
+    {
+      "id": "33_m2_n2",
+      "degree": 70,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 37
+    },
+    {
+      "id": "33_m2_nminus2",
+      "degree": 70,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "61_m1_n0",
+      "degree": 46,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "61_m5_n0",
+      "degree": 46,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "52_m1_n1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "52_m1_nminus1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 33
+    },
+    {
+      "id": "52_m2_n1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 27
+    },
+    {
+      "id": "52_m2_nminus1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "52_m3_n1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "52_m3_nminus1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 32
+    },
+    {
+      "id": "52_m4_n1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "52_m4_nminus1",
+      "degree": 78,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 31
+    },
+    {
+      "id": "43_m1_n1",
+      "degree": 94,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 53
+    },
+    {
+      "id": "43_m1_nminus1",
+      "degree": 94,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 55
+    },
+    {
+      "id": "43_m1_n2",
+      "degree": 94,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "43_m1_nminus2",
+      "degree": 94,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "43_m3_n1",
+      "degree": 94,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 57
+    },
+    {
+      "id": "43_m3_nminus1",
+      "degree": 94,
+      "rational_fibers": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "rootless_factors": 55
+    },
+    {
+      "id": "43_m3_n2",
+      "degree": 94,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 29
+    },
+    {
+      "id": "43_m3_nminus2",
+      "degree": 94,
+      "rational_fibers": [
+        "0"
+      ],
+      "rootless_factors": 29
+    }
+  ],
+  "coverage": [
+    {
+      "raw": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        2,
+        1,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        2,
+        1,
+        -1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        1,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        -2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        3,
+        1,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        -1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        1,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        -1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        -1,
+        -1
+      ],
+      "route": "22_m1_n1"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        2,
+        1,
+        -1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        -1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        -1,
+        1
+      ],
+      "route": "22_m1_nminus1"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        0,
+        -1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        -1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        2
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        1,
+        -1
+      ],
+      "route": "22_m1_nminus1"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "route": "22_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        1,
+        -3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        1,
+        -3,
+        0
+      ],
+      "route": "41_m3_n0"
+    },
+    {
+      "raw": [
+        4,
+        1,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        1,
+        -1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        1,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        1,
+        -1,
+        0
+      ],
+      "route": "41_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        1,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        4,
+        1
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "route": "41_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        1,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        1,
+        3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        1,
+        3,
+        0
+      ],
+      "route": "41_m3_n0"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        -2,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        -2,
+        -1
+      ],
+      "route": "32_m2_n1"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        3,
+        1,
+        -2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        -2,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        -2,
+        1
+      ],
+      "route": "32_m2_nminus1"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        -1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        -1,
+        -1
+      ],
+      "route": "32_m1_n1"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        3,
+        1,
+        -1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        -1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        -1,
+        1
+      ],
+      "route": "32_m1_nminus1"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        0,
+        -1
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        -1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        3,
+        2
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        1,
+        -1
+      ],
+      "route": "32_m1_nminus1"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "route": "32_m1_n1"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        2,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        2,
+        -1
+      ],
+      "route": "32_m2_nminus1"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "route": "32_m2_n1"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        -4,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        -4,
+        0
+      ],
+      "route": "51_m4_n0"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        -3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        -3,
+        0
+      ],
+      "route": "51_m3_n0"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        -2,
+        0
+      ],
+      "route": "51_m2_n0"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        -1,
+        0
+      ],
+      "route": "51_m1_n0"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        5,
+        1
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        1,
+        0
+      ],
+      "route": "51_m1_n0"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        2,
+        0
+      ],
+      "route": "51_m2_n0"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        3,
+        0
+      ],
+      "route": "51_m3_n0"
+    },
+    {
+      "raw": [
+        5,
+        1,
+        4,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        1,
+        4,
+        0
+      ],
+      "route": "51_m4_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -3,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        -3,
+        -1
+      ],
+      "route": "42_m3_n1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        4,
+        1,
+        -3,
+        0
+      ],
+      "route": "41_m3_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -3,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        -3,
+        1
+      ],
+      "route": "42_m3_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -2,
+        -1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        -1,
+        -1
+      ],
+      "route": "22_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        2
+      ],
+      "reduced": [
+        2,
+        1,
+        -1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -2,
+        1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        -1,
+        1
+      ],
+      "route": "22_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        -1,
+        -1
+      ],
+      "route": "42_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        4,
+        1,
+        -1,
+        0
+      ],
+      "route": "41_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        -1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        -1,
+        1
+      ],
+      "route": "42_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        0,
+        -1
+      ],
+      "coordinate_gcds": [
+        4,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        -1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        4,
+        2
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        0,
+        1
+      ],
+      "coordinate_gcds": [
+        4,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        1,
+        -1
+      ],
+      "route": "42_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "route": "41_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        1,
+        1
+      ],
+      "route": "42_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        2,
+        -1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        1,
+        -1
+      ],
+      "route": "22_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        2
+      ],
+      "reduced": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        2,
+        1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "route": "22_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        3,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        3,
+        -1
+      ],
+      "route": "42_m3_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        4,
+        1,
+        3,
+        0
+      ],
+      "route": "41_m3_n0"
+    },
+    {
+      "raw": [
+        4,
+        2,
+        3,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        2,
+        3,
+        1
+      ],
+      "route": "42_m3_n1"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -2,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -2,
+        -2
+      ],
+      "route": "33_m2_n2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -2,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -2,
+        -1
+      ],
+      "route": "33_m1_n2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        3,
+        1,
+        -2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -2,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -2,
+        1
+      ],
+      "route": "33_m1_nminus2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -2,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -2,
+        2
+      ],
+      "route": "33_m2_nminus2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -1,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -1,
+        -2
+      ],
+      "route": "33_m1_n2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -1,
+        -1
+      ],
+      "route": "33_m1_n1"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        3,
+        1,
+        -1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -1,
+        1
+      ],
+      "route": "33_m1_nminus1"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        -1,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        -1,
+        2
+      ],
+      "route": "33_m1_nminus2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        0,
+        -2
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        -2
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        0,
+        -1
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        -1
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        3,
+        3
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        0,
+        2
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        1,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        1,
+        -2
+      ],
+      "route": "33_m1_nminus2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        1,
+        -1
+      ],
+      "route": "33_m1_nminus1"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "route": "33_m1_n1"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        1,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        1,
+        2
+      ],
+      "route": "33_m1_n2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        2,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        2,
+        -2
+      ],
+      "route": "33_m2_nminus2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        2,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        2,
+        -1
+      ],
+      "route": "33_m1_nminus2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        2,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        2,
+        1
+      ],
+      "route": "33_m1_n2"
+    },
+    {
+      "raw": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "route": "33_m2_n2"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        -5,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        6,
+        1,
+        -5,
+        0
+      ],
+      "route": "61_m5_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        -4,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        -2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        -3,
+        0
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        2,
+        1,
+        -1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        -1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        6,
+        1,
+        -1,
+        0
+      ],
+      "route": "61_m1_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        6,
+        1
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        6,
+        1,
+        1,
+        0
+      ],
+      "route": "61_m1_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        3,
+        0
+      ],
+      "coordinate_gcds": [
+        3,
+        1
+      ],
+      "reduced": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        4,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        6,
+        1,
+        5,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        6,
+        1,
+        5,
+        0
+      ],
+      "route": "61_m5_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -4,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -4,
+        -1
+      ],
+      "route": "52_m4_n1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -4,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        -4,
+        0
+      ],
+      "route": "51_m4_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -4,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -4,
+        1
+      ],
+      "route": "52_m4_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -3,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -3,
+        -1
+      ],
+      "route": "52_m3_n1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        -3,
+        0
+      ],
+      "route": "51_m3_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -3,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -3,
+        1
+      ],
+      "route": "52_m3_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -2,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -2,
+        -1
+      ],
+      "route": "52_m2_n1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        -2,
+        0
+      ],
+      "route": "51_m2_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -2,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -2,
+        1
+      ],
+      "route": "52_m2_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -1,
+        -1
+      ],
+      "route": "52_m1_n1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        -1,
+        0
+      ],
+      "route": "51_m1_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        -1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        -1,
+        1
+      ],
+      "route": "52_m1_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        0,
+        -1
+      ],
+      "coordinate_gcds": [
+        5,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        -1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        5,
+        2
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        0,
+        1
+      ],
+      "coordinate_gcds": [
+        5,
+        1
+      ],
+      "reduced": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        1,
+        -1
+      ],
+      "route": "52_m1_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        1,
+        0
+      ],
+      "route": "51_m1_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        1,
+        1
+      ],
+      "route": "52_m1_n1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        2,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        2,
+        -1
+      ],
+      "route": "52_m2_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        2,
+        0
+      ],
+      "route": "51_m2_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        2,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        2,
+        1
+      ],
+      "route": "52_m2_n1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        3,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        3,
+        -1
+      ],
+      "route": "52_m3_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        3,
+        0
+      ],
+      "route": "51_m3_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        3,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        3,
+        1
+      ],
+      "route": "52_m3_n1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        4,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        4,
+        -1
+      ],
+      "route": "52_m4_nminus1"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        4,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        2
+      ],
+      "reduced": [
+        5,
+        1,
+        4,
+        0
+      ],
+      "route": "51_m4_n0"
+    },
+    {
+      "raw": [
+        5,
+        2,
+        4,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        5,
+        2,
+        4,
+        1
+      ],
+      "route": "52_m4_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -3,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -3,
+        -2
+      ],
+      "route": "43_m3_n2"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -3,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -3,
+        -1
+      ],
+      "route": "43_m3_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        4,
+        1,
+        -3,
+        0
+      ],
+      "route": "41_m3_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -3,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -3,
+        1
+      ],
+      "route": "43_m3_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -3,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -3,
+        2
+      ],
+      "route": "43_m3_nminus2"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -2,
+        -2
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        -1,
+        -2
+      ],
+      "route": "32_m2_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -2,
+        -1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        -1,
+        -1
+      ],
+      "route": "32_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        3
+      ],
+      "reduced": [
+        2,
+        1,
+        -1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -2,
+        1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        -1,
+        1
+      ],
+      "route": "32_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -2,
+        2
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        -1,
+        2
+      ],
+      "route": "32_m2_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -1,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -1,
+        -2
+      ],
+      "route": "43_m1_n2"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -1,
+        -1
+      ],
+      "route": "43_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        4,
+        1,
+        -1,
+        0
+      ],
+      "route": "41_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -1,
+        1
+      ],
+      "route": "43_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        -1,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        -1,
+        2
+      ],
+      "route": "43_m1_nminus2"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        0,
+        -2
+      ],
+      "coordinate_gcds": [
+        4,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        -2
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        0,
+        -1
+      ],
+      "coordinate_gcds": [
+        4,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        -1
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        0,
+        0
+      ],
+      "coordinate_gcds": [
+        4,
+        3
+      ],
+      "reduced": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "route": "parallelogram"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        0,
+        1
+      ],
+      "coordinate_gcds": [
+        4,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "route": "31_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        0,
+        2
+      ],
+      "coordinate_gcds": [
+        4,
+        1
+      ],
+      "reduced": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "route": "31_m2_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        1,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        1,
+        -2
+      ],
+      "route": "43_m1_nminus2"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        1,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        1,
+        -1
+      ],
+      "route": "43_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        1,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "route": "41_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        1,
+        1
+      ],
+      "route": "43_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        1,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        1,
+        2
+      ],
+      "route": "43_m1_n2"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        2,
+        -2
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        1,
+        -2
+      ],
+      "route": "32_m2_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        2,
+        -1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        1,
+        -1
+      ],
+      "route": "32_m1_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        2,
+        0
+      ],
+      "coordinate_gcds": [
+        2,
+        3
+      ],
+      "reduced": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "route": "21_m1_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        1,
+        1
+      ],
+      "route": "32_m1_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "coordinate_gcds": [
+        2,
+        1
+      ],
+      "reduced": [
+        2,
+        3,
+        1,
+        2
+      ],
+      "route": "32_m2_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        3,
+        -2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        3,
+        -2
+      ],
+      "route": "43_m3_nminus2"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        3,
+        -1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        3,
+        -1
+      ],
+      "route": "43_m3_nminus1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        3,
+        0
+      ],
+      "coordinate_gcds": [
+        1,
+        3
+      ],
+      "reduced": [
+        4,
+        1,
+        3,
+        0
+      ],
+      "route": "41_m3_n0"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        3,
+        1
+      ],
+      "route": "43_m3_n1"
+    },
+    {
+      "raw": [
+        4,
+        3,
+        3,
+        2
+      ],
+      "coordinate_gcds": [
+        1,
+        1
+      ],
+      "reduced": [
+        4,
+        3,
+        3,
+        2
+      ],
+      "route": "43_m3_n2"
+    }
+  ],
+  "scope": "Additional exact proofread and appendix checks; the main two-prime and D1 verifiers remain required.",
+  "not_established": [
+    "historical priority",
+    "independent human peer review",
+    "complete residual genus-five point list"
+  ],
+  "sympy_version": "1.14.0"
+}

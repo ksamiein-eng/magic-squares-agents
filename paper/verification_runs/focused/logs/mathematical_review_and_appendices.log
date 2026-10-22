@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "check_groups": 8,
+  "tables": [
+    "coverage_table.tex",
+    "representatives.tex",
+    "orbits.tex",
+    "d1_index_table.tex",
+    "collision_table.tex"
+  ]
+}

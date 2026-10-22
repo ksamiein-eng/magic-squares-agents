@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "external_premise": "Cremona ecdata Table Two full Mordell-Weil generators and ranks, not independently reproved here",
+  "source_documentation": "https://johncremona.github.io/ecdata/",
+  "source_commit": "1e16f4523e20f14aecbc8fcc1db46b4e9f23a14f",
+  "models": 16,
+  "matched_quotient_records": 16,
+  "matches": [
+    {
+      "curve": "E_A",
+      "quotient": "quotient1_E",
+      "cremona_label": "1968m1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_A",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "123a1",
+      "point_expressions": [
+        {
+          "free_coefficient": -1,
+          "torsion_coefficient": 4
+        }
+      ]
+    },
+    {
+      "curve": "E_B",
+      "quotient": "quotient1_E",
+      "cremona_label": "352d1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_B",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "352b1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_C",
+      "quotient": "quotient1_E",
+      "cremona_label": "352b1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_C",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "352d1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D",
+      "quotient": "quotient1_E",
+      "cremona_label": "1840d1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "184b1",
+      "point_expressions": [
+        {
+          "free_coefficient": -1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D_tw2",
+      "quotient": "quotient1_E",
+      "cremona_label": "7360r1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D_tw2",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "1472a1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D_twm2",
+      "quotient": "quotient1_E",
+      "cremona_label": "7360a1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D_twm2",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "1472n1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D_tw5",
+      "quotient": "quotient1_E",
+      "cremona_label": "9200a1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_D_tw5",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "4600l1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_A_cubic_E2",
+      "quotient": "quotient1_E",
+      "cremona_label": "1968m1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    },
+    {
+      "curve": "E_A_cubic_E2",
+      "quotient": "quotient2_Ep",
+      "cremona_label": "492b1",
+      "point_expressions": [
+        {
+          "free_coefficient": 1,
+          "torsion_coefficient": 0
+        }
+      ]
+    }
+  ]
+}

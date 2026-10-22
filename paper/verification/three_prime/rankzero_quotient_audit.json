@@ -1,0 +1,1444 @@
+{
+  "direct_genus_one_records_certified": 108,
+  "records": [
+    {
+      "orbit": "A",
+      "system": 0,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 1,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 2,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 3,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 4,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 5,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 6,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 7,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 8,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 9,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 10,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 11,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 12,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 13,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 14,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 15,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 16,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 17,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 18,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 19,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 20,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 21,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 22,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 23,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 24,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 25,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 26,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 27,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 28,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 29,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 30,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 31,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 32,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 33,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 34,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 35,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 36,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 37,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 38,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 39,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 40,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 41,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 42,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 43,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 44,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 45,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 46,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "A",
+      "system": 47,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "5637144576",
+        "J": "-712483534798848",
+        "scale_u": "128"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "B2",
+      "system": 41,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "218103808",
+        "J": "4810363371520",
+        "scale_u": "64"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "B2",
+      "system": 42,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "218103808",
+        "J": "4810363371520",
+        "scale_u": "64"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "B2",
+      "system": 45,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "218103808",
+        "J": "4810363371520",
+        "scale_u": "64"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "B2",
+      "system": 46,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "218103808",
+        "J": "4810363371520",
+        "scale_u": "64"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "C",
+      "system": 40,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "C",
+      "system": 43,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "C",
+      "system": 44,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "C",
+      "system": 47,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "D1",
+      "system": 40,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "D1",
+      "system": 40,
+      "factor": 2,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "D1",
+      "system": 43,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "D1",
+      "system": 43,
+      "factor": 2,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "D1",
+      "system": 44,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "D1",
+      "system": 44,
+      "factor": 2,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "D1",
+      "system": 47,
+      "factor": 1,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "D1",
+      "system": 47,
+      "factor": 2,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "E2",
+      "system": 4,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "7881299347898368",
+        "J": "1284483683340543498125312",
+        "scale_u": "4096"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 5,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "7881299347898368",
+        "J": "1284483683340543498125312",
+        "scale_u": "4096"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 6,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "7881299347898368",
+        "J": "1284483683340543498125312",
+        "scale_u": "4096"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 7,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "7881299347898368",
+        "J": "1284483683340543498125312",
+        "scale_u": "4096"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 40,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "E2",
+      "system": 41,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "2951479051793528258560",
+        "J": "-126765060022822940149670320537600",
+        "scale_u": "131072"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 42,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "2951479051793528258560",
+        "J": "-126765060022822940149670320537600",
+        "scale_u": "131072"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 43,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "E2",
+      "system": 44,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "E2",
+      "system": 45,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "2951479051793528258560",
+        "J": "-126765060022822940149670320537600",
+        "scale_u": "131072"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 46,
+      "factor": 0,
+      "quotient": 0,
+      "identification": {
+        "I": "2951479051793528258560",
+        "J": "-126765060022822940149670320537600",
+        "scale_u": "131072"
+      },
+      "complete_point_count": 2
+    },
+    {
+      "orbit": "E2",
+      "system": 47,
+      "factor": 0,
+      "quotient": 1,
+      "identification": {
+        "I": "4784128",
+        "J": "-19964887040",
+        "scale_u": "16"
+      },
+      "complete_point_count": 8
+    },
+    {
+      "orbit": "F-1",
+      "system": 0,
+      "factor": 4,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 1,
+      "factor": 4,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 2,
+      "factor": 3,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 3,
+      "factor": 3,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 4,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 5,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 6,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 7,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 8,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 9,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 10,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 11,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 12,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 13,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 14,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-1",
+      "system": 15,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 0,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 1,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 2,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 3,
+      "factor": 5,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 4,
+      "factor": 4,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 5,
+      "factor": 4,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 6,
+      "factor": 4,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 7,
+      "factor": 4,
+      "quotient": 1,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 16,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 17,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 18,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 19,
+      "factor": 4,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 20,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 21,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 22,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    },
+    {
+      "orbit": "F-3",
+      "system": 23,
+      "factor": 5,
+      "quotient": 0,
+      "identification": {
+        "I": "851968",
+        "J": "1174405120",
+        "scale_u": "16"
+      },
+      "complete_point_count": 4
+    }
+  ],
+  "even_quotients": [
+    {
+      "coefficients": [
+        1,
+        0,
+        14,
+        0,
+        1
+      ],
+      "Jacobian_model": [
+        0,
+        0,
+        0,
+        -351,
+        1890
+      ],
+      "identification": {
+        "I": "208",
+        "J": "-4480",
+        "scale_u": "2/3"
+      },
+      "points_up_to_y_sign": [
+        [
+          "-1",
+          "4"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "4"
+        ]
+      ],
+      "two_rational_infinities": true,
+      "complete_point_count": 8,
+      "rational_tau_with_tau_squared_equal_to_x": [
+        "-1",
+        "0",
+        "1",
+        "oo"
+      ]
+    },
+    {
+      "coefficients": [
+        81,
+        144,
+        142,
+        16,
+        1
+      ],
+      "Jacobian_model": [
+        0,
+        0,
+        0,
+        -24003,
+        1296702
+      ],
+      "identification": {
+        "I": "14224",
+        "J": "-3073664",
+        "scale_u": "2/3"
+      },
+      "points_up_to_y_sign": [
+        [
+          "-1",
+          "8"
+        ],
+        [
+          "-1/3",
+          "8/3"
+        ],
+        [
+          "-1/9",
+          "8/9"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1/3",
+          "16/3"
+        ]
+      ],
+      "two_rational_infinities": true,
+      "complete_point_count": 12,
+      "rational_tau_with_tau_squared_equal_to_x": [
+        "0",
+        "oo"
+      ]
+    },
+    {
+      "coefficients": [
+        1,
+        16,
+        142,
+        144,
+        81
+      ],
+      "Jacobian_model": [
+        0,
+        0,
+        0,
+        -24003,
+        1296702
+      ],
+      "identification": {
+        "I": "14224",
+        "J": "-3073664",
+        "scale_u": "2/3"
+      },
+      "points_up_to_y_sign": [
+        [
+          "-9",
+          "72"
+        ],
+        [
+          "-3",
+          "24"
+        ],
+        [
+          "-1",
+          "8"
+        ],
+        [
+          "0",
+          "9"
+        ],
+        [
+          "3",
+          "48"
+        ]
+      ],
+      "two_rational_infinities": true,
+      "complete_point_count": 12,
+      "rational_tau_with_tau_squared_equal_to_x": [
+        "0",
+        "oo"
+      ]
+    }
+  ]
+}

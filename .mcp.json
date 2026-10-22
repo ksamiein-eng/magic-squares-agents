@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rational_circle": {
+      "command": "python",
+      "args": ["paper_mcp/rational_circle_mcp.py"]
+    }
+  }
+}

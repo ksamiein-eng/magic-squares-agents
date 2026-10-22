@@ -1,0 +1,174 @@
+Lifted 244 failed 0
+{
+ "A": {
+  "factor_entries": 48,
+  "unresolved_factor_entries": 0,
+  "closed_given_verified_upstream_checks": true,
+  "statuses": {
+   "finite_lift_audit": 48
+  }
+ },
+ "B1": {
+  "factor_entries": 78,
+  "unresolved_factor_entries": 48,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "unresolved_higher_genus_or_positive_rank": 48,
+   "torsion_fiber_or_no_rational_root": 18,
+   "component_audit": 12
+  }
+ },
+ "B2": {
+  "factor_entries": 96,
+  "unresolved_factor_entries": 32,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "unresolved_higher_genus_or_positive_rank": 32,
+   "component_audit": 32,
+   "torsion_fiber_or_no_rational_root": 28,
+   "finite_lift_audit": 4
+  }
+ },
+ "C": {
+  "factor_entries": 96,
+  "unresolved_factor_entries": 32,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 36,
+   "component_audit": 12,
+   "unresolved_higher_genus_or_positive_rank": 32,
+   "no_rational_discriminant_point": 12,
+   "finite_lift_audit": 4
+  }
+ },
+ "D1": {
+  "factor_entries": 140,
+  "unresolved_factor_entries": 32,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 76,
+   "component_audit": 24,
+   "unresolved_higher_genus_or_positive_rank": 32,
+   "finite_lift_audit": 8
+  }
+ },
+ "D2": {
+  "factor_entries": 60,
+  "unresolved_factor_entries": 48,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 12,
+   "unresolved_nonlinear": 48
+  }
+ },
+ "D3": {
+  "factor_entries": 60,
+  "unresolved_factor_entries": 48,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "unresolved_nonlinear": 24,
+   "torsion_fiber_or_no_rational_root": 12,
+   "unresolved_higher_genus_or_positive_rank": 24
+  }
+ },
+ "D4": {
+  "factor_entries": 60,
+  "unresolved_factor_entries": 48,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "unresolved_nonlinear": 48,
+   "torsion_fiber_or_no_rational_root": 12
+  }
+ },
+ "E1": {
+  "factor_entries": 136,
+  "unresolved_factor_entries": 0,
+  "closed_given_verified_upstream_checks": true,
+  "statuses": {
+   "component_audit": 16,
+   "torsion_fiber_or_no_rational_root": 120
+  }
+ },
+ "E2": {
+  "factor_entries": 132,
+  "unresolved_factor_entries": 24,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 80,
+   "component_audit": 4,
+   "finite_lift_audit": 12,
+   "no_rational_discriminant_point": 12,
+   "unresolved_higher_genus_or_positive_rank": 24
+  }
+ },
+ "E3": {
+  "factor_entries": 252,
+  "unresolved_factor_entries": 0,
+  "closed_given_verified_upstream_checks": true,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 124,
+   "component_audit": 96,
+   "finite_lift_audit": 32
+  }
+ },
+ "E4": {
+  "factor_entries": 252,
+  "unresolved_factor_entries": 0,
+  "closed_given_verified_upstream_checks": true,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 124,
+   "component_audit": 96,
+   "finite_lift_audit": 32
+  }
+ },
+ "F+1": {
+  "factor_entries": 180,
+  "unresolved_factor_entries": 48,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 132,
+   "unresolved_nonlinear": 48
+  }
+ },
+ "F+2": {
+  "factor_entries": 128,
+  "unresolved_factor_entries": 48,
+  "closed_given_verified_upstream_checks": false,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 80,
+   "unresolved_nonlinear": 48
+  }
+ },
+ "F-1": {
+  "factor_entries": 236,
+  "unresolved_factor_entries": 0,
+  "closed_given_verified_upstream_checks": true,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 116,
+   "component_audit": 72,
+   "finite_lift_audit": 40,
+   "linear_relation_component_audit": 8
+  }
+ },
+ "F-2": {
+  "factor_entries": 228,
+  "unresolved_factor_entries": 0,
+  "closed_given_verified_upstream_checks": true,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 108,
+   "component_audit": 96,
+   "finite_lift_audit": 24
+  }
+ },
+ "F-3": {
+  "factor_entries": 236,
+  "unresolved_factor_entries": 0,
+  "closed_given_verified_upstream_checks": true,
+  "statuses": {
+   "torsion_fiber_or_no_rational_root": 116,
+   "component_audit": 72,
+   "finite_lift_audit": 40,
+   "linear_relation_component_audit": 8
+  }
+ }
+}

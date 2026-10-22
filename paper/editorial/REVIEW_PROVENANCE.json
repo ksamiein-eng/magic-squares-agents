@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "input_package": "magic_squares_research_submission_package_revised.zip",
+  "input_package_sha256": "265fccc1cfbbdb51a5eccbc113821bae76c450b0bcca83da6bb5f10f96cc1781",
+  "selected_input": "latest focused revised article, not the older context-stuffed drafts",
+  "input_pdf_pages": 19,
+  "output_pdf_pages": 24,
+  "body_scope_changed": false,
+  "AI_disclosure_changed": false,
+  "new_appendices": [
+    "A: coverage and worked elimination",
+    "B: full-group enumeration",
+    "C: local descent and torsion",
+    "D: normalization and exceptional points"
+  ],
+  "visual_review": "All pages rendered; contact sheets inspected, with full-page inspections of expanded appendices.",
+  "compile": "three pdflatex passes, no undefined references or overfull boxes",
+  "software": {
+    "python": "3.13.5"
+  },
+  "paper_source_sha256": "41ebdb7597cd2fd7fe35e1f8c48f1d90c47709749dd22711a165504befc40747",
+  "paper_pdf_sha256": "e87f31cebb3a05ddabacc927cf17b0237bf0c97dda59c7628e80936b2a0fcda9"
+}

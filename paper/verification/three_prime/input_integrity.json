@@ -1,0 +1,155 @@
+{
+  "archive_sha256": "954bd2763aeb34c3e6e9a27cf4e5c8453bfd499d710672b655e53ea127cde85a",
+  "manifest": [
+    {
+      "file": "certs/A.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/B1.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/B2.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/C.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/D1.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/D2.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/D3.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/D4.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/E1.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/E2.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/E3.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/E4.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/F+1.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/F+2.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/F-1.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/F-2.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/F-3.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certs/saturation_table.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "certify.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "fplus.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "gamma.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "linrel_exact.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "pipe3.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "section81.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "setup.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "twoprime.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "verify_all.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "paper/md2tex.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "file": "paper/paper.md",
+      "exists": true,
+      "matches": false
+    },
+    {
+      "file": "paper/template.tex",
+      "exists": true,
+      "matches": true
+    }
+  ]
+}

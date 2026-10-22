@@ -1,0 +1,16 @@
+E_A quotient1_E point [['0', '3']] correct [['-2', '3']] tors 1 counts {'5': 8, '7': 4, '11': 17, '13': 18} bound 1
+E_A quotient2_Ep point [['-21', '12']] correct [['-4', '1']] tors 5 counts {'5': 10, '7': 10, '11': 15, '13': 20} bound 5
+E_B quotient1_E point [['-1', '4']] correct [['3', '4']] tors 1 counts {'3': 5, '5': 5, '7': 12, '13': 16} bound 1
+E_B quotient2_Ep point [['3', '4']] correct [['1', '4']] tors 1 counts {'3': 3, '5': 9, '7': 12, '13': 16} bound 1
+E_C quotient1_E point [['3', '4']] correct [['1', '4']] tors 1 counts {'3': 3, '5': 9, '7': 12, '13': 16} bound 1
+E_C quotient2_Ep point [['-1', '4']] correct [['3', '4']] tors 1 counts {'3': 5, '5': 5, '7': 12, '13': 16} bound 1
+E_D quotient1_E point [['15', '40']] correct [['1', '5']] tors 1 counts {'3': 3, '7': 8, '11': 14, '13': 19} bound 1
+E_D quotient2_Ep point [['3', '-8']] correct [['2', '-1']] tors 1 counts {'3': 5, '5': 8, '7': 12, '11': 14, '13': 7} bound 1
+E_D_tw2 quotient1_E point [['50', '200']] correct [['8', '25']] tors 1 counts {'3': 5, '7': 8, '11': 10, '13': 9} bound 1
+E_D_tw2 quotient2_Ep point [['2', '8']] correct [['2', '1']] tors 1 counts {'3': 3, '5': 4, '7': 12, '11': 10, '13': 21} bound 1
+E_D_twm2 quotient1_E point [['150', '2200']] correct [['42', '275']] tors 1 counts {'3': 3, '7': 8, '11': 14, '13': 9} bound 1
+E_D_twm2 quotient2_Ep point [['38', '136']] correct [['8', '17']] tors 1 counts {'3': 5, '5': 4, '7': 4, '11': 14, '13': 21} bound 1
+E_D_tw5 quotient1_E point [['-5', '200']] correct [['-13', '25']] tors 1 counts {'3': 5, '7': 8, '11': 14, '13': 9} bound 1
+E_D_tw5 quotient2_Ep point [['-25', '200']] correct [['-2', '25']] tors 1 counts {'3': 3, '7': 4, '11': 14, '13': 21} bound 1
+E_A_cubic_E2 quotient1_E point [['324', '648']] correct [['-2', '3']] tors 1 counts {'5': 8, '7': 4, '11': 17, '13': 18} bound 1
+E_A_cubic_E2 quotient2_Ep point [['-2304', '9216']] correct [['-7', '18']] tors 1 counts {'5': 8, '7': 12, '11': 17, '13': 10} bound 1

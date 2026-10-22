@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "rank": 0,
+  "torsion_order": 2,
+  "descent_image_upper_sizes": [
+    1,
+    4
+  ],
+  "local_obstructions": [
+    {
+      "A": -17,
+      "B": 64,
+      "class": -2,
+      "witness": "all quartic terms negative"
+    },
+    {
+      "A": -17,
+      "B": 64,
+      "class": -1,
+      "witness": "all quartic terms negative"
+    },
+    {
+      "A": -17,
+      "B": 64,
+      "class": 2,
+      "modulus": 3,
+      "primitive_residues": [
+        2
+      ],
+      "square_residues": [
+        0,
+        1
+      ]
+    },
+    {
+      "A": 34,
+      "B": 33,
+      "class": -11,
+      "modulus": 32,
+      "primitive_residues": [
+        5,
+        13,
+        20,
+        21,
+        29
+      ],
+      "square_residues": [
+        0,
+        1,
+        4,
+        9,
+        16,
+        17,
+        25
+      ]
+    },
+    {
+      "A": 34,
+      "B": 33,
+      "class": -3,
+      "modulus": 32,
+      "primitive_residues": [
+        5,
+        13,
+        20,
+        21,
+        29
+      ],
+      "square_residues": [
+        0,
+        1,
+        4,
+        9,
+        16,
+        17,
+        25
+      ]
+    },
+    {
+      "A": 34,
+      "B": 33,
+      "class": 3,
+      "modulus": 64,
+      "primitive_residues": [
+        3,
+        11,
+        19,
+        27,
+        35,
+        43,
+        48,
+        51,
+        59
+      ],
+      "square_residues": [
+        0,
+        1,
+        4,
+        9,
+        16,
+        17,
+        25,
+        33,
+        36,
+        41,
+        49,
+        57
+      ]
+    },
+    {
+      "A": 34,
+      "B": 33,
+      "class": 11,
+      "modulus": 64,
+      "primitive_residues": [
+        3,
+        11,
+        19,
+        27,
+        35,
+        43,
+        48,
+        51,
+        59
+      ],
+      "square_residues": [
+        0,
+        1,
+        4,
+        9,
+        16,
+        17,
+        25,
+        33,
+        36,
+        41,
+        49,
+        57
+      ]
+    }
+  ],
+  "halving_candidates_rhs": {
+    "-8": -2112,
+    "8": -64
+  },
+  "quartic_rational_points": 4,
+  "octic_rational_points": 4,
+  "complete_octic_parameters": [
+    "0",
+    "infinity"
+  ],
+  "trust": "Python exact arithmetic plus standard 2-isogeny descent and rational torsion reduction theorems. No height search or external rank database."
+}

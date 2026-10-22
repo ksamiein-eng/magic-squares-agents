@@ -1,0 +1,361 @@
+{
+  "status": "PASS",
+  "normalization": "lim 4^-n h(x(2^nP)); twice the usual Silverman canonical height",
+  "method": "integer homogeneous Bezout identities and rational logarithm bounds",
+  "models": 16,
+  "point_intervals": 22,
+  "rows": [
+    {
+      "label": "123a1",
+      "point": [
+        "1",
+        "1"
+      ],
+      "interval": {
+        "lower": "5156321876185433153641/6144000000000000000000",
+        "upper": "1033413131496822462679/1228800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 4967,
+        "lower_error_norm": 647126,
+        "upper_error_norm": 162
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "184b1",
+      "point": [
+        "2",
+        "1"
+      ],
+      "interval": {
+        "lower": "418660897058206966631/4096000000000000000000",
+        "upper": "127331137068861953447/1228800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 610,
+        "lower_error_norm": 16512,
+        "upper_error_norm": 85
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "352b1",
+      "point": [
+        "1",
+        "4"
+      ],
+      "interval": {
+        "lower": "756362203427012321177/2457600000000000000000",
+        "upper": "190130271627592998533/614400000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 1826,
+        "lower_error_norm": 494382,
+        "upper_error_norm": 130
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "352d1",
+      "point": [
+        "3",
+        "4"
+      ],
+      "interval": {
+        "lower": "630244073924130272201/3072000000000000000000",
+        "upper": "85049159054705289537/409600000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 1223,
+        "lower_error_norm": 302664578,
+        "upper_error_norm": 3712
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "389a1",
+      "point": [
+        "0",
+        "0"
+      ],
+      "interval": {
+        "lower": "2004928219769641806277/6144000000000000000000",
+        "upper": "100575655899248064481/307200000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 1933,
+        "lower_error_norm": 1728,
+        "upper_error_norm": 17
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "389a1",
+      "point": [
+        "1",
+        "0"
+      ],
+      "interval": {
+        "lower": "2924041381192129286011/6144000000000000000000",
+        "upper": "73265656985186219267/153600000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 2817,
+        "lower_error_norm": 1728,
+        "upper_error_norm": 17
+      },
+      "tag": "G2"
+    },
+    {
+      "label": "389a1",
+      "point": [
+        "-2",
+        "-1"
+      ],
+      "interval": {
+        "lower": "1130453736775214804447/1228800000000000000000",
+        "upper": "141471339552284837771/153600000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 5441,
+        "lower_error_norm": 1728,
+        "upper_error_norm": 17
+      },
+      "tag": "G1+G2"
+    },
+    {
+      "label": "492b1",
+      "point": [
+        "-7",
+        "18"
+      ],
+      "interval": {
+        "lower": "76332833259163977149/1536000000000000000000",
+        "upper": "12961852276470977297/245760000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 307,
+        "lower_error_norm": 127254437522,
+        "upper_error_norm": 8242
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "664a1",
+      "point": [
+        "1",
+        "2"
+      ],
+      "interval": {
+        "lower": "239049133895611138439/1536000000000000000000",
+        "upper": "193318748658168746959/1228800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 927,
+        "lower_error_norm": 275784,
+        "upper_error_norm": 144
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "664a1",
+      "point": [
+        "3",
+        "4"
+      ],
+      "interval": {
+        "lower": "1931627905425427589851/3072000000000000000000",
+        "upper": "774730603711850872987/1228800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 3723,
+        "lower_error_norm": 275784,
+        "upper_error_norm": 144
+      },
+      "tag": "G2"
+    },
+    {
+      "label": "664a1",
+      "point": [
+        "-3",
+        "2"
+      ],
+      "interval": {
+        "lower": "265107135714786582401/384000000000000000000",
+        "upper": "850422275828996900839/1228800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 4087,
+        "lower_error_norm": 275784,
+        "upper_error_norm": 144
+      },
+      "tag": "G1+G2"
+    },
+    {
+      "label": "1472a1",
+      "point": [
+        "2",
+        "1"
+      ],
+      "interval": {
+        "lower": "26615768691032274951/32000000000000000000",
+        "upper": "170722150571914529853/204800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 4923,
+        "lower_error_norm": 1304992,
+        "upper_error_norm": 416
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "1472n1",
+      "point": [
+        "8",
+        "17"
+      ],
+      "interval": {
+        "lower": "9461459014643253467843/4096000000000000000000",
+        "upper": "946908363362941287991/409600000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 13658,
+        "lower_error_norm": 1304992,
+        "upper_error_norm": 416
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "1840d1",
+      "point": [
+        "1",
+        "5"
+      ],
+      "interval": {
+        "lower": "830667581183038458301/2457600000000000000000",
+        "upper": "139253268574493012779/409600000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 2006,
+        "lower_error_norm": 4807920,
+        "upper_error_norm": 277
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "1968m1",
+      "point": [
+        "-2",
+        "3"
+      ],
+      "interval": {
+        "lower": "1622657549690831968367/1024000000000000000000",
+        "upper": "20309212390406397583/12800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 9373,
+        "lower_error_norm": 14425502,
+        "upper_error_norm": 322
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "4600l1",
+      "point": [
+        "-2",
+        "25"
+      ],
+      "interval": {
+        "lower": "1166012187137939998793/2457600000000000000000",
+        "upper": "293270572094912860661/614400000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 2816,
+        "lower_error_norm": 12204091224,
+        "upper_error_norm": 13533
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "7360a1",
+      "point": [
+        "42",
+        "275"
+      ],
+      "interval": {
+        "lower": "27241377343186410588977/12288000000000000000000",
+        "upper": "227282960505606067149/102400000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 13112,
+        "lower_error_norm": 2434853584,
+        "upper_error_norm": 2224
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "7360r1",
+      "point": [
+        "8",
+        "25"
+      ],
+      "interval": {
+        "lower": "1388373802661570453923/1536000000000000000000",
+        "upper": "371318944625962702567/409600000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 5353,
+        "lower_error_norm": 2434853584,
+        "upper_error_norm": 2224
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "9200a1",
+      "point": [
+        "-13",
+        "25"
+      ],
+      "interval": {
+        "lower": "2441610943522407350947/1536000000000000000000",
+        "upper": "1957655582055453539033/1228800000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 9409,
+        "lower_error_norm": 9248684047472,
+        "upper_error_norm": 34725
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "13280a1",
+      "point": [
+        "4",
+        "10"
+      ],
+      "interval": {
+        "lower": "1457861807512704971147/3072000000000000000000",
+        "upper": "73265656985186219267/153600000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 2815,
+        "lower_error_norm": 306871120,
+        "upper_error_norm": 1225
+      },
+      "tag": "G1"
+    },
+    {
+      "label": "13280a1",
+      "point": [
+        "-1",
+        "10"
+      ],
+      "interval": {
+        "lower": "4810094859495740471791/6144000000000000000000",
+        "upper": "482499752387777930291/614400000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 4637,
+        "lower_error_norm": 306871120,
+        "upper_error_norm": 1225
+      },
+      "tag": "G2"
+    },
+    {
+      "label": "13280a1",
+      "point": [
+        "-2",
+        "-10"
+      ],
+      "interval": {
+        "lower": "10312297178780586334633/6144000000000000000000",
+        "upper": "1032719984316262517369/614400000000000000000",
+        "doubling_steps": 6,
+        "final_x_height_bits": 9929,
+        "lower_error_norm": 306871120,
+        "upper_error_norm": 1225
+      },
+      "tag": "G1+G2"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "scope": "Two-parameter exclusion through exponent sum seven; specified integer-torus maps; D1 normalization and exact genus-five existence equivalence.",
+  "stages": [
+    {
+      "stage": "article_identities_and_tables",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 2.545,
+      "log": "logs\\article_identities_and_tables.log"
+    },
+    {
+      "stage": "mathematical_review_and_appendices",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 2.38,
+      "log": "logs\\mathematical_review_and_appendices.log"
+    },
+    {
+      "stage": "two_prime_sum7",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 33.924,
+      "log": "logs\\two_prime_sum7.log"
+    },
+    {
+      "stage": "two_prime_symbolic",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 222.307,
+      "log": "logs\\two_prime_symbolic.log"
+    },
+    {
+      "stage": "two_prime_negative_tests",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 35.988,
+      "log": "logs\\two_prime_negative_tests.log"
+    },
+    {
+      "stage": "D1_normalization_and_descent",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.557,
+      "log": "logs\\D1_normalization_and_descent.log"
+    },
+    {
+      "stage": "D1_symbolic_transport",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 2.574,
+      "log": "logs\\D1_symbolic_transport.log"
+    },
+    {
+      "stage": "D1_negative_tests",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.846,
+      "log": "logs\\D1_negative_tests.log"
+    },
+    {
+      "stage": "torus_rowspace_crosscheck",
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.607,
+      "log": "logs\\torus_rowspace_crosscheck.log"
+    }
+  ],
+  "stage_count": 9,
+  "paper_sha256": "e01665d81d3e6ed55e4b17fab088578463c023b749f1c2d1c6b358028c3bd014",
+  "not_certified": [
+    "Historical priority",
+    "Independent human review",
+    "Completeness of the eight-point genus-five list",
+    "All three-prime orbit exclusions"
+  ],
+  "isolation": "Each stage runs in its own temporary copy. Shipped proof files are not modified.",
+  "software": "Python and SymPy exact routines and the shipped checker implementations; not a formal proof assistant."
+}

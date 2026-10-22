@@ -1,0 +1,190 @@
+\section{Two-parameter coverage and elimination certificates}\label{app:representatives}
+This appendix separates three obligations in Theorem~\ref{thm:main-two}: covering the frequency configurations, checking the exact polynomial eliminations, and excluding their remaining rational fibers. A count of successful systems addresses only the second obligation unless the first and third are supplied as well.
+
+\subsection{Reduction to coordinate-primitive configurations}
+For a normal form $(k,\ell;m,n)$, set
+\[
+ d=\gcd(k,|m|),\qquad e=\gcd(\ell,|n|),\qquad
+ (K,L;M,N)=\left(\frac{k}{d},\frac{\ell}{e};\frac{m}{d},\frac{n}{e}\right),
+\]
+with $\gcd(k,0)=k$. Then
+\[
+ A_{k,\ell;m,n}=A_{K,L;M,N}\diag(d,e).
+\]
+An admissible point for the left-hand side gives one for the reduced matrix at $(z_1^d,z_2^e)$. This implication is sufficient; no rational inverse of the power map is used.
+
+After reduction, interchange columns if $K<L$; this also interchanges $M,N$, up to row signs and ordering. Simultaneous replacement $(M,N)\mapsto(-M,-N)$ gives the remaining sign identification. When $K=L$, column interchange is an additional symmetry. If $M=N=0$, the four frequencies form a parallelogram and Corollary~\ref{cor:parallelogram} applies. Enumerating the other reduced configurations through $K+L\le7$ gives the 43 representatives below. Independently reducing every raw form by these rules accounts for all 168 forms, including those with a zero deficient coordinate.
+
+\input{coverage_table.tex}
+
+Here ``raw forms'' means the $(2k-1)(2\ell-1)$ choices of $(m,n)$ for the given bounds, before any identifications. A direct case has 48 signed systems. Thus 168 is a configuration count, 43 a representative count, and 2,064 an equation-pair count; these are not interchangeable.
+
+\input{representatives.tex}
+
+\subsection{Reading a certificate record}
+The file \path{verification/two_prime/results/certificate_degree7.json} has one record for each direct case. Its \texttt{bounds}, \texttt{drops}, and \texttt{frequencies} fields specify $(k,\ell)$, $(m,n)$, and the four ordered rows. For a signed system, the tuple
+\[
+ (i,j,k,l,\varepsilon,\eta)
+\]
+means precisely the two equations in~\eqref{eq:roles}. The tuple, rather than an unqualified integer system number, is the portable identifier: the two-parameter and D1 catalogs use different sign-enumeration orders.
+
+A sparse bivariate term is stored as \texttt{[[a,b],c]} and means $ct^au^b$; a univariate resultant term \texttt{[[a],c]} means $ct^a$. In contrast, \texttt{coefficients\_high\_to\_low} in the factor catalog lists coefficients in descending order, including zeros. The fields \texttt{G1}, \texttt{G2}, \texttt{removed\_t\_power}, \texttt{F}, and \texttt{G} are checked through
+\[
+ G_1=t^jF,\qquad G_2=t^jG.
+\]
+The branch $t=0$ is checked separately whenever $j>0$. A nonzero integer \texttt{constant} and the complete factor list must multiply to the recorded resultant, with every multiplicity retained. A no-root record supplies both its witness prime and the polynomial's value at every residue.
+
+The acceptance check does not assume factor irreducibility and does not infer absence of rational solutions from a bounded search. It proves the resultant identity using the independent degree bound of Lemma~\ref{lem:elimination}, then checks the modular no-root witnesses and the remaining fibers.
+
+\subsection{A complete worked elimination}
+Consider $(k,\ell;m,n)=(2,1;1,0)$ and the assignment
+\[
+ (i,j,k,l,\varepsilon,\eta)=(0,1,2,3,-1,-1).
+\]
+With the numerators in~\eqref{eq:twoinputs}, this gives $F=E_0+E_2+E_3$ and $G=E_1+E_2-E_3$. No common $t$ is removed. As quadratics in $u$,
+\begin{align*}
+ F&=-2t(t^2+1)u^2+(4-12t^2)u+2t(5-3t^2),\\
+ G&=2t(3t^2-5)u^2+4t^2(3-t^2)u+2t(t^2+1).
+\end{align*}
+Writing their coefficients as $f_2,f_1,f_0$ and $g_2,g_1,g_0$, the certificate identity is
+\begin{equation}\label{eq:workedresultant}
+ \det\begin{pmatrix}
+ f_2&f_1&f_0&0\\0&f_2&f_1&f_0\\
+ g_2&g_1&g_0&0\\0&g_2&g_1&g_0
+ \end{pmatrix}=64t^2J(t),
+\end{equation}
+where
+\[
+ J(t)=3t^{12}+26t^{10}-251t^8+716t^6-803t^4+250t^2-5.
+\]
+Modulo $7$, its values at $0,1,\ldots,6$ are
+\[
+ (2,6,3,5,5,3,6).
+\]
+Its leading coefficient is $3\not\equiv0\pmod7$. Thus $J$ has no rational root by the denominator argument in Lemma~\ref{lem:elimination}. The only possible finite rational $t$ in this example is zero, where two offset magnitudes coincide. Both parameter-infinity boundaries are excluded by~\eqref{eq:collision}. The same acceptance steps apply to every record, with the factor lists and rational fibers shown in Table~\ref{tab:representatives}.
+
+\section{The squarefree three-prime configuration list}\label{app:orbits}
+The classification in Proposition~\ref{prop:orbits} concerns four-element sets of nonzero projective frequency vectors, not solutions of the circle equations. Choose the representative of each pair $\{v,-v\}$ whose first nonzero coordinate is positive. Of the $\binom{13}{4}=715$ four-subsets, retain exactly those for which every coordinate is nonzero in at least three rows. This gives 177 subsets.
+
+The acting group is the group of all signed coordinate permutations, of order $2^3\cdot3!=48$. Its action on projective vectors has kernel $\{I,-I\}$. The stabilizers below are computed in the full group of order 48, not its effective quotient of order 24; consequently each row satisfies
+\[
+ |\text{orbit}|\,|\text{stabilizer}|=48.
+\]
+Rows within a representative are unordered for classification, but their displayed order is used in every explicit matrix identity. The equalities $E3=E4$ and $F{-}1=F{-}3$ identify historical duplicate labels, not additional orbits.
+
+\input{orbits.tex}
+
+The fifteen listed orbits are pairwise disjoint and exhaust the 177 retained subsets. In particular, their sizes sum to 177. The torus isomorphism between $B2$ and $C$ in Section~\ref{sec:three} uses a larger class of integer coordinate changes and therefore does not contradict their being distinct rows of this finite-group classification. This table makes no claim that all fifteen configurations are excluded.
+
+\section{Local descent witnesses and complete elliptic groups}\label{app:descent}
+\subsection{Square classes and primitive covering equations}
+For $E:y^2=x^3+Ax^2+Bx$, the descent map at a point with $x\ne0$ is its $x$-coordinate modulo $\Q^{\times2}$. Together with the definitions at $\mathcal O$ and $(0,0)$, its image is contained in the signed squarefree divisors $d$ of $B$~\cite{SilvermanTate,SageDescent}. If $x=d(U/V)^2$, with coprime integers $U,V$ and $V\ne0$, substitution gives
+\[
+ N^2=dU^4+A U^2V^2+(B/d)V^4,\qquad
+ y=\frac{dUN}{V^3}.
+\]
+The rational number $N$ is an integer, since its square is an integer. The cases $V=0$ and $U=0$ recover the identity class and the class of $B$, respectively. In the local obstruction tests, ``primitive'' means $\gcd(U,V)=1$, so at least one of $U,V$ is a unit at every prime.
+
+The complete candidate and retained square-class data are:
+\begin{center}\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{rrlll}
+\toprule
+$A$ &$B$ & Classes not excluded & Excluded classes & Reason\\
+\midrule
+$6$ &$1$ &$-1,1$ & none & ---\\
+$-12$ &$32$ &$1,2$ &$-2,-1$ & real sign\\
+$-3$ &$4$ &$1,2$ &$-2,-1$ & real sign\\
+$6$ &$-7$ &$-7,1$ &$-1,7$ & modulo $16$\\
+$18$ &$1$ &$-1,1$ & none & ---\\
+$-36$ &$320$ &$1,5$ &$-10,-5,-2,-1$ & real sign\\
+&& &$2,10$ & modulo $64$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Every real-sign row has negative coefficients of $U^4$, $U^2V^2$, and $V^4$, so its right side is strictly negative for a nonzero real pair. A class left in the table is merely not excluded at this step. The image upper bounds, two on each side, already suffice in~\eqref{eq:descentrank} to prove rank zero; no local-to-global converse is assumed.
+
+\subsection{Exhaustive local charts}
+For modulus $p^e$, if $V$ is a unit divide the covering equation by $V^4$ and test $V=1$ with all residues $U/V$. Otherwise $U$ is a unit; divide by $U^4$ and test $U=1$ with $V/U$ divisible by $p$. In each case the corresponding rescaling of $N$ is by the square of a unit. Thus the property of being a square is preserved. These two charts exhaust all primitive pairs.
+
+The only finite-modulus obstructions needed here are:
+\begin{center}\small
+\begin{tabular}{crcll}
+\toprule
+$(A,B)$ & $d$ & Modulus & $V=1$, all $U$ & $U=1$, even $V$\\
+\midrule
+$(6,-7)$ & $-1$ &16& $\{7,12,15\}$ & $\{7,15\}$\\
+$(6,-7)$ & $7$ &16& $\{7,12,15\}$ & $\{7,15\}$\\
+$(-36,320)$ & $2$ &64& $\{32,48,62\}$ & $\{2,50\}$\\
+$(-36,320)$ & $10$ &64& $\{6,32,48\}$ & $\{10,58\}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The full square-residue sets are
+\begin{align*}
+ \operatorname{Sq}(16)&=\{0,1,4,9\},\\
+ \operatorname{Sq}(64)&=\{0,1,4,9,16,17,25,33,36,41,49,57\}.
+\end{align*}
+Every displayed covering-residue set is disjoint from the corresponding square-residue set. The companion checks also enumerate all primitive pairs directly, providing a second check on the normalized-chart calculations.
+
+\subsection{Torsion bounds prime by prime}
+Rank zero alone is not a complete point list. For the three original models, the following good-prime reductions bound the rational torsion:
+\begin{center}\small
+\begin{tabular}{ccl}
+\toprule
+$(A,B)$ & $(p,\#E(\F_p))$ & Consequence\\
+\midrule
+$(6,1)$ & $(3,4),(5,8)$ & torsion order divides $4$\\
+$(-3,4)$ & $(3,4),(5,4)$ & torsion order divides $4$\\
+$(18,1)$ & $(3,4),(7,4)$ & torsion order divides $4$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All indicated primes are good because they do not divide $16B^2(A^2-4B)$. For a torsion prime $\lambda\ne p$, the $\lambda$-primary rational torsion injects into $E(\F_p)$. The reduction at $p=3$ bounds the $2$-primary order by four and excludes every other prime except possibly $3$. The second reduction, whose order is not divisible by $3$, excludes $3$-primary torsion as well. This supplies the order-four bound without assuming injectivity of the full torsion group at a prime dividing its order. The four points in Table~\ref{tab:groups} satisfy the equations and are distinct, so they exhaust the rank-zero groups.
+
+\section{D1 normalization records and exceptional points}\label{app:d1checks}
+\subsection{Indexing the complete normalization catalog}
+For reproducibility, the D1 catalog orders the pairs $i<j$ lexicographically, then the two orders of the complementary pair $(k,l)$, then $(\varepsilon,\eta)$ in
+\[
+ (1,1),(1,-1),(-1,1),(-1,-1).
+\]
+Record numbers are zero-based. This convention produces the following partition of all 48 records:
+\input{d1_index_table.tex}
+The full kernel vectors and common divisors are retained in \path{verification/d1_norm/d1_certificate.json}. The eight residual records are $8,9,12,14,24,25,28,30$; the other forty are excluded as in Corollary~\ref{cor:forty}. In particular, sixteen records are degenerate before any elliptic argument, and twenty-four are excluded using the three elliptic descents.
+
+For record 8, the relation rows are
+\[
+ R=\begin{pmatrix}1&-1&0&-1\\0&-1&1&1\end{pmatrix}.
+\]
+Their images under $H(r)$ are
+\[
+ RH(r)=\begin{pmatrix}0&4r&-q\\2r^2&2r&q\end{pmatrix},
+ \qquad q=1+r^2.
+\]
+Their cross product is $2r(3q,-rq,-4r^2)$, yielding the two norms
+\[
+ (3q)^2+(-rq)^2=q^2(r^2+9),\qquad
+ q^2(r^2+9)-16r^4=r^6-5r^4+19r^2+9.
+\]
+This shows explicitly why the first square condition and the second discriminant condition must both be retained.
+
+For every record, the primitive kernel entries have gcd one in $\Q[r]$, so they do not vanish simultaneously at any parameter. The factors $r^2-3$ and $3r^2-1$ in the removed scalar have no rational roots: modulo $5$ their value lists are $(2,3,1,1,3)$ and $(4,2,1,1,2)$, with nonzero leading coefficients. The only rational rank-drop parameter is therefore $r=0$. That entire fiber, and $r=\infty$, have repeated first two sine magnitudes and are excluded directly.
+
+\subsection{A short squarefreeness witness and the infinity chart}
+The genus assertion in Lemma~\ref{lem:pullback} can be checked without a long integer Euclidean remainder sequence. Modulo $5$,
+\begin{equation}\label{eq:Pmodfive}
+ P(h)\equiv(h^2-2)(h^2+2)(h^4-2)(h^4+2).
+\end{equation}
+These factors are squarefree and pairwise coprime over $\F_5$. For instance, a common root of a quadratic and a quartic would have $h^4=4$ and also $h^4=2$ or $-2$, a contradiction in $\F_5$. The derivatives exclude repeated roots within each factor. Since $P$ is monic, this proves squarefreeness over $\Q$. The degree-twelve double cover has twelve simple geometric branch points and hence genus five.
+
+At infinity use $t=1/h$ and $\eta=Y/h^6$. Reciprocity of $P$ gives the local equation $\eta^2=P(t)$. At $t=0$ the two points are $(0,1)$ and $(0,-1)$, both smooth since $2\eta\ne0$. This verifies the two rational points at infinity and distinguishes them from the single coordinate value $h=\infty$. The eight points in $\mathcal K$ are exactly the fibers over $h=0,1,-1,\infty$; this says nothing about the existence of points over other rational parameters.
+
+\subsection{All reconstruction collisions}
+Let $e_0,e_1,e_2,e_3$ be the four polynomials in parentheses in~\eqref{eq:reconstructedsines}. Their six pairwise differences and six pairwise sums are:
+\input{collision_table.tex}
+The entries themselves are $h^4-62h^2+1$, $h^4-14h^2+1$, $h^4+34h^2+1$, and $-48h^2$. After extracting nonzero constants and powers of $h$, every nonconstant expression in this list or the table is $h^4+ch^2+1$ with
+\[
+ c\in\{-110,-62,-38,-14,10,34,82\}.
+\]
+The rational-root theorem restricts a rational zero to $h=\pm1$, where the value is $c+2\ne0$. For $h\notin\{0,\pm1\}$, the common multiplier $L=(1-h^2)/D(h)$ is nonzero and $D(h)>0$. Thus all four signed offsets are nonzero and their magnitudes are pairwise distinct.
+
+This last check is needed for the converse in Theorem~\ref{thm:main-d1}; solving the two linear relations alone would not suffice. Together with the conic inverse and the infinity chart, it accounts for every rational exceptional parameter used in that theorem. It does not prove Conjecture~\ref{conj:points}.

@@ -1,0 +1,1503 @@
+{
+  "description": "Exact model-compatible data with published Cremona full bases; not a completed quadratic Chabauty calculation.",
+  "curves": {
+    "E_A": {
+      "f_cubic": "1*s^3+-5*s^2+19*s+9",
+      "genus2_curve_C": "Y^2 = 1*w^6 + -5*w^4 + 19*w^2 + 9*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        1,
+        0,
+        -5,
+        0,
+        19,
+        0,
+        9
+      ],
+      "quotient1_E": {
+        "label_conductor": 1968,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          11,
+          35
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          -5,
+          0,
+          19,
+          9
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "1",
+          "r": "2",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "0",
+            "3"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "-2",
+            "3"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "-2",
+              "3"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "5": 8,
+          "7": 4,
+          "11": 17,
+          "13": 18
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "1968m1",
+        "published_full_basis": [
+          [
+            "-2",
+            "3"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 123,
+        "minimal_model": [
+          0,
+          1,
+          1,
+          -10,
+          10
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 5,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          19,
+          0,
+          -45,
+          81
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "-5",
+          "t": "4"
+        },
+        "uploaded_points": [
+          [
+            "-21",
+            "12"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "-4",
+            "1"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 5,
+          "multiples_of_points": [
+            [
+              "-725221043/282307204",
+              "21621036175721/4743325641608"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "5": 10,
+          "7": 10,
+          "11": 15,
+          "13": 20
+        },
+        "torsion_order_divides_point_count_gcd": 5,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "123a1",
+        "published_full_basis": [
+          [
+            "1",
+            "1"
+          ]
+        ],
+        "published_torsion_generators": [
+          [
+            "2",
+            "1"
+          ]
+        ],
+        "published_rank": 1,
+        "published_torsion_structure": [
+          5
+        ],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": -1,
+            "torsion_coefficient": 4
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        43,
+        47
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    },
+    "E_B": {
+      "f_cubic": "1*s^3+11*s^2+-5*s+1",
+      "genus2_curve_C": "Y^2 = 1*w^6 + 11*w^4 + -5*w^2 + 1*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        1,
+        0,
+        11,
+        0,
+        -5,
+        0,
+        1
+      ],
+      "quotient1_E": {
+        "label_conductor": 352,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -45,
+          133
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          11,
+          0,
+          -5,
+          1
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "1",
+          "r": "-4",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "-1",
+            "4"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "3",
+            "4"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "3",
+              "4"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 5,
+          "5": 5,
+          "7": 12,
+          "13": 16
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "352d1",
+        "published_full_basis": [
+          [
+            "3",
+            "4"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 352,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          3,
+          11
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          -5,
+          0,
+          11,
+          1
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "1",
+          "r": "2",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "3",
+            "4"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "1",
+            "4"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "1",
+              "4"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 3,
+          "5": 9,
+          "7": 12,
+          "13": 16
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "352b1",
+        "published_full_basis": [
+          [
+            "1",
+            "4"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    },
+    "E_C": {
+      "f_cubic": "1*s^3+-5*s^2+11*s+1",
+      "genus2_curve_C": "Y^2 = 1*w^6 + -5*w^4 + 11*w^2 + 1*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        1,
+        0,
+        -5,
+        0,
+        11,
+        0,
+        1
+      ],
+      "quotient1_E": {
+        "label_conductor": 352,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          3,
+          11
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          -5,
+          0,
+          11,
+          1
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "1",
+          "r": "2",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "3",
+            "4"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "1",
+            "4"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "1",
+              "4"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 3,
+          "5": 9,
+          "7": 12,
+          "13": 16
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "352b1",
+        "published_full_basis": [
+          [
+            "1",
+            "4"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 352,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -45,
+          133
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          11,
+          0,
+          -5,
+          1
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "1",
+          "r": "-4",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "-1",
+            "4"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "3",
+            "4"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "3",
+              "4"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 5,
+          "5": 5,
+          "7": 12,
+          "13": 16
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "352d1",
+        "published_full_basis": [
+          [
+            "3",
+            "4"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    },
+    "E_D": {
+      "f_cubic": "25*s^3+-29*s^2+11*s+1",
+      "genus2_curve_C": "Y^2 = 25*w^6 + -29*w^4 + 11*w^2 + 1*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        25,
+        0,
+        -29,
+        0,
+        11,
+        0,
+        1
+      ],
+      "quotient1_E": {
+        "label_conductor": 1840,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          0,
+          23
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          -29,
+          0,
+          275,
+          625
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "11",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "15",
+            "40"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "1",
+            "5"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "1",
+              "5"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 3,
+          "7": 8,
+          "11": 14,
+          "13": 19
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "1840d1",
+        "published_full_basis": [
+          [
+            "1",
+            "5"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 184,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -4,
+          5
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          11,
+          0,
+          -29,
+          25
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "-5",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "3",
+            "-8"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "2",
+            "-1"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "2",
+              "-1"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 5,
+          "5": 8,
+          "7": 12,
+          "11": 14,
+          "13": 7
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "184b1",
+        "published_full_basis": [
+          [
+            "2",
+            "1"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": -1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        3,
+        7,
+        11,
+        13,
+        17,
+        19,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    },
+    "E_D_tw2": {
+      "f_cubic": "50*s^3+-58*s^2+22*s+2",
+      "genus2_curve_C": "Y^2 = 50*w^6 + -58*w^4 + 22*w^2 + 2*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        50,
+        0,
+        -58,
+        0,
+        22,
+        0,
+        2
+      ],
+      "quotient1_E": {
+        "label_conductor": 7360,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -1,
+          185
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          -58,
+          0,
+          1100,
+          5000
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "18",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "50",
+            "200"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "8",
+            "25"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "8",
+              "25"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 5,
+          "7": 8,
+          "11": 10,
+          "13": 9
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "7360r1",
+        "published_full_basis": [
+          [
+            "8",
+            "25"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 1472,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          -17,
+          23
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          22,
+          0,
+          -116,
+          200
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "-6",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "2",
+            "8"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "2",
+            "1"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "2",
+              "1"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 3,
+          "5": 4,
+          "7": 12,
+          "11": 10,
+          "13": 21
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "1472a1",
+        "published_full_basis": [
+          [
+            "2",
+            "1"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        3,
+        7,
+        11,
+        13,
+        17,
+        19,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    },
+    "E_D_twm2": {
+      "f_cubic": "-50*s^3+58*s^2+-22*s+-2",
+      "genus2_curve_C": "Y^2 = -50*w^6 + 58*w^4 + -22*w^2 + -2*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        -50,
+        0,
+        58,
+        0,
+        -22,
+        0,
+        -2
+      ],
+      "quotient1_E": {
+        "label_conductor": 7360,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          -1,
+          -185
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          58,
+          0,
+          1100,
+          -5000
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "-18",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "150",
+            "2200"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "42",
+            "275"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "42",
+              "275"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 3,
+          "7": 8,
+          "11": 14,
+          "13": 9
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "7360a1",
+        "published_full_basis": [
+          [
+            "42",
+            "275"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 1472,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -17,
+          -23
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          -22,
+          0,
+          -116,
+          -200
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "6",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "38",
+            "136"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "8",
+            "17"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "8",
+              "17"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 5,
+          "5": 4,
+          "7": 4,
+          "11": 14,
+          "13": 21
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "1472n1",
+        "published_full_basis": [
+          [
+            "8",
+            "17"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        3,
+        7,
+        11,
+        13,
+        17,
+        19,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    },
+    "E_D_tw5": {
+      "f_cubic": "125*s^3+-145*s^2+55*s+5",
+      "genus2_curve_C": "Y^2 = 125*w^6 + -145*w^4 + 55*w^2 + 5*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        125,
+        0,
+        -145,
+        0,
+        55,
+        0,
+        5
+      ],
+      "quotient1_E": {
+        "label_conductor": 9200,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -8,
+          2887
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          -145,
+          0,
+          6875,
+          78125
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "47",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "-5",
+            "200"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "-13",
+            "25"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "-13",
+              "25"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 5,
+          "7": 8,
+          "11": 14,
+          "13": 9
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "9200a1",
+        "published_full_basis": [
+          [
+            "-13",
+            "25"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 4600,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          -108,
+          413
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          55,
+          0,
+          -725,
+          3125
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "2",
+          "r": "-17",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "-25",
+            "200"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "-2",
+            "25"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "-2",
+              "25"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "3": 3,
+          "7": 4,
+          "11": 14,
+          "13": 21
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "4600l1",
+        "published_full_basis": [
+          [
+            "-2",
+            "25"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        3,
+        7,
+        11,
+        13,
+        17,
+        19,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    },
+    "E_A_cubic_E2": {
+      "f_cubic": "81*s^3+-1152*s^2+5632*s+-9216",
+      "genus2_curve_C": "Y^2 = 81*w^6 + -1152*w^4 + 5632*w^2 + -9216*w^0  (bielliptic, maps w->s=w^2 and w->-w)",
+      "sextic_coeffs_w6_to_w0": [
+        81,
+        0,
+        -1152,
+        0,
+        5632,
+        0,
+        -9216
+      ],
+      "quotient1_E": {
+        "label_conductor": 1968,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          11,
+          35
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E via s=w^2",
+        "original_weierstrass_model": [
+          0,
+          -1152,
+          0,
+          456192,
+          -60466176
+        ],
+        "original_point_to_curve_map": "X=A*w^2, Z=A*Y",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "6",
+          "r": "396",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "324",
+            "648"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "-2",
+            "3"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "-2",
+              "3"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "5": 8,
+          "7": 4,
+          "11": 17,
+          "13": 18
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "1968m1",
+        "published_full_basis": [
+          [
+            "-2",
+            "3"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "quotient2_Ep": {
+        "label_conductor": 492,
+        "minimal_model": [
+          0,
+          1,
+          0,
+          11,
+          695
+        ],
+        "rank": [
+          1,
+          1
+        ],
+        "torsion": 1,
+        "map": "C -> E' via (w,Y) -> (s, Y') with s=w^2, related by y^2=s*f(s)",
+        "original_weierstrass_model": [
+          0,
+          5632,
+          0,
+          10616832,
+          6879707136
+        ],
+        "original_point_to_curve_map": "X=D/w^2, Z=D*Y/w^3",
+        "model_change": {
+          "convention": "X=u^2*x_min+r; Z=u^3*y_min+t",
+          "u": "8",
+          "r": "-1856",
+          "t": "0"
+        },
+        "uploaded_points": [
+          [
+            "-2304",
+            "9216"
+          ]
+        ],
+        "points_on_minimal_model_verified": [
+          [
+            "-7",
+            "18"
+          ]
+        ],
+        "non_torsion_witness": {
+          "torsion_order_upper_bound": 1,
+          "multiples_of_points": [
+            [
+              "-7",
+              "18"
+            ]
+          ]
+        },
+        "rank_lower_bound_verified": 1,
+        "rank_status": "Exact model matched to Cremona published rank; external arithmetic input, not a new descent run",
+        "basis_status": "Use the cited full basis and torsion generators; original point expressions independently checked",
+        "finite_field_point_counts": {
+          "5": 8,
+          "7": 12,
+          "11": 17,
+          "13": 10
+        },
+        "torsion_order_divides_point_count_gcd": 1,
+        "uploaded_torsion_consistent_with_counts": true,
+        "published_cremona_label": "492b1",
+        "published_full_basis": [
+          [
+            "-7",
+            "18"
+          ]
+        ],
+        "published_torsion_generators": [],
+        "published_rank": 1,
+        "published_torsion_structure": [],
+        "old_point_in_published_basis": [
+          {
+            "free_coefficient": 1,
+            "torsion_coefficient": 0
+          }
+        ]
+      },
+      "rank_J": 2,
+      "good_primes_for_QC": [
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        43,
+        47
+      ],
+      "known_rational_points_C": "w in {0, oo} and any w with w^2 a rational root of f=square; from sieve: only trivial (degenerate) \u2014 QC must confirm no others",
+      "QC_status": "NOT RUN; supplied driver has only a bounded point search"
+    }
+  }
+}

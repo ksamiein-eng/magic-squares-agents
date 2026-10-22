@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "suite": "all",
+  "jobs": [
+    {
+      "name": "two_prime_sum7",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 19.843,
+      "log": "two_prime_sum7.log"
+    },
+    {
+      "name": "rank_zero_baseline",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.942,
+      "log": "rank_zero_baseline.log"
+    },
+    {
+      "name": "published_basis_matches",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.914,
+      "log": "published_basis_matches.log"
+    },
+    {
+      "name": "canonical_height_intervals",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.641,
+      "log": "canonical_height_intervals.log"
+    },
+    {
+      "name": "rank_one_global_bounds",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 6.716,
+      "log": "rank_one_global_bounds.log"
+    },
+    {
+      "name": "rank_two_height_matrices",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.601,
+      "log": "rank_two_height_matrices.log"
+    },
+    {
+      "name": "new_octic_arithmetic",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.589,
+      "log": "new_octic_arithmetic.log"
+    },
+    {
+      "name": "torus_transport_stdlib",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.629,
+      "log": "torus_transport_stdlib.log"
+    },
+    {
+      "name": "d1_norm_stdlib",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.617,
+      "log": "d1_norm_stdlib.log"
+    },
+    {
+      "name": "two_prime_symbolic",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 169.892,
+      "log": "two_prime_symbolic.log"
+    },
+    {
+      "name": "two_prime_negative_tests",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 27.301,
+      "log": "two_prime_negative_tests.log"
+    },
+    {
+      "name": "three_prime_full_audit",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 97.615,
+      "log": "three_prime_full_audit.log"
+    },
+    {
+      "name": "three_prime_negative_tests",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 1.013,
+      "log": "three_prime_negative_tests.log"
+    },
+    {
+      "name": "nonlinear_genera",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 90.317,
+      "log": "nonlinear_genera.log"
+    },
+    {
+      "name": "nonlinear_full_fibers",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 8.404,
+      "log": "nonlinear_full_fibers.log"
+    },
+    {
+      "name": "d3_lifting_covers",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 17.104,
+      "log": "d3_lifting_covers.log"
+    },
+    {
+      "name": "d3_rank_zero_family",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 1.163,
+      "log": "d3_rank_zero_family.log"
+    },
+    {
+      "name": "reciprocal_octic_routes",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 2.44,
+      "log": "reciprocal_octic_routes.log"
+    },
+    {
+      "name": "geometry_regressions",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 3.823,
+      "log": "geometry_regressions.log"
+    },
+    {
+      "name": "height_regressions",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.682,
+      "log": "height_regressions.log"
+    },
+    {
+      "name": "new_orbit_factors",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 2.732,
+      "log": "new_orbit_factors.log"
+    },
+    {
+      "name": "new_progress_negative_tests",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.711,
+      "log": "new_progress_negative_tests.log"
+    },
+    {
+      "name": "d1_norm_symbolic_transport",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 1.468,
+      "log": "d1_norm_symbolic_transport.log"
+    },
+    {
+      "name": "d1_norm_negative_tests",
+      "status": "PASS",
+      "exit_code": 0,
+      "seconds": 0.787,
+      "log": "d1_norm_negative_tests.log"
+    }
+  ],
+  "scope": "Sum-seven exclusion; baseline orbit closures; nonlinear projection genera and D3 covers; 120 additional factor closures including the norm constraint and torus transports; forty D1 signed systems closed and eight equivalent to one genus-five existence problem; published basis matches; exact elliptic height bounds. Not full rational-point classification or quadratic Chabauty.",
+  "external_premise": "Cremona Table Two ranks and full Mordell-Weil bases for exactly matched models",
+  "isolation": "Every job has its own full temporary verification tree; shipped records are never overwritten",
+  "software_trust": "Python, SymPy exact polynomial routines, supplied verification implementations; not a formal proof assistant"
+}

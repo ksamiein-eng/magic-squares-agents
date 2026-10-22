@@ -1,0 +1,97 @@
+[
+  {
+    "reason": "Revision date",
+    "before": "\\date{2 October 2026}",
+    "after": "\\date{5 October 2026}"
+  },
+  {
+    "reason": "Separate the sixteen direct degeneracies from the twenty-four elliptic exclusions",
+    "before": "Three elementary elliptic descents exclude forty of its forty-eight signed systems.",
+    "after": "Sixteen of its forty-eight signed systems are immediately degenerate, and three elementary elliptic descents exclude another twenty-four."
+  },
+  {
+    "reason": "Define the four offsets without implying that every opposite entry exceeds the center",
+    "before": "The four positive differences from the center to opposite entries have the form",
+    "after": "Each opposite pair has one entry above and one below the center. The four positive differences between the larger entry of each pair and the center have the form"
+  },
+  {
+    "reason": "State the integral domain of every frequency parameter",
+    "before": "\\qquad k,\\ell>0,\\quad |m|<k,\\quad |n|<\\ell.",
+    "after": "\\qquad k,\\ell\\in\\Z_{>0},\\quad m,n\\in\\Z,\\quad |m|<k,\\quad |n|<\\ell."
+  },
+  {
+    "reason": "Correct the introduction count attribution consistently with the abstract",
+    "before": "It excludes forty signed systems by three rank-zero elliptic descents and treats the eight remaining systems",
+    "after": "It excludes sixteen signed systems directly and twenty-four by three rank-zero elliptic descents, then treats the eight remaining systems"
+  },
+  {
+    "reason": "Make factorization hypotheses explicit before Gaussian indexing",
+    "before": "where one Gaussian prime above each $\\ell_j$ is fixed. Unique factorization gives the following indexing.",
+    "after": "where the $\\ell_j$ are distinct primes congruent to $1$ modulo $4$, the $k_j$ are positive integers, and one Gaussian prime above each $\\ell_j$ is fixed. Unique factorization gives the following indexing."
+  },
+  {
+    "reason": "Make the lattice domain in the finite triangle count explicit",
+    "before": "0\\ne m=(m_1,\\ldots,m_r),\\qquad |m_j|\\le k_j,",
+    "after": "0\\ne m=(m_1,\\ldots,m_r)\\in\\Z^r,\\qquad |m_j|\\le k_j,"
+  },
+  {
+    "reason": "Specify how a Gaussian representative yields positive triangle legs",
+    "before": "Its primitive hypotenuse and common leg divisor are",
+    "after": "The legs are $|\\operatorname{Re}Z_m|$ and $|\\operatorname{Im}Z_m|$, in either order. Its primitive hypotenuse and common leg divisor are"
+  },
+  {
+    "reason": "Repair the order of quantifiers in the full-depth statement",
+    "before": "In a primitive magic square, at least three of the four triangle vectors satisfy $|m_\\ell|=k$ for every $\\ell^k\\Vert y$.",
+    "after": "In a primitive magic square, for each prime power $\\ell^k\\Vert y$, at least three of the four triangle vectors satisfy $|m_\\ell|=k$. The three vectors may depend on $\\ell$."
+  },
+  {
+    "reason": "Clarify complete projective coverage of the rational circle",
+    "before": "Every element of $\\T(\\Q)$ can be written projectively as",
+    "after": "Every element of $\\T(\\Q)$ can be written uniquely in the projective parametrization"
+  },
+  {
+    "reason": "Give the inverse parameter and the unique missing affine point",
+    "before": "For a frequency $v=(v_1,\\ldots,v_r)$ with $|v_j|\\le k_j$, a common homogeneous numerator of its sine is",
+    "after": "The inverse is $a/b=\\im z/(1+\\operatorname{Re}z)$ when $z\\ne-1$; the point $z=-1$ corresponds to $[1:0]$. For a frequency $v=(v_1,\\ldots,v_r)\\in\\Z^r$ with $|v_j|\\le k_j$, a common homogeneous numerator of its sine is"
+  },
+  {
+    "reason": "Fix the kernel scalar convention and justify nonvanishing from polynomial coprimality",
+    "before": "where $v$ is primitive over $\\Z[r]$ up to a constant. The recorded identities have $\\gcd(v_1,v_2,v_3)=1$ over $\\Q[r]$, and the only nonconstant factors of $g$ are",
+    "after": "where $g\\in\\Z[r]\\setminus\\{0\\}$ and $v\\in\\Z[r]^3$ have the normalization fixed by the exact record. The entries of $v$ have gcd one over $\\Q[r]$. They therefore do not vanish simultaneously at any parameter. The only nonconstant factors of $g$ are"
+  },
+  {
+    "reason": "Specify the descent map and the primitive-pair convention",
+    "before": "An image class is represented by a signed squarefree divisor $d$ of $B$ and must permit a primitive integral solution of",
+    "after": "For a point with $x\\ne0$, $\\alpha$ is the square class of $x$. An image class is represented by a signed squarefree divisor $d$ of $B$ and must permit an integral solution, with $\\gcd(U,V)=1$, of"
+  },
+  {
+    "reason": "Avoid silently replacing prime-to-p torsion injectivity by full torsion injectivity",
+    "before": "The prime-to-$p$ injectivity of torsion reduction at two distinct good primes bounds rational torsion by four.",
+    "after": "Prime-to-$p$ injectivity of torsion reduction bounds each primary component; for these particular counts it gives torsion order dividing four. Appendix~\\ref{app:descent} supplies the prime-by-prime argument."
+  },
+  {
+    "reason": "Add a human-readable squarefreeness witness independent of an opaque gcd result",
+    "before": "Exact Euclidean division gives $\\gcd(P,P')=1$, as also recorded by the checker.",
+    "after": "Squarefreeness follows from the explicit coprime factorization modulo $5$ in Appendix~\\ref{app:d1checks}; exact Euclidean division independently gives $\\gcd(P,P')=1$."
+  },
+  {
+    "reason": "Identify the two projective infinity points in an explicit nonsingular chart",
+    "before": "The leading coefficient is one, giving two rational infinity points.",
+    "after": "The infinity chart $t=1/h$, $\\eta=Y/h^6$ has equation $\\eta^2=P(t)$ and two smooth rational points $(0,\\pm1)$, giving the two infinity points."
+  },
+  {
+    "reason": "Expose all nondegeneracy checks instead of only their factor-shape summary",
+    "before": "Every entry, and every sum or difference of two entries in the parenthesized vector, factors into nonzero rational constants, powers of $h$, and polynomials of the form $h^4+ch^2+1$.",
+    "after": "Every entry, and every sum or difference of two entries in the parenthesized vector, factors into nonzero rational constants, powers of $h$, and polynomials of the form $h^4+ch^2+1$. Appendix~\\ref{app:d1checks} lists all twelve pairwise expressions explicitly."
+  },
+  {
+    "reason": "Connect the computer-assisted lemma to an inspectable worked certificate",
+    "before": "Their exact inputs and outputs are part of the accompanying package.",
+    "after": "Their exact inputs and outputs are part of the accompanying package. Appendix~\\ref{app:representatives} gives a complete worked system, its Sylvester determinant, and a modular no-root witness."
+  },
+  {
+    "reason": "Replace the table-only appendices with four proof-oriented appendices",
+    "before_line_count": 46,
+    "after": "See manuscript/appendices.tex and generated table inputs."
+  }
+]

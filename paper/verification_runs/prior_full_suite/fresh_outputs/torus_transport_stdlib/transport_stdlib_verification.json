@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "frequency_maps": 5,
+  "signed_row_spaces": 240,
+  "universal_addition_map": true,
+  "scope": "Integer torus transformations only; not a standalone proof of the source orbit theorems."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "systems_verified": 48,
+  "signed_row_spaces_verified": 48,
+  "raw_signed_assignments_compared": 192,
+  "factor_count": 28,
+  "rootless_factor_count": 25,
+  "modular_primes": [
+    3,
+    5,
+    7
+  ],
+  "only_possible_finite_t": [
+    "-1",
+    "0",
+    "1"
+  ],
+  "projective_boundaries": "both lines and their intersection proved degenerate",
+  "claim": "(2,1) nonzero-drop representative has no nondegenerate rational-circle solution",
+  "sympy_version": "1.14.0"
+}

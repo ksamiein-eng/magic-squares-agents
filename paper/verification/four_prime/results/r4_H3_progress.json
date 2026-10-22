@@ -1,0 +1,16 @@
+{
+ "stats": {
+  "orbits": 113,
+  "raw_confs": 11862,
+  "H": 3,
+  "grid_values": 16,
+  "triples": 4096,
+  "systems_checked": 21696,
+  "candidates_exact_checked": 3731712,
+  "identically_zero_systems": 90912,
+  "identically_zero_families_degenerate": 90912
+ },
+ "orbits_done": 113,
+ "elapsed_s": 192,
+ "found": []
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "tests": [
+    [
+      "D",
+      "rejected"
+    ],
+    [
+      "U coefficient",
+      "rejected"
+    ],
+    [
+      "V coefficient",
+      "rejected"
+    ],
+    [
+      "residue minima",
+      "51 exact small-modulus regressions"
+    ]
+  ]
+}

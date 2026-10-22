@@ -1,0 +1,68 @@
+{
+  "title": "Rational-circle rigidity for magic squares of squares: certified exclusions, a genus-five reduction, and surfaces of general type",
+  "release": "Author-review draft with rigidity section, second referee pass applied, 13 October 2026",
+  "main_article_pages": 29,
+  "bibliography_entries": 19,
+  "main_results": [
+    "Exclusion of specified rational-circle two-parameter normal forms through exponent sum seven",
+    "Exact D1 existence equivalence with additional rational points on an explicit genus-five curve",
+    "Four explicit integer-torus transfer identities",
+    "Rational-circle rigidity conjecture; exhaustive four-parameter search at projective height <= 4 (0 and infinity included, free-angle families handled exactly) over all 11,862 squarefree full-depth configurations finds no admissible point",
+    "All 48 Hadamard four-parameter solution surfaces are of general type: degree-8 covers of a minimal surface with p_g=11, q=0, K^2=32"
+  ],
+  "new_mathematical_range": false,
+  "residual_eight_point_list_complete": false,
+  "originality_assessment": "Bounded primary-source comparison; no first-in-literature claim",
+  "human_review_completed": false,
+  "author_details_complete": false,
+  "public_archive_doi": null,
+  "proof_record_policy": "All 251 verification files copied from the latest research package retain identical bytes; broader results stay in the extended record.",
+  "verification_stages": 16,
+  "appendices": 4,
+  "source_claims_reviewed": 22,
+  "numbered_equations_reviewed": 29,
+  "new_in_this_release": "Section 8 (rigidity conjecture, Proposition 8.2, Theorem 8.3), verification/four_prime/, six new verifier stages; Conjecture 7.3 restated as the D1 instance of rigidity; title and abstract updated",
+  "independent_audit_of_section_8": false,
+  "referee_pass_8_october": {
+    "paper_fixes": [
+      "full-depth defined for general integer matrices so Theorem 1.1 is a genuine case of Conjecture 8.1",
+      "dichotomy restated as 'smallest failing r' (not an r=4 dichotomy)",
+      "Conjecture 7.3 equivalent to rigidity for D1, implies it for B2,C,E2",
+      "Proposition 8.2 restated at projective height 4 including 0 and infinity",
+      "Theorem 8.3(1) now states within-B_i intersections are transversal (needed for A_1 only)",
+      "'complete intersection' hedged by no-common-component",
+      "abstract: stronger than nonexistence for primitive squares"
+    ],
+    "code_fixes": [
+      "r4search.py: grid is projective (0 and infinity included); the branch where both relations vanish identically (a free-angle family) was previously skipped silently \u2014 it occurs 12,240 times at height 4 and is now decided exactly (every family is degenerate)",
+      "verify_hadamard_types.py: contact-order test documented as conservative"
+    ],
+    "legacy": "the earlier finite-chart height-5 sweep (no 0/inf, free-angle branch untreated) is kept as results/r4_H5_affine_legacy.json and is not relied on"
+  },
+  "referee_pass_13_october": {
+    "fixes": [
+      "Theorem 8.3 proof: type II has 16 simple tangencies and NO transversal B1\u2229B2 points (intersection number 32 = 16\u00b72); the earlier text said 16+16, which is impossible",
+      "Theorem 8.3(3): the angle change is a torus isogeny; the induced map of compactifications is a dominant generically finite RATIONAL map of degree 8, not a finite morphism; \u03ba-monotonicity for rational maps used",
+      "all B1\u2229B2 counts re-derived against the intersection number for all four types"
+    ],
+    "added": [
+      "Conjecture 8.5 (weak form: non-density, the statement Bombieri\u2013Lang actually supports)",
+      "Conjecture 8.6 (torsion-coset hypothesis) with its inductive reduction of rigidity in all dimensions to the three-parameter cases"
+    ],
+    "open_positioning_issue": "the Schwarz archive's claimed uniform two-prime and squarefree three-prime theorems are unaudited; if correct, the arithmetic corollary of Theorem 1.1 is subsumed (the relaxed-problem statements are unaffected)"
+  },
+  "archive_audit_13_october": {
+    "two_prime_note": "VERIFIED IN FULL (13 Oct, second session): block-balance Sections 3,4,7,8,9,10; two-prime Sections 1,3,4,5,6 (all four J rows, gcds, norms to the quartic lemma = reciprocal of our Prop 6.2 quartic via a 2-isogenous conductor-56 model, parity row, |n|<6 endgame), 7, 9 (structure), 10 (coupled equations, mod-16 step re-derived with residual squares, descent). Inputs not re-derived: Fermat's X^2+Y^4=Z^4 (classical); 'exceptions distinct' and 'not both balanced' from squarefree-semiprime.md, which are special cases of our Lemma 2.7 and Corollary 3.3. VERDICT: the theorem 'no primitive square has a center root with exactly two prime factors' is correct.",
+    "three_prime_note": "VERIFIED: all elliptic curves (cond 80 = orbit A; cond 48 Z^2=T(T+1)(T+9) rank 0 with exact T-set; cond 32; cond 56 quartic-lemma curve); Section 5 in full; Section 2 mechanism; Section 17 block-generic facts. HOURGLASS note (which Section 2 imports) VERIFIED IN FULL: g=1 reduction (no cube roots of unity in Q(i); parity), 111-never-coherent (four units summing to zero split into antipodal pairs via e1=e3=0, forcing two denominators to 1), 211-never-coherent (reduction 2xy+x-y=2 -> y=(R-3iS)/(R+3iS) -> R^2+S^2=A^2 & R^2+9S^2=W^2 -> E:V^2=T(T+1)(T+9) rank 0, no positive rational square T). NOT re-derived line by line: three-prime note Sections 6-16 (per-class exclusions, ~1,300 lines), Section 17 transfer step by step. Every checked claim correct.",
+    "assessment": "method coherent; every checkable claim so far correct; the two-prime theorem is probably correct, so the arithmetic corollary of Theorem 1.1 is likely subsumed; the relaxed-problem statements are unaffected",
+    "correction_to_earlier_status": "the earlier 'cannot be resolved from here' was an effort statement, not an impossibility; the notes are reachable and auditable",
+    "implication": "Two primes: the arithmetic corollary of Theorem 1.1 (k+l>=8) IS subsumed; Theorem 1.1's relaxed-problem statement is not and cannot be reached by the archive's method. Three primes: curves/first class/mechanisms verified, Sections 6-16 and hourglass proofs not yet; if the squarefree theorem holds, the actual-square three-prime case is closed by their method, while our Theorem 1.2 and Section 8 remain relaxed-problem statements independent of it."
+  },
+  "changes_after_archive_audit": [
+    "abstract: two-prime result reframed (relaxed exclusion is the content; k+l>=8 is weaker than the archive's verified full exclusion)",
+    "intro: remark after Theorem 1.1 pointing to the verified archive theorem",
+    "Section 8: rigidity at r=2 would be a trigonometric proof of the archive's two-prime theorem",
+    "Conjecture 7.3: hedged remark on the archive's three-prime claim",
+    "new verifier stage verification/archive_audit/archive_checks.py (20 checks)"
+  ]
+}

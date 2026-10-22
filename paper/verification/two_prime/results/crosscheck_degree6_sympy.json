@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "systems": 1200,
+  "numerator_method": "Chebyshev T_n and U_(n-1)",
+  "determinant_method": "direct symbolic Sylvester matrix over ZZ[t], SymPy DomainMatrix",
+  "resultant_calls": 0,
+  "factorization_calls": 0,
+  "rational_root_solver_calls": 0,
+  "normal_forms_checked_by_gcd_reduction": 95,
+  "finite_fibers_and_projective_boundaries": "independent symbolic identities checked",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 40.025
+}

@@ -1,0 +1,4410 @@
+{
+ "config": "E2",
+ "elements": [
+  [
+   1,
+   -1,
+   1
+  ],
+  [
+   1,
+   -1,
+   -1
+  ],
+  [
+   1,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   1
+  ]
+ ],
+ "parametrization": "original 2m (see Appendix B pullback identity)",
+ "E_polys": [
+  "2*t**2*u**2*v - 2*t**2*u*v**2 + 2*t**2*u - 2*t**2*v + 2*t*u**2*v**2 - 2*t*u**2 + 8*t*u*v - 2*t*v**2 + 2*t - 2*u**2*v + 2*u*v**2 - 2*u + 2*v",
+  "-2*t**2*u**2*v - 2*t**2*u*v**2 + 2*t**2*u + 2*t**2*v + 2*t*u**2*v**2 - 2*t*u**2 - 8*t*u*v - 2*t*v**2 + 2*t + 2*u**2*v + 2*u*v**2 - 2*u - 2*v",
+  "-2*t**2*u*v**2 - 2*t**2*u - 2*t*u**2*v**2 - 2*t*u**2 + 2*t*v**2 + 2*t + 2*u*v**2 + 2*u",
+  "2*t**2*u**2*v + 2*t**2*v + 2*u**2*v + 2*v"
+ ],
+ "systems": [
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u - 4*t**2*v + 4*t*u**2*v**2 + 8*t*u*v - 4*t*v**2 - 4*u**2*v - 4*u",
+   "G2": "4*t**2*u + 4*t**2*v + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 + 4*u**2*v - 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t - u",
+     "bidegree": [
+      1,
+      1
+     ],
+     "type": "degenerate_component"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v + 4*t**2*u + 4*t*u**2*v**2 + 8*t*u*v - 4*t*v**2 - 4*u + 4*v",
+   "G2": "-4*t**2*u**2*v + 4*t**2*u + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 4*u - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t*u + 1",
+     "bidegree": [
+      1,
+      1
+     ],
+     "type": "degenerate_component"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    -1,
+    1
+   ],
+   "G1": "-4*t**2*u*v**2 - 4*t**2*v - 4*t*u**2 + 8*t*u*v + 4*t - 4*u**2*v + 4*u*v**2",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t - u",
+     "bidegree": [
+      1,
+      1
+     ],
+     "type": "degenerate_component"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    2,
+    3,
+    -1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 + 8*t*u*v + 4*t + 4*u*v**2 + 4*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 - 8*t*u*v + 4*t + 4*u*v**2 - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t*u + 1",
+     "bidegree": [
+      1,
+      1
+     ],
+     "type": "degenerate_component"
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u - 4*t**2*v + 4*t*u**2*v**2 + 8*t*u*v - 4*t*v**2 - 4*u**2*v - 4*u",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 - 8*t*u*v + 4*t + 4*u*v**2 - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 + t**7*u**7 - 3*t**7*u**5 + 3*t**7*u**3 - t**7*u + 4*t**6*u**6 - 16*t**6*u**4 + 4*t**6*u**2 - 3*t**5*u**7 + 25*t**5*u**5 - 25*t**5*u**3 + 3*t**5*u + 2*t**4*u**8 - 16*t**4*u**6 + 40*t**4*u**4 - 16*t**4*u**2 + 2*t**4 + 3*t**3*u**7 - 25*t**3*u**5 + 25*t**3*u**3 - 3*t**3*u + 4*t**2*u**6 - 16*t**2*u**4 + 4*t**2*u**2 - t*u**7 + 3*t*u**5 - 3*t*u**3 + t*u + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "4096*tau**4 - 2048*tau**2 - 2048",
+        "q": "-8192*tau**3 - 4096*tau",
+        "r": "-4096*tau**4 - 2048*tau**2 - 2048"
+       },
+       "D(tau)": "33554432*tau**6 + 33554432*tau**4 + 16777216*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "33554432*tau**4 + 33554432*tau**2 + 16777216",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -9,
+         -7
+        ],
+        "conductor": 128,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 + 69632*tau**4 - 2048",
+        "q": "8192*tau**7 + 40960*tau**5 - 40960*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 - 61440*tau**4 - 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 134217728*tau**12 + 1006632960*tau**10 - 2415919104*tau**8 + 1006632960*tau**6 + 134217728*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 268435456*tau**6 + 1476395008*tau**4 + 268435456*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    1,
+    -1
+   ],
+   "G1": "-4*t**2*u*v**2 - 4*t**2*v - 4*t*u**2 + 8*t*u*v + 4*t - 4*u**2*v + 4*u*v**2",
+   "G2": "-4*t**2*u**2*v + 4*t**2*u + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 - 4*u - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 + t**7*u**7 - 3*t**7*u**5 + 3*t**7*u**3 - t**7*u + 4*t**6*u**6 - 16*t**6*u**4 + 4*t**6*u**2 - 3*t**5*u**7 + 25*t**5*u**5 - 25*t**5*u**3 + 3*t**5*u + 2*t**4*u**8 - 16*t**4*u**6 + 40*t**4*u**4 - 16*t**4*u**2 + 2*t**4 + 3*t**3*u**7 - 25*t**3*u**5 + 25*t**3*u**3 - 3*t**3*u + 4*t**2*u**6 - 16*t**2*u**4 + 4*t**2*u**2 - t*u**7 + 3*t*u**5 - 3*t*u**3 + t*u + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "4096*tau**4 - 2048*tau**2 - 2048",
+        "q": "-8192*tau**3 - 4096*tau",
+        "r": "-4096*tau**4 - 2048*tau**2 - 2048"
+       },
+       "D(tau)": "33554432*tau**6 + 33554432*tau**4 + 16777216*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "33554432*tau**4 + 33554432*tau**2 + 16777216",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -9,
+         -7
+        ],
+        "conductor": 128,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 + 69632*tau**4 - 2048",
+        "q": "8192*tau**7 + 40960*tau**5 - 40960*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 - 61440*tau**4 - 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 134217728*tau**12 + 1006632960*tau**10 - 2415919104*tau**8 + 1006632960*tau**6 + 134217728*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 268435456*tau**6 + 1476395008*tau**4 + 268435456*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 4*t**2*u + 4*t*u**2*v**2 + 8*t*u*v - 4*t*v**2 - 4*u + 4*v",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 + t**7*u**7 - 3*t**7*u**5 + 3*t**7*u**3 - t**7*u + 4*t**6*u**6 - 16*t**6*u**4 + 4*t**6*u**2 - 3*t**5*u**7 + 25*t**5*u**5 - 25*t**5*u**3 + 3*t**5*u + 2*t**4*u**8 - 16*t**4*u**6 + 40*t**4*u**4 - 16*t**4*u**2 + 2*t**4 + 3*t**3*u**7 - 25*t**3*u**5 + 25*t**3*u**3 - 3*t**3*u + 4*t**2*u**6 - 16*t**2*u**4 + 4*t**2*u**2 - t*u**7 + 3*t*u**5 - 3*t*u**3 + t*u + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "4096*tau**4 - 2048*tau**2 - 2048",
+        "q": "-8192*tau**3 - 4096*tau",
+        "r": "-4096*tau**4 - 2048*tau**2 - 2048"
+       },
+       "D(tau)": "33554432*tau**6 + 33554432*tau**4 + 16777216*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "33554432*tau**4 + 33554432*tau**2 + 16777216",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -9,
+         -7
+        ],
+        "conductor": 128,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 + 69632*tau**4 - 2048",
+        "q": "8192*tau**7 + 40960*tau**5 - 40960*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 - 61440*tau**4 - 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 134217728*tau**12 + 1006632960*tau**10 - 2415919104*tau**8 + 1006632960*tau**6 + 134217728*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 268435456*tau**6 + 1476395008*tau**4 + 268435456*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    1,
+    3,
+    2,
+    -1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 + 8*t*u*v + 4*t + 4*u*v**2 + 4*v",
+   "G2": "4*t**2*u + 4*t**2*v + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 + 4*u**2*v - 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 + t**7*u**7 - 3*t**7*u**5 + 3*t**7*u**3 - t**7*u + 4*t**6*u**6 - 16*t**6*u**4 + 4*t**6*u**2 - 3*t**5*u**7 + 25*t**5*u**5 - 25*t**5*u**3 + 3*t**5*u + 2*t**4*u**8 - 16*t**4*u**6 + 40*t**4*u**4 - 16*t**4*u**2 + 2*t**4 + 3*t**3*u**7 - 25*t**3*u**5 + 25*t**3*u**3 - 3*t**3*u + 4*t**2*u**6 - 16*t**2*u**4 + 4*t**2*u**2 - t*u**7 + 3*t*u**5 - 3*t*u**3 + t*u + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "4096*tau**4 - 2048*tau**2 - 2048",
+        "q": "-8192*tau**3 - 4096*tau",
+        "r": "-4096*tau**4 - 2048*tau**2 - 2048"
+       },
+       "D(tau)": "33554432*tau**6 + 33554432*tau**4 + 16777216*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "33554432*tau**4 + 33554432*tau**2 + 16777216",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -9,
+         -7
+        ],
+        "conductor": 128,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 + 69632*tau**4 - 2048",
+        "q": "8192*tau**7 + 40960*tau**5 - 40960*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 - 61440*tau**4 - 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 134217728*tau**12 + 1006632960*tau**10 - 2415919104*tau**8 + 1006632960*tau**6 + 134217728*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 268435456*tau**6 + 1476395008*tau**4 + 268435456*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    1,
+    1
+   ],
+   "G1": "2*t**2*u**2*v - 6*t**2*v + 16*t*u*v - 6*u**2*v + 2*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t**2*u**2 - 3*t**2 + 8*t*u - 3*u**2 + 1",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "16*tau**2 + 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    1,
+    -1
+   ],
+   "G1": "6*t**2*u**2*v - 2*t**2*v + 16*t*u*v - 2*u**2*v + 6*v",
+   "G2": "-4*t**2*u - 4*t**2*v - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 - 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "3*t**2*u**2 - t**2 + 8*t*u - u**2 + 3",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "-16*tau**2 - 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    -1,
+    1
+   ],
+   "G1": "-2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u - 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t - 2*u**2*v + 4*u*v**2 - 4*u - 2*v",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 - 6*t**8*u**2 + t**7*u**7 + 9*t**7*u**5 + 27*t**7*u**3 - 13*t**7*u - 20*t**6*u**6 - 58*t**6*u**4 + 52*t**6*u**2 - 6*t**6 + 9*t**5*u**7 + 73*t**5*u**5 - 133*t**5*u**3 + 27*t**5*u + 2*t**4*u**8 - 58*t**4*u**6 + 184*t**4*u**4 - 58*t**4*u**2 + 2*t**4 + 27*t**3*u**7 - 133*t**3*u**5 + 73*t**3*u**3 + 9*t**3*u - 6*t**2*u**8 + 52*t**2*u**6 - 58*t**2*u**4 - 20*t**2*u**2 - 13*t*u**7 + 27*t*u**5 + 9*t*u**3 + t*u - 6*u**6 + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 - 24576*tau**6 + 217088*tau**4 - 24576*tau**2 - 2048",
+        "q": "8192*tau**7 + 139264*tau**5 - 139264*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 + 368640*tau**6 + 86016*tau**4 - 24576*tau**2 - 2048"
+       },
+       "D(tau)": "1677721600*tau**14 - 133546639360*tau**12 - 56975425536*tau**10 + 20132659200*tau**8 + 12280922112*tau**6 + 1744830464*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 - 5368709120*tau**6 - 134217728*tau**4 + 1073741824*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    1,
+    3,
+    -1,
+    -1
+   ],
+   "G1": "2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t + 2*u**2*v + 4*u*v**2 - 4*u + 2*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 - 8*t*u*v + 4*t + 4*u*v**2 - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "6*t**8*u**6 - 2*t**8*u**4 - 13*t**7*u**7 + 27*t**7*u**5 + 9*t**7*u**3 + t**7*u + 6*t**6*u**8 - 52*t**6*u**6 + 58*t**6*u**4 + 20*t**6*u**2 + 27*t**5*u**7 - 133*t**5*u**5 + 73*t**5*u**3 + 9*t**5*u - 2*t**4*u**8 + 58*t**4*u**6 - 184*t**4*u**4 + 58*t**4*u**2 - 2*t**4 + 9*t**3*u**7 + 73*t**3*u**5 - 133*t**3*u**3 + 27*t**3*u + 20*t**2*u**6 + 58*t**2*u**4 - 52*t**2*u**2 + 6*t**2 + t*u**7 + 9*t*u**5 + 27*t*u**3 - 13*t*u - 2*u**4 + 6*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "2048*tau**8 + 24576*tau**6 - 217088*tau**4 + 24576*tau**2 + 2048",
+        "q": "-8192*tau**7 - 139264*tau**5 + 139264*tau**3 + 8192*tau",
+        "r": "2048*tau**8 + 24576*tau**6 - 86016*tau**4 - 368640*tau**2 + 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 1744830464*tau**12 + 12280922112*tau**10 + 20132659200*tau**8 - 56975425536*tau**6 - 133546639360*tau**4 + 1677721600*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 1073741824*tau**6 - 134217728*tau**4 - 5368709120*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    1,
+    1
+   ],
+   "G1": "2*t**2*u**2*v - 6*t**2*v + 16*t*u*v - 6*u**2*v + 2*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 - 8*t*u*v + 4*t + 4*u*v**2 - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2*u**2 - 3*t**2 + 8*t*u - 3*u**2 + 1",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "16*tau**2 + 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    1,
+    -1
+   ],
+   "G1": "-2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u - 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t - 2*u**2*v + 4*u*v**2 - 4*u - 2*v",
+   "G2": "-4*t**2*u - 4*t**2*v - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 - 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 - 6*t**8*u**2 + t**7*u**7 + 9*t**7*u**5 + 27*t**7*u**3 - 13*t**7*u - 20*t**6*u**6 - 58*t**6*u**4 + 52*t**6*u**2 - 6*t**6 + 9*t**5*u**7 + 73*t**5*u**5 - 133*t**5*u**3 + 27*t**5*u + 2*t**4*u**8 - 58*t**4*u**6 + 184*t**4*u**4 - 58*t**4*u**2 + 2*t**4 + 27*t**3*u**7 - 133*t**3*u**5 + 73*t**3*u**3 + 9*t**3*u - 6*t**2*u**8 + 52*t**2*u**6 - 58*t**2*u**4 - 20*t**2*u**2 - 13*t*u**7 + 27*t*u**5 + 9*t*u**3 + t*u - 6*u**6 + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 - 24576*tau**6 + 217088*tau**4 - 24576*tau**2 - 2048",
+        "q": "8192*tau**7 + 139264*tau**5 - 139264*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 + 368640*tau**6 + 86016*tau**4 - 24576*tau**2 - 2048"
+       },
+       "D(tau)": "1677721600*tau**14 - 133546639360*tau**12 - 56975425536*tau**10 + 20132659200*tau**8 + 12280922112*tau**6 + 1744830464*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 - 5368709120*tau**6 - 134217728*tau**4 + 1073741824*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    -1,
+    1
+   ],
+   "G1": "6*t**2*u**2*v - 2*t**2*v + 16*t*u*v - 2*u**2*v + 6*v",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "3*t**2*u**2 - t**2 + 8*t*u - u**2 + 3",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "-16*tau**2 - 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    2,
+    3,
+    1,
+    -1,
+    -1
+   ],
+   "G1": "2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t + 2*u**2*v + 4*u*v**2 - 4*u + 2*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "6*t**8*u**6 - 2*t**8*u**4 - 13*t**7*u**7 + 27*t**7*u**5 + 9*t**7*u**3 + t**7*u + 6*t**6*u**8 - 52*t**6*u**6 + 58*t**6*u**4 + 20*t**6*u**2 + 27*t**5*u**7 - 133*t**5*u**5 + 73*t**5*u**3 + 9*t**5*u - 2*t**4*u**8 + 58*t**4*u**6 - 184*t**4*u**4 + 58*t**4*u**2 - 2*t**4 + 9*t**3*u**7 + 73*t**3*u**5 - 133*t**3*u**3 + 27*t**3*u + 20*t**2*u**6 + 58*t**2*u**4 - 52*t**2*u**2 + 6*t**2 + t*u**7 + 9*t*u**5 + 27*t*u**3 - 13*t*u - 2*u**4 + 6*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "2048*tau**8 + 24576*tau**6 - 217088*tau**4 + 24576*tau**2 + 2048",
+        "q": "-8192*tau**7 - 139264*tau**5 + 139264*tau**3 + 8192*tau",
+        "r": "2048*tau**8 + 24576*tau**6 - 86016*tau**4 - 368640*tau**2 + 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 1744830464*tau**12 + 12280922112*tau**10 + 20132659200*tau**8 - 56975425536*tau**6 - 133546639360*tau**4 + 1677721600*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 1073741824*tau**6 - 134217728*tau**4 - 5368709120*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 2*t**2*u*v**2 + 2*t**2*u - 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 + 16*t*u*v - 2*t*v**2 - 2*t - 4*u**2*v - 2*u*v**2 - 2*u + 4*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "3*t**8*u**6 - t**8*u**4 + 10*t**7*u**7 - 6*t**7*u**5 + 12*t**7*u**3 - 4*t**7*u + 3*t**6*u**8 + 46*t**6*u**6 - 67*t**6*u**4 + 34*t**6*u**2 - 6*t**5*u**7 + 94*t**5*u**5 - 112*t**5*u**3 + 12*t**5*u - t**4*u**8 - 67*t**4*u**6 + 100*t**4*u**4 - 67*t**4*u**2 - t**4 + 12*t**3*u**7 - 112*t**3*u**5 + 94*t**3*u**3 - 6*t**3*u + 34*t**2*u**6 - 67*t**2*u**4 + 46*t**2*u**2 + 3*t**2 - 4*t*u**7 + 12*t*u**5 - 6*t*u**3 + 10*t*u - u**4 + 3*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-8192*tau**8 + 73728*tau**6 - 188416*tau**4 + 221184*tau**2 - 32768",
+        "q": "32768*tau**7 - 131072*tau**5 + 229376*tau**3 - 131072*tau",
+        "r": "-8192*tau**8 + 73728*tau**6 - 122880*tau**4 + 24576*tau**2 - 32768"
+       },
+       "D(tau)": "1073741824*tau**14 - 7516192768*tau**12 + 19327352832*tau**10 - 19327352832*tau**8 + 9663676416*tau**6 - 7516192768*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "1073741824*tau**8 - 5368709120*tau**6 + 7516192768*tau**4 + 1073741824*tau**2 + 4294967296",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 + 16*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 2*u*v**2 + 2*u + 4*v",
+   "G2": "4*t**2*u**2*v + 4*t**2*u*v**2 + 4*t*u**2 + 8*t*u*v - 4*t - 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "3*t**8*u**6 - t**8*u**4 + 10*t**7*u**7 - 6*t**7*u**5 + 12*t**7*u**3 - 4*t**7*u + 3*t**6*u**8 + 46*t**6*u**6 - 67*t**6*u**4 + 34*t**6*u**2 - 6*t**5*u**7 + 94*t**5*u**5 - 112*t**5*u**3 + 12*t**5*u - t**4*u**8 - 67*t**4*u**6 + 100*t**4*u**4 - 67*t**4*u**2 - t**4 + 12*t**3*u**7 - 112*t**3*u**5 + 94*t**3*u**3 - 6*t**3*u + 34*t**2*u**6 - 67*t**2*u**4 + 46*t**2*u**2 + 3*t**2 - 4*t*u**7 + 12*t*u**5 - 6*t*u**3 + 10*t*u - u**4 + 3*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-8192*tau**8 + 73728*tau**6 - 188416*tau**4 + 221184*tau**2 - 32768",
+        "q": "32768*tau**7 - 131072*tau**5 + 229376*tau**3 - 131072*tau",
+        "r": "-8192*tau**8 + 73728*tau**6 - 122880*tau**4 + 24576*tau**2 - 32768"
+       },
+       "D(tau)": "1073741824*tau**14 - 7516192768*tau**12 + 19327352832*tau**10 - 19327352832*tau**8 + 9663676416*tau**6 - 7516192768*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "1073741824*tau**8 - 5368709120*tau**6 + 7516192768*tau**4 + 1073741824*tau**2 + 4294967296",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    -1,
+    1
+   ],
+   "G1": "-2*t**2*u*v**2 + 6*t**2*u + 6*t*u**2*v**2 - 2*t*u**2 - 6*t*v**2 + 2*t + 2*u*v**2 - 6*u",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "3*t**4*v**5 - 12*t**4*v**3 + 9*t**4*v + 9*t**3*v**6 - 13*t**3*v**4 - 13*t**3*v**2 + 9*t**3 + 30*t**2*v**5 - 24*t**2*v**3 - 6*t**2*v - 9*t*v**6 + 13*t*v**4 + 13*t*v**2 - 9*t + 3*v**5 - 12*v**3 + 9*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "3072*tau**5 - 3072*tau",
+        "q": "2304*tau**6 - 3328*tau**4 - 3328*tau**2 + 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    1,
+    2,
+    -1,
+    -1
+   ],
+   "G1": "-6*t**2*u*v**2 + 2*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 2*t*v**2 + 6*t + 6*u*v**2 - 2*u",
+   "G2": "4*t**2*u + 4*t**2*v + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 + 4*u**2*v - 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "9*t**4*v**5 - 12*t**4*v**3 + 3*t**4*v - 9*t**3*v**6 + 13*t**3*v**4 + 13*t**3*v**2 - 9*t**3 - 6*t**2*v**5 - 24*t**2*v**3 + 30*t**2*v + 9*t*v**6 - 13*t*v**4 - 13*t*v**2 + 9*t + 9*v**5 - 12*v**3 + 3*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-3072*tau**5 + 3072*tau",
+        "q": "-2304*tau**6 + 3328*tau**4 + 3328*tau**2 - 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v + 2*t**2*u*v**2 + 2*t**2*u - 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 + 16*t*u*v - 2*t*v**2 - 2*t - 4*u**2*v - 2*u*v**2 - 2*u + 4*v",
+   "G2": "4*t**2*u + 4*t**2*v + 4*t*u**2*v**2 - 8*t*u*v - 4*t*v**2 + 4*u**2*v - 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "t**8*u**4 - 3*t**8*u**2 - 4*t**7*u**7 + 12*t**7*u**5 - 6*t**7*u**3 + 10*t**7*u - 34*t**6*u**6 + 67*t**6*u**4 - 46*t**6*u**2 - 3*t**6 + 12*t**5*u**7 - 112*t**5*u**5 + 94*t**5*u**3 - 6*t**5*u + t**4*u**8 + 67*t**4*u**6 - 100*t**4*u**4 + 67*t**4*u**2 + t**4 - 6*t**3*u**7 + 94*t**3*u**5 - 112*t**3*u**3 + 12*t**3*u - 3*t**2*u**8 - 46*t**2*u**6 + 67*t**2*u**4 - 34*t**2*u**2 + 10*t*u**7 - 6*t*u**5 + 12*t*u**3 - 4*t*u - 3*u**6 + u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32768*tau**8 - 221184*tau**6 + 188416*tau**4 - 73728*tau**2 + 8192",
+        "q": "-131072*tau**7 + 229376*tau**5 - 131072*tau**3 + 32768*tau",
+        "r": "32768*tau**8 - 24576*tau**6 + 122880*tau**4 - 73728*tau**2 + 8192"
+       },
+       "D(tau)": "4294967296*tau**14 - 7516192768*tau**12 + 9663676416*tau**10 - 19327352832*tau**8 + 19327352832*tau**6 - 7516192768*tau**4 + 1073741824*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "4294967296*tau**8 + 1073741824*tau**6 + 7516192768*tau**4 - 5368709120*tau**2 + 1073741824",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    1,
+    -1
+   ],
+   "G1": "-2*t**2*u*v**2 + 6*t**2*u + 6*t*u**2*v**2 - 2*t*u**2 - 6*t*v**2 + 2*t + 2*u*v**2 - 6*u",
+   "G2": "4*t**2*u**2*v + 4*t**2*u*v**2 + 4*t*u**2 + 8*t*u*v - 4*t - 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "3*t**4*v**5 - 12*t**4*v**3 + 9*t**4*v + 9*t**3*v**6 - 13*t**3*v**4 - 13*t**3*v**2 + 9*t**3 + 30*t**2*v**5 - 24*t**2*v**3 - 6*t**2*v - 9*t*v**6 + 13*t*v**4 + 13*t*v**2 - 9*t + 3*v**5 - 12*v**3 + 9*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "3072*tau**5 - 3072*tau",
+        "q": "2304*tau**6 - 3328*tau**4 - 3328*tau**2 + 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 + 16*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 2*u*v**2 + 2*u + 4*v",
+   "G2": "-4*t**2*u*v**2 + 4*t**2*v - 4*t*u**2 - 8*t*u*v + 4*t + 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "t**8*u**4 - 3*t**8*u**2 - 4*t**7*u**7 + 12*t**7*u**5 - 6*t**7*u**3 + 10*t**7*u - 34*t**6*u**6 + 67*t**6*u**4 - 46*t**6*u**2 - 3*t**6 + 12*t**5*u**7 - 112*t**5*u**5 + 94*t**5*u**3 - 6*t**5*u + t**4*u**8 + 67*t**4*u**6 - 100*t**4*u**4 + 67*t**4*u**2 + t**4 - 6*t**3*u**7 + 94*t**3*u**5 - 112*t**3*u**3 + 12*t**3*u - 3*t**2*u**8 - 46*t**2*u**6 + 67*t**2*u**4 - 34*t**2*u**2 + 10*t*u**7 - 6*t*u**5 + 12*t*u**3 - 4*t*u - 3*u**6 + u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32768*tau**8 - 221184*tau**6 + 188416*tau**4 - 73728*tau**2 + 8192",
+        "q": "-131072*tau**7 + 229376*tau**5 - 131072*tau**3 + 32768*tau",
+        "r": "32768*tau**8 - 24576*tau**6 + 122880*tau**4 - 73728*tau**2 + 8192"
+       },
+       "D(tau)": "4294967296*tau**14 - 7516192768*tau**12 + 9663676416*tau**10 - 19327352832*tau**8 + 19327352832*tau**6 - 7516192768*tau**4 + 1073741824*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "4294967296*tau**8 + 1073741824*tau**6 + 7516192768*tau**4 - 5368709120*tau**2 + 1073741824",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    0,
+    3,
+    2,
+    1,
+    -1,
+    -1
+   ],
+   "G1": "-6*t**2*u*v**2 + 2*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 2*t*v**2 + 6*t + 6*u*v**2 - 2*u",
+   "G2": "4*t**2*u**2*v - 4*t**2*u - 4*t*u**2*v**2 + 8*t*u*v + 4*t*v**2 + 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "9*t**4*v**5 - 12*t**4*v**3 + 3*t**4*v - 9*t**3*v**6 + 13*t**3*v**4 + 13*t**3*v**2 - 9*t**3 - 6*t**2*v**5 - 24*t**2*v**3 + 30*t**2*v + 9*t*v**6 - 13*t*v**4 - 13*t*v**2 + 9*t + 9*v**5 - 12*v**3 + 3*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-3072*tau**5 + 3072*tau",
+        "q": "-2304*tau**6 + 3328*tau**4 + 3328*tau**2 - 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    1,
+    1
+   ],
+   "G1": "-6*t**2*u**2*v + 2*t**2*v - 16*t*u*v + 2*u**2*v - 6*v",
+   "G2": "-4*t**2*u + 4*t**2*v - 4*t*u**2*v**2 - 8*t*u*v + 4*t*v**2 + 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "3*t**2*u**2 - t**2 + 8*t*u - u**2 + 3",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "-16*tau**2 - 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    1,
+    -1
+   ],
+   "G1": "-2*t**2*u**2*v + 6*t**2*v - 16*t*u*v + 6*u**2*v - 2*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u - 4*t*u**2*v**2 - 8*t*u*v + 4*t*v**2 + 4*u - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t**2*u**2 - 3*t**2 + 8*t*u - 3*u**2 + 1",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "16*tau**2 + 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    -1,
+    1
+   ],
+   "G1": "-2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u - 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t - 2*u**2*v + 4*u*v**2 - 4*u - 2*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 + 8*t*u*v + 4*t + 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "6*t**8*u**6 - 2*t**8*u**4 - 13*t**7*u**7 + 27*t**7*u**5 + 9*t**7*u**3 + t**7*u + 6*t**6*u**8 - 52*t**6*u**6 + 58*t**6*u**4 + 20*t**6*u**2 + 27*t**5*u**7 - 133*t**5*u**5 + 73*t**5*u**3 + 9*t**5*u - 2*t**4*u**8 + 58*t**4*u**6 - 184*t**4*u**4 + 58*t**4*u**2 - 2*t**4 + 9*t**3*u**7 + 73*t**3*u**5 - 133*t**3*u**3 + 27*t**3*u + 20*t**2*u**6 + 58*t**2*u**4 - 52*t**2*u**2 + 6*t**2 + t*u**7 + 9*t*u**5 + 27*t*u**3 - 13*t*u - 2*u**4 + 6*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "2048*tau**8 + 24576*tau**6 - 217088*tau**4 + 24576*tau**2 + 2048",
+        "q": "-8192*tau**7 - 139264*tau**5 + 139264*tau**3 + 8192*tau",
+        "r": "2048*tau**8 + 24576*tau**6 - 86016*tau**4 - 368640*tau**2 + 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 1744830464*tau**12 + 12280922112*tau**10 + 20132659200*tau**8 - 56975425536*tau**6 - 133546639360*tau**4 + 1677721600*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 1073741824*tau**6 - 134217728*tau**4 - 5368709120*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    0,
+    3,
+    -1,
+    -1
+   ],
+   "G1": "2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t + 2*u**2*v + 4*u*v**2 - 4*u + 2*v",
+   "G2": "-4*t**2*u*v**2 - 4*t**2*v - 4*t*u**2 + 8*t*u*v + 4*t - 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 - 6*t**8*u**2 + t**7*u**7 + 9*t**7*u**5 + 27*t**7*u**3 - 13*t**7*u - 20*t**6*u**6 - 58*t**6*u**4 + 52*t**6*u**2 - 6*t**6 + 9*t**5*u**7 + 73*t**5*u**5 - 133*t**5*u**3 + 27*t**5*u + 2*t**4*u**8 - 58*t**4*u**6 + 184*t**4*u**4 - 58*t**4*u**2 + 2*t**4 + 27*t**3*u**7 - 133*t**3*u**5 + 73*t**3*u**3 + 9*t**3*u - 6*t**2*u**8 + 52*t**2*u**6 - 58*t**2*u**4 - 20*t**2*u**2 - 13*t*u**7 + 27*t*u**5 + 9*t*u**3 + t*u - 6*u**6 + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 - 24576*tau**6 + 217088*tau**4 - 24576*tau**2 - 2048",
+        "q": "8192*tau**7 + 139264*tau**5 - 139264*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 + 368640*tau**6 + 86016*tau**4 - 24576*tau**2 - 2048"
+       },
+       "D(tau)": "1677721600*tau**14 - 133546639360*tau**12 - 56975425536*tau**10 + 20132659200*tau**8 + 12280922112*tau**6 + 1744830464*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 - 5368709120*tau**6 - 134217728*tau**4 + 1073741824*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    1,
+    1
+   ],
+   "G1": "-6*t**2*u**2*v + 2*t**2*v - 16*t*u*v + 2*u**2*v - 6*v",
+   "G2": "-4*t**2*u*v**2 - 4*t**2*v - 4*t*u**2 + 8*t*u*v + 4*t - 4*u**2*v + 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "3*t**2*u**2 - t**2 + 8*t*u - u**2 + 3",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "-16*tau**2 - 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    1,
+    -1
+   ],
+   "G1": "-2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u - 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t - 2*u**2*v + 4*u*v**2 - 4*u - 2*v",
+   "G2": "-4*t**2*u**2*v - 4*t**2*u - 4*t*u**2*v**2 - 8*t*u*v + 4*t*v**2 + 4*u - 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "6*t**8*u**6 - 2*t**8*u**4 - 13*t**7*u**7 + 27*t**7*u**5 + 9*t**7*u**3 + t**7*u + 6*t**6*u**8 - 52*t**6*u**6 + 58*t**6*u**4 + 20*t**6*u**2 + 27*t**5*u**7 - 133*t**5*u**5 + 73*t**5*u**3 + 9*t**5*u - 2*t**4*u**8 + 58*t**4*u**6 - 184*t**4*u**4 + 58*t**4*u**2 - 2*t**4 + 9*t**3*u**7 + 73*t**3*u**5 - 133*t**3*u**3 + 27*t**3*u + 20*t**2*u**6 + 58*t**2*u**4 - 52*t**2*u**2 + 6*t**2 + t*u**7 + 9*t*u**5 + 27*t*u**3 - 13*t*u - 2*u**4 + 6*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "2048*tau**8 + 24576*tau**6 - 217088*tau**4 + 24576*tau**2 + 2048",
+        "q": "-8192*tau**7 - 139264*tau**5 + 139264*tau**3 + 8192*tau",
+        "r": "2048*tau**8 + 24576*tau**6 - 86016*tau**4 - 368640*tau**2 + 2048"
+       },
+       "D(tau)": "67108864*tau**14 + 1744830464*tau**12 + 12280922112*tau**10 + 20132659200*tau**8 - 56975425536*tau**6 - 133546639360*tau**4 + 1677721600*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 + 1073741824*tau**6 - 134217728*tau**4 - 5368709120*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    -1,
+    1
+   ],
+   "G1": "-2*t**2*u**2*v + 6*t**2*v - 16*t*u*v + 6*u**2*v - 2*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 + 8*t*u*v + 4*t + 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "u - 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "u + 1",
+     "bidegree": [
+      0,
+      1
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t**2*u**2 - 3*t**2 + 8*t*u - 3*u**2 + 1",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "16*tau**2 + 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    2,
+    3,
+    0,
+    -1,
+    -1
+   ],
+   "G1": "2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t + 2*u**2*v + 4*u*v**2 - 4*u + 2*v",
+   "G2": "-4*t**2*u + 4*t**2*v - 4*t*u**2*v**2 - 8*t*u*v + 4*t*v**2 + 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "2*t**8*u**4 - 6*t**8*u**2 + t**7*u**7 + 9*t**7*u**5 + 27*t**7*u**3 - 13*t**7*u - 20*t**6*u**6 - 58*t**6*u**4 + 52*t**6*u**2 - 6*t**6 + 9*t**5*u**7 + 73*t**5*u**5 - 133*t**5*u**3 + 27*t**5*u + 2*t**4*u**8 - 58*t**4*u**6 + 184*t**4*u**4 - 58*t**4*u**2 + 2*t**4 + 27*t**3*u**7 - 133*t**3*u**5 + 73*t**3*u**3 + 9*t**3*u - 6*t**2*u**8 + 52*t**2*u**6 - 58*t**2*u**4 - 20*t**2*u**2 - 13*t*u**7 + 27*t*u**5 + 9*t*u**3 + t*u - 6*u**6 + 2*u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-2048*tau**8 - 24576*tau**6 + 217088*tau**4 - 24576*tau**2 - 2048",
+        "q": "8192*tau**7 + 139264*tau**5 - 139264*tau**3 - 8192*tau",
+        "r": "-2048*tau**8 + 368640*tau**6 + 86016*tau**4 - 24576*tau**2 - 2048"
+       },
+       "D(tau)": "1677721600*tau**14 - 133546639360*tau**12 - 56975425536*tau**10 + 20132659200*tau**8 + 12280922112*tau**6 + 1744830464*tau**4 + 67108864*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "67108864*tau**8 - 5368709120*tau**6 - 134217728*tau**4 + 1073741824*tau**2 + 67108864",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v + 2*t**2*u*v**2 + 2*t**2*u + 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 - 16*t*u*v - 2*t*v**2 - 2*t + 4*u**2*v - 2*u*v**2 - 2*u - 4*v",
+   "G2": "-4*t**2*u + 4*t**2*v - 4*t*u**2*v**2 - 8*t*u*v + 4*t*v**2 + 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "t**8*u**4 - 3*t**8*u**2 - 4*t**7*u**7 + 12*t**7*u**5 - 6*t**7*u**3 + 10*t**7*u - 34*t**6*u**6 + 67*t**6*u**4 - 46*t**6*u**2 - 3*t**6 + 12*t**5*u**7 - 112*t**5*u**5 + 94*t**5*u**3 - 6*t**5*u + t**4*u**8 + 67*t**4*u**6 - 100*t**4*u**4 + 67*t**4*u**2 + t**4 - 6*t**3*u**7 + 94*t**3*u**5 - 112*t**3*u**3 + 12*t**3*u - 3*t**2*u**8 - 46*t**2*u**6 + 67*t**2*u**4 - 34*t**2*u**2 + 10*t*u**7 - 6*t*u**5 + 12*t*u**3 - 4*t*u - 3*u**6 + u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32768*tau**8 - 221184*tau**6 + 188416*tau**4 - 73728*tau**2 + 8192",
+        "q": "-131072*tau**7 + 229376*tau**5 - 131072*tau**3 + 32768*tau",
+        "r": "32768*tau**8 - 24576*tau**6 + 122880*tau**4 - 73728*tau**2 + 8192"
+       },
+       "D(tau)": "4294967296*tau**14 - 7516192768*tau**12 + 9663676416*tau**10 - 19327352832*tau**8 + 19327352832*tau**6 - 7516192768*tau**4 + 1073741824*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "4294967296*tau**8 + 1073741824*tau**6 + 7516192768*tau**4 - 5368709120*tau**2 + 1073741824",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    1,
+    -1
+   ],
+   "G1": "-4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u + 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 16*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 2*u*v**2 + 2*u - 4*v",
+   "G2": "4*t**2*u*v**2 + 4*t**2*v + 4*t*u**2 - 8*t*u*v - 4*t + 4*u**2*v - 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "t**8*u**4 - 3*t**8*u**2 - 4*t**7*u**7 + 12*t**7*u**5 - 6*t**7*u**3 + 10*t**7*u - 34*t**6*u**6 + 67*t**6*u**4 - 46*t**6*u**2 - 3*t**6 + 12*t**5*u**7 - 112*t**5*u**5 + 94*t**5*u**3 - 6*t**5*u + t**4*u**8 + 67*t**4*u**6 - 100*t**4*u**4 + 67*t**4*u**2 + t**4 - 6*t**3*u**7 + 94*t**3*u**5 - 112*t**3*u**3 + 12*t**3*u - 3*t**2*u**8 - 46*t**2*u**6 + 67*t**2*u**4 - 34*t**2*u**2 + 10*t*u**7 - 6*t*u**5 + 12*t*u**3 - 4*t*u - 3*u**6 + u**4",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32768*tau**8 - 221184*tau**6 + 188416*tau**4 - 73728*tau**2 + 8192",
+        "q": "-131072*tau**7 + 229376*tau**5 - 131072*tau**3 + 32768*tau",
+        "r": "32768*tau**8 - 24576*tau**6 + 122880*tau**4 - 73728*tau**2 + 8192"
+       },
+       "D(tau)": "4294967296*tau**14 - 7516192768*tau**12 + 9663676416*tau**10 - 19327352832*tau**8 + 19327352832*tau**6 - 7516192768*tau**4 + 1073741824*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "4294967296*tau**8 + 1073741824*tau**6 + 7516192768*tau**4 - 5368709120*tau**2 + 1073741824",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    -1,
+    1
+   ],
+   "G1": "-2*t**2*u*v**2 + 6*t**2*u + 6*t*u**2*v**2 - 2*t*u**2 - 6*t*v**2 + 2*t + 2*u*v**2 - 6*u",
+   "G2": "4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 + 8*t*u*v + 4*t + 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "3*t**4*v**5 - 12*t**4*v**3 + 9*t**4*v - 9*t**3*v**6 + 13*t**3*v**4 + 13*t**3*v**2 - 9*t**3 + 30*t**2*v**5 - 24*t**2*v**3 - 6*t**2*v + 9*t*v**6 - 13*t*v**4 - 13*t*v**2 + 9*t + 3*v**5 - 12*v**3 + 9*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "3072*tau**5 - 3072*tau",
+        "q": "-2304*tau**6 + 3328*tau**4 + 3328*tau**2 - 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    0,
+    2,
+    -1,
+    -1
+   ],
+   "G1": "-6*t**2*u*v**2 + 2*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 2*t*v**2 + 6*t + 6*u*v**2 - 2*u",
+   "G2": "4*t**2*u**2*v + 4*t**2*u + 4*t*u**2*v**2 + 8*t*u*v - 4*t*v**2 - 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "9*t**4*v**5 - 12*t**4*v**3 + 3*t**4*v + 9*t**3*v**6 - 13*t**3*v**4 - 13*t**3*v**2 + 9*t**3 - 6*t**2*v**5 - 24*t**2*v**3 + 30*t**2*v - 9*t*v**6 + 13*t*v**4 + 13*t*v**2 - 9*t + 9*v**5 - 12*v**3 + 3*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-3072*tau**5 + 3072*tau",
+        "q": "2304*tau**6 - 3328*tau**4 - 3328*tau**2 + 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v + 2*t**2*u*v**2 + 2*t**2*u + 4*t**2*v + 2*t*u**2*v**2 + 2*t*u**2 - 16*t*u*v - 2*t*v**2 - 2*t + 4*u**2*v - 2*u*v**2 - 2*u - 4*v",
+   "G2": "4*t**2*u**2*v + 4*t**2*u + 4*t*u**2*v**2 + 8*t*u*v - 4*t*v**2 - 4*u + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "3*t**8*u**6 - t**8*u**4 + 10*t**7*u**7 - 6*t**7*u**5 + 12*t**7*u**3 - 4*t**7*u + 3*t**6*u**8 + 46*t**6*u**6 - 67*t**6*u**4 + 34*t**6*u**2 - 6*t**5*u**7 + 94*t**5*u**5 - 112*t**5*u**3 + 12*t**5*u - t**4*u**8 - 67*t**4*u**6 + 100*t**4*u**4 - 67*t**4*u**2 - t**4 + 12*t**3*u**7 - 112*t**3*u**5 + 94*t**3*u**3 - 6*t**3*u + 34*t**2*u**6 - 67*t**2*u**4 + 46*t**2*u**2 + 3*t**2 - 4*t*u**7 + 12*t*u**5 - 6*t*u**3 + 10*t*u - u**4 + 3*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-8192*tau**8 + 73728*tau**6 - 188416*tau**4 + 221184*tau**2 - 32768",
+        "q": "32768*tau**7 - 131072*tau**5 + 229376*tau**3 - 131072*tau",
+        "r": "-8192*tau**8 + 73728*tau**6 - 122880*tau**4 + 24576*tau**2 - 32768"
+       },
+       "D(tau)": "1073741824*tau**14 - 7516192768*tau**12 + 19327352832*tau**10 - 19327352832*tau**8 + 9663676416*tau**6 - 7516192768*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "1073741824*tau**8 - 5368709120*tau**6 + 7516192768*tau**4 + 1073741824*tau**2 + 4294967296",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    1,
+    -1
+   ],
+   "G1": "-2*t**2*u*v**2 + 6*t**2*u + 6*t*u**2*v**2 - 2*t*u**2 - 6*t*v**2 + 2*t + 2*u*v**2 - 6*u",
+   "G2": "4*t**2*u*v**2 + 4*t**2*v + 4*t*u**2 - 8*t*u*v - 4*t + 4*u**2*v - 4*u*v**2",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "3*t**4*v**5 - 12*t**4*v**3 + 9*t**4*v - 9*t**3*v**6 + 13*t**3*v**4 + 13*t**3*v**2 - 9*t**3 + 30*t**2*v**5 - 24*t**2*v**3 - 6*t**2*v + 9*t*v**6 - 13*t*v**4 - 13*t*v**2 + 9*t + 3*v**5 - 12*v**3 + 9*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "3072*tau**5 - 3072*tau",
+        "q": "-2304*tau**6 + 3328*tau**4 + 3328*tau**2 - 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    -1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u + 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 16*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 2*u*v**2 + 2*u - 4*v",
+   "G2": "4*t**2*u**2*v - 4*t**2*u*v**2 - 4*t*u**2 + 8*t*u*v + 4*t + 4*u*v**2 + 4*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "3*t**8*u**6 - t**8*u**4 + 10*t**7*u**7 - 6*t**7*u**5 + 12*t**7*u**3 - 4*t**7*u + 3*t**6*u**8 + 46*t**6*u**6 - 67*t**6*u**4 + 34*t**6*u**2 - 6*t**5*u**7 + 94*t**5*u**5 - 112*t**5*u**3 + 12*t**5*u - t**4*u**8 - 67*t**4*u**6 + 100*t**4*u**4 - 67*t**4*u**2 - t**4 + 12*t**3*u**7 - 112*t**3*u**5 + 94*t**3*u**3 - 6*t**3*u + 34*t**2*u**6 - 67*t**2*u**4 + 46*t**2*u**2 + 3*t**2 - 4*t*u**7 + 12*t*u**5 - 6*t*u**3 + 10*t*u - u**4 + 3*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-8192*tau**8 + 73728*tau**6 - 188416*tau**4 + 221184*tau**2 - 32768",
+        "q": "32768*tau**7 - 131072*tau**5 + 229376*tau**3 - 131072*tau",
+        "r": "-8192*tau**8 + 73728*tau**6 - 122880*tau**4 + 24576*tau**2 - 32768"
+       },
+       "D(tau)": "1073741824*tau**14 - 7516192768*tau**12 + 19327352832*tau**10 - 19327352832*tau**8 + 9663676416*tau**6 - 7516192768*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "1073741824*tau**8 - 5368709120*tau**6 + 7516192768*tau**4 + 1073741824*tau**2 + 4294967296",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    1,
+    3,
+    2,
+    0,
+    -1,
+    -1
+   ],
+   "G1": "-6*t**2*u*v**2 + 2*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 2*t*v**2 + 6*t + 6*u*v**2 - 2*u",
+   "G2": "-4*t**2*u + 4*t**2*v - 4*t*u**2*v**2 - 8*t*u*v + 4*t*v**2 + 4*u**2*v + 4*u",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "z",
+    "plane": [
+     "x",
+     "w"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "v**2 + 1",
+     "bidegree": [
+      0,
+      2
+     ],
+     "type": "univariate",
+     "rational_roots": []
+    },
+    {
+     "poly": "t",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "0"
+     ]
+    },
+    {
+     "poly": "t - 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "1"
+     ]
+    },
+    {
+     "poly": "t + 1",
+     "bidegree": [
+      1,
+      0
+     ],
+     "type": "univariate",
+     "rational_roots": [
+      "-1"
+     ]
+    },
+    {
+     "poly": "9*t**4*v**5 - 12*t**4*v**3 + 3*t**4*v + 9*t**3*v**6 - 13*t**3*v**4 - 13*t**3*v**2 + 9*t**3 - 6*t**2*v**5 - 24*t**2*v**3 + 30*t**2*v - 9*t*v**6 + 13*t*v**4 + 13*t*v**2 - 9*t + 9*v**5 - 12*v**3 + 3*v",
+     "bidegree": [
+      4,
+      6
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 2,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "-3072*tau**5 + 3072*tau",
+        "q": "2304*tau**6 - 3328*tau**4 - 3328*tau**2 + 2304",
+        "r": "6144*tau**5 - 12288*tau**3 + 6144*tau"
+       },
+       "D(tau)": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "5308416*tau**12 - 43646976*tau**10 + 146735104*tau**8 - 212598784*tau**6 + 146735104*tau**4 - 43646976*tau**2 + 5308416",
+        "genus": 5,
+        "points_found": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    1,
+    1
+   ],
+   "G1": "2*t**2*u*v**2 - 6*t**2*u - 6*t*u**2*v**2 + 2*t*u**2 + 6*t*v**2 - 2*t - 2*u*v**2 + 6*u",
+   "G2": "-2*t**2*u**2*v + 6*t**2*v - 16*t*u*v + 6*u**2*v - 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "3*t**2*u - t*u**2 + t - 3*u",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "24*tau",
+        "q": "-8",
+        "r": "0"
+       },
+       "D(tau)": "576*tau**2 + 64",
+       "curve_kind": "genus0",
+       "curve": {
+        "note": "genus 0 quotient (too coarse or linear-relation component; see Lemma 5.4)"
+       }
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "48*tau",
+        "q": "8*tau**2 - 8",
+        "r": "0"
+       },
+       "D(tau)": "64*tau**4 + 2176*tau**2 + 64",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "64*tau**4 + 2176*tau**2 + 64",
+        "minimal_model": [
+         0,
+         1,
+         0,
+         -24,
+         36
+        ],
+        "conductor": 48,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 8,
+        "complete": true,
+        "tau_values": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    },
+    {
+     "poly": "t**2*u**2 - 3*t**2 + 8*t*u - 3*u**2 + 1",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "16*tau**2 + 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    1,
+    -1
+   ],
+   "G1": "-4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u + 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 16*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 2*u*v**2 + 2*u - 4*v",
+   "G2": "2*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u + 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 4*t*v**2 - 4*t + 2*u**2*v - 4*u*v**2 + 4*u + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "15*t**8*u**6 - 50*t**8*u**4 + 15*t**8*u**2 - 34*t**7*u**7 + 222*t**7*u**5 - 222*t**7*u**3 + 34*t**7*u + 15*t**6*u**8 - 352*t**6*u**6 + 994*t**6*u**4 - 352*t**6*u**2 + 15*t**6 + 222*t**5*u**7 - 1570*t**5*u**5 + 1570*t**5*u**3 - 222*t**5*u - 50*t**4*u**8 + 994*t**4*u**6 - 2488*t**4*u**4 + 994*t**4*u**2 - 50*t**4 - 222*t**3*u**7 + 1570*t**3*u**5 - 1570*t**3*u**3 + 222*t**3*u + 15*t**2*u**8 - 352*t**2*u**6 + 994*t**2*u**4 - 352*t**2*u**2 + 15*t**2 + 34*t*u**7 - 222*t*u**5 + 222*t*u**3 - 34*t*u + 15*u**6 - 50*u**4 + 15*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "-40960*tau**4 + 32768*tau**2 + 8192",
+        "q": "81920*tau**3 + 16384*tau",
+        "r": "40960*tau**4 - 212992*tau**2 + 8192"
+       },
+       "D(tau)": "21474836480*tau**6 - 42949672960*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "21474836480*tau**4 - 42949672960*tau**2 + 4294967296",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -3,
+         2
+        ],
+        "conductor": 400,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "8192*tau**8 + 98304*tau**6 - 868352*tau**4 + 98304*tau**2 + 8192",
+        "q": "-32768*tau**7 - 557056*tau**5 + 557056*tau**3 + 32768*tau",
+        "r": "8192*tau**8 - 884736*tau**6 + 2408448*tau**4 - 884736*tau**2 + 8192"
+       },
+       "D(tau)": "17179869184*tau**14 - 790273982464*tau**12 + 4380866641920*tau**10 - 7215545057280*tau**8 + 4380866641920*tau**6 - 790273982464*tau**4 + 17179869184*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "17179869184*tau**8 - 755914244096*tau**6 + 2851858284544*tau**4 - 755914244096*tau**2 + 17179869184",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    -1,
+    1
+   ],
+   "G1": "4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 + 16*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 2*u*v**2 + 2*u + 4*v",
+   "G2": "2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t + 2*u**2*v + 4*u*v**2 - 4*u + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "15*t**8*u**6 - 50*t**8*u**4 + 15*t**8*u**2 - 34*t**7*u**7 + 222*t**7*u**5 - 222*t**7*u**3 + 34*t**7*u + 15*t**6*u**8 - 352*t**6*u**6 + 994*t**6*u**4 - 352*t**6*u**2 + 15*t**6 + 222*t**5*u**7 - 1570*t**5*u**5 + 1570*t**5*u**3 - 222*t**5*u - 50*t**4*u**8 + 994*t**4*u**6 - 2488*t**4*u**4 + 994*t**4*u**2 - 50*t**4 - 222*t**3*u**7 + 1570*t**3*u**5 - 1570*t**3*u**3 + 222*t**3*u + 15*t**2*u**8 - 352*t**2*u**6 + 994*t**2*u**4 - 352*t**2*u**2 + 15*t**2 + 34*t*u**7 - 222*t*u**5 + 222*t*u**3 - 34*t*u + 15*u**6 - 50*u**4 + 15*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "-40960*tau**4 + 32768*tau**2 + 8192",
+        "q": "81920*tau**3 + 16384*tau",
+        "r": "40960*tau**4 - 212992*tau**2 + 8192"
+       },
+       "D(tau)": "21474836480*tau**6 - 42949672960*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "21474836480*tau**4 - 42949672960*tau**2 + 4294967296",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -3,
+         2
+        ],
+        "conductor": 400,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "8192*tau**8 + 98304*tau**6 - 868352*tau**4 + 98304*tau**2 + 8192",
+        "q": "-32768*tau**7 - 557056*tau**5 + 557056*tau**3 + 32768*tau",
+        "r": "8192*tau**8 - 884736*tau**6 + 2408448*tau**4 - 884736*tau**2 + 8192"
+       },
+       "D(tau)": "17179869184*tau**14 - 790273982464*tau**12 + 4380866641920*tau**10 - 7215545057280*tau**8 + 4380866641920*tau**6 - 790273982464*tau**4 + 17179869184*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "17179869184*tau**8 - 755914244096*tau**6 + 2851858284544*tau**4 - 755914244096*tau**2 + 17179869184",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    0,
+    1,
+    -1,
+    -1
+   ],
+   "G1": "-6*t**2*u*v**2 + 2*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 2*t*v**2 + 6*t + 6*u*v**2 - 2*u",
+   "G2": "6*t**2*u**2*v - 2*t**2*v + 16*t*u*v - 2*u**2*v + 6*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "t**2*u - 3*t*u**2 + 3*t - u",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "8*tau",
+        "q": "-24",
+        "r": "0"
+       },
+       "D(tau)": "64*tau**2 + 576",
+       "curve_kind": "genus0",
+       "curve": {
+        "note": "genus 0 quotient (too coarse or linear-relation component; see Lemma 5.4)"
+       }
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "16*tau",
+        "q": "24*tau**2 - 24",
+        "r": "0"
+       },
+       "D(tau)": "576*tau**4 - 896*tau**2 + 576",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "576*tau**4 - 896*tau**2 + 576",
+        "minimal_model": [
+         0,
+         1,
+         0,
+         -24,
+         36
+        ],
+        "conductor": 48,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 8,
+        "complete": true,
+        "tau_values": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    },
+    {
+     "poly": "3*t**2*u**2 - t**2 + 8*t*u - u**2 + 3",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "-16*tau**2 - 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    1,
+    1
+   ],
+   "G1": "2*t**2*u*v**2 - 6*t**2*u - 6*t*u**2*v**2 + 2*t*u**2 + 6*t*v**2 - 2*t - 2*u*v**2 + 6*u",
+   "G2": "6*t**2*u**2*v - 2*t**2*v + 16*t*u*v - 2*u**2*v + 6*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "3*t**2*u - t*u**2 + t - 3*u",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "24*tau",
+        "q": "-8",
+        "r": "0"
+       },
+       "D(tau)": "576*tau**2 + 64",
+       "curve_kind": "genus0",
+       "curve": {
+        "note": "genus 0 quotient (too coarse or linear-relation component; see Lemma 5.4)"
+       }
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "48*tau",
+        "q": "8*tau**2 - 8",
+        "r": "0"
+       },
+       "D(tau)": "64*tau**4 + 2176*tau**2 + 64",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "64*tau**4 + 2176*tau**2 + 64",
+        "minimal_model": [
+         0,
+         1,
+         0,
+         -24,
+         36
+        ],
+        "conductor": 48,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 8,
+        "complete": true,
+        "tau_values": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    },
+    {
+     "poly": "3*t**2*u**2 - t**2 + 8*t*u - u**2 + 3",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "-16*tau**2 - 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    1,
+    -1
+   ],
+   "G1": "4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u - 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 + 16*t*u*v + 2*t*v**2 + 2*t - 4*u**2*v + 2*u*v**2 + 2*u + 4*v",
+   "G2": "2*t**2*u**2*v + 4*t**2*u*v**2 - 4*t**2*u + 2*t**2*v - 4*t*u**2*v**2 + 4*t*u**2 + 4*t*v**2 - 4*t + 2*u**2*v - 4*u*v**2 + 4*u + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "15*t**8*u**6 - 50*t**8*u**4 + 15*t**8*u**2 - 34*t**7*u**7 + 222*t**7*u**5 - 222*t**7*u**3 + 34*t**7*u + 15*t**6*u**8 - 352*t**6*u**6 + 994*t**6*u**4 - 352*t**6*u**2 + 15*t**6 + 222*t**5*u**7 - 1570*t**5*u**5 + 1570*t**5*u**3 - 222*t**5*u - 50*t**4*u**8 + 994*t**4*u**6 - 2488*t**4*u**4 + 994*t**4*u**2 - 50*t**4 - 222*t**3*u**7 + 1570*t**3*u**5 - 1570*t**3*u**3 + 222*t**3*u + 15*t**2*u**8 - 352*t**2*u**6 + 994*t**2*u**4 - 352*t**2*u**2 + 15*t**2 + 34*t*u**7 - 222*t*u**5 + 222*t*u**3 - 34*t*u + 15*u**6 - 50*u**4 + 15*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "-40960*tau**4 + 32768*tau**2 + 8192",
+        "q": "81920*tau**3 + 16384*tau",
+        "r": "40960*tau**4 - 212992*tau**2 + 8192"
+       },
+       "D(tau)": "21474836480*tau**6 - 42949672960*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "21474836480*tau**4 - 42949672960*tau**2 + 4294967296",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -3,
+         2
+        ],
+        "conductor": 400,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "8192*tau**8 + 98304*tau**6 - 868352*tau**4 + 98304*tau**2 + 8192",
+        "q": "-32768*tau**7 - 557056*tau**5 + 557056*tau**3 + 32768*tau",
+        "r": "8192*tau**8 - 884736*tau**6 + 2408448*tau**4 - 884736*tau**2 + 8192"
+       },
+       "D(tau)": "17179869184*tau**14 - 790273982464*tau**12 + 4380866641920*tau**10 - 7215545057280*tau**8 + 4380866641920*tau**6 - 790273982464*tau**4 + 17179869184*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "17179869184*tau**8 - 755914244096*tau**6 + 2851858284544*tau**4 - 755914244096*tau**2 + 17179869184",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    -1,
+    1
+   ],
+   "G1": "-4*t**2*u**2*v - 2*t**2*u*v**2 - 2*t**2*u + 4*t**2*v - 2*t*u**2*v**2 - 2*t*u**2 - 16*t*u*v + 2*t*v**2 + 2*t + 4*u**2*v + 2*u*v**2 + 2*u - 4*v",
+   "G2": "2*t**2*u**2*v - 4*t**2*u*v**2 + 4*t**2*u + 2*t**2*v + 4*t*u**2*v**2 - 4*t*u**2 - 4*t*v**2 + 4*t + 2*u**2*v + 4*u*v**2 - 4*u + 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "15*t**8*u**6 - 50*t**8*u**4 + 15*t**8*u**2 - 34*t**7*u**7 + 222*t**7*u**5 - 222*t**7*u**3 + 34*t**7*u + 15*t**6*u**8 - 352*t**6*u**6 + 994*t**6*u**4 - 352*t**6*u**2 + 15*t**6 + 222*t**5*u**7 - 1570*t**5*u**5 + 1570*t**5*u**3 - 222*t**5*u - 50*t**4*u**8 + 994*t**4*u**6 - 2488*t**4*u**4 + 994*t**4*u**2 - 50*t**4 - 222*t**3*u**7 + 1570*t**3*u**5 - 1570*t**3*u**3 + 222*t**3*u + 15*t**2*u**8 - 352*t**2*u**6 + 994*t**2*u**4 - 352*t**2*u**2 + 15*t**2 + 34*t*u**7 - 222*t*u**5 + 222*t*u**3 - 34*t*u + 15*u**6 - 50*u**4 + 15*u**2",
+     "bidegree": [
+      8,
+      8
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       -1,
+       1
+      ]
+     ],
+     "A": 4,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "-40960*tau**4 + 32768*tau**2 + 8192",
+        "q": "81920*tau**3 + 16384*tau",
+        "r": "40960*tau**4 - 212992*tau**2 + 8192"
+       },
+       "D(tau)": "21474836480*tau**6 - 42949672960*tau**4 + 4294967296*tau**2",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "21474836480*tau**4 - 42949672960*tau**2 + 4294967296",
+        "minimal_model": [
+         0,
+         -1,
+         0,
+         -3,
+         2
+        ],
+        "conductor": 400,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 2,
+        "complete": true,
+        "tau_values": [
+         "0",
+         "0"
+        ]
+       },
+       "used": true
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "8192*tau**8 + 98304*tau**6 - 868352*tau**4 + 98304*tau**2 + 8192",
+        "q": "-32768*tau**7 - 557056*tau**5 + 557056*tau**3 + 32768*tau",
+        "r": "8192*tau**8 - 884736*tau**6 + 2408448*tau**4 - 884736*tau**2 + 8192"
+       },
+       "D(tau)": "17179869184*tau**14 - 790273982464*tau**12 + 4380866641920*tau**10 - 7215545057280*tau**8 + 4380866641920*tau**6 - 790273982464*tau**4 + 17179869184*tau**2",
+       "curve_kind": "genus>=2",
+       "curve": {
+        "D_squarefree": "17179869184*tau**8 - 755914244096*tau**6 + 2851858284544*tau**4 - 755914244096*tau**2 + 17179869184",
+        "genus": 3,
+        "points_found": [
+         "0",
+         "0",
+         "oo"
+        ]
+       }
+      }
+     ],
+     "status": "finite quotient at B=2",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  },
+  {
+   "tag": [
+    2,
+    3,
+    1,
+    0,
+    -1,
+    -1
+   ],
+   "G1": "-6*t**2*u*v**2 + 2*t**2*u + 2*t*u**2*v**2 - 6*t*u**2 - 2*t*v**2 + 6*t + 6*u*v**2 - 2*u",
+   "G2": "-2*t**2*u**2*v + 6*t**2*v - 16*t*u*v + 6*u**2*v - 2*v",
+   "common_factor": null,
+   "projection": {
+    "eliminated": "w",
+    "plane": [
+     "x",
+     "z"
+    ]
+   },
+   "factors": [
+    {
+     "poly": "t**2*u - 3*t*u**2 + 3*t - u",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 2,
+       "line": {
+        "p": "8*tau",
+        "q": "-24",
+        "r": "0"
+       },
+       "D(tau)": "64*tau**2 + 576",
+       "curve_kind": "genus0",
+       "curve": {
+        "note": "genus 0 quotient (too coarse or linear-relation component; see Lemma 5.4)"
+       }
+      },
+      {
+       "B": 1,
+       "line": {
+        "p": "16*tau",
+        "q": "24*tau**2 - 24",
+        "r": "0"
+       },
+       "D(tau)": "576*tau**4 - 896*tau**2 + 576",
+       "curve_kind": "genus1",
+       "curve": {
+        "D_squarefree": "576*tau**4 - 896*tau**2 + 576",
+        "minimal_model": [
+         0,
+         1,
+         0,
+         -24,
+         36
+        ],
+        "conductor": 48,
+        "rank_bounds": [
+         0,
+         0
+        ],
+        "torsion": 8,
+        "complete": true,
+        "tau_values": [
+         "-1",
+         "-1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "oo"
+        ]
+       },
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    },
+    {
+     "poly": "t**2*u**2 - 3*t**2 + 8*t*u - 3*u**2 + 1",
+     "bidegree": [
+      2,
+      2
+     ],
+     "type": "linear_in_circle_point",
+     "basis_M": [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     "A": 1,
+     "quotients": [
+      {
+       "B": 1,
+       "line": {
+        "p": "32 - 32*tau**2",
+        "q": "64*tau",
+        "r": "16*tau**2 + 16"
+       },
+       "D(tau)": "768*tau**4 + 1536*tau**2 + 768",
+       "curve_kind": "none",
+       "used": true
+      }
+     ],
+     "status": "finite quotient at B=1",
+     "lifted_points": []
+    }
+   ],
+   "nondegenerate_solutions": []
+  }
+ ],
+ "summary": {
+  "degenerate_component": 4,
+  "univariate_torsion": 80,
+  "genus1_complete": 24,
+  "genus1_incomplete": 0,
+  "genus>=2": 24,
+  "genus0": 0,
+  "nonlinear": 0,
+  "isolated_line_points_checked": 0
+ },
+ "fibers": {
+  "nondegenerate_solutions": [],
+  "components": [
+   "('w', 0, 'whole fiber degenerate (an area vanishes or two coincide identically)')",
+   "('w', 1, 'whole fiber degenerate (an area vanishes or two coincide identically)')",
+   "('w', -1, 'whole fiber degenerate (an area vanishes or two coincide identically)')"
+  ]
+ },
+ "any_nondegenerate_solution": false,
+ "runtime_s": 45
+}

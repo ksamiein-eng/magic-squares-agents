@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "case": "wrong_frequency",
+      "rejected": true,
+      "reason": "wrong D1 coordinate convention"
+    },
+    {
+      "case": "wrong_angle_map",
+      "rejected": true,
+      "reason": "wrong D1 coordinate convention"
+    },
+    {
+      "case": "missing_system",
+      "rejected": true,
+      "reason": "missing/duplicate signed assignment"
+    },
+    {
+      "case": "duplicate_tag",
+      "rejected": true,
+      "reason": "missing/duplicate signed assignment"
+    },
+    {
+      "case": "false_kernel",
+      "rejected": true,
+      "reason": "wrong cross-product identity"
+    },
+    {
+      "case": "false_common_factor",
+      "rejected": true,
+      "reason": "wrong cross-product identity"
+    },
+    {
+      "case": "false_norm",
+      "rejected": true,
+      "reason": "wrong normalization factor"
+    },
+    {
+      "case": "false_second_square",
+      "rejected": true,
+      "reason": "wrong second square condition"
+    },
+    {
+      "case": "false_elliptic_point",
+      "rejected": true,
+      "reason": "point not on curve"
+    },
+    {
+      "case": "false_isogeny",
+      "rejected": true,
+      "reason": "wrong isogeny coefficients"
+    },
+    {
+      "case": "missing_square_class",
+      "rejected": true,
+      "reason": "square-class coverage"
+    },
+    {
+      "case": "false_local_obstruction",
+      "rejected": true,
+      "reason": "a modular obstruction has a primitive solution"
+    },
+    {
+      "case": "false_good_prime_count",
+      "rejected": true,
+      "reason": "point count wrong"
+    },
+    {
+      "case": "false_boundary",
+      "rejected": true,
+      "reason": "bad boundary claims"
+    },
+    {
+      "case": "false_residual_polynomial",
+      "rejected": true,
+      "reason": "wrong residual polynomial"
+    },
+    {
+      "case": "false_residual_point",
+      "rejected": true,
+      "reason": "known points altered"
+    },
+    {
+      "case": "false_completeness",
+      "rejected": true,
+      "reason": "unproved completeness claim"
+    },
+    {
+      "case": "promoted_residual_system",
+      "rejected": true,
+      "reason": "residual square system differs"
+    }
+  ]
+}

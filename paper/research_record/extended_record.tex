@@ -1,0 +1,1614 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,longtable,microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{Magic squares of squares}
+\fancyhead[R]{Extended working manuscript}
+\fancyfoot[C]{\thepage}\setlength{\headheight}{14pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
+\setcounter{tocdepth}{1}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}\newcommand{\Pone}{\mathbf P^1}
+\newcommand{\im}{\operatorname{Im}}\newcommand{\Impart}{\operatorname{Im}}
+\newcommand{\Jac}{\operatorname{Jac}}\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\VerifiedExponentCutoff}{7}
+\newcommand{\TwoPrimeLowerBound}{8}
+\newcommand{\ClosedOrbitCount}{5}
+\hypersetup{pdftitle={Magic squares of squares: certified exclusions, nonlinear geometry, and elliptic height bounds},pdfauthor={}}
+\title{Magic squares of squares:\\certified exclusions, nonlinear geometry,\\and elliptic height bounds}
+% Author names and affiliations remain unset, as in the verified core.
+\author{}
+\date{Extended release 4 --- 2 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study $3\times3$ magic squares of nine distinct positive integer squares through integral right triangles with a common hypotenuse. Gaussian factorization, exact valuations, and a real-angle identity give necessary prime-signature restrictions. Complete algebraic certificates exclude every necessary two-prime rational-circle configuration with exponent sum at most seven: a primitive central root $y=p^kq^\ell$ must satisfy $k+\ell\ge8$. Two checking implementations verify 2,064 signed systems, including coverage and projective boundaries. For squarefree three-prime roots, five of fifteen whole orbits are closed; there are now 120 additional factor closures beyond the original audit, without another whole-orbit exclusion. A new complete four-point genus-three curve and exact integer-torus maps supply 24 of these closures. The maps also reduce the ten unresolved orbit exclusions to six sufficient targets. Restoring an unused unit-circle normalization condition closes forty D1 signed systems and reduces its eight residual systems to one explicit genus-five rational-point question. This supplies 64 further factor closures across D1, B2, C, and E2, without a whole-orbit completeness claim. Exact singularity resolutions establish the genera of all recorded nonlinear projections. The rational $D3$ projections lift to genus-five curves, permitting rigorous finiteness statements rather than unsupported Newton-polygon inferences. Exact model matching to published Cremona full-basis data and new rational canonical-height intervals establish eight global elliptic square-coordinate height bounds. These bounds are not silently transferred to every unresolved orbit. Ten complete three-prime classifications, a large rank-two sieve, and any executed quadratic-Chabauty completeness proof remain unfinished. No solution of the unrestricted magic-square problem or historical-priority claim is made.
+\end{abstract}
+\medskip
+\noindent\textbf{Keywords.} Magic squares of squares; Pythagorean triangles; Gaussian integers; rational points; elliptic curves; exact computation.
+\clearpage
+\tableofcontents
+\clearpage
+\section{Introduction and scope of the results}\label{sec:introduction}
+The problem is to find or exclude a $3\times3$ magic square whose nine entries are distinct positive integer squares. This manuscript consolidates the repaired elementary core, the independently checked two-prime certificates through exponent sum seven, the three-prime certificate audit, exact nonlinear normalization calculations, and reference-backed elliptic bases with rigorous height bounds. It does not present a solution of the unrestricted problem.
+
+Write the central entry as $y^2$ and call $y$ the \emph{central root}. The square is \emph{primitive} when its nine positive square roots have greatest common divisor one. An \emph{offset} is a positive difference between the central entry and an entry on a line through the center. The distinction between central root, central entry, triangle area, and offset is maintained throughout.
+
+\subsection*{The supported results}
+The elementary statements are proved in Sections~\ref{sec:dictionary}--\ref{sec:real}. The computational assertions have the proof objects described in Section~\ref{sec:repro}.
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}m{0.20\linewidth}m{0.70\linewidth}}
+\toprule
+Result & Precise conclusion in this release\\
+\midrule
+Prime powers & A primitive central root is not a prime power; this is an integral arithmetic statement (Theorem~\ref{thm:A}).\\
+Real-angle obstruction & Frequencies $\{v,w,v+w,v-w\}$ cannot realize the four-offset pattern, even at arbitrary real angles (Theorem~\ref{thm:real}).\\
+Two primes & Every necessary rational-circle normal form with $k+\ell\le7$ is excluded. Thus $y=p^kq^\ell$ requires $k+\ell\ge8$ (Theorem~\ref{thm:C}).\\
+Three distinct primes & There are 15 admissible orbits. Exactly the five orbits $A,E1,E3=E4,F{-}1=F{-}3,F{-}2$ are closed as whole orbits by the present certificates (Theorem~\ref{thm:three}).\\
+Geometry and arithmetic & Nonlinear genera and finite fibers are checked. Published full bases are matched exactly, and eight global elliptic height bounds are proved; complete orbit classifications and quadratic Chabauty remain separate (Sections~\ref{sec:newgeometry}, \ref{sec:newarithmetic}).\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Every actual primitive square maps to the rational-circle relaxation after the necessary frequency restrictions are imposed. The converse is not assumed. In particular, the prime-adic proof for one prime is not silently promoted to an unrestricted rational-circle theorem.
+
+\subsection*{Relation to the supplied literature}
+Brown presents the common-hypotenuse formulation and the original semiprime exclusion \cite{Brown511,Brown417}. Prime-signature organization is explicit in Weisenberg \cite{Weisenberg}; Gaussian approaches occur in Cain and Wolird \cite{Cain,Wolird}. The supplied literature review also identifies an overlapping, unrefereed prime-support archive \cite{Schwarz}, containing the valuation and three-local-units arguments. Its stronger arithmetic claims are not imported into this manuscript. The present work distinguishes its rational-circle hypotheses from assertions restricted to actual Gaussian-prime data.
+
+The geometric literature includes the work of Bruin, Thomas, and V\'arilly-Alvarado and the Auel--Singer preprint cited in the revised source \cite{BTV,AS}. No global finiteness conclusion for the nondegenerate solutions is deduced here from general type, quasi-hyperbolicity, or a Newton polygon alone. No conjectural arithmetic geometry is used in the accepted exclusions.
+
+The contributions documented here are explicit elementary proofs and maps, complete exclusion certificates, normalization calculations, additional factor closures, and rigorous elliptic height certificates. Published rank and full-basis data are cited mathematical inputs, not newly recomputed descents. It does not assert first publication of the valuation lemma, prime-signature viewpoint, real-angle formulation, or individual exclusion results. Historical comparisons remain separate from correctness verification.
+
+\subsection*{Reading and reproduction conventions}
+The main text gives the mathematical implications of the checked calculations. Large polynomial catalogs and per-factor records are supplied in the accompanying archive. Paths in the two-prime calculation are relative to \path{verification/two_prime/}; paths in the three-prime audit are relative to \path{verification/three_prime/}. New normalization and arithmetic records are relative to \path{verification/geometry/} and \path{verification/arithmetic/}. The new orbit-transport and octic records are in \path{verification/orbit_progress/}. The current integrated status is \path{STATUS.json}. Earlier manuscripts and their historical assertions are retained as provenance, not as additional theorems of this release.
+
+\section{Integral squares and common-hypotenuse triangles}\label{sec:dictionary}
+A magic square here means a $3\times3$ array of nine distinct \emph{positive integer squares} whose three rows, three columns, and two long diagonals have a common sum. Write its central entry as $y^2$. The array is \emph{primitive} if the nine positive square roots have greatest common divisor one. Division by the square of that gcd preserves all magic conditions and distinctness.
+
+The common-hypotenuse interpretation is presented by Brown \cite{Brown511}; the organization by center prime signature has prior literature, including Weisenberg \cite{Weisenberg}. Our purpose is to state precisely the integral conditions required for the subsequent proofs.
+
+\begin{lemma}[Lucas form]\label{lem:lucas}
+Every rational $3\times3$ magic square is of the form
+\[
+\begin{pmatrix}
+e+a&e-a-b&e+b\\
+e-a+b&e&e+a-b\\
+e-b&e+a+b&e-a
+\end{pmatrix},\qquad \text{magic sum }3e.
+\]
+Its entries are distinct if and only if
+\begin{equation}\label{eq:distinct}
+ab(a^2-b^2)(a^2-4b^2)(4a^2-b^2)\ne0.
+\end{equation}
+The magnitudes of the four offsets along lines through the center can be written as
+\begin{equation}\label{eq:pattern}
+\{a,b,a+b,a-b\},\qquad a>b>0,\quad a\ne2b,
+\end{equation}
+after replacing the two parameters by their ordered absolute values.
+\end{lemma}
+\begin{proof}
+Let $S$ be the magic sum and $e$ the center. Adding the four lines through the center gives the sum of all nine entries plus $3e$, hence $4S=3S+3e$ and $S=3e$. Opposite entries consequently sum to $2e$. Choosing the top left and top right offsets $a,b$, the remaining entries follow from the row and column equations. The nine offsets are $0,\pm a,\pm b,\pm(a+b),\pm(a-b)$. They are distinct precisely when the four nonzero magnitudes are distinct, which gives \eqref{eq:distinct}. Taking absolute values of $a,b$ and ordering them gives \eqref{eq:pattern}.
+\end{proof}
+
+\begin{proposition}[Fixed-center integral dictionary]\label{prop:dictionary}
+For an integer $y>0$, a magic square of nine distinct positive integer squares with center $y^2$ exists if and only if there are four integral right triangles $(p_i,q_i,y)$, with $p_i,q_i>0$, whose offsets
+\[
+\delta_i:=2p_iq_i
+\]
+are the four values in \eqref{eq:pattern}. We call $\delta_i$ the \emph{offset}; it is four times the ordinary triangle area.
+\end{proposition}
+\begin{proof}
+If $r^2,y^2,s^2$ are an increasing arithmetic progression of integer squares, then $r^2+s^2=2y^2$. Thus $r,s$ have the same parity and
+\[
+p=(s+r)/2,\qquad q=(s-r)/2
+\]
+are positive integers with $p^2+q^2=y^2$ and $s^2-y^2=2pq$. Conversely, integral legs $p,q$ give the progression $(p-q)^2,y^2,(p+q)^2$. Nonzero integral equal legs would give $y^2=2p^2$, which is impossible, so the first square is positive. Apply this correspondence to the four center lines and use Lemma~\ref{lem:lucas}. In the reverse construction $a+b<y^2$, since it is an offset of an integral right triangle; therefore every entry is positive.
+\end{proof}
+
+\begin{remark}[What is held fixed]
+There are infinitely many rational right triangles on a fixed rational hypotenuse. Clearing their denominators changes the center and can change its prime signature. The finite counts and prime-adic statements below concern \emph{integral} triangles at the specified integer $y$. A rational existence formulation is equivalent only when the overall scale is allowed to change.
+\end{remark}
+
+\begin{lemma}[Prime support of a primitive center]\label{lem:support}
+In a primitive magic square, $y$ is odd and every prime divisor of $y$ is $1$ modulo $4$.
+\end{lemma}
+\begin{proof}
+If $2\mid y$, each opposite-pair equation $r^2+s^2=2y^2$ reduces to $r^2+s^2=0\pmod4$, forcing both roots even. If an odd prime $\ell\equiv3\pmod4$ divides $y$, the same equation modulo $\ell$ forces both roots divisible by $\ell$, since $-1$ is not a square modulo $\ell$. In either case all nine roots have a common prime factor.
+\end{proof}
+
+\section{Gaussian coordinates and the correct area angle}\label{sec:gaussian}
+Write
+\[
+y=\prod_{j=1}^r\ell_j^{k_j},\qquad \ell_j\equiv1\pmod4,
+\qquad \ell_j=\pi_j\overline{\pi_j}\quad\text{in }\Z[i].
+\]
+Fix one Gaussian prime $\pi_j$ above each $\ell_j$.
+
+\begin{proposition}[Triangle indexing]\label{prop:index}
+Up to interchanging legs, the nondegenerate integral triangles on $y$ are indexed by nonzero vectors
+\[
+m=(m_1,\ldots,m_r),\quad -k_j\le m_j\le k_j,
+\]
+modulo the equivalence $m\sim-m$. A Gaussian representative is
+\begin{equation}\label{eq:z}
+z_m=\prod_j\pi_j^{k_j+m_j}\overline{\pi_j}^{k_j-m_j},
+\qquad z_m\overline{z_m}=y^2.
+\end{equation}
+The legs are the absolute real and imaginary parts, in either order. There are
+\begin{equation}\label{eq:count}
+\frac{\prod_j(2k_j+1)-1}{2}
+\end{equation}
+such triangles. Their primitive hypotenuse and common leg divisor are
+\[
+d_m=\prod_j\ell_j^{|m_j|},\qquad
+ g_m=y/d_m=\prod_j\ell_j^{k_j-|m_j|}.
+\]
+\end{proposition}
+\begin{proof}
+Unique factorization in $\Z[i]$ makes the two exponents above $\ell_j$ add to $2k_j$, giving \eqref{eq:z} up to a unit. Conjugation negates $m$; units and conjugation account exactly for signs and leg interchange. The zero vector gives an axis representation and is excluded. No nonzero vector gives an axis representation or equal legs: the former contradicts unique factorization unless $m=0$, and the latter would give an integer square twice another nonzero integer square. This proves \eqref{eq:count}. Factoring out the common power $\ell_j^{k_j-|m_j|}$ leaves only one of $\pi_j,\bar\pi_j$ in the primitive representative, so there is no further common divisor of the legs.
+\end{proof}
+
+\begin{proposition}[Area angle]\label{prop:angle}
+Define
+\begin{equation}\label{eq:areaangle}
+e^{i\chi_j}=\left(\frac{\pi_j}{\overline{\pi_j}}\right)^2
+=\frac{\pi_j^4}{\ell_j^2}.
+\end{equation}
+Then the offset indexed by $m$ is
+\begin{equation}\label{eq:offsetangle}
+\delta_m=y^2\left|\sin\left(\sum_jm_j\chi_j\right)\right|.
+\end{equation}
+In particular, $\chi_j=4\arg\pi_j$ modulo $2\pi$. The point $\pi_j^2/\ell_j$ represents the leg angle, not the area angle.
+\end{proposition}
+\begin{proof}
+Dividing \eqref{eq:z} by $y$ gives $z_m/y=\prod_j(\pi_j/\bar\pi_j)^{m_j}$. Squaring and taking the absolute imaginary part gives \eqref{eq:offsetangle}, since $|\im(z_m^2)|=2p_mq_m$.
+\end{proof}
+If $\pi_j=A_j+iB_j$, the actual half-area-angle parameter is
+\[
+\tan(\chi_j/2)=\frac{2A_jB_j}{A_j^2-B_j^2}\in\Q.
+\]
+The rational circle point in \eqref{eq:areaangle} has reduced common denominator $\ell_j^2$: $\ell_j$ divides none of $A_j,B_j,A_j^2-B_j^2$, so it does not divide the sine numerator $4A_jB_j(A_j^2-B_j^2)$.
+
+\subsection{The deliberate rational-circle relaxation}
+For a fixed set of frequency vectors, replace the specific points in \eqref{eq:areaangle} by arbitrary rational points of the unit circle. Parametrize each by
+\[
+e^{i\chi}=\frac{(h+it)^2}{h^2+t^2},\qquad [t:h]\in\Pone(\Q).
+\]
+The affine parameter is $t/h$; the value $[1:0]$ must not be omitted. For bounds $k_j$ containing every frequency, a common homogeneous numerator is
+\begin{equation}\label{eq:homogeneous}
+E_m=\im\prod_j
+(h_j+i\,\operatorname{sgn}(m_j)t_j)^{2|m_j|}
+(h_j^2+t_j^2)^{k_j-|m_j|},
+\end{equation}
+where the first factor is $1$ when $m_j=0$. The denominator
+$\prod_j(h_j^2+t_j^2)^{k_j}$ is positive at every real projective parameter. Thus no real denominator-zero branch is introduced by clearing it.
+
+Every actual integral solution maps to this relaxation, but the converse is not asserted. Necessary frequency restrictions established for actual primitive solutions may be imposed before relaxing the angles. Valuation statements for actual primes are not statements about arbitrary rational angles.
+
+\subsection{The double-angle map is a cover, not an equivalence}
+The map $T=2t/(1-t^2)$ has degree two. For finite nonzero $T\in\Q$, rational lifts exist exactly when $1+T^2$ is a rational square, because
+\[
+t=\frac{-1\pm\sqrt{1+T^2}}{T}.
+\]
+The projective fibers above $T=0,\infty$ are respectively $\{0,\infty\}$ and $\{1,-1\}$. Thus $T=1$ has no rational lift, while $T=-4/3$ has lifts $2,-1/2$. A pullback identity under this map does not preserve genus, Jacobians, or completeness of rational-point lists. Nonexistence on a correctly formulated larger base problem does imply nonexistence on a pullback, after its exceptional fibers and admissibility conditions are checked. Brown already distinguishes rational circle coordinates from rational triangle side lengths \cite{Brown511}.
+
+\section{Valuations and the full-depth restriction}\label{sec:valuations}
+The following exact valuation and primitivity arguments also appear in the overlapping archive \cite{Schwarz}; no priority claim is made here.
+\begin{lemma}[Exact local valuations]\label{lem:valuation}
+Write an integral right triangle as $(p,q,y)=g(p',q',d)$, with the latter primitive and $gd=y$. For $\ell^k\Vert y$,
+\[
+v_\ell(2pq)=
+\begin{cases}
+2(k-v_\ell(d)),&\ell\mid d,\\
+\text{at least }2k,&\ell\nmid d.
+\end{cases}
+\]
+\end{lemma}
+\begin{proof}
+A primitive Pythagorean hypotenuse is odd. A prime dividing it and either leg also divides the other leg, so $\gcd(2p'q',d)=1$. Now use $2pq=g^2(2p'q')$ and $gd=y$.
+\end{proof}
+
+\begin{proposition}[Three full-depth lines]\label{prop:depth}
+In a primitive magic square, for every $\ell^k\Vert y$, at least three of the four center-line offsets are $\ell$-adic units. Equivalently, at least three triangle vectors have $|m_\ell|=k$.
+\end{proposition}
+\begin{proof}
+For any odd $\ell$, the minimum valuation among $a,b,a+b,a-b$ is attained at least three times. If $v_\ell(a)\ne v_\ell(b)$, both sums have the smaller valuation. Otherwise both sums have valuation at least $v_\ell(a)$, and they cannot both have larger valuation because their sum is $2a$.
+
+In the primitive integral square, this minimum is zero. Indeed, if every offset were divisible by $\ell$, then $\ell\mid y^2$ would make every square entry divisible by $\ell$, hence every root divisible by $\ell$. That contradicts primitivity. Lemma~\ref{lem:valuation} and Proposition~\ref{prop:index} identify valuation zero with $v_\ell(d)=|m_\ell|=k$.
+\end{proof}
+
+\begin{theorem}[Prime-power-center exclusion]\label{thm:A}
+A primitive magic square of nine distinct positive integer squares cannot have center $y^2$ with $y=\ell^k$.
+\end{theorem}
+\begin{proof}
+There is exactly one projective triangle vector at full depth $k$, namely the pair $\{k,-k\}$. Proposition~\ref{prop:depth} requires at least three distinct full-depth triangles, which is impossible. Equivalently, the $k$ triangle offsets have pairwise distinct valuations $2(k-j)$, $1\le j\le k$, so three distinct ones cannot satisfy an additive relation.
+\end{proof}
+
+\begin{lemma}[Two-prime normal form]\label{lem:two}
+If $y=\ell_1^{k_1}\ell_2^{k_2}$ is the central root of a primitive solution, its four triangle vectors, modulo individual signs, have the form
+\[
+(k_1,k_2),\quad(k_1,-k_2),\quad(m,k_2),\quad(k_1,n),
+\qquad |m|<k_1,\ |n|<k_2.
+\]
+\end{lemma}
+\begin{proof}
+At least three vectors have each coordinate at full depth. Hence at least two have both coordinates full. There are exactly two such projective vectors, $(k_1,\pm k_2)$, and both occur. There cannot be three: they would not be distinct. The two coordinate deficiencies must therefore occur on different remaining vectors. Change each vector's overall sign to make its full coordinate positive, giving the stated form.
+\end{proof}
+This is a necessary condition on actual solutions, not a restriction deduced from the relaxed sine equations alone.
+
+\section{A real-angle obstruction and two immediate closures}\label{sec:real}
+\begin{theorem}[Four sine magnitudes]\label{thm:real}
+For arbitrary real $x,z$, the values
+\[
+X=|\sin x|,\quad Z=|\sin z|,\quad
+P=|\sin(x+z)|,\quad Q=|\sin(x-z)|
+\]
+cannot equal the four distinct positive values in \eqref{eq:pattern}.
+\end{theorem}
+\begin{proof}
+Sine addition and subtraction give
+\begin{align}
+P^2Q^2&=(X^2-Z^2)^2,\label{eq:product}\\
+P^2+Q^2&=2(X^2+Z^2-2X^2Z^2).\label{eq:sum}
+\end{align}
+There are six choices of the unordered pair $\{P,Q\}$. Substituting the other pair as $\{X,Z\}$, the residual of \eqref{eq:product} is:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+$\{P,Q\}$ & $P^2Q^2-(X^2-Z^2)^2$\\
+\midrule
+$\{a,b\}$ & $-15a^2b^2$\\
+$\{a,a+b\}$ & $3a^2b(2a-b)$\\
+$\{a,a-b\}$ & $-3a^2b(2a+b)$\\
+$\{b,a+b\}$ & $-3ab^2(a-2b)$\\
+$\{b,a-b\}$ & $-3ab^2(a+2b)$\\
+$\{a+b,a-b\}$ & $0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first five residuals are nonzero for $a>b>0$, $a\ne2b$. In the last case $\{X,Z\}=\{a,b\}$ and the residual of \eqref{eq:sum} is $4a^2b^2\ne0$.
+\end{proof}
+
+\begin{corollary}[Frequency-parallelogram obstruction]\label{cor:para}
+A frequency configuration of the form $\{v,w,v+w,v-w\}$, up to individual signs, has no nondegenerate real-angle solution.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:real} with $x=v\cdot\chi$ and $z=w\cdot\chi$.
+\end{proof}
+
+\begin{corollary}[Semiprime-center exclusion]\label{cor:B}
+For distinct primes $p,q$, no primitive magic square has center $(pq)^2$. Its frequency relaxation is impossible even over real angles.
+\end{corollary}
+\begin{proof}
+Lemma~\ref{lem:two} gives the four vectors $(1,1),(1,-1),(0,1),(1,0)$; apply Corollary~\ref{cor:para}. The original semiprime-center exclusion is Brown's \cite{Brown417}.
+\end{proof}
+
+\begin{corollary}[Direct closure of E1]\label{cor:E1}
+The three-prime configuration
+\[
+\{(0,1,0),(1,-1,-1),(1,0,-1),(1,1,-1)\}
+\]
+has no nondegenerate real-angle solution.
+\end{corollary}
+\begin{proof}
+Take $v=(1,0,-1)$ and $w=(0,1,0)$ in Corollary~\ref{cor:para}.
+\end{proof}
+Independent finite enumeration of nonzero vectors of $\{0,\pm1\}^3$ modulo sign gives 13 vectors. Requiring at least three full-depth vectors at each coordinate leaves 177 four-sets. Under coordinate signs and permutations these form 15 orbits. Exactly six sets are frequency parallelograms, constituting the orbit E1. The enumeration alone verifies a combinatorial classification; the additional orbit closures are proved in Section~\ref{sec:closed}. For any two-prime exponents, Corollary~\ref{cor:para} also excludes the normal form with $m=n=0$.
+
+\section{Two-prime exclusions through exponent sum seven}\label{sec:two}
+We work with the necessary normal form from Lemma~\ref{lem:two},
+\[
+(k,\ell),\quad(k,-\ell),\quad(m,\ell),\quad(k,n),
+\qquad |m|<k,\quad |n|<\ell.
+\]
+The calculations in this section exclude all rational-circle parameters of the stated configurations, not just a bounded range of primes or denominators.
+
+\subsection{Complete signed equations}
+\begin{lemma}[The 48 signed systems are complete]\label{lem:48}
+Let $s_0,s_1,s_2,s_3$ be real numbers with nonzero, pairwise distinct magnitudes. Their magnitudes have the pattern \eqref{eq:pattern} if and only if at least one system
+\begin{equation}\label{eq:48}
+s_i-\epsilon s_k-\eta s_l=0,\qquad
+s_j-\epsilon s_k+\eta s_l=0
+\end{equation}
+holds, where $i<j$ ranges over the six pairs, $(k,l)$ over both orders of the complementary pair, and $\epsilon,\eta\in\{1,-1\}$. There are $6\cdot2\cdot4=48$ systems.
+\end{lemma}
+\begin{proof}
+In the forward direction choose $\{i,j\}$ for the magnitudes $a+b,a-b$. Whatever the signs and ordering of $s_i,s_j$, the magnitudes of $(s_i+s_j)/2$ and $(s_i-s_j)/2$ are $a,b$ in some order. Choose $(k,l)$ in that order and the signs to obtain \eqref{eq:48}. Conversely, \eqref{eq:48} implies
+\[
+\{|s_i|,|s_j|\}=\{|s_k|+|s_l|,\,||s_k|-|s_l||\}.
+\]
+Set $a=\max(|s_k|,|s_l|)$ and $b=\min(|s_k|,|s_l|)$. The nondegeneracy assumptions give all restrictions in \eqref{eq:pattern}.
+\end{proof}
+As a separate exact guard, the verifier compares the rational row spaces of these 48 systems with all $4!\cdot2^3=192$ fully signed assignments, after normalizing the first equation's overall sign. Both give exactly the same 48 row spaces.
+
+\subsection{Inheritance and complete configuration coverage}
+\begin{lemma}[One-way harmonic inheritance]\label{lem:inherit}
+Let $S\subset\Z^r$ be a four-vector frequency configuration with no nondegenerate rational-circle solution. For positive integers $d_1,\ldots,d_r$, the coordinatewise multiple
+\[
+D S=\{(d_1v_1,\ldots,d_rv_r):v\in S\}
+\]
+also has no such solution. Individual vector signs, coordinate sign changes, and coordinate permutations preserve the conclusion.
+\end{lemma}
+\begin{proof}
+If $e^{i\theta_j}$ is rational on the unit circle, so is $(e^{i\theta_j})^{d_j}=e^{i d_j\theta_j}$. A solution for $DS$ therefore gives one for $S$ at the angles $d_j\theta_j$, with exactly the same four sine magnitudes. The map need not be surjective on rational points and is not asserted to be birational. The stated signs and permutations simply relabel parameters or sine magnitudes.
+\end{proof}
+
+
+For each unordered exponent pair with $k+\ell\le7$, enumerate the integer pairs $(m,n)$ in the normal form. Coordinate signs, projective vector signs, and coordinate interchange where appropriate reduce the raw list. A coordinatewise power pullback to a smaller certified configuration is also sufficient for exclusion. The zero-drop case $m=n=0$ is always excluded by Corollary~\ref{cor:para}.
+
+The combined verifier checks all 168 raw normal forms: twelve have the elementary parallelogram exclusion, 90 are symmetry-equivalent to direct certificates, and 66 inherit exclusions through explicit positive integer coordinate multipliers. An independent checker verifies the same coverage by dividing out each coordinate's common frequency divisor. The reduction by exponent sum is:
+\begin{center}
+\begin{tabular}{crrr}
+\toprule
+Exponent sum & Raw normal forms & Fresh representatives & Signed systems\\
+\midrule
+2 & 1 & 0 & 0\\
+3 & 3 & 1 & 48\\
+4 & 14 & 4 & 192\\
+5 & 22 & 6 & 288\\
+6 & 55 & 14 & 672\\
+7 & 73 & 18 & 864\\
+\midrule
+Total & 168 & 43 & 2,064\\
+\bottomrule
+\end{tabular}
+\end{center}
+This table counts the representatives that require polynomial certificates; the elementary and inherited exclusions are not omitted cases.
+
+\subsection{Uniform polynomial inputs}
+For $j\ge0$, define $C_j(v)+iS_j(v)=(1+iv)^{2j}$, with $C_{-j}=C_j$, $S_{-j}=-S_j$, $C_0=1$, and $S_0=0$. Set $t=\tan(x/2)$ and $u=\tan(z/2)$. On the finite chart, the positive common denominator is
+\[
+L=(1+t^2)^k(1+u^2)^\ell.
+\]
+The four signed numerators are
+\begin{align}
+E_0&=S_k(t)C_\ell(u)+C_k(t)S_\ell(u),\notag\\
+E_1&=S_k(t)C_\ell(u)-C_k(t)S_\ell(u),\notag\\
+E_2&=(1+t^2)^{k-|m|}\bigl(S_m(t)C_\ell(u)+C_m(t)S_\ell(u)\bigr),\label{eq:twoinputs}\\
+E_3&=(1+u^2)^{\ell-|n|}\bigl(S_k(t)C_n(u)+C_k(t)S_n(u)\bigr).\notag
+\end{align}
+Thus $E_j/L$ are $\sin(kx+\ell z)$, $\sin(kx-\ell z)$, $\sin(mx+\ell z)$, and $\sin(kx+nz)$. The homogeneous form \eqref{eq:homogeneous} includes the projective boundaries.
+
+\begin{lemma}[Combined exact elimination]\label{lem:combined}
+For every representative in Table~\ref{tab:two}, all 48 signed systems have a nonzero resultant in $u$ after division only by common powers of $t$. The possible finite rational $t$-coordinates of a common zero are contained in the set stated in the last column.
+\end{lemma}
+\begin{proof}
+The proof objects are in \path{results/certificate_degree7.json}. Each of the 2,064 records contains the assignment, original equations, removed $t$-power, reduced equations, resultant, and complete factor product. The removed $t=0$ branch is degenerate by the argument below; no other variable-dependent factor is discarded.
+
+The catalog contains 1,190 distinct polynomials. Three are linear with roots $0,1,-1$. The other 1,187 each have an explicit prime $r\in\{3,5,7,11,13,17,19\}$ for which the leading coefficient is nonzero modulo $r$ and the polynomial has no root in $\F_r$. Such a polynomial has no rational root: a root with denominator divisible by $r$ contradicts the leading coefficient after denominators are cleared, whereas a denominator prime to $r$ gives a root in $\F_r$. Every factor product, including its nonzero constant and multiplicities, is verified exactly. Irreducibility is not needed.
+
+There are two acceptance implementations. The standard-library checker reconstructs \eqref{eq:twoinputs} by repeated sine addition. For reduced equations $F,G$, let $M=\deg_uF$, $N=\deg_uG$, $A=\deg_tF$, and $B=\deg_tG$. The Sylvester determinant has degree at most
+\[
+D=NA+MB.
+\]
+The checker rejects a recorded polynomial of larger degree and compares it with the exact integer determinant at $t=0,1,\ldots,D$. Agreement at $D+1$ distinct integers proves an identity. In total, 132,336 exact determinant evaluations are checked. These are not numerical samples of prospective solutions.
+
+The second implementation reconstructs the inputs from Chebyshev polynomials and computes the symbolic Sylvester determinants over $\Z[t]$. It does not import the producer or the standard-library checker, and does not call a resultant, factorization, or rational-root routine to accept the certificate. Both implementations check configuration coverage, the factors, the finite fibers, and the projective boundaries. A nonzero resultant vanishes at every finite common zero, including specializations where a leading coefficient vanishes. The verified factor products therefore give the necessary coordinate lists in the table.
+\end{proof}
+
+\begin{longtable}{ccrrrr}
+\caption{All 43 directly certified representatives. Rootless counts are within a row, not additive across rows. The resultant degree is the largest actual degree; identity verification uses the independently computed degree bound.}\label{tab:two}\\
+\toprule
+$(k,\ell)$ & $(m,n)$ & Systems & $\max\deg R$ & Rootless factors & Rational $t$\\
+\midrule\endfirsthead
+\toprule
+$(k,\ell)$ & $(m,n)$ & Systems & $\max\deg R$ & Rootless factors & Rational $t$\\
+\midrule\endhead
+$(2,1)$ & $(1,0)$ & 48 & 14 & 25 & $0,\pm1$ \\
+$(3,1)$ & $(1,0)$ & 48 & 22 & 26 & $0,\pm1$ \\
+$(3,1)$ & $(2,0)$ & 48 & 22 & 29 & $0,\pm1$ \\
+$(2,2)$ & $(1,1)$ & 48 & 30 & 35 & $0$ \\
+$(2,2)$ & $(1,-1)$ & 48 & 30 & 25 & $0$ \\
+$(4,1)$ & $(1,0)$ & 48 & 30 & 27 & $0,\pm1$ \\
+$(4,1)$ & $(3,0)$ & 48 & 30 & 27 & $0,\pm1$ \\
+$(3,2)$ & $(1,1)$ & 48 & 46 & 29 & $0,\pm1$ \\
+$(3,2)$ & $(1,-1)$ & 48 & 46 & 32 & $0,\pm1$ \\
+$(3,2)$ & $(2,1)$ & 48 & 46 & 31 & $0,\pm1$ \\
+$(3,2)$ & $(2,-1)$ & 48 & 46 & 31 & $0,\pm1$ \\
+$(5,1)$ & $(1,0)$ & 48 & 38 & 27 & $0,\pm1$ \\
+$(5,1)$ & $(2,0)$ & 48 & 38 & 31 & $0,\pm1$ \\
+$(5,1)$ & $(3,0)$ & 48 & 38 & 29 & $0,\pm1$ \\
+$(5,1)$ & $(4,0)$ & 48 & 38 & 31 & $0,\pm1$ \\
+$(4,2)$ & $(1,1)$ & 48 & 62 & 27 & $0$ \\
+$(4,2)$ & $(1,-1)$ & 48 & 62 & 27 & $0$ \\
+$(4,2)$ & $(3,1)$ & 48 & 62 & 27 & $0$ \\
+$(4,2)$ & $(3,-1)$ & 48 & 62 & 31 & $0$ \\
+$(3,3)$ & $(1,1)$ & 48 & 70 & 60 & $0,\pm1$ \\
+$(3,3)$ & $(1,-1)$ & 48 & 70 & 53 & $0,\pm1$ \\
+$(3,3)$ & $(1,2)$ & 48 & 70 & 25 & $0,\pm1$ \\
+$(3,3)$ & $(1,-2)$ & 48 & 70 & 28 & $0,\pm1$ \\
+$(3,3)$ & $(2,2)$ & 48 & 70 & 37 & $0,\pm1$ \\
+$(3,3)$ & $(2,-2)$ & 48 & 70 & 27 & $0,\pm1$ \\
+$(6,1)$ & $(1,0)$ & 48 & 46 & 27 & $0,\pm1$ \\
+$(6,1)$ & $(5,0)$ & 48 & 46 & 29 & $0,\pm1$ \\
+$(5,2)$ & $(1,1)$ & 48 & 78 & 29 & $0,\pm1$ \\
+$(5,2)$ & $(1,-1)$ & 48 & 78 & 33 & $0,\pm1$ \\
+$(5,2)$ & $(2,1)$ & 48 & 78 & 27 & $0,\pm1$ \\
+$(5,2)$ & $(2,-1)$ & 48 & 78 & 29 & $0,\pm1$ \\
+$(5,2)$ & $(3,1)$ & 48 & 78 & 31 & $0,\pm1$ \\
+$(5,2)$ & $(3,-1)$ & 48 & 78 & 32 & $0,\pm1$ \\
+$(5,2)$ & $(4,1)$ & 48 & 78 & 31 & $0,\pm1$ \\
+$(5,2)$ & $(4,-1)$ & 48 & 78 & 31 & $0,\pm1$ \\
+$(4,3)$ & $(1,1)$ & 48 & 94 & 53 & $0,\pm1$ \\
+$(4,3)$ & $(1,-1)$ & 48 & 94 & 55 & $0,\pm1$ \\
+$(4,3)$ & $(1,2)$ & 48 & 94 & 29 & $0$ \\
+$(4,3)$ & $(1,-2)$ & 48 & 94 & 29 & $0$ \\
+$(4,3)$ & $(3,1)$ & 48 & 94 & 57 & $0,\pm1$ \\
+$(4,3)$ & $(3,-1)$ & 48 & 94 & 55 & $0,\pm1$ \\
+$(4,3)$ & $(3,2)$ & 48 & 94 & 29 & $0$ \\
+$(4,3)$ & $(3,-2)$ & 48 & 94 & 29 & $0$ \\
+\bottomrule
+\end{longtable}
+
+\subsection{Degenerate fibers and the arithmetic consequence}
+The first two signed sine values satisfy
+\begin{equation}\label{eq:collision}
+\sin^2(kx+\ell z)-\sin^2(kx-\ell z)
+=\sin(2kx)\sin(2\ell z).
+\end{equation}
+At $t=0,\pm1$, the angle $x$ is $0,\pm\pi/2$, so the right side vanishes for every integer $k$. The first two offset magnitudes coincide. At $t=\infty$, $x=\pi$ gives the same obstruction; at $u=\infty$, $z=\pi$ does as well. The boundary intersection is included. Each checker also verifies an explicit zero-offset or equal-magnitude polynomial witness at every permitted finite fiber and boundary.
+
+\begin{theorem}[Certified two-prime exclusion; Theorem C]\label{thm:C}
+Every necessary full-depth two-prime normal form with $k,\ell>0$ and $k+\ell\le7$ has no nondegenerate rational-circle solution. Consequently a primitive magic square with central root $y=p^kq^\ell$, $p\ne q$, must satisfy
+\[
+\boxed{k+\ell\ge\TwoPrimeLowerBound}
+\]
+\end{theorem}
+\begin{proof}
+For $(1,1)$ use Corollary~\ref{cor:B}. Complete coverage reduces every other normal form in this range to the elementary theorem or a power pullback of a representative in Table~\ref{tab:two}. Lemma~\ref{lem:combined} and \eqref{eq:collision} exclude all its finite and projective rational points. Lemma~\ref{lem:inherit} transfers those exclusions to the inherited cases. Every actual primitive integer square has one of the necessary normal forms.
+\end{proof}
+The bound concerns the exponents in the central root, not the doubled exponents in $y^2$. This completes the originally proposed sum-seven range; no exclusion of every larger two-prime signature is inferred.
+
+\begin{corollary}[Reduced-frequency denominator obstruction]\label{cor:reduced}
+For a nondegenerate rational-circle solution of the two-prime normal form, it is necessary that
+\[
+\boxed{\frac{k}{\gcd(k,|m|)}+\frac{\ell}{\gcd(\ell,|n|)}\ge8.}
+\]
+Here $\gcd(k,0)=k$. Equivalently, the denominators of $m/k$ and $n/\ell$ in lowest terms must sum to at least eight.
+\end{corollary}
+\begin{proof}
+Put $d=\gcd(k,|m|)$ and $e=\gcd(\ell,|n|)$. Divide the two frequency coordinates by $d,e$. If the resulting positive bounds $K=k/d$, $L=\ell/e$ satisfy $K+L\le7$, Theorem~\ref{thm:C} excludes the reduced normal form. A solution to the original form maps to one for the reduced form under $(e^{ix},e^{iz})\mapsto(e^{idx},e^{iez})$, preserving all four magnitudes. No inverse or surjectivity is used.
+\end{proof}
+For example, $(k,\ell;m,n)=(12,10;3,5)$ reduces to $(4,2;1,1)$ and is excluded. This is an exclusion of a configuration, not of every configuration at the larger prime signature.
+
+\section{Three distinct primes: configurations and status}\label{sec:three}
+For a squarefree central root $y=\ell_1\ell_2\ell_3$, the thirteen integral triangles are indexed by the nonzero vectors of $\{-1,0,1\}^3$ modulo overall sign. By Proposition~\ref{prop:depth}, at least three of the four vectors have absolute coordinate one at each coordinate. Enumeration leaves 177 admissible four-sets. The group $(\Z/2\Z)^3\rtimes S_3$, of order 48, acts by coordinate signs and permutations; the four-sets form fifteen orbits.
+
+The seventeen historical certificate labels include the duplicates $E3=E4$ and $F{-}1=F{-}3$. All labels are retained in the data for traceability, but the mathematical orbit count is fifteen. The representatives below are the actual audited certificate representatives, and may differ by symmetry from those printed in an earlier draft.
+
+\begin{longtable}{l m{2.80in}rrl}
+\caption{The fifteen admissible orbits and their current whole-orbit status. ``Unresolved'' allows that some constituent factors have been closed.}\label{tab:orbits}\\
+\toprule
+Orbit & Four vectors, modulo individual sign & Size & Stabilizer & Status\\
+\midrule\endfirsthead
+\toprule
+Orbit & Four vectors, modulo individual sign & Size & Stabilizer & Status\\
+\midrule\endhead
+$A$ & $\begin{gathered}(1,1,1),(1,1,-1)\\(1,-1,1),(1,-1,-1)\end{gathered}$ & 1 & 48 & Closed \\[3pt]
+$B1$ & $\begin{gathered}(1,1,-1),(1,-1,1)\\(1,-1,-1),(1,1,0)\end{gathered}$ & 12 & 4 & Unresolved \\[3pt]
+$B2$ & $\begin{gathered}(1,1,1),(1,1,-1)\\(1,-1,-1),(1,1,0)\end{gathered}$ & 12 & 4 & Unresolved \\[3pt]
+$C$ & $\begin{gathered}(1,1,1),(1,1,-1)\\(1,-1,1),(0,0,1)\end{gathered}$ & 12 & 4 & Unresolved \\[3pt]
+$D1$ & $\begin{gathered}(1,1,1),(1,1,-1)\\(1,1,0),(1,0,1)\end{gathered}$ & 24 & 2 & Unresolved \\[3pt]
+$D2$ & $\begin{gathered}(1,1,1),(1,-1,-1)\\(1,1,0),(1,0,1)\end{gathered}$ & 12 & 4 & Unresolved \\[3pt]
+$D3$ & $\begin{gathered}(1,1,-1),(1,-1,1)\\(1,1,0),(1,0,1)\end{gathered}$ & 12 & 4 & Unresolved \\[3pt]
+$D4$ & $\begin{gathered}(1,1,-1),(1,-1,-1)\\(1,1,0),(1,0,1)\end{gathered}$ & 24 & 2 & Unresolved \\[3pt]
+$E1$ & $\begin{gathered}(1,1,1),(1,1,-1)\\(1,1,0),(0,0,1)\end{gathered}$ & 6 & 8 & Closed \\[3pt]
+$E2$ & $\begin{gathered}(1,-1,1),(1,-1,-1)\\(1,1,0),(0,0,1)\end{gathered}$ & 6 & 8 & Unresolved \\[3pt]
+$E3=E4$ & $\begin{gathered}(1,1,1),(1,-1,1)\\(1,1,0),(0,0,1)\end{gathered}$ & 24 & 2 & Closed \\[3pt]
+$F{-}1=F{-}3$ & $\begin{gathered}(1,1,1),(1,1,0)\\(1,0,1),(0,1,-1)\end{gathered}$ & 12 & 4 & Closed \\[3pt]
+$F{-}2$ & $\begin{gathered}(1,-1,-1),(1,1,0)\\(1,0,1),(0,1,-1)\end{gathered}$ & 4 & 12 & Closed \\[3pt]
+$F{+}1$ & $\begin{gathered}(1,1,1),(1,1,0)\\(1,0,1),(0,1,1)\end{gathered}$ & 4 & 12 & Unresolved \\[3pt]
+$F{+}2$ & $\begin{gathered}(1,1,-1),(1,1,0)\\(1,0,1),(0,1,1)\end{gathered}$ & 12 & 4 & Unresolved \\[3pt]
+\bottomrule
+\end{longtable}
+
+The group action and coverage are checked independently by \path{audit_inputs.py}. Orbit sizes sum to 177; every certificate configuration has 48 complete signed systems. The seventeen records therefore contain 816 stored systems, or 720 before retaining the two duplicate labels. Systems, factor entries, quotient records, and distinct orbits are different counting units.
+
+\begin{theorem}[Verified three-prime restriction; Theorem D]\label{thm:three}
+For the squarefree three-prime rational-circle problem, every solution in the five distinct orbits
+\[
+A,\qquad E1,\qquad E3=E4,\qquad F{-}1=F{-}3,\qquad F{-}2
+\]
+is degenerate. Thus a nondegenerate solution, and in particular a primitive integer magic square with central root $\ell_1\ell_2\ell_3$, must lie in one of
+\[
+B1,B2,C,D1,D2,D3,D4,E2,F{+}1,F{+}2.
+\]
+\end{theorem}
+The proof is completed by Sections~\ref{sec:projections}--\ref{sec:closed}, including all removed components, finite exceptional fibers, finite quotient lifts, and projective boundaries. No global height lower bound or general finiteness assertion for the ten remaining orbits is part of this theorem.
+
+\section{Exact projections, quotients, and rational lifting}\label{sec:projections}
+For $k_j=1$, formula~\eqref{eq:homogeneous} gives on the finite chart
+\[
+E_m=\im\prod_{j=1}^3(1+i\,\operatorname{sgn}(m_j)t_j)^{2|m_j|}(1+t_j^2)^{1-|m_j|}.
+\]
+All 68 stored input polynomials agree with this corrected area-angle expression. The denominator is $\prod_j(1+t_j^2)>0$. The historical $2|m_j|$ inputs are therefore directly compatible with the relaxation; no birational double-angle argument is needed.
+
+For each system the auditor reconstructs $G_1,G_2$, verifies the recorded common-factor division, constructs the Sylvester matrix explicitly, and computes its determinant. All 816 selected determinants are nonzero. Each recorded projection factor divides the determinant, with multiplicity reconstructed by repeated exact division; the remaining quotient is a nonzero constant. Thus the saved factors exhaust the projection zero set. Every removed common-factor branch has an explicit zero-offset or equal-magnitude divisibility witness. There is no unclassified discarded branch.
+
+\subsection{Line and discriminant identities}
+For a plane factor $F(t,u)$, the audit independently converts the half-angle expression to Fourier support, applies the recorded unimodular basis matrix, and reconstructs
+\[
+p(\tau)\cos(A\psi)+q(\tau)\sin(A\psi)=r(\tau),
+\qquad D(\tau)=p(\tau)^2+q(\tau)^2-r(\tau)^2.
+\]
+Here $A$ and the quotient frequency $B$ are positive integers and $\tau=\tan(B\phi/2)$. The parity and integrality conditions needed when clearing the common real denominator are checked. The rational-circle condition makes $D$ a rational square: at a solution it equals
+\[
+\bigl(p(\tau)\sin(A\psi)-q(\tau)\cos(A\psi)\bigr)^2.
+\]
+All 600 stored line/discriminant records agree. For every squarefree reduction, the audit checks the exact square factor and squarefreeness. Rational zeros of removed square factors are restored when enumerating possible lifts; they are not silently lost.
+
+\section{Components, exceptional fibers, and infinity}\label{sec:components}
+The auditor treats a rational component by substituting its \emph{actual rational function}, not by comparing independently stripped numerators. Over $\Q(t)[v]$, it constructs and checks a Bezout identity
+\[
+A(v)G_1(v)+B(v)G_2(v)=h(v).
+\]
+A product of zero-offset/equal-magnitude witnesses is divisible by $h$. All denominator exceptions from the substitution, Bezout identity, and witness quotient are recorded. For all 532 generic component entries, their rational exceptional values lie in $\{0,1,-1\}$ and are checked separately.
+
+The 16 special $F{-}1/F{-}3$ linear-relation entries are handled by exact quadratic elimination in the remaining variable. The resulting linear root relation is checked modulo the plane factor, together with a vanishing offset. The norm of its leading coefficient and all coefficient denominators supply the exceptional fibers. These are again only $0,\pm1$. The root need not literally be $v=u$ on every branch; equivalent half-angle relations such as $v=-1/u$ occur and still force the required sine difference to vanish.
+
+For each of the 17 labels, every fiber in which one of $t,u,v$ is $0,1,-1$ is independently solved. There are 153 such fibers. Whole-fiber identities handle some; the rest require 3,696 additional bivariate signed systems. Common components, zero specialized polynomials, and remaining isolated rational roots are all treated. Every resulting point or branch is degenerate; no unresolved fiber remains.
+
+\begin{lemma}[All projective infinity boundaries]\label{lem:infinity}
+For every three-prime configuration in this audit, a parameter at infinity gives no nondegenerate real-angle solution.
+\end{lemma}
+\begin{proof}
+A half-angle parameter at infinity makes its angle $\pi$ modulo $2\pi$. Erase that coordinate from every frequency vector; the deleted contribution only changes an individual sine sign. If a projected vector is zero, an offset vanishes. If two projected vectors agree up to sign, their magnitudes coincide. Otherwise the four vectors are exactly the four nonzero projective vectors in $\{-1,0,1\}^2$. They are $\{a,b,a+b,a-b\}$ at the frequency level and are excluded by Theorem~\ref{thm:real}. The argument includes intersections of infinity boundaries.
+\end{proof}
+
+
+\section{Seven independent rank-zero certificates}\label{sec:rank}
+The rank-zero conclusions below are independently checked rather than inferred from historical rank summaries. They are proved by finite elementary 2-isogeny descent certificates. The classical construction and rank formula are also documented in Sage's 2-isogeny descent reference \cite{SageDescent}; Sage itself was not used in this audit.
+
+For
+\[
+E:\quad y^2=x^3+Ax^2+Bx,\qquad B(A^2-4B)\ne0,
+\]
+let
+\[
+E':\quad y^2=x^3-2Ax^2+(A^2-4B)x.
+\]
+The descent maps $\alpha:E(\Q)\to\Q^\times/\Q^{\times2}$ and $\alpha':E'(\Q)\to\Q^\times/\Q^{\times2}$ satisfy
+\begin{equation}\label{eq:rank}
+2^{\operatorname{rank}E(\Q)+2}=|\alpha(E)|\,|\alpha'(E')|.
+\end{equation}
+An image square class for $E$ is represented by a signed squarefree divisor $d$ of $B$. It requires a primitive solution of
+\begin{equation}\label{eq:quarticdescent}
+N^2=dU^4+A U^2V^2+(B/d)V^4.
+\end{equation}
+To exclude a class, the certificate either proves that the right side is negative over the reals, or proves a modular obstruction modulo $p^e$. The latter checks both primitive charts: $V$ a unit, normalized to one, and $U$ a unit with $V/U$ divisible by $p$. Thus no primitive rational solution can be omitted by a denominator choice.
+
+\begin{center}
+\small\renewcommand{\arraystretch}{1.16}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{rrrcr}
+\toprule
+Model $(a_2,a_4,a_6)$ & Root shift & $(A,B)$ & Image upper sizes & Torsion bound\\
+\midrule
+$(0,-7,6)$ & $2$ & $(6,5)$ & $4,1$ & $4$\\
+$(1,-4,-4)$ & $2$ & $(7,12)$ & $4,1$ & $4$\\
+$(1,-24,36)$ & $3$ & $(10,9)$ & $4,1$ & $8$\\
+$(-1,-9,-7)$ & $-1$ & $(-4,-4)$ & $2,2$ & $2$\\
+$(-1,-3,2)$ & $2$ & $(5,5)$ & $2,2$ & $2$\\
+$(0,-351,1890)$ & $15$ & $(45,324)$ & $4,1$ & $8$\\
+$(0,-24003,1296702)$ & $66$ & $(198,-10935)$ & $4,1$ & $12$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All models have $a_1=a_3=0$. The product of the two image upper bounds is four in every row, so \eqref{eq:rank} gives rank zero. These are specified rational models, not a claim that each displayed equation is minimal. Rational torsion upper bounds are obtained from exact point counts at several good odd primes. In the second row a preliminary bound of eight is refined to four by checking that none of the three rational points of order two has a rational half.
+
+\subsection{Certifying complete quartic point lists}
+For a binary quartic with coefficients $(a,b,c,d,e)$, use
+\[
+I=12ae-3bd+c^2,
+\]
+\[
+J=72ace+9bcd-27ad^2-27b^2e-2c^3.
+\]
+Its nonsingular genus-one double cover has Jacobian $y^2=x^3-27Ix-27J$ \cite[Section 2]{Fisher}. The auditor checks the rational scaling of both $c_4$ and $c_6$ against the corresponding elliptic model; equality of $j$ alone is not used.
+
+Each retained point is checked on the quartic. Once a rational point exists, the smooth genus-one curve is isomorphic to its Jacobian after choosing an origin. Rank zero and the torsion upper bound therefore bound the entire rational point set. The supplied lists exhibit exactly that many distinct rational points, including the two infinity points when the leading coefficient is a nonzero rational square. This proves completeness for all 108 direct genus-one records and for the three auxiliary quartics used below. It is not an inference from a bounded search.
+
+\section{Complete closure of orbit \texorpdfstring{$F{-}2$}{F-2}}\label{sec:f2}
+The historical draft retained a conductor-216 rank-one exception for $F{-}2$. The audited certificate instead supplies a complete rank-zero route. Its 24 higher-genus quotient entries reduce, after removing constant squares, to the following two polynomials, each occurring twelve times:
+\begin{align*}
+H_+(\tau)&=81\tau^8+144\tau^6+142\tau^4+16\tau^2+1,\\
+H_-(\tau)&=\tau^8+16\tau^6+142\tau^4+144\tau^2+81.
+\end{align*}
+Both are squarefree. The even quotient $s=\tau^2$ gives reciprocal quartics
+\begin{align*}
+Q_+(s)&=81s^4+144s^3+142s^2+16s+1,\\
+Q_-(s)&=s^4+16s^3+142s^2+144s+81=s^4Q_+(1/s).
+\end{align*}
+
+\begin{proposition}[Complete point list for the $F{-}2$ even quotients]\label{prop:f2points}
+The smooth projective curve $Y^2=Q_+(s)$ has exactly twelve rational points: the two points at infinity and
+\[
+(-1,\pm8),\quad
+\left(-\tfrac13,\pm\tfrac83\right),\quad
+\left(-\tfrac19,\pm\tfrac89\right),\quad
+(0,\pm1),\quad
+\left(\tfrac13,\pm\tfrac{16}3\right).
+\]
+The corresponding list for $Y^2=Q_-(s)$ is its two infinity points and
+\[
+(-9,\pm72),\quad(-3,\pm24),\quad(-1,\pm8),\quad
+(0,\pm9),\quad(3,\pm48).
+\]
+\end{proposition}
+\begin{proof}
+For $Q_+$, $I=14224$ and $J=-3073664$. The Jacobian from Section~\ref{sec:rank} is rationally isomorphic, by scaling the Weierstrass coordinates by $4$ and $8$, to
+\begin{equation}\label{eq:F2E}
+E_0:\quad Y^2=X^3-24003X+1296702
+=(X-111)(X-66)(X+177).
+\end{equation}
+Translate $X=x+66$. Then $(A,B)=(198,-10935)$, and the isogenous model has $(A',B')=(-396,82944)$.
+
+For the first descent image, the only signed square classes not excluded are
+\[
+\{-15,-3,1,5\}.
+\]
+The other four classes $-5,-1,3,15$ are excluded modulo $16$. For the second image, all negative classes are excluded over the reals; $2$ is excluded modulo $25$, and $3,6$ are excluded modulo $81$. Only class $1$ remains. These finite residue checks are stored and independently verified by \path{verify_rank_zero.py}. Formula~\eqref{eq:rank} gives rank zero.
+
+Exact finite-field counts at the good primes $7$ and $11$ are both twelve, so rational torsion has order dividing twelve. Direct substitution exhibits the twelve distinct points stated for $Q_+$. They are therefore all the rational points. Reciprocity $(s,Y)\mapsto(1/s,Y/s^2)$ gives the second list, with zero and infinity handled on the smooth projective models.
+\end{proof}
+
+In either list the only finite rational square $s$ is zero: $1/3$ and $3$ are not rational squares, and all other nonzero $s$ are negative. Hence the genus-three even pullbacks $Y^2=H_\pm(\tau)$ have only their two points with $\tau=0$ and their two infinity points. For the quotient parameter in the original system, only $\tau=0,\infty$ remain.
+
+\begin{theorem}[Closure of orbit $F{-}2$]\label{thm:F2}
+The supplied $F{-}2$ frequency configuration
+\[
+\{(0,1,-1),(1,-1,-1),(1,0,1),(1,1,0)\}
+\]
+has no nondegenerate rational-circle solution of the four-offset magic-square pattern.
+\end{theorem}
+\begin{proof}
+The 48 signed systems have 228 recorded projection-factor entries. The input and determinant audit proves complete projection support. Of these entries, 108 are univariate with no rational root or roots in $\{0,\pm1\}$, and 96 are generically degenerate components with their exceptional fibers checked as in Section~\ref{sec:components}. The remaining 24 entries are the two even-quotient families above.
+
+For each of the 24 entries, the audit imposes every allowed quotient parameter $0,\infty$ through the saved integer angle-basis map, solves its intersection with the original plane factor exactly, and substitutes back into the original two equations. This checks 48 plane-point occurrences and 48 finite lifts (counts include repetitions across systems). All have a zero offset or repeated magnitude. It does not discard common lifting components or zero specialized equations without a separate check. Projective boundary points are covered by Lemma~\ref{lem:infinity}. The calculation and explicit witnesses are in \path{lift_audit.json}. All possible rational solutions are therefore degenerate.
+\end{proof}
+
+\begin{remark}[What is corrected]
+This does not assert that the standalone conductor-216 elliptic curve has rank zero, nor that it cannot occur through some other map. It says that such a rank-one quotient is not an unavoidable obstruction to closing the supplied $F{-}2$ systems. A complete rank-zero quotient route already exists in their actual records. The earlier decision to retain $F{-}2$ as unresolved on the basis of the rank-one quotient must be replaced by Theorem~\ref{thm:F2}.
+\end{remark}
+
+\section{Other closed orbits and completion of Theorem D}\label{sec:closed}
+The rank-zero models of Section~\ref{sec:rank} certify the direct genus-one quotients used by orbit $A$ and by additional components. For $E3/E4$, the additional even quotient is
+\[
+Y^2=s^4+14s^2+1.
+\]
+Its Jacobian is isomorphic to $Y^2=X^3-351X+1890$, whose rank is zero and whose rational torsion has order at most eight. The quartic has the eight points $(s,Y)=(-1,\pm4),(0,\pm1),(1,\pm4)$ and two points at infinity. These exhaust its points. Thus its even pullback has quotient parameters only $0,\pm1,\infty$. The analogous reciprocal quartics in the $F{-}1/F{-}3$ records are covered by Proposition~\ref{prop:f2points}; their linear-relation components are covered by the exact function-field audit.
+
+Every required rational lift from these finite lists is checked by \path{audit_lifts.py}. In the baseline audit, 244 finite-quotient factor entries have complete lifts and no unresolved lifting case. Section~\ref{sec:newgeometry} adds 32 distinct factor closures, Section~\ref{sec:torusprogress} adds 24 more, and Section~\ref{sec:d1norm} adds a further 64. Orbit $E1$ also has the direct real-angle parallelogram proof. Together these establish all five closures in Theorem~\ref{thm:three}.
+
+The remaining ten orbits are not completely classified. The nonlinear finiteness statements in Section~\ref{sec:newgeometry} use resolved singularities and checked lifting maps, not a point search or an unsupported Newton-polygon genus. Finiteness is not emptiness. The ledger below includes all 120 additional factor closures from Sections~\ref{sec:newgeometry}, \ref{sec:torusprogress}, and~\ref{sec:d1norm}.
+
+
+\begin{center}
+\small
+\begin{tabular}{lrrl}
+\toprule
+Orbit / representative record & Factor entries & Unresolved entries & Whole orbit\\
+\midrule
+$A$ & 48 & 0 & Closed \\
+$B1$ & 78 & 32 & Unresolved \\
+$B2$ & 96 & 8 & Unresolved \\
+$C$ & 96 & 8 & Unresolved \\
+$D1$ & 140 & 8 & Unresolved \\
+$D2$ & 60 & 48 & Unresolved \\
+$D3$ & 60 & 32 & Unresolved \\
+$D4$ & 60 & 48 & Unresolved \\
+$E1$ & 136 & 0 & Closed \\
+$E2$ & 132 & 8 & Unresolved \\
+$E3=E4$ & 252 & 0 & Closed \\
+$F{-}1=F{-}3$ & 236 & 0 & Closed \\
+$F{-}2$ & 228 & 0 & Closed \\
+$F{+}1$ & 180 & 48 & Unresolved \\
+$F{+}2$ & 128 & 48 & Unresolved \\
+\bottomrule
+\end{tabular}
+\end{center}
+For each duplicate orbit only the first named representative's counts are shown. These are projection-factor entries, which can exceed 48 and can recur in different signed systems; they are not counts of distinct geometric components. The baseline per-factor status is \path{lift_audit.json}; the additional closures are recorded in \path{verification/geometry/}, \path{verification/orbit_progress/}, and \path{verification/d1_norm/}, and overlaid in \path{data/orbit_ledger.json}. No unresolved whole orbit is declared closed from a partial factor result.
+
+\section{Exact nonlinear genera and additional factor closures}\label{sec:newgeometry}
+The earlier Newton-polygon estimates did not establish the genus lower bounds required by Faltings' theorem \cite{Faltings}. This section replaces them by normalization calculations on the actual recorded projections. It also distinguishes a projection curve from the curve defined by the original two equations: in orbit $D3$ this distinction changes genus zero into genus five.
+
+\subsection{An exact normalization calculation}
+Let $F(x,y)$ be a recorded irreducible projection polynomial of bidegree $(a,b)$. Its projective closure in $\mathbf P^1\times\mathbf P^1$ has arithmetic genus
+\[
+p_a=(a-1)(b-1).
+\]
+Indeed, the canonical divisor of this surface is $-2H_x-2H_y$, the curve has class $aH_x+bH_y$, and adjunction gives the formula. For its geometric normalization,
+\begin{equation}\label{eq:delta-genus}
+g=(a-1)(b-1)-\sum_P\delta_P.
+\end{equation}
+At a point of multiplicity $m$, blowing up gives
+\[
+\delta_P=\binom m2+\sum_{Q\text{ above }P}\delta_Q.
+\]
+This follows either from the normalization exact sequence or by comparing arithmetic genera before and after the point blowup. Thus a resolution by explicit point blowups gives the genus without a nonsingularity assumption about a Newton polygon.
+
+The calculation includes the affine singular ideal $(F,F_x,F_y)$, both single-infinity charts, and the double-infinity corner. A lexicographic Groebner basis gives the finite singular support; all algebraic roots and specialized fiber gcds are accounted for. Repeated tangent directions are blown up exactly. A finite slope $c$ uses $F(x,x(c+y))/x^m$ and the vertical direction uses $F(yx,y)/y^m$. Exact divisibility is checked before continuing. The process terminates at smooth or ordinary multiple points.
+
+Geometric irreducibility is also certified, not inferred solely from factorization over $\Q$. If a $\Q$-irreducible curve of bidegree $(a,b)$ splits into $r$ geometric components, Galois transitivity makes $r$ divide both $a$ and $b$. Moreover, a smooth closed point of degree $d$ makes $r$ divide $d$: its residue field must contain the field of definition of the unique geometric component through it. Consequently $\gcd(a,b,d)=1$ proves geometric irreducibility. The records provide either a smooth rational point, coprime bidegrees, or a smooth closed point with this gcd property.
+
+\begin{proposition}[Genera of all recorded nonlinear projections]\label{prop:projectiongenera}
+All 168 distinct nonlinear projection polynomials in the five indicated labels are geometrically irreducible. Their normalization genera are as follows; multiplicities in parentheses count distinct recorded polynomials, not distinct isomorphism classes.
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Label & Projection genera & Relation to the original curve\\
+\midrule
+$D2$ & $4$ (24), $7$ (24) & Finite generically quadratic projection\\
+$D3$ & $0$ (24) & Quadratic lifting condition is essential\\
+$D4$ & $4$ (4), $6$ (16), $9$ (28) & Finite generically quadratic projection\\
+$F{+}1$ & $7$ (12), $10$ (12) & Explicit rational inverse verified\\
+$F{+}2$ & $13$ (4), $14$ (8), $16$ (12) & Explicit rational inverse verified\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{proposition}
+\begin{proof}
+The exact equations, singular ideals, closed-point witnesses, local resolution trees, and resulting sums in \eqref{eq:delta-genus} are stored in \path{verification/geometry/nonlinear_genus_certificate.json}. The program regenerates the data from the original certificates. For a quadratic pair in the eliminated variable, it forms the linear combination canceling the quadratic term. When the remaining linear coefficient is nonzero modulo $F$, its rational root is substituted back into both original equations and checked identically modulo $F$. This gives the stated rational inverses for $F{+}1,F{+}2$. It does not assert those inverses for the three $D$ labels.
+\end{proof}
+
+To control possible exceptional full fibers, all coefficients of both reduced equations in the eliminated variable are set to zero together with $F$. This separate computation covers 216 nonlinear factor occurrences. Its 24 rational full-fiber occurrences are all identically degenerate in the original offsets. Projective boundaries remain covered by the earlier boundary theorem. Thus a finite set of rational projection points cannot conceal an unexamined nondegenerate rational family in an exceptional fiber.
+
+\subsection{The rational $D3$ projections lift to genus five}
+For a representative $D3$ plane factor, put
+\[
+z=\frac{xy+1}{x-y},\qquad
+x=-\frac{4z}{(z^2-1)^2},\qquad
+y=-\frac{z^2+1}{z(z^2-3)}.
+\]
+These equations normalize the projection, not the complete solution curve. The original equations are proportional quadratics in the remaining half-angle parameter. Substituting the normalization and removing an explicitly checked rational square from the discriminant yields
+\begin{equation}\label{eq:D3cover}
+W^2=(z^6-5z^4+11z^2+1)(z^6+11z^4-5z^2+1).
+\end{equation}
+The squarefree polynomial has degree twelve, so this is a genus-five curve. In particular, the genus-zero projection is not itself a rational parametrization of all rational solutions of the original equations.
+
+For every one of the 24 recorded $D3$ nonlinear factors, the same pencil through its two triple points produces a degree-one normalization relation. The program checks its inverse, the proportionality of the two lifted quadratics, and the identity $\Delta=S(z)^2H(z)$. In all 24 cases $H$ is squarefree of degree twelve. The inverse formula for the eliminated parameter is $(-B+S W)/(2A)$. All finite chart exceptions are retained. The results and equations are in \path{verification/geometry/d3_lifting_covers.json}.
+
+\begin{corollary}[Finiteness, not emptiness]\label{cor:nonlinearfinite}
+Each nonlinear system in $D2,D3,D4,F{+}1,F{+}2$ has only finitely many nondegenerate rational-circle solutions.
+\end{corollary}
+\begin{proof}
+For $D2,D4$ the projection normalization has genus at least two. For $F{+}1,F{+}2$ the rational inverse identifies the original component with the listed higher-genus curve. For $D3$ use the genus-five lifting cover instead of its rational projection. Faltings' theorem applies to these smooth projective curves. There are only finitely many singular points on each plane model, and the explicit full-fiber check excludes a nondegenerate positive-dimensional fiber. The boundary and removed common-factor branches have already been checked. This proves finiteness, but does not identify the complete finite rational-point sets or prove that they are empty.
+\end{proof}
+The exact genera in the first and third rows of the table are genera of projections. This statement does not mislabel them as the genera of their possibly branched double covers.
+
+\subsection{Eight $D3$ factors close through a rank-zero quotient}
+Eight of the 24 $D3$ lifting covers are exactly \eqref{eq:D3cover}. They have a map to the curve
+\[
+E:\quad v^2+v=q^3-q^2,\qquad
+q=\frac{4z^2}{(z^2+1)^2},\quad
+v=\frac{W/(z^2+1)^3-1}{2}.
+\]
+Substitution proves the identity
+\[
+v^2+v-q^3+q^2
+=\frac{W^2-H(z)}{4(z^2+1)^6}.
+\]
+This is Cremona curve $11a3$, whose published full-group data give rank zero and torsion order five \cite{CremonaData}. Its five points have $q$-coordinates $0,1,\infty$; the program independently enumerates them from $(0,0)$ using the exact group law. For finite nonzero rational $z$, the first coordinate is neither zero nor infinity. The remaining possibility $q=1$ is
+\[
+4z^2=(z^2+1)^2,\qquad (z^2-1)^2=0.
+\]
+Thus the cover permits only $z=0,\pm1,\infty$. In particular, the smooth projective genus-five curve in \eqref{eq:D3cover} has exactly eight rational points:
+\[
+(0,\pm1),\qquad(1,\pm8),\qquad(-1,\pm8),\qquad\infty_+,\infty_-.
+\]
+The displayed points are checked directly, and the leading coefficient one gives the two rational infinity points. Their images and the exceptional normalization fibers fall in the previously checked degenerate fibers or boundaries. All eight factor entries therefore close. This uses the cited rank-zero group data for $11a3$; it is not described as a fresh independent 5-descent, and it does not close the entire orbit $D3$.
+
+\subsection{Two more reciprocal-octic obstructions}
+Two recurrent higher-genus conditions admit particularly small rank-zero quotients:
+\begin{align*}
+H_1(t)&=t^8+4t^6+22t^4+4t^2+1,\\
+H_2(t)&=t^8-44t^6+166t^4-44t^2+1.
+\end{align*}
+For finite $t\ne0$, set $r=t+1/t$ and divide the square ordinate by $t^2$. Then
+\[
+\frac{H_1(t)}{t^4}=r^4+16,\qquad
+\frac{H_2(t)}{t^4}=r^4-48r^2+256.
+\]
+The first quartic has Jacobian isomorphic to $Y^2=X^3-4X$. For its 2-isogeny descent, the first image has at most four square classes; on the isogenous curve $Y^2=X^3+16X$, negative classes are excluded by sign and class 2 is excluded modulo 16. Indeed, $2U^4+8V^4$ takes only residues $2,8,10$ for primitive pairs modulo 2, none a square modulo 16. The two image upper sizes are therefore 4 and 1, proving rank zero. Reduction at 3 and 5 bounds torsion by four. The quartic exhibits exactly four rational points: $(0,\pm4)$ and two at infinity, so its list is complete.
+
+For the second quartic, $r=4u$ and division of its ordinate by 16 give $V^2=u^4-3u^2+1$, already covered by the independent rank-zero certificates in Section~\ref{sec:rank}. Its only parameters are $u=0,\infty$. Thus each reciprocal quotient permits only $r=0,\infty$. A finite nonzero rational $t$ would then require $t+1/t=0$, which is impossible over $\Q$.
+
+Consequently both octics permit only $t=0,\infty$. The programs impose these values through every applicable recorded angle-basis map and lift to the original equations, restoring zeros of removed square factors. All 32 tested factor entries close; eight were already closed by another route, so this adds 24 new entries, eight each in $B2,C,D1$. Together with the eight new $D3$ entries, there are 32 additional factor closures, but no additional whole orbit closure.
+
+\section{Two elliptic models with one common genus-two cover}\label{sec:curves}
+Define the explicit models from the supplied draft by
+\[
+f_B(s)=s^3+11s^2-5s+1,\qquad f_C(s)=s^3-5s^2+11s+1,
+\]
+\[
+E_B:v^2=f_B(s),\qquad E_C:v^2=f_C(s).
+\]
+This section proves relations between these \emph{specified equations}; it does not assert that all unresolved magic-square components map to them.
+
+\begin{proposition}[Reciprocal covers and complementary quotients]\label{prop:BC}
+The curves
+\[
+C_B:Y^2=f_B(w^2),\qquad C_C:Y^2=f_C(w^2)
+\]
+have isomorphic smooth projective genus-two models, via
+\[
+(w,Y)\longmapsto(1/w,Y/w^3).
+\]
+Moreover, $C_B$ has degree-two maps
+\[
+\phi_B(w,Y)=(w^2,Y),\qquad
+\phi_C(w,Y)=(w^{-2},Yw^{-3})
+\]
+to $E_B,E_C$, respectively, and
+\[
+\Jac(C_B)\sim_\Q E_B\times E_C.
+\]
+\end{proposition}
+\begin{proof}
+The identity $f_C(s)=s^3f_B(1/s)$ verifies the reciprocal isomorphism and both quotient equations. The sextic $w^6+11w^4-5w^2+1$ has discriminant $-507510784\ne0$, so its smooth projective double cover has genus two. The reciprocal rational map is its own inverse and extends between the smooth projective curves; points at zero and infinity are exchanged.
+
+The quotient involutions are $(w,Y)\mapsto(-w,Y)$ and $(w,Y)\mapsto(-w,-Y)$. The differentials $ds/(2v)$ pull back respectively to $w\,dw/Y$ and $-dw/Y$, a basis of the two-dimensional space of regular differentials. The induced homomorphism from the Jacobian to $E_B\times E_C$ therefore has full-rank differential and is an isogeny. This is the standard bielliptic construction; see \cite[Section 2]{BP}.
+\end{proof}
+
+The two elliptic curves are not themselves $\Q$-isogenous: their point counts at the common good prime 3 are 5 and 3. Their $j$-invariants are $-2515456/11$ and $512/11$, so they are not quadratic twists of one another either. The useful relation is that they are complementary quotients of the same genus-two curve.
+
+A complete rational-point calculation on $C_B$ would also settle $C_C$. In particular, the conjecture
+\[
+C_B(\Q)=\{(0,1),(0,-1),\infty_+,\infty_-\}
+\]
+remains a focused target, \emph{not a theorem in this document}. The previous bounded search does not establish completeness. Rank and full-basis statements for the specified elliptic quotients are now supplied by exact matches to published data in Section~\ref{sec:newarithmetic}; a complete rational-point computation on this genus-two curve is still not claimed. The available bielliptic quadratic-Chabauty methods have hypotheses and precision requirements that must be verified before applying them \cite{BP}.
+
+\subsection{An exact cubic coefficient criterion}
+\begin{proposition}[Exact cubic criterion]
+Let $f(s)=As^3+Bs^2+Cs+D$ with $D\ne0$, and set
+\[
+g(c)=(1+c)^3 f\left(\frac{1-c}{1+c}\right).
+\]
+There is a polynomial $\ell(c)$ of degree at most one with
+\[
+g(c)=8D\bigl(1+c(1-c)\ell(c)\bigr)
+\]
+if and only if $f(1)=8f(0)$, equivalently $A+B+C=7D$. When it exists,
+\[
+\ell(c)=\frac{A-B+C-D}{8D}\,c+
+        \frac{-3A-B+C+3D}{8D}.
+\]
+\end{proposition}
+\begin{proof}
+Necessity follows from $g(0)=f(1)$, whereas $g(1)=8D$ holds automatically. Under the necessary condition, $g(c)-8D$ is a polynomial of degree at most three vanishing at both zero and one. Dividing by $8Dc(1-c)$ gives a polynomial of degree at most one. Expansion gives the stated coefficients.
+\end{proof}
+For the four cubic models $B,C,D,E$ listed below, the constant coefficient is one and $f(1)=8$, recovering the four displayed linear polynomials. For the $A$ cubic, $f(1)=24$ but $8f(0)=72$, explaining the exception. Infinitely many cubics satisfy the coefficient law. It is therefore not, by itself, a proof that only four curves can arise from all frequency configurations.
+
+For $c\ne-1$, multiplying $f((1-c)/(1+c))$ by the rational square $(1+c)^4$ gives $(1+c)g(c)$. For $D=1$, its square condition is precisely
+\[
+2(1+c)\bigl(1+c(1-c)\ell(c)\bigr)\in\Q^2.
+\]
+The prefactor cannot generally be removed. Also, a branch point such as $c=-1$ on a quartic is not automatically a point of order two for an unspecified elliptic-curve origin.
+
+
+\begin{center}
+\small
+\begin{tabular}{cll}
+\toprule
+Label & Cubic $f(s)$ & Linear $\ell(c)$\\
+\midrule
+$A$ & $s^3-5s^2+19s+9$ & Criterion fails\\
+$B$ & $s^3+11s^2-5s+1$ & $-2(1+c)$\\
+$C$ & $s^3-5s^2+11s+1$ & $2(1+c)$\\
+$D$ & $25s^3-29s^2+11s+1$ & $4(2c-1)$\\
+$E$ & $25s^3-61s^2+43s+1$ & $4(4c+1)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+These are explicit model identities, not rank assertions or a classification of all possible quotient curves. The separate $F{-}2$ rank-zero route is given in Section~\ref{sec:f2}.
+
+\section{Verified subgroup sieves and conditional height arguments}\label{sec:sieves}
+The new sieve implementation uses exact finite-field group law and generalized Chinese-remainder intersections, without PARI. It uses the recorded original model, the recorded on-curve point $G$, the stated modulus $M$, and every eligible good odd prime below 4000 for which the order of $G$ divides $M$. It keeps a residue when the specified coordinate function is a square, zero, or infinity. All eight output sets agree exactly with the archive.
+
+\begin{center}
+\small\renewcommand{\arraystretch}{1.16}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lr rp{0.34\linewidth}}
+\toprule
+Record & Modulus $M$ & Primes & Signed survivors\\
+\midrule
+A & 5354228880 &129& $0,\pm1$\\
+B & 13693680 &75& $0,\pm2$\\
+C & 5354228880 &115& $0,\pm2$\\
+D & 6846840 &81& $0,\pm2$\\
+E2last & 5354228880 &129& $0,\pm1,2677114440$\\
+Dtw2 & 360360 &67& $0,\pm1,\pm120119$\\
+Dtwm2 & 942480 &59& $0$\\
+Dtw5 & 2677114440 &104& $0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The residue computation by itself is a subgroup statement. Section~\ref{sec:newarithmetic} now identifies these eight recorded points with published full generators and supplies rigorous height intervals, giving global statements for their exact elliptic coordinate conditions. Transfer to an unresolved magic-square component still requires its complete map chain and exceptional-point analysis. Integer exceptions are removed individually, not by deleting periodic classes.
+
+The archive does not contain the promised large \path{sieves_rank2.json}. Rather than adopt its summary flags, the new arithmetic section uses published full bases and exact duplication-height certificates. It also justifies a minimum-height bound for each of the three rank-two models, but does not regenerate the missing large sieve. PARI distinguishes rank bounds, finite-prime saturation, and bounded rational-point searches \cite{PARI}; these are not interchangeable.
+
+\subsection{The precise rank-one height implication}
+Suppose, as an additional proved input, that the relevant rational points are represented by $nG$, with torsion and the specified coordinate function handled correctly. If a residue $r$ survives modulo $M$, with $0\le r<M$, then
+\[
+\min_{n\equiv r\pmod M}|n|=\min(r,M-r).
+\]
+Thus the class yields a bound $\widehat h(nG)\ge \min(r,M-r)^2\widehat h(G)$. The quantity $\min(r,M-r)$ is at most $M/2$, not generally at least $M/2$. When a known degenerate integer representative is removed, other integers in its periodic residue class must still be considered. For example, removing $n=0$ does not remove $n=\pm M$.
+
+The E2last class is exactly $M/2$, and the twist Dtw2 classes contain $\pm120119$. These particular residue sizes are independently reproduced. The earlier rounded products were not proofs. Theorem~\ref{thm:globalheights} replaces them with explicit conservative bounds obtained from the full-basis matches and rational height intervals.
+
+\subsection{The rank-two lattice constant}
+With $\lambda_1$ the minimum positive canonical height, and $\operatorname{Reg}(E)$ the height-pairing determinant, the two-dimensional Hermite bound is
+\[
+\operatorname{Reg}(E)\ge\frac34\lambda_1^2.
+\]
+The height is a squared Euclidean length in the associated lattice; hence the covolume bound has to be squared to obtain the regulator inequality. The coefficient is $3/4$, not $\sqrt3/2$. Using the historical summaries and $\lambda_1=0.02$ gives index estimates approximately $33.18$, $22.54$, and $17.95$. These historical index estimates are not the basis of the new proof. Section~\ref{sec:newarithmetic} instead uses published full bases and rigorously bounded Gram matrices; in particular it proves $\lambda_1\ge0.02$ for the three specified rank-two models. This does not construct a missing rank-two sieve.
+
+\section{Corrected elliptic models and the Chabauty handoff}\label{sec:models}
+In the historical Chabauty input file, each of the sixteen quotient-point pairs fails the equation of its listed target model. Each point does lie on the corresponding original, nonminimal Weierstrass model. This is a coordinate-transfer error, not evidence that the elliptic curves themselves are wrong.
+
+For $Y^2=A w^6+B w^4+Cw^2+D$, the two original quotient models are
+\[
+[0,B,0,AC,A^2D],\qquad [0,C,0,BD,AD^2],
+\]
+with maps
+\[
+(X,Z)=(Aw^2,AY),\qquad (X,Z)=(D/w^2,DY/w^3).
+\]
+For every supplied target model the auditor verifies the exact rational change
+\[
+X=u^2x_{\rm target}+r,\qquad Z=u^3y_{\rm target}+t
+\]
+by comparing all Weierstrass coefficients and the scaled invariants. The corrected points then satisfy the target equations exactly.
+
+\begin{center}
+\small\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{lll}
+\toprule
+Input curve & First quotient point & Complementary quotient point\\
+\midrule
+$E_A$ & $(-2,3)$ & $(-4,1)$\\
+$E_B$ & $(3,4)$ & $(1,4)$\\
+$E_C$ & $(1,4)$ & $(3,4)$\\
+$E_D$ & $(1,5)$ & $(2,-1)$\\
+$E_D$ twist $2$ & $(8,25)$ & $(2,1)$\\
+$E_D$ twist $-2$ & $(42,275)$ & $(8,17)$\\
+$E_D$ twist $5$ & $(-13,25)$ & $(-2,25)$\\
+$E_A$ cubic for E2 & $(-2,3)$ & $(-7,18)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For example, the listed $E_A$ model is $y^2=x^3+x^2+11x+35$. The uploaded point $(0,3)$ gives $9\ne35$. Its corrected image $(-2,3)$ satisfies the equation. The repaired file records the original point, both models, the explicit transformation, and the correctly transformed point. Exact multiples by the finite-field torsion upper bounds show that all 16 corrected points have infinite order. That initial check proved rank at least one. The exact published-basis matches of Section~\ref{sec:newarithmetic} now also supply the rank and full group input; the torsion adjustment on $123a1$ must be included.
+
+Neither supplied driver executes quadratic Chabauty. \path{run_qc.sage} builds the curves and performs a rational-point search with bound 2000; the actual import and quadratic-Chabauty call are comments. The Magma driver likewise performs a bounded point search, not a complete rational-point computation. The corrected JSON is therefore \emph{model-compatible input data}, not a completed Chabauty result or a ready proof of completeness.
+
+
+The integrated release places the corrected data at \path{data/chabauty_inputs_corrected.json}. The additional file \path{data/chabauty_inputs_with_published_bases.json} records the published full generators, torsion generators, source model labels, and exact expressions of the old points in those groups. No Chabauty completeness result is encoded in either file. The word ``minimal'' in a historical field name is not an additional minimality certificate. Appendix~\ref{app:models} lists the target equations and transformations explicitly.
+
+A positive-rank elliptic quotient may have infinitely many rational points while no admissible rational point lifts to the original component. Its existence therefore does not prove that the relaxed trigonometric equations cannot imply nonexistence. The appropriate conclusion is that the particular quotient argument has not yet settled that component. The alternative $F{-}2$ route is an example of why this distinction matters.
+
+\section{Published full bases and rigorous global elliptic height bounds}\label{sec:newarithmetic}
+The original positive-rank summaries did not certify global generation. A different route is available for the specified curves: match their exact equations and points against Cremona's published Table Two, which records ranks, torsion structures, and full Mordell--Weil generators \cite{CremonaData}. The documentation explicitly distinguishes these group generators from conjectural analytic Tate--Shafarevich information. Only the group data are used here.
+
+\subsection{Exact model and basis matching}
+The supplied data match thirteen distinct rank-one models and three distinct rank-two models. The sixteen corrected quotient-point occurrences include repetitions among the rank-one models. Each point is checked on its equation and expressed by exact addition in the published basis and torsion subgroup. For the eight rank-one sieves, the transformed recorded point is exactly a generator or its negative, and torsion is trivial.
+
+One complementary quotient needs explicit torsion care: on $123a1$, the earlier point $(-4,1)$ equals $-G+4T$, with $G=(1,1)$ and $T=(2,1)$ of order five. It generates the free quotient, but a full group input must also include the torsion generator. The updated Chabauty data do so. The other model transformations remain those checked in Section~\ref{sec:models}.
+
+The matching records and source rows are bundled under \path{verification/arithmetic/}. They use the \path{allgens.00000-09999} and \path{allgens.10000-19999} files at commit \texttt{1e16f4523e20f14aecbc8fcc1db46b4e9f23a14f}. Thus the rank and full-generation claims are reference-backed mathematical inputs. They are not misrepresented as a newly executed PARI or Sage saturation computation.
+
+\subsection{Canonical heights from exact duplication identities}
+We avoid the earlier uncertain height-comparison constants. For an integral Weierstrass model, let $b_2,b_4,b_6,b_8$ be the usual invariants. Duplication on its $x$-coordinate is given by the homogeneous quartics
+\begin{align*}
+F(X,Z)&=X^4-b_4X^2Z^2-2b_6XZ^3-b_8Z^4,\\
+G(X,Z)&=4X^3Z+b_2X^2Z^2+2b_4XZ^3+b_6Z^4.
+\end{align*}
+They have no common projective zero for a nonsingular elliptic curve. The producer solves for integer homogeneous cubics $U,V,U',V'$ and an integer $D>0$ satisfying
+\begin{equation}\label{eq:heightbezout}
+UF+VG=DX^7,\qquad U'F+V'G=DZ^7.
+\end{equation}
+The acceptance program checks these coefficient identities directly.
+
+Let $N$ be the larger of the sums of the absolute coefficients of $(U,V)$ and $(U',V')$, and let $M$ be the larger coefficient 1-norm of $F,G$. For coprime integers $(a,b)$ with $H=\max(|a|,|b|)$, their evaluated gcd divides $D$, by both identities in \eqref{eq:heightbezout}. The same identities give $|D|H^7\le NH^3\max(|F(a,b)|,|G(a,b)|)$. After cancelling the gcd, one obtains
+\begin{equation}\label{eq:dupheight}
+4h(x(P))-\log N\ \le\ h(x(2P))\ \le\ 4h(x(P))+\log M.
+\end{equation}
+Here $h$ is logarithmic projective height. Summing the resulting geometric error series proves, in the normalization
+\[
+\widehat h(P)=\lim_{n\to\infty}4^{-n}h(x(2^nP)),
+\]
+that
+\begin{equation}\label{eq:heightinterval}
+4^{-n}\left(h(x(2^nP))-\frac{\log N}{3}\right)
+\le\widehat h(P)\le
+4^{-n}\left(h(x(2^nP))+\frac{\log M}{3}\right).
+\end{equation}
+This is twice the usual Silverman canonical-height normalization. Its quadratic and bilinear properties are standard \cite[Chapter VIII]{SilvermanAEC}.
+
+Six exact duplications are used for each of 22 point-height intervals. Logarithms are not accepted as floating-point approximations. The bounds
+\[
+\frac{693147180559945309}{10^{18}}<\log2<
+\frac{693147180559945310}{10^{18}}
+\]
+are certified from $2\sum_{j\ge0}(1/3)^{2j+1}/(2j+1)$ with an explicit geometric tail. Integer bit lengths then enclose every logarithm in \eqref{eq:heightinterval} by rational numbers. The resulting intervals, exact Bezout witnesses, and duplication checks are in \path{height_certificate.json}; the checker uses only Python's standard library.
+
+\subsection{Eight global rank-one bounds}
+For each reproduced sieve, the now-matched full basis makes every rational point $nG$. Remove only the explicitly listed exceptional integer indices, not entire periodic classes. The checker computes the smallest remaining absolute index and certifies that every smaller representative in every surviving class is among the exceptions. Multiplication by the rational lower endpoint for $\widehat h(G)$ gives the following conservative integer lower bounds.
+\begin{center}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrr}
+\toprule
+Sieve record & Published curve & $|n|\ge$ & $\widehat h(P)\ge$\\
+\midrule
+A & $1968m1$ & 5,354,228,879 & 45,363,994,086,629,220,242\\
+B & $352d1$ & 13,693,678 & 38,769,652,219,462\\
+C & $352b1$ & 5,354,228,878 & 8,847,837,782,860,423,572\\
+D & $1840d1$ & 6,846,838 & 15,894,975,725,468\\
+E2last & $1968m1$ & 2,677,114,440 & 11,340,998,525,893,530,622\\
+Dtw2 & $7360r1$ & 120,119 & 13,069,513,051\\
+Dtwm2 & $7360a1$ & 942,480 & 1,972,745,184,170\\
+Dtw5 & $9200a1$ & 2,677,114,440 & 11,366,063,391,186,112,458\\
+\bottomrule
+\end{tabular}
+\end{center}
+\begin{theorem}[Global elliptic square-coordinate bounds]\label{thm:globalheights}
+For each row, every rational point on the specified elliptic curve satisfying the recorded square-or-zero-or-infinity coordinate condition, except the explicitly listed exceptional points, satisfies the displayed canonical-height lower bound.
+\end{theorem}
+\begin{proof}
+The exact model map identifies the sieve generator with the published full generator up to sign. The eight finite-field residue sets are regenerated. The minimum remaining index is checked by integer interval arithmetic in each residue class. Finally $\widehat h(nG)=n^2\widehat h(G)$ and \eqref{eq:heightinterval} give the bound; taking the floor of its rational lower endpoint only weakens it. The defining coordinate function and every exceptional point are recorded in \path{global_rank_one_bounds.json}.
+\end{proof}
+These are global statements on the specified elliptic curves, rather than statements merely on an unproved subgroup. They are not automatically a uniform bound for every unresolved magic-square orbit: that transfer also needs the correct complete map chain and the treatment of each exceptional point on the original component. No such missing transfer is silently inferred.
+
+\subsection{The three rank-two bases and their height matrices}
+The matched rank-two curves and full free bases are
+\[
+\begin{array}{c|c|c}
+389a1 &[0,1,1,-2,0] &(0,0),(1,0)\\
+664a1 &[0,0,0,-7,10] &(1,2),(3,4)\\
+13280a1 &[0,-1,0,-10,92] &(4,10),(-1,10).
+\end{array}
+\]
+The intervals for $\widehat h(G_1)$, $\widehat h(G_2)$ and $\widehat h(G_1+G_2)$ enclose every entry of the Gram matrix, using
+\[
+\langle G_1,G_2\rangle=
+\frac{\widehat h(G_1+G_2)-\widehat h(G_1)-\widehat h(G_2)}2.
+\]
+Let $\Delta_L>0$ be the certified lower bound for its determinant and $T_U$ the upper bound for its trace. Its least eigenvalue is at least $\Delta_L/T_U$. Since a nonzero integral coefficient vector has Euclidean squared norm at least one, this gives global minimum nonzero-height lower bounds exceeding respectively $0.188$, $0.121$, and $0.258$. In particular, $\lambda_1\ge0.02$ is now justified for these models using their published full bases and independent height intervals, rather than the old bounded search.
+
+This does not regenerate the missing large rank-two sieve or prove the historical large rank-two height floors. The full-basis statements and the minimum-height bounds are distinct from such a sieve, and the manuscript keeps that distinction.
+
+\section{A four-point genus-three curve and transport between orbits}\label{sec:torusprogress}
+This section adds 24 distinct projection-factor closures to the 32 in Section~\ref{sec:newgeometry}. Sixteen follow from a new complete rational-point classification; eight more follow by transporting an already closed family through an explicit integer map of the rational circle torus. The number of closed whole orbits remains five. No genus-two rational-point list or quadratic-Chabauty computation is inferred from these results.
+
+\subsection{A rank-zero obstruction with no database premise}
+Define
+\begin{equation}\label{eq:newH}
+ H(t)=t^8-13t^6+36t^4-13t^2+1,
+ \qquad Q(r)=r^4-17r^2+64.
+\end{equation}
+Both polynomials are squarefree, as verified by the exact Euclidean algorithm with their derivatives. For $t\ne0$ the substitution
+\begin{equation}\label{eq:newHmap}
+ r=t+t^{-1},\qquad s=Y/t^2
+\end{equation}
+gives the polynomial identity $H(t)/t^4=Q(t+t^{-1})$. The quartic $s^2=Q(r)$ has a further map
+\begin{equation}\label{eq:newEmap}
+ (X,Z)=(r^2,rs),\qquad
+ E_*:\ Z^2=X^3-17X^2+64X.
+\end{equation}
+This map need not be an isomorphism; only its forward implication for rational points will be used.
+
+\begin{lemma}[Complete rational group of the new quotient]\label{lem:newE}
+The elliptic curve $E_*$ has
+\[
+ E_*(\Q)=\{\mathcal O,(0,0)\}.
+\]
+\end{lemma}
+\begin{proof}
+We use the elementary 2-isogeny descent recalled in Section~\ref{sec:rank}; see also \cite{SageDescent}. The isogenous curve is
+\[
+ E_*':\ Z^2=X^3+34X^2+33X=X(X+1)(X+33).
+\]
+For $Z^2=X^3+AX^2+BX$, a descent image is represented by a signed squarefree divisor $d$ of $B$, requiring a primitive integral solution of
+\[
+ N^2=dU^4+AU^2V^2+(B/d)V^4.
+\]
+The exact obstructions are as follows. ``Negative'' means the right side is negative for every nonzero real pair $(U,V)$.
+\begin{center}
+\begin{tabular}{lllc}
+\toprule
+Model $(A,B)$ & Classes excluded & Obstruction & Image size at most\\
+\midrule
+$(-17,64)$ & $-2,-1$ & Negative & \\
+ & $2$ & Modulo $3$ & $1$\\
+$(34,33)$ & $-11,-3$ & Modulo $32$ & \\
+ & $3,11$ & Modulo $64$ & $4$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For the first model, the only remaining class is $1$. For the second, the remaining classes are $-33,-1,1,33$. This accounts for every signed squarefree divisor of $64$ or $33$ respectively. Each modular check includes every pair modulo the stated modulus that is primitive at its underlying prime. A separate check uses the two normalized charts: $V$ a unit, and $U$ a unit with $V/U$ divisible by the prime. They agree exactly. For instance, in the class $d=2$ of the first model, the quartic takes the nonsquare residue $2$ modulo $3$ for every primitive pair.
+
+The descent identity
+\[
+ 2^{\operatorname{rank}E_*(\Q)+2}
+   =|\alpha(E_*)|\,|\alpha'(E_*')|
+\]
+therefore gives rank zero. The finite certificate and its elementary checker are \path{verification/orbit_progress/octic_certificate.json} and \path{verify_octic.py}. This rank conclusion does not rely on a database rank entry.
+
+At the good primes $5$ and $7$, direct counts give
+\[
+ \#E_*(\F_5)=\#E_*(\F_7)=4.
+\]
+Reduction of rational torsion, using these distinct good primes, bounds its order by four. The quadratic factor $X^2-17X+64$ has nonsquare discriminant $33$, so $(0,0)$ is the only nontrivial rational point of order two. A point of order four would have to double to $(0,0)$. The duplication formula then implies $X^2=64$; but the cubic on the right of \eqref{eq:newEmap} has values $-64$ at $X=8$ and $-2112$ at $X=-8$. Neither can be the square of a rational number. Thus no rational point of order four exists, and the rational group has exactly the two stated points.
+\end{proof}
+
+\begin{theorem}[A complete four-point genus-three curve]\label{thm:newHpoints}
+The smooth projective curve
+\[
+ \mathcal H:\ Y^2=t^8-13t^6+36t^4-13t^2+1
+\]
+has genus three and exactly four rational points:
+\[
+ \mathcal H(\Q)=\{(0,1),(0,-1),\infty_+,\infty_-\}.
+\]
+\end{theorem}
+\begin{proof}
+The degree-eight polynomial is squarefree and has square leading coefficient one. Thus the smooth projective model has genus three and two rational points at infinity. A finite point of $s^2=Q(r)$ with $r\ne0$ would map under \eqref{eq:newEmap} to a rational point on $E_*$ with nonzero $X=r^2$, contradicting Lemma~\ref{lem:newE}. Hence the quartic's rational points are exactly $(0,\pm8)$ and its two points at infinity. For a finite nonzero rational $t$, the expression $r=t+t^{-1}$ is finite and is not zero: $r=0$ would give $t^2=-1$. It cannot be the parameter of a rational point on the quartic. Consequently $\mathcal H$ has no finite point with $t\ne0$. Direct substitution supplies $(0,\pm1)$, completing the list.
+\end{proof}
+This is a complete classification of the smooth curve, not a bounded search and not merely a finiteness argument.
+
+\subsection{Sixteen original factors close on entire quotient fibers}
+The actual three-prime certificate contains sixteen used discriminants equal to a nonzero rational square times $H(\tau)$. Their precise positions are in Table~\ref{tab:newHfactors}. System identifiers in this section are zero-based indices in the shipped JSON records; a ``factor'' is a recorded projection-factor entry, not necessarily a new isomorphism class of curves.
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lcll}
+\toprule
+Orbit & System indices & Quotient angle $\lambda\cdot\theta$ & Original frequency difference\\
+\midrule
+$B1$ & $16,\ldots,23$ & $-w$ & $v_0-v_3=(0,0,-1)$\\
+$D3$ & $40,\ldots,47$ & $w-z$ & $v_3-v_2=(0,-1,1)$\\
+\bottomrule
+\end{tabular}
+\caption{Sixteen newly closed factor entries. In each case the entry has factor index zero and used quotient index zero.}\label{tab:newHfactors}
+\end{table}
+Here $\theta=(x,z,w)$, and $\tau=\tan((\lambda\cdot\theta)/2)$. The new checker independently reconstructs each trigonometric line and discriminant from the plane factor and the saved integer basis, verifies the square multiplier, and checks the plane factor against the original equations and their selected Sylvester determinant. No input identity is accepted merely because its text matches an earlier summary.
+
+By Theorem~\ref{thm:newHpoints}, the only possible quotient parameters are $\tau=0,\infty$. Therefore
+\[
+ e^{i\lambda\cdot\theta}\in\{1,-1\}.
+\]
+The two frequencies identified in the last column differ by $\lambda$, so their sine magnitudes coincide on the \emph{entire} remaining fibers. This proves degeneracy without a search for lifts and includes the quotient parameter at infinity. There is no variable square factor whose zero set has been discarded. The ambient projective boundaries remain covered by Lemma~\ref{lem:infinity}. We have therefore closed eight previously unresolved factor entries in each of $B1$ and $D3$.
+
+\subsection{Integer torus maps and the direction of implication}
+Let $\mathbb T(\Q)$ denote the rational points of the unit circle, with its multiplication law. Write the four frequency vectors of a configuration as the rows of an integer matrix $A$ of size $4\times3$.
+\begin{lemma}[Transport of rational-circle exclusions]\label{lem:torustransport}
+Suppose $A_sM=PA_t$, where $M\in\operatorname{Mat}_{3\times3}(\Z)$ has nonzero determinant and $P$ is a signed permutation matrix. Every solution of the target configuration $A_t$ maps to a solution of the source configuration $A_s$ by the monomial map of rational circle points represented in angle notation by
+\[
+ \psi=M\theta.
+\]
+The four sine magnitudes are preserved up to permutation. Thus a nonexistence theorem for the source excludes the target. If $\det M=\pm1$, the map has an integer inverse and is a rational-torus isomorphism.
+\end{lemma}
+\begin{proof}
+Every integer product, including negative powers, of rational unit-circle points is a rational unit-circle point. At the resulting source point the signed sine vector is
+\[
+ \sin(A_s\psi)=\sin(A_sM\theta)=P\sin(A_t\theta).
+\]
+A signed permutation preserves the property of having four distinct nonzero magnitudes with the magic-offset pattern. The inverse assertion uses $M^{-1}\in\operatorname{Mat}_3(\Z)$ when $\det M=\pm1$.
+\end{proof}
+When $|\det M|=2$, this is a one-way argument: the finite map need not be surjective on rational points. It is not called birational, and a target classification is not obtained by taking arbitrary rational preimages.
+
+The following five maps have been checked against the actual stored frequency orderings:
+\begin{align*}
+ M_{B2\to C}&=\begin{pmatrix}1&0&1\\-1&0&0\\1&1&0\end{pmatrix},&
+ M_{D1\to B2}&=\begin{pmatrix}1&-1&-2\\0&2&2\\0&0&1\end{pmatrix},\\[3pt]
+ M_{D1\to C}&=\begin{pmatrix}0&-2&1\\0&2&0\\1&1&0\end{pmatrix},&
+ M_{D1\to E2}&=\begin{pmatrix}0&2&0\\0&-2&1\\1&-1&0\end{pmatrix},\\[3pt]
+ M_{D3\to B1}&=\begin{pmatrix}1&-1&0\\-2&0&1\\-2&0&0\end{pmatrix}.&&
+\end{align*}
+The arrow denotes the \emph{direction in which an exclusion transfers}: a target solution maps back to the source. The first matrix has determinant of absolute value one; the other four have determinant of absolute value two.
+
+For $B2\to C$, the source angles are $(x+w,-x,x+z)$ and the source signed sine vector is $(s_0,-s_1,s_2,s_3)$ in the target ordering. The inverse angles are $(-z',w'+z',x'+z')$. Thus $B2$ and $C$ are genuinely the same rational-circle problem under an explicit monomial change of variables, although they remain different orbits under the smaller coordinate-sign/permutation group used in the fifteen-orbit enumeration.
+
+\subsection{Eight further closures transferred from the genus-five family}
+For $D3\to B1$, put
+\[
+ (x',z',w')=(x-z,w-2x,-2x).
+\]
+Using the stored orderings, the signed sine vectors satisfy
+\[
+ s_{D3}(x',z',w')=(s_{B1,1},s_{B1,2},-s_{B1,0},-s_{B1,3}).
+\]
+The eight completely closed $D3$ systems belonging to the rank-zero genus-five family in Section~\ref{sec:newgeometry} therefore exclude the following eight $B1$ systems:
+\begin{center}
+\begin{tabular}{c|rrrrrrrr}
+Source $D3$ system & 0&1&2&3&4&5&6&7\\
+Target $B1$ system &27&26&25&24&31&30&29&28
+\end{tabular}
+\end{center}
+For each of the five maps, the checker verifies the exact frequency identity and all 48 signed-equation row spaces. A separately written standard-library implementation uses rational row reduction to recheck the resulting 240 row-space identities. Each source system invoked in this eight-system transfer is checked against the prior factor ledger to ensure that \emph{every} source factor, and not just one selected factor, is closed. Its established exceptional fibers and projective boundaries are part of the source theorem.
+
+This closes eight more previously unresolved $B1$ factor entries. The source genus-five theorem uses the explicitly cited full rational group of $11a3$ \cite{CremonaData}; the present step supplies an exact new map, not a new computation of that group. The transfer preserves the original system's extra constraints. It does \emph{not} prove a complete rational-point list for the unrestricted genus-two curves $C_B$ or $C_C$.
+
+\subsection{A reusable sine-addition obstruction}
+\begin{corollary}[An additive triple cannot occur]\label{cor:additivetriple}
+For rational unit-circle points $e^{i\alpha},e^{i\beta},e^{i\gamma}$, the magnitudes
+\[
+ |\sin\alpha|,\quad|\sin\beta|,\quad|\sin(\alpha+\beta)|,\quad|\sin\gamma|
+\]
+cannot have the distinct nonzero four-offset magic pattern. More generally, in any number of rational-circle parameters, a four-frequency configuration containing an additive triple up to individual signs admits no nondegenerate solution.
+\end{corollary}
+\begin{proof}
+For the stored $F{-}1$ frequency matrix,
+\[
+ A_{F{-}1}\begin{pmatrix}2&1&-1\\-1&0&1\\-1&-1&1\end{pmatrix}
+ =\begin{pmatrix}0&0&1\\1&1&0\\1&0&0\\0&1&0\end{pmatrix}.
+\]
+The displayed three-by-three matrix has determinant one. Lemma~\ref{lem:torustransport} and the complete $F{-}1$ closure give the first assertion. For the second, take $\alpha=v\cdot\theta$, $\beta=w\cdot\theta$, and $\gamma=q\cdot\theta$ for the two addends and the fourth frequency. These are still rational unit-circle points, and individual frequency signs do not change sine magnitudes.
+\end{proof}
+This corollary uses the verified $F{-}1$ arithmetic argument; it is not asserted for arbitrary real circle points. It is a consequence within this manuscript, without a historical-priority claim.
+
+\subsection{Current reduction and verification boundary}
+The new contribution is 24 distinct factor-entry closures: sixteen from Theorem~\ref{thm:newHpoints} and eight from transport. In $B1$ the unresolved factor count decreases from 48 to 32; in $D3$ it decreases from 40 to 32. Together with Section~\ref{sec:newgeometry}, there are 56 further closures beyond the baseline audit at this stage, before the 64 additions in Section~\ref{sec:d1norm}. No sixth whole orbit is declared closed.
+
+For the purpose of proving nonexistence on the ten remaining whole orbits, it now suffices to resolve
+\[
+ \boxed{D1,\ D2,\ D3,\ D4,\ F{+}1,\ F{+}2.}
+\]
+The maps above transfer a $D1$ exclusion to $B2,C,E2$ and a $D3$ exclusion to $B1$. This is a reduction of the outstanding work, not a proof of those six exclusions. A classification that contains nondegenerate points would require rational lifting checks for the degree-two maps before it could classify their targets.
+
+The new records are in \path{verification/orbit_progress/}. The octic arithmetic checker uses only Python's standard library; the full new factor checker also uses the already audited exact SymPy projection/discriminant routines. The transport has an additional standard-library row-space check. Sixteen deliberately corrupted claims are rejected. The prerequisite $F{-}1$ component/fiber proof and the eight-system $D3$ genus-five family are retained and rechecked, not replaced by a bare status flag. No quadratic Chabauty run, higher rational-point search bound, or unproved rank-zero database entry is used for the new octic theorem.
+
+\section{Restoring the normalization constraint in orbit $D1$}\label{sec:d1norm}
+The elimination data in the preceding sections retain necessary quotient conditions. A second square condition, obtained before projection, closes sixteen further $D1$ factor entries. Exact integer-torus transport closes another sixteen entries in each of $B2,C,E2$. There are therefore 64 new factor-entry closures in this section, not four new whole-orbit closures. The remaining $D1$ problem is equivalent to one explicitly described genus-five rational-point question.
+
+\subsection{A rational-torus normal form}
+The stored $D1$ frequency ordering is
+\[
+ (1,1,1),\quad(1,1,-1),\quad(1,1,0),\quad(1,0,1).
+\]
+Make the determinant-one integer change
+\[
+ \alpha=x+z,\qquad\beta=w,\qquad\gamma=x+w.
+\]
+Its inverse is $x=\gamma-\beta$, $z=\alpha-\gamma+\beta$, $w=\beta$. Thus it preserves rational circle points in both directions, without choosing square roots. The four signed offsets become
+\begin{equation}\label{eq:d1canonical}
+ \sin(\alpha+\beta),\quad\sin(\alpha-\beta),\quad\sin\alpha,\quad\sin\gamma.
+\end{equation}
+Let $r=\tan(\beta/2)$ and $q=1+r^2$. For finite $r$, the signed vector in \eqref{eq:d1canonical} is
+\[
+ q^{-1}\begin{pmatrix}
+ 1-r^2&2r&0\\1-r^2&-2r&0\\q&0&0\\0&0&q
+ \end{pmatrix}
+ \begin{pmatrix}\sin\alpha\\\cos\alpha\\\sin\gamma\end{pmatrix}.
+\]
+The fibers $r=0,\infty$ are degenerate: the first two magnitudes coincide. All other rational circle points $\alpha,\gamma$, including their half-angle parameters at infinity, are retained by working directly with their sine and cosine coordinates.
+
+For each of the 48 complete signed assignments, let $B(r)$ be the two-by-three matrix obtained by multiplying its two linear relation rows by the displayed matrix. The cross product of the rows of $B$ is written $g(r)v(r)$, where $v=(v_1,v_2,v_3)$ is a primitive polynomial vector. The exact certificates verify this identity and a constant polynomial gcd of the entries of $v$. Every nonconstant factor of $g$ is $r$, $r^2-3$, or $3r^2-1$. The latter two have no rational root, as is already certified modulo 5. Consequently, away from the separately treated $r=0$ fiber, $B$ has rank two at every rational parameter.
+
+Any rational solution then has
+\[
+ (\sin\alpha,\cos\alpha,\sin\gamma)=\lambda(v_1,v_2,v_3),\qquad \lambda\in\Q^\times.
+\]
+In particular, the original unit-circle equations imply \emph{both}
+\begin{equation}\label{eq:d1twonorms}
+ v_1^2+v_2^2\in\Q^2,\qquad
+ v_1^2+v_2^2-v_3^2\in\Q^2.
+\end{equation}
+The second is the condition already visible in the earlier projection discriminant. The first must not be dropped: a rational direction $(\sin\alpha:\cos\alpha)$ need not have a rational normalization to the unit circle.
+
+\begin{lemma}[The $D1$ norm catalog]\label{lem:d1catalog}
+For the 48 signed systems, $v_1^2+v_2^2=q^2N(r)$, with the complete catalog in Table~\ref{tab:d1norms}. These are necessary square conditions on $N(r)$, not bounded-search observations.
+\end{lemma}
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lrl}
+\toprule
+$N(r)$ & Systems & Consequence\\
+\midrule
+$1$ &16& $v_1=0$, hence a zero offset\\
+$r^4+6r^2+1$ &4& rank-zero quartic obstruction\\
+$r^4-3r^2+4$ &4& rank-zero quartic obstruction\\
+$4r^4-3r^2+1$ &4& reciprocal of the preceding quartic\\
+$r^4+18r^2+1$ &12& rank-zero quartic obstruction\\
+$r^2+9$ &4& residual conic and sextic square conditions\\
+$9r^2+1$ &4& reciprocal residual conditions\\
+\bottomrule
+\end{tabular}
+\caption{All 48 $D1$ signed systems. Forty close; eight remain on the genus-five problem below.}\label{tab:d1norms}
+\end{table}
+\begin{proof}
+The standard-library checker reconstructs every relation matrix, cross product, division, and norm identity. It also compares the 48 row spaces with the 192 fully signed assignments. The separate symbolic checker reconstructs the circle polynomial from $(1+ir)^2$ and verifies the identities against the actual historical $D1$ inputs and system tags. Every removed factor and exceptional rational parameter is accounted for as above.
+\end{proof}
+
+\subsection{Three complete rank-zero quartic obstructions}
+\begin{proposition}\label{prop:d1quartics}
+Each smooth projective quartic
+\[
+ Z^2=r^4+6r^2+1,\qquad
+ Z^2=r^4-3r^2+4,\qquad
+ Z^2=r^4+18r^2+1
+\]
+has only the two points with $r=0$ and its two points at infinity. Their respective finite points are $(0,\pm1)$, $(0,\pm2)$, and $(0,\pm1)$. The reciprocal quartic $Z^2=4r^4-3r^2+1$ likewise has no finite point with $r\ne0$.
+\end{proposition}
+\begin{proof}
+For $Z^2=r^4+Ar^2+B$, the map
+\[
+ (r,Z)\longmapsto (X,Y)=(r^2,rZ)
+\]
+lands on $E_{A,B}:Y^2=X^3+AX^2+BX$. The following complete rational groups are independently certified:
+\begin{center}\small
+\begin{tabular}{ccl}
+\toprule
+$(A,B)$ & Descent image upper sizes & $E_{A,B}(\Q)$\\
+\midrule
+$(6,1)$ &$2,2$& $\{\mathcal O,(0,0),(-1,2),(-1,-2)\}$\\
+$(-3,4)$ &$2,2$& $\{\mathcal O,(0,0),(2,2),(2,-2)\}$\\
+$(18,1)$ &$2,2$& $\{\mathcal O,(0,0),(-1,4),(-1,-4)\}$\\
+\bottomrule
+\end{tabular}\end{center}
+Use the standard 2-isogeny descent formula of Section~\ref{sec:rank}: the isogenous coefficient pairs are $(-12,32)$, $(6,-7)$, and $(-36,320)$. For $(6,1)$, all possible first-image classes are $\pm1$; on the partner, both negative classes are excluded by sign. For $(-3,4)$, the negative first-image classes are excluded by sign; on its partner, classes $-1$ and $7$ are excluded modulo 16. For $(18,1)$ the first-image classes are again $\pm1$; on its partner, negative classes are excluded by sign and $2,10$ are excluded modulo 64. In every row the image product is at most four, proving rank zero. These use the classical descent method \cite{SageDescent}, not a database rank premise or an executed Sage routine.
+
+The checker enumerates all possible signed square classes, and checks each modular obstruction both on all primitive pairs and in the two normalized primitive charts. Good-prime counts at two or more distinct odd primes have gcd four for each model. Rational torsion therefore has order dividing four. The four displayed rational points exhaust that bound and hence the whole rank-zero group.
+
+A finite nonzero $r$ would give a nonzero square $X=r^2$. The only nonzero $X$ in the first and third groups is negative; in the second it is 2, not a rational square. No such point occurs. The points at zero and infinity follow by substitution and the square leading coefficient. Squarefreeness follows either directly or from $B(A^2-4B)\ne0$. Reciprocity $r\mapsto1/r$, with $Z\mapsto Z/r^2$, gives the final statement.
+\end{proof}
+
+\begin{corollary}\label{cor:d1forty}
+Forty of the 48 $D1$ signed systems admit no nondegenerate rational-circle solution. The only systems not excluded by this argument have zero-based indices
+\[
+ 8,9,12,14,24,25,28,30
+\]
+in the original certificate ordering.
+\end{corollary}
+\begin{proof}
+For $N=1$, the third signed offset $\sin\alpha$ vanishes. Each quartic row in Table~\ref{tab:d1norms} permits only $r=0,\infty$, which were already shown degenerate. The remaining two conic rows contain precisely the eight indicated systems.
+\end{proof}
+
+\subsection{The remaining question is exactly one genus-five curve}
+Define
+\begin{align}
+ P(h)&=h^{12}+70h^{10}-1009h^8+7060h^6-1009h^4+70h^2+1\label{eq:d1P}\\
+ &= (h^6-13h^4+83h^2+1)(h^6+83h^4-13h^2+1).\nonumber
+\end{align}
+The polynomial is squarefree. Its smooth projective double cover
+\[
+ \mathcal C:\quad Y^2=P(h)
+\]
+has genus five by Riemann--Hurwitz. It contains the eight rational points
+\begin{equation}\label{eq:d1known}
+ (0,\pm1),\qquad(1,\pm72),\qquad(-1,\pm72),\qquad\infty_+,\infty_-.
+\end{equation}
+No claim that this list is complete is made here.
+
+\begin{theorem}[Exact remaining existence problem]\label{thm:d1equivalence}
+Orbit $D1$ has a nondegenerate rational-circle solution if and only if $\mathcal C$ has a rational point other than the eight points in \eqref{eq:d1known}.
+\end{theorem}
+\begin{proof}
+For each residual system of the first conic type, \eqref{eq:d1twonorms} requires
+\begin{equation}\label{eq:d1conicpair}
+ S^2=r^2+9,\qquad Z^2=r^6-5r^4+19r^2+9.
+\end{equation}
+For the second conic type the conditions are $S^2=9r^2+1$ and $Z^2=9r^6+19r^4-5r^2+1$; setting $R=1/r$ converts them to \eqref{eq:d1conicpair}, since $r=0,\infty$ is already excluded.
+
+For finite nonzero $r$, the conic in \eqref{eq:d1conicpair} is parametrized by
+\[
+ r=\frac{6h}{1-h^2},\qquad S=\frac{3(1+h^2)}{1-h^2},\qquad
+ h=\frac{r}{S+3}.
+\]
+The inverse has no denominator exception at $r\ne0$. The exact pullback identity is
+\[
+ (1-h^2)^6\left(r^6-5r^4+19r^2+9\right)=9P(h).
+\]
+It follows that $Y=(1-h^2)^3Z/3$ gives a rational point on $\mathcal C$. The nondegenerate original solution cannot have $h=0,\pm1,\infty$.
+
+For the converse, let $(h,Y)$ be a rational point outside \eqref{eq:d1known}. In particular $h$ is finite and $h\notin\{0,1,-1\}$. Put
+\[
+ Q=h^4+34h^2+1,\qquad D=(1+h^2)Q.
+\]
+The following sine--cosine pairs are rational points of the unit circle:
+\begin{align*}
+ (\sin\alpha,\cos\alpha)&=\left(\frac{1-h^2}{1+h^2},\frac{-2h}{1+h^2}\right),\\
+ (\sin\beta,\cos\beta)&=\left(\frac{12h(1-h^2)}{Q},\frac{h^4-38h^2+1}{Q}\right),\\
+ (\sin\gamma,\cos\gamma)&=\left(\frac{-48h^2(1-h^2)}{D},\frac{Y}{D}\right).
+\end{align*}
+The first two assertions are polynomial identities. The third follows from
+\[
+ D^2-\bigl(48h^2(1-h^2)\bigr)^2=P(h).
+\]
+All denominators are positive over the reals. With $L=(1-h^2)/D$, their four signed offsets are
+\begin{equation}\label{eq:d1reconstructed}
+ L\bigl(h^4-62h^2+1,\quad h^4-14h^2+1,\quad h^4+34h^2+1,\quad-48h^2\bigr).
+\end{equation}
+These solve the two relations of system 8: $s_0=s_1+s_3$ and $s_2=s_1-s_3$.
+
+They are nonzero and distinct in magnitude. To verify this without a numerical assumption, form every entry and every sum or difference of two entries in the parenthesized vector. After removing nonzero constants and powers of $h$, each nonconstant factor is a monic integer polynomial with constant term $\pm1$, taking nonzero values at $h=\pm1$. Its only possible rational roots would be $\pm1$, by the rational-root theorem, so none occurs. The remaining common factor $L$ is nonzero by hypothesis. Lemma~\ref{lem:48} therefore gives the required magic-offset pattern. The inverse integer angle map supplies an original $D1$ point. This proves both directions.
+\end{proof}
+
+The conjecture that \eqref{eq:d1known} is complete is now a precise remaining target. Proving it would close $D1$ and, by the already verified forward maps, $B2,C,E2$. Conversely, an extra rational point would provide an explicit counterexample to the proposed \emph{rational-circle} $D1$ exclusion via \eqref{eq:d1reconstructed}; it would not automatically be an integer magic square or lift through the degree-two maps to the other three configurations.
+
+\subsection{Sixty-four new factor closures and the updated ledger}
+Each of the sixteen newly closed $D1$ systems had exactly one unresolved projection-factor entry. The maps of Section~\ref{sec:torusprogress} transfer the forty-system result to forty signed systems in each of $B2,C,E2$. Every one of the 144 required signed-row-space identities is rechecked against the historical frequency and equation orderings. This closes sixteen previously unresolved factors in each target.
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Orbit & Previously unresolved & Newly closed & Remaining factor entries\\
+\midrule
+$D1$ &24&16&8\\
+$B2$ &24&16&8\\
+$C$  &24&16&8\\
+$E2$ &24&16&8\\
+\bottomrule
+\end{tabular}
+\end{center}
+The other six incomplete orbit labels have unchanged counts. The total additional factor closures beyond the original audit is now $56+64=120$. The number of closed whole orbits remains five of fifteen. Factor occurrences across different labels are distinct proof obligations; they are not counted as 120 pairwise nonisomorphic curves.
+
+The files in \path{verification/d1_norm/} record all 48 polynomial kernels, the three new rank-zero proofs, the conic/genus-five identities, exact rational-circle reconstruction, and all transfer maps. The standard-library checker verifies the arithmetic, normalization constraints, catalog completeness, rational exceptions, and the two-way existence reduction. A separate symbolic checker reconstructs the input equations and transport identities independently. Eighteen deliberately damaged certificates are rejected. No quadratic Chabauty calculation, finite-height emptiness inference, or new whole-orbit closure is asserted in this section. No first-in-the-literature claim is made.
+
+\section{Remaining problems and contribution boundaries}\label{sec:remaining}
+The completed sum-seven stage, normalization calculations, additional quotient routes, and elliptic height certificates substantially reduce the previous list of obligations. They do not complete the rational-point problem.
+
+\subsection{What is now established}
+The two-prime cutoff is $k+\ell\ge8$. All recorded nonlinear projection genera are computed; the rational $D3$ projections have their separate genus-five lifting curves. Nondegenerate solutions on the nonlinear factors of $D2,D3,D4,F{+}1,F{+}2$ are finite. One hundred and twenty further factor entries are closed, including the four-point genus-three classification, integer-torus transfers, and restored D1 norm conditions, while the whole-orbit count remains five of fifteen. Published ranks and full bases are matched for sixteen specified positive-rank models. Eight rank-one elliptic square-coordinate conditions have rigorous global height bounds, and three rank-two models have rigorous positive minimum-height bounds.
+
+\subsection{What still needs a completeness proof}
+The ten whole three-prime orbits in the ledger remain unresolved as complete rational-point classifications. Faltings' theorem supplies finiteness, not an effective list or an emptiness certificate. A positive-rank quotient likewise does not decide which rational points lift. A genuine quadratic-Chabauty or another complete rational-point argument is still needed for the relevant remaining curves. Section~\ref{sec:d1norm} identifies a single genus-five point-list question equivalent to the remaining D1 exclusion; resolving its eight-point conjecture would also settle B2, C, and E2. The reciprocal $C_B,C_C$ covers are one such problem, not two independent tasks. Section~\ref{sec:torusprogress} further reduces whole-orbit nonexistence to the six sufficient targets $D1,D2,D3,D4,F{+}1,F{+}2$; it does not declare any of them empty.
+
+The old large rank-two sieve has not been reconstructed, and no historical rank-two height floor is reinstated. Nor are the eight global elliptic bounds automatically a uniform height theorem for all unresolved magic-square factors: every orbit-to-curve map and its exceptional points must be checked before making that transfer. Beyond exponent sum seven, the reduced-denominator rule prunes configurations but does not exclude every two-prime center.
+
+\subsection{Attribution and proof boundaries}
+The manuscript does not solve the unrestricted magic-square problem or claim historical priority. Exact computations and newly derived maps are separated from cited rank and full-basis results. The Cremona data are an explicit external arithmetic premise; their use is not described as a newly executed rank or saturation algorithm. No speculative statement about another archive's stronger prime-support claims is used to fill a proof gap.
+
+\section{Reproducibility, provenance, and software trust}\label{sec:repro}
+The release retains the baseline proof records and adds separate geometry and arithmetic trees. Verification runs in temporary copies; shipped certificates are not modified. Current scope is recorded in \path{STATUS.json}; previous statuses are kept under provenance, not interpreted as additional theorems.
+
+\subsection{Entry point}
+Use Python 3.11 or later and SymPy 1.14.0:
+\begin{verbatim}
+python -m pip install -r requirements.txt
+python verify_release.py
+\end{verbatim}
+The full suite checks the reciprocal-octic classification, all five integer-torus maps, the preceding 24 factor closures, and all three new D1 norm/transport stages. It contains 24 verification stages. It runs both two-prime implementations, the baseline three-prime audit, the normalization and lifting computations, extra rank-zero routes, full-basis matching, exact height checks, and corruption/regression tests. Assertions must remain enabled; do not use \texttt{-O}. The smaller command
+\begin{verbatim}
+python verify_release.py --suite stdlib
+\end{verbatim}
+checks the new D1 norm/kernel arithmetic, earlier octic arithmetic and torus row-space identities as well as the sum-seven certificate, baseline rank-zero certificates, published-basis matching, and exact height arguments without third-party packages. It is not a replacement for the full three-prime or genus calculations.
+
+\subsection{Principal proof objects}
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}m{0.44\linewidth}m{0.47\linewidth}}
+\toprule
+Tree and record & Scope\\
+\midrule
+Two-prime: \path{results/certificate_degree7.json} & 2,064 signed systems, 1,190 catalog polynomials, and all 168 normal forms through sum seven.\\
+Three-prime: baseline audit JSON files & Original 816 systems, quotient maps, components, finite fibers, and five whole-orbit closures.\\
+Geometry: \path{nonlinear_genus_certificate.json} & 168 distinct projection normalizations, singularity resolutions, and irreducibility witnesses.\\
+Geometry: \path{d3_lifting_covers.json} and extra-closure records & Twenty-four genus-five lifting covers and the first 32 additional distinct factor closures.\\
+Orbit progress: \path{progress_verification.json} & A complete four-point genus-three curve, 24 further factor closures, and exact torus transports.\\
+D1 norm: \path{d1_transfer_verification.json} & Sixty-four further factor closures and an exact genus-five existence equivalence; eight-point completeness remains unproved.\\
+Arithmetic: \path{published_basis_verification.json} & Exact model and point matches to cited full-basis records, not fresh rank computations.\\
+Arithmetic: \path{height_certificate.json}, \path{global_rank_one_bounds.json} & Integer duplication identities, rational height intervals, and eight global elliptic bounds.\\
+Arithmetic: \path{rank_two_height_matrices.json} & Full published bases, rigorous Gram intervals, and minimum nonzero-height bounds for three models.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Trust and reproducibility distinctions}
+The sum-seven acceptance path can use Python's standard library alone; a separate symbolic checker reconstructs its equations differently. Full three-prime and normalization checks use SymPy exact polynomial arithmetic, factorization, Groebner bases, and algebraic-root routines. The geometric genus and descent formulas are mathematical prerequisites stated in the text. The rank-one full-generation inputs are published Cremona group data; the coordinate matches and all new height inequalities are checked independently. No Sage, PARI, Magma, BSD assumption, or executed quadratic Chabauty is hidden in this release.
+
+The implementation tests include deliberate certificate damage, exact determinant comparisons, and elementary singularity/height regressions. These are safeguards, not substitutes for the written implications. A hash manifest certifies byte identity, not truth. This is a computer-assisted mathematical manuscript, not a formal proof-assistant development. Author names and affiliations remain unset; a public repository DOI and a historical-priority assessment have not been supplied.
+
+\appendix
+\section{Explicit corrected point/model table}\label{app:models}
+A listed vector $[a_1,a_2,a_3,a_4,a_6]$ means
+\[
+y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6.
+\]
+The transformation column uses the convention
+\[
+X=u^2x+r,\qquad Z=u^3y+t,
+\]
+from the target model to the original Weierstrass model. The point column is on the target model. Original points and both models are recorded in full in \path{data/chabauty_inputs_corrected.json}. The target equations are historical listed models with verified transformations; a field named \texttt{minimal\_model} is not treated here as a newly proved minimality result.
+
+\begin{longtable}{l l l l}
+\toprule
+Input / quotient & Target Weierstrass coefficients & $(u,r,t)$ & Correct point\\
+\midrule\endfirsthead
+\toprule
+Input / quotient & Target Weierstrass coefficients & $(u,r,t)$ & Correct point\\
+\midrule\endhead
+\texttt{E\_A} / 1 & $[0,1,0,11,35]$ & $(1,2,0)$ & $(-2,3)$ \\
+\texttt{E\_A} / 2 & $[0,1,1,-10,10]$ & $(2,-5,4)$ & $(-4,1)$ \\
+\texttt{E\_B} / 1 & $[0,-1,0,-45,133]$ & $(1,-4,0)$ & $(3,4)$ \\
+\texttt{E\_B} / 2 & $[0,1,0,3,11]$ & $(1,2,0)$ & $(1,4)$ \\
+\texttt{E\_C} / 1 & $[0,1,0,3,11]$ & $(1,2,0)$ & $(1,4)$ \\
+\texttt{E\_C} / 2 & $[0,-1,0,-45,133]$ & $(1,-4,0)$ & $(3,4)$ \\
+\texttt{E\_D} / 1 & $[0,1,0,0,23]$ & $(2,11,0)$ & $(1,5)$ \\
+\texttt{E\_D} / 2 & $[0,-1,0,-4,5]$ & $(2,-5,0)$ & $(2,-1)$ \\
+\texttt{E\_D\_tw2} / 1 & $[0,-1,0,-1,185]$ & $(2,18,0)$ & $(8,25)$ \\
+\texttt{E\_D\_tw2} / 2 & $[0,1,0,-17,23]$ & $(2,-6,0)$ & $(2,1)$ \\
+\texttt{E\_D\_twm2} / 1 & $[0,1,0,-1,-185]$ & $(2,-18,0)$ & $(42,275)$ \\
+\texttt{E\_D\_twm2} / 2 & $[0,-1,0,-17,-23]$ & $(2,6,0)$ & $(8,17)$ \\
+\texttt{E\_D\_tw5} / 1 & $[0,-1,0,-8,2887]$ & $(2,47,0)$ & $(-13,25)$ \\
+\texttt{E\_D\_tw5} / 2 & $[0,1,0,-108,413]$ & $(2,-17,0)$ & $(-2,25)$ \\
+\texttt{E\_A\_cubic\_E2} / 1 & $[0,1,0,11,35]$ & $(6,396,0)$ & $(-2,3)$ \\
+\texttt{E\_A\_cubic\_E2} / 2 & $[0,1,0,11,695]$ & $(8,-1856,0)$ & $(-7,18)$ \\
+\bottomrule
+\end{longtable}
+Each corrected point has an exact non-torsion witness. Section~\ref{sec:newarithmetic} identifies the target equations with published rank and full-basis records and gives the precise torsion adjustment where needed. These elliptic points are not automatically rational points of their genus-two source curves.
+
+\section{A sample modular certificate catalog}\label{app:factors}
+For a readable small example, the following is the original 25-factor no-rational-root catalog for the $(2,1)$ representative. The current complete 1,187-factor nonlinear catalog is \path{verification/two_prime/results/degree7_factor_catalog.md}; its exact polynomial coefficients and per-system products are in the combined JSON. In the table, $P(t)=Q(t^2)$ and the tuple gives $Q$'s coefficients in descending order. The witness prime tests $P$ at every residue, not $Q$ at arbitrary arguments.
+
+{\small
+\begin{longtable}{lll}
+\toprule
+Factor & Coefficients of $Q$ in $P(t)=Q(t^2)$ & $r$\\
+\midrule
+\endfirsthead
+\toprule Factor & Coefficients of $Q$ & $r$\\\midrule
+\endhead
+F01 & $(3,26,-251,716,-803,250,-5)$ & 7 \\
+F02 & $(5,-250,803,-716,251,-26,-3)$ & 7 \\
+F05 & $(1,1)$ & 3 \\
+F06 & $(3,-43,97,-49)$ & 5 \\
+F07 & $(5,-70,23,460,-493,154,-15)$ & 7 \\
+F08 & $(49,-97,43,-3)$ & 5 \\
+F09 & $(15,-154,493,-460,-23,70,-5)$ & 7 \\
+F10 & $(5,-34,827,-2780,3179,-1250,117)$ & 7 \\
+F11 & $(117,-1250,3179,-2780,827,-34,5)$ & 7 \\
+F12 & $(3,-113,878,-1522,511,-45)$ & 7 \\
+F13 & $(45,-511,1522,-878,113,-3)$ & 7 \\
+F14 & $(1,-3)$ & 5 \\
+F15 & $(25,-22,1)$ & 3 \\
+F16 & $(7,-5,118,-106,19,-1)$ & 3 \\
+F17 & $(3,-1)$ & 5 \\
+F18 & $(1,-22,25)$ & 3 \\
+F19 & $(1,-19,106,-118,5,-7)$ & 3 \\
+F20 & $(77,-427,818,-614,113,1)$ & 3 \\
+F21 & $(1,113,-614,818,-427,77)$ & 3 \\
+F22 & $(27,-200,422,-112,7)$ & 5 \\
+F23 & $(7,-112,422,-200,27)$ & 5 \\
+F24 & $(2,-37,119,-125,35,-2)$ & 3 \\
+F25 & $(1,-25,139,-27)$ & 5 \\
+F26 & $(27,-139,25,-1)$ & 5 \\
+F27 & $(2,-35,125,-119,37,-2)$ & 3 \\
+\bottomrule
+\end{longtable}
+
+For example, $P(t)=t^4-22t^2+25$ reduces to $t^4+2t^2+1$ modulo 3 and takes residues $1,1,1$. Since its leading coefficient is 1 modulo 3, it has no rational root. Every catalog entry is checked in exactly this way. The full 48-system factor assignment remains in \path{verification/two_prime/results/systems_21.csv}; the combined certificate also reverifies it.
+
+}
+\clearpage
+\phantomsection\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{99}
+\small
+\bibitem{Brown511} K. Brown, \emph{Discordance Impedes Square Magic}, MathPages, undated. \url{https://www.mathpages.com/home/kmath511/kmath511.htm}. Accessed 1 October 2026.
+\bibitem{Brown417} K. Brown, \emph{Magic Square of Squares}, MathPages, Proposition 1, undated. \url{https://www.mathpages.com/home/kmath417/kmath417.htm}. Accessed 1 October 2026.
+\bibitem{Weisenberg} D. Weisenberg, \emph{Some Thoughts on The $3\times3$ Magic Square of Squares Problem}, Rose-Hulman Undergraduate Mathematics Journal \textbf{24} (2023), no.~1, Article 7. \url{https://scholar.rose-hulman.edu/rhumj/vol24/iss1/7/}.
+\bibitem{Cain} O. Cain, \emph{Gaussian Integers, Rings, Finite Fields, and the Magic Square of Squares}, arXiv:1908.03236v2 (2019).
+\bibitem{Wolird} C. Wolird, \emph{A New Transformation of the Magic Square of Squares}, arXiv:2310.12164 (2023).
+\bibitem{Schwarz} \texttt{uwe-schwarz}, \emph{Refined prime-power block balance}, public prime-support research note, Sections 3--4. \url{https://github.com/uwe-schwarz/magic-squares-of-squares/blob/main/research/prime-support/block-balance.md}. Initial archive commit dated 20 August 2026 in the supplied provenance review; unrefereed. The stronger archive claims are not assumed here.
+\bibitem{BTV} N. Bruin, J. Thomas, and A. V\'arilly-Alvarado, \emph{Explicit computation of symmetric differentials and its application to quasi-hyperbolicity}, Algebra \& Number Theory 16 (2022), 1377--1405; arXiv:1912.08908.
+\bibitem{AS} A. Auel and B. Singer, \emph{The algebraic geometry of 3-by-3 magic squares of squares}, arXiv:2609.09351v1 (8 September 2026).
+\bibitem{BP} F. Bianchi and O. Padurariu, \emph{Rational points on rank 2 genus 2 bielliptic curves in the LMFDB}, Contemporary Mathematics \textbf{796} (2024), DOI: \href{https://doi.org/10.1090/conm/796/16003}{10.1090/conm/796/16003}; preprint \href{https://arxiv.org/abs/2212.11635}{arXiv:2212.11635}.
+\bibitem{Fisher} T. Fisher, \emph{On binary quartics and the Cassels--Tate pairing}, arXiv:2208.14977 (2022), Section 2. \url{https://arxiv.org/abs/2208.14977}.
+\bibitem{SageDescent} SageMath developers, \emph{Descent on elliptic curves over $\Q$ with a 2-isogeny}, official reference manual. \url{https://doc.sagemath.org/html/en/reference/arithmetic_curves/sage/schemes/elliptic_curves/descent_two_isogeny.html}.
+\bibitem{PARI} PARI/GP developers, \emph{Elliptic curves}, official function reference, entries \texttt{ellrank}, \texttt{ellsaturation}, and \texttt{ellratpoints}. \url{https://pari.math.u-bordeaux.fr/dochtml/html-stable/Elliptic_curves.html}.
+\bibitem{SymPy} SymPy development team, \emph{Polynomials Manipulation Module Reference}, SymPy 1.14.0 documentation. \url{https://docs.sympy.org/latest/modules/polys/reference.html}. Accessed 1 October 2026.
+\bibitem{CremonaData} J. E. Cremona, \emph{Elliptic Curve Data}, Table Two (ranks, torsion and full Mordell--Weil generators). \url{https://johncremona.github.io/ecdata/}. Source files \texttt{allgens.00000-09999} and \texttt{allgens.10000-19999}, repository commit \texttt{1e16f4523e20f14aecbc8fcc1db46b4e9f23a14f} (27 November 2020). The relevant exact rows are included with this release.
+\bibitem{SilvermanAEC} J. H. Silverman, \emph{The Arithmetic of Elliptic Curves}, second edition, Graduate Texts in Mathematics 106, Springer, 2009, Chapter VIII. DOI: \href{https://doi.org/10.1007/978-0-387-09494-6}{10.1007/978-0-387-09494-6}.
+\bibitem{Faltings} G. Faltings, \emph{Endlichkeitss\"atze f\"ur abelsche Variet\"aten \"uber Zahlk\"orpern}, Inventiones Mathematicae \textbf{73} (1983), 349--366. DOI: \href{https://doi.org/10.1007/BF01388432}{10.1007/BF01388432}.
+\end{thebibliography}
+\end{document}

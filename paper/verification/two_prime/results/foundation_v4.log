@@ -1,0 +1,17 @@
+PASS Lucas row/column/diagonal sums 
+PASS Lucas distinctness zero locus 
+PASS two real-angle identities 
+PASS six real-angle cases 
+PASS integral triangle count and valuation through y=10000 {'admissible_y': 1074, 'triangles': 3000, 'bound': 10000}
+PASS Gaussian representatives and corrected half-area-angle {'triangles': 3000, 'independent_generation': 'Euclidean versus Gaussian'}
+PASS three-prime orbit enumeration {'vectors': 13, 'admissible_sets': 177, 'orbits': 15, 'orbit_sizes': [1, 4, 4, 6, 6, 12, 12, 12, 12, 12, 12, 12, 24, 24, 24]}
+PASS E1 is exactly the frequency-parallelogram orbit 
+PASS complete two-prime configuration enumeration through exponent sum 7 {'pairs': 12, 'raw_configurations': 168, 'symmetry_classes': 85, 'warning': 'configuration coverage only, not a nonexistence proof for all pairs'}
+PASS reciprocal cubic identity 
+PASS genus-two cover smoothness {'sextic_discriminant': -507510784}
+PASS two quotient map identities 
+PASS independent pullback differentials 
+PASS distinct elliptic quotients at good prime 3 {'jB': '-2515456/11', 'jC': '512/11', 'point_counts_mod_3': [5, 3]}
+PASS cubic coefficient law 
+PASS double-angle lift identity 
+ALL 16 CHECK GROUPS PASSED

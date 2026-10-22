@@ -1,0 +1,16 @@
+21_m1_n0 PASS
+31_m1_n0 PASS
+31_m2_n0 PASS
+22_m1_n1 PASS
+22_m1_nminus1 PASS
+{
+  "status": "PASS",
+  "systems": 240,
+  "numerator_method": "Chebyshev T_n and U_(n-1)",
+  "determinant_method": "direct symbolic Sylvester matrix over ZZ[t], SymPy DomainMatrix",
+  "resultant_calls": 0,
+  "factorization_calls": 0,
+  "rational_root_solver_calls": 0,
+  "sympy": "1.14.0",
+  "elapsed_seconds": 4.026
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "tests": [
+    [
+      "node",
+      1
+    ],
+    [
+      "cusp",
+      1
+    ],
+    [
+      "tacnode",
+      2
+    ],
+    [
+      "triple",
+      3
+    ],
+    [
+      "vertical cusp",
+      1
+    ],
+    [
+      "two tangent cusps",
+      8
+    ],
+    [
+      "rational circle",
+      0
+    ],
+    [
+      "Fermat cubic",
+      1
+    ],
+    [
+      "nodal cubic",
+      0
+    ],
+    [
+      "D2",
+      "recomputed and altered genus/delta rejected"
+    ],
+    [
+      "D3",
+      "recomputed and altered genus/delta rejected"
+    ],
+    [
+      "D4",
+      "recomputed and altered genus/delta rejected"
+    ],
+    [
+      "F+1",
+      "recomputed and altered genus/delta rejected"
+    ],
+    [
+      "F+2",
+      "recomputed and altered genus/delta rejected"
+    ]
+  ]
+}

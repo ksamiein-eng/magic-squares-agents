@@ -1,0 +1,572 @@
+[
+  {
+    "bounds": [
+      1,
+      1
+    ],
+    "drops": [
+      0,
+      0
+    ],
+    "route": "real_angle_parallelogram"
+  },
+  {
+    "bounds": [
+      2,
+      1
+    ],
+    "drops": [
+      -1,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "21_m1_n0"
+  },
+  {
+    "bounds": [
+      2,
+      1
+    ],
+    "drops": [
+      0,
+      0
+    ],
+    "route": "real_angle_parallelogram"
+  },
+  {
+    "bounds": [
+      2,
+      1
+    ],
+    "drops": [
+      1,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "21_m1_n0"
+  },
+  {
+    "bounds": [
+      3,
+      1
+    ],
+    "drops": [
+      -2,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "31_m2_n0"
+  },
+  {
+    "bounds": [
+      3,
+      1
+    ],
+    "drops": [
+      -1,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "31_m1_n0"
+  },
+  {
+    "bounds": [
+      3,
+      1
+    ],
+    "drops": [
+      0,
+      0
+    ],
+    "route": "real_angle_parallelogram"
+  },
+  {
+    "bounds": [
+      3,
+      1
+    ],
+    "drops": [
+      1,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "31_m1_n0"
+  },
+  {
+    "bounds": [
+      3,
+      1
+    ],
+    "drops": [
+      2,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "31_m2_n0"
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      -1,
+      -1
+    ],
+    "route": "direct_certificate",
+    "certificate": "22_m1_n1"
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      -1,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      -1,
+      1
+    ],
+    "route": "direct_certificate",
+    "certificate": "22_m1_nminus1"
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      0,
+      -1
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      0,
+      0
+    ],
+    "route": "real_angle_parallelogram"
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      0,
+      1
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      1,
+      -1
+    ],
+    "route": "direct_certificate",
+    "certificate": "22_m1_nminus1"
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      1,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      2,
+      2
+    ],
+    "drops": [
+      1,
+      1
+    ],
+    "route": "direct_certificate",
+    "certificate": "22_m1_n1"
+  },
+  {
+    "bounds": [
+      4,
+      1
+    ],
+    "drops": [
+      -3,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "41_m3_n0"
+  },
+  {
+    "bounds": [
+      4,
+      1
+    ],
+    "drops": [
+      -2,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      2,
+      1
+    ]
+  },
+  {
+    "bounds": [
+      4,
+      1
+    ],
+    "drops": [
+      -1,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "41_m1_n0"
+  },
+  {
+    "bounds": [
+      4,
+      1
+    ],
+    "drops": [
+      0,
+      0
+    ],
+    "route": "real_angle_parallelogram"
+  },
+  {
+    "bounds": [
+      4,
+      1
+    ],
+    "drops": [
+      1,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "41_m1_n0"
+  },
+  {
+    "bounds": [
+      4,
+      1
+    ],
+    "drops": [
+      2,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      2,
+      1
+    ]
+  },
+  {
+    "bounds": [
+      4,
+      1
+    ],
+    "drops": [
+      3,
+      0
+    ],
+    "route": "direct_certificate",
+    "certificate": "41_m3_n0"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      -2,
+      -1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m2_n1"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      -2,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "31_m2_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      -2,
+      1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m2_nminus1"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      -1,
+      -1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m1_n1"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      -1,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "31_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      -1,
+      1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m1_nminus1"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      0,
+      -1
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      1,
+      0
+    ],
+    "frequency_coordinate_multipliers": [
+      3,
+      1
+    ]
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      0,
+      0
+    ],
+    "route": "real_angle_parallelogram"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      0,
+      1
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "21_m1_n0",
+    "coordinate_permutation": [
+      1,
+      0
+    ],
+    "frequency_coordinate_multipliers": [
+      3,
+      1
+    ]
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      1,
+      -1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m1_nminus1"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      1,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "31_m1_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      1,
+      1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m1_n1"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      2,
+      -1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m2_nminus1"
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      2,
+      0
+    ],
+    "route": "rational_circle_power_pullback",
+    "certificate": "31_m2_n0",
+    "coordinate_permutation": [
+      0,
+      1
+    ],
+    "frequency_coordinate_multipliers": [
+      1,
+      2
+    ]
+  },
+  {
+    "bounds": [
+      3,
+      2
+    ],
+    "drops": [
+      2,
+      1
+    ],
+    "route": "direct_certificate",
+    "certificate": "32_m2_n1"
+  }
+]

@@ -1,0 +1,405 @@
+{
+  "method": "2-isogeny descent: 2^(rank+2)=|alpha(E)|*|alpha(Eprime)|; both images bounded by surviving square classes. Finite-field orders bound rational torsion.",
+  "curves": [
+    {
+      "model": [
+        0,
+        0,
+        0,
+        -7,
+        6
+      ],
+      "root_shift": 2,
+      "image_bounds": [
+        {
+          "A": 6,
+          "B": 5,
+          "not_excluded": [
+            -5,
+            -1,
+            1,
+            5
+          ],
+          "excluded": {}
+        },
+        {
+          "A": -12,
+          "B": 16,
+          "not_excluded": [
+            1
+          ],
+          "excluded": {
+            "-2": "real",
+            "-1": "real",
+            "2": [
+              2,
+              4
+            ]
+          }
+        }
+      ],
+      "rank_upper_bound": 0,
+      "good_prime_cardinalities": {
+        "3": 4,
+        "7": 4,
+        "11": 16,
+        "13": 16,
+        "17": 16,
+        "19": 24
+      },
+      "rational_torsion_order_divides": 4
+    },
+    {
+      "model": [
+        0,
+        1,
+        0,
+        -4,
+        -4
+      ],
+      "root_shift": 2,
+      "image_bounds": [
+        {
+          "A": 7,
+          "B": 12,
+          "not_excluded": [
+            -3,
+            -1,
+            1,
+            3
+          ],
+          "excluded": {
+            "-6": [
+              2,
+              2
+            ],
+            "-2": [
+              2,
+              2
+            ],
+            "2": [
+              2,
+              2
+            ],
+            "6": [
+              2,
+              2
+            ]
+          }
+        },
+        {
+          "A": -14,
+          "B": 1,
+          "not_excluded": [
+            1
+          ],
+          "excluded": {
+            "-1": "real"
+          }
+        }
+      ],
+      "rank_upper_bound": 0,
+      "good_prime_cardinalities": {
+        "5": 8,
+        "7": 8,
+        "11": 16,
+        "13": 16,
+        "17": 16,
+        "19": 16
+      },
+      "rational_torsion_order_divides": 4
+    },
+    {
+      "model": [
+        0,
+        1,
+        0,
+        -24,
+        36
+      ],
+      "root_shift": 3,
+      "image_bounds": [
+        {
+          "A": 10,
+          "B": 9,
+          "not_excluded": [
+            -3,
+            -1,
+            1,
+            3
+          ],
+          "excluded": {}
+        },
+        {
+          "A": -20,
+          "B": 64,
+          "not_excluded": [
+            1
+          ],
+          "excluded": {
+            "-2": "real",
+            "-1": "real",
+            "2": [
+              2,
+              6
+            ]
+          }
+        }
+      ],
+      "rank_upper_bound": 0,
+      "good_prime_cardinalities": {
+        "5": 8,
+        "7": 8,
+        "11": 16,
+        "13": 16,
+        "17": 16,
+        "19": 16
+      },
+      "rational_torsion_order_divides": 8
+    },
+    {
+      "model": [
+        0,
+        -1,
+        0,
+        -9,
+        -7
+      ],
+      "root_shift": -1,
+      "image_bounds": [
+        {
+          "A": -4,
+          "B": -4,
+          "not_excluded": [
+            -1,
+            1
+          ],
+          "excluded": {
+            "-2": [
+              2,
+              4
+            ],
+            "2": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "A": 8,
+          "B": 32,
+          "not_excluded": [
+            1,
+            2
+          ],
+          "excluded": {
+            "-2": "real",
+            "-1": "real"
+          }
+        }
+      ],
+      "rank_upper_bound": 0,
+      "good_prime_cardinalities": {
+        "3": 2,
+        "5": 8,
+        "7": 4,
+        "11": 14,
+        "13": 16,
+        "17": 20,
+        "19": 18
+      },
+      "rational_torsion_order_divides": 2
+    },
+    {
+      "model": [
+        0,
+        -1,
+        0,
+        -3,
+        2
+      ],
+      "root_shift": 2,
+      "image_bounds": [
+        {
+          "A": 5,
+          "B": 5,
+          "not_excluded": [
+            1,
+            5
+          ],
+          "excluded": {
+            "-5": [
+              2,
+              2
+            ],
+            "-1": [
+              2,
+              2
+            ]
+          }
+        },
+        {
+          "A": -10,
+          "B": 5,
+          "not_excluded": [
+            1,
+            5
+          ],
+          "excluded": {
+            "-5": "real",
+            "-1": "real"
+          }
+        }
+      ],
+      "rank_upper_bound": 0,
+      "good_prime_cardinalities": {
+        "3": 2,
+        "7": 6,
+        "11": 8,
+        "13": 18,
+        "17": 18,
+        "19": 16
+      },
+      "rational_torsion_order_divides": 2
+    },
+    {
+      "model": [
+        0,
+        0,
+        0,
+        -351,
+        1890
+      ],
+      "root_shift": 15,
+      "image_bounds": [
+        {
+          "A": 45,
+          "B": 324,
+          "not_excluded": [
+            -2,
+            -1,
+            1,
+            2
+          ],
+          "excluded": {
+            "-6": [
+              3,
+              4
+            ],
+            "-3": [
+              3,
+              4
+            ],
+            "3": [
+              3,
+              4
+            ],
+            "6": [
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "A": -90,
+          "B": 729,
+          "not_excluded": [
+            1
+          ],
+          "excluded": {
+            "-3": "real",
+            "-1": "real",
+            "3": [
+              2,
+              4
+            ]
+          }
+        }
+      ],
+      "rank_upper_bound": 0,
+      "good_prime_cardinalities": {
+        "5": 8,
+        "7": 8,
+        "11": 8,
+        "13": 16,
+        "17": 16,
+        "19": 24
+      },
+      "rational_torsion_order_divides": 8
+    },
+    {
+      "model": [
+        0,
+        0,
+        0,
+        -24003,
+        1296702
+      ],
+      "root_shift": 66,
+      "image_bounds": [
+        {
+          "A": 198,
+          "B": -10935,
+          "not_excluded": [
+            -15,
+            -3,
+            1,
+            5
+          ],
+          "excluded": {
+            "-5": [
+              2,
+              4
+            ],
+            "-1": [
+              2,
+              4
+            ],
+            "3": [
+              2,
+              4
+            ],
+            "15": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "A": -396,
+          "B": 82944,
+          "not_excluded": [
+            1
+          ],
+          "excluded": {
+            "-6": "real",
+            "-3": "real",
+            "-2": "real",
+            "-1": "real",
+            "2": [
+              5,
+              2
+            ],
+            "3": [
+              3,
+              4
+            ],
+            "6": [
+              3,
+              4
+            ]
+          }
+        }
+      ],
+      "rank_upper_bound": 0,
+      "good_prime_cardinalities": {
+        "7": 12,
+        "11": 12,
+        "13": 12,
+        "17": 12,
+        "19": 24
+      },
+      "rational_torsion_order_divides": 12
+    }
+  ]
+}

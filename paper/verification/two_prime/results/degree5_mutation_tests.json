@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "rejected_mutations_or_invalid_claims": [
+    {
+      "test": "missing exponent case",
+      "status": "PASS: rejected",
+      "reason": "case coverage mismatch"
+    },
+    {
+      "test": "missing signed system",
+      "status": "PASS: rejected",
+      "reason": "48-system coverage fails"
+    },
+    {
+      "test": "altered frequency",
+      "status": "PASS: rejected",
+      "reason": "frequency specification mismatch"
+    },
+    {
+      "test": "altered sine numerator",
+      "status": "PASS: rejected",
+      "reason": "sine numerator mismatch"
+    },
+    {
+      "test": "altered determinant coefficient",
+      "status": "PASS: rejected",
+      "reason": "Sylvester identity fails at t=1"
+    },
+    {
+      "test": "invalid removed factor",
+      "status": "PASS: rejected",
+      "reason": "division identity fails"
+    },
+    {
+      "test": "composite alleged prime",
+      "status": "PASS: rejected",
+      "reason": "invalid prime or leading coefficient"
+    },
+    {
+      "test": "false modular residues",
+      "status": "PASS: rejected",
+      "reason": "modular no-root witness fails"
+    },
+    {
+      "test": "missing factor in product",
+      "status": "PASS: rejected",
+      "reason": "factor product is not the resultant"
+    },
+    {
+      "test": "higher degree polynomial invisible on evaluation grid",
+      "status": "PASS: rejected",
+      "reason": "recorded resultant exceeds proven degree bound"
+    },
+    {
+      "test": "an unproved finite fiber cannot be marked degenerate",
+      "status": "PASS: rejected",
+      "reason": "finite fiber t=2 is not certified degenerate"
+    }
+  ],
+  "determinant_regression": "Bareiss vs independent Leibniz formula",
+  "determinant_test_matrices": 180,
+  "regressions_are_not_the_proof": true
+}
