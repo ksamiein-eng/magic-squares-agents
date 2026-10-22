@@ -580,12 +580,17 @@ def genus5_quotient_structure() -> dict:
         out["quotients"][name]["lmfdb"] = {**m, "isomorphism_scaling_u": str(u) if u is not None else None,
                                            "isomorphism_verified": u is not None}
     out["conclusion"] = (
-        "All three elliptic quotients have a point of infinite order (exact Nagell-Lutz witnesses), so each has "
-        "Mordell-Weil rank >= 1; the LMFDB gives rank exactly 1 for each. Hence rank Jac(D) = 2 = genus(D) and "
-        "rank Jac(C) >= 3: neither classical Chabauty on D nor an elliptic rank-zero descent can prove Conjecture 7.3. "
-        "Viable routes: Chabauty-Coleman on C if rank Jac(C) <= 4, quadratic Chabauty on the bielliptic genus-2 "
-        "quotient D (Balakrishnan-Dogra), or elliptic-curve Chabauty over Q(sqrt(d))."
+        "[PROVED] All three elliptic quotients have a point of infinite order (exact Nagell-Lutz witnesses on integral "
+        "models), so each has Mordell-Weil rank >= 1. [PROVED] The three curves have pairwise distinct j-invariants and "
+        "distinct conductors (123, 492, 1968), so they are pairwise non-isogenous over Q; their pullbacks to Jac(C) are "
+        "independent abelian subvarieties and ranks add, hence rank Jac(C) >= 3. [DATABASE-QUOTED] The LMFDB gives rank "
+        "exactly 1 for each, hence rank Jac(D) = 2 = genus(D), so classical Chabauty on D fails. Consequence: the paper's "
+        "rank-zero elliptic descent cannot prove Conjecture 7.3. Viable routes: quadratic Chabauty on the bielliptic "
+        "genus-2 quotient D (Balakrishnan-Dogra), elliptic-curve Chabauty over Q(sqrt(d)), or Chabauty-Coleman on C if "
+        "the remaining abelian-surface factor has rank <= 1."
     )
+    out["evidence_tags"] = {"rank_ge_1_each": "PROVED", "rank_JacC_ge_3": "PROVED", "rank_eq_1_each": "DATABASE-QUOTED",
+                            "rank_JacD_eq_2": "DATABASE-QUOTED", "quadratic_Chabauty_route": "CONJECTURAL"}
     return out
 
 

@@ -8,3 +8,14 @@
   [C] q=609261/1000000   60.9%    120.0s  points so far=2
   [C] q=672644/1000000   67.3%    150.0s  points so far=2
   [C] q=732676/1000000   73.3%    180.0s  points so far=2
+  [C] q=792097/1000000   79.2%    210.0s  points so far=2
+  [C] q=842476/1000000   84.2%    240.0s  points so far=2
+  [C] q=881264/1000000   88.1%    270.0s  points so far=2
+  [C] q=920173/1000000   92.0%    300.0s  points so far=2
+  [C] q=965986/1000000   96.6%    330.0s  points so far=2
+  pairs=500001500000  stage1=636997886  stage2=2000864  exact=582  time=354.9s
+  points found (2):
+     {'h': '0/1', 'Y': '1/1', 'p': 0, 'q': 1, 'root': 1, 'known': True}
+     {'h': '1/1', 'Y': '72/1', 'p': 1, 'q': 1, 'root': 72, 'known': True}
+  No new points on C up to height 1000000.
+wrote results/search_results_C_1M.json

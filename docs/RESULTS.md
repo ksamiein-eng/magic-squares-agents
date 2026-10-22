@@ -43,9 +43,10 @@ by Nagell–Lutz it is not torsion [MACHINE-VERIFIED]; likewise on E± [MACHINE-
 | E₊ | 492.b1 | 2²·3·41 | 1 | trivial | u = 8 [MACHINE-VERIFIED]; rank [DATABASE-QUOTED] |
 | E₋ | 1968.j1 | 2⁴·3·41 | 1 | trivial | u = 12 [MACHINE-VERIFIED]; rank [DATABASE-QUOTED] |
 
-Consequence: rank Jac(D) = 2 = genus(D) and rank Jac(C) ≥ 3, so the paper's rank-zero
-descent can never prove Conjecture 7.3 on an elliptic quotient, and classical Chabauty fails
-on D. The conjecture is a *quadratic Chabauty* problem on a bielliptic genus-2 curve of rank 2
+Consequence: rank Jac(C) ≥ 3 [PROVED: the three curves have distinct j-invariants and
+conductors, so they are pairwise non-isogenous and their ranks add], and rank Jac(D) = 2 =
+genus(D) [DATABASE-QUOTED ranks], so the paper's rank-zero descent can never prove Conjecture
+7.3 on an elliptic quotient, and classical Chabauty fails on D. The conjecture is a *quadratic Chabauty* problem on a bielliptic genus-2 curve of rank 2
 (the Balakrishnan–Dogra setting) [CONJECTURAL as a route; the obstruction is MACHINE-VERIFIED].
 This is new relative to the paper, which lists "a completed quadratic-Chabauty calculation"
 as missing without identifying the curves or their ranks.
@@ -81,12 +82,20 @@ is evidence at small height [SEARCH-EVIDENCE for Conjecture 8.6].
 **4. No new rational point on C (point-hunter).**
 A vectorised residue sieve (moduli chosen by measured pass rate; the primes 2, 3, 5, 7, 11
 have no sieving power because P is a square modulo 2304 and a square residue at 5, 7, 11)
-followed by exact big-integer square tests scanned 45 billion pairs 0 ≤ p ≤ q ≤ 300,000 on C
-in 37 s, and D to height 100,000: no point outside the known eight [SEARCH-EVIDENCE,
+followed by exact big-integer square tests scanned 500 billion pairs 0 ≤ p ≤ q ≤ 1,000,000 on C
+in 6 minutes (300,000 in 37 s), and D to height 300,000: no point outside the known eight [SEARCH-EVIDENCE,
 `agents/point_hunter/results/search_results.json`; selftest plants the known points through
 the sieve]. E₀ has 12 small rational points, none lifting to C except s = 2. The 3,000-height
 search inside the MCP server agrees
 [MACHINE-VERIFIED, `results/genus5_point_search_H3000.json`].
+
+## The referee's verdict
+
+The skeptic agent reran the sum-8 checker (PASS, 135 s), the point hunter's self-test and a
+height-2,000 search, an independent exact check of two torsion-probe example points and their
+relation vectors, and the quotient identities and non-torsion multiples; it confirmed all four
+findings, downgraded two sentences (ranks "= 1" and "rank Jac(D) = 2" are database-quoted),
+and flagged two reporting defects that were fixed (`results/skeptic_verdict.md`).
 
 ## What moved
 
@@ -94,7 +103,7 @@ Theorem 1.1 moved from exponent sum 7 to 8 (one more proved case of rigidity for
 Conjecture 7.3 did not move, but its obstruction is now precise: three rank-1 elliptic
 quotients identified, so the next step is quadratic Chabauty, not descent. Conjecture 8.6
 gained its first systematic evidence (273,024 points, no exception) and a sharper form
-(exponent rank ≤ 2). The empty region on C grew from height 1,500 to 300,000. Each of these
+(exponent rank ≤ 2). The empty region on C grew from height 1,500 to 1,000,000. Each of these
 took one specialist under 20 minutes of compute; the paper's proof records were not touched.
 
 ## Next computation

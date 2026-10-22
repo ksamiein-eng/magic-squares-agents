@@ -163,3 +163,11 @@ report was written; their logs are authoritative for the final state):
 
 Neither pending job affects the claim above, which is established by the
 completed strict run of `verify_degree8_stdlib.py` (`status: PASS`).
+
+The main claim rests only on the strict standard-library checker above. At the time of
+writing, the SymPy symbolic crosscheck (`crosscheck_degree8_sympy.py`) had reported PASS on
+64 cases (the 43 baseline cases plus the first new (4,4) case; the other 31 new cases were
+still queued), and the mutation tests (`test_degree8_verifier.py`) had produced 812 bytes of
+log, i.e. had not completed. Neither is required for the certificate; both should be rerun
+to completion before any publication. The skeptic agent independently reran the strict
+checker (PASS, 135 s) and recorded this gap in `results/skeptic_verdict.md`.

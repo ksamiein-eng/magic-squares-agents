@@ -51,12 +51,14 @@ exponent sum eight. Third: the torsion prober recorded every exact rational solu
 signed system at height three, two hundred seventy-three thousand of them, and tested the
 paper's torsion-coset hypothesis with a complete Gaussian-prime test. Zero exceptions, and a
 sharper pattern: the relation rank never exceeds two. Fourth: the point hunter pushed the
-empty region on the genus-five curve from height fifteen hundred to three hundred thousand
-in thirty-seven seconds."
+empty region on the genus-five curve from height fifteen hundred to one million
+in six minutes."
 
 **[3:15–3:40] Slide 7, the referee.**
-"Here is the skeptic's table. {{SKEPTIC_SENTENCE}} The write-up is one page and every
-sentence carries its tag."
+"Here is the skeptic's table. It reran the checker, the self-tests, two example points and
+the curve identities, confirmed all four findings, and downgraded two sentences: the ranks
+equal to one are database-quoted, not proved. It also caught two unfinished reports before
+they could be cited. The write-up is one page and every sentence carries its tag."
 
 **[3:40–4:00] Slide 8, close.**
 "The repository runs with one slash command inside Claude Code or unattended through the

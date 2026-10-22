@@ -66,18 +66,25 @@ recover the known points on C, D, E0.
 
 (The stage-2 survivor counts are dominated by the non-primitive pairs (0,q) and (q,q);
 after the gcd filter essentially nothing remains.)
-EXTENDED_RUNS_PLACEHOLDER
+Extended runs (same code, launched in parallel afterwards):
+
+| curve | window | pairs scanned | stage-1 survivors | stage-2 survivors | exact tests | search time | tables |
+|---|---|---|---|---|---|---|---|
+| D  | -q <= p <= q <= 300,000 | 90,000,600,000 | 407,845,508 | 600,063 | 46 | 75.7 s | 30.2 s |
+| C  | 0 <= p <= q <= 1,000,000 | 500,001,500,000 | 636,997,886 | 2,000,864 | 582 | 354.9 s | 27.0 s |
+
+Both extended runs found only the known points again. Merged file `results/search_results.json` holds the largest bound for each curve.
 
 Earlier runs at C: H = 10,000, 20,000 and D: H = 5,000 gave the same result.
 Machine: Windows 11, Python 3.11, numpy 1.26, single process per curve.
 
 ## Result
 
-**No rational point on C with height max(|p|, q) <= C_BOUND other than the known eight.**
-The only rational h with height <= C_BOUND for which P(h) is a rational square are
+**No rational point on C with height max(|p|, q) <= 1,000,000 other than the known eight.**
+The only rational h with height <= 1,000,000 for which P(h) is a rational square are
 h = 0, 1, -1 (and h = infinity), i.e. exactly the points of K.
 
-**D:** no rational x = p/q with |p|, q <= D_BOUND for which f(x) is a square other than
+**D:** no rational x = p/q with |p|, q <= 300,000 for which f(x) is a square other than
 x = 0, 1 (and infinity), the images of K. In particular no new point on D with x a rational
 square (which would lift to C).
 
@@ -95,12 +102,12 @@ for s = +-2, and s = -2 gives h^2 = -1. This is consistent with the C search.
 
 ## What this does and does not prove
 
-* It proves the finite statement: C(Q) contains no point of height <= C_BOUND outside K
-  (and D(Q) none of height <= D_BOUND outside the images of K). Every computation is exact
+* It proves the finite statement: C(Q) contains no point of height <= 1,000,000 outside K
+  (and D(Q) none of height <= 300,000 outside the images of K). Every computation is exact
   integer arithmetic; the sieve is only a filter and was tested not to discard true points.
 * It does **not** prove Conjecture 7.3 (C(Q) = K). A bounded search is evidence, not a
   proof: a rational point of larger height is not excluded by any step here. Points on
-  curves of genus 5 can have very large height, so absence up to C_BOUND is weak evidence by
+  curves of genus 5 can have very large height, so absence up to 1,000,000 is weak evidence by
   itself; the stronger evidence would be structural (C is a double cover of D, genus 2, and
   maps to E0, where a Chabauty or elliptic-curve-Chabauty argument could in principle
   decide the question). Because E0 has positive rank, no "E0(Q) is finite" shortcut
@@ -112,7 +119,7 @@ for s = +-2, and s = -2 gives h^2 = -1. This is consistent with the C search.
 ## Reproduce
 
     python hunt.py --selftest
-    python hunt.py --curve C  --H 300000 --out results/search_results_C.json
-    python hunt.py --curve D  --H 100000 --out results/search_results_D.json
+    python hunt.py --curve C  --H 1000000 --out results/search_results_C_1M.json   # ~6 min
+    python hunt.py --curve D  --H 300000  --out results/search_results_D_300k.json
     python hunt.py --curve E0 --H 2000   --out results/search_results_E0.json
-    python hunt.py --merge results/search_results_C.json results/search_results_D.json results/search_results_E0.json --out results/search_results.json
+    python hunt.py --merge results/search_results_C_1M.json results/search_results_D_300k.json results/search_results_E0.json --out results/search_results.json

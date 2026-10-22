@@ -20,7 +20,7 @@ problem. The paper now knows exactly where it is stuck.
 And they moved things: the paper's main two-parameter theorem now holds one exponent sum
 further (independently checked certificate, 3,600 systems); its structural hypothesis survived
 273,024 exact tests with a sharper pattern; and the empty region on its genus-5 curve grew
-from height 1,500 to 300,000. Each in under 20 minutes of compute.
+from height 1,500 to 1,000,000. Each in under 20 minutes of compute.
 
 **Post 5.**
 Everything runs with one slash command in Claude Code or unattended through the Agent SDK.

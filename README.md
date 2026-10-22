@@ -79,7 +79,7 @@ of general type. Everything else is open.
 | Theorem 1.1, rigidity for r = 2 | exponent sum ≤ 7 (2,064 systems) | **exponent sum ≤ 8** (3,600 systems, 32 new representatives, independent stdlib checker PASS in 133 s) | MACHINE-VERIFIED | `agents/certificate_extender/` |
 | Conjecture 7.3, eight-point list on the genus-5 curve | "needs quadratic Chabauty" | curve splits: quotients E₀ = 123.a1, E₊ = 492.b1, E₋ = 1968.j1, all rank 1 (exact non-torsion witnesses; ranks database-quoted) ⇒ rank-zero descent cannot close it; it is a quadratic-Chabauty problem on a bielliptic genus-2 curve of rank 2 | MACHINE-VERIFIED + DATABASE-QUOTED | `results/genus5_quotient_structure.json` |
 | Conjecture 8.6, torsion-coset hypothesis | untested | 273,024 exact rational solutions at height ≤ 3, all 113 orbits, 48 systems: **0 off a torsion coset**, 0 admissible; exponent rank ≤ 2 | SEARCH-EVIDENCE | `agents/torsion_coset_probe/` |
-| Empty region on the genus-5 curve | height 1,500 | **height 300,000** on C (45 billion pairs, 37 s), 100,000 on the genus-2 quotient | SEARCH-EVIDENCE | `agents/point_hunter/` |
+| Empty region on the genus-5 curve | height 1,500 | **height 1,000,000** on C (500 billion pairs, 6 min), 300,000 on the genus-2 quotient | SEARCH-EVIDENCE | `agents/point_hunter/` |
 
 Full one-page write-up: [`docs/RESULTS.md`](docs/RESULTS.md). Referee's verdict table:
 [`results/skeptic_verdict.md`](results/skeptic_verdict.md). Specialists' own reports: `agents/*/REPORT.md`.

@@ -114,12 +114,21 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
   <h2>Findings 2–4 — pushing the certified region</h2>
   <div class="box"><p><b>Certificate extender.</b> Theorem 1.1 extended from exponent sum 7 to <b>8</b>: 32 new representatives, 1,536 new signed systems, 296,880 exact Sylvester determinants, largest witness prime still 19; independent stdlib checker <b>PASS</b> in 133 s. <span class="tag MV">MACHINE-VERIFIED</span></p></div>
   <div class="box"><p><b>Torsion prober.</b> Conjecture 8.6 tested on <b>273,024</b> exact rational solutions (all 113 orbits, 48 systems, height ≤ 3): 0 off a torsion coset, 0 admissible, every point degenerate twice over; exponent rank never above 2. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
-  <div class="box"><p><b>Point hunter.</b> Sieved exact search: no new point on C to height <b>300,000</b> (45 billion pairs, 37 s), none on the genus-2 quotient to 100,000; 12 small points on E₀, none lifting. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
+  <div class="box"><p><b>Point hunter.</b> Sieved exact search: no new point on C to height <b>1,000,000</b> (500 billion pairs, 6 min), none on the genus-2 quotient to 300,000; 12 small points on E₀, none lifting. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
 </section>
 
 <section class="slide">
   <h2>The referee's table</h2>
-  {{SKEPTIC_TABLE}}
+  <table>
+    <tr><th>Claim</th><th>What the skeptic reran</th><th>Verdict</th></tr>
+    <tr><td>Theorem 1.1 holds for k+ℓ ≤ 8 (3,600 systems)</td><td>independent stdlib checker: PASS, 75 cases, 0 failures, 135 s; coverage plan asserts exact cover</td><td><span class="tag MV">MACHINE-VERIFIED</span></td></tr>
+    <tr><td>No point on C beyond the known eight to height 10⁶</td><td>selftest 20/20; height-2,000 search reproduces h ∈ {0, 1}</td><td><span class="tag SE">SEARCH-EVIDENCE</span></td></tr>
+    <tr><td>Conj. 8.6 holds on all 273,024 solutions at height ≤ 3</td><td>two example points recomputed with exact Gaussian arithmetic; relations give products ±1</td><td><span class="tag SE">SEARCH-EVIDENCE</span></td></tr>
+    <tr><td>Each elliptic quotient has rank ≥ 1; rank Jac(C) ≥ 3</td><td>identities in SymPy; non-integral multiples; distinct j and conductors ⇒ non-isogenous</td><td><span class="tag PROVED">PROVED</span></td></tr>
+    <tr><td>Ranks = 1, so rank Jac(D) = 2 and classical Chabauty fails</td><td>LMFDB 123.a1, 492.b1, 1968.j1; isomorphisms checked by c₄, c₆ scaling</td><td><span class="tag DB">DATABASE-QUOTED</span></td></tr>
+    <tr><td>Conjecture 7.3 itself</td><td>unchanged</td><td><span class="tag CONJ">CONJECTURAL</span></td></tr>
+  </table>
+  <p>Two reporting defects flagged and fixed: unfilled placeholders in one report, an empty "secondary checks" section in another.</p>
   <p class="foot">Nothing enters docs/RESULTS.md without a tag.</p>
 </section>
 
