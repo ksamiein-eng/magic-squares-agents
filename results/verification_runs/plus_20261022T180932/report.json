@@ -1,0 +1,53 @@
+{
+ "suite": "paper 16 stages + agent overlay",
+ "paper_stages": 0,
+ "overlay_stages": 4,
+ "all_passed": true,
+ "isolation": "Each stage runs in its own temporary copy. Shipped proof files are not modified.",
+ "stages": [
+  {
+   "stage": "two_prime_sum8_stdlib",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 327.041,
+   "log": "logs\\two_prime_sum8_stdlib.log",
+   "certifies": "Theorem 1.1 for k+l <= 8 (3,600 signed systems)",
+   "ledger": "A1",
+   "origin": "agents",
+   "number": 17
+  },
+  {
+   "stage": "genus5_point_hunter_selftest",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 233.756,
+   "log": "logs\\genus5_point_hunter_selftest.log",
+   "certifies": "the sieve never discards a true point; identities P=FG, P/h^6=g(h^2+h^-2), D^2-(48h^2(1-h^2))^2=P",
+   "ledger": "A4",
+   "origin": "agents",
+   "number": 18
+  },
+  {
+   "stage": "torsion_coset_probe_H2_orbits_0_10",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 18.213,
+   "log": "logs\\torsion_coset_probe_H2_orbits_0_10.log",
+   "certifies": "Conjecture 8.6 on every exact solution of the first ten orbits at height <= 2",
+   "ledger": "A3",
+   "origin": "agents",
+   "number": 19
+  },
+  {
+   "stage": "genus5_quotient_structure",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 5.669,
+   "log": "logs\\genus5_quotient_structure.log",
+   "certifies": "quotient identities, Nagell-Lutz infinite-order witnesses, LMFDB isomorphisms",
+   "ledger": "A2",
+   "origin": "agents",
+   "number": 20
+  }
+ ]
+}

@@ -89,6 +89,22 @@ the sieve]. E₀ has 12 small rational points, none lifting to C except s = 2. T
 search inside the MCP server agrees
 [MACHINE-VERIFIED, `results/genus5_point_search_H3000.json`].
 
+**5. The refuted sharpening becomes a lemma, and the lemma predicts the data (coordinator, from the height-4 failure).**
+A vanishing sine on row r means A_r·χ ∈ πZ, so ∏ z_j^{A_rj} = ±1: the row itself is a
+multiplicative relation. Two equal magnitudes on rows i, j mean A_i·χ ≡ ±A_j·χ (mod π), so
+A_i ∓ A_j is a relation, nonzero because rows are distinct projective vectors. Hence every
+rational point that is degenerate in either sense lies on a torsion coset (the content of
+Conjecture 8.6 for such points), a doubly degenerate point has exponent rank ≤ 3, and rank 3
+occurs only if A_i ± A_j is parallel to the zero row A_r [PROVED, elementary; stated and
+checked in `agents/torsion_coset_probe/rank_bound.py`]. The parallel-triple criterion holds
+for exactly 23 of the 113 orbits; the two orbits where rank-3 points appeared at height 4
+(0 and 54) are among them, and every recorded rank-3 point has a parallel degeneracy pair
+[MACHINE-VERIFIED, `agents/torsion_coset_probe/results/rank_bound_prediction.json`]. The other
+21 orbits are a prediction for height 5. Consequence for the paper: rigidity (Conj. 8.1)
+implies the torsion-coset hypothesis for every point with a zero sine or two equal magnitudes,
+the only other way a solution-variety point can fail admissibility being a = 2b, which gives no
+monomial relation and which the probe never observed [PROVED / SEARCH-EVIDENCE].
+
 ## Iteration 2: the loop turns again
 
 The planner tool emitted the next increments from the ledger (`propose_next_attack`): exponent
@@ -105,7 +121,14 @@ exactly. **The sharpening proposed by iteration 1 is false:** 13,824 points have
 rank 3 (orbits 0 and 54, solved coordinate ±1/13), so rational points do reach torsion cosets
 of 3-dimensional subtori; only the conjecture's own bound (rank < 4) survives
 [MACHINE-VERIFIED refutation of the candidate sharpening, `torsion_coset_H4_examples.json`].
-{{SUM9_PARAGRAPH}}
+**Certificate at exponent sum 9 (complete).** The planner's command re-ran the same producer and
+checker pair on the signatures (8,1), (7,2), (6,3), (5,4): 40 new orbit representatives, 1,920
+new signed systems, 5,520 systems in the merged certificate, 3,207 catalog factors, 553,392 exact
+Sylvester determinants; the strict standard-library checker returned PASS in 305 s with no
+unresolved case [MACHINE-VERIFIED, `agents/certificate_extender/results/certificate_degree9.json`,
+checker log `verify_degree9_stdlib.log`]. **Theorem 1.1 now holds for k + ℓ ≤ 9**, two exponent
+sums beyond the paper, each step produced by the loop and accepted by the paper's own kind of
+checker. The SymPy cross-check and mutation tests for sum 9 had not run at submission time.
 
 ## Infrastructure
 

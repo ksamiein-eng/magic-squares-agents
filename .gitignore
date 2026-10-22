@@ -11,3 +11,4 @@ agents/torsion_coset_probe/results/partial_H*/
 agents/certificate_extender/results/certificate_degree7.json
 agents/certificate_extender/results/degree8_part_*.json
 agents/point_hunter/results/tmp_*.json
+agents/certificate_extender/results/degree9_part_*.json

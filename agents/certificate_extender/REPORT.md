@@ -172,3 +172,15 @@ completed strict run of `verify_degree8_stdlib.py` (`status: PASS`) and is
 independently confirmed by the symbolic crosscheck.
 
 **Update (21:33 UTC).** Both secondary checks have since completed: `crosscheck_degree8_sympy.py` reports PASS on all 75 cases (814 s, SymPy 1.13.1) and `test_degree8_verifier.py` reports PASS (damaged certificates rejected; 180-matrix determinant regression). Logs: `results/crosscheck_degree8_sympy.log`, `results/test_degree8.log`.
+
+## Iteration 2 (exponent sum nine)
+
+The same pipeline was run one level higher on 2026-10-22, 18:06-18:30 EDT:
+`plan_sum9.py` (40 representatives for (5,4), (6,3), (7,2), (8,1); exact
+orbit coverage asserted), `build_degree9_certificate.py` (nine parallel
+parts, 1,920 new signed systems, 0 unresolved), and `verify_degree9_stdlib.py`
+in strict mode: `results/certificate_degree9.json` (115 cases, 5,520
+systems) returns `status: PASS` in 305.5 s, so Theorem 1.1's rational-circle
+exclusion holds for all `k+l <= 9` and the two-prime central root requires
+`k+l >= 10`. Details, statistics, timings and the exact statement supported
+are in `REPORT_sum9.md`.

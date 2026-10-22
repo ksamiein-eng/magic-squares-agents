@@ -158,6 +158,72 @@
       "state_after": {
         "P3": "H <= 4"
       }
+    },
+    {
+      "id": "A7",
+      "iteration": 2,
+      "problem": "P3",
+      "playbook": "hypothesis-probe (failure analysis)",
+      "agent": "coordinator",
+      "trace": "traces/00_coordinator.md (final turns)",
+      "input": {
+        "from": "A6 refutation of rank<=2",
+        "data": "torsion_coset_H4_examples.json, per_orbit ranks"
+      },
+      "result": "lemma: degenerate => torsion coset, rank<=3, rank 3 only if A_i+-A_j parallel to zero row; criterion holds in 23/113 orbits, contains observed {0,54}; all rank-3 examples explained; 21 orbits predicted for H=5",
+      "evidence": [
+        "agents/torsion_coset_probe/results/rank_bound_prediction.json",
+        "agents/torsion_coset_probe/rank_bound.py"
+      ],
+      "tag": "PROVED (lemma); MACHINE-VERIFIED (criterion vs data)",
+      "verified_by": [
+        "verify_paper_plus.py:degeneracy_rank_bound"
+      ],
+      "state_after": {
+        "P3": "8.6 reduced to rigidity for zero-sine/equal-magnitude points; a=2b case open"
+      }
+    },
+    {
+      "id": "A5",
+      "iteration": 2,
+      "problem": "P1",
+      "playbook": "certificate-extension",
+      "agent": "certificate-extender",
+      "trace": "traces/07_certificate_extender_sum9.md",
+      "input": {
+        "baseline": "agents/certificate_extender/results/certificate_degree8.json",
+        "signatures": [
+          [
+            8,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "planned_by": "propose_next_attack(P1)"
+      },
+      "result": "40 representatives, 1,920 new systems, 5,520 total, 3,207 factors, 553,392 exact determinants; strict stdlib checker PASS 305 s; no unresolved case; SymPy cross-check and mutation tests not yet run",
+      "evidence": [
+        "agents/certificate_extender/results/certificate_degree9.json",
+        "agents/certificate_extender/results/verify_degree9_stdlib.log"
+      ],
+      "tag": "MACHINE-VERIFIED",
+      "verified_by": [
+        "verify_paper_plus.py:two_prime_sum9_stdlib"
+      ],
+      "state_after": {
+        "P1": 9
+      }
     }
   ]
 }

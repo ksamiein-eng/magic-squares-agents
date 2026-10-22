@@ -18,12 +18,12 @@
       "state": {
         "paper": 7,
         "iteration_1": 8,
-        "iteration_2": "pending"
+        "iteration_2": 9
       },
       "playbook": "playbooks/certificate-extension.md",
       "acceptance": "independent standard-library checker PASS on the merged certificate; coverage of all raw forms re-derived",
       "best_tag_attainable": "MACHINE-VERIFIED",
-      "next": "N+1 with the same producer/checker pair; stop when a resultant vanishes or a factor has no witness prime (that case is then a new open problem)"
+      "next": "N = 10 with the same scripts (expect ~2x the sum-9 cost); SymPy cross-check and mutation tests for sum 9 first"
     },
     {
       "id": "P2",
@@ -49,12 +49,13 @@
       "state": {
         "paper": "untested",
         "iteration_1": "H <= 3: 273,024 points, 0 exceptions, exponent rank <= 2",
-        "iteration_2": "H <= 4: 662,528 points, 0 exceptions; candidate sharpening 'exponent rank <= 2' REFUTED (13,824 rank-3 points, orbits 0 and 54)"
+        "iteration_2": "H <= 4: 662,528 points, 0 exceptions; candidate sharpening 'exponent rank <= 2' REFUTED (13,824 rank-3 points, orbits 0 and 54)",
+        "iteration_2_lemma": "degenerate points lie on torsion cosets (proved); rank-3 criterion predicts 23 orbits, 2 observed"
       },
       "playbook": "playbooks/hypothesis-probe.md",
       "acceptance": "either a counterexample re-verified by independent exact arithmetic, or the sharpened statement (exponent rank <= 2) surviving at the next height",
       "best_tag_attainable": "SEARCH-EVIDENCE (a counterexample would be PROVED)",
-      "next": "H = 5 (overflow guard must be re-derived); prove rank < 4 symbolically on the identically-degenerate loci; characterise the rank-3 locus in orbits 0 and 54"
+      "next": "H = 5: test the 21 predicted orbits; prove that no solution-variety point has a = 2b without a zero sine (closes 8.6 from 8.1); characterise the rank-3 loci"
     },
     {
       "id": "P4",

@@ -1,15 +1,6 @@
 {
-  "status": "PARTIAL_MISSING_CASES",
-  "missing_cases": [
-    "54_m2_n1",
-    "54_m2_nminus1",
-    "54_m3_n1",
-    "54_m3_nminus1",
-    "54_m4_n1",
-    "54_m4_nminus1",
-    "54_m4_n3",
-    "54_m4_nminus3"
-  ],
+  "status": "GENERATED_NOT_YET_INDEPENDENTLY_VERIFIED",
+  "missing_cases": [],
   "unresolved": [],
   "cases": [
     {
@@ -1488,6 +1479,45 @@
       "build_seconds": 315.306
     },
     {
+      "id": "54_m2_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 34,
+      "rootless_factors": 31,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 124.429
+    },
+    {
+      "id": "54_m2_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 36,
+      "rootless_factors": 33,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        13
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 105.018
+    },
+    {
       "id": "54_m1_n3",
       "systems": 48,
       "removed_t_systems": 0,
@@ -1526,6 +1556,45 @@
       ],
       "max_resultant_degree": 158,
       "build_seconds": 431.452
+    },
+    {
+      "id": "54_m3_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 38,
+      "rootless_factors": 35,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        11,
+        13
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 163.347
+    },
+    {
+      "id": "54_m3_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 38,
+      "rootless_factors": 35,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 87.825
     },
     {
       "id": "54_m2_n3",
@@ -1568,6 +1637,46 @@
       "build_seconds": 295.092
     },
     {
+      "id": "54_m4_n1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 38,
+      "rootless_factors": 35,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        11
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 143.618
+    },
+    {
+      "id": "54_m4_nminus1",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 36,
+      "rootless_factors": 33,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 124.452
+    },
+    {
       "id": "54_m3_n3",
       "systems": 48,
       "removed_t_systems": 0,
@@ -1607,6 +1716,47 @@
       ],
       "max_resultant_degree": 158,
       "build_seconds": 312.696
+    },
+    {
+      "id": "54_m4_n3",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 42,
+      "rootless_factors": 39,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        11,
+        17
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 118.413
+    },
+    {
+      "id": "54_m4_nminus3",
+      "systems": 48,
+      "removed_t_systems": 0,
+      "distinct_factors": 40,
+      "rootless_factors": 37,
+      "rational_t_roots": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "modular_primes": [
+        3,
+        5,
+        7,
+        11,
+        17
+      ],
+      "max_resultant_degree": 158,
+      "build_seconds": 114.252
     },
     {
       "id": "63_m1_n1",
@@ -2076,9 +2226,9 @@
       "build_seconds": 10.283
     }
   ],
-  "total_systems": 5136,
-  "distinct_catalog_factors": 3015,
-  "rootless_catalog_factors": 3012,
-  "new_cases_present": 32,
+  "total_systems": 5520,
+  "distinct_catalog_factors": 3207,
+  "rootless_catalog_factors": 3204,
+  "new_cases_present": 40,
   "new_cases_expected": 40
 }

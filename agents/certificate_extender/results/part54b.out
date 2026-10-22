@@ -19,3 +19,15 @@
 [18:18:07]   54_m3_n1 system 15: res 0.3s factor 1.0s deg 158
 [18:18:22]   54_m3_n1 system 23: res 0.3s factor 2.3s deg 158
 [18:18:41]   54_m3_n1 system 31: res 0.3s factor 1.4s deg 158
+[18:18:56]   54_m3_n1 system 39: res 0.3s factor 0.9s deg 158
+[18:19:54]   54_m3_n1 system 47: res 0.2s factor 0.7s deg 158
+[18:19:54] done 54_m3_n1 systems 48 seconds 163.347 unresolved 0
+[18:19:54] start 54_m3_nminus1
+[18:20:07]   54_m3_nminus1 system 7: res 0.3s factor 1.1s deg 152
+[18:20:25]   54_m3_nminus1 system 15: res 0.2s factor 1.2s deg 158
+[18:20:37]   54_m3_nminus1 system 23: res 0.2s factor 1.4s deg 158
+[18:20:56]   54_m3_nminus1 system 31: res 0.2s factor 2.1s deg 158
+[18:21:12]   54_m3_nminus1 system 39: res 0.2s factor 1.2s deg 158
+[18:21:22]   54_m3_nminus1 system 47: res 0.2s factor 0.5s deg 158
+[18:21:22] done 54_m3_nminus1 systems 48 seconds 87.825 unresolved 0
+[18:21:22] part 54b complete

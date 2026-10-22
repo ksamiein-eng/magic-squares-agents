@@ -23,13 +23,17 @@
   "findings": {
     "theorem_1_1_exponent_sum": {
       "before": 7,
-      "after": 8,
+      "after": 9,
       "tag": "MACHINE-VERIFIED",
-      "systems": 3600,
+      "systems": 5520,
       "new_representatives": 32,
       "independent_checker": "PASS 133 s",
       "sympy_crosscheck": "PASS 75/75, 814 s",
-      "mutation_tests": "PASS"
+      "mutation_tests": "PASS",
+      "iteration_1": 8,
+      "iteration_2": 9,
+      "independent_checker_sum9": "PASS 305 s",
+      "sum9_secondary_checks": "not run at submission"
     },
     "conjecture_7_3_point_list": {
       "status": "open",

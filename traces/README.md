@@ -12,6 +12,8 @@ paraphrased. The user's e-mail address is the only redaction.
 | `02_torsion_coset_prober.md` | torsion-coset-prober | re-instrumenting r4search.py to record every exact solution; the complete Gaussian-prime kernel test for Conjecture 8.6; cross-checks; H = 2 and H = 3 runs | 47 / 24 | 20:57 → 21:16 |
 | `03_point_hunter.md` | point-hunter | measuring sieve pass rates per prime power; the observation that 2, 3, 5, 7, 11 do not sieve P; vectorised search to height 10⁶ on C, 3·10⁵ on D; E₀ lift check | 50 / 20 | 20:57 → 21:21 |
 | `04_skeptic.md` | skeptic (referee) | rerunning the sum-8 checker, selftests, two torsion example points, the quotient identities; the independence argument for rank Jac(C) ≥ 3; the two defects it found | 25 / 15 | 21:16 → 21:24 |
+| `06_torsion_coset_prober_H4.md` | torsion-coset-prober (iteration 2) | height-4 run launched by the planner; overflow guard found invalid and replaced; the rank-3 points that refuted iteration 1's sharpening | 36 / 23 | 22:06 → 22:17 |
+| `07_certificate_extender_sum9.md` | certificate-extender (iteration 2) | exponent sum 9 by the same pipeline; strict checker PASS on 5,520 systems | see header | 22:06 → 22:30 |
 | `05_agent_sdk_docs_lookup.md` | claude-code-guide | documentation lookup used to write `orchestrator/run_attack.py` | 18 / 12 | 20:58 → 21:00 |
 
 Note on timestamps: the coordinator's shell reported a wrong local time for the first part of

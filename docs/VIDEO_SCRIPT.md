@@ -1,4 +1,4 @@
-# Video script (target 3:45, hard limit 4:00)
+# Video script (target 3:55, hard limit 4:00; trim slide 5 if over)
 
 Record with Loom or OBS: screen = `docs/slides.html` in a browser (arrow keys), with a
 Claude Code window for the two live moments. Speak at a normal pace; do not speed up audio.
@@ -54,13 +54,22 @@ sharper pattern: the relation rank never exceeds two. Fourth: the point hunter p
 empty region on the genus-five curve from height fifteen hundred to one million
 in six minutes."
 
-**[3:15–3:40] Slide 7, the referee.**
+**[3:00–3:20] Slide 7, the loop turns again.**
+"Then the loop ran a second time on its own planner's commands. At height four the torsion
+probe found that the sharper pattern from iteration one was false: rank-three points exist.
+But that failure became a lemma: a vanishing sine is itself a relation, equal magnitudes are
+another, so degenerate points always sit on torsion cosets, and rank three needs two rows
+whose sum or difference is parallel to a third. That criterion holds in twenty-three orbits
+and correctly contains the two where rank three appeared. A failure turned into a theorem
+and a prediction for height five."
+
+**[3:20–3:40] Slide 8, the referee.**
 "Here is the skeptic's table. It reran the checker, the self-tests, two example points and
 the curve identities, confirmed all four findings, and downgraded two sentences: the ranks
 equal to one are database-quoted, not proved. It also caught two unfinished reports before
 they could be cited. The write-up is one page and every sentence carries its tag."
 
-**[3:40–4:00] Slide 8, close.**
+**[3:40–4:00] Slide 9, close.**
 "The repository runs with one slash command inside Claude Code or unattended through the
 Agent SDK. The paper's proof records are never modified. The problem is still open. But the
 paper now knows exactly where it is stuck, and it can keep attacking itself. Thank you."

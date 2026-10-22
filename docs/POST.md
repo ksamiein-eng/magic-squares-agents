@@ -19,10 +19,16 @@ problem. The paper now knows exactly where it is stuck.
 **Post 4.**
 And they moved things: the paper's main two-parameter theorem now holds one exponent sum
 further (independently checked certificate, 3,600 systems); its structural hypothesis survived
-273,024 exact tests with a sharper pattern; and the empty region on its genus-5 curve grew
+273,024 exact tests; and the empty region on its genus-5 curve grew
 from height 1,500 to 1,000,000. Each in under 20 minutes of compute.
 
 **Post 5.**
+Then the loop ran again on its own planner's commands. At height 4 it refuted the sharper
+pattern it had proposed at height 3. The failure became a lemma (degenerate points sit on
+torsion cosets; rank 3 needs a parallel row triple) that predicts exactly which orbits can
+carry such points. The referee's tags and the hash-backed provenance make every step auditable.
+
+**Post 6.**
 Everything runs with one slash command in Claude Code or unattended through the Agent SDK.
 The proof records are never modified. The problem is still open. The paper can keep attacking itself.
 Built with Claude Code + Paper2Agent (Miao, Zou et al., Nature 2026). #OSIHackathon #mathematics #AIforScience

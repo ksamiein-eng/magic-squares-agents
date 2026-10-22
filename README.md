@@ -102,9 +102,10 @@ of general type. Everything else is open.
 
 | Target in the paper | Before | After | Evidence tag | Where |
 |---|---|---|---|---|
-| Theorem 1.1, rigidity for r = 2 | exponent sum ≤ 7 (2,064 systems) | **exponent sum ≤ 8** (3,600 systems, 32 new representatives, independent stdlib checker PASS in 133 s) | MACHINE-VERIFIED | `agents/certificate_extender/` |
+| Theorem 1.1, rigidity for r = 2 | exponent sum ≤ 7 (2,064 systems) | **exponent sum ≤ 8** in iteration 1 (3,600 systems, checker PASS 133 s, SymPy cross-check 75/75) and **≤ 9** in iteration 2 (5,520 systems, 40 new representatives, checker PASS 305 s; secondary checks pending) | MACHINE-VERIFIED | `agents/certificate_extender/` |
 | Conjecture 7.3, eight-point list on the genus-5 curve | "needs quadratic Chabauty" | curve splits: quotients E₀ = 123.a1, E₊ = 492.b1, E₋ = 1968.j1, all rank 1 (exact non-torsion witnesses; ranks database-quoted) ⇒ rank-zero descent cannot close it; it is a quadratic-Chabauty problem on a bielliptic genus-2 curve of rank 2 | MACHINE-VERIFIED + DATABASE-QUOTED | `results/genus5_quotient_structure.json` |
 | Conjecture 8.6, torsion-coset hypothesis | untested | 273,024 exact rational solutions at height ≤ 3 and **662,528 at height ≤ 4**, all 113 orbits, 48 systems: **0 off a torsion coset**, 0 admissible. Iteration 1's candidate sharpening (exponent rank ≤ 2) was refuted by iteration 2 (rank-3 points in two orbits) | SEARCH-EVIDENCE | `agents/torsion_coset_probe/` |
+| Degeneracy-rank lemma (from the height-4 failure) | — | degenerate points lie on torsion cosets; rank ≤ 3, rank 3 only if A_i ± A_j ∥ A_r; criterion holds in 23/113 orbits and contains both orbits that showed rank 3; prediction for height 5 | PROVED + MACHINE-VERIFIED | `agents/torsion_coset_probe/rank_bound.py` |
 | Empty region on the genus-5 curve | height 1,500 | **height 1,000,000** on C (500 billion pairs, 6 min), 300,000 on the genus-2 quotient | SEARCH-EVIDENCE | `agents/point_hunter/` |
 
 Full one-page write-up: [`docs/RESULTS.md`](docs/RESULTS.md). Referee's verdict table:

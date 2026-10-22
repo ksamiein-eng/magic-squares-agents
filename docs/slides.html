@@ -127,8 +127,8 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
 </section>
 
 <section class="slide">
-  <h2>Findings 2–4 — pushing the certified region</h2>
-  <div class="box"><p><b>Certificate extender.</b> Theorem 1.1 extended from exponent sum 7 to <b>8</b>: 32 new representatives, 1,536 new signed systems, 296,880 exact Sylvester determinants, largest witness prime still 19; independent stdlib checker <b>PASS</b> in 133 s. <span class="tag MV">MACHINE-VERIFIED</span></p></div>
+  <h2>Findings 2–5 — pushing the certified region, and learning from a failure</h2>
+  <div class="box"><p><b>Certificate extender.</b> Theorem 1.1 extended from exponent sum 7 to <b>8</b> (iteration 1: 3,600 systems, checker PASS 133 s, SymPy cross-check 75/75) and to <b>9</b> (iteration 2, by the planner's command: 5,520 systems, 553,392 exact determinants, checker PASS 305 s). <span class="tag MV">MACHINE-VERIFIED</span></p></div>
   <div class="box"><p><b>Torsion prober.</b> Conjecture 8.6 tested on <b>273,024</b> exact rational solutions at height ≤ 3 and <b>662,528</b> at height ≤ 4 (all 113 orbits, 48 systems): 0 off a torsion coset, 0 admissible. Iteration 1 proposed a sharper form (rank ≤ 2); iteration 2 refuted it (rank-3 points in two orbits). The loop corrected itself. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
   <div class="box"><p><b>Point hunter.</b> Sieved exact search: no new point on C to height <b>1,000,000</b> (500 billion pairs, 6 min), none on the genus-2 quotient to 300,000; 12 small points on E₀, none lifting. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
 </section>
@@ -137,7 +137,7 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
   <h2>The referee's table</h2>
   <table>
     <tr><th>Claim</th><th>What the skeptic reran</th><th>Verdict</th></tr>
-    <tr><td>Theorem 1.1 holds for k+ℓ ≤ 8 (3,600 systems)</td><td>independent stdlib checker: PASS, 75 cases, 0 failures, 135 s; coverage plan asserts exact cover</td><td><span class="tag MV">MACHINE-VERIFIED</span></td></tr>
+    <tr><td>Theorem 1.1 holds for k+ℓ ≤ 8 (3,600 systems); ≤ 9 in iteration 2 (5,520)</td><td>independent stdlib checker: PASS, 75 cases, 0 failures, 135 s; coverage plan asserts exact cover</td><td><span class="tag MV">MACHINE-VERIFIED</span></td></tr>
     <tr><td>No point on C beyond the known eight to height 10⁶</td><td>selftest 20/20; height-2,000 search reproduces h ∈ {0, 1}</td><td><span class="tag SE">SEARCH-EVIDENCE</span></td></tr>
     <tr><td>Conj. 8.6 holds on all 273,024 solutions at height ≤ 3</td><td>two example points recomputed with exact Gaussian arithmetic; relations give products ±1</td><td><span class="tag SE">SEARCH-EVIDENCE</span></td></tr>
     <tr><td>Each elliptic quotient has rank ≥ 1; rank Jac(C) ≥ 3</td><td>identities in SymPy; non-integral multiples; distinct j and conductors ⇒ non-isogenous</td><td><span class="tag PROVED">PROVED</span></td></tr>
@@ -152,7 +152,7 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
   <h2>What moved, and what is next</h2>
   <div class="cols">
     <div>
-      <div class="box"><p><b>Theorem 1.1:</b> exponent sum 7 → 8, by the paper's own method, independently checked.</p></div>
+      <div class="box"><p><b>Theorem 1.1:</b> exponent sum 7 → 8 → 9, by the paper's own method, independently checked at each step; the second step was launched by the loop's planner.</p></div>
       <div class="box"><p><b>Conjecture 7.3:</b> unchanged, but its obstruction is now precise: three rank-1 elliptic quotients; it is a quadratic-Chabauty problem.</p></div>
       <div class="box"><p><b>Conjecture 8.6:</b> first systematic evidence, 662,528 points at height ≤ 4, no exception; a candidate sharpening proposed by iteration 1 was refuted by iteration 2.</p></div>
     </div>
