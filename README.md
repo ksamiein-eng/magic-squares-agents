@@ -9,7 +9,7 @@ and the next instances.
 
 ## Updated manuscript
 
-`paper_update/manuscript/` is version 3 of the paper (authors Kimia Samiein and Jonathan Wolinski,
+`paper_update/manuscript/` is version 3 of the paper (authors Kimia Samieinejad and Jonathan Wolinski,
 22 October 2026) with the additions as new theorems, propositions and a lemma, each tied to its
 evidence in [`paper_update/CHANGES_v3.md`](paper_update/CHANGES_v3.md). Compile with pdflatex or Overleaf.
 The shipped `paper/` stays byte-identical.
@@ -120,6 +120,7 @@ of general type. Everything else is open.
 | Conjecture 7.3, eight-point list on the genus-5 curve | "needs quadratic Chabauty" | curve splits: quotients E₀ = 123.a1, E₊ = 492.b1, E₋ = 1968.j1, all rank 1 (exact non-torsion witnesses; ranks database-quoted) ⇒ rank-zero descent cannot close it; it is a quadratic-Chabauty problem on a bielliptic genus-2 curve of rank 2 | MACHINE-VERIFIED + DATABASE-QUOTED | `results/genus5_quotient_structure.json` |
 | Conjecture 8.6, torsion-coset hypothesis | untested | 273,024 exact rational solutions at height ≤ 3 and **662,528 at height ≤ 4**, all 113 orbits, 48 systems: **0 off a torsion coset**, 0 admissible. Iteration 1's candidate sharpening (exponent rank ≤ 2) was refuted by iteration 2 (rank-3 points in two orbits) | SEARCH-EVIDENCE | `agents/torsion_coset_probe/` |
 | Degeneracy-rank lemma (from the height-4 failure) | — | degenerate points lie on torsion cosets; rank ≤ 3, rank 3 only if A_i ± A_j ∥ A_r; criterion holds in 23/113 orbits and contains both orbits that showed rank 3; prediction for height 5 | PROVED + MACHINE-VERIFIED | `agents/torsion_coset_probe/rank_bound.py` |
+| Trichotomy and vanishing-sine rigidity | — | a rational solution is admissible, has a vanishing sine, or has A = 2B (proved); all 935,552 recorded points have a vanishing sine; one conjecture now implies both 8.1 and 8.6 and names the next search | PROVED + SEARCH-EVIDENCE + CONJECTURAL | `paper_update/manuscript/rigidity.tex` |
 | Empty region on the genus-5 curve | height 1,500 | **height 1,000,000** on C (500 billion pairs, 6 min), 300,000 on the genus-2 quotient | SEARCH-EVIDENCE | `agents/point_hunter/` |
 
 Full one-page write-up: [`docs/RESULTS.md`](docs/RESULTS.md). Referee's verdict table:

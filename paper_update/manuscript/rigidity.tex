@@ -201,6 +201,18 @@ Let $z\in T(\Q)^r$ and $s_j=\sin(A_j\cdot\chi)$. If $s_r=0$ then $\prod_j z_j^{A
 \begin{proof}
 $s_r=0$ means $A_r\cdot\chi\in\pi\Z$, and $|s_i|=|s_k|$ means $A_i\cdot\chi\equiv\pm A_k\cdot\chi\pmod\pi$; exponentiate. Two independent relations lower the rank to at most $2$.
 \end{proof}
+\begin{theorem}[Trichotomy on a signed system]\label{thm:trichotomy}
+Let $z\in T(\Q)^r$ satisfy a signed system~\eqref{eq:roles}, $s_i=\varepsilon s_k+\eta s_l$, $s_j=\varepsilon s_k-\eta s_l$, and put $A=\max(|s_k|,|s_l|)$, $B=\min(|s_k|,|s_l|)$. Then $\{|s_i|,|s_j|\}=\{A+B,A-B\}$, and exactly one of the following holds: (i) some sine vanishes; (ii) $z$ is admissible; (iii) $A=2B>0$. In case (i) two of the remaining sines have equal magnitude, so by Lemma~\ref{lem:degrel} the point lies on a torsion coset and has exponent rank at most $3$.
+\end{theorem}
+\begin{proof}
+For real $x,y$ the magnitudes of $x+y$ and $x-y$ are $A+B$ and $A-B$ with $A=\max(|x|,|y|)$, $B=\min(|x|,|y|)$. If no sine vanishes then $B>0$ and $A\ne B$, and the four magnitudes $A,B,A+B,A-B$ are pairwise distinct unless $A-B=B$; by Lemma~\ref{lem:roles} the point is admissible exactly when they are distinct. For (i): if $s_l=0$ then $s_i=s_j$; if $s_k=0$ then $|s_i|=|s_j|=|s_l|$; if $s_i=0$ or $s_j=0$ then $|s_k|=|s_l|$.
+\end{proof}
+Case (iii) is the only way a rational point of a solution variety can avoid both admissibility and a monomial relation, and it is not a torsion-coset condition. Every one of the $935{,}552$ points recorded at $H\le4$ is of type (i). We therefore state the hypothesis that the data support directly and that implies both Conjecture~\ref{conj:rigidity} and Conjecture~\ref{conj:torsion}:
+\begin{conjecture}[Vanishing-sine rigidity]\label{conj:vanishing}
+For every full-depth configuration, every rational point of every signed system has a vanishing sine.
+\end{conjecture}
+Conjecture~\ref{conj:vanishing} is equivalent to Conjecture~\ref{conj:rigidity} together with the nonexistence of rational points of type (iii). The next computation is therefore not a larger admissibility sweep but a direct search for type (iii) points: rational-circle solutions of a signed system with $|s_l|=2|s_k|$ or $|s_k|=2|s_l|$ and all sines nonzero.
+
 The parallel-triple condition of the lemma holds for exactly $23$ of the $113$ orbit representatives, and the two orbits that carry rank-three points at $H=4$ are among them; every recorded rank-three point has a vanishing row parallel to the sum or difference of its two equal-magnitude rows. The remaining $21$ orbits are a prediction for larger heights. The lemma also shows that Conjecture~\ref{conj:rigidity} implies Conjecture~\ref{conj:torsion} for every solution-variety point that fails admissibility through a vanishing sine or coinciding magnitudes; the only other failure mode, $a=2b$, yields no monomial relation and was never observed. The code, the per-orbit counts and the twenty recorded rank-three examples are in the companion repository.
 
 Theorem~\ref{thm:gentype} shows that the general-type behaviour Bremner~\cite{Bremner2001} and

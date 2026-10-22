@@ -98,6 +98,20 @@
       "acceptance": "Groebner-basis verification of the branch-curve hypotheses per orbit, as in verify_hadamard_types.py",
       "best_tag_attainable": "MACHINE-VERIFIED",
       "next": "automate verify_hadamard_types.py over orbit representatives; flag any orbit whose two relations share a component"
+    },
+    {
+      "id": "P7",
+      "label": "conj:vanishing (new, 22 Oct)",
+      "statement": "Vanishing-sine rigidity: every rational point of every signed system of a full-depth configuration has a vanishing sine. Implies Conj. 8.1 and 8.6; equivalent to 8.1 plus the nonexistence of A = 2B points.",
+      "type": "hypothesis-probe",
+      "parameter": "H",
+      "state": {
+        "iteration_2": "holds on all 935,552 points at H <= 4 (every point has a zero sine)"
+      },
+      "playbook": "playbooks/hypothesis-probe.md",
+      "acceptance": "a type-(iii) point (A = 2B, all sines nonzero) re-verified exactly, or none at the next height",
+      "best_tag_attainable": "SEARCH-EVIDENCE (a type-(iii) point would be PROVED and would refute the conjecture)",
+      "next": "re-instrument the probe to search type-(iii) points directly at H = 5 (|s_l| = 2|s_k| is linear in the solved coordinate); then attempt the conjecture on each vanishing-sine coset by the paper's dimension reduction"
     }
   ]
 }

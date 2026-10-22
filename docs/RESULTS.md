@@ -105,6 +105,18 @@ implies the torsion-coset hypothesis for every point with a zero sine or two equ
 the only other way a solution-variety point can fail admissibility being a = 2b, which gives no
 monomial relation and which the probe never observed [PROVED / SEARCH-EVIDENCE].
 
+**6. A trichotomy, and the single hypothesis the data support (coordinator).** On a signed
+system s_i = εs_k + ηs_l, s_j = εs_k − ηs_l the magnitudes are forced to be {A, B, A+B, A−B}
+with A = max(|s_k|,|s_l|), B = min. Hence a rational point is exactly one of: a vanishing
+sine, admissible, or A = 2B; and a vanishing sine forces two equal magnitudes among the rest,
+so such a point lies on a torsion coset [PROVED, two lines; Theorem in `paper_update/manuscript/rigidity.tex`].
+All 935,552 points recorded at heights ≤ 4 are of the vanishing-sine kind
+[SEARCH-EVIDENCE, `agents/torsion_coset_probe/results/torsion_coset_H4_summary.json`]. So the
+problem collapses to one statement, **vanishing-sine rigidity**: every rational solution of every
+signed system has a vanishing sine. It implies Conjecture 8.1 and Conjecture 8.6, and it names
+the next computation precisely: search for A = 2B points, the only kind the data never showed
+[CONJECTURAL].
+
 ## Iteration 2: the loop turns again
 
 The planner tool emitted the next increments from the ledger (`propose_next_attack`): exponent
@@ -165,7 +177,7 @@ following the conventions of the paper's own package.
 
 ## Manuscript and generalisation
 
-Version 3 of the paper (`paper_update/manuscript/`, authors K. Samiein and J. Wolinski, 22 October
+Version 3 of the paper (`paper_update/manuscript/`, authors K. Samieinejad and J. Wolinski, 22 October
 2026) adds Theorem 4.5 (sum nine), a quotient section, and the degeneracy-rank lemma, each tied to its
 evidence in `paper_update/CHANGES_v3.md`. `docs/GENERALIZATION.md` states what the loop needs from a
 problem, what "validated" means and does not mean here, and the next instances.

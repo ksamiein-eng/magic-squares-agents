@@ -7,12 +7,13 @@ and the ledger (`ledger/attacks.json`).
 
 | Where | Change | Evidence | Tag |
 |---|---|---|---|
-| Title page | Authors: Kimia Samiein and Jonathan Wolinski; date 22 October 2026 (version 3) | — | — |
+| Title page | Authors: Kimia Samieinejad and Jonathan Wolinski; date 22 October 2026 (version 3) | — | — |
 | Abstract | Four sentences summarising the additions | — | — |
 | §1, after Theorem 1.1 | Pointer to Theorem 4.5 (exponent sum nine) | — | — |
 | §4.3 (new), Theorem 4.5 | Certified exclusion through exponent sum nine: 115 representatives, 5,520 systems, 3,207 factors, 553,392 exact determinants; strict stdlib checker PASS | `agents/certificate_extender/results/verify_degree9_stdlib.log`, `certificate_degree9.json`; overlay stage `two_prime_sum9_stdlib` | MACHINE-VERIFIED (sum-9 secondary checks pending; sum-8 secondary checks PASS) |
 | §8 (new section before Section 9), Prop. 8.1–8.2 | Involutions of C; quotients D, E₀, E±; LMFDB identifications 123.a1, 492.b1, 1968.j1 with exact c₄/c₆ isomorphism checks; Nagell–Lutz infinite-order witnesses; rank Jac(C) ≥ 3 with the non-isogeny argument; quadratic-Chabauty positioning; search to 10⁶ | `results/genus5_quotient_structure.json`, `agents/point_hunter/results/search_results.json` | PROVED (identities, rank ≥ 1, rank ≥ 3); DATABASE-QUOTED (rank = 1); SEARCH-EVIDENCE (height bound) |
 | §9.x (new subsection in rigidity.tex), Prop., Lemma (degeneracy relations) | Torsion-coset data at H = 3 and 4 (273,024 and 662,528 points, 0 exceptions, rank-3 points at H = 4); the degeneracy-rank lemma; the parallel-triple criterion (23/113 orbits, contains the 2 observed); Conj. 8.1 ⇒ Conj. 8.6 for zero-sine/equal-magnitude points | `agents/torsion_coset_probe/results/torsion_coset_H{3,4}_summary.json`, `rank_bound_prediction.json`; overlay stage `degeneracy_rank_bound` | SEARCH-EVIDENCE (data); PROVED (lemma); MACHINE-VERIFIED (criterion vs data) |
+| §9.x, Theorem (trichotomy) and Conjecture (vanishing-sine rigidity) | On a signed system the magnitudes are {A, B, A+B, A-B}; a rational point is admissible, has a vanishing sine, or has A = 2B; a vanishing sine forces equal magnitudes hence a torsion coset; all 935,552 recorded points are of the vanishing-sine kind; the new conjecture implies 8.1 and 8.6 and names the next search (A = 2B points) | `agents/torsion_coset_probe/results/torsion_coset_H{3,4}_summary.json` (points_by_degeneracy) | PROVED (theorem); SEARCH-EVIDENCE (data); CONJECTURAL (hypothesis) |
 | §Proof data | Companion-repository paragraph: pipeline, overlay suite (16 + 6 stages, all passing) | `results/verify_paper_plus_latest.json` | MACHINE-VERIFIED |
 | Disclosure | The 22 October additions were generated, machine-verified and refereed by Claude agents through Claude Code; the authors take responsibility | `traces/` | — |
 
@@ -24,5 +25,5 @@ Section numbering: the new quotient section becomes Section 8 and the rigidity s
 in the text use labels, so they resolve on compilation. The ordered-frequencies, orbit and transport tables are
 unchanged.
 
-Author name spelling was taken from the machine's account name; please confirm "Kimia Samiein" and add
+Author name spelling was taken from the machine's account name; please confirm "Kimia Samieinejad" and add
 affiliations before submission.

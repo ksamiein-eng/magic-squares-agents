@@ -25,9 +25,9 @@ def rep(old, new):
     s = s.replace(old, new, 1)
 
 
-rep("pdfauthor={}}", "pdfauthor={Kimia Samiein, Jonathan Wolinski}}")
+rep("pdfauthor={}}", "pdfauthor={Kimia Samieinejad, Jonathan Wolinski}}")
 rep("% Human author names, affiliations, and contact details must be supplied before submission.\n\\author{}\n\\date{5 October 2026}",
-    "\\author{Kimia Samiein \\and Jonathan Wolinski}\n\\date{22 October 2026 (version 3: author-review draft with the 22 October additions)}")
+    "\\author{Kimia Samieinejad \\and Jonathan Wolinski}\n\\date{22 October 2026 (version 3: author-review draft with the 22 October additions)}")
 
 rep("The results concern specified subfamilies of that relaxation and do not decide the unrestricted magic-square problem.\n\\end{abstract}",
     "The results concern specified subfamilies of that relaxation and do not decide the unrestricted magic-square problem. "
