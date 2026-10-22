@@ -1,0 +1,4652 @@
+{
+ "started": "2026-10-22 17:31:17",
+ "python": "3.11.9",
+ "stages": [
+  {
+   "passed": true,
+   "log": "mcp_tools.log",
+   "stage": "mcp_tools",
+   "seconds": 8.6
+  },
+  {
+   "passed": true,
+   "stages_passed": 9,
+   "log": "paper_core_stages.log",
+   "stage": "paper_core_stages",
+   "seconds": 209.6
+  },
+  {
+   "passed": true,
+   "status": "PASS",
+   "cases": [
+    {
+     "id": "21_m1_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 28,
+     "rootless_factors": 25,
+     "max_determinant_degree_bound": 16,
+     "exact_determinant_evaluations": 720,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "31_m1_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 29,
+     "rootless_factors": 26,
+     "max_determinant_degree_bound": 24,
+     "exact_determinant_evaluations": 1104,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "31_m2_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 24,
+     "exact_determinant_evaluations": 1104,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "22_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 36,
+     "rootless_factors": 35,
+     "max_determinant_degree_bound": 32,
+     "exact_determinant_evaluations": 1584,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "22_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 26,
+     "rootless_factors": 25,
+     "max_determinant_degree_bound": 32,
+     "exact_determinant_evaluations": 1584,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "41_m1_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 30,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 32,
+     "exact_determinant_evaluations": 1488,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "41_m3_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 30,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 32,
+     "exact_determinant_evaluations": 1488,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "32_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 48,
+     "exact_determinant_evaluations": 2352,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "32_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 35,
+     "rootless_factors": 32,
+     "max_determinant_degree_bound": 48,
+     "exact_determinant_evaluations": 2352,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "32_m2_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 48,
+     "exact_determinant_evaluations": 2352,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "32_m2_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 48,
+     "exact_determinant_evaluations": 2352,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "51_m1_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 30,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 40,
+     "exact_determinant_evaluations": 1872,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "51_m2_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 40,
+     "exact_determinant_evaluations": 1872,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "51_m3_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 40,
+     "exact_determinant_evaluations": 1872,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "51_m4_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 40,
+     "exact_determinant_evaluations": 1872,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "42_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 28,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 64,
+     "exact_determinant_evaluations": 3120,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "42_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 28,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 64,
+     "exact_determinant_evaluations": 3120,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "42_m3_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 28,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 64,
+     "exact_determinant_evaluations": 3120,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "42_m3_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 32,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 64,
+     "exact_determinant_evaluations": 3120,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "33_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 63,
+     "rootless_factors": 60,
+     "max_determinant_degree_bound": 72,
+     "exact_determinant_evaluations": 3504,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "33_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 56,
+     "rootless_factors": 53,
+     "max_determinant_degree_bound": 72,
+     "exact_determinant_evaluations": 3504,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "33_m1_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 28,
+     "rootless_factors": 25,
+     "max_determinant_degree_bound": 72,
+     "exact_determinant_evaluations": 3504,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "33_m1_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 31,
+     "rootless_factors": 28,
+     "max_determinant_degree_bound": 72,
+     "exact_determinant_evaluations": 3504,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "33_m2_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 40,
+     "rootless_factors": 37,
+     "max_determinant_degree_bound": 72,
+     "exact_determinant_evaluations": 3504,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "33_m2_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 72,
+     "exact_determinant_evaluations": 3504,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "61_m1_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 30,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 48,
+     "exact_determinant_evaluations": 2256,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "61_m5_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 48,
+     "exact_determinant_evaluations": 2256,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 36,
+     "rootless_factors": 33,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m2_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m2_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m3_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m3_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 35,
+     "rootless_factors": 32,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m4_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "52_m4_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 80,
+     "exact_determinant_evaluations": 3888,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 56,
+     "rootless_factors": 53,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 58,
+     "rootless_factors": 55,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m1_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m1_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m3_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 60,
+     "rootless_factors": 57,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m3_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 58,
+     "rootless_factors": 55,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m3_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "43_m3_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "44_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 38,
+     "rootless_factors": 37,
+     "max_determinant_degree_bound": 128,
+     "exact_determinant_evaluations": 6192,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "44_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 26,
+     "rootless_factors": 25,
+     "max_determinant_degree_bound": 128,
+     "exact_determinant_evaluations": 6192,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "44_m1_n3",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 33,
+     "max_determinant_degree_bound": 128,
+     "exact_determinant_evaluations": 6192,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "44_m1_nminus3",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 36,
+     "rootless_factors": 35,
+     "max_determinant_degree_bound": 128,
+     "exact_determinant_evaluations": 6192,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "44_m3_n3",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 46,
+     "rootless_factors": 45,
+     "max_determinant_degree_bound": 128,
+     "exact_determinant_evaluations": 6192,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "44_m3_nminus3",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 33,
+     "max_determinant_degree_bound": 128,
+     "exact_determinant_evaluations": 6192,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 58,
+     "rootless_factors": 55,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 60,
+     "rootless_factors": 57,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m1_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m1_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m2_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 56,
+     "rootless_factors": 53,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m2_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 56,
+     "rootless_factors": 53,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m2_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 38,
+     "rootless_factors": 35,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m2_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 36,
+     "rootless_factors": 33,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m3_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 62,
+     "rootless_factors": 59,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m3_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 58,
+     "rootless_factors": 55,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m3_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m3_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m4_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 58,
+     "rootless_factors": 55,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m4_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 58,
+     "rootless_factors": 55,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m4_n2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 36,
+     "rootless_factors": 33,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "53_m4_nminus2",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 38,
+     "rootless_factors": 35,
+     "max_determinant_degree_bound": 120,
+     "exact_determinant_evaluations": 5808,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "62_m1_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 28,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "62_m1_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 32,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "62_m5_n1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "62_m5_nminus1",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 0,
+     "distinct_factors": 30,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 96,
+     "exact_determinant_evaluations": 4656,
+     "finite_fibers": [
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": -1
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "71_m1_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 30,
+     "rootless_factors": 27,
+     "max_determinant_degree_bound": 56,
+     "exact_determinant_evaluations": 2640,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "71_m2_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 56,
+     "exact_determinant_evaluations": 2640,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "71_m3_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 32,
+     "rootless_factors": 29,
+     "max_determinant_degree_bound": 56,
+     "exact_determinant_evaluations": 2640,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "71_m4_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 56,
+     "exact_determinant_evaluations": 2640,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "71_m5_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 33,
+     "rootless_factors": 30,
+     "max_determinant_degree_bound": 56,
+     "exact_determinant_evaluations": 2640,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    },
+    {
+     "id": "71_m6_n0",
+     "status": "PASS",
+     "systems": 48,
+     "removed_t_systems": 6,
+     "distinct_factors": 34,
+     "rootless_factors": 31,
+     "max_determinant_degree_bound": 56,
+     "exact_determinant_evaluations": 2640,
+     "finite_fibers": [
+      {
+       "parameter": [
+        -1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      {
+       "parameter": [
+        0,
+        1
+       ],
+       "kind": "zero_offset",
+       "index": 3
+      },
+      {
+       "parameter": [
+        1,
+        1
+       ],
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      }
+     ],
+     "projective_boundaries": {
+      "t_infinity": {
+       "kind": "zero_offset",
+       "index": 3
+      },
+      "u_infinity": {
+       "kind": "equal_offsets",
+       "indices": [
+        0,
+        1
+       ],
+       "sign": 1
+      },
+      "both_infinity": {
+       "kind": "zero_offset",
+       "index": 0
+      }
+     }
+    }
+   ],
+   "systems": null,
+   "log": "sum8_certificate.log",
+   "stage": "sum8_certificate",
+   "seconds": 104.6
+  },
+  {
+   "passed": true,
+   "new_points": [],
+   "selftest_log": "point_hunter_selftest.log",
+   "stage": "point_hunter_selftest_and_search",
+   "seconds": 169.4
+  },
+  {
+   "passed": true,
+   "orbits_rerun": 10,
+   "shipped_H2_totals": {
+    "points": 71168,
+    "families": 8272,
+    "elapsed_s": 87.99999999999997
+   },
+   "log": "torsion_probe_H2.log",
+   "stage": "torsion_probe_H2_first_ten_orbits",
+   "seconds": 11.8
+  },
+  {
+   "passed": true,
+   "identities": true,
+   "infinite_order_witnesses": true,
+   "lmfdb_isomorphisms": true,
+   "stage": "quotient_structure",
+   "seconds": 4.2
+  }
+ ],
+ "all_passed": true,
+ "finished": "2026-10-22 17:39:45"
+}

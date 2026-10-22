@@ -5,23 +5,63 @@
   "paper_modified": false,
   "paper_verification_stages_rerun": 9,
   "paper_verification_stages_passed": 9,
-  "mcp_server": {"tools": 14, "resources": 5, "prompts": 3, "tests": "paper_mcp/test_mcp.py"},
-  "agents": ["coordinator", "certificate-extender", "torsion-coset-prober", "point-hunter", "skeptic", "scribe (coordinator)", "quotient-geometer (coordinator role)"],
+  "mcp_server": {
+    "tools": 14,
+    "resources": 5,
+    "prompts": 3,
+    "tests": "paper_mcp/test_mcp.py"
+  },
+  "agents": [
+    "coordinator",
+    "certificate-extender",
+    "torsion-coset-prober",
+    "point-hunter",
+    "skeptic",
+    "scribe (coordinator)",
+    "quotient-geometer (coordinator role)"
+  ],
   "findings": {
-    "theorem_1_1_exponent_sum": {"before": 7, "after": 8, "tag": "MACHINE-VERIFIED", "systems": 3600, "new_representatives": 32, "independent_checker": "PASS 133 s"},
-    "conjecture_7_3_point_list": {"status": "open", "new_obstruction": "three elliptic quotients 123.a1, 492.b1, 1968.j1 of rank 1; rank Jac(C) >= 3 (proved), rank Jac(D) = 2 (database-quoted); rank-zero descent and classical Chabauty on D ruled out", "route": "quadratic Chabauty on the bielliptic genus-2 quotient"},
-    "conjecture_8_6_torsion_cosets": {"status": "open", "evidence": "273,024 exact rational solutions at height <= 3, 0 exceptions, exponent rank <= 2", "tag": "SEARCH-EVIDENCE"},
-    "genus5_curve_empty_height": {"before": 1500, "after": 1000000, "tag": "SEARCH-EVIDENCE"},
+    "theorem_1_1_exponent_sum": {
+      "before": 7,
+      "after": 8,
+      "tag": "MACHINE-VERIFIED",
+      "systems": 3600,
+      "new_representatives": 32,
+      "independent_checker": "PASS 133 s",
+      "sympy_crosscheck": "PASS 75/75, 814 s",
+      "mutation_tests": "PASS"
+    },
+    "conjecture_7_3_point_list": {
+      "status": "open",
+      "new_obstruction": "three elliptic quotients 123.a1, 492.b1, 1968.j1 of rank 1; rank Jac(C) >= 3 (proved), rank Jac(D) = 2 (database-quoted); rank-zero descent and classical Chabauty on D ruled out",
+      "route": "quadratic Chabauty on the bielliptic genus-2 quotient"
+    },
+    "conjecture_8_6_torsion_cosets": {
+      "status": "open",
+      "evidence": "273,024 exact rational solutions at height <= 3, 0 exceptions, exponent rank <= 2",
+      "tag": "SEARCH-EVIDENCE"
+    },
+    "genus5_curve_empty_height": {
+      "before": 1500,
+      "after": 1000000,
+      "tag": "SEARCH-EVIDENCE"
+    },
     "magic_square_problem_solved": false,
     "new_whole_orbit_closed": false
   },
   "referee": "results/skeptic_verdict.md (four findings confirmed, two sentences downgraded, two reporting defects fixed)",
   "known_gaps": [
-    "SymPy cross-check and mutation tests of the sum-8 certificate did not complete (main claim rests on the strict stdlib checker only)",
+    "(closed 21:33 UTC) the SymPy cross-check (75/75 cases PASS, 814 s) and the mutation tests (PASS) of the sum-8 certificate completed after the skeptic's review; the skeptic's flag in results/skeptic_verdict.md records the state at review time",
     "elliptic-curve ranks are quoted from the LMFDB, not re-proved",
     "all height-bounded statements are evidence, not proofs",
     "the Agent SDK runner orchestrator/run_attack.py was written from the documentation and not executed (no API key on the build machine); the pipeline was executed through Claude Code's own subagents, see traces/"
   ],
-  "audit_trail": {"traces": "traces/", "claim_map": "CLAIM_MAP.md", "provenance": "PROVENANCE.json", "hashes": "SHA256SUMS", "reproduce": "python verify_findings.py"},
+  "audit_trail": {
+    "traces": "traces/",
+    "claim_map": "CLAIM_MAP.md",
+    "provenance": "PROVENANCE.json",
+    "hashes": "SHA256SUMS",
+    "reproduce": "python verify_findings.py"
+  },
   "human_review_completed": false
 }

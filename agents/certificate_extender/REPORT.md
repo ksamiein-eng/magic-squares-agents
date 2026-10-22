@@ -154,17 +154,21 @@ Final state (both background jobs finished):
   (direct symbolic Sylvester determinants over `Z[t]`, Chebyshev numerators,
   no resultant/factor/root calls; gcd coverage of 308 forms), 814.4 s.
   Output `results/crosscheck_degree8_sympy.json`.
-- `test_degree8_verifier.py`: the first run rejected all 23 damaged
-  certificates (14 inherited mutations + 9 sum-8 mutations), then my own
-  partial-mode regression failed on a test bug: dropping a case from the
-  complete certificate leaves orphaned catalog entries, which the verifier
-  correctly refuses (`unused catalog entries`). The genuine partial scenario
-  produced by `--merge` has no orphans and was verified earlier in the session
-  (status PARTIAL, (6,2) and (7,1) certified, 14 cases missing). The test was
-  fixed to prune the catalog as `--merge` does and re-launched in the
-  background; `results/test_degree8.log` and
-  `results/degree8_mutation_tests.json` hold its final result.
+- `test_degree8_verifier.py`: **PASS** on the re-run
+  (`results/degree8_mutation_tests.json`): all 25 outcomes rejected or
+  correctly classified -- 14 inherited mutations, 9 sum-8 mutations (dropped
+  (4,4)/(7,1) cases, altered (5,3) resultant, altered (6,2) numerator, flipped
+  (4,4) frequency sign, system marked unresolved, certificate carrying an
+  `unresolved` list, new factor stripped of its witness), the unprovable
+  finite-fiber claim, and the partial-certificate regression (reported
+  PARTIAL with (5,3) not certified and (4,4) certified); plus 180 Bareiss vs
+  Leibniz determinant matrices. The first run (`results/test_degree8_run1.log`)
+  had rejected the same 23 mutations and then failed only on a bug in my
+  partial-mode test (orphaned catalog entries, which the verifier correctly
+  refuses); the test was fixed to prune the catalog as `--merge` does.
 
 Neither secondary check affects the claim above, which is established by the
 completed strict run of `verify_degree8_stdlib.py` (`status: PASS`) and is
 independently confirmed by the symbolic crosscheck.
+
+**Update (21:33 UTC).** Both secondary checks have since completed: `crosscheck_degree8_sympy.py` reports PASS on all 75 cases (814 s, SymPy 1.13.1) and `test_degree8_verifier.py` reports PASS (damaged certificates rejected; 180-matrix determinant regression). Logs: `results/crosscheck_degree8_sympy.log`, `results/test_degree8.log`.

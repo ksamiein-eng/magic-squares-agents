@@ -1,3 +1,9 @@
 {'stage': 'article_identities_and_tables', 'passed': True, 'returncode': 0, 'seconds': 2.591, 'log': 'logs\\article_identities_and_tables.log'}
 {'stage': 'mathematical_review_and_appendices', 'passed': True, 'returncode': 0, 'seconds': 2.402, 'log': 'logs\\mathematical_review_and_appendices.log'}
 {'stage': 'two_prime_sum7', 'passed': True, 'returncode': 0, 'seconds': 36.064, 'log': 'logs\\two_prime_sum7.log'}
+{'stage': 'two_prime_symbolic', 'passed': True, 'returncode': 0, 'seconds': 206.962, 'log': 'logs\\two_prime_symbolic.log'}
+{'stage': 'two_prime_negative_tests', 'passed': True, 'returncode': 0, 'seconds': 38.217, 'log': 'logs\\two_prime_negative_tests.log'}
+{'stage': 'D1_normalization_and_descent', 'passed': True, 'returncode': 0, 'seconds': 0.639, 'log': 'logs\\D1_normalization_and_descent.log'}
+{'stage': 'D1_symbolic_transport', 'passed': True, 'returncode': 0, 'seconds': 2.762, 'log': 'logs\\D1_symbolic_transport.log'}
+{'stage': 'D1_negative_tests', 'passed': True, 'returncode': 0, 'seconds': 0.824, 'log': 'logs\\D1_negative_tests.log'}
+{'stage': 'torus_rowspace_crosscheck', 'passed': True, 'returncode': 0, 'seconds': 0.606, 'log': 'logs\\torus_rowspace_crosscheck.log'}

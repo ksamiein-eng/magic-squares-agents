@@ -1,1 +1,7 @@
 {"stage": "mcp_tools", "passed": true, "seconds": 8.6}
+{"stage": "paper_core_stages", "passed": true, "seconds": 209.6}
+{"stage": "sum8_certificate", "passed": true, "seconds": 104.6}
+{"stage": "point_hunter_selftest_and_search", "passed": true, "seconds": 169.4}
+{"stage": "torsion_probe_H2_first_ten_orbits", "passed": true, "seconds": 11.8}
+{"stage": "quotient_structure", "passed": true, "seconds": 4.2}
+{"all_passed": true, "report": "C:\\Users\\kimia\\magic-squares-agents\\results\\verification_runs\\20261022T173117\\report.json"}

@@ -1,0 +1,12 @@
+=== sweep H=2: 8 grid values, 512 triples, orbits 0..9 ===
+orbit   0/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 2656 points {'all_torsion': 192, 'on_torsion_coset': 2464}, 464 families (indep-fixed 0, nondeg 0), admissible 0, 1.7s, total 2s
+orbit   1/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 1760 points {'all_torsion': 192, 'on_torsion_coset': 1568}, 224 families (indep-fixed 0, nondeg 0), admissible 0, 1.1s, total 3s
+orbit   2/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 1760 points {'all_torsion': 192, 'on_torsion_coset': 1568}, 224 families (indep-fixed 0, nondeg 0), admissible 0, 1.2s, total 5s
+orbit   3/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 960 points {'all_torsion': 128, 'on_torsion_coset': 832}, 176 families (indep-fixed 0, nondeg 0), admissible 0, 0.9s, total 6s
+orbit   4/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 1376 points {'all_torsion': 192, 'on_torsion_coset': 1184}, 224 families (indep-fixed 0, nondeg 0), admissible 0, 1.0s, total 7s
+orbit   5/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, -1), (1, 1, -1, -1)]: 736 points {'all_torsion': 128, 'on_torsion_coset': 608}, 96 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 8s
+orbit   6/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, -1), (1, 1, -1, 0)]: 1280 points {'all_torsion': 192, 'on_torsion_coset': 1088}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 0.8s, total 9s
+orbit   7/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 0), (1, 1, -1, 1)]: 1184 points {'all_torsion': 192, 'on_torsion_coset': 992}, 128 families (indep-fixed 0, nondeg 0), admissible 0, 0.8s, total 10s
+orbit   8/113 rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 736 points {'all_torsion': 128, 'on_torsion_coset': 608}, 96 families (indep-fixed 0, nondeg 0), admissible 0, 0.6s, total 10s
+orbit   9/113 rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 480 points {'all_torsion': 96, 'on_torsion_coset': 384}, 96 families (indep-fixed 0, nondeg 0), admissible 0, 0.5s, total 11s
+sweep chunk done in 11s
