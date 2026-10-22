@@ -25,5 +25,4 @@ Section numbering: the new quotient section becomes Section 8 and the rigidity s
 in the text use labels, so they resolve on compilation. The ordered-frequencies, orbit and transport tables are
 unchanged.
 
-Author name spelling was taken from the machine's account name; please confirm "Kimia Samieinejad" and add
-affiliations before submission.
+Author names confirmed by the first author; affiliations and contact details are still to be added before submission.
