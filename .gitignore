@@ -12,3 +12,7 @@ agents/certificate_extender/results/certificate_degree7.json
 agents/certificate_extender/results/degree8_part_*.json
 agents/point_hunter/results/tmp_*.json
 agents/certificate_extender/results/degree9_part_*.json
+paper_update/manuscript/*.aux
+paper_update/manuscript/*.log
+paper_update/manuscript/*.out
+paper_update/manuscript/*.toc

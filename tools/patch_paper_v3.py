@@ -60,9 +60,10 @@ This section was added on 22 October 2026. The polynomial $P$ in~\eqref{eq:Pintr
 
 \begin{proposition}[Quotients]\label{prop:quotients}
 Put $g(s)=s^3+70s^2-1012s+6920$. Then
-\[
- P(h)=f(h^2),\quad f(x)=x^6+70x^5-1009x^4+7060x^3-1009x^2+70x+1,\quad \frac{P(h)}{h^6}=g\!\left(h^2+h^{-2}\right),\quad \frac{f(x)}{x^3}=g\!\left(x+\frac1x\right).
-\]
+\begin{gather*}
+ P(h)=f(h^2),\qquad \frac{P(h)}{h^6}=g\!\left(h^2+h^{-2}\right),\qquad \frac{f(x)}{x^3}=g\!\left(x+\frac1x\right),\
+ f(x)=x^6+70x^5-1009x^4+7060x^3-1009x^2+70x+1.
+\end{gather*}
 Hence $\mathcal C/\sigma_1$ is the genus-two curve $D:\ Y^2=f(x)$, which is bielliptic with quotients $E_\pm:\ v^2=(w\pm2)\,g(w)$, $w=x+1/x$; and $(h,Y)\mapsto(s,v)=(h^2+h^{-2},\,Y/h^3)$ maps $\mathcal C$ onto the elliptic curve $E_0:\ v^2=g(s)$. The three curves are isomorphic over $\Q$ to the LMFDB curves $123.\mathrm{a}1$ ($E_0$), $492.\mathrm{b}1$ ($E_+$) and $1968.\mathrm{j}1$ ($E_-$); the isomorphisms are verified exactly by the scaling of $c_4$ and $c_6$ with $u=4,8,12$ respectively.
 \end{proposition}
 \begin{proof}

@@ -11,7 +11,7 @@ and the next instances.
 
 `paper_update/manuscript/` is version 3 of the paper (authors Kimia Samieinejad and Jonathan Wolinski,
 22 October 2026) with the additions as new theorems, propositions and a lemma, each tied to its
-evidence in [`paper_update/CHANGES_v3.md`](paper_update/CHANGES_v3.md). Compile with pdflatex or Overleaf.
+evidence in [`paper_update/CHANGES_v3.md`](paper_update/CHANGES_v3.md). Compiled PDF: [`paper_update/paper_v3.pdf`](paper_update/paper_v3.pdf) (33 pages).
 The shipped `paper/` stays byte-identical.
 
 **OSI Hackathon 2026 (physical sciences & mathematics), October 21–22.**

@@ -177,7 +177,7 @@ following the conventions of the paper's own package.
 
 ## Manuscript and generalisation
 
-Version 3 of the paper (`paper_update/manuscript/`, authors K. Samieinejad and J. Wolinski, 22 October
+Version 3 of the paper (`paper_update/paper_v3.pdf`, authors K. Samieinejad and J. Wolinski, 22 October
 2026) adds Theorem 4.5 (sum nine), a quotient section, and the degeneracy-rank lemma, each tied to its
 evidence in `paper_update/CHANGES_v3.md`. `docs/GENERALIZATION.md` states what the loop needs from a
 problem, what "validated" means and does not mean here, and the next instances.
