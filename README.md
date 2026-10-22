@@ -84,6 +84,19 @@ of general type. Everything else is open.
 Full one-page write-up: [`docs/RESULTS.md`](docs/RESULTS.md). Referee's verdict table:
 [`results/skeptic_verdict.md`](results/skeptic_verdict.md). Specialists' own reports: `agents/*/REPORT.md`.
 
+## Audit trail (how the agents actually did it)
+
+The same discipline as the paper's own package: nothing is asserted without a record.
+
+| | |
+|---|---|
+| `traces/` | Verbatim transcripts of every agent (reasoning, prose, tool calls, truncated results): the coordinator's quotient-curve discovery including its dead ends, each specialist's design and runs, the skeptic's reruns. Index in `traces/README.md`. |
+| `CLAIM_MAP.md` | Every claim → producing agent → trace turn → re-check command → evidence file → tag. |
+| `STATUS.json` | What is claimed, what is not, known gaps. |
+| `PROVENANCE.json`, `SHA256SUMS` | Agent runs (ids, models, spans, turn and tool counts, transcript hashes), environment, hashes of every result file. A matching hash is evidence of byte identity, not of mathematical truth. |
+| `verify_findings.py` | One command re-runs every machine-checkable finding: MCP tools, the paper's nine core stages, the sum-8 checker, the point-hunter self-test and a search, the torsion probe on ten orbits, the quotient structure. Latest report: `results/verify_findings_latest.json`. |
+| `results/skeptic_verdict.md` | The referee's table. |
+
 ## Run it
 
 ```bash

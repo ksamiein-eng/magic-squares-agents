@@ -71,6 +71,8 @@ def main():
     reject('sum-eight factor without witness',drop_witness)
     def partial_missing_case(d):
         d['cases'].pop(idx['53_m4_nminus2'])
+        used={r['factor_id'] for c in d['cases'] for s in c['systems'] for r in s['factors']}
+        d['factor_catalog']=[f for f in d['factor_catalog'] if f['id'] in used]  # as --merge would produce
     data=deepcopy(original);partial_missing_case(data)
     rep=v.verify(data,allow_partial=True)
     v.require(rep['status']=='PARTIAL' and rep['missing_cases']==['53_m4_nminus2'] and [5,3] not in rep['fully_certified_signatures'] and [4,4] in rep['fully_certified_signatures'],'partial mode must downgrade the claim')

@@ -18,39 +18,3 @@
 42_m3_n1 PASS
 42_m3_nminus1 PASS
 33_m1_n1 PASS
-33_m1_nminus1 PASS
-33_m1_n2 PASS
-33_m1_nminus2 PASS
-33_m2_n2 PASS
-33_m2_nminus2 PASS
-61_m1_n0 PASS
-61_m5_n0 PASS
-52_m1_n1 PASS
-52_m1_nminus1 PASS
-52_m2_n1 PASS
-52_m2_nminus1 PASS
-52_m3_n1 PASS
-52_m3_nminus1 PASS
-52_m4_n1 PASS
-52_m4_nminus1 PASS
-43_m1_n1 PASS
-43_m1_nminus1 PASS
-43_m1_n2 PASS
-43_m1_nminus2 PASS
-43_m3_n1 PASS
-43_m3_nminus1 PASS
-43_m3_n2 PASS
-43_m3_nminus2 PASS
-{
-  "status": "PASS",
-  "systems": 2064,
-  "numerator_method": "Chebyshev T_n and U_(n-1)",
-  "determinant_method": "direct symbolic Sylvester matrix over ZZ[t], SymPy DomainMatrix",
-  "resultant_calls": 0,
-  "factorization_calls": 0,
-  "rational_root_solver_calls": 0,
-  "normal_forms_checked_by_gcd_reduction": 168,
-  "finite_fibers_and_projective_boundaries": "independent symbolic identities checked",
-  "sympy": "1.13.1",
-  "elapsed_seconds": 220.567
-}

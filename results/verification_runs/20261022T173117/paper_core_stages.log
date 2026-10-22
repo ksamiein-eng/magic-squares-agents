@@ -1,0 +1,3 @@
+{'stage': 'article_identities_and_tables', 'passed': True, 'returncode': 0, 'seconds': 2.591, 'log': 'logs\\article_identities_and_tables.log'}
+{'stage': 'mathematical_review_and_appendices', 'passed': True, 'returncode': 0, 'seconds': 2.402, 'log': 'logs\\mathematical_review_and_appendices.log'}
+{'stage': 'two_prime_sum7', 'passed': True, 'returncode': 0, 'seconds': 36.064, 'log': 'logs\\two_prime_sum7.log'}

@@ -106,6 +106,13 @@ gained its first systematic evidence (273,024 points, no exception) and a sharpe
 (exponent rank ≤ 2). The empty region on C grew from height 1,500 to 1,000,000. Each of these
 took one specialist under 20 minutes of compute; the paper's proof records were not touched.
 
+## Audit trail
+
+Verbatim agent transcripts (`traces/`), a claim map linking every statement to its trace
+turn and re-check command (`CLAIM_MAP.md`), provenance with transcript and result hashes
+(`PROVENANCE.json`, `SHA256SUMS`), and a one-command reproduction (`verify_findings.py`),
+following the conventions of the paper's own package.
+
 ## Next computation
 
 Quadratic Chabauty on D with the LMFDB generators of 492.b1 and 1968.j1, then the ten

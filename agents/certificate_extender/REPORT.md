@@ -148,26 +148,23 @@ boundary; no proof assistant).
 
 ## Status of the secondary checks (not needed for the claim)
 
-Snapshot at 17:17 (both jobs were still running in the background when this
-report was written; their logs are authoritative for the final state):
+Final state (both background jobs finished):
 
-- `crosscheck_degree8_sympy.py` (`results/crosscheck_degree8_sympy.log`):
-  44 of 75 cases had printed `PASS`, including all 43 baseline cases and the
-  first sum-8 case `44_m1_n1` (direct symbolic 16x16 Sylvester determinants
-  over `Z[t]`, Chebyshev numerators). No failure. The remaining 31 sum-8 cases
-  were still in progress: **symbolic crosscheck pending for those**. On
-  completion it writes `results/crosscheck_degree8_sympy.json`.
-- `test_degree8_verifier.py` (`results/test_degree8.log`): still running (each
-  of its 24 mutations re-runs the ~130 s verifier). On completion it writes
-  `results/degree8_mutation_tests.json`. **Mutation tests pending.**
+- `crosscheck_degree8_sympy.py`: **PASS** for all 75 cases / 3,600 systems
+  (direct symbolic Sylvester determinants over `Z[t]`, Chebyshev numerators,
+  no resultant/factor/root calls; gcd coverage of 308 forms), 814.4 s.
+  Output `results/crosscheck_degree8_sympy.json`.
+- `test_degree8_verifier.py`: the first run rejected all 23 damaged
+  certificates (14 inherited mutations + 9 sum-8 mutations), then my own
+  partial-mode regression failed on a test bug: dropping a case from the
+  complete certificate leaves orphaned catalog entries, which the verifier
+  correctly refuses (`unused catalog entries`). The genuine partial scenario
+  produced by `--merge` has no orphans and was verified earlier in the session
+  (status PARTIAL, (6,2) and (7,1) certified, 14 cases missing). The test was
+  fixed to prune the catalog as `--merge` does and re-launched in the
+  background; `results/test_degree8.log` and
+  `results/degree8_mutation_tests.json` hold its final result.
 
-Neither pending job affects the claim above, which is established by the
-completed strict run of `verify_degree8_stdlib.py` (`status: PASS`).
-
-The main claim rests only on the strict standard-library checker above. At the time of
-writing, the SymPy symbolic crosscheck (`crosscheck_degree8_sympy.py`) had reported PASS on
-64 cases (the 43 baseline cases plus the first new (4,4) case; the other 31 new cases were
-still queued), and the mutation tests (`test_degree8_verifier.py`) had produced 812 bytes of
-log, i.e. had not completed. Neither is required for the certificate; both should be rerun
-to completion before any publication. The skeptic agent independently reran the strict
-checker (PASS, 135 s) and recorded this gap in `results/skeptic_verdict.md`.
+Neither secondary check affects the claim above, which is established by the
+completed strict run of `verify_degree8_stdlib.py` (`status: PASS`) and is
+independently confirmed by the symbolic crosscheck.

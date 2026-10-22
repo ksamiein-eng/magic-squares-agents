@@ -5199,5 +5199,5 @@
   "claim": "no nondegenerate rational-circle solution for the full-depth normal forms of all positive exponent pairs of sum at most seven",
   "arithmetic_consequence": "primitive central root p^k q^l with distinct primes requires k+l >= 8",
   "proof_boundary": "written normal-form and real-angle proofs plus the checked exact algebra; not a formal proof-assistant development",
-  "elapsed_seconds": 32.86
+  "elapsed_seconds": 34.968
 }
