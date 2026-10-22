@@ -1,0 +1,25 @@
+Identity checks (sympy):
+  [OK] P = F*G
+  [OK] P(h)/h^6 = g(h^2 + h^-2)
+  [OK] (1+h^2)^2 (h^4+34h^2+1)^2 - (48h^2(1-h^2))^2 = P(h)
+  [OK] P(h) = f(h^2)
+  [OK] P squarefree (gcd(P,P')=1)
+  [OK] P(1) = 72^2
+  [OK] g(2) = 72^2
+Form / table consistency checks:
+  [OK] FORM_C is the homogenization of its polynomial
+  [OK] FORM_D is the homogenization of its polynomial
+  [OK] FORM_E0 = q^4 * g(p/q)
+  [OK] C: residue tables agree with direct big-int computation (3000 samples)
+  [OK] C: known points [(0, 1), (1, 1)] pass every sieve modulus
+  [OK] D: residue tables agree with direct big-int computation (3000 samples)
+  [OK] D: known points [(0, 1), (1, 1)] pass every sieve modulus
+  [OK] E0: residue tables agree with direct big-int computation (3000 samples)
+  [OK] E0: known points [(2, 1)] pass every sieve modulus
+Sieve-never-discards test on an always-square form (p^2+q^2)^2:
+  [OK] all 8773 coprime pairs survive the sieve and verify as squares
+End-to-end: small searches recover the known points:
+  [OK] C: H=50 finds known [(0, 1), (1, 1)]; all found = [(0, 1), (1, 1)]
+  [OK] D: H=50 finds known [(0, 1), (1, 1)]; all found = [(0, 1), (1, 1)]
+  [OK] E0: H=50 finds known [(2, 1)]; all found = [(-49, 1), (-34, 1), (-2, 1), (2, 1), (14, 1)]
+SELFTEST PASSED

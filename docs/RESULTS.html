@@ -102,9 +102,9 @@ H = 3: 273,024 distinct points (12,928 all-torsion, 260,096 on a torsion coset,
 <strong>0 off every torsion coset</strong>), 15,152 free-angle families all with an identically vanishing
 row, 0 admissible points; every point has a vanishing sine <em>and</em> two equal magnitudes
 [MACHINE-VERIFIED, <code>agents/torsion_coset_probe/results/torsion_coset_H3_summary.json</code>;
-cross-checked on 400-point samples by bounded brute force]. Stronger than conjectured: the
-exponent rank never exceeds 2, so every point lies on a torsion coset of a subtorus of
-dimension ≤ 2. Caveat: at height ≤ 3 the grid carries only the split primes 5 and 13, so this
+cross-checked on 400-point samples by bounded brute force]. At height ≤ 3 the exponent rank
+never exceeded 2, which iteration 1 recorded as a candidate sharpening; iteration 2 refuted
+it (below). Caveat: at height ≤ 3 the grid carries only the split primes 5 and 13, so this
 is evidence at small height [SEARCH-EVIDENCE for Conjecture 8.6].</p>
 <p><strong>4. No new rational point on C (point-hunter).</strong>
 A vectorised residue sieve (moduli chosen by measured pass rate; the primes 2, 3, 5, 7, 11
@@ -115,6 +115,50 @@ in 6 minutes (300,000 in 37 s), and D to height 300,000: no point outside the kn
 the sieve]. E₀ has 12 small rational points, none lifting to C except s = 2. The 3,000-height
 search inside the MCP server agrees
 [MACHINE-VERIFIED, <code>results/genus5_point_search_H3000.json</code>].</p>
+<p><strong>5. The refuted sharpening becomes a lemma, and the lemma predicts the data (coordinator, from the height-4 failure).</strong>
+A vanishing sine on row r means A_r·χ ∈ πZ, so ∏ z_j^{A_rj} = ±1: the row itself is a
+multiplicative relation. Two equal magnitudes on rows i, j mean A_i·χ ≡ ±A_j·χ (mod π), so
+A_i ∓ A_j is a relation, nonzero because rows are distinct projective vectors. Hence every
+rational point that is degenerate in either sense lies on a torsion coset (the content of
+Conjecture 8.6 for such points), a doubly degenerate point has exponent rank ≤ 3, and rank 3
+occurs only if A_i ± A_j is parallel to the zero row A_r [PROVED, elementary; stated and
+checked in <code>agents/torsion_coset_probe/rank_bound.py</code>]. The parallel-triple criterion holds
+for exactly 23 of the 113 orbits; the two orbits where rank-3 points appeared at height 4
+(0 and 54) are among them, and every recorded rank-3 point has a parallel degeneracy pair
+[MACHINE-VERIFIED, <code>agents/torsion_coset_probe/results/rank_bound_prediction.json</code>]. The other
+21 orbits are a prediction for height 5. Consequence for the paper: rigidity (Conj. 8.1)
+implies the torsion-coset hypothesis for every point with a zero sine or two equal magnitudes,
+the only other way a solution-variety point can fail admissibility being a = 2b, which gives no
+monomial relation and which the probe never observed [PROVED / SEARCH-EVIDENCE].</p>
+<h2>Iteration 2: the loop turns again</h2>
+<p>The planner tool emitted the next increments from the ledger (<code>propose_next_attack</code>): exponent
+sum 9 for Theorem 1.1 and height 4 for the torsion-coset probe. Both were launched with the same
+playbooks and agents, with a 40-minute budget before the submission deadline.
+<strong>Torsion probe at height 4 (complete, 113/113 orbits, 368 s on 6 workers).</strong> 662,528 distinct
+rational points (24 grid values, 13,824 triples): 12,928 all-torsion, 649,600 on a torsion
+coset, <strong>0 off every torsion coset</strong>, 0 admissible, every point degenerate; 23,696 free-angle
+families, none a counterexample. Conjecture 8.6 holds at H ≤ 4 [SEARCH-EVIDENCE,
+<code>agents/torsion_coset_probe/results/torsion_coset_H4_summary.json</code>]. The int64 overflow guard
+valid at H ≤ 3 was found invalid at H = 4 (row coefficients reach 15,625) and replaced by an
+asserted range plus an exact re-test; the new script reproduces 18 iteration-1 checkpoints
+exactly. <strong>The sharpening proposed by iteration 1 is false:</strong> 13,824 points have exponent
+rank 3 (orbits 0 and 54, solved coordinate ±1/13), so rational points do reach torsion cosets
+of 3-dimensional subtori; only the conjecture's own bound (rank &lt; 4) survives
+[MACHINE-VERIFIED refutation of the candidate sharpening, <code>torsion_coset_H4_examples.json</code>].
+<strong>Certificate at exponent sum 9 (complete).</strong> The planner's command re-ran the same producer and
+checker pair on the signatures (8,1), (7,2), (6,3), (5,4): 40 new orbit representatives, 1,920
+new signed systems, 5,520 systems in the merged certificate, 3,207 catalog factors, 553,392 exact
+Sylvester determinants; the strict standard-library checker returned PASS in 305 s with no
+unresolved case [MACHINE-VERIFIED, <code>agents/certificate_extender/results/certificate_degree9.json</code>,
+checker log <code>verify_degree9_stdlib.log</code>]. <strong>Theorem 1.1 now holds for k + ℓ ≤ 9</strong>, two exponent
+sums beyond the paper, each step produced by the loop and accepted by the paper's own kind of
+checker. The SymPy cross-check and mutation tests for sum 9 had not run at submission time.</p>
+<h2>Infrastructure</h2>
+<p>The open-problem ledger types each target and names its playbook; the playbooks are
+paper-agnostic; the planner turns ledger state into the next command; the tag linter refuses
+any claim without a tag, an evidence file, a verifier and (for MACHINE-VERIFIED) a passing
+stage; the overlay runner absorbs accepted results as stages 17+ of the paper's own suite
+without touching the paper; traces, claim map and provenance make every step auditable.</p>
 <h2>The referee's verdict</h2>
 <p>The skeptic agent reran the sum-8 checker (PASS, 135 s), the point hunter's self-test and a
 height-2,000 search, an independent exact check of two torsion-probe example points and their
@@ -125,8 +169,9 @@ and flagged two reporting defects that were fixed (<code>results/skeptic_verdict
 <p>Theorem 1.1 moved from exponent sum 7 to 8 (one more proved case of rigidity for r = 2).
 Conjecture 7.3 did not move, but its obstruction is now precise: three rank-1 elliptic
 quotients identified, so the next step is quadratic Chabauty, not descent. Conjecture 8.6
-gained its first systematic evidence (273,024 points, no exception) and a sharper form
-(exponent rank ≤ 2). The empty region on C grew from height 1,500 to 1,000,000. Each of these
+gained its first systematic evidence (273,024 points at height 3, 662,528 at height 4, no
+exception); a sharper form proposed after height 3 was refuted at height 4, which is the loop
+working as intended. The empty region on C grew from height 1,500 to 1,000,000. Each of these
 took one specialist under 20 minutes of compute; the paper's proof records were not touched.</p>
 <h2>Audit trail</h2>
 <p>Verbatim agent transcripts (<code>traces/</code>), a claim map linking every statement to its trace
