@@ -1,7 +1,7 @@
 {
  "project": "Rigidity Lab (magic-squares-agents)",
- "generated": "2026-10-22T18:38:32-0400",
- "git_head_at_generation": "01e098541864762143e2026557c177b3ceff7884",
+ "generated": "2026-10-22T18:38:51-0400",
+ "git_head_at_generation": "ae046dcbdcb7afce270d68d0fbdbcd06b82d072b",
  "environment": {
   "os": "Windows-10-10.0.26200-SP0",
   "python": "3.11.9",
@@ -76,6 +76,32 @@
    ],
    "assistant_turns": 25,
    "tool_calls": 15,
+   "models": "claude-fable-5-1"
+  },
+  {
+   "role": "torsion-coset-prober (iteration 2, H=4)",
+   "agent_id": "a004fb926ffeb19e4",
+   "trace": "traces/06_torsion_coset_prober_H4.md",
+   "trace_sha256": "ce4ac75ffe179814e584d0c5f7615957c65fed6336b8040e5f6714aa37e0168f",
+   "span_utc": [
+    "2026-10-22T22:06:28.007Z",
+    "2026-10-22T22:17:48.961Z"
+   ],
+   "assistant_turns": 36,
+   "tool_calls": 23,
+   "models": "claude-fable-5-1"
+  },
+  {
+   "role": "certificate-extender (iteration 2, exponent sum 9)",
+   "agent_id": "a33ab313a80618bd9",
+   "trace": "traces/07_certificate_extender_sum9.md",
+   "trace_sha256": "5f043b0e77aefe48947c00145c6b33b1ca38b6f0c3422ad7515f7e1dd2fb6dba",
+   "span_utc": [
+    "2026-10-22T22:06:27.993Z",
+    "2026-10-22T22:28:59.913Z"
+   ],
+   "assistant_turns": 62,
+   "tool_calls": 32,
    "models": "claude-fable-5-1"
   },
   {
@@ -4796,6 +4822,11 @@
    "bytes": 11223
   },
   {
+   "path": "agents/certificate_extender/REPORT_sum9.md",
+   "sha256": "da56fc2be749f71be213657710326c82819800aa48f6b3aae57ae52f9685a137",
+   "bytes": 9927
+  },
+  {
    "path": "agents/point_hunter/REPORT.md",
    "sha256": "af157a3061fbb424b10c15097a91bafe51901298b048202b8a2b35e572325ae7",
    "bytes": 7707
@@ -4804,6 +4835,61 @@
    "path": "agents/torsion_coset_probe/REPORT.md",
    "sha256": "794274e63f89161ca68cdb502e845b49d12e194b5b2eee3860b812f28d75fd09",
    "bytes": 18491
+  },
+  {
+   "path": "agents/torsion_coset_probe/REPORT_H4.md",
+   "sha256": "9f2f0184ba3b990887a8825aa205166a9ef2551e323a3975ae67742334163219",
+   "bytes": 8828
+  },
+  {
+   "path": "ledger/attacks.json",
+   "sha256": "2eb9d216057e715b59bf0f7ba9e7f9f0ed7a587e258428c91266a6f09c4a89e3",
+   "bytes": 7354
+  },
+  {
+   "path": "ledger/open_problems.json",
+   "sha256": "c6a5cf96d8bcf768c06c1002ca04f14d47fa116aae8c4567428f7d6005952d0c",
+   "bytes": 5366
+  },
+  {
+   "path": "playbooks/absorb-into-verification-tree.md",
+   "sha256": "38e5921493093e99d498904e3bdbb7f2cc559f22a713633a05f7705482ae179a",
+   "bytes": 1190
+  },
+  {
+   "path": "playbooks/adversarial-referee.md",
+   "sha256": "881473bb7269626379755e47f0e4d004e6767de2dc7da4779a6700b674713677",
+   "bytes": 1117
+  },
+  {
+   "path": "playbooks/automorphism-quotient-analysis.md",
+   "sha256": "6b3471292a2b7f8570e78f6ba48aeaf06479e1b4dd1c6f5182432d618524e420",
+   "bytes": 2226
+  },
+  {
+   "path": "playbooks/bounded-search-with-sieve.md",
+   "sha256": "47da7ad4a225a095913a1903b1e23003dd72b3762b34e7a60a73da91d709fbeb",
+   "bytes": 1739
+  },
+  {
+   "path": "playbooks/certificate-extension.md",
+   "sha256": "c36ad5b842ecf0fc9f516ca3c1657717197c7acf7091233ec550bc4a2135d239",
+   "bytes": 1979
+  },
+  {
+   "path": "playbooks/hypothesis-probe.md",
+   "sha256": "b21a3113214cd513a0ceaa63b6047aff5686c4017264959c646d55e88ca3d428",
+   "bytes": 1549
+  },
+  {
+   "path": "playbooks/README.md",
+   "sha256": "9956834ad0b6716c3b6788c2308db190ac4e86f399a72cb4e708555d728cc016",
+   "bytes": 1922
+  },
+  {
+   "path": "paper_overlay/stages.json",
+   "sha256": "79c36391e393cbdb7b4da6a0b022a7d8eb07dff5d86dda41078aa25e3b01b927",
+   "bytes": 3191
   },
   {
    "path": "agents/certificate_extender/results/certificate_degree8.json",

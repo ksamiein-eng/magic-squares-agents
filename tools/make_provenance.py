@@ -14,9 +14,11 @@ TRACES = {
     "02_torsion_coset_prober.md": {"role": "torsion-coset-prober", "agent_id": "a60b808fcc39d0856"},
     "03_point_hunter.md": {"role": "point-hunter", "agent_id": "a1fc4e0f3191ca149"},
     "04_skeptic.md": {"role": "skeptic (referee)", "agent_id": "a86acff213db9b8f2"},
+    "06_torsion_coset_prober_H4.md": {"role": "torsion-coset-prober (iteration 2, H=4)", "agent_id": "a004fb926ffeb19e4"},
+    "07_certificate_extender_sum9.md": {"role": "certificate-extender (iteration 2, exponent sum 9)", "agent_id": "a33ab313a80618bd9"},
     "05_agent_sdk_docs_lookup.md": {"role": "claude-code-guide (documentation lookup for orchestrator/run_attack.py)", "agent_id": "a547588d0c9123d72"},
 }
-RESULT_GLOBS = ["results/*.json", "results/*.md", "results/*.log", "agents/*/REPORT.md", "agents/*/results/*.json",
+RESULT_GLOBS = ["results/*.json", "results/*.md", "results/*.log", "agents/*/REPORT*.md", "ledger/*.json", "playbooks/*.md", "paper_overlay/*.json", "agents/*/results/*.json",
                 "agents/*/*.py", "paper_mcp/*.py", "traces/*.md", "docs/RESULTS.md", "CLAIM_MAP.md", "STATUS.json"]
 IGNORE = re.compile(r"torsion_coset_H\d\.json$|certificate_degree7\.json$|degree8_part_.*\.json$|tmp_.*\.json$")
 
