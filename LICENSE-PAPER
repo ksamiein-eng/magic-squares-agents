@@ -1,0 +1,20 @@
+Research paper, proof records, write-up and agent transcripts
+
+Copyright (c) 2026 Kimia Samieinejad and Jonathan Wolinski. All rights reserved.
+
+The following parts of this repository are NOT covered by the MIT License in LICENSE:
+
+  paper/            the research paper "Rational-circle rigidity for magic squares of squares"
+                    (version 2) and its verification tree
+  paper_update/     version 3 of the manuscript and its PDF
+  docs/RESULTS.md, docs/RESULTS.html, docs/slides.html, docs/VIDEO_SCRIPT.md, docs/POST.md
+  traces/           verbatim agent transcripts
+
+They are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+International License (CC BY-NC-ND 4.0), https://creativecommons.org/licenses/by-nc-nd/4.0/.
+You may read, download and share them with attribution; you may not modify them or use them
+commercially without written permission from the authors. Mathematical results may of course
+be cited and built upon in the ordinary academic way; please cite as in CITATION.cff.
+
+The verification scripts inside paper/ remain the authors' work and may be run to check the
+paper's claims; redistribution of modified versions requires permission.

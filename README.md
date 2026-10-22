@@ -176,6 +176,12 @@ Nothing in this repository claims to solve the magic-square problem. Bounded sea
 evidence. Database ranks are quoted. Certificates count only after the independent
 standard-library checker accepts them. The referee's tags are the contract.
 
+## License and citation
+
+Code: MIT (`LICENSE`), copyright 2026 Kimia Samieinejad and Jonathan Wolinski. Paper, proof
+records, write-up, slides and agent transcripts: CC BY-NC-ND 4.0, all rights reserved
+(`LICENSE-PAPER`). Please cite via `CITATION.cff`.
+
 ## Credits
 
 Paper and verification tree: the submitting author. Paper2Agent: Miao, Davis, Zhang, Pritchard, Zou.

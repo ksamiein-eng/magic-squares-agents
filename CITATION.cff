@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or build on these results, please cite both entries."
+title: "Rigidity Lab: a validated loop for AI on hard open problems in mathematics (instance: magic squares of squares)"
+authors:
+  - family-names: Samieinejad
+    given-names: Kimia
+  - family-names: Wolinski
+    given-names: Jonathan
+date-released: 2026-10-22
+version: "1.0 (OSI Hackathon 2026 submission)"
+repository-code: "https://github.com/ksamiein-eng/magic-squares-agents"
+license: MIT
+keywords:
+  - magic squares of squares
+  - rational points
+  - multi-agent systems
+  - Paper2Agent
+  - computer-assisted proof
+references:
+  - type: unpublished
+    title: "Rational-circle rigidity for magic squares of squares: certified exclusions, a genus-five reduction, and surfaces of general type (version 3, 22 October 2026)"
+    authors:
+      - family-names: Samieinejad
+        given-names: Kimia
+      - family-names: Wolinski
+        given-names: Jonathan
+    year: 2026
+    notes: "paper_update/paper_v3.pdf in this repository; CC BY-NC-ND 4.0"
