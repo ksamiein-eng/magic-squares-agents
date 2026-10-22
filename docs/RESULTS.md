@@ -1,4 +1,4 @@
-# Rigidity Lab — results (one page)
+# Rigidity Lab — a validated loop for AI on hard open problems (instance: magic squares of squares)
 
 **OSI Hackathon 2026 · physical sciences & mathematics · 22 October 2026**
 Repository: https://github.com/ksamiein-eng/magic-squares-agents · Figure: `docs/figure.svg`
@@ -162,6 +162,13 @@ Verbatim agent transcripts (`traces/`), a claim map linking every statement to i
 turn and re-check command (`CLAIM_MAP.md`), provenance with transcript and result hashes
 (`PROVENANCE.json`, `SHA256SUMS`), and a one-command reproduction (`verify_findings.py`),
 following the conventions of the paper's own package.
+
+## Manuscript and generalisation
+
+Version 3 of the paper (`paper_update/manuscript/`, authors K. Samiein and J. Wolinski, 22 October
+2026) adds Theorem 4.5 (sum nine), a quotient section, and the degeneracy-rank lemma, each tied to its
+evidence in `paper_update/CHANGES_v3.md`. `docs/GENERALIZATION.md` states what the loop needs from a
+problem, what "validated" means and does not mean here, and the next instances.
 
 ## Next computation
 

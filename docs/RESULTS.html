@@ -5,7 +5,7 @@
  h1 { font-size: 17px; margin: 0 0 4px; color:#1f3a93; } h2 { font-size: 12.5px; margin: 8px 0 3px; color:#1f3a93; }
  p { margin: 3px 0; } table { border-collapse: collapse; font-size: 9.4px; margin: 3px 0; } td, th { border: 1px solid #ccc; padding: 2px 5px; }
  img { width: 100%; margin: 4px 0; } code { font-size: 9px; }
-</style></head><body><h1>Rigidity Lab — results (one page)</h1>
+</style></head><body><h1>Rigidity Lab — a validated loop for AI on hard open problems (instance: magic squares of squares)</h1>
 <p><strong>OSI Hackathon 2026 · physical sciences &amp; mathematics · 22 October 2026</strong>
 Repository: https://github.com/ksamiein-eng/magic-squares-agents · Figure below.</p>
 <p>Evidence tags, assigned by the skeptic agent after rerunning one computation per specialist:
@@ -178,6 +178,11 @@ took one specialist under 20 minutes of compute; the paper's proof records were 
 turn and re-check command (<code>CLAIM_MAP.md</code>), provenance with transcript and result hashes
 (<code>PROVENANCE.json</code>, <code>SHA256SUMS</code>), and a one-command reproduction (<code>verify_findings.py</code>),
 following the conventions of the paper's own package.</p>
+<h2>Manuscript and generalisation</h2>
+<p>Version 3 of the paper (<code>paper_update/manuscript/</code>, authors K. Samiein and J. Wolinski, 22 October
+2026) adds Theorem 4.5 (sum nine), a quotient section, and the degeneracy-rank lemma, each tied to its
+evidence in <code>paper_update/CHANGES_v3.md</code>. <code>docs/GENERALIZATION.md</code> states what the loop needs from a
+problem, what "validated" means and does not mean here, and the next instances.</p>
 <h2>Next computation</h2>
 <p>Quadratic Chabauty on D with the LMFDB generators of 492.b1 and 1968.j1, then the ten
 unresolved orbits through the same quotient analysis; the agents already expose both as tools.</p>

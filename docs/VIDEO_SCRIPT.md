@@ -69,7 +69,9 @@ the curve identities, confirmed all four findings, and downgraded two sentences:
 equal to one are database-quoted, not proved. It also caught two unfinished reports before
 they could be cited. The write-up is one page and every sentence carries its tag."
 
-**[3:40–4:00] Slide 9, close.**
-"The repository runs with one slash command inside Claude Code or unattended through the
-Agent SDK. The paper's proof records are never modified. The problem is still open. But the
-paper now knows exactly where it is stuck, and it can keep attacking itself. Thank you."
+**[3:40–4:00] Slides 9–10, beyond and close.**
+"Nothing in the loop is specific to magic squares except the tool bindings and the ledger. It
+needs code to bind to, targets that can be typed, and a suite to absorb into; any certificate-style
+paper or any curve with a conjecturally complete point list is the next instance. The manuscript
+is updated with the new theorem and lemma. The problem is still open. But the paper now knows
+exactly where it is stuck, and it can keep attacking itself. Thank you."

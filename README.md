@@ -1,4 +1,18 @@
-# Rigidity Lab: a paper that attacks its own open problems
+# Rigidity Lab: a validated loop for AI on hard open problems in mathematics
+
+**Instance one: magic squares of squares.** A paper becomes an agent; a team attacks its open
+conjectures by fixed playbooks; a referee tags every claim; accepted results are absorbed into the
+paper's own verification suite; a planner emits the next iteration. Run twice today, it extended a
+theorem twice, located an obstruction, refuted its own first sharpening and turned the failure into
+a lemma. See [`docs/GENERALIZATION.md`](docs/GENERALIZATION.md) for what the loop needs from a problem
+and the next instances.
+
+## Updated manuscript
+
+`paper_update/manuscript/` is version 3 of the paper (authors Kimia Samiein and Jonathan Wolinski,
+22 October 2026) with the additions as new theorems, propositions and a lemma, each tied to its
+evidence in [`paper_update/CHANGES_v3.md`](paper_update/CHANGES_v3.md). Compile with pdflatex or Overleaf.
+The shipped `paper/` stays byte-identical.
 
 **OSI Hackathon 2026 (physical sciences & mathematics), October 21–22.**
 A Paper2Agent-style conversion of a research paper on **magic squares of squares** into an

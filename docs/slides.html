@@ -30,7 +30,7 @@
 
 <section class="slide active">
   <h1>Rigidity Lab</h1>
-  <p class="sub">A paper that attacks its own open problems</p>
+  <p class="sub">A validated loop for AI on hard open problems in mathematics. Instance one: magic squares of squares.</p>
   <p>Paper2Agent conversion of a <b>magic-squares-of-squares</b> paper into an MCP server,<br>
      five specialist agents, one adversarial referee, one scribe.</p>
   <p class="sub">OSI Hackathon 2026 · physical sciences &amp; mathematics · October 21–22</p>
@@ -146,6 +146,21 @@ stage run: D1_normalization_and_descent True 0.68 s</pre>
   </table>
   <p>Two reporting defects flagged and fixed: unfilled placeholders in one report, an empty "secondary checks" section in another.</p>
   <p class="foot">Nothing enters docs/RESULTS.md without a tag.</p>
+</section>
+
+<section class="slide">
+  <h2>Beyond magic squares</h2>
+  <div class="cols">
+    <div>
+      <div class="box"><p><b>What the loop needs from a problem:</b> code or certificates to bind tools to; open targets that can be typed; a verification suite to absorb into.</p></div>
+      <div class="box"><p><b>What it validated today:</b> new, independently checked mathematics on a real open problem in one afternoon; its own mistakes caught (a false sharpening, an overflow guard, a quoted rank, two unfinished reports); everything reproducible from one command with hashes.</p></div>
+      <div class="box"><p><b>What it did not:</b> close a conjecture; run on a second paper.</p></div>
+    </div>
+    <div>
+      <div class="box"><p><b>Next instances:</b> the paper's other six targets (planner already emits them); quadratic Chabauty on the genus-2 quotient; any "proved for N ≤ N₀ by certificate" paper; any curve with a conjecturally complete point list; any "every solution has property X" hypothesis.</p></div>
+      <div class="box"><p><b>Manuscript v3</b> with the new theorem, propositions and lemma, authors Samiein and Wolinski, each addition tied to its evidence.</p></div>
+    </div>
+  </div>
 </section>
 
 <section class="slide">

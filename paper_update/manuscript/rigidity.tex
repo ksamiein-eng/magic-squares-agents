@@ -1,0 +1,214 @@
+\section{A conjecture: rational-circle rigidity}\label{sec:rigidity}
+
+Everything in this paper concerns the \emph{rational-circle relaxation}: an integer frequency matrix $A\in\Z^{4\times r}$
+satisfying the \emph{full-depth condition} that in every column at least three rows attain the column's maximal
+absolute value (the condition Lemma~\ref{lem:depth} forces for every primitive square; for a squarefree center it says
+that every coordinate is nonzero in at least three rows of a matrix with entries in $\{0,\pm1\}$), together with the
+question of whether a point of $T(\Q)^r$ is admissible for $A$ in the sense of Section~\ref{sec:introduction}. Two equations in $r$ parameters: the solution set has
+dimension $r-2$, finite for two parameters, curves for three, and surfaces for $r\ge4$. The results above suggest a
+single statement.
+
+\begin{conjecture}[Rational-circle rigidity]\label{conj:rigidity}
+For every $r\ge2$ and every full-depth configuration $A$, there is no admissible point of $T(\Q)^r$ for $A$.
+\end{conjecture}
+
+The conjecture is strictly stronger than the nonexistence of a primitive magic square of nine distinct squares: every
+such square yields a full-depth configuration and an admissible point of $T(\Q)^r$ (Lemma~\ref{lem:depth} and~\eqref{eq:areaangle}),
+and the conjecture discards the Gaussian-prime condition entirely. Theorem~\ref{thm:main-two} proves it for two parameters
+through exponent sum seven and Corollary~\ref{cor:parallelogram} for every parallelogram configuration, over the reals; for two parameters at all exponents the conjecture would give a purely trigonometric proof of the archive's theorem
+that no primitive square has a two-prime central root (Section~\ref{sec:prior}), a theorem presently proved only through the
+Gaussian-prime arithmetic;
+Conjecture~\ref{conj:points} is, by Theorem~\ref{thm:main-d1}, equivalent to its instance for the configuration D1, and by
+Corollary~\ref{cor:fourtargets} implies its instances for B2, C and E2. If the conjecture fails, the smallest $r$ at which it
+fails locates where the arithmetic of the circle points becomes essential: below that $r$ the obstruction to magic squares
+is trigonometric, and from that $r$ on it is arithmetic. The three-parameter cases being open, the first unexplored test is
+$r=4$, where the solution sets are surfaces. The two results of this section concern that case.
+
+\subsection{Four parameters at bounded height}
+
+Write $\tan(\chi_j/2)=[p_j:q_j]\in\PP(\Q)$ in lowest terms, with height $\max(|p_j|,|q_j|)$; thus $0=[0:1]$ and
+$\infty=[1:0]$ have height one, and correspond to $\chi_j=0$ and $\chi_j=\pi$.
+
+\begin{proposition}\label{prop:four}
+The $11{,}862$ four-element sets of nonzero vectors of $\{0,\pm1\}^4$ modulo sign that satisfy the full-depth condition
+form $113$ orbits under signed coordinate permutations. No such configuration admits an admissible point of $T(\Q)^4$ at
+which three of the four parameters $\tan(\chi_j/2)$ have projective height at most $4$.
+\end{proposition}
+
+\begin{proof}[Computer-assisted proof]
+For each orbit representative, each choice of a coordinate $j$, and each triple of values of the other parameters among the
+$24$ points of $\PP(\Q)$ of height at most $4$ (including $0$ and $\infty$), every row's sine is an integer linear form in
+$(\cos\chi_j,\sin\chi_j)$ once the positive common denominator is cleared. Each of the $48$ signed systems of
+Lemma~\ref{lem:roles} is two such linear equations, and three cases arise. If their determinant is nonzero, the unique
+solution is tested exactly against the unit circle. If the determinant vanishes but the equations are not both identically
+zero, the consistent cases reduce to a line meeting the circle, decided by an integer square-root test. If both equations
+vanish identically — which happens at $12{,}240$ of the $113\cdot4\cdot13{,}824\cdot48$ system evaluations, at parameter
+triples containing torsion values — the relations hold for \emph{every} value of $\chi_j$, and the four sines
+$A_rc+B_rs+C_r$ form a one-parameter family; such a family contains admissible points (all but finitely many) if and only if
+no coefficient triple $(A_r,B_r,C_r)$ vanishes and no two are equal up to sign, which is tested exactly, and in every
+occurrence the family is degenerate. Surviving points are tested for admissibility exactly. Since every admissible point has
+some three parameters in the grid for some ordering of the coordinates, and every configuration is a signed permutation of a
+representative, the sweep is complete for the stated height. It finds no admissible point; height $3$ was swept separately
+with the same outcome, and an earlier sweep of the finite chart at height $5$ (without $0,\infty$ and without the family
+branch) also found none. The code (\path{verification/four_prime/r4search.py}), its checkpoints, and unit tests —
+reconstruction of all four sines from the linear forms at $400$ random rational points, recovery of planted circle points,
+and the admissibility and singular branches — accompany the paper.
+\end{proof}
+
+A heuristic count predicts the opposite: a surface in four rational parameters should carry many rational points. The
+next result explains the absence for the most symmetric configuration.
+
+\subsection{The Hadamard solution surfaces are of general type}
+
+Let $A_{\mathrm H}$ be the Hadamard configuration with rows $(1,1,1,1),(1,1,-1,-1),(1,-1,1,-1),(1,-1,-1,1)$, and put
+\[
+\alpha=\chi_1+\chi_2,\quad \beta=\chi_3+\chi_4,\quad \gamma=\chi_1-\chi_2,\quad \delta=\chi_3-\chi_4,\qquad
+u=\gamma+\delta,\quad v=\gamma-\delta,
+\]
+so that $(s_0,s_1,s_2,s_3)=(\sin(\alpha+\beta),\sin(\alpha-\beta),\sin(\gamma+\delta),\sin(\gamma-\delta))$. In every signed
+system~\eqref{eq:roles} the two equations can be solved for $(s_2,s_3)$ as linear forms in $(s_0,s_1)$ — the coefficient
+block on $(s_2,s_3)$ is invertible in all three index patterns — so each system reads
+\begin{equation}\label{eq:bidouble}
+\sin u=F_1(\alpha,\beta),\qquad \sin v=F_2(\alpha,\beta),
+\end{equation}
+with $F_1,F_2\in\Q\sin(\alpha+\beta)+\Q\sin(\alpha-\beta)$. Up to the symmetries $u\mapsto-u$, $v\mapsto-v$,
+$u\leftrightarrow v$ and $\alpha\leftrightarrow\beta$, exactly four pairs $(F_1,F_2)$ occur:
+\[
+\begin{array}{cll}
+\text{(I)} & \sin\alpha\cos\beta, & \cos\alpha\sin\beta;\\
+\text{(II)} & 2\cos\alpha\sin\beta, & 2\sin\alpha\cos\beta;\\
+\text{(III)} & 2\cos\alpha\sin\beta, & 3\cos\alpha\sin\beta-\sin\alpha\cos\beta;\\
+\text{(IV)} & 2\cos\alpha\sin\beta, & \sin\alpha\cos\beta+3\cos\alpha\sin\beta .
+\end{array}
+\]
+
+\begin{theorem}[All Hadamard solution surfaces have general type]\label{thm:gentype}
+For each of the $48$ signed systems of $A_{\mathrm H}$, let $S\subset(\PP)^4$ be the closure of its solution set in the
+coordinates $\tan(\chi_j/2)$, and let $S''\subset(\PP)^4$ be the closure of~\eqref{eq:bidouble} in the coordinates
+$\tan(\alpha/2),\tan(\beta/2),\tan(u/2),\tan(v/2)$. Then:
+\begin{enumerate}
+\item $S''$ is the irreducible $(\Z/2)^2$-cover of $\PP\times\PP$ branched along $B_1=\{F_1=\pm1\}$ and
+$B_2=\{F_2=\pm1\}$, each of bidegree $(4,4)$, reduced, with no common component. Every component of $B_1\cup B_2$ has only
+ordinary nodes as singularities, the two components of each $B_i$ meet transversally, no three components pass through
+one point, the nodes of $B_1$ lie off $B_2$ and conversely, and every point of $B_1\cap B_2$ is either transversal or a
+simple tangency.
+\item Consequently $S''$ has only rational double points of type $A_1$, and its minimal resolution is a minimal surface of
+general type with
+\[
+p_g=11,\qquad q=0,\qquad K^2=32,\qquad \chi(\mathcal O)=12 .
+\]
+\item The change of angles is an isogeny of tori of degree $8$ and induces a dominant, generically finite rational map
+$S\dashrightarrow S''$ of degree $8$ (the induced map of the toric compactifications need not be a morphism), under which
+every two-dimensional component of $S$ dominates $S''$; hence every such component has Kodaira dimension~$2$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(1) In half-angle coordinates $(a,b,w,y)$, \eqref{eq:bidouble} becomes two equations of multidegrees $(2,2,2,0)$ and
+$(2,2,0,2)$; the first is the double cover $F_1w^2-2w+F_1=0$ of the $(a,b)$-plane, branched where its discriminant
+$4(1-F_1^2)$ vanishes, i.e.\ on $B_1$, and likewise for $B_2$. Each $\{F_i=\pm1\}$ clears to a polynomial of bidegree
+$(2,2)$. The fibre product of two irreducible double covers with distinct branch loci is irreducible. The geometry of the
+branch curves is a finite Gr\"obner-basis computation in all four affine charts of $\PP\times\PP$
+(\path{verification/four_prime/branchcheck.py}, \path{branchfine.py}), with the following outcome. Type~(I): each $(2,2)$
+component splits over $\Q(i)$ into two smooth $(1,1)$ curves, e.g.\ $(1+a^2)(1+b^2)-2a(1-b^2)=(1-a)^2+b^2(1+a)^2$, so
+$B_i$ is four rational curves with $2+2+8=12$ transversal nodes, and $B_1\cap B_2$ consists of $32$ transversal points.
+Type~(II): all four components are smooth curves of genus one; $B_1$ and $B_2$ each have $8$ transversal nodes, and
+$B_1\cap B_2$ consists of $16$ simple tangencies and no transversal points — the full intersection number
+$(4,4)\cdot(4,4)=32$ — at $\tan(\alpha/2),\tan(\beta/2)\in\{\pm1\pm\sqrt2\}$, i.e.\ at $\alpha,\beta\in\{\pm\pi/4,\pm3\pi/4\}$,
+where $\cos2\alpha=\cos2\beta=0$. Types~(III), (IV): the components of $B_1$
+are smooth of genus one, the components of $B_2$ split over $\Q(\sqrt2)$ into smooth $(1,1)$ curves (the coefficients
+$3\pm2\sqrt2=(1\pm\sqrt2)^2$ appear), all intersections within each $B_i$ are transversal nodes, the nodes lie off the other
+divisor, there are no triple points, and $B_1\cap B_2$ consists of $16$ transversal points and $8$ simple tangencies
+($16+2\cdot8=32$). In each type the counts were confirmed against the intersection number.
+
+(2) Local analysis of the cover $z^2=f$, $w^2=g$ over a point of the base: over a smooth point of one branch curve not on
+the other it is smooth; over a node of $B_1$ (resp.\ $B_2$) it is $z^2=xy$ on each of two sheets, an $A_1$ point; over a
+transversal point of $B_1\cap B_2$ it is $z^2=x$, $w^2=y$, smooth; and over a simple tangency, with $f=y$, $g=y-x^2$, it is
+$w^2-z^2+x^2=0$, again an $A_1$ point. Hence all singularities of $S''$ are canonical. The cover is a normal bidouble cover
+with branch data $D_1=B_1$, $D_2=B_2$, $D_3=0$; by Pardini's structure theorem for normal abelian covers~\cite{Pardini},
+$\pi_*\mathcal O_{S''}=\bigoplus_i\mathcal O(-L_i)$ with $2L_1=D_2$, $2L_2=D_1$, $2L_3=D_1+D_2$, so $L_1=L_2=(2,2)$ and
+$L_3=(4,4)$. Rational double points are rational and crepant, so the minimal resolution has
+\[
+p_g=\sum_{i=1}^{3}h^0\bigl(K_X+L_i\bigr)=h^0(\mathcal O)+h^0(\mathcal O)+h^0(\mathcal O(2,2))=1+1+9=11,\qquad
+q=\sum_{i=1}^{3}h^1(K_X+L_i)=0,
+\]
+\[
+K^2=4\bigl(K_X+\tfrac12(D_1+D_2)\bigr)^2=4\,(2,2)^2=32 .
+\]
+Independently, adjunction on the complete intersection gives $K_{S''}=\mathcal O(2,2,0,0)|_{S''}$, the pullback of an ample class
+under a finite map and hence ample, with $K^2=(2h_1+2h_2)^2(2h_1+2h_2+2h_3)(2h_1+2h_2+2h_4)=32$, and the Koszul resolution
+gives $\chi(\mathcal O_{S''})=1-(-1)-(-1)+9=12=1-q+p_g$. Ampleness of $K$ on the singular model shows the resolution is
+minimal; Noether's inequality $2p_g-4\le K^2\le 9\chi$ reads $18\le32\le108$~\cite{BHPV}.
+
+(3) The change of angles $\chi\mapsto(\alpha,\beta,\gamma,\delta)$ has determinant $4$ and $(\gamma,\delta)\mapsto(u,v)$
+has determinant $2$; on the tori this is an isogeny of degree $8$, so the induced rational map $S\dashrightarrow S''$ is
+dominant and generically finite of degree $8$, and every surface component of $S$ dominates the irreducible surface $S''$.
+Kodaira dimension does not decrease under a dominant generically finite rational map (resolve the indeterminacy and apply
+the statement for morphisms).
+\end{proof}
+
+\begin{corollary}
+Under the Bombieri--Lang conjecture~\cite{Lang}, every component of every Hadamard solution surface has only finitely many
+rational points outside finitely many curves. This is consistent with Proposition~\ref{prop:four} and with
+Conjecture~\ref{conj:rigidity}; it proves neither.
+\end{corollary}
+
+\subsection{Two further hypotheses}
+
+Conjecture~\ref{conj:rigidity} asserts emptiness, which is far stronger than what the geometry suggests: for a surface or
+higher-dimensional variety of general type, the Bombieri--Lang conjecture predicts only that rational points are not
+Zariski dense. We therefore record the statement that the geometry supports directly, and a structural hypothesis about
+where the rational points that do exist are located.
+
+\begin{conjecture}[Weak form]\label{conj:weak}
+For every full-depth configuration, the admissible points of $T(\Q)^r$ are not Zariski dense in any component of the
+solution variety. By Bombieri--Lang this holds for every component of general type, in particular for every component in
+Theorem~\ref{thm:gentype}.
+\end{conjecture}
+
+Every rational point of a solution variety found in this paper lies on a \emph{torsion coset}: the eight points of $K$
+on $\mathcal C$ have $\alpha,\beta,\gamma\in\{0,\pm\pi/2,\pi\}$; the trivial sieve classes in the extended record are
+torsion points; and all $12{,}240$ free-angle families in the height-$4$ sweep occur at parameter triples containing a
+torsion value. The torsion of $T(\Q)$ is $\{\pm1,\pm i\}$, and a rational point of $T(\Q)^r$ whose coordinates are
+multiplicatively independent lies on no proper subtorus coset, so the following is a genuine restriction.
+
+\begin{conjecture}[Torsion-coset hypothesis]\label{conj:torsion}
+For every full-depth configuration, every rational-circle point of its solution variety satisfies a nontrivial relation
+$\prod_j z_j^{\,n_j}\in\{\pm1,\pm i\}$ with $(n_j)\in\Z^r\setminus\{0\}$; that is, the rational points lie on
+finitely many torsion cosets of proper subtori.
+\end{conjecture}
+
+The hypothesis has an inductive consequence. If the relation has some coefficient $n_j=\pm1$, eliminating $\chi_j$
+turns the configuration into one in $r-1$ parameters, with integer entries of larger absolute value in general, so
+Conjecture~\ref{conj:rigidity} for $r$ would follow from Conjecture~\ref{conj:torsion} for $r$ together with
+Conjecture~\ref{conj:rigidity} for $r-1$; relations with all $|n_j|\ge2$ instead pass to a finite cover. In this sense
+the torsion-coset hypothesis would reduce rigidity in all dimensions to the three-parameter cases, of which D1 — the
+completeness of $K$ — is the first. It is also the mechanism by which a search finds nothing: the rational points that
+the equations do admit sit on degenerate loci where two sine magnitudes coincide identically. We offer it as the
+hypothesis whose confirmation or refutation would most change the picture.
+
+\subsection{Evidence for the torsion-coset hypothesis and a degeneracy-rank lemma (22 October 2026)}\label{sec:torsionprobe}
+The sweep of Proposition~\ref{prop:four} was re-instrumented to record \emph{every} exact solution of the $48$ signed systems, admissible or not, for all $113$ orbits, all four choices of solved coordinate, and all triples of the other parameters of projective height at most $H$, and each solution was tested for Conjecture~\ref{conj:torsion} by a complete criterion: with $\tan(\chi_j/2)=p_j/q_j$ one has $z_j=(q_j+ip_j)/(q_j-ip_j)$, whose image in $\Q(i)^\times/\{\pm1,\pm i\}$ is determined by the Gaussian-prime factorisation of $q_j+ip_j$; a relation $\prod z_j^{n_j}\in\{\pm1,\pm i\}$ exists if and only if the four exponent vectors are linearly dependent, and the rank of these vectors (the \emph{exponent rank}) is computed exactly.
+
+\begin{proposition}\label{prop:torsiondata}
+At $H=3$ there are $273{,}024$ distinct rational points of the solution varieties, and at $H=4$ there are $662{,}528$. Every one of them satisfies a nontrivial relation $\prod z_j^{n_j}\in\{\pm1,\pm i\}$; none is admissible; every one has a vanishing sine and two sines of equal magnitude. The exponent rank is at most $2$ at $H=3$; at $H=4$ it equals $3$ for $13{,}824$ points, all in two orbits.
+\end{proposition}
+The rank-three points refute the sharper statement, suggested by the $H\le3$ data, that every rational point lies on a torsion coset of a subtorus of dimension at most two. They are explained by the following elementary lemma.
+
+\begin{lemma}[Degeneracy relations]\label{lem:degrel}
+Let $z\in T(\Q)^r$ and $s_j=\sin(A_j\cdot\chi)$. If $s_r=0$ then $\prod_j z_j^{A_{rj}}=\pm1$. If $|s_i|=|s_k|$ with $i\ne k$ then $\prod_j z_j^{A_{ij}-A_{kj}}=\pm1$ or $\prod_j z_j^{A_{ij}+A_{kj}}=\pm1$, with a nonzero exponent vector because the rows are distinct projective vectors. Consequently every rational point with a vanishing sine or two sines of equal magnitude satisfies Conjecture~\ref{conj:torsion}; a point with both degeneracies has exponent rank at most $3$, with equality only if $A_i\pm A_k$ is a rational multiple of the vanishing row $A_r$.
+\end{lemma}
+\begin{proof}
+$s_r=0$ means $A_r\cdot\chi\in\pi\Z$, and $|s_i|=|s_k|$ means $A_i\cdot\chi\equiv\pm A_k\cdot\chi\pmod\pi$; exponentiate. Two independent relations lower the rank to at most $2$.
+\end{proof}
+The parallel-triple condition of the lemma holds for exactly $23$ of the $113$ orbit representatives, and the two orbits that carry rank-three points at $H=4$ are among them; every recorded rank-three point has a vanishing row parallel to the sum or difference of its two equal-magnitude rows. The remaining $21$ orbits are a prediction for larger heights. The lemma also shows that Conjecture~\ref{conj:rigidity} implies Conjecture~\ref{conj:torsion} for every solution-variety point that fails admissibility through a vanishing sine or coinciding magnitudes; the only other failure mode, $a=2b$, yields no monomial relation and was never observed. The code, the per-orbit counts and the twenty recorded rank-three examples are in the companion repository.
+
+Theorem~\ref{thm:gentype} shows that the general-type behaviour Bremner~\cite{Bremner2001} and
+Bruin--Thomas--V\'arilly-Alvarado~\cite{BTV} established for the magic-square surface is already present in the trigonometric
+relaxation, with the Gaussian-prime arithmetic removed. The decoupling that makes the proof elementary — the rows pair into
+$\{v_0,v_1\}$ and $\{v_2,v_3\}$ with $v_0\pm v_1$ and $v_2\pm v_3$ supported on complementary coordinate pairs — is special
+to the Hadamard configuration. For a general full-depth configuration the two relations are divisors of multidegree $(2,2,2,2)$ in $(\PP)^4$; whenever
+they have no common component the solution surface is their complete intersection, adjunction gives
+$K_S=\mathcal O(2,2,2,2)|_S$, which is ample, and the surface is of general type whenever its singularities are canonical. Verifying that for the other $112$ orbits, and
+locating any configuration whose surface is instead rational — which would be a direct route to a rational-circle solution
+and would refute Conjecture~\ref{conj:rigidity} — is the natural continuation.
