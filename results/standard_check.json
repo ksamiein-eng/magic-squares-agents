@@ -1,0 +1,68 @@
+{
+ "standard": "STANDARD.md v0.1",
+ "checked": "2026-10-22T23:02:05",
+ "passed": 10,
+ "total": 10,
+ "requirements": [
+  {
+   "id": "R1",
+   "title": "tagged claims",
+   "passed": true,
+   "detail": "11 ledger entries, untagged: none; tag_lint passed"
+  },
+  {
+   "id": "R2",
+   "title": "producer/checker separation",
+   "passed": true,
+   "detail": "3 checker reports; checkers importing a producer: none"
+  },
+  {
+   "id": "R3",
+   "title": "fresh referee with reruns",
+   "passed": true,
+   "detail": "2 verdict file(s); each names reruns: True"
+  },
+  {
+   "id": "R4",
+   "title": "one-command reproduction",
+   "passed": true,
+   "detail": "verify_findings_latest.json: 6/6 stages pass; verify_paper_plus_latest.json: 7/7 stages pass"
+  },
+  {
+   "id": "R5",
+   "title": "paper's suite is the source of truth (original hashes unchanged, overlay registered)",
+   "passed": true,
+   "detail": "394 hashed files checked, mismatches: none; overlay: True"
+  },
+  {
+   "id": "R6",
+   "title": "verbatim traces with hashes",
+   "passed": true,
+   "detail": "11 runs in provenance; missing none; stale hashes none; traces not in provenance none"
+  },
+  {
+   "id": "R7",
+   "title": "claim map",
+   "passed": true,
+   "detail": "16 claims; rows with empty cells: none"
+  },
+  {
+   "id": "R8",
+   "title": "versioned history with corrections",
+   "passed": true,
+   "detail": "history present; correction mentions: 10"
+  },
+  {
+   "id": "R9",
+   "title": "formalization status per result",
+   "passed": true,
+   "detail": "5 entries with status: ['candidate', 'not-applicable']"
+  },
+  {
+   "id": "R10",
+   "title": "disclosure, licence, citation",
+   "passed": true,
+   "detail": "disclosure in manuscript: True; LICENSE: True; CITATION.cff: True"
+  }
+ ]
+}

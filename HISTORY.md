@@ -28,6 +28,7 @@ in git history; corrections are recorded here rather than silently overwritten (
 | 21:35 | — | Iteration 3 sum-10 certificate: 181 cases, 8,688 systems, strict checker PASS 1,309 s; witness prime 23 first needed (paper sentence updated); 174 MB certificate not stored (regenerable) | — |
 | 22:1x | — | Overlay suite rerun: seven agent stages (sum 8, 9, 10; point-hunter self-test; torsion probe; quotient structure; degeneracy lemma) all pass; lint and provenance regenerated | — |
 | 22:40 | — | Submission-only material (deck, slides, post text, video script, one-page HTML, cover images and their generator scripts) removed from the repository; README rewritten around verification, architecture, results and the paper | — |
+| 23:05 | — | `STANDARD.md` v0.1 (ten requirements) and `tools/standard_check.py` added | **Correction found by the checker:** `paper/verification_runs/paper_checks.json`, a run report inside the shipped paper package, had been overwritten by a direct run of `check_paper.py` at the start of the day (all proof records were untouched; the paper's SHA256SUMS flagged only this file). Restored byte-identically from the original package; agents and tools now only write run reports to temporary copies |
 
 ## Standing caveats
 

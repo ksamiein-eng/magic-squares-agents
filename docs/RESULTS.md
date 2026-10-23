@@ -185,6 +185,16 @@ torsion coset, 0 admissible, 0 of type (iii), every point has a vanishing sine; 
 (156,672) occur in exactly the two orbits seen at height 4, both inside the 23 candidates
 [SEARCH-EVIDENCE, `agents/torsion_coset_probe/results/torsion_coset_H5_summary.json`].
 
+## A standard, extracted from the practice
+
+`STANDARD.md` (v0.1) turns the above into ten requirements any AI-assisted paper can meet and a
+checker (`tools/standard_check.py`) that verifies a repository against them from file shapes and
+hashes alone: tagged claims, producer/checker separation, a fresh referee that reruns, one-command
+reproduction, the paper's own suite as source of truth, verbatim traces with hashes, a claim map,
+history with corrections, formalization status, disclosure and licences. This repository passes
+10/10; the checker's first run found one violation of its own (an overwritten run report inside
+the shipped package), which was restored and recorded.
+
 ## Infrastructure
 
 The open-problem ledger types each target and names its playbook; the playbooks are

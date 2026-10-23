@@ -11,6 +11,8 @@ one addition per family: its evidence tag and its formalization status.
 | R4 | Trichotomy on a signed system; vanishing-sine rigidity conjecture | §9.x, Thm, Conj. | coordinator | `agents/torsion_coset_probe/results/torsion_coset_H4_summary.json` (`points_by_degeneracy`) | second skeptic pass (iteration 3) | PROVED (theorem); CONJECTURAL (hypothesis) | not formalized (candidate: elementary real-analysis statement, well suited to Lean) |
 | R5 | No rational point on C with height ≤ 10⁶ outside the known eight; none on D to 3·10⁵ | §8, final paragraph | point-hunter | `agents/point_hunter/results/search_results.json` | overlay stage `genus5_point_hunter_selftest` | SEARCH-EVIDENCE | not applicable |
 
+Standard: `STANDARD.md` (ten requirements) and `tools/standard_check.py` (`results/standard_check.json`).
+
 Supporting material: `traces/` (verbatim agent transcripts, all runs), `CLAIM_MAP.md` (claim → trace turn →
 re-check command), `ledger/` (open problems and attacks), `playbooks/` (strategies), `PROVENANCE.json` and
 `SHA256SUMS` (hashes), `HISTORY.md` (versions and corrections), `results/skeptic_verdict*.md` (referee passes),

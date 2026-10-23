@@ -11,6 +11,18 @@ far it goes.
 
 Authors: Kimia Samieinejad, Jonathan Wolinski. Built with Paper2Agent (Miao, Davis, Zhang, Pritchard, Zou, *Nature* 2026).
 
+## The standard
+
+[`STANDARD.md`](STANDARD.md) states, as ten checkable requirements, what this repository does so that
+a reader can trust an AI-assisted result without trusting the author or the model: tagged claims
+with a fixed vocabulary, producer/checker separation, a fresh referee that reruns, one-command
+reproduction, the paper's own suite as the source of truth, verbatim traces with hashes, a claim
+map, a history with every correction, formalization status per result, and disclosure with licences
+and citation. `python tools/standard_check.py` verifies a repository against it and writes
+`results/standard_check.json`; this repository passes 10/10, after the checker itself caught one
+violation (a run report inside the shipped paper package had been overwritten; restored, recorded
+in `HISTORY.md`). The standard is meant to be reused: the checker reads only file shapes and hashes.
+
 ## Results
 
 | Target in the paper | Before | After | Evidence tag | Where |

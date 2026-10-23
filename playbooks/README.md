@@ -18,3 +18,5 @@ the ledger names the problem type, the type names the playbook, the playbook nam
 The loop: **convert** (Paper2MCP) → **ledger** (extract open problems with types) → **attack**
 (one agent per playbook, in parallel) → **referee** (tags) → **absorb** (new stages in the paper's
 own verification suite, ledger updated) → **iterate** (each playbook's `next` is a concrete command).
+
+The requirements the loop must leave behind are in `STANDARD.md`; `tools/standard_check.py` verifies them.

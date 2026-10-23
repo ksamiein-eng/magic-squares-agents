@@ -87,7 +87,7 @@
       ]
     }
   ],
-  "sympy_version": "1.13.1",
+  "sympy_version": "1.14.0",
   "scope": "Article consistency and selected exact identities, not a substitute for the main certificate verifiers.",
   "paper_sha256": "e01665d81d3e6ed55e4b17fab088578463c023b749f1c2d1c6b358028c3bd014"
 }
