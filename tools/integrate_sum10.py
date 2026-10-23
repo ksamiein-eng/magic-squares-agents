@@ -17,6 +17,8 @@ def tex(n):
 
 def edit(rel, pairs):
     p = ROOT / rel
+    if not p.exists():
+        return
     s = p.read_text(encoding="utf-8")
     for old, new in pairs:
         if new in s:

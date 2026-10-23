@@ -27,6 +27,7 @@ in git history; corrections are recorded here rather than silently overwritten (
 | 20:50 | — | Iteration 3 height-5 probe complete: 1,916,672 points, all type (i), 0 admissible, 0 type (iii); rank-3 orbits still {0, 54} ⊂ 23 candidates | — |
 | 21:35 | — | Iteration 3 sum-10 certificate: 181 cases, 8,688 systems, strict checker PASS 1,309 s; witness prime 23 first needed (paper sentence updated); 174 MB certificate not stored (regenerable) | — |
 | 22:1x | — | Overlay suite rerun: seven agent stages (sum 8, 9, 10; point-hunter self-test; torsion probe; quotient structure; degeneracy lemma) all pass; lint and provenance regenerated | — |
+| 22:40 | — | Submission-only material (deck, slides, post text, video script, one-page HTML, cover images and their generator scripts) removed from the repository; README rewritten around verification, architecture, results and the paper | — |
 
 ## Standing caveats
 

@@ -7,7 +7,7 @@ The following parts of this repository are NOT covered by the MIT License in LIC
   paper/            the research paper "Rational-circle rigidity for magic squares of squares"
                     (version 2) and its verification tree
   paper_update/     version 3 of the manuscript and its PDF
-  docs/RESULTS.md, docs/RESULTS.html, docs/slides.html, docs/VIDEO_SCRIPT.md, docs/POST.md
+  docs/RESULTS.md, docs/GENERALIZATION.md
   traces/           verbatim agent transcripts
 
 They are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0

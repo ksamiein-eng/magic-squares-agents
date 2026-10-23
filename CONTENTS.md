@@ -14,4 +14,4 @@ one addition per family: its evidence tag and its formalization status.
 Supporting material: `traces/` (verbatim agent transcripts, all runs), `CLAIM_MAP.md` (claim → trace turn →
 re-check command), `ledger/` (open problems and attacks), `playbooks/` (strategies), `PROVENANCE.json` and
 `SHA256SUMS` (hashes), `HISTORY.md` (versions and corrections), `results/skeptic_verdict*.md` (referee passes),
-`paper_update/paper_v3.pdf` (the manuscript), `docs/RESULTS.html` (one page), `docs/FULL_REPORT.html`.
+`paper_update/paper_v3.pdf` (the manuscript), `docs/RESULTS.md` (the full report), `docs/GENERALIZATION.md` (the method beyond this instance).

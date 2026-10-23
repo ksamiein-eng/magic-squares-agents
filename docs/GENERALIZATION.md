@@ -8,15 +8,15 @@ needs from a problem, and what it validated on this instance:
 |---|---|---|
 | Convert (Paper2MCP) | a paper with a code or certificate tree to bind tools to | 14 tools bound to a 251-file verification tree; all paper stages pass |
 | Ledger | open targets that can be *typed*: certificate-extension, bounded-search, hypothesis-probe, structural | six targets typed; three advanced, one re-positioned |
-| Playbooks | a repeatable strategy per type with an acceptance criterion | each playbook ran twice (iterations 1 and 2) with the same code |
+| Playbooks | a repeatable strategy per type with an acceptance criterion | the certificate and probe playbooks ran three times (iterations 1–3) with the same code |
 | Referee contract | claims that can be reproduced by a fresh agent | skeptic reran one computation per specialist; linter enforces tags mechanically |
 | Absorb | a verification suite the results can be appended to | `verify_paper_plus.py`: 16 paper stages + 6 agent stages, all passing |
-| Iterate | a planner that reads the ledger and emits the next command | iteration 2 ran from `propose_next_attack`; it refuted iteration 1's sharpening, and the failure became a lemma |
+| Iterate | a planner that reads the ledger and emits the next command | iterations 2 and 3 ran from `propose_next_attack`; iteration 2 refuted iteration 1's sharpening, and the failure became a lemma; iteration 3 confirmed the lemma's prediction at height 5 and certified sum 10 |
 
 ## What "validated" means here, and what it does not
 
 Validated: the loop produced new, independently checked mathematics on a real open problem in
-one afternoon (a theorem extended twice; an obstruction located; a structural lemma); it
+48 hours and three iterations (a theorem extended three times; an obstruction located; a structural lemma and a trichotomy); it
 caught its own mistakes (a false sharpening, an overflow guard, a database rank used as a
 proof, two unfinished reports); and every claim is reproducible from one command with a
 hash-backed provenance trail. Not validated: the loop has not closed a conjecture, has run on

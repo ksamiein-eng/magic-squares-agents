@@ -23,5 +23,5 @@ SOFTWARE.
 This license covers the software in this repository: paper_mcp/, agents/*/*.py,
 orchestrator/, tools/, playbooks/, ledger/, paper_overlay/, verify_findings.py,
 verify_paper_plus.py and the Claude Code agent and skill definitions. The research
-paper and its proof records (paper/, paper_update/), the write-up (docs/RESULTS.md,
-docs/RESULTS.html) and the agent transcripts (traces/) are covered by LICENSE-PAPER.
+paper and its proof records (paper/, paper_update/), the report (docs/RESULTS.md,
+docs/GENERALIZATION.md) and the agent transcripts (traces/) are covered by LICENSE-PAPER.

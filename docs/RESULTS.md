@@ -1,7 +1,7 @@
-# Rigidity Lab — a validated loop for AI on hard open problems (instance: magic squares of squares)
+# Rigidity Lab — full report (instance: magic squares of squares)
 
-**OSI Hackathon 2026 · physical sciences & mathematics · 22 October 2026**
-Repository: https://github.com/ksamiein-eng/magic-squares-agents · Figure: `docs/figure.svg`
+**Kimia Samieinejad, Jonathan Wolinski · 22 October 2026 · built during the OSI Hackathon 2026 (48 hours)**
+Repository: https://github.com/ksamiein-eng/magic-squares-agents · Architecture figure: `docs/figure.svg`
 
 Evidence tags, assigned by the skeptic agent after rerunning one computation per specialist:
 **[PROVED]** in the paper with a verification stage · **[MACHINE-VERIFIED]** rerun in this project ·
@@ -208,8 +208,7 @@ Conjecture 7.3 did not move, but its obstruction is now precise: three rank-1 el
 quotients identified, so the next step is quadratic Chabauty, not descent. Conjecture 8.6
 gained its first systematic evidence (273,024 points at height 3, 662,528 at height 4, no
 exception); a sharper form proposed after height 3 was refuted at height 4, which is the loop
-working as intended. The empty region on C grew from height 1,500 to 1,000,000. Each of these
-took one specialist under 20 minutes of compute; the paper's proof records were not touched.
+working as intended. The empty region on C grew from height 1,500 to 1,000,000. Three iterations of the loop ran within the hackathon's 48 hours; the paper's proof records were not touched.
 
 ## Audit trail
 

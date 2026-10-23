@@ -70,10 +70,11 @@ s = s.replace("| Empty region on the genus-5 curve |", "| Trichotomy and vanishi
 p.write_text(s, encoding="utf-8")
 
 p = ROOT / "docs" / "slides.html"
-s = p.read_text(encoding="utf-8")
+s = p.read_text(encoding="utf-8") if p.exists() else ""
 s = s.replace('<div class="box"><p><b>From the failure, a lemma.</b>',
               '<div class="box"><p><b>Trichotomy.</b> On a signed system the magnitudes are forced to be {A, B, A+B, A−B}, so a rational solution is admissible, has a vanishing sine, or has A = 2B. All 935,552 recorded points have a vanishing sine. One hypothesis, <b>vanishing-sine rigidity</b>, now implies both conjectures and names the next search: A = 2B points. <span class="tag PROVED">PROVED</span> <span class="tag SE">SEARCH-EVIDENCE</span></p></div>\n  <div class="box"><p><b>From the failure, a lemma.</b>', 1)
-p.write_text(s, encoding="utf-8")
+if s:
+    p.write_text(s, encoding="utf-8")
 
 p = ROOT / "ledger" / "open_problems.json"
 d = json.loads(p.read_text(encoding="utf-8"))
