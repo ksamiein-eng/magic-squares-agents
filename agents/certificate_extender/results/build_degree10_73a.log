@@ -28,3 +28,35 @@
 [20:35:21]   73_m1_nminus2 system 23: res 0.3s factor 1.3s deg 166
 [20:35:47]   73_m1_nminus2 system 31: res 0.3s factor 3.5s deg 166
 [20:38:29]   73_m1_nminus2 system 39: res 0.3s factor 4.1s deg 166
+[20:38:55]   73_m1_nminus2 system 47: res 0.3s factor 3.1s deg 166
+[20:38:55] done 73_m1_nminus2 systems 48 seconds 337.784 unresolved 0
+[20:38:55] start 73_m2_n1
+[20:39:06]   73_m2_n1 system 7: res 0.5s factor 0.3s deg 166
+[20:39:12]   73_m2_n1 system 15: res 0.3s factor 0.6s deg 166
+[20:39:17]   73_m2_n1 system 23: res 0.4s factor 0.2s deg 166
+[20:39:22]   73_m2_n1 system 31: res 0.3s factor 0.3s deg 166
+[20:39:33]   73_m2_n1 system 39: res 0.7s factor 0.8s deg 166
+[20:39:42]   73_m2_n1 system 47: res 0.5s factor 0.4s deg 166
+[20:39:42] done 73_m2_n1 systems 48 seconds 46.504 unresolved 0
+[20:39:42] start 73_m2_nminus1
+[20:39:47]   73_m2_nminus1 system 7: res 0.3s factor 0.2s deg 166
+[20:39:54]   73_m2_nminus1 system 15: res 0.3s factor 1.1s deg 166
+[20:40:03]   73_m2_nminus1 system 23: res 0.6s factor 0.9s deg 166
+[20:40:16]   73_m2_nminus1 system 31: res 0.7s factor 0.9s deg 166
+[20:40:28]   73_m2_nminus1 system 39: res 0.7s factor 0.5s deg 166
+[20:40:39]   73_m2_nminus1 system 47: res 0.7s factor 0.5s deg 166
+[20:40:40] done 73_m2_nminus1 systems 48 seconds 57.582 unresolved 0
+[20:40:40] start 73_m2_n2
+[20:41:03]   73_m2_n2 system 7: res 0.3s factor 2.4s deg 166
+[20:41:38]   73_m2_n2 system 15: res 0.6s factor 6.3s deg 166
+[20:42:32]   73_m2_n2 system 23: res 0.7s factor 3.0s deg 166
+[20:43:14]   73_m2_n2 system 31: res 0.7s factor 4.3s deg 166
+[20:43:48]   73_m2_n2 system 39: res 0.3s factor 2.3s deg 166
+[20:44:02]   73_m2_n2 system 47: res 0.3s factor 1.1s deg 166
+[20:44:03] done 73_m2_n2 systems 48 seconds 202.758 unresolved 0
+[20:44:03] start 73_m2_nminus2
+[20:44:55]   73_m2_nminus2 system 7: res 0.3s factor 1.6s deg 166
+[20:45:30]   73_m2_nminus2 system 15: res 0.3s factor 4.2s deg 166
+[20:45:55]   73_m2_nminus2 system 23: res 0.2s factor 2.4s deg 166
+[20:46:24]   73_m2_nminus2 system 31: res 0.2s factor 2.7s deg 166
+[20:46:52]   73_m2_nminus2 system 39: res 0.2s factor 2.5s deg 166

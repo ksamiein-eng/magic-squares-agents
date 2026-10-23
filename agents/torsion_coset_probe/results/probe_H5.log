@@ -12,3 +12,444 @@ orbit  27 (9/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 0), (1, -1, 1
 orbit  86 (10/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, -1)]: 47456 points {'all_torsion': 128, 'on_torsion_coset': 47328} ranks {0: 128, 1: 13024, 2: 34304}, 272 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 47456, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26351656160, brute 4/4, 131.5s, wall 284s
 orbit  21 (11/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 1)]: 23712 points {'all_torsion': 128, 'on_torsion_coset': 23584} ranks {0: 128, 1: 7712, 2: 15872}, 640 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 23712, 'ii': 0, 'iii': 0}, counterex 0, maxdet 19710604080, brute 4/4, 52.0s, wall 298s
 orbit  28 (12/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 0), (1, 1, -1, 1)]: 11968 points {'all_torsion': 192, 'on_torsion_coset': 11776} ranks {0: 192, 1: 11776}, 128 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 11968, 'ii': 0, 'iii': 0}, counterex 0, maxdet 11423000160, brute 4/4, 28.6s, wall 299s
+orbit  26 (13/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 0, 0)]: 11456 points {'all_torsion': 192, 'on_torsion_coset': 11264} ranks {0: 192, 1: 11264}, 128 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 11456, 'ii': 0, 'iii': 0}, counterex 0, maxdet 14932803600, brute 4/4, 22.8s, wall 321s
+orbit  44 (14/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 0, 1)]: 18560 points {'all_torsion': 128, 'on_torsion_coset': 18432} ranks {0: 128, 1: 6528, 2: 11904}, 640 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 18560, 'ii': 0, 'iii': 0}, counterex 0, maxdet 15937292040, brute 4/4, 46.1s, wall 330s
+orbit  36 (15/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, 0, 0)]: 9024 points {'on_torsion_coset': 8832, 'all_torsion': 192} ranks {1: 8832, 0: 192}, 128 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 9024, 'ii': 0, 'iii': 0}, counterex 0, maxdet 11030856480, brute 4/4, 17.3s, wall 347s
+orbit  49 (16/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, -1, 1, -1)]: 18560 points {'all_torsion': 128, 'on_torsion_coset': 18432} ranks {0: 128, 1: 6528, 2: 11904}, 640 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 18560, 'ii': 0, 'iii': 0}, counterex 0, maxdet 15937292040, brute 4/4, 55.4s, wall 354s
+orbit   9 (17/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 15136 points {'all_torsion': 96, 'on_torsion_coset': 15040} ranks {0: 96, 1: 5568, 2: 9472}, 480 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 15136, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 48.2s, wall 369s
+orbit   7 (18/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 0), (1, 1, -1, 1)]: 10592 points {'all_torsion': 192, 'on_torsion_coset': 10400} ranks {0: 192, 1: 10400}, 128 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 10592, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 23.1s, wall 371s
+orbit  41 (19/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 0, 0)]: 50848 points {'all_torsion': 192, 'on_torsion_coset': 50656} ranks {0: 192, 1: 18912, 2: 31744}, 1088 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 50848, 'ii': 0, 'iii': 0}, counterex 0, maxdet 11423000160, brute 4/4, 107.1s, wall 375s
+orbit  35 (20/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 8768 points {'on_torsion_coset': 8640, 'all_torsion': 128} ranks {1: 8640, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 8768, 'ii': 0, 'iii': 0}, counterex 0, maxdet 17134500240, brute 4/4, 25.1s, wall 379s
+orbit  24 (21/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, 1)]: 8096 points {'on_torsion_coset': 7968, 'all_torsion': 128} ranks {1: 7968, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 8096, 'ii': 0, 'iii': 0}, counterex 0, maxdet 19710604080, brute 4/4, 21.8s, wall 391s
+orbit  12 (22/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 12480 points {'all_torsion': 96, 'on_torsion_coset': 12384} ranks {0: 96, 1: 4448, 2: 7936}, 480 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12480, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25434843720, brute 4/4, 27.9s, wall 403s
+orbit  33 (23/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, -1)]: 6144 points {'on_torsion_coset': 6016, 'all_torsion': 128} ranks {1: 6016, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 6144, 'ii': 0, 'iii': 0}, counterex 0, maxdet 17134500240, brute 4/4, 14.7s, wall 406s
+orbit  18 (24/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 1)]: 12480 points {'all_torsion': 96, 'on_torsion_coset': 12384} ranks {0: 96, 1: 4448, 2: 7936}, 480 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12480, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26351656160, brute 4/4, 40.9s, wall 412s
+orbit  22 (25/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, -1)]: 7936 points {'on_torsion_coset': 7808, 'all_torsion': 128} ranks {1: 7808, 0: 128}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 7936, 'ii': 0, 'iii': 0}, counterex 0, maxdet 21745152000, brute 4/4, 12.8s, wall 416s
+orbit  20 (26/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 12480 points {'all_torsion': 96, 'on_torsion_coset': 12384} ranks {0: 96, 1: 4448, 2: 7936}, 480 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12480, 'ii': 0, 'iii': 0}, counterex 0, maxdet 22606088000, brute 4/4, 39.6s, wall 419s
+orbit  54 (27/113) rows=[(0, 0, 1, -1), (1, -1, -1, 1), (1, -1, 0, 0), (1, -1, 1, -1)]: 249600 points {'all_torsion': 192, 'on_torsion_coset': 249408} ranks {0: 192, 1: 30656, 2: 140416, 3: 78336}, 12800 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 249600, 'ii': 0, 'iii': 0}, counterex 0, maxdet 11423000160, brute 4/4, 435.2s, wall 441s
+orbit  73 (28/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 1)]: 7904 points {'on_torsion_coset': 7776, 'all_torsion': 128} ranks {1: 7776, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 7904, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27072711680, brute 4/4, 25.5s, wall 442s
+orbit 111 (29/113) rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 1)]: 13952 points {'all_torsion': 128, 'on_torsion_coset': 13824} ranks {0: 128, 1: 13824}, 0 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 13952, 'ii': 0, 'iii': 0}, counterex 0, maxdet 21745152000, brute 4/4, 41.2s, wall 447s
+orbit  11 (30/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1)]: 18560 points {'all_torsion': 128, 'on_torsion_coset': 18432} ranks {0: 128, 1: 6528, 2: 11904}, 640 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 18560, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 39.9s, wall 459s
+orbit  85 (31/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 0, 1, 1)]: 12480 points {'all_torsion': 96, 'on_torsion_coset': 12384} ranks {0: 96, 1: 4448, 2: 7936}, 320 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12480, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25205788120, brute 4/4, 21.5s, wall 463s
+orbit   8 (32/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 6560 points {'on_torsion_coset': 6432, 'all_torsion': 128} ranks {1: 6432, 0: 128}, 96 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 6560, 'ii': 0, 'iii': 0}, counterex 0, maxdet 24997680320, brute 4/4, 26.3s, wall 468s
+orbit  90 (33/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, -1, -1)]: 15136 points {'all_torsion': 96, 'on_torsion_coset': 15040} ranks {0: 96, 1: 5568, 2: 9472}, 320 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 15136, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26347119880, brute 4/4, 30.5s, wall 478s
+orbit  38 (34/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, -1)]: 10304 points {'all_torsion': 128, 'on_torsion_coset': 10176} ranks {0: 128, 1: 7104, 2: 3072}, 96 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 10304, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 13.8s, wall 491s
+orbit  29 (35/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0)]: 26048 points {'all_torsion': 128, 'on_torsion_coset': 25920} ranks {0: 128, 1: 9408, 2: 16512}, 640 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 26048, 'ii': 0, 'iii': 0}, counterex 0, maxdet 15937292040, brute 4/4, 34.5s, wall 502s
+orbit  55 (36/113) rows=[(0, 0, 1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, 1)]: 35232 points {'all_torsion': 128, 'on_torsion_coset': 35104} ranks {0: 128, 1: 11296, 2: 23808}, 640 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 35232, 'ii': 0, 'iii': 0}, counterex 0, maxdet 15187196220, brute 4/4, 100.7s, wall 513s
+orbit  76 (37/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 1, -1)]: 7136 points {'all_torsion': 128, 'on_torsion_coset': 7008} ranks {0: 128, 1: 7008}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 7136, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27072711680, brute 4/4, 24.6s, wall 516s
+orbit  71 (38/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 5920 points {'on_torsion_coset': 5792, 'all_torsion': 128} ranks {1: 5792, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 5920, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27072711680, brute 4/4, 14.5s, wall 517s
+orbit  46 (39/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, 1, -1, 1)]: 4096 points {'on_torsion_coset': 4000, 'all_torsion': 96} ranks {1: 4000, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 4096, 'ii': 0, 'iii': 0}, counterex 0, maxdet 22606088000, brute 4/4, 8.4s, wall 525s
+orbit  16 (40/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 0, -1)]: 4928 points {'all_torsion': 128, 'on_torsion_coset': 4800} ranks {0: 128, 1: 4800}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 4928, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 10.6s, wall 527s
+orbit  50 (41/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, 1, -1, 1)]: 5376 points {'all_torsion': 128, 'on_torsion_coset': 5248} ranks {0: 128, 1: 5248}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 5376, 'ii': 0, 'iii': 0}, counterex 0, maxdet 15937292040, brute 4/4, 18.8s, wall 532s
+orbit  42 (42/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 1, -1)]: 35424 points {'all_torsion': 128, 'on_torsion_coset': 35296} ranks {0: 128, 1: 11488, 2: 23808}, 544 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 35424, 'ii': 0, 'iii': 0}, counterex 0, maxdet 17134500240, brute 4/4, 79.5s, wall 539s
+orbit  31 (43/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 0)]: 4064 points {'all_torsion': 128, 'on_torsion_coset': 3936} ranks {0: 128, 1: 3936}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 4064, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 14.1s, wall 546s
+orbit  48 (44/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 1, -1, 1)]: 18176 points {'all_torsion': 128, 'on_torsion_coset': 18048} ranks {0: 128, 1: 8576, 2: 9472}, 192 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 18176, 'ii': 0, 'iii': 0}, counterex 0, maxdet 15937292040, brute 4/4, 22.7s, wall 550s
+orbit  37 (45/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, -1, 1)]: 3552 points {'all_torsion': 96, 'on_torsion_coset': 3456} ranks {0: 96, 1: 3456}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3552, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 11.5s, wall 551s
+orbit 109 (46/113) rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, -1, 1, 1)]: 1472 points {'all_torsion': 128, 'on_torsion_coset': 1344} ranks {0: 128, 1: 1344}, 0 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1472, 'ii': 0, 'iii': 0}, counterex 0, maxdet 21745152000, brute 4/4, 12.8s, wall 559s
+orbit  19 (47/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1)]: 39296 points {'all_torsion': 128, 'on_torsion_coset': 39168} ranks {0: 128, 1: 11392, 2: 27776}, 640 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 39296, 'ii': 0, 'iii': 0}, counterex 0, maxdet 21745152000, brute 4/4, 99.1s, wall 563s
+orbit  30 (48/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, -1)]: 3424 points {'all_torsion': 96, 'on_torsion_coset': 3328} ranks {0: 96, 1: 3328}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3424, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 14.0s, wall 565s
+orbit 110 (49/113) rows=[(1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, -1), (1, 1, -1, -1)]: 13568 points {'all_torsion': 128, 'on_torsion_coset': 13440} ranks {0: 128, 1: 13440}, 0 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 13568, 'ii': 0, 'iii': 0}, counterex 0, maxdet 19710604080, brute 4/4, 41.0s, wall 567s
+orbit  39 (50/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, 1)]: 5184 points {'all_torsion': 128, 'on_torsion_coset': 5056} ranks {0: 128, 1: 5056}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 5184, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 8.6s, wall 567s
+orbit  51 (51/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 1, -1), (1, 1, -1, 1)]: 3552 points {'on_torsion_coset': 3456, 'all_torsion': 96} ranks {1: 3456, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3552, 'ii': 0, 'iii': 0}, counterex 0, maxdet 22606088000, brute 4/4, 15.7s, wall 582s
+orbit 101 (52/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 1), (1, 1, 1, -1)]: 6080 points {'on_torsion_coset': 5952, 'all_torsion': 128} ranks {1: 5952, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 6080, 'ii': 0, 'iii': 0}, counterex 0, maxdet 24997680320, brute 4/4, 20.7s, wall 583s
+orbit  52 (53/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, 1, -1), (1, 1, 0, -1)]: 4288 points {'all_torsion': 128, 'on_torsion_coset': 4160} ranks {0: 128, 1: 4160}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 4288, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 16.1s, wall 584s
+orbit  45 (54/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, -1, 1, -1)]: 14656 points {'all_torsion': 96, 'on_torsion_coset': 14560} ranks {0: 96, 1: 5088, 2: 9472}, 480 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 14656, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 37.0s, wall 587s
+orbit  88 (55/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1)]: 7360 points {'on_torsion_coset': 7232, 'all_torsion': 128} ranks {1: 7232, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 7360, 'ii': 0, 'iii': 0}, counterex 0, maxdet 24997680320, brute 4/4, 26.2s, wall 591s
+orbit  47 (56/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, -1, -1, 1), (1, 1, 0, -1)]: 5408 points {'all_torsion': 128, 'on_torsion_coset': 5280} ranks {0: 128, 1: 5280}, 64 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 5408, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16686480120, brute 4/4, 14.5s, wall 597s
+orbit  98 (57/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, -1), (1, 1, -1, 1)]: 7616 points {'on_torsion_coset': 7488, 'all_torsion': 128} ranks {1: 7488, 0: 128}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 7616, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26351656160, brute 4/4, 16.7s, wall 600s
+orbit  60 (58/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 4320 points {'all_torsion': 96, 'on_torsion_coset': 4224} ranks {0: 96, 1: 4224}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 4320, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27124440520, brute 4/4, 16.6s, wall 600s
+orbit  70 (59/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 0, 1)]: 3616 points {'all_torsion': 96, 'on_torsion_coset': 3520} ranks {0: 96, 1: 3520}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3616, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26347119880, brute 4/4, 15.1s, wall 606s
+orbit  56 (60/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 13664 points {'all_torsion': 96, 'on_torsion_coset': 13568} ranks {0: 96, 1: 5632, 2: 7936}, 208 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 13664, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26347119880, brute 4/4, 21.1s, wall 608s
+orbit  23 (61/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, -1, 0)]: 3104 points {'on_torsion_coset': 3008, 'all_torsion': 96} ranks {1: 3008, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3104, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 13.7s, wall 611s
+orbit  79 (62/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 1)]: 4096 points {'all_torsion': 96, 'on_torsion_coset': 4000} ranks {0: 96, 1: 4000}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 4096, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25482036280, brute 4/4, 17.3s, wall 618s
+orbit  59 (63/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, -1)]: 3200 points {'all_torsion': 96, 'on_torsion_coset': 3104} ranks {0: 96, 1: 3104}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3200, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27096307960, brute 4/4, 14.5s, wall 620s
+orbit  14 (64/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, -1)]: 3616 points {'all_torsion': 96, 'on_torsion_coset': 3520} ranks {0: 96, 1: 3520}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3616, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 12.6s, wall 630s
+orbit 112 (65/113) rows=[(1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 1), (1, 1, 1, -1)]: 13952 points {'all_torsion': 128, 'on_torsion_coset': 13824} ranks {0: 128, 1: 13824}, 0 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 13952, 'ii': 0, 'iii': 0}, counterex 0, maxdet 15564541440, brute 4/4, 33.5s, wall 634s
+orbit  72 (66/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, -1, 1, 0)]: 3424 points {'on_torsion_coset': 3328, 'all_torsion': 96} ranks {1: 3328, 0: 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3424, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26347119880, brute 4/4, 13.7s, wall 634s
+orbit  82 (67/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 1)]: 12704 points {'all_torsion': 96, 'on_torsion_coset': 12608} ranks {0: 96, 1: 4672, 2: 7936}, 96 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12704, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25482036280, brute 4/4, 35.9s, wall 644s
+orbit  68 (68/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 1, -1)]: 3264 points {'on_torsion_coset': 3168, 'all_torsion': 96} ranks {1: 3168, 0: 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3264, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27124440520, brute 4/4, 14.6s, wall 649s
+orbit  92 (69/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, 1, 1)]: 12480 points {'all_torsion': 96, 'on_torsion_coset': 12384} ranks {0: 96, 1: 4448, 2: 7936}, 320 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12480, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26347119880, brute 4/4, 42.7s, wall 653s
+orbit  61 (70/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, -1, -1)]: 2384 points {'all_torsion': 80, 'on_torsion_coset': 2304} ranks {0: 80, 1: 2304}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2384, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 12.1s, wall 656s
+orbit  84 (71/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 0, -1, -1)]: 12480 points {'all_torsion': 96, 'on_torsion_coset': 12384} ranks {0: 96, 1: 4448, 2: 7936}, 320 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12480, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27096307960, brute 4/4, 24.4s, wall 658s
+orbit  89 (72/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, 1, 1)]: 17664 points {'all_torsion': 128, 'on_torsion_coset': 17536} ranks {0: 128, 1: 6656, 2: 10880}, 272 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 17664, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25434843720, brute 4/4, 29.3s, wall 659s
+orbit  83 (73/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, 1, -1)]: 3968 points {'all_torsion': 96, 'on_torsion_coset': 3872} ranks {0: 96, 1: 3872}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3968, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25482036280, brute 4/4, 13.0s, wall 662s
+orbit  69 (74/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 1, 1)]: 2912 points {'all_torsion': 96, 'on_torsion_coset': 2816} ranks {0: 96, 1: 2816}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2912, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27096307960, brute 4/4, 9.7s, wall 663s
+orbit  66 (75/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, 1)]: 3072 points {'all_torsion': 96, 'on_torsion_coset': 2976} ranks {0: 96, 1: 2976}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3072, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27124440520, brute 4/4, 8.0s, wall 666s
+orbit  87 (76/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 0)]: 3008 points {'all_torsion': 96, 'on_torsion_coset': 2912} ranks {0: 96, 1: 2912}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3008, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27096307960, brute 4/4, 10.2s, wall 672s
+orbit  57 (77/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1)]: 2192 points {'all_torsion': 80, 'on_torsion_coset': 2112} ranks {0: 80, 1: 2112}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2192, 'ii': 0, 'iii': 0}, counterex 0, maxdet 23383408640, brute 4/4, 12.2s, wall 675s
+orbit 105 (78/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1), (1, 0, -1, -1)]: 2000 points {'all_torsion': 80, 'on_torsion_coset': 1920} ranks {0: 80, 1: 1920}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2000, 'ii': 0, 'iii': 0}, counterex 0, maxdet 18536992160, brute 4/4, 12.2s, wall 678s
+orbit  53 (79/113) rows=[(0, 0, 1, -1), (1, -1, -1, 0), (1, 1, -1, 1), (1, 1, 1, -1)]: 9952 points {'all_torsion': 96, 'on_torsion_coset': 9856} ranks {0: 96, 1: 4352, 2: 5504}, 144 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 9952, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 21.5s, wall 681s
+orbit   0 (80/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, -1, 1)]: 442464 points {'all_torsion': 192, 'on_torsion_coset': 442272} ranks {0: 192, 1: 40608, 2: 244992, 3: 156672}, 10448 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 442464, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16703367280, brute 4/4, 679.0s, wall 684s
+orbit  58 (81/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 0, 1)]: 1968 points {'all_torsion': 80, 'on_torsion_coset': 1888} ranks {0: 80, 1: 1888}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1968, 'ii': 0, 'iii': 0}, counterex 0, maxdet 22606088000, brute 4/4, 10.3s, wall 686s
+orbit  77 (82/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 1, 0)]: 2656 points {'all_torsion': 96, 'on_torsion_coset': 2560} ranks {0: 96, 1: 2560}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2656, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27096307960, brute 4/4, 7.0s, wall 688s
+orbit  74 (83/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 0, 1, -1)]: 2336 points {'all_torsion': 96, 'on_torsion_coset': 2240} ranks {0: 96, 1: 2240}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2336, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27096307960, brute 4/4, 11.0s, wall 689s
+orbit   6 (84/113) rows=[(0, 0, 0, 1), (1, -1, -1, -1), (1, -1, 1, -1), (1, 1, -1, 0)]: 11136 points {'all_torsion': 192, 'on_torsion_coset': 10944} ranks {0: 192, 1: 10944}, 128 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 11136, 'ii': 0, 'iii': 0}, counterex 0, maxdet 16703367280, brute 4/4, 36.0s, wall 692s
+orbit 100 (85/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 1, -1)]: 2784 points {'all_torsion': 96, 'on_torsion_coset': 2688} ranks {0: 96, 1: 2688}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2784, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25061760040, brute 4/4, 5.5s, wall 693s
+orbit  13 (86/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, -1, 1, 1)]: 12480 points {'all_torsion': 96, 'on_torsion_coset': 12384} ranks {0: 96, 1: 4448, 2: 7936}, 480 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 12480, 'ii': 0, 'iii': 0}, counterex 0, maxdet 23383408640, brute 4/4, 21.4s, wall 694s
+orbit 108 (87/113) rows=[(0, 1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0), (1, 0, 1, 1)]: 2000 points {'all_torsion': 80, 'on_torsion_coset': 1920} ranks {0: 80, 1: 1920}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2000, 'ii': 0, 'iii': 0}, counterex 0, maxdet 18090384080, brute 4/4, 11.3s, wall 695s
+orbit  63 (88/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, 1, -1)]: 1840 points {'all_torsion': 80, 'on_torsion_coset': 1760} ranks {0: 80, 1: 1760}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1840, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 4.3s, wall 698s
+orbit  75 (89/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 0, 1, 1)]: 3392 points {'on_torsion_coset': 3296, 'all_torsion': 96} ranks {1: 3296, 0: 96}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3392, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26347119880, brute 4/4, 13.5s, wall 699s
+orbit  65 (90/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, -1)]: 4448 points {'all_torsion': 96, 'on_torsion_coset': 4352} ranks {0: 96, 1: 4352}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 4448, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27096307960, brute 4/4, 7.8s, wall 703s
+orbit  25 (91/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 1), (1, 1, 0, -1)]: 3424 points {'all_torsion': 96, 'on_torsion_coset': 3328} ranks {0: 96, 1: 3328}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3424, 'ii': 0, 'iii': 0}, counterex 0, maxdet 27072711680, brute 4/4, 10.8s, wall 703s
+orbit 107 (92/113) rows=[(0, 1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0), (1, -1, 1, 1)]: 2672 points {'all_torsion': 80, 'on_torsion_coset': 2592} ranks {0: 80, 1: 2592}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2672, 'ii': 0, 'iii': 0}, counterex 0, maxdet 22606088000, brute 4/4, 14.8s, wall 704s
+orbit 102 (93/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, -1, -1)]: 1744 points {'all_torsion': 80, 'on_torsion_coset': 1664} ranks {0: 80, 1: 1664}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1744, 'ii': 0, 'iii': 0}, counterex 0, maxdet 18536992160, brute 4/4, 11.5s, wall 705s
+orbit  62 (94/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, -1, 1)]: 1488 points {'all_torsion': 80, 'on_torsion_coset': 1408} ranks {0: 80, 1: 1408}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1488, 'ii': 0, 'iii': 0}, counterex 0, maxdet 24997680320, brute 4/4, 4.0s, wall 707s
+orbit  78 (95/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, -1, 1, 0)]: 2320 points {'all_torsion': 80, 'on_torsion_coset': 2240} ranks {0: 80, 1: 2240}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2320, 'ii': 0, 'iii': 0}, counterex 0, maxdet 22606088000, brute 4/4, 4.9s, wall 708s
+orbit  95 (96/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 1, -1)]: 2208 points {'all_torsion': 96, 'on_torsion_coset': 2112} ranks {0: 96, 1: 2112}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2208, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25482036280, brute 4/4, 9.5s, wall 709s
+orbit  40 (97/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 1, -1)]: 3232 points {'all_torsion': 96, 'on_torsion_coset': 3136} ranks {0: 96, 1: 3136}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3232, 'ii': 0, 'iii': 0}, counterex 0, maxdet 24997680320, brute 4/4, 14.9s, wall 713s
+orbit  91 (98/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, -1), (1, 1, -1, 0)]: 1552 points {'all_torsion': 80, 'on_torsion_coset': 1472} ranks {0: 80, 1: 1472}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1552, 'ii': 0, 'iii': 0}, counterex 0, maxdet 21712871840, brute 4/4, 8.8s, wall 713s
+orbit 103 (99/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, -1, 1)]: 1616 points {'all_torsion': 80, 'on_torsion_coset': 1536} ranks {0: 80, 1: 1536}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1616, 'ii': 0, 'iii': 0}, counterex 0, maxdet 18536992160, brute 4/4, 5.7s, wall 715s
+orbit  93 (100/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, -1, 0)]: 1840 points {'all_torsion': 80, 'on_torsion_coset': 1760} ranks {0: 80, 1: 1760}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1840, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 9.7s, wall 715s
+orbit  67 (101/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, 0, -1)]: 1648 points {'all_torsion': 80, 'on_torsion_coset': 1568} ranks {0: 80, 1: 1568}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1648, 'ii': 0, 'iii': 0}, counterex 0, maxdet 22606088000, brute 4/4, 9.5s, wall 716s
+orbit  81 (102/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 0, 1, -1)]: 1424 points {'all_torsion': 80, 'on_torsion_coset': 1344} ranks {0: 80, 1: 1344}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1424, 'ii': 0, 'iii': 0}, counterex 0, maxdet 23211248000, brute 4/4, 3.5s, wall 717s
+orbit 104 (103/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, -1, 0, -1), (1, 0, 1, 1)]: 1488 points {'all_torsion': 80, 'on_torsion_coset': 1408} ranks {0: 80, 1: 1408}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1488, 'ii': 0, 'iii': 0}, counterex 0, maxdet 18090384080, brute 4/4, 8.8s, wall 717s
+orbit  94 (104/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 0, -1)]: 1008 points {'all_torsion': 80, 'on_torsion_coset': 928} ranks {0: 80, 1: 928}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1008, 'ii': 0, 'iii': 0}, counterex 0, maxdet 24997680320, brute 4/4, 3.0s, wall 720s
+orbit  80 (105/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 0, -1, 1)]: 1424 points {'all_torsion': 80, 'on_torsion_coset': 1344} ranks {0: 80, 1: 1344}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1424, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 8.5s, wall 721s
+orbit  96 (106/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 0, -1, 1), (1, 1, 1, 0)]: 1424 points {'all_torsion': 80, 'on_torsion_coset': 1344} ranks {0: 80, 1: 1344}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1424, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 7.6s, wall 722s
+orbit  99 (107/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, 0), (1, 1, 0, -1)]: 1232 points {'all_torsion': 80, 'on_torsion_coset': 1152} ranks {0: 80, 1: 1152}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 1232, 'ii': 0, 'iii': 0}, counterex 0, maxdet 21712871840, brute 4/4, 8.4s, wall 725s
+orbit  32 (108/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 0, 1), (1, 1, -1, 1)]: 3904 points {'all_torsion': 96, 'on_torsion_coset': 3808} ranks {0: 96, 1: 3808}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3904, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 13.9s, wall 728s
+orbit  97 (109/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, 1, -1, -1), (1, 1, -1, 0)]: 3456 points {'all_torsion': 96, 'on_torsion_coset': 3360} ranks {0: 96, 1: 3360}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3456, 'ii': 0, 'iii': 0}, counterex 0, maxdet 26347119880, brute 4/4, 13.6s, wall 730s
+orbit 106 (110/113) rows=[(0, 1, -1, -1), (1, -1, -1, 0), (1, 0, 1, -1), (1, 1, 0, 1)]: 2000 points {'all_torsion': 80, 'on_torsion_coset': 1920} ranks {0: 80, 1: 1920}, 32 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2000, 'ii': 0, 'iii': 0}, counterex 0, maxdet 17643776000, brute 4/4, 9.2s, wall 731s
+orbit  64 (111/113) rows=[(0, 1, -1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 0, 1, 1)]: 2064 points {'all_torsion': 80, 'on_torsion_coset': 1984} ranks {0: 80, 1: 1984}, 24 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2064, 'ii': 0, 'iii': 0}, counterex 0, maxdet 23211248000, brute 4/4, 9.5s, wall 732s
+orbit  34 (112/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, 1, 1), (1, 1, -1, 0)]: 2656 points {'on_torsion_coset': 2560, 'all_torsion': 96} ranks {1: 2560, 0: 96}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 2656, 'ii': 0, 'iii': 0}, counterex 0, maxdet 24997680320, brute 4/4, 8.8s, wall 734s
+orbit  15 (113/113) rows=[(0, 0, 1, -1), (1, -1, -1, -1), (1, -1, -1, 0), (1, 1, -1, 1)]: 3968 points {'all_torsion': 96, 'on_torsion_coset': 3872} ranks {0: 96, 1: 3872}, 48 families (indep-fixed 0, nondeg 0), admissible 0, trichotomy {'i': 3968, 'ii': 0, 'iii': 0}, counterex 0, maxdet 25389824000, brute 4/4, 14.1s, wall 734s
+sweep done in 734s wall
+aggregate written to C:\Users\kimia\magic-squares-agents\agents\torsion_coset_probe\results\torsion_coset_H5_summary.json (partial=False, 113/113 orbits)
+{
+ "totals": {
+  "points": 1916672,
+  "families": 46416,
+  "elapsed_s": 4348.199999999998
+ },
+ "points_by_class": {
+  "all_torsion": 12928,
+  "on_torsion_coset": 1903744
+ },
+ "points_by_exponent_rank": {
+  "0": 12928,
+  "1": 712704,
+  "2": 956032,
+  "3": 235008
+ },
+ "points_by_number_of_torsion_coordinates": {
+  "4": 12928,
+  "3": 208512,
+  "2": 242208,
+  "1": 692480,
+  "0": 760544
+ },
+ "points_by_degeneracy": {
+  "zero_sine": 0,
+  "equal_magnitudes": 0,
+  "both": 1916672,
+  "neither": 0
+ },
+ "points_by_branch": {
+  "cramer": 1490400,
+  "singular": 897952
+ },
+ "families_by_degeneracy": {
+  "row_identically_zero": 46416
+ },
+ "families_by_rank_of_fixed_triple": {
+  "0": 5792,
+  "1": 26736,
+  "2": 13888
+ },
+ "system_evaluations": {
+  "systems": 21696,
+  "cramer_hits": 14367744,
+  "singular_cases": 42637168,
+  "singular_hits": 13530624,
+  "allzero_systems": 278496,
+  "prefilter_tol_max": 100793996.50111106,
+  "prefilter_candidates": 14367744
+ },
+ "overflow_guard": {
+  "max_abs_row_coeff": 68921,
+  "max_abs_det_Nc_Ns": 27124440520,
+  "int64_limit": 9223372036854775807,
+  "float64_exact_limit": 9007199254740992,
+  "bound_Dfull": 68921,
+  "bound_det_Nc_Ns": 85501876338,
+  "max_prefilter_tol": 1306929.3851106267,
+  "circle_test": "wrapped-int64 identity mod 2^64 AND float64 |Nc^2+Ns^2-det^2| <= 8*2^-52*m^2+1 (m = actual max), then exact Python-int re-test"
+ },
+ "split_primes_in_grid": [
+  5,
+  13,
+  17,
+  29,
+  41
+ ],
+ "split_primes_in_all_supports_incl_solved_coord": [
+  5,
+  13,
+  17,
+  29,
+  41
+ ],
+ "admissible_points": 0,
+ "points_by_trichotomy": {
+  "i": 1916672,
+  "ii": 0,
+  "iii": 0
+ },
+ "families_by_trichotomy": {
+  "all_points_type_i_row_identically_zero": 46416
+ },
+ "n_trichotomy_exceptions": 0,
+ "rank3_prediction_test": {
+  "predicted_orbits_parallel_triple_criterion": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   9,
+   10,
+   17,
+   19,
+   27,
+   29,
+   38,
+   41,
+   42,
+   43,
+   45,
+   48,
+   53,
+   54,
+   55,
+   56,
+   86,
+   90
+  ],
+  "n_predicted": 23,
+  "orbits_with_rank3_points": [
+   0,
+   54
+  ],
+  "rank3_orbits_outside_prediction": [],
+  "prediction_holds": true,
+  "n_predicted_orbits_showing_rank3": 2,
+  "predicted_orbits_not_yet_showing_rank3": [
+   1,
+   2,
+   3,
+   4,
+   9,
+   10,
+   17,
+   19,
+   27,
+   29,
+   38,
+   41,
+   42,
+   43,
+   45,
+   48,
+   53,
+   55,
+   56,
+   86,
+   90
+  ],
+  "predicted_orbits_completed_in_this_run": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   9,
+   10,
+   17,
+   19,
+   27,
+   29,
+   38,
+   41,
+   42,
+   43,
+   45,
+   48,
+   53,
+   54,
+   55,
+   56,
+   86,
+   90
+  ]
+ }
+}
+counterexample candidate points: 0  families: 0  brute: 452 checked 452 agree
+aggregate written to C:\Users\kimia\magic-squares-agents\agents\torsion_coset_probe\results\torsion_coset_H5_summary.json (partial=False, 113/113 orbits)
+{
+ "totals": {
+  "points": 1916672,
+  "families": 46416,
+  "elapsed_s": 4348.199999999998
+ },
+ "points_by_class": {
+  "all_torsion": 12928,
+  "on_torsion_coset": 1903744
+ },
+ "points_by_exponent_rank": {
+  "0": 12928,
+  "1": 712704,
+  "2": 956032,
+  "3": 235008
+ },
+ "points_by_number_of_torsion_coordinates": {
+  "4": 12928,
+  "3": 208512,
+  "2": 242208,
+  "1": 692480,
+  "0": 760544
+ },
+ "points_by_degeneracy": {
+  "zero_sine": 0,
+  "equal_magnitudes": 0,
+  "both": 1916672,
+  "neither": 0
+ },
+ "points_by_branch": {
+  "cramer": 1490400,
+  "singular": 897952
+ },
+ "families_by_degeneracy": {
+  "row_identically_zero": 46416
+ },
+ "families_by_rank_of_fixed_triple": {
+  "0": 5792,
+  "1": 26736,
+  "2": 13888
+ },
+ "system_evaluations": {
+  "systems": 21696,
+  "cramer_hits": 14367744,
+  "singular_cases": 42637168,
+  "singular_hits": 13530624,
+  "allzero_systems": 278496,
+  "prefilter_candidates": 14367744
+ },
+ "overflow_guard": {
+  "max_abs_row_coeff": 68921,
+  "max_abs_det_Nc_Ns": 27124440520,
+  "int64_limit": 9223372036854775807,
+  "float64_exact_limit": 9007199254740992,
+  "bound_Dfull": 68921,
+  "bound_det_Nc_Ns": 85501876338,
+  "max_prefilter_tol": 1306929.3851106267,
+  "circle_test": "wrapped-int64 identity mod 2^64 AND float64 |Nc^2+Ns^2-det^2| <= 8*2^-52*m^2+1 (m = actual max), then exact Python-int re-test"
+ },
+ "split_primes_in_grid": [
+  5,
+  13,
+  17,
+  29,
+  41
+ ],
+ "split_primes_in_all_supports_incl_solved_coord": [
+  5,
+  13,
+  17,
+  29,
+  41
+ ],
+ "admissible_points": 0,
+ "points_by_trichotomy": {
+  "i": 1916672,
+  "ii": 0,
+  "iii": 0
+ },
+ "families_by_trichotomy": {
+  "all_points_type_i_row_identically_zero": 46416
+ },
+ "n_trichotomy_exceptions": 0,
+ "rank3_prediction_test": {
+  "predicted_orbits_parallel_triple_criterion": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   9,
+   10,
+   17,
+   19,
+   27,
+   29,
+   38,
+   41,
+   42,
+   43,
+   45,
+   48,
+   53,
+   54,
+   55,
+   56,
+   86,
+   90
+  ],
+  "n_predicted": 23,
+  "orbits_with_rank3_points": [
+   0,
+   54
+  ],
+  "rank3_orbits_outside_prediction": [],
+  "prediction_holds": true,
+  "n_predicted_orbits_showing_rank3": 2,
+  "predicted_orbits_not_yet_showing_rank3": [
+   1,
+   2,
+   3,
+   4,
+   9,
+   10,
+   17,
+   19,
+   27,
+   29,
+   38,
+   41,
+   42,
+   43,
+   45,
+   48,
+   53,
+   55,
+   56,
+   86,
+   90
+  ],
+  "predicted_orbits_completed_in_this_run": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   9,
+   10,
+   17,
+   19,
+   27,
+   29,
+   38,
+   41,
+   42,
+   43,
+   45,
+   48,
+   53,
+   54,
+   55,
+   56,
+   86,
+   90
+  ]
+ }
+}
+counterexample candidate points: 0  families: 0  brute: 452 checked 452 agree

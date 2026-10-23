@@ -464,7 +464,7 @@ def aggregate():
         if d['points_by_rank'].get('3', 0) > 0 or d['points_by_rank'].get('4', 0) > 0: rank3_orbits.append(d['orbit'])
         tot['points'] += d['n_points']; tot['families'] += d['n_families']; tot['elapsed_s'] += d['elapsed_s']
         for k, v in d['counts'].items():
-            if k.startswith('max_'): continue
+            if k.startswith('max_') or k == 'prefilter_tol_max': continue      # maxima are reported in overflow_guard, not summed
             sysc[k] = sysc.get(k, 0) + v
         max_det = max(max_det, d['counts'].get('max_abs_det', 0)); max_coeff = max(max_coeff, d['counts'].get('max_abs_row_coeff', 0))
         acc(bycls, d['points_by_class']); acc(by_ntors, d['points_by_number_of_torsion_coordinates']); acc(by_rank, d['points_by_rank'])

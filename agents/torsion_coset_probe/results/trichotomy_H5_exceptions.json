@@ -1,0 +1,7 @@
+{
+ "H": 5,
+ "partial": false,
+ "orbits_completed": 113,
+ "description": "every recorded point of trichotomy type (ii) [admissible: refutes rigidity] or (iii) [all sines nonzero, A=2B: refutes vanishing-sine conjecture], with full coordinates and an independent sympy re-verification; empty list = none found",
+ "exceptions": []
+}

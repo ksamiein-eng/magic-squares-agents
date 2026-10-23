@@ -20,3 +20,11 @@
 [20:35:00]   55_m1_n2 system 23: res 0.8s factor 4.0s deg 198
 [20:36:27]   55_m1_n2 system 31: res 2.0s factor 16.3s deg 198
 [20:37:54]   55_m1_n2 system 39: res 2.3s factor 12.7s deg 198
+[20:40:40]   55_m1_n2 system 47: res 1.6s factor 40.0s deg 198
+[20:40:40] done 55_m1_n2 systems 48 seconds 523.559 unresolved 0
+[20:40:40] start 55_m1_nminus2
+[20:41:25]   55_m1_nminus2 system 7: res 0.7s factor 3.1s deg 188
+[20:42:08]   55_m1_nminus2 system 15: res 0.8s factor 2.5s deg 198
+[20:44:14]   55_m1_nminus2 system 23: res 1.8s factor 17.9s deg 198
+[20:45:32]   55_m1_nminus2 system 31: res 1.7s factor 3.9s deg 198
+[20:46:22]   55_m1_nminus2 system 39: res 0.6s factor 6.5s deg 198

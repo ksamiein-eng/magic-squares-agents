@@ -1,7 +1,7 @@
 {
  "project": "Rigidity Lab (magic-squares-agents)",
- "generated": "2026-10-22T18:57:04-0400",
- "git_head_at_generation": "ffe9bcdc317ed6f968bc8a88befa693ea5969a91",
+ "generated": "2026-10-22T20:46:59-0400",
+ "git_head_at_generation": "7eb743c5eb192df402c11b37458f1e84a0841ed1",
  "environment": {
   "os": "Windows-10-10.0.26200-SP0",
   "python": "3.11.9",
@@ -4797,6 +4797,11 @@
    "bytes": 4757
   },
   {
+   "path": "results/skeptic_verdict_iteration2.md",
+   "sha256": "6af2330d36a60c358ff3cc9ff1f75466747e60107ef268661ab2fde90ab0b42d",
+   "bytes": 8194
+  },
+  {
    "path": "results/verify_findings_run.log",
    "sha256": "610b3fbd8e9fbde678829307b312d27c1c89899b986234eb293e8c1bc9befccf",
    "bytes": 546
@@ -4833,8 +4838,8 @@
   },
   {
    "path": "agents/torsion_coset_probe/REPORT.md",
-   "sha256": "794274e63f89161ca68cdb502e845b49d12e194b5b2eee3860b812f28d75fd09",
-   "bytes": 18491
+   "sha256": "91927924ab06f599794457824288aed4adb5ca1014227206b1a0d688295e4bb2",
+   "bytes": 19715
   },
   {
    "path": "agents/torsion_coset_probe/REPORT_H4.md",
@@ -4842,14 +4847,19 @@
    "bytes": 8828
   },
   {
+   "path": "agents/torsion_coset_probe/REPORT_H5.md",
+   "sha256": "2d1dd1459a48ea7930400a7885d7c92cd6fe083f430fb380500f34ec043d0c94",
+   "bytes": 25476
+  },
+  {
    "path": "ledger/attacks.json",
-   "sha256": "2eb9d216057e715b59bf0f7ba9e7f9f0ed7a587e258428c91266a6f09c4a89e3",
-   "bytes": 7354
+   "sha256": "6fc78b565b687de112e1184c39533b7a150f5c8c4d6824277d74ebdde388a5ab",
+   "bytes": 9202
   },
   {
    "path": "ledger/open_problems.json",
-   "sha256": "7b171b0d8be46bdc021e2cf236358757f3116daa40fc9778e3612345ef6816b6",
-   "bytes": 6380
+   "sha256": "bacaaf07ac12c108082df21b94ee961ebd6a5b5d2564721f13370863f601e248",
+   "bytes": 6584
   },
   {
    "path": "playbooks/absorb-into-verification-tree.md",
@@ -4877,6 +4887,11 @@
    "bytes": 1979
   },
   {
+   "path": "playbooks/formalize-in-lean.md",
+   "sha256": "0917598930bf23d88275c57359d16ec0aec73a30e845ec061321e77443d42a49",
+   "bytes": 1416
+  },
+  {
    "path": "playbooks/hypothesis-probe.md",
    "sha256": "b21a3113214cd513a0ceaa63b6047aff5686c4017264959c646d55e88ca3d428",
    "bytes": 1549
@@ -4892,6 +4907,11 @@
    "bytes": 3191
   },
   {
+   "path": "agents/certificate_extender/results/certificate_degree10.json",
+   "sha256": "c9b8ba7e05d89582df0f0ce7d9deda7c9e1aa2e80b6e89034bea92ecf0f83c6e",
+   "bytes": 98751728
+  },
+  {
    "path": "agents/certificate_extender/results/certificate_degree8.json",
    "sha256": "f1a2f7d3be8d94b8cabedce4eb99243b3f8a36ad2ad337e24a66ebb8a2694160",
    "bytes": 46189716
@@ -4905,6 +4925,36 @@
    "path": "agents/certificate_extender/results/crosscheck_degree8_sympy.json",
    "sha256": "6b10ae150fbbb991198007b73de207b293c9809817028fcb3d0b13f5febf6860",
    "bytes": 471
+  },
+  {
+   "path": "agents/certificate_extender/results/degree10_generation_summary.json",
+   "sha256": "12a3eca68911a3ee30c3c4e8a5171f48862ba504a4dc8893ab9e0c6abdda4b41",
+   "bytes": 48086
+  },
+  {
+   "path": "agents/certificate_extender/results/degree10_part_55a.json",
+   "sha256": "7661b6d6b6fb3a6bc4acbd91f62f8f82844e6f4b423701be512fe06e491f2e26",
+   "bytes": 2276868
+  },
+  {
+   "path": "agents/certificate_extender/results/degree10_part_55b.json",
+   "sha256": "4fe1f4aaeada3df66fbdd54d77a2f4402995319386af1e5a46f8c74f4847817a",
+   "bytes": 2291115
+  },
+  {
+   "path": "agents/certificate_extender/results/degree10_part_64.json",
+   "sha256": "64f4c7ef30a89527f18efc3a5e2e999c1a18308fcc1c0e589e8a4fa47020618c",
+   "bytes": 1612321
+  },
+  {
+   "path": "agents/certificate_extender/results/degree10_part_73a.json",
+   "sha256": "48dbc6033d77bd84cac851577afd6b6589e9340a8eb250b5df96a788842f644d",
+   "bytes": 3786524
+  },
+  {
+   "path": "agents/certificate_extender/results/degree10_part_73b.json",
+   "sha256": "8a51fcd98b71b8d9fee151a4d00d44b88423b622f0e0c7bc4cbe5b827a70deab",
+   "bytes": 3813901
   },
   {
    "path": "agents/certificate_extender/results/degree8_generation_summary.json",
@@ -4965,6 +5015,11 @@
    "path": "agents/certificate_extender/results/degree9_part_81.json",
    "sha256": "e29cd17f3af15684350355b82c6c89f04cb236150b755f2d3bd9e626eb84ec48",
    "bytes": 645679
+  },
+  {
+   "path": "agents/certificate_extender/results/next_sum10_plan.json",
+   "sha256": "7e051d5a2d2fb80e51ff670c865f091657f9134a0ec267f836fe6fd844c9b8d5",
+   "bytes": 66303
   },
   {
    "path": "agents/certificate_extender/results/next_sum8_plan.json",
@@ -5057,6 +5112,26 @@
    "bytes": 70471
   },
   {
+   "path": "agents/torsion_coset_probe/results/torsion_coset_H5_examples.json",
+   "sha256": "34119147397c7645a5045913c9e959c8286a5729de9e948b7e5160a910ec8c1d",
+   "bytes": 30919
+  },
+  {
+   "path": "agents/torsion_coset_probe/results/torsion_coset_H5_summary.json",
+   "sha256": "a30a2717079df0fb333064c127d955b4f5af5b0948b2a9060ae3343a43013817",
+   "bytes": 81354
+  },
+  {
+   "path": "agents/torsion_coset_probe/results/trichotomy_H5_exceptions.json",
+   "sha256": "4fab7f13bfaed8782c4fe21e3c087be1b5d8e9e85082cf84b27630d46ab41b0e",
+   "bytes": 335
+  },
+  {
+   "path": "agents/certificate_extender/build_degree10_certificate.py",
+   "sha256": "d4f75474e13e9e72ab9eff2f702f86e2a63043e7327aea9a4f64af864ff60330",
+   "bytes": 13268
+  },
+  {
    "path": "agents/certificate_extender/build_degree8_certificate.py",
    "sha256": "da27039e71ea3745d1661465a36c791b5f1d106393ced640265255fddd1242e0",
    "bytes": 12270
@@ -5067,9 +5142,24 @@
    "bytes": 12507
   },
   {
+   "path": "agents/certificate_extender/crosscheck_degree10_sympy.py",
+   "sha256": "27bfea46b0d15edc669b97ca2779cf3d9840981cb3911df2a75c114e57f4442b",
+   "bytes": 11749
+  },
+  {
    "path": "agents/certificate_extender/crosscheck_degree8_sympy.py",
    "sha256": "cb1c9fb0553eb8a5f20ef8688083951b6bbf42ea36a99e3407a11554be52e1bd",
    "bytes": 8610
+  },
+  {
+   "path": "agents/certificate_extender/crosscheck_degree9_sympy.py",
+   "sha256": "a82c88a04654eaaa6d4f5808d69977f2ede3556631ce12703611ab9e0ad0f544",
+   "bytes": 9801
+  },
+  {
+   "path": "agents/certificate_extender/plan_sum10.py",
+   "sha256": "a46760e61a51352698ac96fe44f98be81017007255fdb18d3791a507098b62b4",
+   "bytes": 3748
   },
   {
    "path": "agents/certificate_extender/plan_sum8.py",
@@ -5082,6 +5172,11 @@
    "bytes": 3428
   },
   {
+   "path": "agents/certificate_extender/summarize_degree10.py",
+   "sha256": "fa1dd76f1656b824be1a300dd5dbc46b23c4766bf6066fc76ee4ca66b2cbba0f",
+   "bytes": 3952
+  },
+  {
    "path": "agents/certificate_extender/summarize_degree8.py",
    "sha256": "0b2363e0a96bb1cdcc63397b7077b2180003fd0f2b93744b207dd1120e087529",
    "bytes": 3934
@@ -5092,9 +5187,24 @@
    "bytes": 3939
   },
   {
+   "path": "agents/certificate_extender/test_degree10_verifier.py",
+   "sha256": "bc149bdd7695f8495eb8c6eea1eb5ce017d1dac572889bff6c29bf6745830df7",
+   "bytes": 8459
+  },
+  {
    "path": "agents/certificate_extender/test_degree8_verifier.py",
    "sha256": "730f81a2db48846829c85ca929e0f000d81dbdac3210fc7f87b52f5075ee369e",
    "bytes": 6233
+  },
+  {
+   "path": "agents/certificate_extender/test_degree9_verifier.py",
+   "sha256": "a6bb519f26261994f03ed5bb98258321c6a4dcaa4b9b180e6fb0fca2f5807f74",
+   "bytes": 7266
+  },
+  {
+   "path": "agents/certificate_extender/verify_degree10_stdlib.py",
+   "sha256": "91ded8e4f708ada353bf6742d608d29f5e4a9d896c05ce853a9191c9d3742481",
+   "bytes": 24602
   },
   {
    "path": "agents/certificate_extender/verify_degree7_stdlib.py",
@@ -5127,6 +5237,11 @@
    "bytes": 11879
   },
   {
+   "path": "agents/torsion_coset_probe/make_report_H5.py",
+   "sha256": "12b16f90791f48e7b5c345180aee46036320d4764a7847a2ed824856b07c3885",
+   "bytes": 17927
+  },
+  {
    "path": "agents/torsion_coset_probe/rank_bound.py",
    "sha256": "b18cd8c46550a2b812b39aae6d38bc67616cc5ef652a6bb24b1380a6ca66df2d",
    "bytes": 4782
@@ -5140,6 +5255,11 @@
    "path": "agents/torsion_coset_probe/torsion_coset_probe_H4.py",
    "sha256": "78552d4ab5de224d639014d59043eb4a43753793ce97e93234a69b131b6e11ab",
    "bytes": 28900
+  },
+  {
+   "path": "agents/torsion_coset_probe/torsion_coset_probe_H5.py",
+   "sha256": "2d219877f38a30eaeb3d3a77dd4fc30f0cf3e83540f3461f9cd539ae15d4b084",
+   "bytes": 37229
   },
   {
    "path": "paper_mcp/rational_circle_mcp.py",
@@ -5192,14 +5312,24 @@
    "bytes": 74415
   },
   {
+   "path": "traces/08_skeptic_iteration2.md",
+   "sha256": "2cd2eb0f61c3b3444a20706f81a672b37c019f4c53d09648ed6fd0e0b7e74a0b",
+   "bytes": 42594
+  },
+  {
+   "path": "traces/09_torsion_coset_prober_H5.md",
+   "sha256": "95c53cc1b6b47fc3d91bee2c87b9678ce7c5d39b5f0454209914d52974e722a4",
+   "bytes": 47997
+  },
+  {
    "path": "traces/README.md",
    "sha256": "29d4822fd01f86ab3c9d0a4eadc82eafc2f0e5754f4369c1fcaaa19627739801",
    "bytes": 3040
   },
   {
    "path": "docs/RESULTS.md",
-   "sha256": "2845d1dc7b4ff065f5be42d47212171da830a9533db7000bea0714cf4fe414eb",
-   "bytes": 13835
+   "sha256": "497653f365f3804da1115716740f0edff01ec4dc59a0a8b31c1f18beb6a5b8ca",
+   "bytes": 14573
   },
   {
    "path": "CLAIM_MAP.md",
@@ -5208,8 +5338,8 @@
   },
   {
    "path": "STATUS.json",
-   "sha256": "6818a275d76087ef8b3715e2529cb38caaf322b3c3fd1cf6a42de173f2ae87c4",
-   "bytes": 3187
+   "sha256": "567d623ec9bd74beca39f65aa9ac819aac1302deb966cbb3c1a697e835cd0fba",
+   "bytes": 3297
   }
  ],
  "policy": "paper/ is read-only; every finding carries an evidence tag from results/skeptic_verdict.md; a matching hash is evidence of byte identity, not of mathematical truth (same wording as the paper's SHA256SUMS policy)"

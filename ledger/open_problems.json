@@ -50,7 +50,8 @@
         "paper": "untested",
         "iteration_1": "H <= 3: 273,024 points, 0 exceptions, exponent rank <= 2",
         "iteration_2": "H <= 4: 662,528 points, 0 exceptions; candidate sharpening 'exponent rank <= 2' REFUTED (13,824 rank-3 points, orbits 0 and 54)",
-        "iteration_2_lemma": "degenerate points lie on torsion cosets (proved); rank-3 criterion predicts 23 orbits, 2 observed"
+        "iteration_2_lemma": "degenerate points lie on torsion cosets (proved); rank-3 criterion predicts 23 orbits, 2 observed",
+        "iteration_3": "H <= 5: 1,916,672 points, 0 exceptions; rank-3 orbits still {0, 54}"
       },
       "playbook": "playbooks/hypothesis-probe.md",
       "acceptance": "either a counterexample re-verified by independent exact arithmetic, or the sharpened statement (exponent rank <= 2) surviving at the next height",
@@ -106,12 +107,13 @@
       "type": "hypothesis-probe",
       "parameter": "H",
       "state": {
-        "iteration_2": "holds on all 662,528 points at H <= 4 (every point has a zero sine); strictly stronger than 8.1; evidence for the extra strength is weak (grid primes 5, 13, 17)"
+        "iteration_2": "holds on all 662,528 points at H <= 4 (every point has a zero sine); strictly stronger than 8.1; evidence for the extra strength is weak (grid primes 5, 13, 17)",
+        "iteration_3": "H <= 5: all 1,916,672 points type (i); 0 type (iii); split primes 5,13,17,29,41"
       },
       "playbook": "playbooks/hypothesis-probe.md",
       "acceptance": "a type-(iii) point (A = 2B, all sines nonzero) re-verified exactly, or none at the next height",
       "best_tag_attainable": "SEARCH-EVIDENCE (a type-(iii) point would be PROVED and would refute the conjecture)",
-      "next": "re-instrument the probe to search type-(iii) points directly at H = 5 (|s_l| = 2|s_k| is linear in the solved coordinate); then attempt the conjecture on each vanishing-sine coset by the paper's dimension reduction"
+      "next": "H = 6 (grid primes 37, 53, 61 appear); then attempt a proof on each vanishing-sine coset by the paper's dimension reduction"
     }
   ]
 }

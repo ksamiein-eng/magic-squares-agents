@@ -110,12 +110,12 @@ system s_i = εs_k + ηs_l, s_j = εs_k − ηs_l the magnitudes are forced to b
 with A = max(|s_k|,|s_l|), B = min. Hence a rational point is exactly one of: a vanishing
 sine, admissible, or A = 2B; and a vanishing sine forces two equal magnitudes among the rest,
 so such a point lies on a torsion coset [PROVED, two lines; Theorem in `paper_update/manuscript/rigidity.tex`].
-All 662,528 points recorded at height ≤ 4 (the height-3 grid is a subset, so the sweeps are not added) are of the vanishing-sine kind
+All 1,916,672 points recorded at height ≤ 5 (each grid contains the previous one) are of the vanishing-sine kind, by a direct classification of every point
 [SEARCH-EVIDENCE, `agents/torsion_coset_probe/results/torsion_coset_H4_summary.json`]. So the
 problem reduces to one hypothesis, **vanishing-sine rigidity**: every rational solution of every
 signed system has a vanishing sine. It implies Conjecture 8.1 and Conjecture 8.6 and is strictly
-stronger than 8.1; the evidence for the extra strength is only the absence of A = 2B points at
-height ≤ 4, which is weak. It names the next computation precisely: search for A = 2B points
+stronger than 8.1; the evidence for the extra strength is the absence of A = 2B points at
+height ≤ 5 (split primes 5, 13, 17, 29, 41), which is early evidence. It names the next computation precisely: search for A = 2B points
 [CONJECTURAL].
 
 ## Iteration 2: the loop turns again
@@ -142,6 +142,12 @@ unresolved case [MACHINE-VERIFIED, `agents/certificate_extender/results/certific
 checker log `verify_degree9_stdlib.log`]. **Theorem 1.1 now holds for k + ℓ ≤ 9**, two exponent
 sums beyond the paper, each step produced by the loop and accepted by the paper's own kind of
 checker. The SymPy cross-check and mutation tests for sum 9 had not run at submission time.
+
+**Height 5 (iteration 3, planned by the planner).** 1,916,672 distinct rational solutions over all 113
+orbits (40 grid values, 64,000 triples, 734 s on 6 workers; overflow handled exactly): 0 off a
+torsion coset, 0 admissible, 0 of type (iii), every point has a vanishing sine; rank-3 points
+(156,672) occur in exactly the two orbits seen at height 4, both inside the 23 candidates
+[SEARCH-EVIDENCE, `agents/torsion_coset_probe/results/torsion_coset_H5_summary.json`].
 
 ## Infrastructure
 
