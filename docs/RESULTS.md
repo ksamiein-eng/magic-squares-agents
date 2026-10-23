@@ -100,7 +100,7 @@ checked in `agents/torsion_coset_probe/rank_bound.py`]. The parallel-triple crit
 for exactly 23 of the 113 orbits; the two orbits where rank-3 points appeared at height 4
 (0 and 54) are among them, and every recorded rank-3 point has a parallel degeneracy pair
 [MACHINE-VERIFIED, `agents/torsion_coset_probe/results/rank_bound_prediction.json`]. The other
-21 orbits are a prediction for height 5. Consequence for the paper: rigidity (Conj. 8.1)
+21 orbits are candidates for height 5 (the criterion is necessary, not sufficient). Consequence for the paper: rigidity (Conj. 8.1)
 implies the torsion-coset hypothesis for every point with a zero sine or two equal magnitudes,
 the only other way a solution-variety point can fail admissibility being a = 2b, which gives no
 monomial relation and which the probe never observed [PROVED / SEARCH-EVIDENCE].
@@ -110,11 +110,12 @@ system s_i = εs_k + ηs_l, s_j = εs_k − ηs_l the magnitudes are forced to b
 with A = max(|s_k|,|s_l|), B = min. Hence a rational point is exactly one of: a vanishing
 sine, admissible, or A = 2B; and a vanishing sine forces two equal magnitudes among the rest,
 so such a point lies on a torsion coset [PROVED, two lines; Theorem in `paper_update/manuscript/rigidity.tex`].
-All 935,552 points recorded at heights ≤ 4 are of the vanishing-sine kind
+All 662,528 points recorded at height ≤ 4 (the height-3 grid is a subset, so the sweeps are not added) are of the vanishing-sine kind
 [SEARCH-EVIDENCE, `agents/torsion_coset_probe/results/torsion_coset_H4_summary.json`]. So the
-problem collapses to one statement, **vanishing-sine rigidity**: every rational solution of every
-signed system has a vanishing sine. It implies Conjecture 8.1 and Conjecture 8.6, and it names
-the next computation precisely: search for A = 2B points, the only kind the data never showed
+problem reduces to one hypothesis, **vanishing-sine rigidity**: every rational solution of every
+signed system has a vanishing sine. It implies Conjecture 8.1 and Conjecture 8.6 and is strictly
+stronger than 8.1; the evidence for the extra strength is only the absence of A = 2B points at
+height ≤ 4, which is weak. It names the next computation precisely: search for A = 2B points
 [CONJECTURAL].
 
 ## Iteration 2: the loop turns again

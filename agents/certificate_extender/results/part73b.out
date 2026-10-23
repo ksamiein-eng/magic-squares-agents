@@ -7,3 +7,23 @@
 [20:30:20]   73_m4_n1 system 47: res 0.3s factor 0.3s deg 166
 [20:30:20] done 73_m4_n1 systems 48 seconds 31.728 unresolved 0
 [20:30:20] start 73_m4_nminus1
+[20:30:25]   73_m4_nminus1 system 7: res 0.3s factor 0.2s deg 166
+[20:30:30]   73_m4_nminus1 system 15: res 0.3s factor 0.3s deg 166
+[20:30:35]   73_m4_nminus1 system 23: res 0.3s factor 0.4s deg 166
+[20:30:40]   73_m4_nminus1 system 31: res 0.3s factor 0.4s deg 166
+[20:30:44]   73_m4_nminus1 system 39: res 0.2s factor 0.2s deg 166
+[20:30:51]   73_m4_nminus1 system 47: res 0.3s factor 0.2s deg 166
+[20:30:51] done 73_m4_nminus1 systems 48 seconds 31.319 unresolved 0
+[20:30:51] start 73_m4_n2
+[20:31:19]   73_m4_n2 system 7: res 0.2s factor 1.8s deg 166
+[20:31:43]   73_m4_n2 system 15: res 0.3s factor 3.9s deg 166
+[20:32:08]   73_m4_n2 system 23: res 0.2s factor 3.7s deg 166
+[20:32:23]   73_m4_n2 system 31: res 0.2s factor 1.8s deg 166
+[20:32:59]   73_m4_n2 system 39: res 0.4s factor 4.1s deg 166
+[20:33:28]   73_m4_n2 system 47: res 0.6s factor 4.2s deg 166
+[20:33:28] done 73_m4_n2 systems 48 seconds 156.386 unresolved 0
+[20:33:28] start 73_m4_nminus2
+[20:33:50]   73_m4_nminus2 system 7: res 0.3s factor 1.8s deg 166
+[20:34:42]   73_m4_nminus2 system 15: res 0.8s factor 4.2s deg 166
+[20:35:30]   73_m4_nminus2 system 23: res 0.6s factor 5.6s deg 166
+[20:36:19]   73_m4_nminus2 system 31: res 0.8s factor 3.7s deg 166

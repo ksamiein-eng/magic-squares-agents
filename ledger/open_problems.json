@@ -106,7 +106,7 @@
       "type": "hypothesis-probe",
       "parameter": "H",
       "state": {
-        "iteration_2": "holds on all 935,552 points at H <= 4 (every point has a zero sine)"
+        "iteration_2": "holds on all 662,528 points at H <= 4 (every point has a zero sine); strictly stronger than 8.1; evidence for the extra strength is weak (grid primes 5, 13, 17)"
       },
       "playbook": "playbooks/hypothesis-probe.md",
       "acceptance": "a type-(iii) point (A = 2B, all sines nonzero) re-verified exactly, or none at the next height",

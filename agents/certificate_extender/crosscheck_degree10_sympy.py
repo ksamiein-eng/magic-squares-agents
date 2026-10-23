@@ -1,0 +1,158 @@
+#!/usr/bin/env python3
+"""Independent symbolic cross-check (degree 10; adapted from crosscheck_degree9_sympy.py): Chebyshev sine formulas and direct determinants.
+Does not import the producer or the standard-library verifier. Does not call
+SymPy resultant, factorization, or rational-root routines.
+"""
+from __future__ import annotations
+import json
+import itertools
+import time
+from math import gcd
+from pathlib import Path
+import sympy as sp
+from sympy.polys.matrices import DomainMatrix
+
+ROOT=Path(__file__).resolve().parent
+t,u=sp.symbols('t u')
+CASES={'21_m1_n0':(2,1,1,0),'31_m1_n0':(3,1,1,0),'31_m2_n0':(3,1,2,0),
+       '22_m1_n1':(2,2,1,1),'22_m1_nminus1':(2,2,1,-1),
+       '41_m1_n0':(4,1,1,0),'41_m3_n0':(4,1,3,0),
+       '32_m1_n1':(3,2,1,1),'32_m1_nminus1':(3,2,1,-1),
+       '32_m2_n1':(3,2,2,1),'32_m2_nminus1':(3,2,2,-1)}
+
+CASES.update({'51_m1_n0': (5, 1, 1, 0), '51_m2_n0': (5, 1, 2, 0), '51_m3_n0': (5, 1, 3, 0), '51_m4_n0': (5, 1, 4, 0), '42_m1_n1': (4, 2, 1, 1), '42_m1_nminus1': (4, 2, 1, -1), '42_m3_n1': (4, 2, 3, 1), '42_m3_nminus1': (4, 2, 3, -1), '33_m1_n1': (3, 3, 1, 1), '33_m1_nminus1': (3, 3, 1, -1), '33_m1_n2': (3, 3, 1, 2), '33_m1_nminus2': (3, 3, 1, -2), '33_m2_n2': (3, 3, 2, 2), '33_m2_nminus2': (3, 3, 2, -2)})
+
+
+CASES.update({'61_m1_n0': (6, 1, 1, 0), '61_m5_n0': (6, 1, 5, 0), '52_m1_n1': (5, 2, 1, 1), '52_m1_nminus1': (5, 2, 1, -1), '52_m2_n1': (5, 2, 2, 1), '52_m2_nminus1': (5, 2, 2, -1), '52_m3_n1': (5, 2, 3, 1), '52_m3_nminus1': (5, 2, 3, -1), '52_m4_n1': (5, 2, 4, 1), '52_m4_nminus1': (5, 2, 4, -1), '43_m1_n1': (4, 3, 1, 1), '43_m1_nminus1': (4, 3, 1, -1), '43_m1_n2': (4, 3, 1, 2), '43_m1_nminus2': (4, 3, 1, -2), '43_m3_n1': (4, 3, 3, 1), '43_m3_nminus1': (4, 3, 3, -1), '43_m3_n2': (4, 3, 3, 2), '43_m3_nminus2': (4, 3, 3, -2)})
+
+CASES.update({'44_m1_n1': (4, 4, 1, 1), '44_m1_nminus1': (4, 4, 1, -1), '44_m1_n3': (4, 4, 1, 3), '44_m1_nminus3': (4, 4, 1, -3), '44_m3_n3': (4, 4, 3, 3), '44_m3_nminus3': (4, 4, 3, -3), '53_m1_n1': (5, 3, 1, 1), '53_m1_nminus1': (5, 3, 1, -1), '53_m1_n2': (5, 3, 1, 2), '53_m1_nminus2': (5, 3, 1, -2), '53_m2_n1': (5, 3, 2, 1), '53_m2_nminus1': (5, 3, 2, -1), '53_m2_n2': (5, 3, 2, 2), '53_m2_nminus2': (5, 3, 2, -2), '53_m3_n1': (5, 3, 3, 1), '53_m3_nminus1': (5, 3, 3, -1), '53_m3_n2': (5, 3, 3, 2), '53_m3_nminus2': (5, 3, 3, -2), '53_m4_n1': (5, 3, 4, 1), '53_m4_nminus1': (5, 3, 4, -1), '53_m4_n2': (5, 3, 4, 2), '53_m4_nminus2': (5, 3, 4, -2), '62_m1_n1': (6, 2, 1, 1), '62_m1_nminus1': (6, 2, 1, -1), '62_m5_n1': (6, 2, 5, 1), '62_m5_nminus1': (6, 2, 5, -1), '71_m1_n0': (7, 1, 1, 0), '71_m2_n0': (7, 1, 2, 0), '71_m3_n0': (7, 1, 3, 0), '71_m4_n0': (7, 1, 4, 0), '71_m5_n0': (7, 1, 5, 0), '71_m6_n0': (7, 1, 6, 0)})
+
+CASES.update({'54_m1_n1': (5, 4, 1, 1), '54_m1_nminus1': (5, 4, 1, -1), '54_m2_n1': (5, 4, 2, 1), '54_m2_nminus1': (5, 4, 2, -1), '54_m1_n3': (5, 4, 1, 3), '54_m1_nminus3': (5, 4, 1, -3), '54_m3_n1': (5, 4, 3, 1), '54_m3_nminus1': (5, 4, 3, -1), '54_m2_n3': (5, 4, 2, 3), '54_m2_nminus3': (5, 4, 2, -3), '54_m4_n1': (5, 4, 4, 1), '54_m4_nminus1': (5, 4, 4, -1), '54_m3_n3': (5, 4, 3, 3), '54_m3_nminus3': (5, 4, 3, -3), '54_m4_n3': (5, 4, 4, 3), '54_m4_nminus3': (5, 4, 4, -3), '63_m1_n1': (6, 3, 1, 1), '63_m1_nminus1': (6, 3, 1, -1), '63_m1_n2': (6, 3, 1, 2), '63_m1_nminus2': (6, 3, 1, -2), '63_m5_n1': (6, 3, 5, 1), '63_m5_nminus1': (6, 3, 5, -1), '63_m5_n2': (6, 3, 5, 2), '63_m5_nminus2': (6, 3, 5, -2), '72_m1_n1': (7, 2, 1, 1), '72_m1_nminus1': (7, 2, 1, -1), '72_m2_n1': (7, 2, 2, 1), '72_m2_nminus1': (7, 2, 2, -1), '72_m3_n1': (7, 2, 3, 1), '72_m3_nminus1': (7, 2, 3, -1), '72_m4_n1': (7, 2, 4, 1), '72_m4_nminus1': (7, 2, 4, -1), '72_m5_n1': (7, 2, 5, 1), '72_m5_nminus1': (7, 2, 5, -1), '72_m6_n1': (7, 2, 6, 1), '72_m6_nminus1': (7, 2, 6, -1), '81_m1_n0': (8, 1, 1, 0), '81_m3_n0': (8, 1, 3, 0), '81_m5_n0': (8, 1, 5, 0), '81_m7_n0': (8, 1, 7, 0)})
+
+CASES.update({'55_m1_n1': (5, 5, 1, 1), '55_m1_nminus1': (5, 5, 1, -1), '55_m1_n2': (5, 5, 1, 2), '55_m1_nminus2': (5, 5, 1, -2), '55_m1_n3': (5, 5, 1, 3), '55_m1_nminus3': (5, 5, 1, -3), '55_m2_n2': (5, 5, 2, 2), '55_m2_nminus2': (5, 5, 2, -2), '55_m1_n4': (5, 5, 1, 4), '55_m1_nminus4': (5, 5, 1, -4), '55_m2_n3': (5, 5, 2, 3), '55_m2_nminus3': (5, 5, 2, -3), '55_m2_n4': (5, 5, 2, 4), '55_m2_nminus4': (5, 5, 2, -4), '55_m3_n3': (5, 5, 3, 3), '55_m3_nminus3': (5, 5, 3, -3), '55_m3_n4': (5, 5, 3, 4), '55_m3_nminus4': (5, 5, 3, -4), '55_m4_n4': (5, 5, 4, 4), '55_m4_nminus4': (5, 5, 4, -4), '64_m1_n1': (6, 4, 1, 1), '64_m1_nminus1': (6, 4, 1, -1), '64_m1_n3': (6, 4, 1, 3), '64_m1_nminus3': (6, 4, 1, -3), '64_m5_n1': (6, 4, 5, 1), '64_m5_nminus1': (6, 4, 5, -1), '64_m5_n3': (6, 4, 5, 3), '64_m5_nminus3': (6, 4, 5, -3), '73_m1_n1': (7, 3, 1, 1), '73_m1_nminus1': (7, 3, 1, -1), '73_m1_n2': (7, 3, 1, 2), '73_m1_nminus2': (7, 3, 1, -2), '73_m2_n1': (7, 3, 2, 1), '73_m2_nminus1': (7, 3, 2, -1), '73_m2_n2': (7, 3, 2, 2), '73_m2_nminus2': (7, 3, 2, -2), '73_m3_n1': (7, 3, 3, 1), '73_m3_nminus1': (7, 3, 3, -1), '73_m3_n2': (7, 3, 3, 2), '73_m3_nminus2': (7, 3, 3, -2), '73_m4_n1': (7, 3, 4, 1), '73_m4_nminus1': (7, 3, 4, -1), '73_m4_n2': (7, 3, 4, 2), '73_m4_nminus2': (7, 3, 4, -2), '73_m5_n1': (7, 3, 5, 1), '73_m5_nminus1': (7, 3, 5, -1), '73_m5_n2': (7, 3, 5, 2), '73_m5_nminus2': (7, 3, 5, -2), '73_m6_n1': (7, 3, 6, 1), '73_m6_nminus1': (7, 3, 6, -1), '73_m6_n2': (7, 3, 6, 2), '73_m6_nminus2': (7, 3, 6, -2), '82_m1_n1': (8, 2, 1, 1), '82_m1_nminus1': (8, 2, 1, -1), '82_m3_n1': (8, 2, 3, 1), '82_m3_nminus1': (8, 2, 3, -1), '82_m5_n1': (8, 2, 5, 1), '82_m5_nminus1': (8, 2, 5, -1), '82_m7_n1': (8, 2, 7, 1), '82_m7_nminus1': (8, 2, 7, -1), '91_m1_n0': (9, 1, 1, 0), '91_m2_n0': (9, 1, 2, 0), '91_m4_n0': (9, 1, 4, 0), '91_m5_n0': (9, 1, 5, 0), '91_m7_n0': (9, 1, 7, 0), '91_m8_n0': (9, 1, 8, 0)})
+
+def require(ok,msg):
+    if not ok: raise RuntimeError(msg)
+
+
+def decode(terms,vs):
+    return sp.Poly.from_dict({tuple(m):c for m,c in terms},vs,domain=sp.ZZ).as_expr()
+
+
+def trig(v,k):
+    x=(1-v*v)/(1+v*v)
+    if k==0:return sp.Integer(1),sp.Integer(0)
+    return sp.chebyshevt(abs(k),x), (1 if k>0 else -1)*2*v/(1+v*v)*sp.chebyshevu(abs(k)-1,x)
+
+
+def make(freq,a,b):
+    c,s=trig(t,freq[0]);d,r=trig(u,freq[1])
+    return sp.Poly(sp.cancel((s*d+c*r)*(1+t*t)**a*(1+u*u)**b),t,u,domain=sp.ZZ).as_expr()
+
+
+def direct_det(f,g):
+    m,n=sp.degree(f,u),sp.degree(g,u)
+    fc=sp.Poly(f,u).all_coeffs();gc=sp.Poly(g,u).all_coeffs()
+    rows=[[0]*i+fc+[0]*(n-1-i) for i in range(n)]
+    rows += [[0]*i+gc+[0]*(m-1-i) for i in range(m)]
+    return DomainMatrix.from_Matrix(sp.Matrix(rows)).det().as_expr()
+
+
+def degenerate(values):
+    values=[sp.expand(x) for x in values]
+    if any(x==0 for x in values):
+        return True
+    return any(sp.expand(values[i]-sg*values[j])==0
+               for i,j in itertools.combinations(range(4),2) for sg in [-1,1])
+
+
+def canonical(freqs):
+    normalized=[]
+    for v in freqs:
+        sg=1 if next(x for x in v if x)!=0 and next(x for x in v if x)>0 else -1
+        normalized.append(tuple(sg*x for x in v))
+    return tuple(sorted(normalized))
+
+
+def full_orbit(freqs):
+    return {canonical([(s*v[pm[0]],q*v[pm[1]]) for v in freqs])
+            for pm in [(0,1),(1,0)] for s,q in itertools.product([-1,1],repeat=2)}
+
+
+def gcd_coverage():
+    bases={}
+    for key,(a,b,m,n) in CASES.items():
+        for v in full_orbit([(a,b),(a,-b),(m,b),(a,n)]):
+            bases[v]=key
+    para=full_orbit([(1,1),(1,-1),(0,1),(1,0)])
+    checked=0
+    for a,b in [(1,1),(2,1),(3,1),(2,2),(4,1),(3,2),(5,1),(4,2),(3,3),(6,1),(5,2),(4,3),(4,4),(5,3),(6,2),(7,1),(5,4),(6,3),(7,2),(8,1),(5,5),(6,4),(7,3),(8,2),(9,1)]:
+        for m in range(1-a,a):
+            for n in range(1-b,b):
+                d,e=gcd(a,abs(m)),gcd(b,abs(n))
+                target=canonical([(a//d,b//e),(a//d,-b//e),(m//d,b//e),(a//d,n//e)])
+                require(target in bases or target in para,'gcd-normalized configuration missing')
+                checked+=1
+    require(checked==765,'gcd coverage count')
+    return checked
+
+
+def main():
+    start=time.perf_counter()
+    data=json.loads((ROOT/'results'/'certificate_degree10.json').read_text())
+    require(data['schema']=='magic-squares/degree10/v8','schema')
+    require(not data.get('unresolved') and not data.get('missing_cases'),'certificate not complete')
+    require(len(data['cases'])==181 and {x['id'] for x in data['cases']}==set(CASES),'coverage')
+    tags=[(i,j,k,l,c,d) for i,j in itertools.combinations(range(4),2)
+          for k,l in itertools.permutations([z for z in range(4) if z not in (i,j)])
+          for c,d in itertools.product((-1,1),repeat=2)]
+    catalog={}
+    for f in data['factor_catalog']:
+        p=sp.Poly.from_list(f['coefficients_high_to_low'],gens=t,domain=sp.ZZ)
+        catalog[f['id']]=p.as_expr()
+        if f['type']=='no_rational_root':
+            r=f['prime']
+            require(sp.isprime(r) and int(p.LC())%r!=0 and all(int(p.eval(j))%r for j in range(r)), 'modular witness')
+        else:
+            require(p.degree()==1 and p.eval(sp.Rational(*f['root']))==0,'linear root')
+    by_id={rec['id']:rec for rec in data['factor_catalog']}
+    count=0
+    for c in data['cases']:
+        a,b,m,n=CASES[c['id']]
+        freqs=[(a,b),(a,-b),(m,b),(a,n)]
+        E=[make(v,a,b) for v in freqs]
+        require(all(sp.expand(e-decode(q,(t,u)))==0 for e,q in zip(E,c['area_numerators'])),'Chebyshev reconstruction')
+        require(len(c['systems'])==48 and {tuple(q['assignment']) for q in c['systems']}==set(tags),'signed coverage')
+        rational_fibers=set()
+        for q in c['systems']:
+            i,j,k,l,d,e=q['assignment']
+            f,g=decode(q['F'],(t,u)),decode(q['G'],(t,u))
+            if q['removed_t_power']:
+                rational_fibers.add(sp.Rational(0))
+            for part in q['factors']:
+                rec=by_id[part['factor_id']]
+                if rec['type']=='rational_root': rational_fibers.add(sp.Rational(*rec['root']))
+            require(sp.expand(f*t**q['removed_t_power']-E[i]+d*E[k]+e*E[l])==0,'first equation')
+            require(sp.expand(g*t**q['removed_t_power']-E[j]+d*E[k]-e*E[l])==0,'second equation')
+            R=decode(q['resultant'],(t,))
+            require(sp.expand(direct_det(f,g)-R)==0,'direct symbolic determinant')
+            P=q['constant']*sp.prod(catalog[x['factor_id']]**x['exponent'] for x in q['factors'])
+            require(sp.Poly(P-R,t).is_zero,'factor product')
+            count+=1
+        for rr in rational_fibers:
+            require(degenerate([p.subs(t,rr) for p in E]),'finite fiber not identically degenerate')
+        ti=[sp.Poly(p,t).nth(2*a) for p in E]
+        ui=[sp.Poly(p,u).nth(2*b) for p in E]
+        both=[sp.Poly(p,t,u).coeff_monomial(t**(2*a)*u**(2*b)) for p in E]
+        require(all(degenerate(v) for v in (ti,ui,both)),'projective boundary not degenerate')
+        print(c['id'],'PASS',flush=True)
+    report={'status':'PASS','systems':count,'numerator_method':'Chebyshev T_n and U_(n-1)',
+            'determinant_method':'direct symbolic Sylvester matrix over ZZ[t], SymPy DomainMatrix',
+            'resultant_calls':0,'factorization_calls':0,'rational_root_solver_calls':0,
+            'normal_forms_checked_by_gcd_reduction':gcd_coverage(),
+            'finite_fibers_and_projective_boundaries':'independent symbolic identities checked',
+            'sympy':sp.__version__,'elapsed_seconds':round(time.perf_counter()-start,3)}
+    (ROOT/'results'/'crosscheck_degree10_sympy.json').write_text(json.dumps(report,indent=2)+'\n')
+    print(json.dumps(report,indent=2))
+
+if __name__=='__main__':main()

@@ -1,1 +1,11 @@
 [20:29:48] start 64_m1_n1
+[20:30:27]   64_m1_n1 system 7: res 0.3s factor 4.4s deg 190
+[20:31:05]   64_m1_n1 system 15: res 0.5s factor 6.1s deg 190
+[20:31:40]   64_m1_n1 system 23: res 0.4s factor 4.0s deg 190
+[20:32:37]   64_m1_n1 system 31: res 0.4s factor 7.3s deg 190
+[20:33:31]   64_m1_n1 system 39: res 0.5s factor 2.0s deg 190
+[20:34:57]   64_m1_n1 system 47: res 1.2s factor 9.3s deg 190
+[20:34:57] done 64_m1_n1 systems 48 seconds 308.458 unresolved 0
+[20:34:57] start 64_m1_nminus1
+[20:35:54]   64_m1_nminus1 system 7: res 0.5s factor 3.1s deg 190
+[20:36:26]   64_m1_nminus1 system 15: res 0.6s factor 3.6s deg 190
