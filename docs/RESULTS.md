@@ -146,7 +146,7 @@ checker. The SymPy cross-check and mutation tests for sum 9 had not run at submi
 **Height 5 (iteration 3, planned by the planner).** 1,916,672 distinct rational solutions over all 113
 orbits (40 grid values, 64,000 triples, 734 s on 6 workers; overflow handled exactly): 0 off a
 torsion coset, 0 admissible, 0 of type (iii), every point has a vanishing sine; rank-3 points
-(156,672) occur in exactly the two orbits seen at height 4, both inside the 23 candidates
+(235,008) occur in exactly the two orbits seen at height 4, both inside the 23 candidates
 [SEARCH-EVIDENCE, `agents/torsion_coset_probe/results/torsion_coset_H5_summary.json`].
 
 ## Infrastructure

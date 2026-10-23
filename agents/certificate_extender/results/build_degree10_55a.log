@@ -28,3 +28,8 @@
 [20:44:14]   55_m1_nminus2 system 23: res 1.8s factor 17.9s deg 198
 [20:45:32]   55_m1_nminus2 system 31: res 1.7s factor 3.9s deg 198
 [20:46:22]   55_m1_nminus2 system 39: res 0.6s factor 6.5s deg 198
+[20:47:02]   55_m1_nminus2 system 47: res 0.7s factor 3.0s deg 198
+[20:47:03] done 55_m1_nminus2 systems 48 seconds 382.295 unresolved 0
+[20:47:03] start 55_m1_n3
+[20:47:13]   55_m1_n3 system 7: res 0.6s factor 0.5s deg 190
+[20:47:24]   55_m1_n3 system 15: res 0.7s factor 0.5s deg 198

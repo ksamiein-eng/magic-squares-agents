@@ -60,3 +60,8 @@
 [20:45:55]   73_m2_nminus2 system 23: res 0.2s factor 2.4s deg 166
 [20:46:24]   73_m2_nminus2 system 31: res 0.2s factor 2.7s deg 166
 [20:46:52]   73_m2_nminus2 system 39: res 0.2s factor 2.5s deg 166
+[20:47:10]   73_m2_nminus2 system 47: res 0.2s factor 1.5s deg 166
+[20:47:10] done 73_m2_nminus2 systems 48 seconds 187.626 unresolved 0
+[20:47:10] start 73_m3_n1
+[20:47:16]   73_m3_n1 system 7: res 0.2s factor 0.3s deg 162
+[20:47:24]   73_m3_n1 system 15: res 0.3s factor 0.4s deg 166
