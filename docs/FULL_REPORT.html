@@ -1,0 +1,287 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Rigidity Lab — results</title><style>
+ @page { size: A4; margin: 11mm; }
+ body { font-family: "Segoe UI", Helvetica, Arial, sans-serif; color:#1b1b1b; max-width: 190mm; margin: 0 auto; }
+ h1 { color:#1f3a93; margin: 0 0 4px; } h2 { color:#1f3a93; margin: 8px 0 3px; }
+ p { margin: 3px 0; } table { border-collapse: collapse; margin: 3px 0; } td, th { border: 1px solid #ccc; padding: 2px 5px; vertical-align: top; }
+ code { font-size: 90%; } a { color:#1f3a93; }
+ body{font-size:11.5px;line-height:1.3} h1{font-size:20px} h2{font-size:14px} table{font-size:10.5px}</style></head><body><h1>Rigidity Lab — a validated loop for AI on hard open problems (instance: magic squares of squares)</h1>
+<p><strong>OSI Hackathon 2026 · physical sciences &amp; mathematics · 22 October 2026</strong>
+Repository: https://github.com/ksamiein-eng/magic-squares-agents · Figure: <code>docs/figure.svg</code></p>
+<p>Evidence tags, assigned by the skeptic agent after rerunning one computation per specialist:
+<strong>[PROVED]</strong> in the paper with a verification stage · <strong>[MACHINE-VERIFIED]</strong> rerun in this project ·
+<strong>[DATABASE-QUOTED]</strong> LMFDB · <strong>[SEARCH-EVIDENCE]</strong> bounded height · <strong>[CONJECTURAL]</strong>.</p>
+<h2>What we built</h2>
+<p>A research paper on <em>magic squares of squares</em> (29 pages, 251 verification files, 16
+machine-checkable stages) was converted, Paper2Agent-style, into an MCP server with 14 tools
+bound to the paper's own code, 5 resources and 3 prompts. Seven agents use it: five
+specialists attack the paper's open conjectures from different angles, a skeptic re-runs and
+tags every claim, and a scribe writes this page. The pipeline runs as <code>/rigidity-attack</code>
+inside Claude Code or unattended through the Claude Agent SDK. The paper's proof records are
+never modified; all 16 stages still pass [MACHINE-VERIFIED, <code>results/verify_paper_run.log</code>].</p>
+<h2>The problem</h2>
+<p>Rational-circle rigidity: for every full-depth integer frequency matrix, no point of the
+rational circle torus <code>T(Q)^r</code> makes the four sines have magnitudes <code>{a, b, a+b, a−b}</code>.
+It is strictly stronger than "no 3×3 magic square of nine distinct squares" and is proved
+in the paper for r = 2 through exponent sum 7 and reduced, for the three-parameter
+configuration D1, to the completeness of eight known rational points on the genus-5 curve
+C: Y² = h¹² + 70h¹⁰ − 1009h⁸ + 7060h⁶ − 1009h⁴ + 70h² + 1 (Conjecture 7.3).</p>
+<h2>Findings</h2>
+<p><strong>1. The genus-5 curve splits, and every elliptic piece has rank 1 (quotient-geometer).</strong>
+P is even and palindromic, so C has the involutions h → −h and h → 1/h. Quotients, with all
+identities re-verified in SymPy [MACHINE-VERIFIED, <code>results/genus5_quotient_structure.json</code>]:
+the genus-2 curve D: Y² = x⁶+70x⁵−1009x⁴+7060x³−1009x²+70x+1 (x = h²), which is bielliptic
+with quotients E± : v² = (w±2)·g(w), w = x+1/x, and the direct quotient
+E₀ : v² = g(s) = s³+70s²−1012s+6920 with s = h²+h⁻², v = Y/h³. The paper's own known points
+map to points of infinite order on each curve: on E₀, (2,72) has 3·P with x = 11042/289, so
+by Nagell–Lutz it is not torsion [MACHINE-VERIFIED]; likewise on E± [MACHINE-VERIFIED].</p>
+<table>
+<thead>
+<tr>
+<th>curve</th>
+<th>LMFDB</th>
+<th>conductor</th>
+<th>rank</th>
+<th>torsion</th>
+<th>isomorphism check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E₀</td>
+<td>123.a1</td>
+<td>3·41</td>
+<td>1</td>
+<td>Z/5</td>
+<td>c₄, c₆ scaling u = 4 [MACHINE-VERIFIED]; rank [DATABASE-QUOTED]</td>
+</tr>
+<tr>
+<td>E₊</td>
+<td>492.b1</td>
+<td>2²·3·41</td>
+<td>1</td>
+<td>trivial</td>
+<td>u = 8 [MACHINE-VERIFIED]; rank [DATABASE-QUOTED]</td>
+</tr>
+<tr>
+<td>E₋</td>
+<td>1968.j1</td>
+<td>2⁴·3·41</td>
+<td>1</td>
+<td>trivial</td>
+<td>u = 12 [MACHINE-VERIFIED]; rank [DATABASE-QUOTED]</td>
+</tr>
+</tbody>
+</table>
+<p>Consequence: rank Jac(C) ≥ 3 [PROVED: the three curves have distinct j-invariants and
+conductors, so they are pairwise non-isogenous and their ranks add], and rank Jac(D) = 2 =
+genus(D) [DATABASE-QUOTED ranks], so the paper's rank-zero descent can never prove Conjecture
+7.3 on an elliptic quotient, and classical Chabauty fails on D. The conjecture is a <em>quadratic Chabauty</em> problem on a bielliptic genus-2 curve of rank 2
+(the Balakrishnan–Dogra setting) [CONJECTURAL as a route; the obstruction is MACHINE-VERIFIED].
+This is new relative to the paper, which lists "a completed quadratic-Chabauty calculation"
+as missing without identifying the curves or their ranks.</p>
+<p><strong>2. Two-prime certificate extended to exponent sum 8 (certificate-extender).</strong>
+The paper's own producer/checker pair (resultant in u, factor, witness prime; independent
+standard-library checker with exact Sylvester determinants) was rerun on the four signatures
+(7,1), (6,2), (5,3), (4,4): 140 raw normal forms, 72 inherited from the sum ≤ 7 certificate,
+32 orbit representatives, 1,536 new signed systems. The merged certificate (75 cases, 3,600
+systems, 2,159 catalog factors, 296,880 exact determinants, largest witness prime still 19)
+passes the strict checker in 133 s with no unresolved case [MACHINE-VERIFIED,
+<code>agents/certificate_extender/results/verification_degree8_stdlib.json</code>].
+<strong>Theorem 1.1 now holds for k + ℓ ≤ 8</strong>: no A_{k,ℓ;m,n} with k+ℓ ≤ 8 has an admissible
+rational-circle point, and the reduced-denominator bound becomes ≥ 9. (The arithmetic corollary
+k+ℓ ≥ 9 is already subsumed by the archive's two-prime theorem the paper verified; the
+rational-circle statement is not.) Producer wall-clock: 5.5 min on 5 cores.</p>
+<p><strong>3. Torsion-coset hypothesis tested on every rational solution at bounded height (torsion-prober).</strong>
+The paper's r = 4 sweep (Prop. 8.2) was re-instrumented to record <em>every</em> exact rational
+solution of all 48 signed systems, not only admissible ones, for all 113 orbits, all four
+solved coordinates and all triples of height ≤ H, and each solution was tested with a
+complete Gaussian-prime kernel test (a relation ∏ z_j^{n_j} ∈ {±1, ±i} exists iff the four
+exponent vectors are dependent; not bounded by exponent size). H = 2: 71,168 distinct points;
+H = 3: 273,024 distinct points (12,928 all-torsion, 260,096 on a torsion coset,
+<strong>0 off every torsion coset</strong>), 15,152 free-angle families all with an identically vanishing
+row, 0 admissible points; every point has a vanishing sine <em>and</em> two equal magnitudes
+[MACHINE-VERIFIED, <code>agents/torsion_coset_probe/results/torsion_coset_H3_summary.json</code>;
+cross-checked on 400-point samples by bounded brute force]. At height ≤ 3 the exponent rank
+never exceeded 2, which iteration 1 recorded as a candidate sharpening; iteration 2 refuted
+it (below). Caveat: at height ≤ 3 the grid carries only the split primes 5 and 13, so this
+is evidence at small height [SEARCH-EVIDENCE for Conjecture 8.6].</p>
+<p><strong>4. No new rational point on C (point-hunter).</strong>
+A vectorised residue sieve (moduli chosen by measured pass rate; the primes 2, 3, 5, 7, 11
+have no sieving power because P is a square modulo 2304 and a square residue at 5, 7, 11)
+followed by exact big-integer square tests scanned 500 billion pairs 0 ≤ p ≤ q ≤ 1,000,000 on C
+in 6 minutes (300,000 in 37 s), and D to height 300,000: no point outside the known eight [SEARCH-EVIDENCE,
+<code>agents/point_hunter/results/search_results.json</code>; selftest plants the known points through
+the sieve]. E₀ has 12 small rational points, none lifting to C except s = 2. The 3,000-height
+search inside the MCP server agrees
+[MACHINE-VERIFIED, <code>results/genus5_point_search_H3000.json</code>].</p>
+<p><strong>5. The refuted sharpening becomes a lemma, and the lemma predicts the data (coordinator, from the height-4 failure).</strong>
+A vanishing sine on row r means A_r·χ ∈ πZ, so ∏ z_j^{A_rj} = ±1: the row itself is a
+multiplicative relation. Two equal magnitudes on rows i, j mean A_i·χ ≡ ±A_j·χ (mod π), so
+A_i ∓ A_j is a relation, nonzero because rows are distinct projective vectors. Hence every
+rational point that is degenerate in either sense lies on a torsion coset (the content of
+Conjecture 8.6 for such points), a doubly degenerate point has exponent rank ≤ 3, and rank 3
+occurs only if A_i ± A_j is parallel to the zero row A_r [PROVED, elementary; stated and
+checked in <code>agents/torsion_coset_probe/rank_bound.py</code>]. The parallel-triple criterion holds
+for exactly 23 of the 113 orbits; the two orbits where rank-3 points appeared at height 4
+(0 and 54) are among them, and every recorded rank-3 point has a parallel degeneracy pair
+[MACHINE-VERIFIED, <code>agents/torsion_coset_probe/results/rank_bound_prediction.json</code>]. The other
+21 orbits are a prediction for height 5. Consequence for the paper: rigidity (Conj. 8.1)
+implies the torsion-coset hypothesis for every point with a zero sine or two equal magnitudes,
+the only other way a solution-variety point can fail admissibility being a = 2b, which gives no
+monomial relation and which the probe never observed [PROVED / SEARCH-EVIDENCE].</p>
+<p><strong>6. A trichotomy, and the single hypothesis the data support (coordinator).</strong> On a signed
+system s_i = εs_k + ηs_l, s_j = εs_k − ηs_l the magnitudes are forced to be {A, B, A+B, A−B}
+with A = max(|s_k|,|s_l|), B = min. Hence a rational point is exactly one of: a vanishing
+sine, admissible, or A = 2B; and a vanishing sine forces two equal magnitudes among the rest,
+so such a point lies on a torsion coset [PROVED, two lines; Theorem in <code>paper_update/manuscript/rigidity.tex</code>].
+All 935,552 points recorded at heights ≤ 4 are of the vanishing-sine kind
+[SEARCH-EVIDENCE, <code>agents/torsion_coset_probe/results/torsion_coset_H4_summary.json</code>]. So the
+problem collapses to one statement, <strong>vanishing-sine rigidity</strong>: every rational solution of every
+signed system has a vanishing sine. It implies Conjecture 8.1 and Conjecture 8.6, and it names
+the next computation precisely: search for A = 2B points, the only kind the data never showed
+[CONJECTURAL].</p>
+<h2>Iteration 2: the loop turns again</h2>
+<p>The planner tool emitted the next increments from the ledger (<code>propose_next_attack</code>): exponent
+sum 9 for Theorem 1.1 and height 4 for the torsion-coset probe. Both were launched with the same
+playbooks and agents, with a 40-minute budget before the submission deadline.
+<strong>Torsion probe at height 4 (complete, 113/113 orbits, 368 s on 6 workers).</strong> 662,528 distinct
+rational points (24 grid values, 13,824 triples): 12,928 all-torsion, 649,600 on a torsion
+coset, <strong>0 off every torsion coset</strong>, 0 admissible, every point degenerate; 23,696 free-angle
+families, none a counterexample. Conjecture 8.6 holds at H ≤ 4 [SEARCH-EVIDENCE,
+<code>agents/torsion_coset_probe/results/torsion_coset_H4_summary.json</code>]. The int64 overflow guard
+valid at H ≤ 3 was found invalid at H = 4 (row coefficients reach 15,625) and replaced by an
+asserted range plus an exact re-test; the new script reproduces 18 iteration-1 checkpoints
+exactly. <strong>The sharpening proposed by iteration 1 is false:</strong> 13,824 points have exponent
+rank 3 (orbits 0 and 54, solved coordinate ±1/13), so rational points do reach torsion cosets
+of 3-dimensional subtori; only the conjecture's own bound (rank &lt; 4) survives
+[MACHINE-VERIFIED refutation of the candidate sharpening, <code>torsion_coset_H4_examples.json</code>].
+<strong>Certificate at exponent sum 9 (complete).</strong> The planner's command re-ran the same producer and
+checker pair on the signatures (8,1), (7,2), (6,3), (5,4): 40 new orbit representatives, 1,920
+new signed systems, 5,520 systems in the merged certificate, 3,207 catalog factors, 553,392 exact
+Sylvester determinants; the strict standard-library checker returned PASS in 305 s with no
+unresolved case [MACHINE-VERIFIED, <code>agents/certificate_extender/results/certificate_degree9.json</code>,
+checker log <code>verify_degree9_stdlib.log</code>]. <strong>Theorem 1.1 now holds for k + ℓ ≤ 9</strong>, two exponent
+sums beyond the paper, each step produced by the loop and accepted by the paper's own kind of
+checker. The SymPy cross-check and mutation tests for sum 9 had not run at submission time.</p>
+<h2>Infrastructure</h2>
+<p>The open-problem ledger types each target and names its playbook; the playbooks are
+paper-agnostic; the planner turns ledger state into the next command; the tag linter refuses
+any claim without a tag, an evidence file, a verifier and (for MACHINE-VERIFIED) a passing
+stage; the overlay runner absorbs accepted results as stages 17+ of the paper's own suite
+without touching the paper; traces, claim map and provenance make every step auditable.</p>
+<h2>The referee's verdict</h2>
+<p>The skeptic agent reran the sum-8 checker (PASS, 135 s), the point hunter's self-test and a
+height-2,000 search, an independent exact check of two torsion-probe example points and their
+relation vectors, and the quotient identities and non-torsion multiples; it confirmed all four
+findings, downgraded two sentences (ranks "= 1" and "rank Jac(D) = 2" are database-quoted),
+and flagged two reporting defects that were fixed (<code>results/skeptic_verdict.md</code>).</p>
+<h2>What moved</h2>
+<p>Theorem 1.1 moved from exponent sum 7 to 8 (one more proved case of rigidity for r = 2).
+Conjecture 7.3 did not move, but its obstruction is now precise: three rank-1 elliptic
+quotients identified, so the next step is quadratic Chabauty, not descent. Conjecture 8.6
+gained its first systematic evidence (273,024 points at height 3, 662,528 at height 4, no
+exception); a sharper form proposed after height 3 was refuted at height 4, which is the loop
+working as intended. The empty region on C grew from height 1,500 to 1,000,000. Each of these
+took one specialist under 20 minutes of compute; the paper's proof records were not touched.</p>
+<h2>Audit trail</h2>
+<p>Verbatim agent transcripts (<code>traces/</code>), a claim map linking every statement to its trace
+turn and re-check command (<code>CLAIM_MAP.md</code>), provenance with transcript and result hashes
+(<code>PROVENANCE.json</code>, <code>SHA256SUMS</code>), and a one-command reproduction (<code>verify_findings.py</code>),
+following the conventions of the paper's own package.</p>
+<h2>Manuscript and generalisation</h2>
+<p>Version 3 of the paper (<code>paper_update/paper_v3.pdf</code>, authors K. Samieinejad and J. Wolinski, 22 October
+2026) adds Theorem 4.5 (sum nine), a quotient section, and the degeneracy-rank lemma, each tied to its
+evidence in <code>paper_update/CHANGES_v3.md</code>. <code>docs/GENERALIZATION.md</code> states what the loop needs from a
+problem, what "validated" means and does not mean here, and the next instances.</p>
+<h2>Next computation</h2>
+<p>Quadratic Chabauty on D with the LMFDB generators of 492.b1 and 1968.j1, then the ten
+unresolved orbits through the same quotient analysis; the agents already expose both as tools.</p><div style="margin:6px 0 2px"><svg style="width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#eef3ff"/><stop offset="1" stop-color="#dde7ff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <text x="600" y="36" text-anchor="middle" font-size="22" font-weight="600" fill="#1b1b1b">Rigidity Lab: a paper that attacks its own open problems</text>
+  <text x="600" y="58" text-anchor="middle" font-size="13" fill="#555">Paper2Agent conversion of a magic-squares-of-squares paper + a specialist team + an adversarial referee</text>
+
+  <!-- paper -->
+  <rect x="40" y="90" width="250" height="110" rx="10" fill="#fff7e6" stroke="#d9a441" stroke-width="1.5"/>
+  <text x="165" y="115" text-anchor="middle" font-size="14" font-weight="600" fill="#6b4b00">Paper (29 pp) + proof tree</text>
+  <text x="165" y="136" text-anchor="middle" font-size="12" fill="#444">251 verification files, 16 stages</text>
+  <text x="165" y="154" text-anchor="middle" font-size="12" fill="#444">2,064 exact certificates (r = 2)</text>
+  <text x="165" y="172" text-anchor="middle" font-size="12" fill="#444">genus-5 curve, 113 orbits, Hadamard surfaces</text>
+  <text x="165" y="190" text-anchor="middle" font-size="11" fill="#777">all stages pass: 3 min 45 s</text>
+
+  <!-- MCP -->
+  <rect x="340" y="90" width="320" height="110" rx="10" fill="url(#g1)" stroke="#4a6fd6" stroke-width="1.5"/>
+  <text x="500" y="115" text-anchor="middle" font-size="14" font-weight="600" fill="#1f3a93">rational_circle MCP server</text>
+  <text x="500" y="136" text-anchor="middle" font-size="12" fill="#333">14 tools · 5 resources · 3 prompts</text>
+  <text x="500" y="154" text-anchor="middle" font-size="11" fill="#333">run_verification_stage · evaluate_configuration</text>
+  <text x="500" y="170" text-anchor="middle" font-size="11" fill="#333">genus5_point_search · genus5_quotient_structure</text>
+  <text x="500" y="186" text-anchor="middle" font-size="11" fill="#333">two_prime_coverage · four_parameter_sweep · ...</text>
+  <line x1="290" y1="145" x2="338" y2="145" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="314" y="138" text-anchor="middle" font-size="10" fill="#555">Paper2MCP</text>
+
+  <!-- Problem box -->
+  <rect x="710" y="90" width="450" height="110" rx="10" fill="#f4f4f4" stroke="#999" stroke-width="1"/>
+  <text x="935" y="113" text-anchor="middle" font-size="13" font-weight="600" fill="#222">Open targets in the paper</text>
+  <text x="725" y="134" font-size="11.5" fill="#333">• Conj 7.3: C: Y² = h¹²+70h¹⁰−1009h⁸+7060h⁶−1009h⁴+70h²+1 has only 8 rational points</text>
+  <text x="725" y="152" font-size="11.5" fill="#333">• Thm 1.1 (r = 2) proved only through exponent sum 7</text>
+  <text x="725" y="170" font-size="11.5" fill="#333">• Conj 8.6: every rational solution lies on a torsion coset (untested)</text>
+  <text x="725" y="188" font-size="11.5" fill="#333">• ten of fifteen three-prime orbits unresolved; r = 4 swept only to height 4</text>
+
+  <!-- agents row -->
+  <g font-size="12">
+    <rect x="40"  y="260" width="200" height="120" rx="10" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="1.5"/>
+    <text x="140" y="283" text-anchor="middle" font-weight="600" fill="#176b3a">auditor</text>
+    <text x="140" y="304" text-anchor="middle" fill="#333">reruns the 16 stages</text>
+    <text x="140" y="322" text-anchor="middle" fill="#333">re-derives identities</text>
+    <text x="140" y="340" text-anchor="middle" fill="#333">tags every claim</text>
+
+    <rect x="270" y="260" width="200" height="120" rx="10" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="1.5"/>
+    <text x="370" y="283" text-anchor="middle" font-weight="600" fill="#176b3a">point-hunter</text>
+    <text x="370" y="304" text-anchor="middle" fill="#333">sieved exact search on C,</text>
+    <text x="370" y="322" text-anchor="middle" fill="#333">its genus-2 quotient, E₀</text>
+    <text x="370" y="340" text-anchor="middle" fill="#333">+ r = 4 sweeps per orbit</text>
+
+    <rect x="500" y="260" width="200" height="120" rx="10" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="1.5"/>
+    <text x="600" y="283" text-anchor="middle" font-weight="600" fill="#176b3a">quotient-geometer</text>
+    <text x="600" y="304" text-anchor="middle" fill="#333">h→−h, h→1/h split Jac(C)</text>
+    <text x="600" y="322" text-anchor="middle" fill="#333">E₀=123.a1 E₊=492.b1 E₋=1968.j1</text>
+    <text x="600" y="340" text-anchor="middle" fill="#333">all rank 1 ⇒ Chabauty needed</text>
+
+    <rect x="730" y="260" width="200" height="120" rx="10" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="1.5"/>
+    <text x="830" y="283" text-anchor="middle" font-weight="600" fill="#176b3a">certificate-extender</text>
+    <text x="830" y="304" text-anchor="middle" fill="#333">same resultant + witness-</text>
+    <text x="830" y="322" text-anchor="middle" fill="#333">prime method, sum 7 → 8</text>
+    <text x="830" y="340" text-anchor="middle" fill="#333">stdlib checker must accept</text>
+
+    <rect x="960" y="260" width="200" height="120" rx="10" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="1.5"/>
+    <text x="1060" y="283" text-anchor="middle" font-weight="600" fill="#176b3a">torsion-prober</text>
+    <text x="1060" y="304" text-anchor="middle" fill="#333">every exact solution of the</text>
+    <text x="1060" y="322" text-anchor="middle" fill="#333">48 systems, height ≤ 3</text>
+    <text x="1060" y="340" text-anchor="middle" fill="#333">Gaussian-prime kernel test</text>
+  </g>
+  <!-- arrows MCP -> agents -->
+  <g stroke="#4a6fd6" stroke-width="1.2" fill="none" stroke-dasharray="4 3">
+    <path d="M500,200 L140,258"/><path d="M500,200 L370,258"/><path d="M500,200 L600,258"/><path d="M500,200 L830,258"/><path d="M500,200 L1060,258"/>
+  </g>
+
+  <!-- skeptic -->
+  <rect x="400" y="430" width="400" height="70" rx="10" fill="#fdecec" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="600" y="455" text-anchor="middle" font-size="14" font-weight="600" fill="#8e1b12">skeptic (referee)</text>
+  <text x="600" y="475" text-anchor="middle" font-size="11.5" fill="#333">reruns one computation per specialist · tags PROVED / MACHINE-VERIFIED /</text>
+  <text x="600" y="491" text-anchor="middle" font-size="11.5" fill="#333">DATABASE-QUOTED / SEARCH-EVIDENCE / CONJECTURAL · rewrites overstatements</text>
+  <g stroke="#555" stroke-width="1.3" fill="none" marker-end="url(#arr)">
+    <path d="M140,380 L560,428"/><path d="M370,380 L580,428"/><path d="M600,380 L600,428"/><path d="M830,380 L620,428"/><path d="M1060,380 L640,428"/>
+  </g>
+
+  <!-- scribe -->
+  <rect x="450" y="540" width="300" height="60" rx="10" fill="#eeeeff" stroke="#6c5ce7" stroke-width="1.5"/>
+  <text x="600" y="564" text-anchor="middle" font-size="14" font-weight="600" fill="#3b2fa0">scribe</text>
+  <text x="600" y="584" text-anchor="middle" font-size="11.5" fill="#333">docs/RESULTS.md: one page, every sentence carries its tag</text>
+  <path d="M600,500 L600,538" stroke="#555" stroke-width="1.3" fill="none" marker-end="url(#arr)"/>
+
+  <text x="40" y="620" font-size="11" fill="#777">Runs inside Claude Code (/rigidity-attack) or unattended through the Claude Agent SDK (orchestrator/run_attack.py). The paper's proof records are never modified.</text>
+</svg>
+</div></body></html>
