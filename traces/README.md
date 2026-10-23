@@ -14,6 +14,9 @@ paraphrased. The user's e-mail address is the only redaction.
 | `04_skeptic.md` | skeptic (referee) | rerunning the sum-8 checker, selftests, two torsion example points, the quotient identities; the independence argument for rank Jac(C) ≥ 3; the two defects it found | 25 / 15 | 21:16 → 21:24 |
 | `06_torsion_coset_prober_H4.md` | torsion-coset-prober (iteration 2) | height-4 run launched by the planner; overflow guard found invalid and replaced; the rank-3 points that refuted iteration 1's sharpening | 36 / 23 | 22:06 → 22:17 |
 | `07_certificate_extender_sum9.md` | certificate-extender (iteration 2) | exponent sum 9 by the same pipeline; strict checker PASS on 5,520 systems | see header | 22:06 → 22:30 |
+| `08_skeptic_iteration2.md` | skeptic (second pass) | reran the sum-9 checker, re-derived an H=4 example, checked the lemma and trichotomy proofs; three corrections | 38 / 19 | 00:28 → 00:38 (23 Oct) |
+| `09_torsion_coset_prober_H5.md` | torsion-coset-prober (iteration 3) | height-5 probe with direct trichotomy classification of 1,916,672 points; exact overflow handling | 42 / 23 | 00:28 → 00:46 (23 Oct) |
+| `10_certificate_extender_sum10.md` | certificate-extender (iteration 3) | exponent sum 10 (181 cases, 8,688 systems, strict PASS; witness prime 23); sum-9 secondary checks run and passed | 85 / 44 | 00:28 → 01:36 (23 Oct) |
 | `05_agent_sdk_docs_lookup.md` | claude-code-guide | documentation lookup used to write `orchestrator/run_attack.py` | 18 / 12 | 20:58 → 21:00 |
 
 Note on timestamps: the coordinator's shell reported a wrong local time for the first part of

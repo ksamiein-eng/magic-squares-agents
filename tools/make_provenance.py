@@ -16,6 +16,9 @@ TRACES = {
     "04_skeptic.md": {"role": "skeptic (referee)", "agent_id": "a86acff213db9b8f2"},
     "06_torsion_coset_prober_H4.md": {"role": "torsion-coset-prober (iteration 2, H=4)", "agent_id": "a004fb926ffeb19e4"},
     "07_certificate_extender_sum9.md": {"role": "certificate-extender (iteration 2, exponent sum 9)", "agent_id": "a33ab313a80618bd9"},
+    "08_skeptic_iteration2.md": {"role": "skeptic (second pass over iteration 2)", "agent_id": "aee5919003b626e50"},
+    "09_torsion_coset_prober_H5.md": {"role": "torsion-coset-prober (iteration 3, H=5, trichotomy classification)", "agent_id": "a3375858a146c2e06"},
+    "10_certificate_extender_sum10.md": {"role": "certificate-extender (iteration 3, exponent sum 10)", "agent_id": "a0936619abd59abcb"},
     "05_agent_sdk_docs_lookup.md": {"role": "claude-code-guide (documentation lookup for orchestrator/run_attack.py)", "agent_id": "a547588d0c9123d72"},
 }
 RESULT_GLOBS = ["results/*.json", "results/*.md", "results/*.log", "agents/*/REPORT*.md", "ledger/*.json", "playbooks/*.md", "paper_overlay/*.json", "agents/*/results/*.json",
