@@ -268,6 +268,52 @@
         "P3": "H <= 5",
         "P7": "H <= 5"
       }
+    },
+    {
+      "id": "A9",
+      "iteration": 3,
+      "problem": "P1",
+      "playbook": "certificate-extension",
+      "agent": "certificate-extender",
+      "trace": "traces/10_certificate_extender_sum10.md",
+      "input": {
+        "baseline": "agents/certificate_extender/results/certificate_degree9.json",
+        "signatures": [
+          [
+            9,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "planned_by": "propose_next_attack(P1)"
+      },
+      "result": "66 representatives, 3,168 new systems, 8,688 total, 5,305 factors, 1,085,136 exact determinants; strict stdlib checker PASS 1,309 s; witness prime 23 first needed (4 factors, signature (6,4)); certificate 174 MB regenerable, not stored",
+      "evidence": [
+        "agents/certificate_extender/results/verification_degree10_stdlib.json",
+        "agents/certificate_extender/results/verify_degree10_stdlib.log"
+      ],
+      "tag": "MACHINE-VERIFIED",
+      "verified_by": [
+        "verify_paper_plus.py:two_prime_sum10_stdlib"
+      ],
+      "state_after": {
+        "P1": 10
+      }
     }
   ]
 }

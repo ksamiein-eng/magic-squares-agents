@@ -59,7 +59,7 @@
   <p class="big">Rigidity Lab: a validated loop for AI on hard open problems in mathematics.<br>Instance one: magic squares of squares.</p>
   <div class="row" style="margin-top:26px">
     <div class="card stat"><div class="n">3</div><div class="l">iterations of the loop in one afternoon</div></div>
-    <div class="card stat"><div class="n">5,520</div><div class="l">signed systems certified (theorem extended twice)</div></div>
+    <div class="card stat"><div class="n">8,688</div><div class="l">signed systems certified (theorem extended three times)</div></div>
     <div class="card stat"><div class="n">1.9M</div><div class="l">rational solutions tested, zero exceptions</div></div>
     <div class="card stat"><div class="n">0</div><div class="l">claims without a referee tag</div></div>
   </div>
@@ -137,19 +137,20 @@
 <!-- 5 -->
 <section class="slide">
   <div class="kicker">Iterations 1–3 · the theorem that moved</div>
-  <h2>Theorem 1.1: exponent sum 7 → 8 → <span class="grad">9</span></h2>
+  <h2>Theorem 1.1: exponent sum 7 → 8 → 9 → <span class="grad">10</span></h2>
   <div class="row">
     <div class="card">
       <p class="muted small">certified signed systems</p>
-      <p class="mono">paper &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,064</p><div class="bar"><i style="width:37%"></i></div>
-      <p class="mono">iteration 1 &nbsp;3,600</p><div class="bar"><i style="width:65%"></i></div>
-      <p class="mono">iteration 2 &nbsp;5,520</p><div class="bar"><i style="width:100%"></i></div>
-      <p class="small muted">553,392 exact Sylvester determinants · largest witness prime still 19 · independent standard-library checker PASS at each step · referee reran it</p>
+      <p class="mono">paper &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,064</p><div class="bar"><i style="width:24%"></i></div>
+      <p class="mono">iteration 1 &nbsp;3,600</p><div class="bar"><i style="width:41%"></i></div>
+      <p class="mono">iteration 2 &nbsp;5,520</p><div class="bar"><i style="width:64%"></i></div>
+      <p class="mono">iteration 3 &nbsp;8,688</p><div class="bar"><i style="width:100%"></i></div>
+      <p class="small muted">1,085,136 exact Sylvester determinants · witness prime 23 needed for the first time at sum 10 · independent standard-library checker PASS at each step · referee reran sum 9</p>
     </div>
     <div class="card">
       <p class="big">Same producer, same checker, launched by the loop's own planner command.</p>
-      <p>Sum 8 also passed the symbolic cross-check and mutation tests. Sum 9: strict checker only, stated as such. <span class="tag MV">MACHINE-VERIFIED</span></p>
-      <p class="muted small">The arithmetic corollary (k+ℓ ≥ 10) is subsumed by the archive's two-prime theorem; the relaxed-problem statement is not.</p>
+      <p>Sums 8 and 9 also passed the symbolic cross-check and mutation tests. Sum 10: strict checker only, stated as such. <span class="tag MV">MACHINE-VERIFIED</span></p>
+      <p class="muted small">The arithmetic corollary (k+ℓ ≥ 11) is subsumed by the archive's two-prime theorem; the relaxed-problem statement is not.</p>
     </div>
   </div>
 </section>

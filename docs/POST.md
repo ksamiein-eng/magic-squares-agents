@@ -5,7 +5,7 @@
 Can nine different squares form a 3×3 magic square? Still open. For #OSIHackathon 2026 I turned my own paper on the problem into an AI agent and sent a team of agents at the paper's own open conjectures, with a referee agent tagging every claim.
 
 Three iterations in one afternoon:
-• the paper's main theorem extended twice (exponent sum 7 → 9; 5,520 independently checked certificates)
+• the paper's main theorem extended three times (exponent sum 7 → 10; 8,688 independently checked certificates)
 • the exact obstruction to its central conjecture located: three elliptic quotients of rank 1, so it is a quadratic-Chabauty problem
 • a never-tested structural hypothesis checked on 1,916,672 exact rational solutions: zero exceptions
 • the loop refuted its own first sharpening, and the failure became a proved lemma and a new, stronger conjecture
@@ -22,7 +22,7 @@ Code, manuscript v3, write-up: https://github.com/ksamiein-eng/magic-squares-age
 
 2/ The paper's proof tree became 14 tools. Specialists attack by playbook; a skeptic agent reruns one computation per specialist and tags every sentence. Accepted results become new stages of the paper's own verification suite. A planner emits the next iteration.
 
-3/ Moved: main theorem extended twice (5,520 certificates, checker PASS). Central conjecture's obstruction located: three elliptic quotients, all rank 1 → quadratic Chabauty. Untested hypothesis checked on 1,916,672 solutions: zero exceptions.
+3/ Moved: main theorem extended three times (8,688 certificates, checker PASS). Central conjecture's obstruction located: three elliptic quotients, all rank 1 → quadratic Chabauty. Untested hypothesis checked on 1,916,672 solutions: zero exceptions.
 
 4/ Best part: iteration 1 proposed a sharper conjecture, iteration 2 refuted it, and the refutation explained itself as a two-line lemma that predicts exactly which configurations can misbehave. Still exactly those at height 5.
 

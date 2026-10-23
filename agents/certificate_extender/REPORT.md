@@ -184,3 +184,24 @@ systems) returns `status: PASS` in 305.5 s, so Theorem 1.1's rational-circle
 exclusion holds for all `k+l <= 9` and the two-prime central root requires
 `k+l >= 10`. Details, statistics, timings and the exact statement supported
 are in `REPORT_sum9.md`.
+
+## Iteration 3 (exponent sum ten)
+
+The same pipeline was run one level higher on 2026-10-22, 20:29-21:38 EDT:
+`plan_sum10.py` (66 representatives for (5,5), (6,4), (7,3), (8,2), (9,1);
+exact orbit coverage asserted, the (5,5) orbits include the coordinate
+swap), `build_degree10_certificate.py` (9 resumable parts in at most 5-6
+parallel processes, 3,168 new signed systems, 0 unresolved, about 37 minutes
+wall clock), and `verify_degree10_stdlib.py` in strict mode:
+`results/certificate_degree10.json` (181 cases, 8,688 systems, 174 MB)
+returns `status: PASS` in 1,309.3 s (1,085,136 exact integer Sylvester
+determinants, degree bounds up to 200), so Theorem 1.1's rational-circle
+exclusion holds for all `k+l <= 10` and the two-prime central root requires
+`k+l >= 11`. New at this level: the witness prime 23 is needed for four (6,4)
+factors, so the paper's list of witness primes becomes {3,5,7,11,13,17,19,23}.
+The sum-9 secondary checks skipped in iteration 2 were created and run:
+`test_degree9_verifier.py` PASS (32 mutations/claims rejected or correctly
+classified, 180 determinant regressions) and `crosscheck_degree9_sympy.py`
+PASS (all 115 cases / 5,520 systems by direct symbolic Sylvester determinants, 2,168 s). The degree-10 analogues are written but not run (budget).
+Details, statistics, timings and the exact statement supported are in
+`REPORT_sum10.md`.

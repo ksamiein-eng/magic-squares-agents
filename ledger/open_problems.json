@@ -18,12 +18,13 @@
       "state": {
         "paper": 7,
         "iteration_1": 8,
-        "iteration_2": 9
+        "iteration_2": 9,
+        "iteration_3": 10
       },
       "playbook": "playbooks/certificate-extension.md",
       "acceptance": "independent standard-library checker PASS on the merged certificate; coverage of all raw forms re-derived",
       "best_tag_attainable": "MACHINE-VERIFIED",
-      "next": "N = 10 with the same scripts (expect ~2x the sum-9 cost); SymPy cross-check and mutation tests for sum 9 first"
+      "next": "N = 11 (expect ~2-3x the sum-10 cost; run the sum-9/10 secondary checks first); witness primes now reach 23"
     },
     {
       "id": "P2",

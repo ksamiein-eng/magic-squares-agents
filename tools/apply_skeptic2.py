@@ -54,10 +54,12 @@ for rel, pairs in edits.items():
     p = ROOT / rel
     s = p.read_text(encoding="utf-8")
     for old, new in pairs:
+        if new in s:
+            continue
         if old in s:
             s = s.replace(old, new)
-        elif new not in s:
-            print("WARN not found in", rel, ":", old[:60])
+        else:
+            print("WARN not found in", rel, ":", old[:60].encode("ascii","replace").decode())
     p.write_text(s, encoding="utf-8")
 
 # ledger

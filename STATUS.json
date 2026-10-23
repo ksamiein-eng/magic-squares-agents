@@ -23,9 +23,9 @@
   "findings": {
     "theorem_1_1_exponent_sum": {
       "before": 7,
-      "after": 9,
+      "after": 10,
       "tag": "MACHINE-VERIFIED",
-      "systems": 5520,
+      "systems": 8688,
       "new_representatives": 32,
       "independent_checker": "PASS 133 s",
       "sympy_crosscheck": "PASS 75/75, 814 s",
@@ -33,7 +33,10 @@
       "iteration_1": 8,
       "iteration_2": 9,
       "independent_checker_sum9": "PASS 305 s",
-      "sum9_secondary_checks": "not run at submission"
+      "sum9_secondary_checks": "not run at submission",
+      "iteration_3": 10,
+      "independent_checker_sum10": "PASS 1309 s",
+      "witness_prime_23_first_needed": "sum 10, signature (6,4)"
     },
     "conjecture_7_3_point_list": {
       "status": "open",

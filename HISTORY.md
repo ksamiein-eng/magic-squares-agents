@@ -24,10 +24,12 @@ in git history; corrections are recorded here rather than silently overwritten (
 | 20:40 | — | Second skeptic pass applied | **Corrections:** the total "935,552 points at H ≤ 4" double-counted (height-3 grid ⊂ height-4 grid) and is now 662,528; the abstract's "independently re-checked" for sum 9 qualified (standard-library checker only; sum-8 part symbolically cross-checked; checkers differ only in constants); vanishing-sine rigidity stated as strictly stronger than 8.1 with weak evidence for the extra strength; "prediction" for the 21 orbits changed to "candidates" (criterion necessary, not sufficient) |
 | 20:50 | — | Iteration 3 height-5 probe complete: 1,916,672 points, all type (i), 0 admissible, 0 type (iii); rank-3 orbits still {0, 54} ⊂ 23 candidates | — |
 | 21:00 | — | Redesigned deck (`docs/deck.html`), gallery images, submission write-up (`docs/SUBMISSION.md`), marimo dashboard (`notebooks/`), post text refreshed (no video required by the form) | — |
+| 20:50 | — | Iteration 3 height-5 probe complete: 1,916,672 points, all type (i), 0 admissible, 0 type (iii); rank-3 orbits still {0, 54} ⊂ 23 candidates | — |
+| 21:35 | — | Iteration 3 sum-10 certificate: 181 cases, 8,688 systems, strict checker PASS 1,309 s; witness prime 23 first needed (paper sentence updated); 174 MB certificate not stored (regenerable) | — |
 
 ## Standing caveats
 
 - Elliptic-curve ranks equal to 1 are quoted from the LMFDB, never re-proved here.
 - Every height-bounded statement is evidence, not proof.
-- Sum-9 secondary checks (SymPy cross-check, mutation tests) were not run at the time of the hackathon submission; sum-8's were and passed.
+- Sum-10 secondary checks (SymPy cross-check, mutation tests) were not run at the time of the hackathon submission; sum-8's and sum-9's were and passed.
 - No result in this repository is formalized in Lean (see `lean/formalization.yaml` for the candidates).

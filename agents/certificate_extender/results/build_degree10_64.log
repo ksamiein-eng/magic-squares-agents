@@ -44,3 +44,22 @@
 [20:56:50]   64_m5_nminus1 system 23: res 0.3s factor 2.6s deg 190
 [20:57:14]   64_m5_nminus1 system 31: res 0.4s factor 2.2s deg 190
 [20:57:53]   64_m5_nminus1 system 39: res 0.3s factor 6.5s deg 190
+[20:58:21]   64_m5_nminus1 system 47: res 0.3s factor 2.0s deg 190
+[20:58:21] done 64_m5_nminus1 systems 48 seconds 205.449 unresolved 0
+[20:58:21] start 64_m5_n3
+[20:58:46]   64_m5_n3 system 7: res 0.3s factor 4.7s deg 190
+[20:59:06]   64_m5_n3 system 15: res 0.3s factor 0.9s deg 190
+[20:59:24]   64_m5_n3 system 23: res 0.3s factor 2.8s deg 190
+[21:00:01]   64_m5_n3 system 31: res 0.4s factor 0.8s deg 190
+[21:00:16]   64_m5_n3 system 39: res 0.4s factor 2.2s deg 190
+[21:00:55]   64_m5_n3 system 47: res 0.4s factor 1.0s deg 190
+[21:00:55] done 64_m5_n3 systems 48 seconds 154.238 unresolved 0
+[21:00:55] start 64_m5_nminus3
+[21:01:28]   64_m5_nminus3 system 7: res 0.4s factor 4.8s deg 190
+[21:01:57]   64_m5_nminus3 system 15: res 0.4s factor 1.9s deg 190
+[21:02:30]   64_m5_nminus3 system 23: res 0.4s factor 5.5s deg 190
+[21:02:58]   64_m5_nminus3 system 31: res 0.5s factor 2.5s deg 190
+[21:03:32]   64_m5_nminus3 system 39: res 0.4s factor 5.5s deg 190
+[21:04:26]   64_m5_nminus3 system 47: res 0.5s factor 2.7s deg 190
+[21:04:26] done 64_m5_nminus3 systems 48 seconds 210.193 unresolved 0
+[21:04:26] part 64 complete

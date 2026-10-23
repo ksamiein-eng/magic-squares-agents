@@ -17,3 +17,5 @@ paper_update/manuscript/*.log
 paper_update/manuscript/*.out
 paper_update/manuscript/*.toc
 notebooks/__marimo__/
+agents/certificate_extender/results/degree10_part_*.json
+agents/certificate_extender/results/certificate_degree10.json

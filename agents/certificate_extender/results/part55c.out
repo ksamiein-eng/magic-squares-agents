@@ -3,3 +3,15 @@
 [20:56:00]   55_m1_n4 system 15: res 0.5s factor 1.9s deg 198
 [20:56:44]   55_m1_n4 system 23: res 0.6s factor 5.1s deg 198
 [20:57:33]   55_m1_n4 system 31: res 0.6s factor 2.3s deg 198
+[20:58:21]   55_m1_n4 system 39: res 0.6s factor 5.3s deg 198
+[20:58:55]   55_m1_n4 system 47: res 0.5s factor 2.7s deg 198
+[20:58:55] done 55_m1_n4 systems 48 seconds 262.376 unresolved 0
+[20:58:55] start 55_m1_nminus4
+[20:59:24]   55_m1_nminus4 system 7: res 0.4s factor 1.3s deg 188
+[20:59:49]   55_m1_nminus4 system 15: res 0.5s factor 2.4s deg 198
+[21:02:48]   55_m1_nminus4 system 23: res 0.6s factor 5.9s deg 198
+[21:03:27]   55_m1_nminus4 system 31: res 0.6s factor 2.8s deg 198
+[21:04:24]   55_m1_nminus4 system 39: res 0.6s factor 7.3s deg 198
+[21:07:09]   55_m1_nminus4 system 47: res 0.5s factor 5.6s deg 198
+[21:07:09] done 55_m1_nminus4 systems 48 seconds 493.523 unresolved 0
+[21:07:09] part 55c complete
