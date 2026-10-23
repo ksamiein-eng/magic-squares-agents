@@ -21,7 +21,6 @@ in git history; corrections are recorded here rather than silently overwritten (
 | 20:17 | `a520d89` | HTML fixes: slide 7 rebuilt (two finding boxes had been lost by a failed edit), figure inlined, one-page write-up | lost slide content restored |
 | 20:18 | `07adb58` | Slide 7 in two columns | — |
 | 20:3x | — | Iteration 3 launched: second skeptic pass over iteration 2, type-(iii) search at H = 5, sum-10 certificate; `openai/math`-style history, contents map, formalization catalogue | (recorded below when results land) |
-
 | 20:40 | — | Second skeptic pass applied | **Corrections:** the total "935,552 points at H ≤ 4" double-counted (height-3 grid ⊂ height-4 grid) and is now 662,528; the abstract's "independently re-checked" for sum 9 qualified (standard-library checker only; sum-8 part symbolically cross-checked; checkers differ only in constants); vanishing-sine rigidity stated as strictly stronger than 8.1 with weak evidence for the extra strength; "prediction" for the 21 orbits changed to "candidates" (criterion necessary, not sufficient) |
 
 ## Standing caveats

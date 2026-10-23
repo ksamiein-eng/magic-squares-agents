@@ -13,7 +13,7 @@ Code and full report: https://github.com/ksamiein-eng/magic-squares-agents
 |---|---|---|---|
 | Theorem 1.1 (r = 2) | exponent sum ≤ 7 | **≤ 8**, then **≤ 9** (5,520 systems; independent checker PASS; sum-8 also SymPy-cross-checked) | MACHINE-VERIFIED |
 | Conjecture 7.3 | "needs quadratic Chabauty" | curve has involutions h→−h, h→1/h; elliptic quotients 123.a1, 492.b1, 1968.j1 with exact infinite-order witnesses; rank Jac(C) ≥ 3 proved; rank-zero descent and classical Chabauty ruled out; it is a quadratic-Chabauty problem on a bielliptic genus-2 curve of rank 2 | PROVED / DATABASE-QUOTED |
-| Conjecture 8.6 | untested | 935,552 exact solutions at height ≤ 4: zero exceptions. Iteration 1's sharpening (rank ≤ 2) refuted by iteration 2; the failure became a lemma: degenerate points lie on torsion cosets, rank ≤ 3, rank 3 only if A_i ± A_j ∥ A_r (criterion holds in 23/113 orbits, including both observed) | SEARCH-EVIDENCE / PROVED |
+| Conjecture 8.6 | untested | 662,528 exact solutions at height ≤ 4 (height 3 is a subset): zero exceptions. Iteration 1's sharpening (rank ≤ 2) refuted by iteration 2; the failure became a lemma: degenerate points lie on torsion cosets, rank ≤ 3, rank 3 only if A_i ± A_j ∥ A_r (criterion holds in 23/113 orbits, including both observed) | SEARCH-EVIDENCE / PROVED |
 | New: trichotomy | — | on a signed system a rational solution is admissible, has a vanishing sine, or has A = 2B; all 662,528 recorded points have a vanishing sine. **Vanishing-sine rigidity** implies Conj. 8.1 and 8.6, is strictly stronger than 8.1, and names the next search (A = 2B points; their absence so far is weak evidence) | PROVED / CONJECTURAL |
 | Empty region on the curve | height 1,500 | height 1,000,000 (500 billion pairs) | SEARCH-EVIDENCE |
 
