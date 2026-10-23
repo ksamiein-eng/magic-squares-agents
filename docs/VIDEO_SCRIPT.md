@@ -69,7 +69,12 @@ the curve identities, confirmed all four findings, and downgraded two sentences:
 equal to one are database-quoted, not proved. It also caught two unfinished reports before
 they could be cited. The write-up is one page and every sentence carries its tag."
 
-**[3:40–4:00] Slides 9–10, beyond and close.**
+**[3:30–3:45] Slide 9, why now.**
+"Two weeks ago OpenAI released seven hundred AI-written manuscripts, less than half formalized, three
+withdrawn in a day. Candidate theorems are cheap now. Verified status is not. Every claim here carries
+a tag, everything reproduces from one command, and the loop caught its own false sharpening."
+
+**[3:45–4:00] Slides 10–11, beyond and close.**
 "Nothing in the loop is specific to magic squares except the tool bindings and the ledger. It
 needs code to bind to, targets that can be typed, and a suite to absorb into; any certificate-style
 paper or any curve with a conjecturally complete point list is the next instance. The manuscript

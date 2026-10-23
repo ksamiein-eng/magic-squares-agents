@@ -126,6 +126,22 @@ of general type. Everything else is open.
 Full one-page write-up: [`docs/RESULTS.md`](docs/RESULTS.md). Referee's verdict table:
 [`results/skeptic_verdict.md`](results/skeptic_verdict.md). Specialists' own reports: `agents/*/REPORT.md`.
 
+## Relation to `openai/math` (October 2026)
+
+Two weeks before this hackathon, `openai/math` released 719 AI-generated manuscripts on 372 open problems,
+about 42% with Lean formalizations, with the note that unformalized results "could have issues"; three were
+withdrawn within a day. That release is the reason a loop like this one matters: the bottleneck in AI
+mathematics is no longer producing candidate theorems but making every claim's status explicit and checkable.
+We borrowed its conventions where they fit and tightened them where we could:
+
+| | `openai/math` | this repository |
+|---|---|---|
+| unit of organisation | result families, manuscript map | result families (`CONTENTS.md`), claim map, ledger |
+| verification | Lean for ~42% of top-line results; the rest unverified | every claim carries a referee tag; 100% reproducible by one command; 0% formalized, candidates listed with exact statements in `lean/formalization.yaml` |
+| reasoning record | abridged reasoning summaries for 10 families | verbatim transcripts of every agent run, with hashes |
+| corrections | `history.md` with versions | `HISTORY.md` with versions and every correction, including the loop's own refuted sharpening |
+| scope | 372 problems, one internal model, ~3 h each | one paper, six open targets, two iterations in one afternoon, by a reusable loop |
+
 ## Audit trail (how the agents actually did it)
 
 The same discipline as the paper's own package: nothing is asserted without a record.

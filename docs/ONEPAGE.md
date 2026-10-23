@@ -19,4 +19,6 @@ Code and full report: https://github.com/ksamiein-eng/magic-squares-agents
 
 **What it did not do.** Close a conjecture, or run on a second paper. Ranks "= 1" are database-quoted; all height bounds are evidence. The referee's table and two reporting defects it caught are in the repository.
 
+**Why now.** `openai/math` (Oct 2026) released 719 AI manuscripts with ~42% Lean-formalized and three withdrawn within a day: candidate theorems are cheap, verified status is not. Here every claim carries a referee tag, everything reproduces from one command, all transcripts are verbatim, and the unformalized status is stated per result (`lean/formalization.yaml`) rather than left implicit.
+
 **Why it generalises.** Nothing depends on magic squares except the tool bindings and the ledger. Any paper proved "for N ≤ N₀ by certificate", any curve with a conjecturally complete point list, and any "every solution has property X" hypothesis is a direct instance of an existing playbook. The manuscript is updated to version 3 with the new theorem, propositions, lemma and conjecture (`paper_update/paper_v3.pdf`).

@@ -1,0 +1,10 @@
+[20:29:48] start 73_m4_n1
+[20:29:53]   73_m4_n1 system 7: res 0.2s factor 0.2s deg 166
+[20:29:59]   73_m4_n1 system 15: res 0.3s factor 0.3s deg 166
+[20:30:04]   73_m4_n1 system 23: res 0.3s factor 0.3s deg 166
+[20:30:09]   73_m4_n1 system 31: res 0.3s factor 0.2s deg 166
+[20:30:15]   73_m4_n1 system 39: res 0.3s factor 0.2s deg 166
+[20:30:20]   73_m4_n1 system 47: res 0.3s factor 0.3s deg 166
+[20:30:20] done 73_m4_n1 systems 48 seconds 31.728 unresolved 0
+[20:30:20] start 73_m4_nminus1
+[20:30:25]   73_m4_nminus1 system 7: res 0.3s factor 0.2s deg 166

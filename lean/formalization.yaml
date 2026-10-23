@@ -1,0 +1,49 @@
+# Formalization catalogue (status: nothing formalized yet; candidates listed with precise statements).
+# Convention borrowed from openai/math's lean/formalization.yaml: one entry per top-line result, with the
+# formal status stated explicitly so that an unformalized result is never mistaken for a formalized one.
+schema: paper2attack/formalization/v1
+lean_version_target: "Lean 4 + Mathlib (not installed on the build machine)"
+formalized_fraction: 0.0
+entries:
+  - id: R4-trichotomy
+    status: candidate
+    priority: 1
+    statement: >
+      For real s_k, s_l and signs eps, eta in {-1, 1}, with s_i = eps*s_k + eta*s_l and s_j = eps*s_k - eta*s_l,
+      let A = max(|s_k|, |s_l|) and B = min(|s_k|, |s_l|). Then {|s_i|, |s_j|} = {A + B, A - B}. Consequently,
+      if no s is zero, the multiset {|s_i|, |s_j|, |s_k|, |s_l|} consists of four pairwise distinct positive
+      numbers iff A != 2B; and if some s is zero then two of the remaining three have equal absolute value.
+    mathlib_dependencies: [Real, abs, max/min lemmas]
+    difficulty: low
+    note: pure real arithmetic; a good first Lean target; it is the theorem behind the vanishing-sine conjecture.
+  - id: R3-degeneracy-relations
+    status: candidate
+    priority: 2
+    statement: >
+      Let z_1..z_r be elements of the unit circle in Q(i) (z * conj z = 1) with z_j = exp(i*chi_j), and let A be an
+      integer r-vector. If sin(A . chi) = 0 then prod_j z_j^(A_j) in {1, -1}. If sin(A . chi) = +- sin(A' . chi)
+      for integer vectors A, A', then prod_j z_j^(A_j - A'_j) in {1,-1} or prod_j z_j^(A_j + A'_j) in {1,-1}.
+    mathlib_dependencies: [Complex.exp, Complex.abs, circle group]
+    difficulty: low-medium
+  - id: R2-identities
+    status: candidate
+    priority: 3
+    statement: >
+      With P(h) = h^12 + 70h^10 - 1009h^8 + 7060h^6 - 1009h^4 + 70h^2 + 1, f(x) = x^6 + 70x^5 - 1009x^4 + 7060x^3
+      - 1009x^2 + 70x + 1 and g(s) = s^3 + 70s^2 - 1012s + 6920: P(h) = f(h^2); h^6 * g(h^2 + h^-2) = P(h) for h != 0;
+      x^3 * g(x + 1/x) = f(x) for x != 0. On v^2 = g(s), 3 * (2, 72) has x-coordinate 11042/289.
+    mathlib_dependencies: [Polynomial, ring_nf, norm_num; elliptic-curve group law (Mathlib's WeierstrassCurve)]
+    difficulty: low (identities), medium (point multiple)
+  - id: R1-certificate-acceptance
+    status: candidate
+    priority: 4
+    statement: >
+      The standard-library checker's acceptance of certificate_degree9.json (resultant identities by exact
+      Sylvester determinants at D+1 points, factor products, modular no-root witnesses, finite fibers and
+      projective boundaries) implies Theorem 4.5. Formalizing this means a verified checker, not a verified
+      certificate; the certificate (87 MB) is data.
+    difficulty: high
+    note: the right target is a verified re-implementation of verify_degree9_stdlib.py's acceptance predicate.
+  - id: R5-search
+    status: not-applicable
+    statement: bounded searches are evidence, not theorems.
