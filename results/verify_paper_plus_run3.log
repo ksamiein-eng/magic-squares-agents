@@ -1,0 +1,8 @@
+{"stage": "two_prime_sum8_stdlib", "passed": true, "seconds": 126.832}
+{"stage": "genus5_point_hunter_selftest", "passed": true, "seconds": 153.62}
+{"stage": "torsion_coset_probe_H2_orbits_0_10", "passed": true, "seconds": 13.736}
+{"stage": "genus5_quotient_structure", "passed": true, "seconds": 6.049}
+{"stage": "degeneracy_rank_bound", "passed": true, "seconds": 0.285}
+{"stage": "two_prime_sum9_stdlib", "passed": true, "seconds": 381.124}
+{"stage": "two_prime_sum10_stdlib", "passed": true, "seconds": 1414.993}
+{"all_passed": true, "paper_stages": 0, "overlay_stages": 7, "report": "C:\\Users\\kimia\\magic-squares-agents\\results\\verification_runs\\plus_20261022T214030\\report.json"}

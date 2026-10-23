@@ -1,0 +1,86 @@
+{
+ "suite": "paper 16 stages + agent overlay",
+ "paper_stages": 0,
+ "overlay_stages": 7,
+ "all_passed": true,
+ "isolation": "Each stage runs in its own temporary copy. Shipped proof files are not modified.",
+ "stages": [
+  {
+   "stage": "two_prime_sum8_stdlib",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 126.832,
+   "log": "logs\\two_prime_sum8_stdlib.log",
+   "certifies": "Theorem 1.1 for k+l <= 8 (3,600 signed systems)",
+   "ledger": "A1",
+   "origin": "agents",
+   "number": 17
+  },
+  {
+   "stage": "genus5_point_hunter_selftest",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 153.62,
+   "log": "logs\\genus5_point_hunter_selftest.log",
+   "certifies": "the sieve never discards a true point; identities P=FG, P/h^6=g(h^2+h^-2), D^2-(48h^2(1-h^2))^2=P",
+   "ledger": "A4",
+   "origin": "agents",
+   "number": 18
+  },
+  {
+   "stage": "torsion_coset_probe_H2_orbits_0_10",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 13.736,
+   "log": "logs\\torsion_coset_probe_H2_orbits_0_10.log",
+   "certifies": "Conjecture 8.6 on every exact solution of the first ten orbits at height <= 2",
+   "ledger": "A3",
+   "origin": "agents",
+   "number": 19
+  },
+  {
+   "stage": "genus5_quotient_structure",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 6.049,
+   "log": "logs\\genus5_quotient_structure.log",
+   "certifies": "quotient identities, Nagell-Lutz infinite-order witnesses, LMFDB isomorphisms",
+   "ledger": "A2",
+   "origin": "agents",
+   "number": 20
+  },
+  {
+   "stage": "degeneracy_rank_bound",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 0.285,
+   "log": "logs\\degeneracy_rank_bound.log",
+   "certifies": "degeneracy-rank lemma criterion agrees with the height-4 data; all rank-3 points explained",
+   "ledger": "A7",
+   "origin": "agents",
+   "number": 21
+  },
+  {
+   "stage": "two_prime_sum9_stdlib",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 381.124,
+   "log": "logs\\two_prime_sum9_stdlib.log",
+   "certifies": "Theorem 1.1 for k+l <= 9 (5,520 signed systems)",
+   "ledger": "A5",
+   "origin": "agents",
+   "number": 22
+  },
+  {
+   "stage": "two_prime_sum10_stdlib",
+   "passed": true,
+   "returncode": 0,
+   "seconds": 1414.993,
+   "log": "logs\\two_prime_sum10_stdlib.log",
+   "certifies": "Theorem 1.1 for k+l <= 10 (8,688 signed systems); needs the regenerated 174 MB certificate in results/",
+   "ledger": "A9",
+   "origin": "agents",
+   "number": 23
+  }
+ ]
+}

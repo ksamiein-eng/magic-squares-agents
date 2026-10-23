@@ -26,6 +26,7 @@ in git history; corrections are recorded here rather than silently overwritten (
 | 21:00 | — | Redesigned deck (`docs/deck.html`), gallery images, submission write-up (`docs/SUBMISSION.md`), marimo dashboard (`notebooks/`), post text refreshed (no video required by the form) | — |
 | 20:50 | — | Iteration 3 height-5 probe complete: 1,916,672 points, all type (i), 0 admissible, 0 type (iii); rank-3 orbits still {0, 54} ⊂ 23 candidates | — |
 | 21:35 | — | Iteration 3 sum-10 certificate: 181 cases, 8,688 systems, strict checker PASS 1,309 s; witness prime 23 first needed (paper sentence updated); 174 MB certificate not stored (regenerable) | — |
+| 22:1x | — | Overlay suite rerun: seven agent stages (sum 8, 9, 10; point-hunter self-test; torsion probe; quotient structure; degeneracy lemma) all pass; lint and provenance regenerated | — |
 
 ## Standing caveats
 
