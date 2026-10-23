@@ -153,7 +153,8 @@
       ],
       "tag": "SEARCH-EVIDENCE (Conjecture 8.6); PROVED (refutation of the rank<=2 sharpening, exact points)",
       "verified_by": [
-        "self: brute-force/sympy cross-check 452/452; reproduction of 18 iteration-1 checkpoints"
+        "self: brute-force/sympy cross-check 452/452; reproduction of 18 iteration-1 checkpoints",
+        "skeptic:results/skeptic_verdict_iteration2.md"
       ],
       "state_after": {
         "P3": "H <= 4"
@@ -177,7 +178,8 @@
       ],
       "tag": "PROVED (lemma); MACHINE-VERIFIED (criterion vs data)",
       "verified_by": [
-        "verify_paper_plus.py:degeneracy_rank_bound"
+        "verify_paper_plus.py:degeneracy_rank_bound",
+        "skeptic:results/skeptic_verdict_iteration2.md"
       ],
       "state_after": {
         "P3": "8.6 reduced to rigidity for zero-sine/equal-magnitude points; a=2b case open"
@@ -219,11 +221,27 @@
       ],
       "tag": "MACHINE-VERIFIED",
       "verified_by": [
-        "verify_paper_plus.py:two_prime_sum9_stdlib"
+        "verify_paper_plus.py:two_prime_sum9_stdlib",
+        "skeptic:results/skeptic_verdict_iteration2.md"
       ],
       "state_after": {
         "P1": 9
       }
+    },
+    {
+      "id": "R2",
+      "iteration": 3,
+      "problem": "all iteration-2 claims",
+      "playbook": "adversarial-referee",
+      "agent": "skeptic (second pass)",
+      "trace": "traces/08_skeptic_iteration2.md",
+      "result": "sum-9 checker rerun PASS (527 s under load); H=4 example point re-derived exactly; lemma and trichotomy proofs checked; three corrections: double-counted total (935,552 -> 662,528), sum-9 'independently re-checked' qualified, vanishing-sine conjecture stated as strictly stronger than 8.1 with weak evidence; 'prediction' -> 'candidates'",
+      "evidence": [
+        "results/skeptic_verdict_iteration2.md"
+      ],
+      "tag": "referee",
+      "verified_by": [],
+      "state_after": {}
     }
   ]
 }

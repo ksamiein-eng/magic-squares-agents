@@ -28,3 +28,8 @@
 [20:35:30]   73_m4_nminus2 system 23: res 0.6s factor 5.6s deg 166
 [20:36:19]   73_m4_nminus2 system 31: res 0.8s factor 3.7s deg 166
 [20:37:04]   73_m4_nminus2 system 39: res 0.8s factor 5.2s deg 166
+[20:38:06]   73_m4_nminus2 system 47: res 0.6s factor 6.5s deg 166
+[20:38:06] done 73_m4_nminus2 systems 48 seconds 278.201 unresolved 0
+[20:38:06] start 73_m5_n1
+[20:38:20]   73_m5_n1 system 7: res 0.6s factor 0.7s deg 162
+[20:38:34]   73_m5_n1 system 15: res 0.7s factor 1.4s deg 166
