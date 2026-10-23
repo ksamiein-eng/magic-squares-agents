@@ -2,3 +2,5 @@ fastmcp>=2.12
 sympy>=1.13
 numpy>=1.26
 claude-agent-sdk>=0.2.100   # only for orchestrator/run_attack.py
+marimo>=0.25                # notebooks/rigidity_lab.py dashboard
+markdown>=3.9               # docs/build_writeup.py

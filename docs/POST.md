@@ -1,34 +1,30 @@
-# Social post (thread-ready; pick one platform that needs no login to view)
+# Public post (LinkedIn / X / Bluesky; attach cover.png and results.png; no video required)
 
-**Post 1.**
-Can nine different squares form a 3×3 magic square? Still open. For #OSIHackathon 2026 I
-turned my own paper on the problem into an AI agent (Paper2Agent-style MCP server) and sent a
-team of agents at the paper's open conjectures. Video + write-up + code: {{VIDEO_URL}} · https://github.com/ksamiein-eng/magic-squares-agents
+**Single post version (LinkedIn):**
 
-**Post 2.**
-The paper's proof tree (251 files, 16 stages) became 14 tools. Five specialists attack from
-different angles; a skeptic agent reruns one computation per specialist and tags every
-sentence: proved / machine-verified / database-quoted / search-evidence / conjectural.
+Can nine different squares form a 3×3 magic square? Still open. For #OSIHackathon 2026 I turned my own paper on the problem into an AI agent and sent a team of agents at the paper's own open conjectures, with a referee agent tagging every claim.
 
-**Post 3.**
-What the agents found: the paper's genus-5 curve has two symmetries nobody used. Its Jacobian
-splits off three elliptic curves (LMFDB 123.a1, 492.b1, 1968.j1), all of rank 1. So the
-paper's rank-zero method can never close its main conjecture: it is a quadratic-Chabauty
-problem. The paper now knows exactly where it is stuck.
+Three iterations in one afternoon:
+• the paper's main theorem extended twice (exponent sum 7 → 9; 5,520 independently checked certificates)
+• the exact obstruction to its central conjecture located: three elliptic quotients of rank 1, so it is a quadratic-Chabauty problem
+• a never-tested structural hypothesis checked on 1,916,672 exact rational solutions: zero exceptions
+• the loop refuted its own first sharpening, and the failure became a proved lemma and a new, stronger conjecture
 
-**Post 4.**
-And they moved things: the paper's main two-parameter theorem now holds one exponent sum
-further (independently checked certificate, 3,600 systems); its structural hypothesis survived
-273,024 exact tests; and the empty region on its genus-5 curve grew
-from height 1,500 to 1,000,000. Each in under 20 minutes of compute.
+Every claim carries a tag (proved / machine-verified / database-quoted / search-evidence / conjectural), one command reproduces all six agent-added verification stages, and every agent transcript is in the repo with hashes. Two weeks after openai/math released 719 AI manuscripts with three withdrawn in a day, the point is this: candidate theorems are cheap, verified status is not.
 
-**Post 5.**
-Then the loop ran again on its own planner's commands. At height 4 it refuted the sharper
-pattern it had proposed at height 3. The failure became a lemma (degenerate points sit on
-torsion cosets; rank 3 needs a parallel row triple) that predicts exactly which orbits can
-carry such points. The referee's tags and the hash-backed provenance make every step auditable.
+Built with Claude Code and Paper2Agent (Miao, Zou et al., Nature 2026). With Jonathan Wolinski.
+Code, manuscript v3, write-up: https://github.com/ksamiein-eng/magic-squares-agents
+#mathematics #AIforScience #OpenScience
 
-**Post 6.**
-Everything runs with one slash command in Claude Code or unattended through the Agent SDK.
-The proof records are never modified. The problem is still open. The paper can keep attacking itself.
-Built with Claude Code + Paper2Agent (Miao, Zou et al., Nature 2026). #OSIHackathon #mathematics #AIforScience
+**Thread version (X / Bluesky):**
+
+1/ Can nine different squares form a 3×3 magic square? Still open. For #OSIHackathon I turned my paper on it into an AI agent and sent agents at the paper's own open conjectures. Three iterations, one afternoon. 🧵
+
+2/ The paper's proof tree became 14 tools. Specialists attack by playbook; a skeptic agent reruns one computation per specialist and tags every sentence. Accepted results become new stages of the paper's own verification suite. A planner emits the next iteration.
+
+3/ Moved: main theorem extended twice (5,520 certificates, checker PASS). Central conjecture's obstruction located: three elliptic quotients, all rank 1 → quadratic Chabauty. Untested hypothesis checked on 1,916,672 solutions: zero exceptions.
+
+4/ Best part: iteration 1 proposed a sharper conjecture, iteration 2 refuted it, and the refutation explained itself as a two-line lemma that predicts exactly which configurations can misbehave. Still exactly those at height 5.
+
+5/ Candidate theorems are cheap; verified status is not (see openai/math this month). Here every claim is tagged, everything reproduces from one command, transcripts are verbatim, corrections are recorded. The problem is still open. The paper can keep attacking itself.
+https://github.com/ksamiein-eng/magic-squares-agents

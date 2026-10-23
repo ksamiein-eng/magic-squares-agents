@@ -58,3 +58,40 @@
 [20:45:53]   73_m5_nminus2 system 7: res 0.3s factor 5.2s deg 160
 [20:46:18]   73_m5_nminus2 system 15: res 0.2s factor 3.6s deg 166
 [20:46:57]   73_m5_nminus2 system 23: res 0.3s factor 1.9s deg 166
+[20:47:46]   73_m5_nminus2 system 31: res 0.3s factor 2.3s deg 166
+[20:48:15]   73_m5_nminus2 system 39: res 0.2s factor 5.2s deg 166
+[20:48:32]   73_m5_nminus2 system 47: res 0.2s factor 1.6s deg 166
+[20:48:32] done 73_m5_nminus2 systems 48 seconds 199.055 unresolved 0
+[20:48:32] start 73_m6_n1
+[20:48:37]   73_m6_n1 system 7: res 0.2s factor 0.2s deg 166
+[20:48:41]   73_m6_n1 system 15: res 0.3s factor 0.2s deg 166
+[20:48:45]   73_m6_n1 system 23: res 0.2s factor 0.3s deg 166
+[20:48:49]   73_m6_n1 system 31: res 0.2s factor 0.1s deg 166
+[20:48:53]   73_m6_n1 system 39: res 0.2s factor 0.3s deg 166
+[20:48:57]   73_m6_n1 system 47: res 0.2s factor 0.1s deg 166
+[20:48:57] done 73_m6_n1 systems 48 seconds 24.993 unresolved 0
+[20:48:57] start 73_m6_nminus1
+[20:49:02]   73_m6_nminus1 system 7: res 0.2s factor 0.3s deg 166
+[20:49:06]   73_m6_nminus1 system 15: res 0.2s factor 0.2s deg 166
+[20:49:10]   73_m6_nminus1 system 23: res 0.2s factor 0.3s deg 166
+[20:49:14]   73_m6_nminus1 system 31: res 0.2s factor 0.4s deg 166
+[20:49:19]   73_m6_nminus1 system 39: res 0.3s factor 0.4s deg 166
+[20:49:24]   73_m6_nminus1 system 47: res 0.3s factor 0.4s deg 166
+[20:49:25] done 73_m6_nminus1 systems 48 seconds 26.976 unresolved 0
+[20:49:25] start 73_m6_n2
+[20:50:03]   73_m6_n2 system 7: res 0.2s factor 1.0s deg 166
+[20:50:18]   73_m6_n2 system 15: res 0.2s factor 1.2s deg 166
+[20:50:52]   73_m6_n2 system 23: res 0.2s factor 2.2s deg 166
+[20:51:11]   73_m6_n2 system 31: res 0.2s factor 2.3s deg 166
+[20:51:29]   73_m6_n2 system 39: res 0.2s factor 1.3s deg 166
+[20:51:42]   73_m6_n2 system 47: res 0.2s factor 1.9s deg 166
+[20:51:43] done 73_m6_n2 systems 48 seconds 137.786 unresolved 0
+[20:51:43] start 73_m6_nminus2
+[20:52:13]   73_m6_nminus2 system 7: res 0.2s factor 2.9s deg 166
+[20:52:35]   73_m6_nminus2 system 15: res 0.2s factor 2.9s deg 166
+[20:53:01]   73_m6_nminus2 system 23: res 0.2s factor 3.2s deg 166
+[20:53:22]   73_m6_nminus2 system 31: res 0.3s factor 3.1s deg 166
+[20:53:40]   73_m6_nminus2 system 39: res 0.2s factor 2.5s deg 166
+[20:54:29]   73_m6_nminus2 system 47: res 0.2s factor 6.7s deg 166
+[20:54:29] done 73_m6_nminus2 systems 48 seconds 166.501 unresolved 0
+[20:54:29] part 73b complete

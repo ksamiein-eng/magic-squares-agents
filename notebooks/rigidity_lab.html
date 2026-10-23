@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/favicon.ico" />
+    <!-- Preload is necessary because we show these images when we disconnect from the server,
+    but at that point we cannot load these images from the server -->
+    <link rel="preload" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/gradient-yHQUC_QB.png" as="image" />
+    <link rel="preload" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/noise-60BoTA8O.png" as="image" />
+    <!-- Preload the fonts -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/Lora-VariableFont_wght-CZceb_kH.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/PTSans-Regular-Bam3NpBI.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/PTSans-Bold-C_DwAp7Z.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/FiraMono-Regular-CEsLFVD9.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/FiraMono-Medium-D5MAsWEG.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/FiraMono-Bold-C6PDArdf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="a marimo app" />
+    <link rel="apple-touch-icon" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/apple-touch-icon.png" />
+    <link rel="manifest" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/manifest.json" />
+
+    <script data-marimo="true">
+      function __resizeIframe(obj) {
+        const scrollbarHeight = 20; // Max between windows, mac, and linux
+
+        function setHeight() {
+          // Guard against race condition where iframe isn't ready
+          if (!obj.contentWindow?.document?.documentElement) {
+            return;
+          }
+          const element = obj.contentWindow.document.documentElement;
+          // If there is no vertical scrollbar, we don't need to resize the iframe
+          if (element.scrollHeight === element.clientHeight) {
+            return;
+          }
+
+          // Create a new height that includes the scrollbar height if it's visible
+          const hasHorizontalScrollbar = element.scrollWidth > element.clientWidth;
+          const newHeight = element.scrollHeight + (hasHorizontalScrollbar ? scrollbarHeight : 0);
+
+          // Only update the height if it's different from the current height
+          if (obj.style.height !== `${newHeight}px`) {
+            obj.style.height = `${newHeight}px`;
+          }
+        }
+
+        // Resize the iframe to the height of the content and bottom scrollbar height
+        setHeight();
+
+        // Resize the iframe when the content changes
+        const resizeObserver = new ResizeObserver((_entries) => {
+          setHeight();
+        });
+        // Only observe if iframe content is ready
+        if (obj.contentWindow?.document?.body) {
+          resizeObserver.observe(obj.contentWindow.document.body);
+        }
+      }
+    </script>
+    <marimo-filename hidden>rigidity_lab.py</marimo-filename>
+    <!-- TODO(Trevor): Legacy, required by VS Code plugin. Remove when plugin is updated (see marimo/server/_templates/template.py) -->
+    <marimo-version data-version="{{ version }}" hidden></marimo-version>
+    <marimo-user-config data-config="{{ user_config }}" hidden></marimo-user-config>
+    <marimo-server-token data-token="{{ server_token }}" hidden></marimo-server-token>
+    <!-- /TODO -->
+    <title>Rigidity Lab dashboard</title>
+    <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/index-s-M1OXjs.js"></script>
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/rolldown-runtime-B0Z9INg1.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/react-DVplv7_D.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/compiler-runtime-BrajqUja.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useEvent-Dfcbgjhg.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/react-dom-_LrxgvjW.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/schemas-Dv42wLFq.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/isObject-BCaOs5rp.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/isSymbol-oX0TOjjx.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/now-Cmx0b_zA.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/debounce-aFmHgJZY.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/isArrayLikeObject-DnwgSs_Z.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/_baseMerge-CQpUq7ep.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/objects-snlMn4yk.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useEventListener-D9cftcHj.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/invariant-Ci2dTZ72.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/config-VPSq73n8.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/utils-B4K466FK.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/session-DqoWmb7X.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/Deferred-CrTnjj37.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/config-DX8Y2WbJ.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/clsx-DB0hHKMi.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/cn-ldLVeaqm.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/jsx-runtime-B74pBk57.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/fullscreen-B9tHcfpV.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-iaThVDkA.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/menu-items-BrwnTgyK.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/use-restore-focus-BxEGwIbk.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/createLucideIcon-DfJ2oMlA.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/circle-DXf-VWZG.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/button-COI-NGrx.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/check-BQNapYaf.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/I18nProvider-Cg2I_s1_.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useNumberFormatter-D7O_26UI.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/select-DTBn5eTb.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/toast-BGzLGnvw.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/tooltip-C9TuY18o.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/paths-bkIFVj8h.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useLifecycle-Mq4gc5kS.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/toDate-DOj9Q6uC.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/database-zap-B_PMVg8T.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/alert-dialog-BaPGzeOK.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/arrays-BqUx5USx.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/once-Haz_uxEL.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/numbers-Mk3-CcoU.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useDebounce-B_ccBZTp.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/input-BoBxR50a.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/use-toast-Wu434mLr.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/requests-lt0JK8Jt.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/uuid-k9DpjH68.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/write-secret-modal-DzKAInL2.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/plus-C5silF6g.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/trash-2-DcgaW8fn.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/preload-helper-uBIymjUX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-Cny7_yZb.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-DBMV4gqt.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/capabilities-BJvf-MD4.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/cjs-C49f7GXV.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/createReducer-DgRODTW6.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-qhAY4L2r.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/marked.esm-B_3iMIUq.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/strings-B2vv-ENv.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-BOfh4hMd.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/badge-crT3E0Rm.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-DtH-7lot.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-BmExfiwX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-1tmpVXyz.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-LSsCJjA3.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dist-DusFODSa.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/stex-Dc5bKD4z.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useTheme-COhSHkCj.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useAsyncData-C7aJJz0Y.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/purify.es--06brOip.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/cells-BRkCaSsh.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/coerce-CpE6kUdX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/get-DjNf4SIX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/_hasPath-BmRQipI0.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/hasIn-yw4sIeJR.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/_baseSet-Bpdo9AvU.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/pick-DKIID_Mo.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/state-BAJYRhmO.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/state-C3oDoyFe.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/LazyAnyLanguageCodeMirror-CKcCbG2G.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/copy-D8O_CYCG.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/micromark-factory-space-D9Dr-k4J.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/chunk-YOKDWASO-BIpRENEC.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/markdown-renderer-BG3sp2rs.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/copy-Djr5m5ac.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/copy-icon-BIiRXh_3.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useRunCells-B2vUhREg.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/RenderHTML-BbOqmHy3.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/blob-D5nfNHOo.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/kbd-pdKBv96t.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useInstallPackage-iX1eufdl.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/errors-DCrsa1nH.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/api-BeC_VSGv.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/share-BZW3tzEX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/events-CbeVJ6OD.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/state-_Qai_QyX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/pair-CaQyK6En.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/ErrorBoundary-Gl5nCA8C.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/config-BOKzA3tF.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/chevron-right-eAtVhbNZ.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dropdown-menu-C1rnl-0o.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/html-to-image-DK9Zl1lU.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/download-DCJXy66H.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/switch-CTaiAjrz.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/tabs-BuQlZFbt.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/table-DG7Ap4H4.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/eye-off-CxVozGAC.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/refresh-cw-Qw1f8Jhy.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/tree-actions-GM5E_bUs.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/ellipsis-63DyBLHQ.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/external-link-UrX9KO36.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/spinner-DyNE-o8o.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/message-circle-C3rKm8_a.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/hat-glasses-C8RhSVii.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/package-GSoSTiIK.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/datasource-Cq6x_5ML.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/alert-DTaqCu_d.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/state-XsPO8hNi.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/cell-link-LSth_8hT.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/MarimoErrorOutput-D60XkCny.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useDateFormatter-DA-62E-Y.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/en-US-Buu61juQ.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/isValid-q_Ad80ug.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/dates-BbFQ2oE4.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/defaultLocale-CNPGWpMu.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/precisionRound-Bq_nmf5u.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/defaultLocale-D5bOh7g6.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/vega-loader.browser-CLRkNgm7.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/tooltip-mT3CGest.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/react-icons.esm-D6tfmvq8.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/extends-CvVTau-c.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/objectWithoutPropertiesLoose-Do6ywDBO.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useIframeCapabilities-CwTkczVN.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/error-banner-Cd69vvyX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/utils-CaQYvazl.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/formats-yZ06h1Pl.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/table-vrvqpuKJ.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/react-resizable-panels.browser.esm-Dbe0MrFr.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/JsonOutput-D6HIIsCb.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/chart-no-axes-column-C4_v6fQW.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/square-function-_W_Lo0P4.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/spec-BfSBcO5B.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/semaphore-BjoL5P0h.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/fileToBase64-BgBraYAr.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useBoolean-BDD6_xQQ.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/code-xml-SQaZqvcO.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/file-headphone-Dl35U6h3.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/file-BPBVl9pl.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/image-wZvTj8WY.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/file-icons-CdJgUy-I.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/globe-UdPdIbF7.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/esm-CI_o7NhW.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useAddCell-GR7eEQrT.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/readonly-python-code-DCSMIsTX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/data-grid-types-DgHVN_Zz.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/glide-utils-CIrAxdjv.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/column-preview-Cm2D6vyX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/square-BPmgQFnh.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/triangle-alert-DmIqR8sY.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/prop-types-Djf4O40e.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/es-Cqst59WX.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/package-data-dv4FBHxR.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/markdown-export-DzhB1FrN.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/renderShortcut-BkVJQ_Zh.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/bundle.esm-D3tw5rqW.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/icons-CiZ_8zS-.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/useDeepCompareMemoize-DFIVN9dn.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/pathUtils-DPmlLd-r.js">
+    <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/floating-outline-XD9FAV-f.js">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/cells-0PFKL3SH.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/markdown-renderer-DjIHoF9Z.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/JsonOutput-B0GmlMnR.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/@marimo-team/frontend@0.25.2/dist/assets/index-Bcdzex-3.css">
+  
+<script data-marimo="true">
+    Object.defineProperty(window, "__MARIMO_STATIC__", {
+        value: Object.freeze({
+            files: Object.freeze({}),
+            modelNotifications: Object.freeze([]),
+        }),
+        writable: false,
+        configurable: false,
+    });
+</script>
+
+<script data-marimo="true">
+    Object.defineProperty(window, "__MARIMO_EXPORT_CONTEXT__", {
+        value: Object.freeze({
+            trusted: true,
+            notebookCode: "",
+        }),
+        writable: false,
+        configurable: false,
+    });
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script data-marimo="true">
+      Object.defineProperty(window, "__MARIMO_MOUNT_CONFIG__", {
+        value: Object.freeze({
+            "filename": "rigidity_lab.py",
+            "cwd": "",
+            "lspWorkspace": null,
+            "mode": "read",
+            "version": "0.25.2",
+            "serverToken": "static",
+            "config": {"ai": {"allow_provider_config": true, "custom_providers": {}, "enabled": true, "models": {"custom_models": [], "displayed_models": []}}, "completion": {"activate_on_typing": true, "auto_close_pairs": true, "copilot": false, "signature_hint_on_typing": false}, "diagnostics": {"sql_linter": true}, "display": {"cell_output": "below", "code_editor_font_size": 14, "code_lens": true, "dataframes": "rich", "default_table_max_columns": 50, "default_table_page_size": 10, "default_width": "medium", "reference_highlighting": true, "theme": "light"}, "formatting": {"line_length": 79}, "keymap": {"overrides": {}, "preset": "default"}, "language_servers": {"pylsp": {"enable_flake8": false, "enable_mypy": true, "enable_pydocstyle": false, "enable_pyflakes": false, "enable_pylint": false, "enable_ruff": true, "enabled": false}}, "mcp": {"mcpServers": {}, "presets": []}, "package_management": {"manager": "pip"}, "runtime": {"auto_instantiate": false, "auto_reload": "off", "default_csv_encoding": "utf-8", "default_sql_output": "auto", "on_cell_change": "autorun", "output_max_bytes": 8000000, "reactive_tests": true, "show_tracebacks": false, "std_stream_max_bytes": 1000000, "watcher_on_save": "lazy"}, "save": {"autosave": "after_delay", "autosave_delay": 1000, "format_on_save": false}, "server": {"browser": "default", "follow_symlink": false}, "snippets": {"custom_paths": [], "include_default_snippets": true}},
+            "configOverrides": {},
+            "appConfig": {"app_title": "Rigidity Lab dashboard", "sql_output": "auto", "width": "medium"},
+            "layout": null,
+            "view": {"showAppCode": true},
+            "notebook": {"cells": [{"code": "", "code_hash": "e1b188e5afe04099ea4cbd810d0996de", "config": {"column": null, "disabled": false, "expand_output": false, "hide_code": false}, "id": "Hbol", "name": "_"}, {"code": "", "code_hash": "9317a87cea6db2b5930aefd6e4041f41", "config": {"column": null, "disabled": false, "expand_output": false, "hide_code": false}, "id": "MJUe", "name": "_"}, {"code": "", "code_hash": "5ee610446c83b2ddde92bbde2e775f0d", "config": {"column": null, "disabled": false, "expand_output": false, "hide_code": false}, "id": "vblA", "name": "_"}, {"code": "", "code_hash": "f7bc1d22e225c1721ff30296b296e840", "config": {"column": null, "disabled": false, "expand_output": false, "hide_code": false}, "id": "bkHC", "name": "_"}, {"code": "", "code_hash": "574919aa362347a3b853aa508715505c", "config": {"column": null, "disabled": false, "expand_output": false, "hide_code": false}, "id": "lEQa", "name": "_"}, {"code": "", "code_hash": "009feb7df3be1e396299b1dedf328133", "config": {"column": null, "disabled": false, "expand_output": false, "hide_code": false}, "id": "PKri", "name": "_"}, {"code": "", "code_hash": "066b8859144f369f239c2e11b4002c2f", "config": {"column": null, "disabled": false, "expand_output": false, "hide_code": false}, "id": "Xref", "name": "_"}], "metadata": {"marimo_version": "0.25.2"}, "version": "1"},
+            "session": {"cells": [{"code_hash": "e1b188e5afe04099ea4cbd810d0996de", "console": [], "id": "Hbol", "outputs": [{"data": {"text/plain": ""}, "type": "data"}]}, {"code_hash": "9317a87cea6db2b5930aefd6e4041f41", "console": [], "id": "MJUe", "outputs": [{"data": {"text/markdown": "\u003Cspan class=\"markdown prose dark:prose-invert contents\"\u003E\u003Ch1 id=\"rigidity-lab-the-ledger-live\"\u003ERigidity Lab: the ledger, live\u003C/h1\u003E\n\u003Cspan class=\"paragraph\"\u003EA marimo notebook over the repository's own state files. \u003Cstrong\u003E7 open targets\u003C/strong\u003E, \u003Cstrong\u003E10 attack runs\u003C/strong\u003E\n(including referee passes). Every number below is read from \u003Ccode\u003Eledger/\u003C/code\u003E, \u003Ccode\u003Eresults/\u003C/code\u003E and \u003Ccode\u003Eagents/*/results/\u003C/code\u003E; nothing is typed in.\u003C/span\u003E\u003C/span\u003E"}, "type": "data"}]}, {"code_hash": "5ee610446c83b2ddde92bbde2e775f0d", "console": [], "id": "vblA", "outputs": [{"data": {"text/html": "\u003Cdiv style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'\u003E\u003Cspan class=\"markdown prose dark:prose-invert contents\"\u003E\u003Ch2 id=\"open-problems-typed-the-type-names-the-playbook\"\u003EOpen problems (typed; the type names the playbook)\u003C/h2\u003E\u003C/span\u003E\u003Cmarimo-ui-element object-id='vblA-0' random-id='39bdc907-4945-f00a-8896-aecef849269c'\u003E\u003Cmarimo-table data-initial-value='[]' data-label='null' data-data='\u0026quot;[{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P1\u0026#92;\u0026quot;,\u0026#92;\u0026quot;type\u0026#92;\u0026quot;:\u0026#92;\u0026quot;certificate-extension\u0026#92;\u0026quot;,\u0026#92;\u0026quot;statement\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Rigidity for r = 2: no admissible rational-circle point for A_{k,l;m,n}; proved by exact certificate for k+l \u0026#92;u003c\u2026\u0026#92;\u0026quot;,\u0026#92;\u0026quot;state\u0026#92;\u0026quot;:\u0026#92;\u0026quot;paper: 7; iteration_1: 8; iteration_2: 9\u0026#92;\u0026quot;,\u0026#92;\u0026quot;best tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;MACHINE-VERIFIED\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P2\u0026#92;\u0026quot;,\u0026#92;\u0026quot;type\u0026#92;\u0026quot;:\u0026#92;\u0026quot;structural\u0026#92;\u0026quot;,\u0026#92;\u0026quot;statement\u0026#92;\u0026quot;:\u0026#92;\u0026quot;C(Q) = K: the genus-five curve Y^2 = P(h) has exactly eight rational points.\u0026#92;\u0026quot;,\u0026#92;\u0026quot;state\u0026#92;\u0026quot;:\u0026#92;\u0026quot;paper: open; \u0026#x27;quadratic Chabauty missing\u0026#x27;; iteration_1: obstruction located: quotients E0=123.a1, E+=492.b1, E-=1968.j1 all rank 1; rank Jac(C) \u0026#92;u003e= 3 proved; ran\u0026#92;\u0026quot;,\u0026#92;\u0026quot;best tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;PROVED\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P3\u0026#92;\u0026quot;,\u0026#92;\u0026quot;type\u0026#92;\u0026quot;:\u0026#92;\u0026quot;hypothesis-probe\u0026#92;\u0026quot;,\u0026#92;\u0026quot;statement\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Every rational point of every solution variety lies on a torsion coset of a proper subtorus.\u0026#92;\u0026quot;,\u0026#92;\u0026quot;state\u0026#92;\u0026quot;:\u0026#92;\u0026quot;paper: untested; iteration_1: H \u0026#92;u003c= 3: 273,024 points, 0 exceptions, exponent rank \u0026#92;u003c= 2; iteration_2: H \u0026#92;u003c= 4: 662,528 points, 0 exceptions; candidate sharpening \u0026#92;\u0026quot;,\u0026#92;\u0026quot;best tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;SEARCH-EVIDENCE (a counterexample would \u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P4\u0026#92;\u0026quot;,\u0026#92;\u0026quot;type\u0026#92;\u0026quot;:\u0026#92;\u0026quot;bounded-search\u0026#92;\u0026quot;,\u0026#92;\u0026quot;statement\u0026#92;\u0026quot;:\u0026#92;\u0026quot;No rational point of height \u0026#92;u003c= B on C outside K.\u0026#92;\u0026quot;,\u0026#92;\u0026quot;state\u0026#92;\u0026quot;:\u0026#92;\u0026quot;paper: 1500; iteration_1: 1000000\u0026#92;\u0026quot;,\u0026#92;\u0026quot;best tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;SEARCH-EVIDENCE\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P5\u0026#92;\u0026quot;,\u0026#92;\u0026quot;type\u0026#92;\u0026quot;:\u0026#92;\u0026quot;structural\u0026#92;\u0026quot;,\u0026#92;\u0026quot;statement\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Whole-orbit closure of B1, B2, C, D1, D2, D3, D4, E2, F+1, F+2 (six sufficient targets D1, D2, D3, D4, F+1, F+\u2026\u0026#92;\u0026quot;,\u0026#92;\u0026quot;state\u0026#92;\u0026quot;:\u0026#92;\u0026quot;paper: 5 of 15 closed; iteration_1: D1/B2/C/E2 reduced to P2; others untouched\u0026#92;\u0026quot;,\u0026#92;\u0026quot;best tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;PROVED\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P6\u0026#92;\u0026quot;,\u0026#92;\u0026quot;type\u0026#92;\u0026quot;:\u0026#92;\u0026quot;structural\u0026#92;\u0026quot;,\u0026#92;\u0026quot;statement\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Kodaira dimension of the solution surfaces of every four-parameter orbit; any rational surface would be a dire\u2026\u0026#92;\u0026quot;,\u0026#92;\u0026quot;state\u0026#92;\u0026quot;:\u0026#92;\u0026quot;paper: Hadamard orbit only\u0026#92;\u0026quot;,\u0026#92;\u0026quot;best tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;MACHINE-VERIFIED\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P7\u0026#92;\u0026quot;,\u0026#92;\u0026quot;type\u0026#92;\u0026quot;:\u0026#92;\u0026quot;hypothesis-probe\u0026#92;\u0026quot;,\u0026#92;\u0026quot;statement\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Vanishing-sine rigidity: every rational point of every signed system of a full-depth configuration has a vanis\u2026\u0026#92;\u0026quot;,\u0026#92;\u0026quot;state\u0026#92;\u0026quot;:\u0026#92;\u0026quot;iteration_2: holds on all 662,528 points at H \u0026#92;u003c= 4 (every point has a zero sine); strictly stronger than 8.1; evidence for the extra strength is weak (grid prim\u0026#92;\u0026quot;,\u0026#92;\u0026quot;best tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;SEARCH-EVIDENCE (a type-(iii) point woul\u0026#92;\u0026quot;}]\u0026quot;' data-total-rows='7' data-total-columns='5' data-max-columns='50' data-banner-text='\u0026quot;\u0026quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'\u003E\u003C/marimo-table\u003E\u003C/marimo-ui-element\u003E\u003C/div\u003E"}, "type": "data"}]}, {"code_hash": "f7bc1d22e225c1721ff30296b296e840", "console": [], "id": "bkHC", "outputs": [{"data": {"text/html": "\u003Cdiv style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'\u003E\u003Cspan class=\"markdown prose dark:prose-invert contents\"\u003E\u003Ch2 id=\"attack-runs-and-referee-passes\"\u003EAttack runs and referee passes\u003C/h2\u003E\u003C/span\u003E\u003Cmarimo-ui-element object-id='bkHC-0' random-id='83109b3f-5c15-f2aa-25a0-c7d0049f6071'\u003E\u003Cmarimo-table data-initial-value='[]' data-label='null' data-data='\u0026quot;[{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A1\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:1,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P1\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;certificate-extension\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;MACHINE-VERIFIED\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;32 representatives, 1,536 new systems, 3,600 total; strict stdlib checker PASS 133 s; SymPy cross-check 75/75 PASS 814 s; mutation tests PAS\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A2\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:1,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P2\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;automorphism-quotient-analysis\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;PROVED (identities, rank \u0026#92;u003e= 1, rank Jac(C) \u0026#92;u003e= 3)\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;involutions h-\u0026#92;u003e-h, h-\u0026#92;u003e1/h; D genus 2 bielliptic; E0, E+, E- with exact infinite-order witnesses; LMFDB 123.a1, 492.b1, 1968.j1 rank 1; rank \u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A3\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:1,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P3\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;hypothesis-probe\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;SEARCH-EVIDENCE\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;273,024 points, 0 off a torsion coset, 0 admissible, all degenerate, exponent rank \u0026#92;u003c= 2\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A4\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:1,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P4\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;bounded-search-with-sieve\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;SEARCH-EVIDENCE\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;no new point; E0 has 12 small points, none lifting\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;R1\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:1,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;all\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;adversarial-referee\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;referee\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;four findings confirmed; two sentences downgraded; two reporting defects found and fixed\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A6\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:2,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P3\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;hypothesis-probe\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;SEARCH-EVIDENCE (Conjecture 8.6); PROVED (refuta\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;662,528 points, 0 off a torsion coset, 0 admissible; exponent ranks {0:12928,1:419840,2:215936,3:13824}; iteration-1 sharpening (rank\u0026#92;u003c=2) re\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A7\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:2,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P3\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;hypothesis-probe (failure analysis)\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;PROVED (lemma); MACHINE-VERIFIED (criterion vs d\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;lemma: degenerate =\u0026#92;u003e torsion coset, rank\u0026#92;u003c=3, rank 3 only if A_i+-A_j parallel to zero row; criterion holds in 23/113 orbits, contains observ\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A5\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:2,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P1\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;certificate-extension\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;MACHINE-VERIFIED\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;40 representatives, 1,920 new systems, 5,520 total, 3,207 factors, 553,392 exact determinants; strict stdlib checker PASS 305 s; no unresolv\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;R2\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:3,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;all iteration-2 claims\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;adversarial-referee\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;referee\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;sum-9 checker rerun PASS (527 s under load); H=4 example point re-derived exactly; lemma and trichotomy proofs checked; three corrections: d\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;id\u0026#92;\u0026quot;:\u0026#92;\u0026quot;A8\u0026#92;\u0026quot;,\u0026#92;\u0026quot;iter\u0026#92;\u0026quot;:3,\u0026#92;\u0026quot;problem\u0026#92;\u0026quot;:\u0026#92;\u0026quot;P7 (and P3)\u0026#92;\u0026quot;,\u0026#92;\u0026quot;playbook\u0026#92;\u0026quot;:\u0026#92;\u0026quot;hypothesis-probe\u0026#92;\u0026quot;,\u0026#92;\u0026quot;tag\u0026#92;\u0026quot;:\u0026#92;\u0026quot;SEARCH-EVIDENCE\u0026#92;\u0026quot;,\u0026#92;\u0026quot;result\u0026#92;\u0026quot;:\u0026#92;\u0026quot;1,916,672 points; type (i) 1,916,672 / (ii) 0 / (iii) 0; 0 off a torsion coset; rank-3 orbits {0,54} inside the 23 candidates; split primes \u0026#92;\u0026quot;}]\u0026quot;' data-total-rows='10' data-total-columns='6' data-max-columns='50' data-banner-text='\u0026quot;\u0026quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'\u003E\u003C/marimo-table\u003E\u003C/marimo-ui-element\u003E\u003C/div\u003E"}, "type": "data"}]}, {"code_hash": "574919aa362347a3b853aa508715505c", "console": [], "id": "lEQa", "outputs": [{"data": {"text/html": "\u003Cdiv style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'\u003E\u003Cspan class=\"markdown prose dark:prose-invert contents\"\u003E\u003Ch2 id=\"torsion-coset-probe-by-height-conjecture-86\"\u003ETorsion-coset probe by height (Conjecture 8.6)\u003C/h2\u003E\u003C/span\u003E\u003Cmarimo-ui-element object-id='lEQa-0' random-id='0f9807ee-3817-e68e-c123-842d238d1e6b'\u003E\u003Cmarimo-table data-initial-value='[]' data-label='null' data-data='\u0026quot;[{\u0026#92;\u0026quot;H\u0026#92;\u0026quot;:2,\u0026#92;\u0026quot;points\u0026#92;\u0026quot;:71168,\u0026#92;\u0026quot;off_torsion_coset\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;admissible\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;max_rank\u0026#92;\u0026quot;:null},{\u0026#92;\u0026quot;H\u0026#92;\u0026quot;:3,\u0026#92;\u0026quot;points\u0026#92;\u0026quot;:273024,\u0026#92;\u0026quot;off_torsion_coset\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;admissible\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;max_rank\u0026#92;\u0026quot;:null},{\u0026#92;\u0026quot;H\u0026#92;\u0026quot;:4,\u0026#92;\u0026quot;points\u0026#92;\u0026quot;:662528,\u0026#92;\u0026quot;off_torsion_coset\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;admissible\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;max_rank\u0026#92;\u0026quot;:3},{\u0026#92;\u0026quot;H\u0026#92;\u0026quot;:5,\u0026#92;\u0026quot;points\u0026#92;\u0026quot;:1916672,\u0026#92;\u0026quot;off_torsion_coset\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;admissible\u0026#92;\u0026quot;:0,\u0026#92;\u0026quot;max_rank\u0026#92;\u0026quot;:3}]\u0026quot;' data-total-rows='4' data-total-columns='5' data-max-columns='50' data-banner-text='\u0026quot;\u0026quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'\u003E\u003C/marimo-table\u003E\u003C/marimo-ui-element\u003E\u003Cspan class=\"markdown prose dark:prose-invert contents\"\u003E\u003Cspan class=\"paragraph\"\u003EZero exceptions at every height; the exponent-rank maximum rose from 2 to 3 at H = 4, which refuted a candidate sharpening and produced the degeneracy-rank lemma.\u003C/span\u003E\u003C/span\u003E\u003C/div\u003E"}, "type": "data"}]}, {"code_hash": "009feb7df3be1e396299b1dedf328133", "console": [], "id": "PKri", "outputs": [{"data": {"text/html": "\u003Cdiv style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'\u003E\u003Cspan class=\"markdown prose dark:prose-invert contents\"\u003E\u003Ch2 id=\"agent-added-verification-stages-overlay-on-the-papers-suite-all-passed-true\"\u003EAgent-added verification stages (overlay on the paper's suite): all passed = \u003Cstrong\u003ETrue\u003C/strong\u003E\u003C/h2\u003E\u003C/span\u003E\u003Cmarimo-ui-element object-id='PKri-0' random-id='3077d2ec-ed2e-2639-081e-e503a8131fc3'\u003E\u003Cmarimo-table data-initial-value='[]' data-label='null' data-data='\u0026quot;[{\u0026#92;\u0026quot;stage\u0026#92;\u0026quot;:\u0026#92;\u0026quot;two_prime_sum8_stdlib\u0026#92;\u0026quot;,\u0026#92;\u0026quot;passed\u0026#92;\u0026quot;:true,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:114.793,\u0026#92;\u0026quot;certifies\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Theorem 1.1 for k+l \u0026#92;u003c= 8 (3,600 signed systems)\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;stage\u0026#92;\u0026quot;:\u0026#92;\u0026quot;genus5_point_hunter_selftest\u0026#92;\u0026quot;,\u0026#92;\u0026quot;passed\u0026#92;\u0026quot;:true,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:137.423,\u0026#92;\u0026quot;certifies\u0026#92;\u0026quot;:\u0026#92;\u0026quot;the sieve never discards a true point; identities P=FG, P/h^6=g(h^2+h^-2), D^2-(48h^2(1-h^2))^2=P\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;stage\u0026#92;\u0026quot;:\u0026#92;\u0026quot;torsion_coset_probe_H2_orbits_0_10\u0026#92;\u0026quot;,\u0026#92;\u0026quot;passed\u0026#92;\u0026quot;:true,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:11.152,\u0026#92;\u0026quot;certifies\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Conjecture 8.6 on every exact solution of the first ten orbits at height \u0026#92;u003c= 2\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;stage\u0026#92;\u0026quot;:\u0026#92;\u0026quot;genus5_quotient_structure\u0026#92;\u0026quot;,\u0026#92;\u0026quot;passed\u0026#92;\u0026quot;:true,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:4.142,\u0026#92;\u0026quot;certifies\u0026#92;\u0026quot;:\u0026#92;\u0026quot;quotient identities, Nagell-Lutz infinite-order witnesses, LMFDB isomorphisms\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;stage\u0026#92;\u0026quot;:\u0026#92;\u0026quot;degeneracy_rank_bound\u0026#92;\u0026quot;,\u0026#92;\u0026quot;passed\u0026#92;\u0026quot;:true,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:0.179,\u0026#92;\u0026quot;certifies\u0026#92;\u0026quot;:\u0026#92;\u0026quot;degeneracy-rank lemma criterion agrees with the height-4 data; all rank-3 points explained\u0026#92;\u0026quot;},{\u0026#92;\u0026quot;stage\u0026#92;\u0026quot;:\u0026#92;\u0026quot;two_prime_sum9_stdlib\u0026#92;\u0026quot;,\u0026#92;\u0026quot;passed\u0026#92;\u0026quot;:true,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:281.978,\u0026#92;\u0026quot;certifies\u0026#92;\u0026quot;:\u0026#92;\u0026quot;Theorem 1.1 for k+l \u0026#92;u003c= 9 (5,520 signed systems)\u0026#92;\u0026quot;}]\u0026quot;' data-total-rows='6' data-total-columns='4' data-max-columns='50' data-banner-text='\u0026quot;\u0026quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'\u003E\u003C/marimo-table\u003E\u003C/marimo-ui-element\u003E\u003C/div\u003E"}, "type": "data"}]}, {"code_hash": "066b8859144f369f239c2e11b4002c2f", "console": [], "id": "Xref", "outputs": [{"data": {"text/html": "\u003Cdiv style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'\u003E\u003Cspan class=\"markdown prose dark:prose-invert contents\"\u003E\u003Ch2 id=\"two-prime-certificate-theorem-11-by-exponent-sum\"\u003ETwo-prime certificate (Theorem 1.1) by exponent sum\u003C/h2\u003E\u003C/span\u003E\u003Cmarimo-ui-element object-id='Xref-0' random-id='c0a53eaa-f2d6-bfa9-af73-9cf324156724'\u003E\u003Cmarimo-table data-initial-value='[]' data-label='null' data-data='\u0026quot;[{\u0026#92;\u0026quot;sum\u0026#92;\u0026quot;:8,\u0026#92;\u0026quot;status\u0026#92;\u0026quot;:\u0026#92;\u0026quot;PASS\u0026#92;\u0026quot;,\u0026#92;\u0026quot;systems\u0026#92;\u0026quot;:3600,\u0026#92;\u0026quot;determinants\u0026#92;\u0026quot;:296880,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:132.802},{\u0026#92;\u0026quot;sum\u0026#92;\u0026quot;:9,\u0026#92;\u0026quot;status\u0026#92;\u0026quot;:\u0026#92;\u0026quot;PASS\u0026#92;\u0026quot;,\u0026#92;\u0026quot;systems\u0026#92;\u0026quot;:5520,\u0026#92;\u0026quot;determinants\u0026#92;\u0026quot;:553392,\u0026#92;\u0026quot;seconds\u0026#92;\u0026quot;:305.46}]\u0026quot;' data-total-rows='2' data-total-columns='5' data-max-columns='50' data-banner-text='\u0026quot;\u0026quot;' data-pagination='false' data-page-size='10' data-show-filters='false' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'\u003E\u003C/marimo-table\u003E\u003C/marimo-ui-element\u003E\u003C/div\u003E"}, "type": "data"}]}], "metadata": {"marimo_version": "0.25.2", "script_metadata_hash": null}, "version": "1"},
+            "runtimeConfig": null
+        }),
+        writable: false,
+        configurable: false,
+      });
+    </script>
+  <marimo-code hidden=""></marimo-code>
+<marimo-code-hash hidden="">2f62f569a9e1f6791e5a20ed440b149f</marimo-code-hash>
+</body>
+</html>

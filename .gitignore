@@ -16,3 +16,4 @@ paper_update/manuscript/*.aux
 paper_update/manuscript/*.log
 paper_update/manuscript/*.out
 paper_update/manuscript/*.toc
+notebooks/__marimo__/

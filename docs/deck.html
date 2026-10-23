@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rigidity Lab — deck</title>
+<style>
+  :root { --bg:#0b1020; --bg2:#121a33; --fg:#eef2ff; --muted:#9aa6c8; --teal:#2dd4bf; --violet:#a78bfa; --amber:#fbbf24; --rose:#fb7185; --green:#4ade80; --card:rgba(255,255,255,0.06); --line:rgba(255,255,255,0.12); }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--fg); font-family:"Segoe UI", Inter, Helvetica, Arial, sans-serif; overflow:hidden; }
+  .slide { display:none; position:relative; box-sizing:border-box; width:100vw; height:100vh; padding:48px 72px; background: radial-gradient(1200px 600px at 85% -10%, rgba(167,139,250,0.18), transparent 60%), radial-gradient(900px 500px at -10% 110%, rgba(45,212,191,0.16), transparent 60%), var(--bg); }
+  .slide.active { display:flex; flex-direction:column; animation: fade .35s ease; }
+  @keyframes fade { from { opacity:0; transform:translateY(8px);} to { opacity:1; transform:none; } }
+  .kicker { color:var(--teal); font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:14px; margin-bottom:10px; }
+  h1 { font-size:58px; line-height:1.05; margin:0 0 14px; font-weight:800; letter-spacing:-.02em; }
+  h1 .grad, h2 .grad { background:linear-gradient(90deg,var(--teal),var(--violet)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  h2 { font-size:38px; line-height:1.1; margin:0 0 18px; font-weight:800; letter-spacing:-.01em; }
+  p, li { font-size:20px; line-height:1.45; color:#dbe2ff; }
+  .muted { color:var(--muted); }
+  .row { display:flex; gap:22px; }
+  .row > * { flex:1; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 22px; }
+  .stat { text-align:left; }
+  .stat .n { font-size:56px; font-weight:800; letter-spacing:-.03em; line-height:1; background:linear-gradient(90deg,var(--teal),var(--violet)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .stat .l { color:var(--muted); font-size:16px; margin-top:8px; }
+  .tag { display:inline-block; padding:3px 10px; border-radius:999px; font-size:13px; font-weight:700; letter-spacing:.04em; margin-right:6px; }
+  .PROVED{background:rgba(74,222,128,.18); color:var(--green); border:1px solid rgba(74,222,128,.4)}
+  .MV{background:rgba(45,212,191,.16); color:var(--teal); border:1px solid rgba(45,212,191,.4)}
+  .DB{background:rgba(251,191,36,.16); color:var(--amber); border:1px solid rgba(251,191,36,.4)}
+  .SE{background:rgba(167,139,250,.16); color:var(--violet); border:1px solid rgba(167,139,250,.4)}
+  .CONJ{background:rgba(251,113,133,.16); color:var(--rose); border:1px solid rgba(251,113,133,.4)}
+  table { border-collapse:collapse; width:100%; font-size:17px; }
+  th { text-align:left; color:var(--muted); font-weight:600; padding:8px 10px; border-bottom:1px solid var(--line); }
+  td { padding:9px 10px; border-bottom:1px solid rgba(255,255,255,.07); vertical-align:top; }
+  .big { font-size:26px; line-height:1.35; }
+  .foot { margin-top:auto; color:var(--muted); font-size:15px; }
+  .progress { position:fixed; left:0; bottom:0; height:4px; background:linear-gradient(90deg,var(--teal),var(--violet)); width:0; transition:width .3s; }
+  .counter { position:fixed; right:22px; bottom:14px; color:var(--muted); font-size:14px; }
+  .bar { height:16px; border-radius:8px; background:rgba(255,255,255,.08); overflow:hidden; margin:6px 0 14px; }
+  .bar > i { display:block; height:100%; background:linear-gradient(90deg,var(--teal),var(--violet)); }
+  .mono { font-family:Consolas,"Courier New",monospace; font-size:17px; color:#c7d2fe; }
+  .timeline { display:flex; gap:14px; align-items:stretch; }
+  .timeline .step { flex:1; position:relative; }
+  .timeline p { font-size:17px; line-height:1.35; }
+  .tight .big { font-size:21px; }
+  .tight p { margin:6px 0; }
+  .timeline .step::after { content:"→"; position:absolute; right:-16px; top:40%; color:var(--muted); font-size:22px; }
+  .timeline .step:last-child::after { content:""; }
+  .num { font-size:44px; font-weight:800; color:var(--teal); line-height:1; }
+  .small { font-size:16px; }
+  svg text { font-family:"Segoe UI", Helvetica, Arial, sans-serif; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="slide active">
+  <div class="kicker">OSI Hackathon 2026 · physical sciences &amp; mathematics</div>
+  <h1>A paper that attacks<br>its <span class="grad">own open problems</span></h1>
+  <p class="big">Rigidity Lab: a validated loop for AI on hard open problems in mathematics.<br>Instance one: magic squares of squares.</p>
+  <div class="row" style="margin-top:26px">
+    <div class="card stat"><div class="n">3</div><div class="l">iterations of the loop in one afternoon</div></div>
+    <div class="card stat"><div class="n">5,520</div><div class="l">signed systems certified (theorem extended twice)</div></div>
+    <div class="card stat"><div class="n">1.9M</div><div class="l">rational solutions tested, zero exceptions</div></div>
+    <div class="card stat"><div class="n">0</div><div class="l">claims without a referee tag</div></div>
+  </div>
+  <div class="foot">Kimia Samieinejad · Jonathan Wolinski · github.com/ksamiein-eng/magic-squares-agents · → to advance</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <div class="kicker">The problem</div>
+  <h2>Nine distinct squares in a 3×3 magic square. <span class="grad">Open for decades.</span></h2>
+  <div class="row">
+    <div class="card">
+      <p>Centre <b>y²</b>. Each line through it is a Pythagorean triangle on hypotenuse <b>y</b>, so a point of the rational unit circle.</p>
+      <p>Magic ⇔ four sines of integer combinations of the angles have magnitudes <b>{a, b, a+b, a−b}</b>.</p>
+      <p><b>Rigidity conjecture:</b> this never happens on the rational circle, for any full-depth frequency matrix. Strictly stronger than the original problem.</p>
+    </div>
+    <div class="card">
+      <p class="kicker" style="color:var(--violet)">What the paper proved before today</p>
+      <ul>
+        <li>r = 2, exponent sum ≤ 7: 2,064 exact certificates</li>
+        <li>first three-parameter case ⇔ a genus-5 curve has only 8 rational points</li>
+        <li>r = 4: nothing at height ≤ 4; Hadamard surfaces of general type</li>
+      </ul>
+      <p class="kicker" style="color:var(--rose)">Open this morning</p>
+      <ul><li>the eight-point list · sums ≥ 8 · the torsion-coset hypothesis · ten orbits</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <div class="kicker">The loop</div>
+  <h2>Convert → ledger → attack → referee → absorb → <span class="grad">iterate</span></h2>
+  <svg viewBox="0 0 1200 330" style="width:100%;max-height:52vh">
+    <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9aa6c8"/></marker>
+      <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+    <g font-size="17" fill="#eef2ff" text-anchor="middle">
+      <g><rect x="20" y="90" width="170" height="110" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#g)" stroke-width="2"/><text x="105" y="128" font-weight="700">Convert</text><text x="105" y="155" font-size="14" fill="#9aa6c8">Paper2MCP: 14 tools</text><text x="105" y="176" font-size="14" fill="#9aa6c8">bound to the paper's code</text></g>
+      <g><rect x="215" y="90" width="170" height="110" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#g)" stroke-width="2"/><text x="300" y="128" font-weight="700">Ledger</text><text x="300" y="155" font-size="14" fill="#9aa6c8">open targets, typed,</text><text x="300" y="176" font-size="14" fill="#9aa6c8">with next increment</text></g>
+      <g><rect x="410" y="90" width="170" height="110" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#g)" stroke-width="2"/><text x="495" y="128" font-weight="700">Attack</text><text x="495" y="155" font-size="14" fill="#9aa6c8">one agent per playbook,</text><text x="495" y="176" font-size="14" fill="#9aa6c8">in parallel</text></g>
+      <g><rect x="605" y="90" width="170" height="110" rx="16" fill="rgba(255,255,255,0.06)" stroke="#fb7185" stroke-width="2"/><text x="690" y="128" font-weight="700">Referee</text><text x="690" y="155" font-size="14" fill="#9aa6c8">skeptic reruns, tags</text><text x="690" y="176" font-size="14" fill="#9aa6c8">every claim</text></g>
+      <g><rect x="800" y="90" width="170" height="110" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#g)" stroke-width="2"/><text x="885" y="128" font-weight="700">Absorb</text><text x="885" y="155" font-size="14" fill="#9aa6c8">stages 17–22 of the</text><text x="885" y="176" font-size="14" fill="#9aa6c8">paper's own suite</text></g>
+      <g><rect x="995" y="90" width="185" height="110" rx="16" fill="rgba(255,255,255,0.06)" stroke="url(#g)" stroke-width="2"/><text x="1087" y="128" font-weight="700">Iterate</text><text x="1087" y="155" font-size="14" fill="#9aa6c8">planner emits the</text><text x="1087" y="176" font-size="14" fill="#9aa6c8">next command</text></g>
+    </g>
+    <g stroke="#9aa6c8" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M190,145 L213,145"/><path d="M385,145 L408,145"/><path d="M580,145 L603,145"/><path d="M775,145 L798,145"/><path d="M970,145 L993,145"/></g>
+    <path d="M1087,200 C1087,290 105,290 105,200" stroke="url(#g)" stroke-width="2.5" fill="none" marker-end="url(#a)" stroke-dasharray="6 5"/>
+    <text x="600" y="275" text-anchor="middle" font-size="15" fill="#9aa6c8">a linter refuses any claim without a tag, an evidence file, a verifier and a passing stage</text>
+  </svg>
+  <div class="row small">
+    <div class="card"><b>Playbooks</b> are paper-agnostic: certificate extension, sieved search, quotient analysis, hypothesis probe, referee, absorb, formalize.</div>
+    <div class="card"><b>Everything auditable:</b> verbatim transcripts of all 9 agent runs, claim map, hashes, history of corrections.</div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <div class="kicker">Iteration 1 · finding 1</div>
+  <h2>The curve had <span class="grad">two symmetries nobody used</span></h2>
+  <div class="row">
+    <div class="card">
+      <p>C: Y² = h¹² + 70h¹⁰ − 1009h⁸ + 7060h⁶ − 1009h⁴ + 70h² + 1 is even and palindromic ⇒ h → −h and h → 1/h.</p>
+      <p>Its Jacobian splits off three elliptic curves. The paper's own known points give <b>points of infinite order</b> on each (exact Nagell–Lutz). <span class="tag PROVED">PROVED</span></p>
+      <p>rank Jac(C) ≥ 3 <span class="tag PROVED">PROVED</span> · rank Jac(D) = 2 = genus <span class="tag DB">DATABASE-QUOTED</span></p>
+    </div>
+    <div class="card">
+      <table><tr><th>curve</th><th>LMFDB</th><th>rank</th></tr>
+        <tr><td>E₀: v² = s³+70s²−1012s+6920</td><td>123.a1</td><td>1</td></tr>
+        <tr><td>E₊: v² = (w+2)g(w)</td><td>492.b1</td><td>1</td></tr>
+        <tr><td>E₋: v² = (w−2)g(w)</td><td>1968.j1</td><td>1</td></tr></table>
+      <p class="big" style="margin-top:14px"><b>So the paper's own method can never close its conjecture.</b> It is a quadratic-Chabauty problem, and the inputs are now written down.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <div class="kicker">Iterations 1–3 · the theorem that moved</div>
+  <h2>Theorem 1.1: exponent sum 7 → 8 → <span class="grad">9</span></h2>
+  <div class="row">
+    <div class="card">
+      <p class="muted small">certified signed systems</p>
+      <p class="mono">paper &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,064</p><div class="bar"><i style="width:37%"></i></div>
+      <p class="mono">iteration 1 &nbsp;3,600</p><div class="bar"><i style="width:65%"></i></div>
+      <p class="mono">iteration 2 &nbsp;5,520</p><div class="bar"><i style="width:100%"></i></div>
+      <p class="small muted">553,392 exact Sylvester determinants · largest witness prime still 19 · independent standard-library checker PASS at each step · referee reran it</p>
+    </div>
+    <div class="card">
+      <p class="big">Same producer, same checker, launched by the loop's own planner command.</p>
+      <p>Sum 8 also passed the symbolic cross-check and mutation tests. Sum 9: strict checker only, stated as such. <span class="tag MV">MACHINE-VERIFIED</span></p>
+      <p class="muted small">The arithmetic corollary (k+ℓ ≥ 10) is subsumed by the archive's two-prime theorem; the relaxed-problem statement is not.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <div class="kicker">Iterations 1–3 · the hypothesis that was never tested</div>
+  <h2>Torsion-coset hypothesis: <span class="grad">1,916,672 points, zero exceptions</span></h2>
+  <div class="row">
+    <div class="card stat"><div class="n">273,024</div><div class="l">height ≤ 3 · iteration 1</div></div>
+    <div class="card stat"><div class="n">662,528</div><div class="l">height ≤ 4 · iteration 2</div></div>
+    <div class="card stat"><div class="n">1,916,672</div><div class="l">height ≤ 5 · iteration 3</div></div>
+  </div>
+  <div class="row" style="margin-top:18px">
+    <div class="card"><p>Every exact rational solution of all 48 signed systems in all 113 orbits, tested with a <b>complete</b> Gaussian-prime kernel test. 0 off a torsion coset. 0 admissible. <span class="tag SE">SEARCH-EVIDENCE</span></p></div>
+    <div class="card"><p>Overflow guard valid at height 3 found <b>invalid</b> at height 4 and replaced with an exact re-test; validated against the previous checkpoints.</p></div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <div class="kicker">The failure that became a theorem</div>
+  <h2>Iteration 1 guessed. Iteration 2 refuted it. <span class="grad">The refutation explained itself.</span></h2>
+  <div class="timeline">
+    <div class="card step"><div class="num">H ≤ 3</div><p>exponent rank never above 2. Recorded as a candidate sharpening.</p></div>
+    <div class="card step"><div class="num" style="color:var(--rose)">H = 4</div><p>13,824 rank-3 points in orbits 0 and 54. <b>Sharpening refuted.</b></p></div>
+    <div class="card step"><div class="num" style="color:var(--green)">Lemma</div><p>a zero sine is itself a relation A<sub>r</sub>; equal magnitudes give A<sub>i</sub> ± A<sub>j</sub>. Rank 3 needs A<sub>i</sub> ± A<sub>j</sub> ∥ A<sub>r</sub>. <span class="tag PROVED">PROVED</span></p></div>
+    <div class="card step"><div class="num">23/113</div><p>orbits satisfy the criterion; the two observed are among them; at height 5 still exactly those two.</p></div>
+  </div>
+  <div class="card tight" style="margin-top:14px">
+    <p class="big"><b>Trichotomy.</b> On a signed system the magnitudes are forced to be {A, B, A+B, A−B}: a rational solution is admissible, has a vanishing sine, or has A = 2B. All 1,916,672 points have a vanishing sine; none has A = 2B. <span class="tag PROVED">PROVED</span> <span class="tag SE">SEARCH-EVIDENCE</span></p>
+    <p><b>Vanishing-sine rigidity</b> (new conjecture, strictly stronger than the paper's) implies both open conjectures and names the next search. <span class="tag CONJ">CONJECTURAL</span></p>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <div class="kicker">The referee</div>
+  <h2>Two adversarial passes. <span class="grad">Every sentence as strong as its evidence.</span></h2>
+  <table>
+    <tr><th>claim</th><th>what the skeptic reran</th><th>verdict</th></tr>
+    <tr><td>Theorem 1.1 through sum 9</td><td>strict checker rerun: PASS, 5,520 systems; coverage assertions inspected</td><td><span class="tag MV">MACHINE-VERIFIED</span></td></tr>
+    <tr><td>Three elliptic quotients, rank ≥ 1 each, rank Jac(C) ≥ 3</td><td>identities in SymPy; non-integral multiples; non-isogeny argument</td><td><span class="tag PROVED">PROVED</span></td></tr>
+    <tr><td>ranks = 1, Chabauty fails on D</td><td>LMFDB; c₄/c₆ isomorphism scaling</td><td><span class="tag DB">DATABASE-QUOTED</span></td></tr>
+    <tr><td>Conjecture 8.6 at height ≤ 5</td><td>example points re-derived with exact Gaussian arithmetic; overflow argument checked</td><td><span class="tag SE">SEARCH-EVIDENCE</span></td></tr>
+    <tr><td>Degeneracy lemma, trichotomy</td><td>proofs checked line by line; criterion rerun</td><td><span class="tag PROVED">PROVED</span></td></tr>
+  </table>
+  <p class="small muted" style="margin-top:12px">Caught and fixed: a double-counted total, "rank = 1" used as if proved, an overstated "independently re-checked", two unfinished reports, a false sharpening. All recorded in HISTORY.md.</p>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+  <div class="kicker">Why now</div>
+  <h2>Candidate theorems are cheap. <span class="grad">Verified status is not.</span></h2>
+  <div class="row">
+    <div class="card">
+      <p class="kicker" style="color:var(--amber)">openai/math · October 2026</p>
+      <p>719 AI-generated manuscripts on 372 open problems. About 42% formalized in Lean. The rest "could have issues". Three withdrawn within a day.</p>
+    </div>
+    <div class="card">
+      <p class="kicker">this loop</p>
+      <p>every claim tagged by a fresh referee · one command reproduces all six agent stages · verbatim transcripts with hashes · corrections recorded, including its own · formalization status stated per result (0% today, candidates with exact statements)</p>
+    </div>
+  </div>
+  <p class="big" style="margin-top:18px">The bottleneck moved from producing theorems to making each claim's status explicit, checkable and correctable. That is what this loop is.</p>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+  <div class="kicker">Beyond magic squares</div>
+  <h2>What the loop needs, and <span class="grad">where it goes next</span></h2>
+  <div class="row">
+    <div class="card"><p><b>Needs:</b> code or certificates to bind tools to · open targets that can be typed · a verification suite to absorb into.</p><p><b>Did not do:</b> close a conjecture; run on a second paper.</p></div>
+    <div class="card"><p><b>Next instances:</b> the paper's other six targets (planner already emits them) · quadratic Chabauty on the genus-2 quotient · any "proved for N ≤ N₀ by certificate" paper · any curve with a conjecturally complete point list · any "every solution has property X" hypothesis.</p></div>
+  </div>
+  <div class="card" style="margin-top:18px"><p class="big">Manuscript v3 is written and compiled: new theorem, propositions, lemma, conjecture, each tied to its evidence. The problem is still open. The paper now knows exactly where it is stuck, and it can keep attacking itself.</p></div>
+  <div class="foot">github.com/ksamiein-eng/magic-squares-agents · MIT (code) · CC BY-NC-ND (paper) · Kimia Samieinejad, Jonathan Wolinski</div>
+</section>
+
+<div class="progress" id="progress"></div>
+<div class="counter" id="counter">1 / 10</div>
+<script>
+  const slides=[...document.querySelectorAll('.slide')]; let i=0;
+  function show(n){ slides[i].classList.remove('active'); i=(n+slides.length)%slides.length; slides[i].classList.add('active');
+    document.getElementById('counter').textContent=(i+1)+' / '+slides.length; document.getElementById('progress').style.width=((i+1)/slides.length*100)+'%'; }
+  show(0);
+  document.addEventListener('keydown',e=>{ if(['ArrowRight',' ','PageDown'].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+  document.addEventListener('click',e=>{ if(e.clientX>window.innerWidth/2) show(i+1); else show(i-1); });
+</script>
+</body>
+</html>

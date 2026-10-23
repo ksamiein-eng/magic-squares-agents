@@ -62,7 +62,8 @@ commands (exponent sum 9, torsion probe at height 4) to show the loop turning ag
 | Orchestration | `.claude/skills/rigidity-attack/SKILL.md` | `/rigidity-attack all` inside Claude Code: fan-out → referee → synthesis. |
 | Unattended run | `orchestrator/run_attack.py` | Same pipeline through the Claude Agent SDK (`--target all|D1|sum8|torsion|r4|audit`). |
 | Specialists' work | `agents/<name>/` | Code, results JSON and `REPORT.md` produced by each computational specialist. |
-| Write-up | `docs/` | One-page write-up, figure, slide script, social post. |
+| Submission | `docs/` | `SUBMISSION.md` (the write-up in the submission form's Markdown), `RESULTS.html` (one page), `FULL_REPORT.html`, `deck.html` (10-slide deck, self-contained), `cover.png` and `results.png` (gallery images), `POST.md` (public post text). |
+| Dashboard | `notebooks/rigidity_lab.py` | marimo notebook over the ledger, probe summaries, certificate checks and overlay suite; `notebooks/rigidity_lab.html` is its export (`python -m marimo edit notebooks/rigidity_lab.py` to run live). |
 
 ## The problem, in one paragraph
 
